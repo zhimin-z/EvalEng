@@ -1,2 +1,5 @@
+nbformat
 pandas
 PyGithub
+selenium
+seleniumbase
