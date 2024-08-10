@@ -1,0 +1,174 @@
+{
+  "SourcegraphEndpoint": "https://sourcegraph.com",
+  "Query": "context:global /import overcooked_ai_py|from overcooked_ai_py.* import / select:repo count:all patterntype:standard",
+  "Site": {
+    "BuildVersion": "286853_2024-08-09_5.6-d0b88533b456"
+  },
+  "Results": [
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/opendilab/DI-engine"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/opendilab/DI-engine\" rel=\"nofollow\"\u003egithub.com/opendilab/DI-engine\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/opendilab/DI-engine",
+      "url": "/github.com/opendilab/DI-engine"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/cogment/cogment-verse"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/cogment/cogment-verse\" rel=\"nofollow\"\u003egithub.com/cogment/cogment-verse\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/cogment/cogment-verse",
+      "url": "/github.com/cogment/cogment-verse"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/jidiai/ai_lib"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/jidiai/ai_lib\" rel=\"nofollow\"\u003egithub.com/jidiai/ai_lib\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/jidiai/ai_lib",
+      "url": "/github.com/jidiai/ai_lib"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/bic4907/Overcooked-AI"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/bic4907/Overcooked-AI\" rel=\"nofollow\"\u003egithub.com/bic4907/Overcooked-AI\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/bic4907/Overcooked-AI",
+      "url": "/github.com/bic4907/Overcooked-AI"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/HumanCompatibleAI/overcooked_ai"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/HumanCompatibleAI/overcooked_ai\" rel=\"nofollow\"\u003egithub.com/HumanCompatibleAI/overcooked_ai\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/HumanCompatibleAI/overcooked_ai",
+      "url": "/github.com/HumanCompatibleAI/overcooked_ai"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Replicable-MARL/MARLlib"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Replicable-MARL/MARLlib\" rel=\"nofollow\"\u003egithub.com/Replicable-MARL/MARLlib\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Replicable-MARL/MARLlib",
+      "url": "/github.com/Replicable-MARL/MARLlib"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/HumanCompatibleAI/human_aware_rl"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/HumanCompatibleAI/human_aware_rl\" rel=\"nofollow\"\u003egithub.com/HumanCompatibleAI/human_aware_rl\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/HumanCompatibleAI/human_aware_rl",
+      "url": "/github.com/HumanCompatibleAI/human_aware_rl"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Stanford-ILIAD/PantheonRL"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Stanford-ILIAD/PantheonRL\" rel=\"nofollow\"\u003egithub.com/Stanford-ILIAD/PantheonRL\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Stanford-ILIAD/PantheonRL",
+      "url": "/github.com/Stanford-ILIAD/PantheonRL"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/kinalmehta/marl-jax"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/kinalmehta/marl-jax\" rel=\"nofollow\"\u003egithub.com/kinalmehta/marl-jax\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/kinalmehta/marl-jax",
+      "url": "/github.com/kinalmehta/marl-jax"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/PKU-Alignment/ProAgent"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/PKU-Alignment/ProAgent\" rel=\"nofollow\"\u003egithub.com/PKU-Alignment/ProAgent\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/PKU-Alignment/ProAgent",
+      "url": "/github.com/PKU-Alignment/ProAgent"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/HumanCompatibleAI/overcooked-demo"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/HumanCompatibleAI/overcooked-demo\" rel=\"nofollow\"\u003egithub.com/HumanCompatibleAI/overcooked-demo\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/HumanCompatibleAI/overcooked-demo",
+      "url": "/github.com/HumanCompatibleAI/overcooked-demo"
+    }
+  ],
+  "LimitHit": false,
+  "Cloning": [],
+  "Missing": [],
+  "Timedout": [],
+  "ResultCount": 11,
+  "ElapsedMilliseconds": 11859,
+  "Alert": {
+    "Title": "",
+    "Description": "",
+    "ProposedQueries": null
+  }
+}

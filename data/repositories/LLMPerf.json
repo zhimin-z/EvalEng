@@ -1,0 +1,62 @@
+{
+  "SourcegraphEndpoint": "https://sourcegraph.com",
+  "Query": "context:global /import llmperf|from llmperf.* import / select:repo count:all patterntype:standard",
+  "Site": {
+    "BuildVersion": "286853_2024-08-09_5.6-d0b88533b456"
+  },
+  "Results": [
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/bytedance/ByteMLPerf"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/bytedance/ByteMLPerf\" rel=\"nofollow\"\u003egithub.com/bytedance/ByteMLPerf\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/bytedance/ByteMLPerf",
+      "url": "/github.com/bytedance/ByteMLPerf"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/ray-project/llmperf"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/ray-project/llmperf\" rel=\"nofollow\"\u003egithub.com/ray-project/llmperf\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/ray-project/llmperf",
+      "url": "/github.com/ray-project/llmperf"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/NVIDIA/TensorRT-LLM"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/NVIDIA/TensorRT-LLM\" rel=\"nofollow\"\u003egithub.com/NVIDIA/TensorRT-LLM\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/NVIDIA/TensorRT-LLM",
+      "url": "/github.com/NVIDIA/TensorRT-LLM"
+    }
+  ],
+  "LimitHit": false,
+  "Cloning": [],
+  "Missing": [],
+  "Timedout": [],
+  "ResultCount": 3,
+  "ElapsedMilliseconds": 1327,
+  "Alert": {
+    "Title": "",
+    "Description": "",
+    "ProposedQueries": null
+  }
+}

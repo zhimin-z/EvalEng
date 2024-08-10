@@ -1,0 +1,76 @@
+{
+  "SourcegraphEndpoint": "https://sourcegraph.com",
+  "Query": "context:global /import inspect_ai|from inspect_ai.* import / select:repo count:all patterntype:standard",
+  "Site": {
+    "BuildVersion": "286853_2024-08-09_5.6-d0b88533b456"
+  },
+  "Results": [
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/arzwa/wgd"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/arzwa/wgd\" rel=\"nofollow\"\u003egithub.com/arzwa/wgd\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/arzwa/wgd",
+      "url": "/github.com/arzwa/wgd"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/msoedov/agentic_security"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/msoedov/agentic_security\" rel=\"nofollow\"\u003egithub.com/msoedov/agentic_security\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/msoedov/agentic_security",
+      "url": "/github.com/msoedov/agentic_security"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/UKGovernmentBEIS/inspect_ai"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/UKGovernmentBEIS/inspect_ai\" rel=\"nofollow\"\u003egithub.com/UKGovernmentBEIS/inspect_ai\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/UKGovernmentBEIS/inspect_ai",
+      "url": "/github.com/UKGovernmentBEIS/inspect_ai"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/jjallaire/inspect-llm-workshop"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/jjallaire/inspect-llm-workshop\" rel=\"nofollow\"\u003egithub.com/jjallaire/inspect-llm-workshop\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/jjallaire/inspect-llm-workshop",
+      "url": "/github.com/jjallaire/inspect-llm-workshop"
+    }
+  ],
+  "LimitHit": false,
+  "Cloning": [],
+  "Missing": [],
+  "Timedout": [],
+  "ResultCount": 4,
+  "ElapsedMilliseconds": 11852,
+  "Alert": {
+    "Title": "",
+    "Description": "",
+    "ProposedQueries": null
+  }
+}

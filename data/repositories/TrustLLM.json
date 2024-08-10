@@ -1,0 +1,48 @@
+{
+  "SourcegraphEndpoint": "https://sourcegraph.com",
+  "Query": "context:global /import trustllm|from trustllm.* import / select:repo count:all patterntype:standard",
+  "Site": {
+    "BuildVersion": "286853_2024-08-09_5.6-d0b88533b456"
+  },
+  "Results": [
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/dair-ai/Prompt-Engineering-Guide"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/dair-ai/Prompt-Engineering-Guide\" rel=\"nofollow\"\u003egithub.com/dair-ai/Prompt-Engineering-Guide\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/dair-ai/Prompt-Engineering-Guide",
+      "url": "/github.com/dair-ai/Prompt-Engineering-Guide"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/HowieHwong/TrustLLM"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/HowieHwong/TrustLLM\" rel=\"nofollow\"\u003egithub.com/HowieHwong/TrustLLM\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/HowieHwong/TrustLLM",
+      "url": "/github.com/HowieHwong/TrustLLM"
+    }
+  ],
+  "LimitHit": false,
+  "Cloning": [],
+  "Missing": [],
+  "Timedout": [],
+  "ResultCount": 2,
+  "ElapsedMilliseconds": 1998,
+  "Alert": {
+    "Title": "",
+    "Description": "",
+    "ProposedQueries": null
+  }
+}

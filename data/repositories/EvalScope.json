@@ -1,0 +1,48 @@
+{
+  "SourcegraphEndpoint": "https://sourcegraph.com",
+  "Query": "context:global /import evalscope|from evalscope.* import / select:repo count:all patterntype:standard",
+  "Site": {
+    "BuildVersion": "286853_2024-08-09_5.6-d0b88533b456"
+  },
+  "Results": [
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/modelscope/ms-swift"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/modelscope/ms-swift\" rel=\"nofollow\"\u003egithub.com/modelscope/ms-swift\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/modelscope/ms-swift",
+      "url": "/github.com/modelscope/ms-swift"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/modelscope/evalscope"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/modelscope/evalscope\" rel=\"nofollow\"\u003egithub.com/modelscope/evalscope\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/modelscope/evalscope",
+      "url": "/github.com/modelscope/evalscope"
+    }
+  ],
+  "LimitHit": false,
+  "Cloning": [],
+  "Missing": [],
+  "Timedout": [],
+  "ResultCount": 2,
+  "ElapsedMilliseconds": 3414,
+  "Alert": {
+    "Title": "",
+    "Description": "",
+    "ProposedQueries": null
+  }
+}

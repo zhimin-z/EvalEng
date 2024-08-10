@@ -1,0 +1,34 @@
+{
+  "SourcegraphEndpoint": "https://sourcegraph.com",
+  "Query": "context:global /import fmbench|from fmbench.* import / select:repo count:all patterntype:standard",
+  "Site": {
+    "BuildVersion": "286853_2024-08-09_5.6-d0b88533b456"
+  },
+  "Results": [
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/aws-samples/foundation-model-benchmarking-tool"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/aws-samples/foundation-model-benchmarking-tool\" rel=\"nofollow\"\u003egithub.com/aws-samples/foundation-model-benchmarking-tool\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/aws-samples/foundation-model-benchmarking-tool",
+      "url": "/github.com/aws-samples/foundation-model-benchmarking-tool"
+    }
+  ],
+  "LimitHit": false,
+  "Cloning": [],
+  "Missing": [],
+  "Timedout": [],
+  "ResultCount": 1,
+  "ElapsedMilliseconds": 1310,
+  "Alert": {
+    "Title": "",
+    "Description": "",
+    "ProposedQueries": null
+  }
+}

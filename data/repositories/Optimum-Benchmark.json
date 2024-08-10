@@ -1,0 +1,62 @@
+{
+  "SourcegraphEndpoint": "https://sourcegraph.com",
+  "Query": "context:global /import optimum_benchmark|from optimum_benchmark.* import / select:repo count:all patterntype:standard",
+  "Site": {
+    "BuildVersion": "286853_2024-08-09_5.6-d0b88533b456"
+  },
+  "Results": [
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/huggingface/transformers"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/huggingface/transformers\" rel=\"nofollow\"\u003egithub.com/huggingface/transformers\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/huggingface/transformers",
+      "url": "/github.com/huggingface/transformers"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/huggingface/optimum-benchmark"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/huggingface/optimum-benchmark\" rel=\"nofollow\"\u003egithub.com/huggingface/optimum-benchmark\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/huggingface/optimum-benchmark",
+      "url": "/github.com/huggingface/optimum-benchmark"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/davidsajare/david-share"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/davidsajare/david-share\" rel=\"nofollow\"\u003egithub.com/davidsajare/david-share\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/davidsajare/david-share",
+      "url": "/github.com/davidsajare/david-share"
+    }
+  ],
+  "LimitHit": false,
+  "Cloning": [],
+  "Missing": [],
+  "Timedout": [],
+  "ResultCount": 3,
+  "ElapsedMilliseconds": 24096,
+  "Alert": {
+    "Title": "",
+    "Description": "",
+    "ProposedQueries": null
+  }
+}

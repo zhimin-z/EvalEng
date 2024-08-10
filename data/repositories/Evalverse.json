@@ -1,0 +1,34 @@
+{
+  "SourcegraphEndpoint": "https://sourcegraph.com",
+  "Query": "context:global /import evalverse|from evalverse.* import / select:repo count:all patterntype:standard",
+  "Site": {
+    "BuildVersion": "286853_2024-08-09_5.6-d0b88533b456"
+  },
+  "Results": [
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/UpstageAI/evalverse"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/UpstageAI/evalverse\" rel=\"nofollow\"\u003egithub.com/UpstageAI/evalverse\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/UpstageAI/evalverse",
+      "url": "/github.com/UpstageAI/evalverse"
+    }
+  ],
+  "LimitHit": false,
+  "Cloning": [],
+  "Missing": [],
+  "Timedout": [],
+  "ResultCount": 1,
+  "ElapsedMilliseconds": 2327,
+  "Alert": {
+    "Title": "",
+    "Description": "",
+    "ProposedQueries": null
+  }
+}

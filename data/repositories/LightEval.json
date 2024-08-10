@@ -1,0 +1,104 @@
+{
+  "SourcegraphEndpoint": "https://sourcegraph.com",
+  "Query": "context:global /import lighteval|from lighteval.* import / select:repo count:all patterntype:standard",
+  "Site": {
+    "BuildVersion": "286853_2024-08-09_5.6-d0b88533b456"
+  },
+  "Results": [
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/huggingface/cosmopedia"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/huggingface/cosmopedia\" rel=\"nofollow\"\u003egithub.com/huggingface/cosmopedia\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/huggingface/cosmopedia",
+      "url": "/github.com/huggingface/cosmopedia"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/adithya-s-k/indic_eval"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/adithya-s-k/indic_eval\" rel=\"nofollow\"\u003egithub.com/adithya-s-k/indic_eval\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/adithya-s-k/indic_eval",
+      "url": "/github.com/adithya-s-k/indic_eval"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/huggingface/datatrove"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/huggingface/datatrove\" rel=\"nofollow\"\u003egithub.com/huggingface/datatrove\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/huggingface/datatrove",
+      "url": "/github.com/huggingface/datatrove"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/mlabonne/llm-autoeval"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/mlabonne/llm-autoeval\" rel=\"nofollow\"\u003egithub.com/mlabonne/llm-autoeval\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/mlabonne/llm-autoeval",
+      "url": "/github.com/mlabonne/llm-autoeval"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/huggingface/lighteval"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/huggingface/lighteval\" rel=\"nofollow\"\u003egithub.com/huggingface/lighteval\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/huggingface/lighteval",
+      "url": "/github.com/huggingface/lighteval"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/huggingface/nanotron"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/huggingface/nanotron\" rel=\"nofollow\"\u003egithub.com/huggingface/nanotron\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/huggingface/nanotron",
+      "url": "/github.com/huggingface/nanotron"
+    }
+  ],
+  "LimitHit": false,
+  "Cloning": [],
+  "Missing": [],
+  "Timedout": [],
+  "ResultCount": 6,
+  "ElapsedMilliseconds": 6859,
+  "Alert": {
+    "Title": "",
+    "Description": "",
+    "ProposedQueries": null
+  }
+}

@@ -1,0 +1,286 @@
+{
+  "SourcegraphEndpoint": "https://sourcegraph.com",
+  "Query": "context:global /import evalplus|from evalplus.* import / select:repo count:all patterntype:standard",
+  "Site": {
+    "BuildVersion": "286853_2024-08-09_5.6-d0b88533b456"
+  },
+  "Results": [
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/martin-wey/CodeUltraFeedback"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/martin-wey/CodeUltraFeedback\" rel=\"nofollow\"\u003egithub.com/martin-wey/CodeUltraFeedback\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/martin-wey/CodeUltraFeedback",
+      "url": "/github.com/martin-wey/CodeUltraFeedback"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/TianjinYellow/EdgeDeviceLLMCompetition-Starting-Kit"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/TianjinYellow/EdgeDeviceLLMCompetition-Starting-Kit\" rel=\"nofollow\"\u003egithub.com/TianjinYellow/EdgeDeviceLLMCompetition-Starting-Kit\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/TianjinYellow/EdgeDeviceLLMCompetition-Starting-Kit",
+      "url": "/github.com/TianjinYellow/EdgeDeviceLLMCompetition-Starting-Kit"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/the-crypt-keeper/can-ai-code"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/the-crypt-keeper/can-ai-code\" rel=\"nofollow\"\u003egithub.com/the-crypt-keeper/can-ai-code\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/the-crypt-keeper/can-ai-code",
+      "url": "/github.com/the-crypt-keeper/can-ai-code"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/ise-uiuc/magicoder"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/ise-uiuc/magicoder\" rel=\"nofollow\"\u003egithub.com/ise-uiuc/magicoder\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/ise-uiuc/magicoder",
+      "url": "/github.com/ise-uiuc/magicoder"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/OpenCodeInterpreter/OpenCodeInterpreter"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/OpenCodeInterpreter/OpenCodeInterpreter\" rel=\"nofollow\"\u003egithub.com/OpenCodeInterpreter/OpenCodeInterpreter\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/OpenCodeInterpreter/OpenCodeInterpreter",
+      "url": "/github.com/OpenCodeInterpreter/OpenCodeInterpreter"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/QwenLM/CodeQwen1.5"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/QwenLM/CodeQwen1.5\" rel=\"nofollow\"\u003egithub.com/QwenLM/CodeQwen1.5\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/QwenLM/CodeQwen1.5",
+      "url": "/github.com/QwenLM/CodeQwen1.5"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/bigcode-project/starcoder2-self-align"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/bigcode-project/starcoder2-self-align\" rel=\"nofollow\"\u003egithub.com/bigcode-project/starcoder2-self-align\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/bigcode-project/starcoder2-self-align",
+      "url": "/github.com/bigcode-project/starcoder2-self-align"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/uukuguy/speechless"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/uukuguy/speechless\" rel=\"nofollow\"\u003egithub.com/uukuguy/speechless\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/uukuguy/speechless",
+      "url": "/github.com/uukuguy/speechless"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/my-other-github-account/llm-humaneval-benchmarks"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/my-other-github-account/llm-humaneval-benchmarks\" rel=\"nofollow\"\u003egithub.com/my-other-github-account/llm-humaneval-benchmarks\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/my-other-github-account/llm-humaneval-benchmarks",
+      "url": "/github.com/my-other-github-account/llm-humaneval-benchmarks"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/bilibili/Index-1.9B"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/bilibili/Index-1.9B\" rel=\"nofollow\"\u003egithub.com/bilibili/Index-1.9B\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/bilibili/Index-1.9B",
+      "url": "/github.com/bilibili/Index-1.9B"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/FudanDNN-NLP/RAG"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/FudanDNN-NLP/RAG\" rel=\"nofollow\"\u003egithub.com/FudanDNN-NLP/RAG\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/FudanDNN-NLP/RAG",
+      "url": "/github.com/FudanDNN-NLP/RAG"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/RUCAIBox/LLMSurvey"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/RUCAIBox/LLMSurvey\" rel=\"nofollow\"\u003egithub.com/RUCAIBox/LLMSurvey\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/RUCAIBox/LLMSurvey",
+      "url": "/github.com/RUCAIBox/LLMSurvey"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/open-compass/opencompass"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/open-compass/opencompass\" rel=\"nofollow\"\u003egithub.com/open-compass/opencompass\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/open-compass/opencompass",
+      "url": "/github.com/open-compass/opencompass"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/gonglinyuan/ast_t5"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/gonglinyuan/ast_t5\" rel=\"nofollow\"\u003egithub.com/gonglinyuan/ast_t5\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/gonglinyuan/ast_t5",
+      "url": "/github.com/gonglinyuan/ast_t5"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/evalplus/evalplus"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/evalplus/evalplus\" rel=\"nofollow\"\u003egithub.com/evalplus/evalplus\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/evalplus/evalplus",
+      "url": "/github.com/evalplus/evalplus"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Kipok/NeMo-Skills"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Kipok/NeMo-Skills\" rel=\"nofollow\"\u003egithub.com/Kipok/NeMo-Skills\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Kipok/NeMo-Skills",
+      "url": "/github.com/Kipok/NeMo-Skills"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/emrgnt-cmplxty/zero-shot-replication"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/emrgnt-cmplxty/zero-shot-replication\" rel=\"nofollow\"\u003egithub.com/emrgnt-cmplxty/zero-shot-replication\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/emrgnt-cmplxty/zero-shot-replication",
+      "url": "/github.com/emrgnt-cmplxty/zero-shot-replication"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/evo-eval/evoeval"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/evo-eval/evoeval\" rel=\"nofollow\"\u003egithub.com/evo-eval/evoeval\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/evo-eval/evoeval",
+      "url": "/github.com/evo-eval/evoeval"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/FastEval/FastEval"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/FastEval/FastEval\" rel=\"nofollow\"\u003egithub.com/FastEval/FastEval\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/FastEval/FastEval",
+      "url": "/github.com/FastEval/FastEval"
+    }
+  ],
+  "LimitHit": false,
+  "Cloning": [],
+  "Missing": [],
+  "Timedout": [],
+  "ResultCount": 19,
+  "ElapsedMilliseconds": 3201,
+  "Alert": {
+    "Title": "",
+    "Description": "",
+    "ProposedQueries": null
+  }
+}

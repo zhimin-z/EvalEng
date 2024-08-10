@@ -1,0 +1,43 @@
+#! /bin/sh
+
+# curl -L https://sourcegraph.com/.api/src-cli/src_darwin_amd64 -o src
+# chmod +x src
+
+# Get the path_repository argument
+path_repository="$1"
+
+src search -json "context:global /import alpaca_eval|from alpaca_eval.* import / select:repo count:all patterntype:standard" > "${path_repository}/AlpacaEval.json" 
+src search -json "context:global /import bigcode_eval|from bigcode_eval.* import / select:repo count:all patterntype:standard" > "${path_repository}/Code Generation LM Evaluation Harness.json" 
+src search -json "context:global /import evalai|from evalai.* import / select:repo count:all patterntype:standard" > "${path_repository}/EvalAI.json" 
+src search -json "context:global /import evalplus|from evalplus.* import / select:repo count:all patterntype:standard" > "${path_repository}/EvalPlus.json" 
+src search -json "context:global /import evals|from evals.* import / select:repo count:all patterntype:standard" > "${path_repository}/Evals.json" 
+src search -json "context:global /import evalscope|from evalscope.* import / select:repo count:all patterntype:standard" > "${path_repository}/EvalScope.json" 
+src search -json "context:global /import evalverse|from evalverse.* import / select:repo count:all patterntype:standard" > "${path_repository}/Evalverse.json" 
+src search -json "context:global /import flageval.serving|from flageval.serving.* import / select:repo count:all patterntype:standard" > "${path_repository}/FlagEval.json" 
+src search -json "context:global /import fmbench|from fmbench.* import / select:repo count:all patterntype:standard" > "${path_repository}/FMBench.json" 
+src search -json "context:global /import helm|from helm.* import / select:repo count:all patterntype:standard" > "${path_repository}/Holistic Evaluation of Language Models.json" 
+src search -json "context:global /import inspect_ai|from inspect_ai.* import / select:repo count:all patterntype:standard" > "${path_repository}/Inspect.json" 
+src search -json "context:global /import intercode|from intercode.* import / select:repo count:all patterntype:standard" > "${path_repository}/InterCode.json" 
+src search -json "context:global /import lm_eval|from lm_eval.* import / select:repo count:all patterntype:standard" > "${path_repository}/Language Model Evaluation Harness.json" 
+src search -json "context:global /import lighteval|from lighteval.* import / select:repo count:all patterntype:standard" > "${path_repository}/LightEval.json" 
+src search -json "context:global /import llmperf|from llmperf.* import / select:repo count:all patterntype:standard" > "${path_repository}/LLMPerf.json" 
+src search -json "context:global /import olmo_eval|from olmo_eval.* import / select:repo count:all patterntype:standard" > "${path_repository}/OLMo-Eval.json" 
+src search -json "context:global /import opencompass|from opencompass.* import / select:repo count:all patterntype:standard" > "${path_repository}/OpenCompass.json" 
+src search -json "context:global /import optimum_benchmark|from optimum_benchmark.* import / select:repo count:all patterntype:standard" > "${path_repository}/Optimum-Benchmark.json" 
+src search -json "context:global /import overcooked_ai_py|from overcooked_ai_py.* import / select:repo count:all patterntype:standard" > "${path_repository}/Overcooked-AI.json" 
+src search -json "context:global /import phasellm|from phasellm.* import / select:repo count:all patterntype:standard" > "${path_repository}/PhaseLLM.json" 
+src search -json "context:global /import prometheus_eval|from prometheus_eval.* import / select:repo count:all patterntype:standard" > "${path_repository}/Prometheus-Eval.json" 
+src search -json "context:global /import promptbench|from promptbench.* import / select:repo count:all patterntype:standard" > "${path_repository}/PromptBench.json" 
+src search -json "context:global /import rageval|from rageval.* import / select:repo count:all patterntype:standard" > "${path_repository}/Rageval.json" 
+src search -json "context:global /import rewardbench|from rewardbench.* import / select:repo count:all patterntype:standard" > "${path_repository}/RewardBench.json" 
+src search -json "context:global /import tensorflow_model_analysis|from tensorflow_model_analysis.* import / select:repo count:all patterntype:standard" > "${path_repository}/TensorFlow Model Analysis.json" 
+src search -json "context:global /import trustllm|from trustllm.* import / select:repo count:all patterntype:standard" > "${path_repository}/TrustLLM.json" 
+src search -json "context:global /import uptrain|from uptrain.* import / select:repo count:all patterntype:standard" > "${path_repository}/UpTrain.json" 
+src search -json "context:global /import vbench|from vbench.* import / select:repo count:all patterntype:standard" > "${path_repository}/VBench.json" 
+src search -json "context:global /import vlmeval|from vlmeval.* import / select:repo count:all patterntype:standard" > "${path_repository}/VLMEvalKit.json" 
+
+github-dependents-info --repo confident-ai/deepeval -p -j > "${path_repository}/DeepEval.json"
+github-dependents-info --repo huggingface/evaluate -p -j > "${path_repository}/Evaluate.json"
+github-dependents-info --repo evidentlyai/evidently -p -j > "${path_repository}/Evidently.json"
+github-dependents-info --repo embeddings-benchmark/mteb -p -j > "${path_repository}/Massive Text Embedding Benchmark.json"
+github-dependents-info --repo explodinggradients/ragas -p -j > "${path_repository}/Ragas.json"

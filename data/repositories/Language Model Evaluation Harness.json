@@ -1,0 +1,2694 @@
+{
+  "SourcegraphEndpoint": "https://sourcegraph.com",
+  "Query": "context:global /import lm_eval|from lm_eval.* import / select:repo count:all patterntype:standard",
+  "Site": {
+    "BuildVersion": "286853_2024-08-09_5.6-d0b88533b456"
+  },
+  "Results": [
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/labmlai/annotated_deep_learning_paper_implementations"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/labmlai/annotated_deep_learning_paper_implementations\" rel=\"nofollow\"\u003egithub.com/labmlai/annotated_deep_learning_paper_implementations\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/labmlai/annotated_deep_learning_paper_implementations",
+      "url": "/github.com/labmlai/annotated_deep_learning_paper_implementations"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/LiqunMa/FBI-LLM"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/LiqunMa/FBI-LLM\" rel=\"nofollow\"\u003egithub.com/LiqunMa/FBI-LLM\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/LiqunMa/FBI-LLM",
+      "url": "/github.com/LiqunMa/FBI-LLM"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/princeton-nlp/QuRating"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/princeton-nlp/QuRating\" rel=\"nofollow\"\u003egithub.com/princeton-nlp/QuRating\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/princeton-nlp/QuRating",
+      "url": "/github.com/princeton-nlp/QuRating"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/FederatedAI/FATE-LLM"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/FederatedAI/FATE-LLM\" rel=\"nofollow\"\u003egithub.com/FederatedAI/FATE-LLM\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/FederatedAI/FATE-LLM",
+      "url": "/github.com/FederatedAI/FATE-LLM"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/hahnyuan/RPTQ4LLM"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/hahnyuan/RPTQ4LLM\" rel=\"nofollow\"\u003egithub.com/hahnyuan/RPTQ4LLM\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/hahnyuan/RPTQ4LLM",
+      "url": "/github.com/hahnyuan/RPTQ4LLM"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/huawei-noah/noah-research"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/huawei-noah/noah-research\" rel=\"nofollow\"\u003egithub.com/huawei-noah/noah-research\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/huawei-noah/noah-research",
+      "url": "/github.com/huawei-noah/noah-research"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/SNU-ARC/any-precision-llm"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/SNU-ARC/any-precision-llm\" rel=\"nofollow\"\u003egithub.com/SNU-ARC/any-precision-llm\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/SNU-ARC/any-precision-llm",
+      "url": "/github.com/SNU-ARC/any-precision-llm"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/mit-han-lab/lmquant"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/mit-han-lab/lmquant\" rel=\"nofollow\"\u003egithub.com/mit-han-lab/lmquant\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/mit-han-lab/lmquant",
+      "url": "/github.com/mit-han-lab/lmquant"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/spcl/QuaRot"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/spcl/QuaRot\" rel=\"nofollow\"\u003egithub.com/spcl/QuaRot\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/spcl/QuaRot",
+      "url": "/github.com/spcl/QuaRot"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/vllm-project/vllm"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/vllm-project/vllm\" rel=\"nofollow\"\u003egithub.com/vllm-project/vllm\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/vllm-project/vllm",
+      "url": "/github.com/vllm-project/vllm"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Oneflow-Inc/libai"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Oneflow-Inc/libai\" rel=\"nofollow\"\u003egithub.com/Oneflow-Inc/libai\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Oneflow-Inc/libai",
+      "url": "/github.com/Oneflow-Inc/libai"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/The-FinAI/PIXIU"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/The-FinAI/PIXIU\" rel=\"nofollow\"\u003egithub.com/The-FinAI/PIXIU\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/The-FinAI/PIXIU",
+      "url": "/github.com/The-FinAI/PIXIU"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/kaistAI/LangBridge"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/kaistAI/LangBridge\" rel=\"nofollow\"\u003egithub.com/kaistAI/LangBridge\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/kaistAI/LangBridge",
+      "url": "/github.com/kaistAI/LangBridge"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/hustvl/Vim"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/hustvl/Vim\" rel=\"nofollow\"\u003egithub.com/hustvl/Vim\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/hustvl/Vim",
+      "url": "/github.com/hustvl/Vim"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/hunto/LocalMamba"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/hunto/LocalMamba\" rel=\"nofollow\"\u003egithub.com/hunto/LocalMamba\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/hunto/LocalMamba",
+      "url": "/github.com/hunto/LocalMamba"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/YUCHEN005/RobustGER"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/YUCHEN005/RobustGER\" rel=\"nofollow\"\u003egithub.com/YUCHEN005/RobustGER\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/YUCHEN005/RobustGER",
+      "url": "/github.com/YUCHEN005/RobustGER"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/apple/corenet"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/apple/corenet\" rel=\"nofollow\"\u003egithub.com/apple/corenet\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/apple/corenet",
+      "url": "/github.com/apple/corenet"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/intel/neural-speed"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/intel/neural-speed\" rel=\"nofollow\"\u003egithub.com/intel/neural-speed\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/intel/neural-speed",
+      "url": "/github.com/intel/neural-speed"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/HazyResearch/prefix-linear-attention"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/HazyResearch/prefix-linear-attention\" rel=\"nofollow\"\u003egithub.com/HazyResearch/prefix-linear-attention\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/HazyResearch/prefix-linear-attention",
+      "url": "/github.com/HazyResearch/prefix-linear-attention"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/sanyalsunny111/LLM-Inheritune"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/sanyalsunny111/LLM-Inheritune\" rel=\"nofollow\"\u003egithub.com/sanyalsunny111/LLM-Inheritune\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/sanyalsunny111/LLM-Inheritune",
+      "url": "/github.com/sanyalsunny111/LLM-Inheritune"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/HanGuo97/lq-lora"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/HanGuo97/lq-lora\" rel=\"nofollow\"\u003egithub.com/HanGuo97/lq-lora\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/HanGuo97/lq-lora",
+      "url": "/github.com/HanGuo97/lq-lora"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/mit-han-lab/offsite-tuning"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/mit-han-lab/offsite-tuning\" rel=\"nofollow\"\u003egithub.com/mit-han-lab/offsite-tuning\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/mit-han-lab/offsite-tuning",
+      "url": "/github.com/mit-han-lab/offsite-tuning"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Beomi/ko-lm-evaluation-harness"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Beomi/ko-lm-evaluation-harness\" rel=\"nofollow\"\u003egithub.com/Beomi/ko-lm-evaluation-harness\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Beomi/ko-lm-evaluation-harness",
+      "url": "/github.com/Beomi/ko-lm-evaluation-harness"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Fugaku-LLM/DeepSpeedFugaku"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Fugaku-LLM/DeepSpeedFugaku\" rel=\"nofollow\"\u003egithub.com/Fugaku-LLM/DeepSpeedFugaku\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Fugaku-LLM/DeepSpeedFugaku",
+      "url": "/github.com/Fugaku-LLM/DeepSpeedFugaku"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/feizc/DiS"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/feizc/DiS\" rel=\"nofollow\"\u003egithub.com/feizc/DiS\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/feizc/DiS",
+      "url": "/github.com/feizc/DiS"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/LLM360/amber-train"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/LLM360/amber-train\" rel=\"nofollow\"\u003egithub.com/LLM360/amber-train\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/LLM360/amber-train",
+      "url": "/github.com/LLM360/amber-train"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/tyshiwo1/DiM-DiffusionMamba"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/tyshiwo1/DiM-DiffusionMamba\" rel=\"nofollow\"\u003egithub.com/tyshiwo1/DiM-DiffusionMamba\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/tyshiwo1/DiM-DiffusionMamba",
+      "url": "/github.com/tyshiwo1/DiM-DiffusionMamba"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Pseudo-Lab/labmlai_annotated_deeplearning_paper_implementation"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Pseudo-Lab/labmlai_annotated_deeplearning_paper_implementation\" rel=\"nofollow\"\u003egithub.com/Pseudo-Lab/labmlai_annotated_deeplearning_paper_implementation\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Pseudo-Lab/labmlai_annotated_deeplearning_paper_implementation",
+      "url": "/github.com/Pseudo-Lab/labmlai_annotated_deeplearning_paper_implementation"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/WisdomShell/codeshell"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/WisdomShell/codeshell\" rel=\"nofollow\"\u003egithub.com/WisdomShell/codeshell\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/WisdomShell/codeshell",
+      "url": "/github.com/WisdomShell/codeshell"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/bigscience-workshop/Megatron-DeepSpeed"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/bigscience-workshop/Megatron-DeepSpeed\" rel=\"nofollow\"\u003egithub.com/bigscience-workshop/Megatron-DeepSpeed\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/bigscience-workshop/Megatron-DeepSpeed",
+      "url": "/github.com/bigscience-workshop/Megatron-DeepSpeed"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/IBM/ibm-generative-ai"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/IBM/ibm-generative-ai\" rel=\"nofollow\"\u003egithub.com/IBM/ibm-generative-ai\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/IBM/ibm-generative-ai",
+      "url": "/github.com/IBM/ibm-generative-ai"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/isbrycee/T-Mamba"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/isbrycee/T-Mamba\" rel=\"nofollow\"\u003egithub.com/isbrycee/T-Mamba\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/isbrycee/T-Mamba",
+      "url": "/github.com/isbrycee/T-Mamba"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/state-spaces/mamba"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/state-spaces/mamba\" rel=\"nofollow\"\u003egithub.com/state-spaces/mamba\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/state-spaces/mamba",
+      "url": "/github.com/state-spaces/mamba"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Facico/Chinese-Vicuna"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Facico/Chinese-Vicuna\" rel=\"nofollow\"\u003egithub.com/Facico/Chinese-Vicuna\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Facico/Chinese-Vicuna",
+      "url": "/github.com/Facico/Chinese-Vicuna"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/eth-sri/language-model-arithmetic"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/eth-sri/language-model-arithmetic\" rel=\"nofollow\"\u003egithub.com/eth-sri/language-model-arithmetic\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/eth-sri/language-model-arithmetic",
+      "url": "/github.com/eth-sri/language-model-arithmetic"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/OptimalScale/LMFlow"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/OptimalScale/LMFlow\" rel=\"nofollow\"\u003egithub.com/OptimalScale/LMFlow\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/OptimalScale/LMFlow",
+      "url": "/github.com/OptimalScale/LMFlow"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/ydchen0806/TokenUnify"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/ydchen0806/TokenUnify\" rel=\"nofollow\"\u003egithub.com/ydchen0806/TokenUnify\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/ydchen0806/TokenUnify",
+      "url": "/github.com/ydchen0806/TokenUnify"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/yk/gpt-4chan-public"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/yk/gpt-4chan-public\" rel=\"nofollow\"\u003egithub.com/yk/gpt-4chan-public\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/yk/gpt-4chan-public",
+      "url": "/github.com/yk/gpt-4chan-public"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/whyNLP/LCKV"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/whyNLP/LCKV\" rel=\"nofollow\"\u003egithub.com/whyNLP/LCKV\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/whyNLP/LCKV",
+      "url": "/github.com/whyNLP/LCKV"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/OpenBioML/chemnlp"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/OpenBioML/chemnlp\" rel=\"nofollow\"\u003egithub.com/OpenBioML/chemnlp\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/OpenBioML/chemnlp",
+      "url": "/github.com/OpenBioML/chemnlp"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/pytorch-labs/gpt-fast"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/pytorch-labs/gpt-fast\" rel=\"nofollow\"\u003egithub.com/pytorch-labs/gpt-fast\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/pytorch-labs/gpt-fast",
+      "url": "/github.com/pytorch-labs/gpt-fast"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/meta-llama/llama-recipes"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/meta-llama/llama-recipes\" rel=\"nofollow\"\u003egithub.com/meta-llama/llama-recipes\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/meta-llama/llama-recipes",
+      "url": "/github.com/meta-llama/llama-recipes"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/declare-lab/instruct-eval"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/declare-lab/instruct-eval\" rel=\"nofollow\"\u003egithub.com/declare-lab/instruct-eval\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/declare-lab/instruct-eval",
+      "url": "/github.com/declare-lab/instruct-eval"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Cornell-RelaxML/quip-sharp"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Cornell-RelaxML/quip-sharp\" rel=\"nofollow\"\u003egithub.com/Cornell-RelaxML/quip-sharp\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Cornell-RelaxML/quip-sharp",
+      "url": "/github.com/Cornell-RelaxML/quip-sharp"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/AI21Labs/lm-evaluation"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/AI21Labs/lm-evaluation\" rel=\"nofollow\"\u003egithub.com/AI21Labs/lm-evaluation\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/AI21Labs/lm-evaluation",
+      "url": "/github.com/AI21Labs/lm-evaluation"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/isyangshu/MambaMIL"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/isyangshu/MambaMIL\" rel=\"nofollow\"\u003egithub.com/isyangshu/MambaMIL\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/isyangshu/MambaMIL",
+      "url": "/github.com/isyangshu/MambaMIL"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/aws-samples/aws-ml-jp"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/aws-samples/aws-ml-jp\" rel=\"nofollow\"\u003egithub.com/aws-samples/aws-ml-jp\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/aws-samples/aws-ml-jp",
+      "url": "/github.com/aws-samples/aws-ml-jp"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/onnx/neural-compressor"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/onnx/neural-compressor\" rel=\"nofollow\"\u003egithub.com/onnx/neural-compressor\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/onnx/neural-compressor",
+      "url": "/github.com/onnx/neural-compressor"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/ziyangwang007/Mamba-UNet"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/ziyangwang007/Mamba-UNet\" rel=\"nofollow\"\u003egithub.com/ziyangwang007/Mamba-UNet\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/ziyangwang007/Mamba-UNet",
+      "url": "/github.com/ziyangwang007/Mamba-UNet"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/EleutherAI/pythia"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/EleutherAI/pythia\" rel=\"nofollow\"\u003egithub.com/EleutherAI/pythia\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/EleutherAI/pythia",
+      "url": "/github.com/EleutherAI/pythia"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/OpenGVLab/video-mamba-suite"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/OpenGVLab/video-mamba-suite\" rel=\"nofollow\"\u003egithub.com/OpenGVLab/video-mamba-suite\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/OpenGVLab/video-mamba-suite",
+      "url": "/github.com/OpenGVLab/video-mamba-suite"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/feizc/Dimba"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/feizc/Dimba\" rel=\"nofollow\"\u003egithub.com/feizc/Dimba\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/feizc/Dimba",
+      "url": "/github.com/feizc/Dimba"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/FMInference/FlexGen"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/FMInference/FlexGen\" rel=\"nofollow\"\u003egithub.com/FMInference/FlexGen\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/FMInference/FlexGen",
+      "url": "/github.com/FMInference/FlexGen"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/boyiwei/alignment-attribution-code"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/boyiwei/alignment-attribution-code\" rel=\"nofollow\"\u003egithub.com/boyiwei/alignment-attribution-code\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/boyiwei/alignment-attribution-code",
+      "url": "/github.com/boyiwei/alignment-attribution-code"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/intel-analytics/ipex-llm"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/intel-analytics/ipex-llm\" rel=\"nofollow\"\u003egithub.com/intel-analytics/ipex-llm\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/intel-analytics/ipex-llm",
+      "url": "/github.com/intel-analytics/ipex-llm"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/OpenGVLab/VideoMamba"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/OpenGVLab/VideoMamba\" rel=\"nofollow\"\u003egithub.com/OpenGVLab/VideoMamba\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/OpenGVLab/VideoMamba",
+      "url": "/github.com/OpenGVLab/VideoMamba"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/zphang/minimal-gpt-neox-20b"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/zphang/minimal-gpt-neox-20b\" rel=\"nofollow\"\u003egithub.com/zphang/minimal-gpt-neox-20b\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/zphang/minimal-gpt-neox-20b",
+      "url": "/github.com/zphang/minimal-gpt-neox-20b"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/SkyworkAI/PointCloudMamba"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/SkyworkAI/PointCloudMamba\" rel=\"nofollow\"\u003egithub.com/SkyworkAI/PointCloudMamba\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/SkyworkAI/PointCloudMamba",
+      "url": "/github.com/SkyworkAI/PointCloudMamba"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/bigscience-workshop/bigscience"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/bigscience-workshop/bigscience\" rel=\"nofollow\"\u003egithub.com/bigscience-workshop/bigscience\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/bigscience-workshop/bigscience",
+      "url": "/github.com/bigscience-workshop/bigscience"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/microsoft/DeepSpeed"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/microsoft/DeepSpeed\" rel=\"nofollow\"\u003egithub.com/microsoft/DeepSpeed\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/microsoft/DeepSpeed",
+      "url": "/github.com/microsoft/DeepSpeed"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/HandH1998/QQQ"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/HandH1998/QQQ\" rel=\"nofollow\"\u003egithub.com/HandH1998/QQQ\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/HandH1998/QQQ",
+      "url": "/github.com/HandH1998/QQQ"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/microsoft/TransformerCompression"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/microsoft/TransformerCompression\" rel=\"nofollow\"\u003egithub.com/microsoft/TransformerCompression\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/microsoft/TransformerCompression",
+      "url": "/github.com/microsoft/TransformerCompression"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/itsnamgyu/block-transformer"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/itsnamgyu/block-transformer\" rel=\"nofollow\"\u003egithub.com/itsnamgyu/block-transformer\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/itsnamgyu/block-transformer",
+      "url": "/github.com/itsnamgyu/block-transformer"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/efeslab/Atom"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/efeslab/Atom\" rel=\"nofollow\"\u003egithub.com/efeslab/Atom\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/efeslab/Atom",
+      "url": "/github.com/efeslab/Atom"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/EleutherAI/lm-evaluation-harness"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/EleutherAI/lm-evaluation-harness\" rel=\"nofollow\"\u003egithub.com/EleutherAI/lm-evaluation-harness\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/EleutherAI/lm-evaluation-harness",
+      "url": "/github.com/EleutherAI/lm-evaluation-harness"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/xvyaward/owq"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/xvyaward/owq\" rel=\"nofollow\"\u003egithub.com/xvyaward/owq\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/xvyaward/owq",
+      "url": "/github.com/xvyaward/owq"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/hustvl/ViG"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/hustvl/ViG\" rel=\"nofollow\"\u003egithub.com/hustvl/ViG\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/hustvl/ViG",
+      "url": "/github.com/hustvl/ViG"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/ge-xing/SegMamba"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/ge-xing/SegMamba\" rel=\"nofollow\"\u003egithub.com/ge-xing/SegMamba\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/ge-xing/SegMamba",
+      "url": "/github.com/ge-xing/SegMamba"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/piresramon/gpt-4-enem"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/piresramon/gpt-4-enem\" rel=\"nofollow\"\u003egithub.com/piresramon/gpt-4-enem\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/piresramon/gpt-4-enem",
+      "url": "/github.com/piresramon/gpt-4-enem"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/sumo43/loopvlm"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/sumo43/loopvlm\" rel=\"nofollow\"\u003egithub.com/sumo43/loopvlm\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/sumo43/loopvlm",
+      "url": "/github.com/sumo43/loopvlm"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/AtlasAnalyticsLab/Vim4Path"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/AtlasAnalyticsLab/Vim4Path\" rel=\"nofollow\"\u003egithub.com/AtlasAnalyticsLab/Vim4Path\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/AtlasAnalyticsLab/Vim4Path",
+      "url": "/github.com/AtlasAnalyticsLab/Vim4Path"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/cxcscmu/MATES"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/cxcscmu/MATES\" rel=\"nofollow\"\u003egithub.com/cxcscmu/MATES\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/cxcscmu/MATES",
+      "url": "/github.com/cxcscmu/MATES"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/gwenzhang/Voxel-Mamba"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/gwenzhang/Voxel-Mamba\" rel=\"nofollow\"\u003egithub.com/gwenzhang/Voxel-Mamba\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/gwenzhang/Voxel-Mamba",
+      "url": "/github.com/gwenzhang/Voxel-Mamba"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/neuralmagic/sparseml"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/neuralmagic/sparseml\" rel=\"nofollow\"\u003egithub.com/neuralmagic/sparseml\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/neuralmagic/sparseml",
+      "url": "/github.com/neuralmagic/sparseml"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/arcee-ai/mergekit"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/arcee-ai/mergekit\" rel=\"nofollow\"\u003egithub.com/arcee-ai/mergekit\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/arcee-ai/mergekit",
+      "url": "/github.com/arcee-ai/mergekit"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/bigcode-project/octopack"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/bigcode-project/octopack\" rel=\"nofollow\"\u003egithub.com/bigcode-project/octopack\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/bigcode-project/octopack",
+      "url": "/github.com/bigcode-project/octopack"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/FMInference/DejaVu"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/FMInference/DejaVu\" rel=\"nofollow\"\u003egithub.com/FMInference/DejaVu\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/FMInference/DejaVu",
+      "url": "/github.com/FMInference/DejaVu"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/pytorch/torchchat"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/pytorch/torchchat\" rel=\"nofollow\"\u003egithub.com/pytorch/torchchat\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/pytorch/torchchat",
+      "url": "/github.com/pytorch/torchchat"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Vahe1994/AQLM"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Vahe1994/AQLM\" rel=\"nofollow\"\u003egithub.com/Vahe1994/AQLM\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Vahe1994/AQLM",
+      "url": "/github.com/Vahe1994/AQLM"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/intel/intel-extension-for-transformers"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/intel/intel-extension-for-transformers\" rel=\"nofollow\"\u003egithub.com/intel/intel-extension-for-transformers\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/intel/intel-extension-for-transformers",
+      "url": "/github.com/intel/intel-extension-for-transformers"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/suu990901/LLaMA-MiLe-Loss"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/suu990901/LLaMA-MiLe-Loss\" rel=\"nofollow\"\u003egithub.com/suu990901/LLaMA-MiLe-Loss\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/suu990901/LLaMA-MiLe-Loss",
+      "url": "/github.com/suu990901/LLaMA-MiLe-Loss"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/young-geng/EasyLM"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/young-geng/EasyLM\" rel=\"nofollow\"\u003egithub.com/young-geng/EasyLM\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/young-geng/EasyLM",
+      "url": "/github.com/young-geng/EasyLM"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/uukuguy/speechless"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/uukuguy/speechless\" rel=\"nofollow\"\u003egithub.com/uukuguy/speechless\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/uukuguy/speechless",
+      "url": "/github.com/uukuguy/speechless"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/RoyChao19477/SEMamba"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/RoyChao19477/SEMamba\" rel=\"nofollow\"\u003egithub.com/RoyChao19477/SEMamba\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/RoyChao19477/SEMamba",
+      "url": "/github.com/RoyChao19477/SEMamba"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/tinygrad/tinygrad"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/tinygrad/tinygrad\" rel=\"nofollow\"\u003egithub.com/tinygrad/tinygrad\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/tinygrad/tinygrad",
+      "url": "/github.com/tinygrad/tinygrad"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/horseee/LLM-Pruner"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/horseee/LLM-Pruner\" rel=\"nofollow\"\u003egithub.com/horseee/LLM-Pruner\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/horseee/LLM-Pruner",
+      "url": "/github.com/horseee/LLM-Pruner"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/AmeenAli/HiddenMambaAttn"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/AmeenAli/HiddenMambaAttn\" rel=\"nofollow\"\u003egithub.com/AmeenAli/HiddenMambaAttn\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/AmeenAli/HiddenMambaAttn",
+      "url": "/github.com/AmeenAli/HiddenMambaAttn"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/ytongbai/LVM"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/ytongbai/LVM\" rel=\"nofollow\"\u003egithub.com/ytongbai/LVM\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/ytongbai/LVM",
+      "url": "/github.com/ytongbai/LVM"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/replit/ReplitLM"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/replit/ReplitLM\" rel=\"nofollow\"\u003egithub.com/replit/ReplitLM\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/replit/ReplitLM",
+      "url": "/github.com/replit/ReplitLM"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Vahe1994/SpQR"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Vahe1994/SpQR\" rel=\"nofollow\"\u003egithub.com/Vahe1994/SpQR\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Vahe1994/SpQR",
+      "url": "/github.com/Vahe1994/SpQR"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/SqueezeBits/QUICK"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/SqueezeBits/QUICK\" rel=\"nofollow\"\u003egithub.com/SqueezeBits/QUICK\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/SqueezeBits/QUICK",
+      "url": "/github.com/SqueezeBits/QUICK"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/neuralmagic/deepsparse"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/neuralmagic/deepsparse\" rel=\"nofollow\"\u003egithub.com/neuralmagic/deepsparse\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/neuralmagic/deepsparse",
+      "url": "/github.com/neuralmagic/deepsparse"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/microsoft/archai"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/microsoft/archai\" rel=\"nofollow\"\u003egithub.com/microsoft/archai\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/microsoft/archai",
+      "url": "/github.com/microsoft/archai"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/YUCHEN005/GenTranslate"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/YUCHEN005/GenTranslate\" rel=\"nofollow\"\u003egithub.com/YUCHEN005/GenTranslate\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/YUCHEN005/GenTranslate",
+      "url": "/github.com/YUCHEN005/GenTranslate"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/BlinkDL/ChatRWKV"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/BlinkDL/ChatRWKV\" rel=\"nofollow\"\u003egithub.com/BlinkDL/ChatRWKV\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/BlinkDL/ChatRWKV",
+      "url": "/github.com/BlinkDL/ChatRWKV"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/runpod/serverless-workers"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/runpod/serverless-workers\" rel=\"nofollow\"\u003egithub.com/runpod/serverless-workers\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/runpod/serverless-workers",
+      "url": "/github.com/runpod/serverless-workers"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/mit-han-lab/llm-awq"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/mit-han-lab/llm-awq\" rel=\"nofollow\"\u003egithub.com/mit-han-lab/llm-awq\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/mit-han-lab/llm-awq",
+      "url": "/github.com/mit-han-lab/llm-awq"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/forhaoliu/chain-of-hindsight"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/forhaoliu/chain-of-hindsight\" rel=\"nofollow\"\u003egithub.com/forhaoliu/chain-of-hindsight\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/forhaoliu/chain-of-hindsight",
+      "url": "/github.com/forhaoliu/chain-of-hindsight"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/VainF/Torch-Pruning"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/VainF/Torch-Pruning\" rel=\"nofollow\"\u003egithub.com/VainF/Torch-Pruning\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/VainF/Torch-Pruning",
+      "url": "/github.com/VainF/Torch-Pruning"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/DD-DuDa/BitDistiller"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/DD-DuDa/BitDistiller\" rel=\"nofollow\"\u003egithub.com/DD-DuDa/BitDistiller\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/DD-DuDa/BitDistiller",
+      "url": "/github.com/DD-DuDa/BitDistiller"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/intel/neural-compressor"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/intel/neural-compressor\" rel=\"nofollow\"\u003egithub.com/intel/neural-compressor\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/intel/neural-compressor",
+      "url": "/github.com/intel/neural-compressor"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/intel-analytics/BigDL-2.x"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/intel-analytics/BigDL-2.x\" rel=\"nofollow\"\u003egithub.com/intel-analytics/BigDL-2.x\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/intel-analytics/BigDL-2.x",
+      "url": "/github.com/intel-analytics/BigDL-2.x"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/locuslab/wanda"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/locuslab/wanda\" rel=\"nofollow\"\u003egithub.com/locuslab/wanda\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/locuslab/wanda",
+      "url": "/github.com/locuslab/wanda"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/OpenGVLab/OmniQuant"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/OpenGVLab/OmniQuant\" rel=\"nofollow\"\u003egithub.com/OpenGVLab/OmniQuant\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/OpenGVLab/OmniQuant",
+      "url": "/github.com/OpenGVLab/OmniQuant"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/GreenBitAI/green-bit-llm"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/GreenBitAI/green-bit-llm\" rel=\"nofollow\"\u003egithub.com/GreenBitAI/green-bit-llm\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/GreenBitAI/green-bit-llm",
+      "url": "/github.com/GreenBitAI/green-bit-llm"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/pytorch/executorch"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/pytorch/executorch\" rel=\"nofollow\"\u003egithub.com/pytorch/executorch\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/pytorch/executorch",
+      "url": "/github.com/pytorch/executorch"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/intel/intel-extension-for-pytorch"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/intel/intel-extension-for-pytorch\" rel=\"nofollow\"\u003egithub.com/intel/intel-extension-for-pytorch\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/intel/intel-extension-for-pytorch",
+      "url": "/github.com/intel/intel-extension-for-pytorch"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/nbasyl/LLM-FP4"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/nbasyl/LLM-FP4\" rel=\"nofollow\"\u003egithub.com/nbasyl/LLM-FP4\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/nbasyl/LLM-FP4",
+      "url": "/github.com/nbasyl/LLM-FP4"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/alibaba/Pai-Megatron-Patch"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/alibaba/Pai-Megatron-Patch\" rel=\"nofollow\"\u003egithub.com/alibaba/Pai-Megatron-Patch\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/alibaba/Pai-Megatron-Patch",
+      "url": "/github.com/alibaba/Pai-Megatron-Patch"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Lightning-AI/litgpt"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Lightning-AI/litgpt\" rel=\"nofollow\"\u003egithub.com/Lightning-AI/litgpt\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Lightning-AI/litgpt",
+      "url": "/github.com/Lightning-AI/litgpt"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/microsoft/onnxruntime-inference-examples"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/microsoft/onnxruntime-inference-examples\" rel=\"nofollow\"\u003egithub.com/microsoft/onnxruntime-inference-examples\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/microsoft/onnxruntime-inference-examples",
+      "url": "/github.com/microsoft/onnxruntime-inference-examples"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/xuyuzhuang11/OneBit"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/xuyuzhuang11/OneBit\" rel=\"nofollow\"\u003egithub.com/xuyuzhuang11/OneBit\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/xuyuzhuang11/OneBit",
+      "url": "/github.com/xuyuzhuang11/OneBit"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/FMInference/H2O"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/FMInference/H2O\" rel=\"nofollow\"\u003egithub.com/FMInference/H2O\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/FMInference/H2O",
+      "url": "/github.com/FMInference/H2O"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/intel/xFasterTransformer"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/intel/xFasterTransformer\" rel=\"nofollow\"\u003egithub.com/intel/xFasterTransformer\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/intel/xFasterTransformer",
+      "url": "/github.com/intel/xFasterTransformer"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/wangtz19/NetMamba"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/wangtz19/NetMamba\" rel=\"nofollow\"\u003egithub.com/wangtz19/NetMamba\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/wangtz19/NetMamba",
+      "url": "/github.com/wangtz19/NetMamba"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/IST-DASLab/marlin"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/IST-DASLab/marlin\" rel=\"nofollow\"\u003egithub.com/IST-DASLab/marlin\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/IST-DASLab/marlin",
+      "url": "/github.com/IST-DASLab/marlin"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Cerebras/modelzoo"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Cerebras/modelzoo\" rel=\"nofollow\"\u003egithub.com/Cerebras/modelzoo\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Cerebras/modelzoo",
+      "url": "/github.com/Cerebras/modelzoo"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/EleutherAI/gpt-neox"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/EleutherAI/gpt-neox\" rel=\"nofollow\"\u003egithub.com/EleutherAI/gpt-neox\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/EleutherAI/gpt-neox",
+      "url": "/github.com/EleutherAI/gpt-neox"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/zenml-io/zenml-projects"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/zenml-io/zenml-projects\" rel=\"nofollow\"\u003egithub.com/zenml-io/zenml-projects\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/zenml-io/zenml-projects",
+      "url": "/github.com/zenml-io/zenml-projects"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/howard-hou/VisualRWKV"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/howard-hou/VisualRWKV\" rel=\"nofollow\"\u003egithub.com/howard-hou/VisualRWKV\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/howard-hou/VisualRWKV",
+      "url": "/github.com/howard-hou/VisualRWKV"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/princeton-nlp/LLM-Shearing"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/princeton-nlp/LLM-Shearing\" rel=\"nofollow\"\u003egithub.com/princeton-nlp/LLM-Shearing\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/princeton-nlp/LLM-Shearing",
+      "url": "/github.com/princeton-nlp/LLM-Shearing"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/jiasenlu/LL3M"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/jiasenlu/LL3M\" rel=\"nofollow\"\u003egithub.com/jiasenlu/LL3M\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/jiasenlu/LL3M",
+      "url": "/github.com/jiasenlu/LL3M"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/RulinShao/retrieval-scaling"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/RulinShao/retrieval-scaling\" rel=\"nofollow\"\u003egithub.com/RulinShao/retrieval-scaling\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/RulinShao/retrieval-scaling",
+      "url": "/github.com/RulinShao/retrieval-scaling"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/intel/auto-round"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/intel/auto-round\" rel=\"nofollow\"\u003egithub.com/intel/auto-round\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/intel/auto-round",
+      "url": "/github.com/intel/auto-round"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/huggingface/optimum-habana"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/huggingface/optimum-habana\" rel=\"nofollow\"\u003egithub.com/huggingface/optimum-habana\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/huggingface/optimum-habana",
+      "url": "/github.com/huggingface/optimum-habana"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/pytorch/torchtune"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/pytorch/torchtune\" rel=\"nofollow\"\u003egithub.com/pytorch/torchtune\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/pytorch/torchtune",
+      "url": "/github.com/pytorch/torchtune"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/hahnyuan/PB-LLM"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/hahnyuan/PB-LLM\" rel=\"nofollow\"\u003egithub.com/hahnyuan/PB-LLM\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/hahnyuan/PB-LLM",
+      "url": "/github.com/hahnyuan/PB-LLM"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/nlp-uoregon/mlmm-evaluation"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/nlp-uoregon/mlmm-evaluation\" rel=\"nofollow\"\u003egithub.com/nlp-uoregon/mlmm-evaluation\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/nlp-uoregon/mlmm-evaluation",
+      "url": "/github.com/nlp-uoregon/mlmm-evaluation"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/kingoflolz/mesh-transformer-jax"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/kingoflolz/mesh-transformer-jax\" rel=\"nofollow\"\u003egithub.com/kingoflolz/mesh-transformer-jax\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/kingoflolz/mesh-transformer-jax",
+      "url": "/github.com/kingoflolz/mesh-transformer-jax"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/ModelTC/Outlier_Suppression_Plus"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/ModelTC/Outlier_Suppression_Plus\" rel=\"nofollow\"\u003egithub.com/ModelTC/Outlier_Suppression_Plus\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/ModelTC/Outlier_Suppression_Plus",
+      "url": "/github.com/ModelTC/Outlier_Suppression_Plus"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/EasonXiao-888/GrootVL"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/EasonXiao-888/GrootVL\" rel=\"nofollow\"\u003egithub.com/EasonXiao-888/GrootVL\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/EasonXiao-888/GrootVL",
+      "url": "/github.com/EasonXiao-888/GrootVL"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/HabanaAI/Model-References"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/HabanaAI/Model-References\" rel=\"nofollow\"\u003egithub.com/HabanaAI/Model-References\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/HabanaAI/Model-References",
+      "url": "/github.com/HabanaAI/Model-References"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/casper-hansen/AutoAWQ"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/casper-hansen/AutoAWQ\" rel=\"nofollow\"\u003egithub.com/casper-hansen/AutoAWQ\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/casper-hansen/AutoAWQ",
+      "url": "/github.com/casper-hansen/AutoAWQ"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/pprp/Pruner-Zero"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/pprp/Pruner-Zero\" rel=\"nofollow\"\u003egithub.com/pprp/Pruner-Zero\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/pprp/Pruner-Zero",
+      "url": "/github.com/pprp/Pruner-Zero"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/lamini-ai/lamini"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/lamini-ai/lamini\" rel=\"nofollow\"\u003egithub.com/lamini-ai/lamini\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/lamini-ai/lamini",
+      "url": "/github.com/lamini-ai/lamini"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/XiaoBuL/CM-UNet"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/XiaoBuL/CM-UNet\" rel=\"nofollow\"\u003egithub.com/XiaoBuL/CM-UNet\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/XiaoBuL/CM-UNet",
+      "url": "/github.com/XiaoBuL/CM-UNet"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/genggui001/Megatron-DeepSpeed-Llama"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/genggui001/Megatron-DeepSpeed-Llama\" rel=\"nofollow\"\u003egithub.com/genggui001/Megatron-DeepSpeed-Llama\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/genggui001/Megatron-DeepSpeed-Llama",
+      "url": "/github.com/genggui001/Megatron-DeepSpeed-Llama"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Beomi/Gemma-EasyLM"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Beomi/Gemma-EasyLM\" rel=\"nofollow\"\u003egithub.com/Beomi/Gemma-EasyLM\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Beomi/Gemma-EasyLM",
+      "url": "/github.com/Beomi/Gemma-EasyLM"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/adithya-s-k/YoloGemma"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/adithya-s-k/YoloGemma\" rel=\"nofollow\"\u003egithub.com/adithya-s-k/YoloGemma\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/adithya-s-k/YoloGemma",
+      "url": "/github.com/adithya-s-k/YoloGemma"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/LLM360/Analysis360"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/LLM360/Analysis360\" rel=\"nofollow\"\u003egithub.com/LLM360/Analysis360\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/LLM360/Analysis360",
+      "url": "/github.com/LLM360/Analysis360"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/gordicaleksa/serbian-llm-eval"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/gordicaleksa/serbian-llm-eval\" rel=\"nofollow\"\u003egithub.com/gordicaleksa/serbian-llm-eval\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/gordicaleksa/serbian-llm-eval",
+      "url": "/github.com/gordicaleksa/serbian-llm-eval"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/thu-nics/qllm-eval"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/thu-nics/qllm-eval\" rel=\"nofollow\"\u003egithub.com/thu-nics/qllm-eval\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/thu-nics/qllm-eval",
+      "url": "/github.com/thu-nics/qllm-eval"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/ahans30/goldfish-loss"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/ahans30/goldfish-loss\" rel=\"nofollow\"\u003egithub.com/ahans30/goldfish-loss\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/ahans30/goldfish-loss",
+      "url": "/github.com/ahans30/goldfish-loss"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Qcompiler/MIXQ"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Qcompiler/MIXQ\" rel=\"nofollow\"\u003egithub.com/Qcompiler/MIXQ\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Qcompiler/MIXQ",
+      "url": "/github.com/Qcompiler/MIXQ"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/waterhorse1/ChessGPT"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/waterhorse1/ChessGPT\" rel=\"nofollow\"\u003egithub.com/waterhorse1/ChessGPT\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/waterhorse1/ChessGPT",
+      "url": "/github.com/waterhorse1/ChessGPT"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/d-matrix-ai/keyformer-llm"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/d-matrix-ai/keyformer-llm\" rel=\"nofollow\"\u003egithub.com/d-matrix-ai/keyformer-llm\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/d-matrix-ai/keyformer-llm",
+      "url": "/github.com/d-matrix-ai/keyformer-llm"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/ezelikman/STaR"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/ezelikman/STaR\" rel=\"nofollow\"\u003egithub.com/ezelikman/STaR\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/ezelikman/STaR",
+      "url": "/github.com/ezelikman/STaR"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/jphme/EM_German"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/jphme/EM_German\" rel=\"nofollow\"\u003egithub.com/jphme/EM_German\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/jphme/EM_German",
+      "url": "/github.com/jphme/EM_German"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/teamreboott/data-modori"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/teamreboott/data-modori\" rel=\"nofollow\"\u003egithub.com/teamreboott/data-modori\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/teamreboott/data-modori",
+      "url": "/github.com/teamreboott/data-modori"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/happinesslz/LION"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/happinesslz/LION\" rel=\"nofollow\"\u003egithub.com/happinesslz/LION\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/happinesslz/LION",
+      "url": "/github.com/happinesslz/LION"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/sustcsonglin/flash-linear-attention"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/sustcsonglin/flash-linear-attention\" rel=\"nofollow\"\u003egithub.com/sustcsonglin/flash-linear-attention\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/sustcsonglin/flash-linear-attention",
+      "url": "/github.com/sustcsonglin/flash-linear-attention"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/FlagOpen/FlagScale"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/FlagOpen/FlagScale\" rel=\"nofollow\"\u003egithub.com/FlagOpen/FlagScale\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/FlagOpen/FlagScale",
+      "url": "/github.com/FlagOpen/FlagScale"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/pytorch/ao"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/pytorch/ao\" rel=\"nofollow\"\u003egithub.com/pytorch/ao\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/pytorch/ao",
+      "url": "/github.com/pytorch/ao"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Dai-shen/LAiW"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Dai-shen/LAiW\" rel=\"nofollow\"\u003egithub.com/Dai-shen/LAiW\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Dai-shen/LAiW",
+      "url": "/github.com/Dai-shen/LAiW"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/luuyin/OWL"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/luuyin/OWL\" rel=\"nofollow\"\u003egithub.com/luuyin/OWL\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/luuyin/OWL",
+      "url": "/github.com/luuyin/OWL"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/geronimi73/mamba"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/geronimi73/mamba\" rel=\"nofollow\"\u003egithub.com/geronimi73/mamba\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/geronimi73/mamba",
+      "url": "/github.com/geronimi73/mamba"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/babylm/evaluation-pipeline-2023"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/babylm/evaluation-pipeline-2023\" rel=\"nofollow\"\u003egithub.com/babylm/evaluation-pipeline-2023\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/babylm/evaluation-pipeline-2023",
+      "url": "/github.com/babylm/evaluation-pipeline-2023"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/BIDS-Xu-Lab/Me-LLaMA"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/BIDS-Xu-Lab/Me-LLaMA\" rel=\"nofollow\"\u003egithub.com/BIDS-Xu-Lab/Me-LLaMA\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/BIDS-Xu-Lab/Me-LLaMA",
+      "url": "/github.com/BIDS-Xu-Lab/Me-LLaMA"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/NVIDIA/NeMo-Framework-Launcher"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/NVIDIA/NeMo-Framework-Launcher\" rel=\"nofollow\"\u003egithub.com/NVIDIA/NeMo-Framework-Launcher\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/NVIDIA/NeMo-Framework-Launcher",
+      "url": "/github.com/NVIDIA/NeMo-Framework-Launcher"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/pfnet-research/japanese-lm-fin-harness"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/pfnet-research/japanese-lm-fin-harness\" rel=\"nofollow\"\u003egithub.com/pfnet-research/japanese-lm-fin-harness\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/pfnet-research/japanese-lm-fin-harness",
+      "url": "/github.com/pfnet-research/japanese-lm-fin-harness"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/amd/RyzenAI-SW"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/amd/RyzenAI-SW\" rel=\"nofollow\"\u003egithub.com/amd/RyzenAI-SW\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/amd/RyzenAI-SW",
+      "url": "/github.com/amd/RyzenAI-SW"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/intel/intel-extension-for-openxla"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/intel/intel-extension-for-openxla\" rel=\"nofollow\"\u003egithub.com/intel/intel-extension-for-openxla\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/intel/intel-extension-for-openxla",
+      "url": "/github.com/intel/intel-extension-for-openxla"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/mbzuai-oryx/MobiLlama"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/mbzuai-oryx/MobiLlama\" rel=\"nofollow\"\u003egithub.com/mbzuai-oryx/MobiLlama\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/mbzuai-oryx/MobiLlama",
+      "url": "/github.com/mbzuai-oryx/MobiLlama"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/tenstorrent/tt-metal"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/tenstorrent/tt-metal\" rel=\"nofollow\"\u003egithub.com/tenstorrent/tt-metal\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/tenstorrent/tt-metal",
+      "url": "/github.com/tenstorrent/tt-metal"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/programmablebio/ptm-mamba"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/programmablebio/ptm-mamba\" rel=\"nofollow\"\u003egithub.com/programmablebio/ptm-mamba\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/programmablebio/ptm-mamba",
+      "url": "/github.com/programmablebio/ptm-mamba"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/microsoft/BitBLAS"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/microsoft/BitBLAS\" rel=\"nofollow\"\u003egithub.com/microsoft/BitBLAS\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/microsoft/BitBLAS",
+      "url": "/github.com/microsoft/BitBLAS"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/CompVis/zigma"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/CompVis/zigma\" rel=\"nofollow\"\u003egithub.com/CompVis/zigma\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/CompVis/zigma",
+      "url": "/github.com/CompVis/zigma"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Ascend/AscendSpeed"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Ascend/AscendSpeed\" rel=\"nofollow\"\u003egithub.com/Ascend/AscendSpeed\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Ascend/AscendSpeed",
+      "url": "/github.com/Ascend/AscendSpeed"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/thu-pacman/SmartMoE-AE"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/thu-pacman/SmartMoE-AE\" rel=\"nofollow\"\u003egithub.com/thu-pacman/SmartMoE-AE\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/thu-pacman/SmartMoE-AE",
+      "url": "/github.com/thu-pacman/SmartMoE-AE"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/hahnyuan/ASVD4LLM"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/hahnyuan/ASVD4LLM\" rel=\"nofollow\"\u003egithub.com/hahnyuan/ASVD4LLM\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/hahnyuan/ASVD4LLM",
+      "url": "/github.com/hahnyuan/ASVD4LLM"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/bigscience-workshop/biomedical"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/bigscience-workshop/biomedical\" rel=\"nofollow\"\u003egithub.com/bigscience-workshop/biomedical\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/bigscience-workshop/biomedical",
+      "url": "/github.com/bigscience-workshop/biomedical"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/IBM/unitxt"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/IBM/unitxt\" rel=\"nofollow\"\u003egithub.com/IBM/unitxt\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/IBM/unitxt",
+      "url": "/github.com/IBM/unitxt"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Macaronlin/LLaMA3-Quantization"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Macaronlin/LLaMA3-Quantization\" rel=\"nofollow\"\u003egithub.com/Macaronlin/LLaMA3-Quantization\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Macaronlin/LLaMA3-Quantization",
+      "url": "/github.com/Macaronlin/LLaMA3-Quantization"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/foundation-model-stack/foundation-model-stack"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/foundation-model-stack/foundation-model-stack\" rel=\"nofollow\"\u003egithub.com/foundation-model-stack/foundation-model-stack\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/foundation-model-stack/foundation-model-stack",
+      "url": "/github.com/foundation-model-stack/foundation-model-stack"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/OpenGVLab/EfficientQAT"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/OpenGVLab/EfficientQAT\" rel=\"nofollow\"\u003egithub.com/OpenGVLab/EfficientQAT\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/OpenGVLab/EfficientQAT",
+      "url": "/github.com/OpenGVLab/EfficientQAT"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/scott-yjyang/Vivim"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/scott-yjyang/Vivim\" rel=\"nofollow\"\u003egithub.com/scott-yjyang/Vivim\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/scott-yjyang/Vivim",
+      "url": "/github.com/scott-yjyang/Vivim"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/intel/intel-extension-for-tensorflow"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/intel/intel-extension-for-tensorflow\" rel=\"nofollow\"\u003egithub.com/intel/intel-extension-for-tensorflow\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/intel/intel-extension-for-tensorflow",
+      "url": "/github.com/intel/intel-extension-for-tensorflow"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/ai-forever/MERA"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/ai-forever/MERA\" rel=\"nofollow\"\u003egithub.com/ai-forever/MERA\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/ai-forever/MERA",
+      "url": "/github.com/ai-forever/MERA"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/LINs-lab/DynMoE"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/LINs-lab/DynMoE\" rel=\"nofollow\"\u003egithub.com/LINs-lab/DynMoE\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/LINs-lab/DynMoE",
+      "url": "/github.com/LINs-lab/DynMoE"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/MikeGu721/EasyLLM"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/MikeGu721/EasyLLM\" rel=\"nofollow\"\u003egithub.com/MikeGu721/EasyLLM\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/MikeGu721/EasyLLM",
+      "url": "/github.com/MikeGu721/EasyLLM"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/mozilla-ai/lm-buddy"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/mozilla-ai/lm-buddy\" rel=\"nofollow\"\u003egithub.com/mozilla-ai/lm-buddy\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/mozilla-ai/lm-buddy",
+      "url": "/github.com/mozilla-ai/lm-buddy"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/kotoba-tech/kotomamba"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/kotoba-tech/kotomamba\" rel=\"nofollow\"\u003egithub.com/kotoba-tech/kotomamba\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/kotoba-tech/kotomamba",
+      "url": "/github.com/kotoba-tech/kotomamba"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/UNITES-Lab/MC-SMoE"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/UNITES-Lab/MC-SMoE\" rel=\"nofollow\"\u003egithub.com/UNITES-Lab/MC-SMoE\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/UNITES-Lab/MC-SMoE",
+      "url": "/github.com/UNITES-Lab/MC-SMoE"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Nota-NetsPresso/shortened-llm"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Nota-NetsPresso/shortened-llm\" rel=\"nofollow\"\u003egithub.com/Nota-NetsPresso/shortened-llm\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Nota-NetsPresso/shortened-llm",
+      "url": "/github.com/Nota-NetsPresso/shortened-llm"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/hdong920/LESS"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/hdong920/LESS\" rel=\"nofollow\"\u003egithub.com/hdong920/LESS\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/hdong920/LESS",
+      "url": "/github.com/hdong920/LESS"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/BlinkDL/RWKV-v2-RNN-Pile"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/BlinkDL/RWKV-v2-RNN-Pile\" rel=\"nofollow\"\u003egithub.com/BlinkDL/RWKV-v2-RNN-Pile\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/BlinkDL/RWKV-v2-RNN-Pile",
+      "url": "/github.com/BlinkDL/RWKV-v2-RNN-Pile"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/microsoft/Moonlit"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/microsoft/Moonlit\" rel=\"nofollow\"\u003egithub.com/microsoft/Moonlit\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/microsoft/Moonlit",
+      "url": "/github.com/microsoft/Moonlit"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/opea-project/GenAIComps"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/opea-project/GenAIComps\" rel=\"nofollow\"\u003egithub.com/opea-project/GenAIComps\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/opea-project/GenAIComps",
+      "url": "/github.com/opea-project/GenAIComps"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/AniZpZ/AutoSmoothQuant"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/AniZpZ/AutoSmoothQuant\" rel=\"nofollow\"\u003egithub.com/AniZpZ/AutoSmoothQuant\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/AniZpZ/AutoSmoothQuant",
+      "url": "/github.com/AniZpZ/AutoSmoothQuant"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Deep-Spark/DeepSparkHub"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Deep-Spark/deepsparkhub\" rel=\"nofollow\"\u003egithub.com/Deep-Spark/deepsparkhub\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Deep-Spark/deepsparkhub",
+      "url": "/github.com/Deep-Spark/deepsparkhub"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Ascend/ModelZoo-PyTorch"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Ascend/ModelZoo-PyTorch\" rel=\"nofollow\"\u003egithub.com/Ascend/ModelZoo-PyTorch\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Ascend/ModelZoo-PyTorch",
+      "url": "/github.com/Ascend/ModelZoo-PyTorch"
+    }
+  ],
+  "LimitHit": false,
+  "Cloning": [],
+  "Missing": [],
+  "Timedout": [],
+  "ResultCount": 191,
+  "ElapsedMilliseconds": 1330,
+  "Alert": {
+    "Title": "",
+    "Description": "",
+    "ProposedQueries": null
+  }
+}

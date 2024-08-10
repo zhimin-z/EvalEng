@@ -1,0 +1,510 @@
+{
+  "SourcegraphEndpoint": "https://sourcegraph.com",
+  "Query": "context:global /import tensorflow_model_analysis|from tensorflow_model_analysis.* import / select:repo count:all patterntype:standard",
+  "Site": {
+    "BuildVersion": "286853_2024-08-09_5.6-d0b88533b456"
+  },
+  "Results": [
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/amygdala/code-snippets"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/amygdala/code-snippets\" rel=\"nofollow\"\u003egithub.com/amygdala/code-snippets\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/amygdala/code-snippets",
+      "url": "/github.com/amygdala/code-snippets"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/PipelineAI/pipeline"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/PipelineAI/pipeline\" rel=\"nofollow\"\u003egithub.com/PipelineAI/pipeline\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/PipelineAI/pipeline",
+      "url": "/github.com/PipelineAI/pipeline"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/tensorflow/model-card-toolkit"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/tensorflow/model-card-toolkit\" rel=\"nofollow\"\u003egithub.com/tensorflow/model-card-toolkit\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/tensorflow/model-card-toolkit",
+      "url": "/github.com/tensorflow/model-card-toolkit"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/rafiqhasan/auto-tensorflow"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/rafiqhasan/auto-tensorflow\" rel=\"nofollow\"\u003egithub.com/rafiqhasan/auto-tensorflow\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/rafiqhasan/auto-tensorflow",
+      "url": "/github.com/rafiqhasan/auto-tensorflow"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/GoogleCloudPlatform/tf-estimator-tutorials"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/GoogleCloudPlatform/tf-estimator-tutorials\" rel=\"nofollow\"\u003egithub.com/GoogleCloudPlatform/tf-estimator-tutorials\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/GoogleCloudPlatform/tf-estimator-tutorials",
+      "url": "/github.com/GoogleCloudPlatform/tf-estimator-tutorials"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/kubeflow-kale/kale"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/kubeflow-kale/kale\" rel=\"nofollow\"\u003egithub.com/kubeflow-kale/kale\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/kubeflow-kale/kale",
+      "url": "/github.com/kubeflow-kale/kale"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/comet-ml/comet-examples"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/comet-ml/comet-examples\" rel=\"nofollow\"\u003egithub.com/comet-ml/comet-examples\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/comet-ml/comet-examples",
+      "url": "/github.com/comet-ml/comet-examples"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/GoogleCloudPlatform/mlops-on-gcp"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/GoogleCloudPlatform/mlops-on-gcp\" rel=\"nofollow\"\u003egithub.com/GoogleCloudPlatform/mlops-on-gcp\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/GoogleCloudPlatform/mlops-on-gcp",
+      "url": "/github.com/GoogleCloudPlatform/mlops-on-gcp"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/kubeflow/kfp-tekton"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/kubeflow/kfp-tekton\" rel=\"nofollow\"\u003egithub.com/kubeflow/kfp-tekton\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/kubeflow/kfp-tekton",
+      "url": "/github.com/kubeflow/kfp-tekton"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/apache/beam"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/apache/beam\" rel=\"nofollow\"\u003egithub.com/apache/beam\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/apache/beam",
+      "url": "/github.com/apache/beam"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/data-science-on-aws/data-science-on-aws"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/data-science-on-aws/data-science-on-aws\" rel=\"nofollow\"\u003egithub.com/data-science-on-aws/data-science-on-aws\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/data-science-on-aws/data-science-on-aws",
+      "url": "/github.com/data-science-on-aws/data-science-on-aws"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/GoogleCloudPlatform/training-data-analyst"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/GoogleCloudPlatform/training-data-analyst\" rel=\"nofollow\"\u003egithub.com/GoogleCloudPlatform/training-data-analyst\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/GoogleCloudPlatform/training-data-analyst",
+      "url": "/github.com/GoogleCloudPlatform/training-data-analyst"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/deep-diver/semantic-segmentation-ml-pipeline"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/deep-diver/semantic-segmentation-ml-pipeline\" rel=\"nofollow\"\u003egithub.com/deep-diver/semantic-segmentation-ml-pipeline\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/deep-diver/semantic-segmentation-ml-pipeline",
+      "url": "/github.com/deep-diver/semantic-segmentation-ml-pipeline"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/GoogleCloudPlatform/asl-ml-immersion"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/GoogleCloudPlatform/asl-ml-immersion\" rel=\"nofollow\"\u003egithub.com/GoogleCloudPlatform/asl-ml-immersion\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/GoogleCloudPlatform/asl-ml-immersion",
+      "url": "/github.com/GoogleCloudPlatform/asl-ml-immersion"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/https-deeplearning-ai/machine-learning-engineering-for-production-public"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/https-deeplearning-ai/machine-learning-engineering-for-production-public\" rel=\"nofollow\"\u003egithub.com/https-deeplearning-ai/machine-learning-engineering-for-production-public\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/https-deeplearning-ai/machine-learning-engineering-for-production-public",
+      "url": "/github.com/https-deeplearning-ai/machine-learning-engineering-for-production-public"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/kubeflow/pipelines"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/kubeflow/pipelines\" rel=\"nofollow\"\u003egithub.com/kubeflow/pipelines\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/kubeflow/pipelines",
+      "url": "/github.com/kubeflow/pipelines"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/deep-diver/mlops-hf-tf-vision-models"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/deep-diver/mlops-hf-tf-vision-models\" rel=\"nofollow\"\u003egithub.com/deep-diver/mlops-hf-tf-vision-models\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/deep-diver/mlops-hf-tf-vision-models",
+      "url": "/github.com/deep-diver/mlops-hf-tf-vision-models"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/GoogleCloudPlatform/professional-services"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/GoogleCloudPlatform/professional-services\" rel=\"nofollow\"\u003egithub.com/GoogleCloudPlatform/professional-services\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/GoogleCloudPlatform/professional-services",
+      "url": "/github.com/GoogleCloudPlatform/professional-services"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Building-ML-Pipelines/building-machine-learning-pipelines"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Building-ML-Pipelines/building-machine-learning-pipelines\" rel=\"nofollow\"\u003egithub.com/Building-ML-Pipelines/building-machine-learning-pipelines\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Building-ML-Pipelines/building-machine-learning-pipelines",
+      "url": "/github.com/Building-ML-Pipelines/building-machine-learning-pipelines"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/tensorflow/tfx"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/tensorflow/tfx\" rel=\"nofollow\"\u003egithub.com/tensorflow/tfx\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/tensorflow/tfx",
+      "url": "/github.com/tensorflow/tfx"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/GoogleCloudPlatform/vertex-ai-samples"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/GoogleCloudPlatform/vertex-ai-samples\" rel=\"nofollow\"\u003egithub.com/GoogleCloudPlatform/vertex-ai-samples\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/GoogleCloudPlatform/vertex-ai-samples",
+      "url": "/github.com/GoogleCloudPlatform/vertex-ai-samples"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/tensorflow/model-analysis"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/tensorflow/model-analysis\" rel=\"nofollow\"\u003egithub.com/tensorflow/model-analysis\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/tensorflow/model-analysis",
+      "url": "/github.com/tensorflow/model-analysis"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/GoogleCloudPlatform/mlops-with-vertex-ai"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/GoogleCloudPlatform/mlops-with-vertex-ai\" rel=\"nofollow\"\u003egithub.com/GoogleCloudPlatform/mlops-with-vertex-ai\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/GoogleCloudPlatform/mlops-with-vertex-ai",
+      "url": "/github.com/GoogleCloudPlatform/mlops-with-vertex-ai"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/tensorflow/docs-l10n"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/tensorflow/docs-l10n\" rel=\"nofollow\"\u003egithub.com/tensorflow/docs-l10n\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/tensorflow/docs-l10n",
+      "url": "/github.com/tensorflow/docs-l10n"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/sparsh-ai/recohut"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/sparsh-ai/recohut\" rel=\"nofollow\"\u003egithub.com/sparsh-ai/recohut\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/sparsh-ai/recohut",
+      "url": "/github.com/sparsh-ai/recohut"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/tensorflow/tfx-addons"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/tensorflow/tfx-addons\" rel=\"nofollow\"\u003egithub.com/tensorflow/tfx-addons\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/tensorflow/tfx-addons",
+      "url": "/github.com/tensorflow/tfx-addons"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/tensorflow/fairness-indicators"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/tensorflow/fairness-indicators\" rel=\"nofollow\"\u003egithub.com/tensorflow/fairness-indicators\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/tensorflow/fairness-indicators",
+      "url": "/github.com/tensorflow/fairness-indicators"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/deep-diver/gpt2-ft-pipeline"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/deep-diver/gpt2-ft-pipeline\" rel=\"nofollow\"\u003egithub.com/deep-diver/gpt2-ft-pipeline\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/deep-diver/gpt2-ft-pipeline",
+      "url": "/github.com/deep-diver/gpt2-ft-pipeline"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/dimitreOliveira/bert-as-a-service_TFX"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/dimitreOliveira/bert-as-a-service_TFX\" rel=\"nofollow\"\u003egithub.com/dimitreOliveira/bert-as-a-service_TFX\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/dimitreOliveira/bert-as-a-service_TFX",
+      "url": "/github.com/dimitreOliveira/bert-as-a-service_TFX"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/ksalama/ucaip-labs"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/ksalama/ucaip-labs\" rel=\"nofollow\"\u003egithub.com/ksalama/ucaip-labs\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/ksalama/ucaip-labs",
+      "url": "/github.com/ksalama/ucaip-labs"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/intel/intel-xai-tools"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/intel/intel-xai-tools\" rel=\"nofollow\"\u003egithub.com/intel/intel-xai-tools\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/intel/intel-xai-tools",
+      "url": "/github.com/intel/intel-xai-tools"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/ciandt-d1/chicago-taxi-forecast"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/ciandt-d1/chicago-taxi-forecast\" rel=\"nofollow\"\u003egithub.com/ciandt-d1/chicago-taxi-forecast\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/ciandt-d1/chicago-taxi-forecast",
+      "url": "/github.com/ciandt-d1/chicago-taxi-forecast"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/CloseToAlgoTrading/CodeFromVideo"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/CloseToAlgoTrading/CodeFromVideo\" rel=\"nofollow\"\u003egithub.com/CloseToAlgoTrading/CodeFromVideo\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/CloseToAlgoTrading/CodeFromVideo",
+      "url": "/github.com/CloseToAlgoTrading/CodeFromVideo"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/googleforgames/clean-chat"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/googleforgames/clean-chat\" rel=\"nofollow\"\u003egithub.com/googleforgames/clean-chat\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/googleforgames/clean-chat",
+      "url": "/github.com/googleforgames/clean-chat"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/a0x8o/kafka"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/a0x8o/kafka\" rel=\"nofollow\"\u003egithub.com/a0x8o/kafka\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/a0x8o/kafka",
+      "url": "/github.com/a0x8o/kafka"
+    }
+  ],
+  "LimitHit": false,
+  "Cloning": [],
+  "Missing": [],
+  "Timedout": [],
+  "ResultCount": 35,
+  "ElapsedMilliseconds": 4915,
+  "Alert": {
+    "Title": "",
+    "Description": "",
+    "ProposedQueries": null
+  }
+}
