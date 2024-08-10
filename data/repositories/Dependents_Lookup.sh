@@ -7,6 +7,9 @@
 path_repository="$1"
 
 src search -json "context:global /import alpaca_eval|from alpaca_eval.* import / select:repo count:all patterntype:standard" > "${path_repository}/AlpacaEval.json" 
+src search -json "context:global /import ares|from ares.* import / select:repo count:all patterntype:standard" > "${path_repository}/ARES.json" 
+src search -json "context:global /import amlb|from amlb.* import / select:repo count:all patterntype:standard" > "${path_repository}/AutoML Benchmark.json" 
+src search -json "context:global /import bananalyzer|from bananalyzer.* import / select:repo count:all patterntype:standard" > "${path_repository}/Banana-lyzer.json" 
 src search -json "context:global /import bigcode_eval|from bigcode_eval.* import / select:repo count:all patterntype:standard" > "${path_repository}/Code Generation LM Evaluation Harness.json" 
 src search -json "context:global /import evalai|from evalai.* import / select:repo count:all patterntype:standard" > "${path_repository}/EvalAI.json" 
 src search -json "context:global /import evalplus|from evalplus.* import / select:repo count:all patterntype:standard" > "${path_repository}/EvalPlus.json" 

@@ -1,0 +1,552 @@
+{
+  "SourcegraphEndpoint": "https://sourcegraph.com",
+  "Query": "context:global /import ares|from ares.* import / select:repo count:all patterntype:standard",
+  "Site": {
+    "BuildVersion": "286853_2024-08-09_5.6-d0b88533b456"
+  },
+  "Results": [
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/alanrsoares/prelude-js"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/alanrsoares/prelude-js\" rel=\"nofollow\"\u003egithub.com/alanrsoares/prelude-js\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/alanrsoares/prelude-js",
+      "url": "/github.com/alanrsoares/prelude-js"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Nic30/hwt"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Nic30/hwt\" rel=\"nofollow\"\u003egithub.com/Nic30/hwt\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Nic30/hwt",
+      "url": "/github.com/Nic30/hwt"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/thu-ml/ares"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/thu-ml/ares\" rel=\"nofollow\"\u003egithub.com/thu-ml/ares\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/thu-ml/ares",
+      "url": "/github.com/thu-ml/ares"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/slimta/python-slimta"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/slimta/python-slimta\" rel=\"nofollow\"\u003egithub.com/slimta/python-slimta\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/slimta/python-slimta",
+      "url": "/github.com/slimta/python-slimta"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/tsdotnet/linq"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/tsdotnet/linq\" rel=\"nofollow\"\u003egithub.com/tsdotnet/linq\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/tsdotnet/linq",
+      "url": "/github.com/tsdotnet/linq"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/nccgroup/whalescan"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/nccgroup/whalescan\" rel=\"nofollow\"\u003egithub.com/nccgroup/whalescan\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/nccgroup/whalescan",
+      "url": "/github.com/nccgroup/whalescan"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/lijiaman/egoego_release"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/lijiaman/egoego_release\" rel=\"nofollow\"\u003egithub.com/lijiaman/egoego_release\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/lijiaman/egoego_release",
+      "url": "/github.com/lijiaman/egoego_release"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/craigerl/digipi"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/craigerl/digipi\" rel=\"nofollow\"\u003egithub.com/craigerl/digipi\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/craigerl/digipi",
+      "url": "/github.com/craigerl/digipi"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/wwqgtxx/wwqLyParse"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/wwqgtxx/wwqLyParse\" rel=\"nofollow\"\u003egithub.com/wwqgtxx/wwqLyParse\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/wwqgtxx/wwqLyParse",
+      "url": "/github.com/wwqgtxx/wwqLyParse"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/dvdvdmt/popup-tab-switcher"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/dvdvdmt/popup-tab-switcher\" rel=\"nofollow\"\u003egithub.com/dvdvdmt/popup-tab-switcher\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/dvdvdmt/popup-tab-switcher",
+      "url": "/github.com/dvdvdmt/popup-tab-switcher"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/jackyef/react-isomorphic-data"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/jackyef/react-isomorphic-data\" rel=\"nofollow\"\u003egithub.com/jackyef/react-isomorphic-data\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/jackyef/react-isomorphic-data",
+      "url": "/github.com/jackyef/react-isomorphic-data"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/tjusenchen/StoryDroid"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/tjusenchen/StoryDroid\" rel=\"nofollow\"\u003egithub.com/tjusenchen/StoryDroid\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/tjusenchen/StoryDroid",
+      "url": "/github.com/tjusenchen/StoryDroid"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Nuitka/Nuitka"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Nuitka/Nuitka\" rel=\"nofollow\"\u003egithub.com/Nuitka/Nuitka\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Nuitka/Nuitka",
+      "url": "/github.com/Nuitka/Nuitka"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/RASSec/yandi-scanner"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/RASSec/yandi-scanner\" rel=\"nofollow\"\u003egithub.com/RASSec/yandi-scanner\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/RASSec/yandi-scanner",
+      "url": "/github.com/RASSec/yandi-scanner"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/indragiek/Ares"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/indragiek/Ares\" rel=\"nofollow\"\u003egithub.com/indragiek/Ares\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/indragiek/Ares",
+      "url": "/github.com/indragiek/Ares"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/mathieudutour/timezone-butler"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/mathieudutour/timezone-butler\" rel=\"nofollow\"\u003egithub.com/mathieudutour/timezone-butler\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/mathieudutour/timezone-butler",
+      "url": "/github.com/mathieudutour/timezone-butler"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/shuup/shuup"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/shuup/shuup\" rel=\"nofollow\"\u003egithub.com/shuup/shuup\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/shuup/shuup",
+      "url": "/github.com/shuup/shuup"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/awslabs/gluonts"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/awslabs/gluonts\" rel=\"nofollow\"\u003egithub.com/awslabs/gluonts\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/awslabs/gluonts",
+      "url": "/github.com/awslabs/gluonts"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/ZephrFish/AutoHoneyPoC"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/ZephrFish/AutoHoneyPoC\" rel=\"nofollow\"\u003egithub.com/ZephrFish/AutoHoneyPoC\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/ZephrFish/AutoHoneyPoC",
+      "url": "/github.com/ZephrFish/AutoHoneyPoC"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/barnumbirr/ares"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/barnumbirr/ares\" rel=\"nofollow\"\u003egithub.com/barnumbirr/ares\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/barnumbirr/ares",
+      "url": "/github.com/barnumbirr/ares"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/aresponses/aresponses"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/aresponses/aresponses\" rel=\"nofollow\"\u003egithub.com/aresponses/aresponses\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/aresponses/aresponses",
+      "url": "/github.com/aresponses/aresponses"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/mridulghanshala/SneakerBot"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/mridulghanshala/SneakerBot\" rel=\"nofollow\"\u003egithub.com/mridulghanshala/SneakerBot\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/mridulghanshala/SneakerBot",
+      "url": "/github.com/mridulghanshala/SneakerBot"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/ytsaurus/ytsaurus"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/ytsaurus/ytsaurus\" rel=\"nofollow\"\u003egithub.com/ytsaurus/ytsaurus\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/ytsaurus/ytsaurus",
+      "url": "/github.com/ytsaurus/ytsaurus"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/saghul/pycares"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/saghul/pycares\" rel=\"nofollow\"\u003egithub.com/saghul/pycares\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/saghul/pycares",
+      "url": "/github.com/saghul/pycares"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Worie/btt"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Worie/btt\" rel=\"nofollow\"\u003egithub.com/Worie/btt\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Worie/btt",
+      "url": "/github.com/Worie/btt"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/ctalkington/python-ipp"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/ctalkington/python-ipp\" rel=\"nofollow\"\u003egithub.com/ctalkington/python-ipp\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/ctalkington/python-ipp",
+      "url": "/github.com/ctalkington/python-ipp"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/bbc/simorgh"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/bbc/simorgh\" rel=\"nofollow\"\u003egithub.com/bbc/simorgh\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/bbc/simorgh",
+      "url": "/github.com/bbc/simorgh"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/stanford-futuredata/ARES"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/stanford-futuredata/ARES\" rel=\"nofollow\"\u003egithub.com/stanford-futuredata/ARES\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/stanford-futuredata/ARES",
+      "url": "/github.com/stanford-futuredata/ARES"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/gevent/gevent"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/gevent/gevent\" rel=\"nofollow\"\u003egithub.com/gevent/gevent\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/gevent/gevent",
+      "url": "/github.com/gevent/gevent"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/aiogram/aiogram"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/aiogram/aiogram\" rel=\"nofollow\"\u003egithub.com/aiogram/aiogram\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/aiogram/aiogram",
+      "url": "/github.com/aiogram/aiogram"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/sukeme/DstServerHelper"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/sukeme/DstServerHelper\" rel=\"nofollow\"\u003egithub.com/sukeme/DstServerHelper\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/sukeme/DstServerHelper",
+      "url": "/github.com/sukeme/DstServerHelper"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Simon-He95/vscode-common-intellisense"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Simon-He95/vscode-common-intellisense\" rel=\"nofollow\"\u003egithub.com/Simon-He95/vscode-common-intellisense\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Simon-He95/vscode-common-intellisense",
+      "url": "/github.com/Simon-He95/vscode-common-intellisense"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/bachya/pytile"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/bachya/pytile\" rel=\"nofollow\"\u003egithub.com/bachya/pytile\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/bachya/pytile",
+      "url": "/github.com/bachya/pytile"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/wrye-bash/wrye-bash"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/wrye-bash/wrye-bash\" rel=\"nofollow\"\u003egithub.com/wrye-bash/wrye-bash\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/wrye-bash/wrye-bash",
+      "url": "/github.com/wrye-bash/wrye-bash"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/polkadot-js/apps"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/polkadot-js/apps\" rel=\"nofollow\"\u003egithub.com/polkadot-js/apps\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/polkadot-js/apps",
+      "url": "/github.com/polkadot-js/apps"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/canalplus/rx-player"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/canalplus/rx-player\" rel=\"nofollow\"\u003egithub.com/canalplus/rx-player\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/canalplus/rx-player",
+      "url": "/github.com/canalplus/rx-player"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/translate/translate"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/translate/translate\" rel=\"nofollow\"\u003egithub.com/translate/translate\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/translate/translate",
+      "url": "/github.com/translate/translate"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/developerrahulofficial/AI-Girlfriend"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/developerrahulofficial/AI-Girlfriend\" rel=\"nofollow\"\u003egithub.com/developerrahulofficial/AI-Girlfriend\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/developerrahulofficial/AI-Girlfriend",
+      "url": "/github.com/developerrahulofficial/AI-Girlfriend"
+    }
+  ],
+  "LimitHit": false,
+  "Cloning": [],
+  "Missing": [],
+  "Timedout": [],
+  "ResultCount": 38,
+  "ElapsedMilliseconds": 60109,
+  "Alert": {
+    "Title": "",
+    "Description": "",
+    "ProposedQueries": null
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "SourcegraphEndpoint": "https://sourcegraph.com",
+  "Query": "context:global /import amlb|from amlb.* import / select:repo count:all patterntype:standard",
+  "Site": {
+    "BuildVersion": "286853_2024-08-09_5.6-d0b88533b456"
+  },
+  "Results": [
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/openml/automlbenchmark"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/openml/automlbenchmark\" rel=\"nofollow\"\u003egithub.com/openml/automlbenchmark\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/openml/automlbenchmark",
+      "url": "/github.com/openml/automlbenchmark"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/microsoft/nni"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/microsoft/nni\" rel=\"nofollow\"\u003egithub.com/microsoft/nni\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/microsoft/nni",
+      "url": "/github.com/microsoft/nni"
+    }
+  ],
+  "LimitHit": false,
+  "Cloning": [],
+  "Missing": [],
+  "Timedout": [],
+  "ResultCount": 2,
+  "ElapsedMilliseconds": 6281,
+  "Alert": {
+    "Title": "",
+    "Description": "",
+    "ProposedQueries": null
+  }
+}
