@@ -1,6 +1,7 @@
 github-dependents-info
 nbformat
 pandas
+plotly
 PyGithub
 selenium
 seleniumbase
