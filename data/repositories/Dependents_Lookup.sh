@@ -18,7 +18,7 @@ src search -json "context:global /import evalscope|from evalscope.* import / sel
 src search -json "context:global /import evalverse|from evalverse.* import / select:repo count:all patterntype:standard" > "${path_repository}/Evalverse.json" 
 src search -json "context:global /import flageval.serving|from flageval.serving.* import / select:repo count:all patterntype:standard" > "${path_repository}/FlagEval.json" 
 src search -json "context:global /import fmbench|from fmbench.* import / select:repo count:all patterntype:standard" > "${path_repository}/FMBench.json" 
-src search -json "context:global /import helm|from helm.* import / select:repo count:all patterntype:standard" > "${path_repository}/Holistic Evaluation of Language Models.json" 
+src search -json "context:global /import helm|from helm.* import / select:repo count:all patterntype:standard" > "${path_repository}/HELM.json" 
 src search -json "context:global /import inspect_ai|from inspect_ai.* import / select:repo count:all patterntype:standard" > "${path_repository}/Inspect.json" 
 src search -json "context:global /import intercode|from intercode.* import / select:repo count:all patterntype:standard" > "${path_repository}/InterCode.json" 
 src search -json "context:global /import lm_eval|from lm_eval.* import / select:repo count:all patterntype:standard" > "${path_repository}/Language Model Evaluation Harness.json" 
