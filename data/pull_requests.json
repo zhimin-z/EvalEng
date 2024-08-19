@@ -17162,3 +17162,5 @@
 {"repository":"TonicAI\/tonic_validate","index":190,"message":"Prompt Typos","contributor_id":"joeferraratonic","creation_time":1698377093000,"labels":[],"state":"closed"}
 {"repository":"TonicAI\/tonic_validate","index":191,"message":"Fix Typo in readme","contributor_id":"oguzhanmeteozturk","creation_time":1698245851000,"labels":[],"state":"closed"}
 {"repository":"TonicAI\/tonic_validate","index":192,"message":"Readme changes","contributor_id":"joeferraratonic","creation_time":1698209071000,"labels":[],"state":"closed"}
+{"repository":"amazon-science\/RAGChecker","index":0,"message":"feat:fix-type-handling-in-metrics","contributor_id":"Martyniqo","creation_time":1723619843000,"labels":[],"state":"open"}
+{"repository":"amazon-science\/RAGChecker","index":1,"message":"Modify APIs of RAGChecker","contributor_id":"rudongyu","creation_time":1720121566000,"labels":[],"state":"closed"}
