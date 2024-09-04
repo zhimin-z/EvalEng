@@ -1,0 +1,146 @@
+{
+  "SourcegraphEndpoint": "https://sourcegraph.com",
+  "Query": "context:global \"llm-autoeval\" select:repo count:all",
+  "Site": {
+    "BuildVersion": "289780_2024-09-03_5.6-f216bc3dfea3"
+  },
+  "Results": [
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/mlabonne/llm-course"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/mlabonne/llm-course\" rel=\"nofollow\"\u003egithub.com/mlabonne/llm-course\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/mlabonne/llm-course",
+      "url": "/github.com/mlabonne/llm-course"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/EthicalML/awesome-production-machine-learning"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/EthicalML/awesome-production-machine-learning\" rel=\"nofollow\"\u003egithub.com/EthicalML/awesome-production-machine-learning\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/EthicalML/awesome-production-machine-learning",
+      "url": "/github.com/EthicalML/awesome-production-machine-learning"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/friendmine/llm-course-chn"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/friendmine/llm-course-chn\" rel=\"nofollow\"\u003egithub.com/friendmine/llm-course-chn\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/friendmine/llm-course-chn",
+      "url": "/github.com/friendmine/llm-course-chn"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/mlabonne/llm-autoeval"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/mlabonne/llm-autoeval\" rel=\"nofollow\"\u003egithub.com/mlabonne/llm-autoeval\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/mlabonne/llm-autoeval",
+      "url": "/github.com/mlabonne/llm-autoeval"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/LouisShark/chatgpt_system_prompt"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/LouisShark/chatgpt_system_prompt\" rel=\"nofollow\"\u003egithub.com/LouisShark/chatgpt_system_prompt\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/LouisShark/chatgpt_system_prompt",
+      "url": "/github.com/LouisShark/chatgpt_system_prompt"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/autonomi-ai/nos"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/autonomi-ai/nos\" rel=\"nofollow\"\u003egithub.com/autonomi-ai/nos\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/autonomi-ai/nos",
+      "url": "/github.com/autonomi-ai/nos"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/swyxio/ai-notes"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/swyxio/ai-notes\" rel=\"nofollow\"\u003egithub.com/swyxio/ai-notes\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/swyxio/ai-notes",
+      "url": "/github.com/swyxio/ai-notes"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/0xeb/TheBigPromptLibrary"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/0xeb/TheBigPromptLibrary\" rel=\"nofollow\"\u003egithub.com/0xeb/TheBigPromptLibrary\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/0xeb/TheBigPromptLibrary",
+      "url": "/github.com/0xeb/TheBigPromptLibrary"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/andysingal/llm-course"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/andysingal/llm-course\" rel=\"nofollow\"\u003egithub.com/andysingal/llm-course\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/andysingal/llm-course",
+      "url": "/github.com/andysingal/llm-course"
+    }
+  ],
+  "LimitHit": false,
+  "Cloning": [],
+  "Missing": [],
+  "Timedout": [],
+  "ResultCount": 9,
+  "ElapsedMilliseconds": 709,
+  "Alert": {
+    "Title": "",
+    "Description": "",
+    "ProposedQueries": null
+  }
+}

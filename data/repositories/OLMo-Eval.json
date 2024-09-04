@@ -1,0 +1,34 @@
+{
+  "SourcegraphEndpoint": "https://sourcegraph.com",
+  "Query": "context:global \"olmo_eval\" select:repo count:all",
+  "Site": {
+    "BuildVersion": "289780_2024-09-03_5.6-f216bc3dfea3"
+  },
+  "Results": [
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/allenai/OLMo-Eval"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/allenai/OLMo-Eval\" rel=\"nofollow\"\u003egithub.com/allenai/OLMo-Eval\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/allenai/OLMo-Eval",
+      "url": "/github.com/allenai/OLMo-Eval"
+    }
+  ],
+  "LimitHit": false,
+  "Cloning": [],
+  "Missing": [],
+  "Timedout": [],
+  "ResultCount": 1,
+  "ElapsedMilliseconds": 1408,
+  "Alert": {
+    "Title": "",
+    "Description": "",
+    "ProposedQueries": null
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "SourcegraphEndpoint": "https://sourcegraph.com",
+  "Query": "context:global \"oaieval\" select:repo count:all",
+  "Site": {
+    "BuildVersion": "289780_2024-09-03_5.6-f216bc3dfea3"
+  },
+  "Results": [
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/1Password/shell-plugins"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/1Password/shell-plugins\" rel=\"nofollow\"\u003egithub.com/1Password/shell-plugins\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/1Password/shell-plugins",
+      "url": "/github.com/1Password/shell-plugins"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/ARBML/CIDAR"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/ARBML/CIDAR\" rel=\"nofollow\"\u003egithub.com/ARBML/CIDAR\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/ARBML/CIDAR",
+      "url": "/github.com/ARBML/CIDAR"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/openai/openai-cookbook"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/openai/openai-cookbook\" rel=\"nofollow\"\u003egithub.com/openai/openai-cookbook\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/openai/openai-cookbook",
+      "url": "/github.com/openai/openai-cookbook"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/vaibkumr/prompt-optimizer"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/vaibkumr/prompt-optimizer\" rel=\"nofollow\"\u003egithub.com/vaibkumr/prompt-optimizer\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/vaibkumr/prompt-optimizer",
+      "url": "/github.com/vaibkumr/prompt-optimizer"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/uptrain-ai/uptrain"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/uptrain-ai/uptrain\" rel=\"nofollow\"\u003egithub.com/uptrain-ai/uptrain\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/uptrain-ai/uptrain",
+      "url": "/github.com/uptrain-ai/uptrain"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/GPT-Fathom/GPT-Fathom"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/GPT-Fathom/GPT-Fathom\" rel=\"nofollow\"\u003egithub.com/GPT-Fathom/GPT-Fathom\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/GPT-Fathom/GPT-Fathom",
+      "url": "/github.com/GPT-Fathom/GPT-Fathom"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/openai/evals"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/openai/evals\" rel=\"nofollow\"\u003egithub.com/openai/evals\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/openai/evals",
+      "url": "/github.com/openai/evals"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/sci-assess/SciAssess"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/sci-assess/SciAssess\" rel=\"nofollow\"\u003egithub.com/sci-assess/SciAssess\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/sci-assess/SciAssess",
+      "url": "/github.com/sci-assess/SciAssess"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/FormulaMonks/llm-benchmarker-suite"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/FormulaMonks/llm-benchmarker-suite\" rel=\"nofollow\"\u003egithub.com/FormulaMonks/llm-benchmarker-suite\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/FormulaMonks/llm-benchmarker-suite",
+      "url": "/github.com/FormulaMonks/llm-benchmarker-suite"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/ianarawjo/ChainForge"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/ianarawjo/ChainForge\" rel=\"nofollow\"\u003egithub.com/ianarawjo/ChainForge\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/ianarawjo/ChainForge",
+      "url": "/github.com/ianarawjo/ChainForge"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/fixie-ai/ultravox"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/fixie-ai/ultravox\" rel=\"nofollow\"\u003egithub.com/fixie-ai/ultravox\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/fixie-ai/ultravox",
+      "url": "/github.com/fixie-ai/ultravox"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/benlipkin/linc"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/benlipkin/linc\" rel=\"nofollow\"\u003egithub.com/benlipkin/linc\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/benlipkin/linc",
+      "url": "/github.com/benlipkin/linc"
+    }
+  ],
+  "LimitHit": false,
+  "Cloning": [],
+  "Missing": [],
+  "Timedout": [],
+  "ResultCount": 12,
+  "ElapsedMilliseconds": 1399,
+  "Alert": {
+    "Title": "",
+    "Description": "",
+    "ProposedQueries": null
+  }
+}

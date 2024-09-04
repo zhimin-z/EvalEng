@@ -1,0 +1,90 @@
+{
+  "SourcegraphEndpoint": "https://sourcegraph.com",
+  "Query": "context:global \"inspect-ai\" select:repo count:all",
+  "Site": {
+    "BuildVersion": "289780_2024-09-03_5.6-f216bc3dfea3"
+  },
+  "Results": [
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/genai-handbook/genai-handbook.github.io"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/genai-handbook/genai-handbook.github.io\" rel=\"nofollow\"\u003egithub.com/genai-handbook/genai-handbook.github.io\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/genai-handbook/genai-handbook.github.io",
+      "url": "/github.com/genai-handbook/genai-handbook.github.io"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/UKGovernmentBEIS/inspect_ai"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/UKGovernmentBEIS/inspect_ai\" rel=\"nofollow\"\u003egithub.com/UKGovernmentBEIS/inspect_ai\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/UKGovernmentBEIS/inspect_ai",
+      "url": "/github.com/UKGovernmentBEIS/inspect_ai"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/ianarawjo/ChainForge"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/ianarawjo/ChainForge\" rel=\"nofollow\"\u003egithub.com/ianarawjo/ChainForge\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/ianarawjo/ChainForge",
+      "url": "/github.com/ianarawjo/ChainForge"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/scamsniffer/scam-database"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/scamsniffer/scam-database\" rel=\"nofollow\"\u003egithub.com/scamsniffer/scam-database\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/scamsniffer/scam-database",
+      "url": "/github.com/scamsniffer/scam-database"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/METR/vivaria"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/METR/vivaria\" rel=\"nofollow\"\u003egithub.com/METR/vivaria\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/METR/vivaria",
+      "url": "/github.com/METR/vivaria"
+    }
+  ],
+  "LimitHit": false,
+  "Cloning": [],
+  "Missing": [],
+  "Timedout": [],
+  "ResultCount": 5,
+  "ElapsedMilliseconds": 3573,
+  "Alert": {
+    "Title": "",
+    "Description": "",
+    "ProposedQueries": null
+  }
+}

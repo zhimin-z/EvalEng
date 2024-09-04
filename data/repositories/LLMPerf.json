@@ -1,0 +1,468 @@
+{
+  "SourcegraphEndpoint": "https://sourcegraph.com",
+  "Query": "context:global \"llmperf\" select:repo count:all",
+  "Site": {
+    "BuildVersion": "289780_2024-09-03_5.6-f216bc3dfea3"
+  },
+  "Results": [
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/dair-ai/Prompt-Engineering-Guide"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/dair-ai/Prompt-Engineering-Guide\" rel=\"nofollow\"\u003egithub.com/dair-ai/Prompt-Engineering-Guide\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/dair-ai/Prompt-Engineering-Guide",
+      "url": "/github.com/dair-ai/Prompt-Engineering-Guide"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/leehanchung/lora-instruct"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/leehanchung/lora-instruct\" rel=\"nofollow\"\u003egithub.com/leehanchung/lora-instruct\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/leehanchung/lora-instruct",
+      "url": "/github.com/leehanchung/lora-instruct"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/EthicalML/awesome-production-machine-learning"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/EthicalML/awesome-production-machine-learning\" rel=\"nofollow\"\u003egithub.com/EthicalML/awesome-production-machine-learning\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/EthicalML/awesome-production-machine-learning",
+      "url": "/github.com/EthicalML/awesome-production-machine-learning"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/mlc-ai/mlc-llm"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/mlc-ai/mlc-llm\" rel=\"nofollow\"\u003egithub.com/mlc-ai/mlc-llm\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/mlc-ai/mlc-llm",
+      "url": "/github.com/mlc-ai/mlc-llm"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/elithnever/distributedtechshare"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/elithnever/distributedtechshare\" rel=\"nofollow\"\u003egithub.com/elithnever/distributedtechshare\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/elithnever/distributedtechshare",
+      "url": "/github.com/elithnever/distributedtechshare"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/HabanaAI/Gaudi-tutorials"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/HabanaAI/Gaudi-tutorials\" rel=\"nofollow\"\u003egithub.com/HabanaAI/Gaudi-tutorials\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/HabanaAI/Gaudi-tutorials",
+      "url": "/github.com/HabanaAI/Gaudi-tutorials"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/ray-project/llmperf-leaderboard"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/ray-project/llmperf-leaderboard\" rel=\"nofollow\"\u003egithub.com/ray-project/llmperf-leaderboard\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/ray-project/llmperf-leaderboard",
+      "url": "/github.com/ray-project/llmperf-leaderboard"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/badlogic/genai-workshop"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/badlogic/genai-workshop\" rel=\"nofollow\"\u003egithub.com/badlogic/genai-workshop\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/badlogic/genai-workshop",
+      "url": "/github.com/badlogic/genai-workshop"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/LearnPrompt/LearnPrompt"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/LearnPrompt/LearnPrompt\" rel=\"nofollow\"\u003egithub.com/LearnPrompt/LearnPrompt\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/LearnPrompt/LearnPrompt",
+      "url": "/github.com/LearnPrompt/LearnPrompt"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Mintplex-Labs/anything-llm"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Mintplex-Labs/anything-llm\" rel=\"nofollow\"\u003egithub.com/Mintplex-Labs/anything-llm\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Mintplex-Labs/anything-llm",
+      "url": "/github.com/Mintplex-Labs/anything-llm"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/liguodongiot/llm-action"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/liguodongiot/llm-action\" rel=\"nofollow\"\u003egithub.com/liguodongiot/llm-action\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/liguodongiot/llm-action",
+      "url": "/github.com/liguodongiot/llm-action"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/run-ai/llmperf"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/run-ai/llmperf\" rel=\"nofollow\"\u003egithub.com/run-ai/llmperf\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/run-ai/llmperf",
+      "url": "/github.com/run-ai/llmperf"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/SAILResearch/awesome-foundation-model-leaderboards"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/SAILResearch/awesome-foundation-model-leaderboards\" rel=\"nofollow\"\u003egithub.com/SAILResearch/awesome-foundation-model-leaderboards\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/SAILResearch/awesome-foundation-model-leaderboards",
+      "url": "/github.com/SAILResearch/awesome-foundation-model-leaderboards"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/ray-project/llmperf"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/ray-project/llmperf\" rel=\"nofollow\"\u003egithub.com/ray-project/llmperf\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/ray-project/llmperf",
+      "url": "/github.com/ray-project/llmperf"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/philschmid/llm-sagemaker-sample"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/philschmid/llm-sagemaker-sample\" rel=\"nofollow\"\u003egithub.com/philschmid/llm-sagemaker-sample\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/philschmid/llm-sagemaker-sample",
+      "url": "/github.com/philschmid/llm-sagemaker-sample"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/arlosefj/github_interest"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/arlosefj/github_interest\" rel=\"nofollow\"\u003egithub.com/arlosefj/github_interest\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/arlosefj/github_interest",
+      "url": "/github.com/arlosefj/github_interest"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/horseee/Awesome-Efficient-LLM"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/horseee/Awesome-Efficient-LLM\" rel=\"nofollow\"\u003egithub.com/horseee/Awesome-Efficient-LLM\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/horseee/Awesome-Efficient-LLM",
+      "url": "/github.com/horseee/Awesome-Efficient-LLM"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/NVIDIA/TensorRT-LLM"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/NVIDIA/TensorRT-LLM\" rel=\"nofollow\"\u003egithub.com/NVIDIA/TensorRT-LLM\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/NVIDIA/TensorRT-LLM",
+      "url": "/github.com/NVIDIA/TensorRT-LLM"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/neuralmagic/deepsparse"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/neuralmagic/deepsparse\" rel=\"nofollow\"\u003egithub.com/neuralmagic/deepsparse\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/neuralmagic/deepsparse",
+      "url": "/github.com/neuralmagic/deepsparse"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/alopatenko/LLMEvaluation"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/alopatenko/LLMEvaluation\" rel=\"nofollow\"\u003egithub.com/alopatenko/LLMEvaluation\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/alopatenko/LLMEvaluation",
+      "url": "/github.com/alopatenko/LLMEvaluation"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/leptonai/leptonai"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/leptonai/leptonai\" rel=\"nofollow\"\u003egithub.com/leptonai/leptonai\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/leptonai/leptonai",
+      "url": "/github.com/leptonai/leptonai"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Qcompiler/MIXQ"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Qcompiler/MIXQ\" rel=\"nofollow\"\u003egithub.com/Qcompiler/MIXQ\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Qcompiler/MIXQ",
+      "url": "/github.com/Qcompiler/MIXQ"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/project-etalon/etalon"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/project-etalon/etalon\" rel=\"nofollow\"\u003egithub.com/project-etalon/etalon\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/project-etalon/etalon",
+      "url": "/github.com/project-etalon/etalon"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/akash-network/awesome-akash"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/akash-network/awesome-akash\" rel=\"nofollow\"\u003egithub.com/akash-network/awesome-akash\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/akash-network/awesome-akash",
+      "url": "/github.com/akash-network/awesome-akash"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/kimtth/awesome-azure-openai-llm"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/kimtth/awesome-azure-openai-llm\" rel=\"nofollow\"\u003egithub.com/kimtth/awesome-azure-openai-llm\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/kimtth/awesome-azure-openai-llm",
+      "url": "/github.com/kimtth/awesome-azure-openai-llm"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/trackawesomelist/trackawesomelist"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/trackawesomelist/trackawesomelist\" rel=\"nofollow\"\u003egithub.com/trackawesomelist/trackawesomelist\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/trackawesomelist/trackawesomelist",
+      "url": "/github.com/trackawesomelist/trackawesomelist"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/aws-samples/aws-ai-ml-workshop-kr"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/aws-samples/aws-ai-ml-workshop-kr\" rel=\"nofollow\"\u003egithub.com/aws-samples/aws-ai-ml-workshop-kr\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/aws-samples/aws-ai-ml-workshop-kr",
+      "url": "/github.com/aws-samples/aws-ai-ml-workshop-kr"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/huggingface/optimum-neuron"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/huggingface/optimum-neuron\" rel=\"nofollow\"\u003egithub.com/huggingface/optimum-neuron\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/huggingface/optimum-neuron",
+      "url": "/github.com/huggingface/optimum-neuron"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/bytedance/ByteMLPerf"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/bytedance/ByteMLPerf\" rel=\"nofollow\"\u003egithub.com/bytedance/ByteMLPerf\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/bytedance/ByteMLPerf",
+      "url": "/github.com/bytedance/ByteMLPerf"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/charliedream1/ai_wiki"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/charliedream1/ai_wiki\" rel=\"nofollow\"\u003egithub.com/charliedream1/ai_wiki\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/charliedream1/ai_wiki",
+      "url": "/github.com/charliedream1/ai_wiki"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/cloudmercato/awesome-benchmark"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/cloudmercato/awesome-benchmark\" rel=\"nofollow\"\u003egithub.com/cloudmercato/awesome-benchmark\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/cloudmercato/awesome-benchmark",
+      "url": "/github.com/cloudmercato/awesome-benchmark"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/sambanova/ai-starter-kit"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/sambanova/ai-starter-kit\" rel=\"nofollow\"\u003egithub.com/sambanova/ai-starter-kit\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/sambanova/ai-starter-kit",
+      "url": "/github.com/sambanova/ai-starter-kit"
+    }
+  ],
+  "LimitHit": false,
+  "Cloning": [],
+  "Missing": [],
+  "Timedout": [],
+  "ResultCount": 32,
+  "ElapsedMilliseconds": 2633,
+  "Alert": {
+    "Title": "",
+    "Description": "",
+    "ProposedQueries": null
+  }
+}

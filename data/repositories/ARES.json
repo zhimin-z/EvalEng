@@ -1,0 +1,216 @@
+{
+  "SourcegraphEndpoint": "https://sourcegraph.com",
+  "Query": "context:global \"ares-ai\" select:repo count:all",
+  "Site": {
+    "BuildVersion": "289780_2024-09-03_5.6-f216bc3dfea3"
+  },
+  "Results": [
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/OpenBB-finance/OpenBB"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/OpenBB-finance/OpenBB\" rel=\"nofollow\"\u003egithub.com/OpenBB-finance/OpenBB\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/OpenBB-finance/OpenBB",
+      "url": "/github.com/OpenBB-finance/OpenBB"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/stanford-futuredata/ARES"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/stanford-futuredata/ARES\" rel=\"nofollow\"\u003egithub.com/stanford-futuredata/ARES\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/stanford-futuredata/ARES",
+      "url": "/github.com/stanford-futuredata/ARES"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/richard-peng-xia/CARES"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/richard-peng-xia/CARES\" rel=\"nofollow\"\u003egithub.com/richard-peng-xia/CARES\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/richard-peng-xia/CARES",
+      "url": "/github.com/richard-peng-xia/CARES"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/archd3sai/News-Articles-Recommendation"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/archd3sai/News-Articles-Recommendation\" rel=\"nofollow\"\u003egithub.com/archd3sai/News-Articles-Recommendation\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/archd3sai/News-Articles-Recommendation",
+      "url": "/github.com/archd3sai/News-Articles-Recommendation"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/stanford-oval/storm"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/stanford-oval/storm\" rel=\"nofollow\"\u003egithub.com/stanford-oval/storm\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/stanford-oval/storm",
+      "url": "/github.com/stanford-oval/storm"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/chris-short/devopsish.com"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/chris-short/devopsish.com\" rel=\"nofollow\"\u003egithub.com/chris-short/devopsish.com\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/chris-short/devopsish.com",
+      "url": "/github.com/chris-short/devopsish.com"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/MeshalAlamr/flight-price-prediction"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/MeshalAlamr/flight-price-prediction\" rel=\"nofollow\"\u003egithub.com/MeshalAlamr/flight-price-prediction\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/MeshalAlamr/flight-price-prediction",
+      "url": "/github.com/MeshalAlamr/flight-price-prediction"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Vu1nT0tal/yarb"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Vu1nT0tal/yarb\" rel=\"nofollow\"\u003egithub.com/Vu1nT0tal/yarb\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Vu1nT0tal/yarb",
+      "url": "/github.com/Vu1nT0tal/yarb"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Cloudflare-Mining/Cloudflare-Datamining"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Cloudflare-Mining/Cloudflare-Datamining\" rel=\"nofollow\"\u003egithub.com/Cloudflare-Mining/Cloudflare-Datamining\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Cloudflare-Mining/Cloudflare-Datamining",
+      "url": "/github.com/Cloudflare-Mining/Cloudflare-Datamining"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/chainreactors/picker"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/chainreactors/picker\" rel=\"nofollow\"\u003egithub.com/chainreactors/picker\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/chainreactors/picker",
+      "url": "/github.com/chainreactors/picker"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Tyaoo/picker"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Tyaoo/picker\" rel=\"nofollow\"\u003egithub.com/Tyaoo/picker\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Tyaoo/picker",
+      "url": "/github.com/Tyaoo/picker"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/feedarchive/libera-feedbot-live"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/feedarchive/libera-feedbot-live\" rel=\"nofollow\"\u003egithub.com/feedarchive/libera-feedbot-live\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/feedarchive/libera-feedbot-live",
+      "url": "/github.com/feedarchive/libera-feedbot-live"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/BruceFeIix/picker"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/BruceFeIix/picker\" rel=\"nofollow\"\u003egithub.com/BruceFeIix/picker\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/BruceFeIix/picker",
+      "url": "/github.com/BruceFeIix/picker"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Jxck/jxck.io"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Jxck/jxck.io\" rel=\"nofollow\"\u003egithub.com/Jxck/jxck.io\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Jxck/jxck.io",
+      "url": "/github.com/Jxck/jxck.io"
+    }
+  ],
+  "LimitHit": false,
+  "Cloning": [],
+  "Missing": [],
+  "Timedout": [],
+  "ResultCount": 14,
+  "ElapsedMilliseconds": 12734,
+  "Alert": {
+    "Title": "",
+    "Description": "",
+    "ProposedQueries": null
+  }
+}

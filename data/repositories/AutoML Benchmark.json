@@ -1,0 +1,118 @@
+{
+  "SourcegraphEndpoint": "https://sourcegraph.com",
+  "Query": "context:global \"runbenchmark.py\" select:repo count:all",
+  "Site": {
+    "BuildVersion": "289780_2024-09-03_5.6-f216bc3dfea3"
+  },
+  "Results": [
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/bnpy/bnpy"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/bnpy/bnpy\" rel=\"nofollow\"\u003egithub.com/bnpy/bnpy\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/bnpy/bnpy",
+      "url": "/github.com/bnpy/bnpy"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Asoul/stockflow"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Asoul/stockflow\" rel=\"nofollow\"\u003egithub.com/Asoul/stockflow\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Asoul/stockflow",
+      "url": "/github.com/Asoul/stockflow"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/openml/openml-python"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/openml/openml-python\" rel=\"nofollow\"\u003egithub.com/openml/openml-python\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/openml/openml-python",
+      "url": "/github.com/openml/openml-python"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/microsoft/nni"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/microsoft/nni\" rel=\"nofollow\"\u003egithub.com/microsoft/nni\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/microsoft/nni",
+      "url": "/github.com/microsoft/nni"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/openml/automlbenchmark"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/openml/automlbenchmark\" rel=\"nofollow\"\u003egithub.com/openml/automlbenchmark\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/openml/automlbenchmark",
+      "url": "/github.com/openml/automlbenchmark"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/automl/auto-sklearn"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/automl/auto-sklearn\" rel=\"nofollow\"\u003egithub.com/automl/auto-sklearn\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/automl/auto-sklearn",
+      "url": "/github.com/automl/auto-sklearn"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/mikemccand/luceneutil"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/mikemccand/luceneutil\" rel=\"nofollow\"\u003egithub.com/mikemccand/luceneutil\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/mikemccand/luceneutil",
+      "url": "/github.com/mikemccand/luceneutil"
+    }
+  ],
+  "LimitHit": false,
+  "Cloning": [],
+  "Missing": [],
+  "Timedout": [],
+  "ResultCount": 7,
+  "ElapsedMilliseconds": 9626,
+  "Alert": {
+    "Title": "",
+    "Description": "",
+    "ProposedQueries": null
+  }
+}

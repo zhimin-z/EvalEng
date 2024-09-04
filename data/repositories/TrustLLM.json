@@ -1,0 +1,538 @@
+{
+  "SourcegraphEndpoint": "https://sourcegraph.com",
+  "Query": "context:global \"trustllm\" select:repo count:all",
+  "Site": {
+    "BuildVersion": "289780_2024-09-03_5.6-f216bc3dfea3"
+  },
+  "Results": [
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/dair-ai/Prompt-Engineering-Guide"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/dair-ai/Prompt-Engineering-Guide\" rel=\"nofollow\"\u003egithub.com/dair-ai/Prompt-Engineering-Guide\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/dair-ai/Prompt-Engineering-Guide",
+      "url": "/github.com/dair-ai/Prompt-Engineering-Guide"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/jphall663/awesome-machine-learning-interpretability"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/jphall663/awesome-machine-learning-interpretability\" rel=\"nofollow\"\u003egithub.com/jphall663/awesome-machine-learning-interpretability\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/jphall663/awesome-machine-learning-interpretability",
+      "url": "/github.com/jphall663/awesome-machine-learning-interpretability"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/dair-ai/ML-Papers-of-the-Week"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/dair-ai/ML-Papers-of-the-Week\" rel=\"nofollow\"\u003egithub.com/dair-ai/ML-Papers-of-the-Week\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/dair-ai/ML-Papers-of-the-Week",
+      "url": "/github.com/dair-ai/ML-Papers-of-the-Week"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/RUC-NLPIR/GenIR-Survey"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/RUC-NLPIR/GenIR-Survey\" rel=\"nofollow\"\u003egithub.com/RUC-NLPIR/GenIR-Survey\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/RUC-NLPIR/GenIR-Survey",
+      "url": "/github.com/RUC-NLPIR/GenIR-Survey"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/EthicalML/awesome-production-machine-learning"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/EthicalML/awesome-production-machine-learning\" rel=\"nofollow\"\u003egithub.com/EthicalML/awesome-production-machine-learning\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/EthicalML/awesome-production-machine-learning",
+      "url": "/github.com/EthicalML/awesome-production-machine-learning"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/MozerWang/Loong"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/MozerWang/Loong\" rel=\"nofollow\"\u003egithub.com/MozerWang/Loong\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/MozerWang/Loong",
+      "url": "/github.com/MozerWang/Loong"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/SAILResearch/awesome-foundation-model-leaderboards"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/SAILResearch/awesome-foundation-model-leaderboards\" rel=\"nofollow\"\u003egithub.com/SAILResearch/awesome-foundation-model-leaderboards\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/SAILResearch/awesome-foundation-model-leaderboards",
+      "url": "/github.com/SAILResearch/awesome-foundation-model-leaderboards"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/ThuCCSLab/JailbreakEval"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/ThuCCSLab/JailbreakEval\" rel=\"nofollow\"\u003egithub.com/ThuCCSLab/JailbreakEval\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/ThuCCSLab/JailbreakEval",
+      "url": "/github.com/ThuCCSLab/JailbreakEval"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/hollobit/GenAI_LLM_timeline"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/hollobit/GenAI_LLM_timeline\" rel=\"nofollow\"\u003egithub.com/hollobit/GenAI_LLM_timeline\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/hollobit/GenAI_LLM_timeline",
+      "url": "/github.com/hollobit/GenAI_LLM_timeline"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/wel3kxial/AIGC_Resources"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/wel3kxial/AIGC_Resources\" rel=\"nofollow\"\u003egithub.com/wel3kxial/AIGC_Resources\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/wel3kxial/AIGC_Resources",
+      "url": "/github.com/wel3kxial/AIGC_Resources"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Libr-AI/OpenRedTeaming"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Libr-AI/OpenRedTeaming\" rel=\"nofollow\"\u003egithub.com/Libr-AI/OpenRedTeaming\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Libr-AI/OpenRedTeaming",
+      "url": "/github.com/Libr-AI/OpenRedTeaming"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/aishwaryanr/awesome-generative-ai-guide"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/aishwaryanr/awesome-generative-ai-guide\" rel=\"nofollow\"\u003egithub.com/aishwaryanr/awesome-generative-ai-guide\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/aishwaryanr/awesome-generative-ai-guide",
+      "url": "/github.com/aishwaryanr/awesome-generative-ai-guide"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/MinghuiChen43/awesome-trustworthy-deep-learning"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/MinghuiChen43/awesome-trustworthy-deep-learning\" rel=\"nofollow\"\u003egithub.com/MinghuiChen43/awesome-trustworthy-deep-learning\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/MinghuiChen43/awesome-trustworthy-deep-learning",
+      "url": "/github.com/MinghuiChen43/awesome-trustworthy-deep-learning"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/lichao-sun/SoraReview"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/lichao-sun/SoraReview\" rel=\"nofollow\"\u003egithub.com/lichao-sun/SoraReview\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/lichao-sun/SoraReview",
+      "url": "/github.com/lichao-sun/SoraReview"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/PetroIvaniuk/llms-tools"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/PetroIvaniuk/llms-tools\" rel=\"nofollow\"\u003egithub.com/PetroIvaniuk/llms-tools\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/PetroIvaniuk/llms-tools",
+      "url": "/github.com/PetroIvaniuk/llms-tools"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/GAIR-NLP/OpenResearcher"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/GAIR-NLP/OpenResearcher\" rel=\"nofollow\"\u003egithub.com/GAIR-NLP/OpenResearcher\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/GAIR-NLP/OpenResearcher",
+      "url": "/github.com/GAIR-NLP/OpenResearcher"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Weixiang-Sun/Bora"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Weixiang-Sun/Bora\" rel=\"nofollow\"\u003egithub.com/Weixiang-Sun/Bora\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Weixiang-Sun/Bora",
+      "url": "/github.com/Weixiang-Sun/Bora"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/metame-ai/awesome-llm-plaza"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/metame-ai/awesome-llm-plaza\" rel=\"nofollow\"\u003egithub.com/metame-ai/awesome-llm-plaza\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/metame-ai/awesome-llm-plaza",
+      "url": "/github.com/metame-ai/awesome-llm-plaza"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/HowieHwong/TrustLLM"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/HowieHwong/TrustLLM\" rel=\"nofollow\"\u003egithub.com/HowieHwong/TrustLLM\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/HowieHwong/TrustLLM",
+      "url": "/github.com/HowieHwong/TrustLLM"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/ydyjya/Awesome-LLM-Safety"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/ydyjya/Awesome-LLM-Safety\" rel=\"nofollow\"\u003egithub.com/ydyjya/Awesome-LLM-Safety\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/ydyjya/Awesome-LLM-Safety",
+      "url": "/github.com/ydyjya/Awesome-LLM-Safety"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/onejune2018/Awesome-LLM-Eval"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/onejune2018/Awesome-LLM-Eval\" rel=\"nofollow\"\u003egithub.com/onejune2018/Awesome-LLM-Eval\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/onejune2018/Awesome-LLM-Eval",
+      "url": "/github.com/onejune2018/Awesome-LLM-Eval"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/alopatenko/LLMEvaluation"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/alopatenko/LLMEvaluation\" rel=\"nofollow\"\u003egithub.com/alopatenko/LLMEvaluation\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/alopatenko/LLMEvaluation",
+      "url": "/github.com/alopatenko/LLMEvaluation"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/prefix-dev/pixi"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/prefix-dev/pixi\" rel=\"nofollow\"\u003egithub.com/prefix-dev/pixi\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/prefix-dev/pixi",
+      "url": "/github.com/prefix-dev/pixi"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Lyken17/arXiv-stats"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Lyken17/arXiv-stats\" rel=\"nofollow\"\u003egithub.com/Lyken17/arXiv-stats\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Lyken17/arXiv-stats",
+      "url": "/github.com/Lyken17/arXiv-stats"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/qhduan/cn-chat-arxiv"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/qhduan/cn-chat-arxiv\" rel=\"nofollow\"\u003egithub.com/qhduan/cn-chat-arxiv\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/qhduan/cn-chat-arxiv",
+      "url": "/github.com/qhduan/cn-chat-arxiv"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/JiauZhang/tracking-arxiv"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/JiauZhang/tracking-arxiv\" rel=\"nofollow\"\u003egithub.com/JiauZhang/tracking-arxiv\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/JiauZhang/tracking-arxiv",
+      "url": "/github.com/JiauZhang/tracking-arxiv"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/deep-diver/hf-daily-paper-newsletter"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/deep-diver/hf-daily-paper-newsletter\" rel=\"nofollow\"\u003egithub.com/deep-diver/hf-daily-paper-newsletter\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/deep-diver/hf-daily-paper-newsletter",
+      "url": "/github.com/deep-diver/hf-daily-paper-newsletter"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/allenai/open-instruct"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/allenai/open-instruct\" rel=\"nofollow\"\u003egithub.com/allenai/open-instruct\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/allenai/open-instruct",
+      "url": "/github.com/allenai/open-instruct"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/ThuCCSLab/Awesome-LM-SSP"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/ThuCCSLab/Awesome-LM-SSP\" rel=\"nofollow\"\u003egithub.com/ThuCCSLab/Awesome-LM-SSP\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/ThuCCSLab/Awesome-LM-SSP",
+      "url": "/github.com/ThuCCSLab/Awesome-LM-SSP"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/feedarchive/libera-feedbot-live"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/feedarchive/libera-feedbot-live\" rel=\"nofollow\"\u003egithub.com/feedarchive/libera-feedbot-live\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/feedarchive/libera-feedbot-live",
+      "url": "/github.com/feedarchive/libera-feedbot-live"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Trustworthy-AI-Group/Adversarial_Examples_Papers"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Trustworthy-AI-Group/Adversarial_Examples_Papers\" rel=\"nofollow\"\u003egithub.com/Trustworthy-AI-Group/Adversarial_Examples_Papers\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Trustworthy-AI-Group/Adversarial_Examples_Papers",
+      "url": "/github.com/Trustworthy-AI-Group/Adversarial_Examples_Papers"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/csinva/csinva.github.io"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/csinva/csinva.github.io\" rel=\"nofollow\"\u003egithub.com/csinva/csinva.github.io\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/csinva/csinva.github.io",
+      "url": "/github.com/csinva/csinva.github.io"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/taesiri/ArXivQA"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/taesiri/ArXivQA\" rel=\"nofollow\"\u003egithub.com/taesiri/ArXivQA\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/taesiri/ArXivQA",
+      "url": "/github.com/taesiri/ArXivQA"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Yangyi-Chen/Multimodal-AND-Large-Language-Models"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Yangyi-Chen/Multimodal-AND-Large-Language-Models\" rel=\"nofollow\"\u003egithub.com/Yangyi-Chen/Multimodal-AND-Large-Language-Models\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Yangyi-Chen/Multimodal-AND-Large-Language-Models",
+      "url": "/github.com/Yangyi-Chen/Multimodal-AND-Large-Language-Models"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/kh-kim/arxiv-translator"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/kh-kim/arxiv-translator\" rel=\"nofollow\"\u003egithub.com/kh-kim/arxiv-translator\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/kh-kim/arxiv-translator",
+      "url": "/github.com/kh-kim/arxiv-translator"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/yogeshhk/Sarvadnya"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/yogeshhk/Sarvadnya\" rel=\"nofollow\"\u003egithub.com/yogeshhk/Sarvadnya\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/yogeshhk/Sarvadnya",
+      "url": "/github.com/yogeshhk/Sarvadnya"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/l-yohai/daily_papers_ko"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/l-yohai/daily_papers_ko\" rel=\"nofollow\"\u003egithub.com/l-yohai/daily_papers_ko\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/l-yohai/daily_papers_ko",
+      "url": "/github.com/l-yohai/daily_papers_ko"
+    }
+  ],
+  "LimitHit": false,
+  "Cloning": [],
+  "Missing": [],
+  "Timedout": [],
+  "ResultCount": 37,
+  "ElapsedMilliseconds": 3423,
+  "Alert": {
+    "Title": "",
+    "Description": "",
+    "ProposedQueries": null
+  }
+}

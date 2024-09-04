@@ -1,0 +1,510 @@
+{
+  "SourcegraphEndpoint": "https://sourcegraph.com",
+  "Query": "context:global \"prometheus-eval\" select:repo count:all",
+  "Site": {
+    "BuildVersion": "289780_2024-09-03_5.6-f216bc3dfea3"
+  },
+  "Results": [
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/run-llama/llama_index"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/run-llama/llama_index\" rel=\"nofollow\"\u003egithub.com/run-llama/llama_index\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/run-llama/llama_index",
+      "url": "/github.com/run-llama/llama_index"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/kitnil/notes"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/kitnil/notes\" rel=\"nofollow\"\u003egithub.com/kitnil/notes\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/kitnil/notes",
+      "url": "/github.com/kitnil/notes"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/EthicalML/awesome-production-machine-learning"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/EthicalML/awesome-production-machine-learning\" rel=\"nofollow\"\u003egithub.com/EthicalML/awesome-production-machine-learning\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/EthicalML/awesome-production-machine-learning",
+      "url": "/github.com/EthicalML/awesome-production-machine-learning"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/keptn/lifecycle-toolkit"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/keptn/lifecycle-toolkit\" rel=\"nofollow\"\u003egithub.com/keptn/lifecycle-toolkit\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/keptn/lifecycle-toolkit",
+      "url": "/github.com/keptn/lifecycle-toolkit"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/ictar/python-doc"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/ictar/python-doc\" rel=\"nofollow\"\u003egithub.com/ictar/python-doc\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/ictar/python-doc",
+      "url": "/github.com/ictar/python-doc"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/citadel-ai/langcheck"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/citadel-ai/langcheck\" rel=\"nofollow\"\u003egithub.com/citadel-ai/langcheck\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/citadel-ai/langcheck",
+      "url": "/github.com/citadel-ai/langcheck"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/xianshang33/llm-paper-daily"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/xianshang33/llm-paper-daily\" rel=\"nofollow\"\u003egithub.com/xianshang33/llm-paper-daily\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/xianshang33/llm-paper-daily",
+      "url": "/github.com/xianshang33/llm-paper-daily"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/argilla-io/distilabel"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/argilla-io/distilabel\" rel=\"nofollow\"\u003egithub.com/argilla-io/distilabel\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/argilla-io/distilabel",
+      "url": "/github.com/argilla-io/distilabel"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/stanford-oval/storm"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/stanford-oval/storm\" rel=\"nofollow\"\u003egithub.com/stanford-oval/storm\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/stanford-oval/storm",
+      "url": "/github.com/stanford-oval/storm"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Data-Provenance-Initiative/Data-Provenance-Collection"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Data-Provenance-Initiative/Data-Provenance-Collection\" rel=\"nofollow\"\u003egithub.com/Data-Provenance-Initiative/Data-Provenance-Collection\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Data-Provenance-Initiative/Data-Provenance-Collection",
+      "url": "/github.com/Data-Provenance-Initiative/Data-Provenance-Collection"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/metame-ai/awesome-llm-plaza"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/metame-ai/awesome-llm-plaza\" rel=\"nofollow\"\u003egithub.com/metame-ai/awesome-llm-plaza\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/metame-ai/awesome-llm-plaza",
+      "url": "/github.com/metame-ai/awesome-llm-plaza"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/deshwalmahesh/PHUDGE"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/deshwalmahesh/PHUDGE\" rel=\"nofollow\"\u003egithub.com/deshwalmahesh/PHUDGE\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/deshwalmahesh/PHUDGE",
+      "url": "/github.com/deshwalmahesh/PHUDGE"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/dylanhogg/awesome-python"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/dylanhogg/awesome-python\" rel=\"nofollow\"\u003egithub.com/dylanhogg/awesome-python\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/dylanhogg/awesome-python",
+      "url": "/github.com/dylanhogg/awesome-python"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/SAILResearch/awesome-foundation-model-leaderboards"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/SAILResearch/awesome-foundation-model-leaderboards\" rel=\"nofollow\"\u003egithub.com/SAILResearch/awesome-foundation-model-leaderboards\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/SAILResearch/awesome-foundation-model-leaderboards",
+      "url": "/github.com/SAILResearch/awesome-foundation-model-leaderboards"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/JohnSnowLabs/langtest"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/JohnSnowLabs/langtest\" rel=\"nofollow\"\u003egithub.com/JohnSnowLabs/langtest\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/JohnSnowLabs/langtest",
+      "url": "/github.com/JohnSnowLabs/langtest"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/huggingface/dataset-viewer"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/huggingface/dataset-viewer\" rel=\"nofollow\"\u003egithub.com/huggingface/dataset-viewer\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/huggingface/dataset-viewer",
+      "url": "/github.com/huggingface/dataset-viewer"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/bonfy/github-trending"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/bonfy/github-trending\" rel=\"nofollow\"\u003egithub.com/bonfy/github-trending\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/bonfy/github-trending",
+      "url": "/github.com/bonfy/github-trending"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/prometheus-eval/prometheus-eval"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/prometheus-eval/prometheus-eval\" rel=\"nofollow\"\u003egithub.com/prometheus-eval/prometheus-eval\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/prometheus-eval/prometheus-eval",
+      "url": "/github.com/prometheus-eval/prometheus-eval"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/instructlab/instructlab"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/instructlab/instructlab\" rel=\"nofollow\"\u003egithub.com/instructlab/instructlab\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/instructlab/instructlab",
+      "url": "/github.com/instructlab/instructlab"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/huggingface/hub-docs"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/huggingface/hub-docs\" rel=\"nofollow\"\u003egithub.com/huggingface/hub-docs\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/huggingface/hub-docs",
+      "url": "/github.com/huggingface/hub-docs"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/yangwenmai/github-trending-backup"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/yangwenmai/github-trending-backup\" rel=\"nofollow\"\u003egithub.com/yangwenmai/github-trending-backup\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/yangwenmai/github-trending-backup",
+      "url": "/github.com/yangwenmai/github-trending-backup"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/deepset-ai/haystack-cookbook"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/deepset-ai/haystack-cookbook\" rel=\"nofollow\"\u003egithub.com/deepset-ai/haystack-cookbook\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/deepset-ai/haystack-cookbook",
+      "url": "/github.com/deepset-ai/haystack-cookbook"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/allenai/reward-bench"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/allenai/reward-bench\" rel=\"nofollow\"\u003egithub.com/allenai/reward-bench\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/allenai/reward-bench",
+      "url": "/github.com/allenai/reward-bench"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/deep-diver/hf-daily-paper-newsletter"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/deep-diver/hf-daily-paper-newsletter\" rel=\"nofollow\"\u003egithub.com/deep-diver/hf-daily-paper-newsletter\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/deep-diver/hf-daily-paper-newsletter",
+      "url": "/github.com/deep-diver/hf-daily-paper-newsletter"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/go2coding/go2coding.github.io"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/go2coding/go2coding.github.io\" rel=\"nofollow\"\u003egithub.com/go2coding/go2coding.github.io\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/go2coding/go2coding.github.io",
+      "url": "/github.com/go2coding/go2coding.github.io"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/koaning/arxiv-frontpage"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/koaning/arxiv-frontpage\" rel=\"nofollow\"\u003egithub.com/koaning/arxiv-frontpage\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/koaning/arxiv-frontpage",
+      "url": "/github.com/koaning/arxiv-frontpage"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/larsbijl/trending_archive"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/larsbijl/trending_archive\" rel=\"nofollow\"\u003egithub.com/larsbijl/trending_archive\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/larsbijl/trending_archive",
+      "url": "/github.com/larsbijl/trending_archive"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/aneasystone/github-trending"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/aneasystone/github-trending\" rel=\"nofollow\"\u003egithub.com/aneasystone/github-trending\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/aneasystone/github-trending",
+      "url": "/github.com/aneasystone/github-trending"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/henson/Scraper"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/henson/Scraper\" rel=\"nofollow\"\u003egithub.com/henson/Scraper\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/henson/Scraper",
+      "url": "/github.com/henson/Scraper"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/feedarchive/libera-feedbot-live"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/feedarchive/libera-feedbot-live\" rel=\"nofollow\"\u003egithub.com/feedarchive/libera-feedbot-live\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/feedarchive/libera-feedbot-live",
+      "url": "/github.com/feedarchive/libera-feedbot-live"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/AthenaCore/AwesomeResponsibleAI"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/AthenaCore/AwesomeResponsibleAI\" rel=\"nofollow\"\u003egithub.com/AthenaCore/AwesomeResponsibleAI\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/AthenaCore/AwesomeResponsibleAI",
+      "url": "/github.com/AthenaCore/AwesomeResponsibleAI"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/AntonioGr7/pratical-llms"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/AntonioGr7/pratical-llms\" rel=\"nofollow\"\u003egithub.com/AntonioGr7/pratical-llms\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/AntonioGr7/pratical-llms",
+      "url": "/github.com/AntonioGr7/pratical-llms"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/l-yohai/daily_papers_ko"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/l-yohai/daily_papers_ko\" rel=\"nofollow\"\u003egithub.com/l-yohai/daily_papers_ko\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/l-yohai/daily_papers_ko",
+      "url": "/github.com/l-yohai/daily_papers_ko"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/prometheus-eval/prometheus"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/prometheus-eval/prometheus\" rel=\"nofollow\"\u003egithub.com/prometheus-eval/prometheus\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/prometheus-eval/prometheus",
+      "url": "/github.com/prometheus-eval/prometheus"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/prometheus-eval/prometheus-vision"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/prometheus-eval/prometheus-vision\" rel=\"nofollow\"\u003egithub.com/prometheus-eval/prometheus-vision\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/prometheus-eval/prometheus-vision",
+      "url": "/github.com/prometheus-eval/prometheus-vision"
+    }
+  ],
+  "LimitHit": false,
+  "Cloning": [],
+  "Missing": [],
+  "Timedout": [],
+  "ResultCount": 35,
+  "ElapsedMilliseconds": 13788,
+  "Alert": {
+    "Title": "",
+    "Description": "",
+    "ProposedQueries": null
+  }
+}

@@ -1,0 +1,981 @@
+{
+    "all_public_dependent_repos": [
+        {
+            "name": "16625131113/unilt",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/80801711?s=40&v=4",
+            "owner": "16625131113",
+            "repo_name": "unilt"
+        },
+        {
+            "name": "4trisidoan/LLMOps",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/171975785?s=40&v=4",
+            "owner": "4trisidoan",
+            "repo_name": "LLMOps"
+        },
+        {
+            "name": "AIR-Bench/AIR-Bench",
+            "stars": 95,
+            "img": "https://avatars.githubusercontent.com/u/168951412?s=40&v=4",
+            "owner": "AIR-Bench",
+            "repo_name": "AIR-Bench"
+        },
+        {
+            "name": "AnqiGou/TextDiffuser",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/161190053?s=40&v=4",
+            "owner": "AnqiGou",
+            "repo_name": "TextDiffuser"
+        },
+        {
+            "name": "Athe-kunal/COLPALI-SEC-Filings",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/40949756?s=40&v=4",
+            "owner": "Athe-kunal",
+            "repo_name": "COLPALI-SEC-Filings"
+        },
+        {
+            "name": "Avditvs/matryoshka_factory",
+            "stars": 1,
+            "img": "https://avatars.githubusercontent.com/u/32792728?s=40&v=4",
+            "owner": "Avditvs",
+            "repo_name": "matryoshka_factory"
+        },
+        {
+            "name": "Azure/azureml-assets",
+            "stars": 58,
+            "img": "https://avatars.githubusercontent.com/u/6844498?s=40&v=4",
+            "owner": "Azure",
+            "repo_name": "azureml-assets"
+        },
+        {
+            "name": "BlackPearl-Lab/KddCup-2024-OAG-Challenge-1st-Solutions",
+            "stars": 92,
+            "img": "https://avatars.githubusercontent.com/u/172470581?s=40&v=4",
+            "owner": "BlackPearl-Lab",
+            "repo_name": "KddCup-2024-OAG-Challenge-1st-Solutions"
+        },
+        {
+            "name": "ClimSocAna/tecb-de",
+            "stars": 13,
+            "img": "https://avatars.githubusercontent.com/u/116710539?s=40&v=4",
+            "owner": "ClimSocAna",
+            "repo_name": "tecb-de"
+        },
+        {
+            "name": "ContextualAI/gritlm",
+            "stars": 517,
+            "img": "https://avatars.githubusercontent.com/u/127712327?s=40&v=4",
+            "owner": "ContextualAI",
+            "repo_name": "gritlm"
+        },
+        {
+            "name": "DataLama/ko-mteb",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/38907104?s=40&v=4",
+            "owner": "DataLama",
+            "repo_name": "ko-mteb"
+        },
+        {
+            "name": "DeployQL/retri-evals",
+            "stars": 9,
+            "img": "https://avatars.githubusercontent.com/u/83149788?s=40&v=4",
+            "owner": "DeployQL",
+            "repo_name": "retri-evals"
+        },
+        {
+            "name": "Ditto190/ModMe-Docs-template",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/110319982?s=40&v=4",
+            "owner": "Ditto190",
+            "repo_name": "ModMe-Docs-template"
+        },
+        {
+            "name": "EC3-Gang/code-llm-pretraining",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/99949920?s=40&v=4",
+            "owner": "EC3-Gang",
+            "repo_name": "code-llm-pretraining"
+        },
+        {
+            "name": "Ecliptor-AI/chroma-adapter",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/156022103?s=40&v=4",
+            "owner": "Ecliptor-AI",
+            "repo_name": "chroma-adapter"
+        },
+        {
+            "name": "FlagOpen/FlagEmbedding",
+            "stars": 6663,
+            "img": "https://avatars.githubusercontent.com/u/114467038?s=40&v=4",
+            "owner": "FlagOpen",
+            "repo_name": "FlagEmbedding"
+        },
+        {
+            "name": "Fohlen/fohlen.github.io",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/3730888?s=40&v=4",
+            "owner": "Fohlen",
+            "repo_name": "fohlen.github.io"
+        },
+        {
+            "name": "Hekang001/MSSE",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/51743820?s=40&v=4",
+            "owner": "Hekang001",
+            "repo_name": "MSSE"
+        },
+        {
+            "name": "Iambestfeed/V-MTEB",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/95571916?s=40&v=4",
+            "owner": "Iambestfeed",
+            "repo_name": "V-MTEB"
+        },
+        {
+            "name": "IntelLabs/fastRAG",
+            "stars": 1243,
+            "img": "https://avatars.githubusercontent.com/u/1492758?s=40&v=4",
+            "owner": "IntelLabs",
+            "repo_name": "fastRAG"
+        },
+        {
+            "name": "Isaac009/langchain-apps",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/17350980?s=40&v=4",
+            "owner": "Isaac009",
+            "repo_name": "langchain-apps"
+        },
+        {
+            "name": "JeffUlan/PaddleNLP",
+            "stars": 1,
+            "img": "https://avatars.githubusercontent.com/u/142251390?s=40&v=4",
+            "owner": "JeffUlan",
+            "repo_name": "PaddleNLP"
+        },
+        {
+            "name": "JiH00nKw0n/multimodal",
+            "stars": 1,
+            "img": "https://avatars.githubusercontent.com/u/88203313?s=40&v=4",
+            "owner": "JiH00nKw0n",
+            "repo_name": "multimodal"
+        },
+        {
+            "name": "KennethEnevoldsen/scandinavian-embedding-benchmark",
+            "stars": 26,
+            "img": "https://avatars.githubusercontent.com/u/23721977?s=40&v=4",
+            "owner": "KennethEnevoldsen",
+            "repo_name": "scandinavian-embedding-benchmark"
+        },
+        {
+            "name": "KingJupyter/Fast-Rag",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/177731046?s=40&v=4",
+            "owner": "KingJupyter",
+            "repo_name": "Fast-Rag"
+        },
+        {
+            "name": "LSX-UniWue/SuperGLEBer",
+            "stars": 6,
+            "img": "https://avatars.githubusercontent.com/u/99649303?s=40&v=4",
+            "owner": "LSX-UniWue",
+            "repo_name": "SuperGLEBer"
+        },
+        {
+            "name": "LawrenceGao0224/langchain-tutorial",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/23610323?s=40&v=4",
+            "owner": "LawrenceGao0224",
+            "repo_name": "langchain-tutorial"
+        },
+        {
+            "name": "LazarusNLP/indonesian-sentence-embeddings",
+            "stars": 12,
+            "img": "https://avatars.githubusercontent.com/u/131739328?s=40&v=4",
+            "owner": "LazarusNLP",
+            "repo_name": "indonesian-sentence-embeddings"
+        },
+        {
+            "name": "LeeSureman/E5-Retrieval-Reproduction",
+            "stars": 5,
+            "img": "https://avatars.githubusercontent.com/u/32452367?s=40&v=4",
+            "owner": "LeeSureman",
+            "repo_name": "E5-Retrieval-Reproduction"
+        },
+        {
+            "name": "LeonGuertler/SuperTinyLanguageModels",
+            "stars": 4,
+            "img": "https://avatars.githubusercontent.com/u/45076562?s=40&v=4",
+            "owner": "LeonGuertler",
+            "repo_name": "SuperTinyLanguageModels"
+        },
+        {
+            "name": "Lewington-pitsos/mteb-sae",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/24558325?s=40&v=4",
+            "owner": "Lewington-pitsos",
+            "repo_name": "mteb-sae"
+        },
+        {
+            "name": "Li-Z-Q/URL",
+            "stars": 1,
+            "img": "https://avatars.githubusercontent.com/u/64075879?s=40&v=4",
+            "owner": "Li-Z-Q",
+            "repo_name": "URL"
+        },
+        {
+            "name": "Lyn4ever29/pipy_server",
+            "stars": 3,
+            "img": "https://avatars.githubusercontent.com/u/25952589?s=40&v=4",
+            "owner": "Lyn4ever29",
+            "repo_name": "pipy_server"
+        },
+        {
+            "name": "Lyon-NLP/mtebscripts",
+            "stars": 3,
+            "img": "https://avatars.githubusercontent.com/u/149769355?s=40&v=4",
+            "owner": "Lyon-NLP",
+            "repo_name": "mtebscripts"
+        },
+        {
+            "name": "MTJS-lf/AI-LLM",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/17454309?s=40&v=4",
+            "owner": "MTJS-lf",
+            "repo_name": "AI-LLM"
+        },
+        {
+            "name": "Maham-Mukaram/Evaluate-Embeddings",
+            "stars": 2,
+            "img": "https://avatars.githubusercontent.com/u/153240229?s=40&v=4",
+            "owner": "Maham-Mukaram",
+            "repo_name": "Evaluate-Embeddings"
+        },
+        {
+            "name": "Maham-Mukaram/Query-Expansion",
+            "stars": 2,
+            "img": "https://avatars.githubusercontent.com/u/153240229?s=40&v=4",
+            "owner": "Maham-Mukaram",
+            "repo_name": "Query-Expansion"
+        },
+        {
+            "name": "Netflix/clove",
+            "stars": 12,
+            "img": "https://avatars.githubusercontent.com/u/913567?s=40&v=4",
+            "owner": "Netflix",
+            "repo_name": "clove"
+        },
+        {
+            "name": "NikkiSarah/Courses-Projects-Current",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/81358254?s=40&v=4",
+            "owner": "NikkiSarah",
+            "repo_name": "Courses-Projects-Current"
+        },
+        {
+            "name": "PaddlePaddle/PaddleNLP",
+            "stars": 11923,
+            "img": "https://avatars.githubusercontent.com/u/23534030?s=40&v=4",
+            "owner": "PaddlePaddle",
+            "repo_name": "PaddleNLP"
+        },
+        {
+            "name": "Qihoo360/360zhinao",
+            "stars": 274,
+            "img": "https://avatars.githubusercontent.com/u/4082929?s=40&v=4",
+            "owner": "Qihoo360",
+            "repo_name": "360zhinao"
+        },
+        {
+            "name": "SCULX/InstructorEmbedding",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/75171632?s=40&v=4",
+            "owner": "SCULX",
+            "repo_name": "InstructorEmbedding"
+        },
+        {
+            "name": "ScorpionBytes/PaddleNLP",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/74422092?s=40&v=4",
+            "owner": "ScorpionBytes",
+            "repo_name": "PaddleNLP"
+        },
+        {
+            "name": "SonishMaharjanfuse/unilm2_for_self_training",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/141208885?s=40&v=4",
+            "owner": "SonishMaharjanfuse",
+            "repo_name": "unilm2_for_self_training"
+        },
+        {
+            "name": "TankNee/Tool-ChatGPT",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/43956168?s=40&v=4",
+            "owner": "TankNee",
+            "repo_name": "Tool-ChatGPT"
+        },
+        {
+            "name": "Tonygemini/PaddleNLP",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/48903722?s=40&v=4",
+            "owner": "Tonygemini",
+            "repo_name": "PaddleNLP"
+        },
+        {
+            "name": "UnableToUseGit/Transfer",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/104746935?s=40&v=4",
+            "owner": "UnableToUseGit",
+            "repo_name": "Transfer"
+        },
+        {
+            "name": "VikhrModels/Vikhr4o",
+            "stars": 2,
+            "img": "https://avatars.githubusercontent.com/u/168930819?s=40&v=4",
+            "owner": "VikhrModels",
+            "repo_name": "Vikhr4o"
+        },
+        {
+            "name": "WillPowellUk/MatryoshkaAdaptor",
+            "stars": 1,
+            "img": "https://avatars.githubusercontent.com/u/64581094?s=40&v=4",
+            "owner": "WillPowellUk",
+            "repo_name": "MatryoshkaAdaptor"
+        },
+        {
+            "name": "YAI12xLinq-B/IMASCL",
+            "stars": 2,
+            "img": "https://avatars.githubusercontent.com/u/146710026?s=40&v=4",
+            "owner": "YAI12xLinq-B",
+            "repo_name": "IMASCL"
+        },
+        {
+            "name": "abderrahmanskiredj/Arabic_Text_Embedding",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/38409195?s=40&v=4",
+            "owner": "abderrahmanskiredj",
+            "repo_name": "Arabic_Text_Embedding"
+        },
+        {
+            "name": "abdulrahman305/intel-extension-for-transformers",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/131770526?s=40&v=4",
+            "owner": "abdulrahman305",
+            "repo_name": "intel-extension-for-transformers"
+        },
+        {
+            "name": "akshita-sukhlecha/bhasha-embed",
+            "stars": 8,
+            "img": "https://avatars.githubusercontent.com/u/3935105?s=40&v=4",
+            "owner": "akshita-sukhlecha",
+            "repo_name": "bhasha-embed"
+        },
+        {
+            "name": "alextanhongpin/python-fastembed",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/6033638?s=40&v=4",
+            "owner": "alextanhongpin",
+            "repo_name": "python-fastembed"
+        },
+        {
+            "name": "aliang19117910/langchain-tutorials",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/5936375?s=40&v=4",
+            "owner": "aliang19117910",
+            "repo_name": "langchain-tutorials"
+        },
+        {
+            "name": "aliuta81/Test-microsoft",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/121985608?s=40&v=4",
+            "owner": "aliuta81",
+            "repo_name": "Test-microsoft"
+        },
+        {
+            "name": "allenx6032/vscode_cpp_project",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/180136282?s=40&v=4",
+            "owner": "allenx6032",
+            "repo_name": "vscode_cpp_project"
+        },
+        {
+            "name": "andersonbcdefg/embedding-laser",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/17210823?s=40&v=4",
+            "owner": "andersonbcdefg",
+            "repo_name": "embedding-laser"
+        },
+        {
+            "name": "anukchat/anukchat.github.io",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/12553211?s=40&v=4",
+            "owner": "anukchat",
+            "repo_name": "anukchat.github.io"
+        },
+        {
+            "name": "asparius/UNSEE",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/72755761?s=40&v=4",
+            "owner": "asparius",
+            "repo_name": "UNSEE"
+        },
+        {
+            "name": "augcog/tai",
+            "stars": 9,
+            "img": "https://avatars.githubusercontent.com/u/25936939?s=40&v=4",
+            "owner": "augcog",
+            "repo_name": "tai"
+        },
+        {
+            "name": "azhar0100/unilm",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/11255272?s=40&v=4",
+            "owner": "azhar0100",
+            "repo_name": "unilm"
+        },
+        {
+            "name": "barteksad/ILKT",
+            "stars": 1,
+            "img": "https://avatars.githubusercontent.com/u/51972858?s=40&v=4",
+            "owner": "barteksad",
+            "repo_name": "ILKT"
+        },
+        {
+            "name": "benchsci/unilm",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/20540087?s=40&v=4",
+            "owner": "benchsci",
+            "repo_name": "unilm"
+        },
+        {
+            "name": "bigcode-project/bigcode-encoder",
+            "stars": 29,
+            "img": "https://avatars.githubusercontent.com/u/110470554?s=40&v=4",
+            "owner": "bigcode-project",
+            "repo_name": "bigcode-encoder"
+        },
+        {
+            "name": "briancabbott/ChatNow",
+            "stars": 8,
+            "img": "https://avatars.githubusercontent.com/u/2147648?s=40&v=4",
+            "owner": "briancabbott",
+            "repo_name": "ChatNow"
+        },
+        {
+            "name": "buhtig-lxz/bi-cse",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/64425490?s=40&v=4",
+            "owner": "buhtig-lxz",
+            "repo_name": "bi-cse"
+        },
+        {
+            "name": "ceia-memoreba/mteb_memoreba",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/159180151?s=40&v=4",
+            "owner": "ceia-memoreba",
+            "repo_name": "mteb_memoreba"
+        },
+        {
+            "name": "dorogit/inteLearn_ML",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/84321539?s=40&v=4",
+            "owner": "dorogit",
+            "repo_name": "inteLearn_ML"
+        },
+        {
+            "name": "dwzhu-pku/LongEmbed",
+            "stars": 108,
+            "img": "https://avatars.githubusercontent.com/u/52273452?s=40&v=4",
+            "owner": "dwzhu-pku",
+            "repo_name": "LongEmbed"
+        },
+        {
+            "name": "fork-the-planet/unilm",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/179139331?s=40&v=4",
+            "owner": "fork-the-planet",
+            "repo_name": "unilm"
+        },
+        {
+            "name": "geistblitz/embedding",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/154528091?s=40&v=4",
+            "owner": "geistblitz",
+            "repo_name": "embedding"
+        },
+        {
+            "name": "gimletlabs/unilm",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/144263708?s=40&v=4",
+            "owner": "gimletlabs",
+            "repo_name": "unilm"
+        },
+        {
+            "name": "gkamradt/langchain-tutorials",
+            "stars": 6623,
+            "img": "https://avatars.githubusercontent.com/u/9809213?s=40&v=4",
+            "owner": "gkamradt",
+            "repo_name": "langchain-tutorials"
+        },
+        {
+            "name": "gosshhh/NeuralChat",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/161425022?s=40&v=4",
+            "owner": "gosshhh",
+            "repo_name": "NeuralChat"
+        },
+        {
+            "name": "greenlet/mllm",
+            "stars": 1,
+            "img": "https://avatars.githubusercontent.com/u/7186531?s=40&v=4",
+            "owner": "greenlet",
+            "repo_name": "mllm"
+        },
+        {
+            "name": "haf-rm-anonymized/Code-for-HAF-RM",
+            "stars": 1,
+            "img": "https://avatars.githubusercontent.com/u/172966954?s=40&v=4",
+            "owner": "haf-rm-anonymized",
+            "repo_name": "Code-for-HAF-RM"
+        },
+        {
+            "name": "haisonle001/V-MTEB",
+            "stars": 2,
+            "img": "https://avatars.githubusercontent.com/u/81098528?s=40&v=4",
+            "owner": "haisonle001",
+            "repo_name": "V-MTEB"
+        },
+        {
+            "name": "herocharge/Bertoid",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/66515741?s=40&v=4",
+            "owner": "herocharge",
+            "repo_name": "Bertoid"
+        },
+        {
+            "name": "hffei/bge-m3-api",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/25144604?s=40&v=4",
+            "owner": "hffei",
+            "repo_name": "bge-m3-api"
+        },
+        {
+            "name": "hieum98/lusifer",
+            "stars": 1,
+            "img": "https://avatars.githubusercontent.com/u/159061329?s=40&v=4",
+            "owner": "hieum98",
+            "repo_name": "lusifer"
+        },
+        {
+            "name": "hppRC/prompteol",
+            "stars": 3,
+            "img": "https://avatars.githubusercontent.com/u/48990104?s=40&v=4",
+            "owner": "hppRC",
+            "repo_name": "prompteol"
+        },
+        {
+            "name": "hppRC/simple-simcse-ja",
+            "stars": 60,
+            "img": "https://avatars.githubusercontent.com/u/48990104?s=40&v=4",
+            "owner": "hppRC",
+            "repo_name": "simple-simcse-ja"
+        },
+        {
+            "name": "hyt27/My_LLM_Try",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/74773913?s=40&v=4",
+            "owner": "hyt27",
+            "repo_name": "My_LLM_Try"
+        },
+        {
+            "name": "illuin-tech/colpali",
+            "stars": 318,
+            "img": "https://avatars.githubusercontent.com/u/26204301?s=40&v=4",
+            "owner": "illuin-tech",
+            "repo_name": "colpali"
+        },
+        {
+            "name": "illuin-tech/vidore-benchmark",
+            "stars": 77,
+            "img": "https://avatars.githubusercontent.com/u/26204301?s=40&v=4",
+            "owner": "illuin-tech",
+            "repo_name": "vidore-benchmark"
+        },
+        {
+            "name": "intel/intel-extension-for-transformers",
+            "stars": 2102,
+            "img": "https://avatars.githubusercontent.com/u/17888862?s=40&v=4",
+            "owner": "intel",
+            "repo_name": "intel-extension-for-transformers"
+        },
+        {
+            "name": "jmsalvador2395/notebooks",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/10580384?s=40&v=4",
+            "owner": "jmsalvador2395",
+            "repo_name": "notebooks"
+        },
+        {
+            "name": "juny116/lm_retrieve",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/30280110?s=40&v=4",
+            "owner": "juny116",
+            "repo_name": "lm_retrieve"
+        },
+        {
+            "name": "jzhoubu/vsearch",
+            "stars": 42,
+            "img": "https://avatars.githubusercontent.com/u/20299401?s=40&v=4",
+            "owner": "jzhoubu",
+            "repo_name": "vsearch"
+        },
+        {
+            "name": "kyegomez/EXA-1",
+            "stars": 42,
+            "img": "https://avatars.githubusercontent.com/u/98760976?s=40&v=4",
+            "owner": "kyegomez",
+            "repo_name": "EXA-1"
+        },
+        {
+            "name": "kyegomez/Finetuning-Suite",
+            "stars": 56,
+            "img": "https://avatars.githubusercontent.com/u/98760976?s=40&v=4",
+            "owner": "kyegomez",
+            "repo_name": "Finetuning-Suite"
+        },
+        {
+            "name": "lemoneresearch/tax-retrieval-benchmark",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/148810655?s=40&v=4",
+            "owner": "lemoneresearch",
+            "repo_name": "tax-retrieval-benchmark"
+        },
+        {
+            "name": "linyubupa/llm_code",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/20812813?s=40&v=4",
+            "owner": "linyubupa",
+            "repo_name": "llm_code"
+        },
+        {
+            "name": "louisbrulenaudet/tax-retrieval-benchmark",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/35007448?s=40&v=4",
+            "owner": "louisbrulenaudet",
+            "repo_name": "tax-retrieval-benchmark"
+        },
+        {
+            "name": "lyxx3rd/RAG_Insurance",
+            "stars": 4,
+            "img": "https://avatars.githubusercontent.com/u/57713720?s=40&v=4",
+            "owner": "lyxx3rd",
+            "repo_name": "RAG_Insurance"
+        },
+        {
+            "name": "mNemlaghi/cloud-embeddings",
+            "stars": 1,
+            "img": "https://avatars.githubusercontent.com/u/12110853?s=40&v=4",
+            "owner": "mNemlaghi",
+            "repo_name": "cloud-embeddings"
+        },
+        {
+            "name": "manubhat97/RETnet",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/20859249?s=40&v=4",
+            "owner": "manubhat97",
+            "repo_name": "RETnet"
+        },
+        {
+            "name": "microsoft/unilm",
+            "stars": 19470,
+            "img": "https://avatars.githubusercontent.com/u/6154722?s=40&v=4",
+            "owner": "microsoft",
+            "repo_name": "unilm"
+        },
+        {
+            "name": "milosz-l/RAG-embeddings-comparison",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/102900861?s=40&v=4",
+            "owner": "milosz-l",
+            "repo_name": "RAG-embeddings-comparison"
+        },
+        {
+            "name": "muzzaleeni/gourmenta-ai",
+            "stars": 1,
+            "img": "https://avatars.githubusercontent.com/u/70795277?s=40&v=4",
+            "owner": "muzzaleeni",
+            "repo_name": "gourmenta-ai"
+        },
+        {
+            "name": "netease-youdao/BCEmbedding",
+            "stars": 1344,
+            "img": "https://avatars.githubusercontent.com/u/3909232?s=40&v=4",
+            "owner": "netease-youdao",
+            "repo_name": "BCEmbedding"
+        },
+        {
+            "name": "nixiesearch/nixietune",
+            "stars": 6,
+            "img": "https://avatars.githubusercontent.com/u/139566121?s=40&v=4",
+            "owner": "nixiesearch",
+            "repo_name": "nixietune"
+        },
+        {
+            "name": "nlp-uoregon/ullme",
+            "stars": 11,
+            "img": "https://avatars.githubusercontent.com/u/77172873?s=40&v=4",
+            "owner": "nlp-uoregon",
+            "repo_name": "ullme"
+        },
+        {
+            "name": "nomic-ai/contrastors",
+            "stars": 498,
+            "img": "https://avatars.githubusercontent.com/u/102670180?s=40&v=4",
+            "owner": "nomic-ai",
+            "repo_name": "contrastors"
+        },
+        {
+            "name": "notvicent3/unilm",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/132854638?s=40&v=4",
+            "owner": "notvicent3",
+            "repo_name": "unilm"
+        },
+        {
+            "name": "nulib/genai4lib-workshop",
+            "stars": 3,
+            "img": "https://avatars.githubusercontent.com/u/1591058?s=40&v=4",
+            "owner": "nulib",
+            "repo_name": "genai4lib-workshop"
+        },
+        {
+            "name": "orgTestCodacy11KRepos110MB/repo-1016-unilm",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/123936962?s=40&v=4",
+            "owner": "orgTestCodacy11KRepos110MB",
+            "repo_name": "repo-1016-unilm"
+        },
+        {
+            "name": "orionw/FollowIR",
+            "stars": 37,
+            "img": "https://avatars.githubusercontent.com/u/31665361?s=40&v=4",
+            "owner": "orionw",
+            "repo_name": "FollowIR"
+        },
+        {
+            "name": "orionw/mteb-lite",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/31665361?s=40&v=4",
+            "owner": "orionw",
+            "repo_name": "mteb-lite"
+        },
+        {
+            "name": "passionate11/easy_rag",
+            "stars": 1,
+            "img": "https://avatars.githubusercontent.com/u/65880427?s=40&v=4",
+            "owner": "passionate11",
+            "repo_name": "easy_rag"
+        },
+        {
+            "name": "philschmid/aws-bedrock-titan-mteb",
+            "stars": 4,
+            "img": "https://avatars.githubusercontent.com/u/32632186?s=40&v=4",
+            "owner": "philschmid",
+            "repo_name": "aws-bedrock-titan-mteb"
+        },
+        {
+            "name": "pzal/mim-nlp-project",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/33444111?s=40&v=4",
+            "owner": "pzal",
+            "repo_name": "mim-nlp-project"
+        },
+        {
+            "name": "rafalposwiata/pl-mteb",
+            "stars": 7,
+            "img": "https://avatars.githubusercontent.com/u/22004654?s=40&v=4",
+            "owner": "rafalposwiata",
+            "repo_name": "pl-mteb"
+        },
+        {
+            "name": "ramamimu/langchain-chatbot",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/81814981?s=40&v=4",
+            "owner": "ramamimu",
+            "repo_name": "langchain-chatbot"
+        },
+        {
+            "name": "rubra-ai/rubra-embed-benchmark",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/149758112?s=40&v=4",
+            "owner": "rubra-ai",
+            "repo_name": "rubra-embed-benchmark"
+        },
+        {
+            "name": "salesforce/AugTriever",
+            "stars": 2,
+            "img": "https://avatars.githubusercontent.com/u/453694?s=40&v=4",
+            "owner": "salesforce",
+            "repo_name": "AugTriever"
+        },
+        {
+            "name": "sandutsar/unilm",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/76633456?s=40&v=4",
+            "owner": "sandutsar",
+            "repo_name": "unilm"
+        },
+        {
+            "name": "sarvex/intel-extension-for-transformers",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/1885938?s=40&v=4",
+            "owner": "sarvex",
+            "repo_name": "intel-extension-for-transformers"
+        },
+        {
+            "name": "sarvex/unilm",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/1885938?s=40&v=4",
+            "owner": "sarvex",
+            "repo_name": "unilm"
+        },
+        {
+            "name": "seniordev102855/PaddleNLP",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/146360742?s=40&v=4",
+            "owner": "seniordev102855",
+            "repo_name": "PaddleNLP"
+        },
+        {
+            "name": "shubhampundhir/BEiT_ViT",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/56575094?s=40&v=4",
+            "owner": "shubhampundhir",
+            "repo_name": "BEiT_ViT"
+        },
+        {
+            "name": "skeskinen/bert.cpp",
+            "stars": 459,
+            "img": "https://avatars.githubusercontent.com/u/908332?s=40&v=4",
+            "owner": "skeskinen",
+            "repo_name": "bert.cpp"
+        },
+        {
+            "name": "stanbar/objectivepersonality.ai",
+            "stars": 1,
+            "img": "https://avatars.githubusercontent.com/u/9407590?s=40&v=4",
+            "owner": "stanbar",
+            "repo_name": "objectivepersonality.ai"
+        },
+        {
+            "name": "stanleylsx/text_embedding",
+            "stars": 16,
+            "img": "https://avatars.githubusercontent.com/u/9429671?s=40&v=4",
+            "owner": "stanleylsx",
+            "repo_name": "text_embedding"
+        },
+        {
+            "name": "sumonst21/unilm",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/7096865?s=40&v=4",
+            "owner": "sumonst21",
+            "repo_name": "unilm"
+        },
+        {
+            "name": "swe-train/paddlepaddle__paddlenlp",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/170354954?s=40&v=4",
+            "owner": "swe-train",
+            "repo_name": "paddlepaddle__paddlenlp"
+        },
+        {
+            "name": "syshin0116/Study",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/99532836?s=40&v=4",
+            "owner": "syshin0116",
+            "repo_name": "Study"
+        },
+        {
+            "name": "tbressers/bitnet2",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/252114?s=40&v=4",
+            "owner": "tbressers",
+            "repo_name": "bitnet2"
+        },
+        {
+            "name": "tmaregge/unilm",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/29739793?s=40&v=4",
+            "owner": "tmaregge",
+            "repo_name": "unilm"
+        },
+        {
+            "name": "tristanratz/ITRF",
+            "stars": 1,
+            "img": "https://avatars.githubusercontent.com/u/9249847?s=40&v=4",
+            "owner": "tristanratz",
+            "repo_name": "ITRF"
+        },
+        {
+            "name": "ttuleyb/FlagEmbeddingForked",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/74624982?s=40&v=4",
+            "owner": "ttuleyb",
+            "repo_name": "FlagEmbeddingForked"
+        },
+        {
+            "name": "w5688414/generative-search",
+            "stars": 2,
+            "img": "https://avatars.githubusercontent.com/u/12107462?s=40&v=4",
+            "owner": "w5688414",
+            "repo_name": "generative-search"
+        },
+        {
+            "name": "wangyuxinwhy/uniem",
+            "stars": 811,
+            "img": "https://avatars.githubusercontent.com/u/22192665?s=40&v=4",
+            "owner": "wangyuxinwhy",
+            "repo_name": "uniem"
+        },
+        {
+            "name": "wlinds/ITHS-AI22-ML",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/41084946?s=40&v=4",
+            "owner": "wlinds",
+            "repo_name": "ITHS-AI22-ML"
+        },
+        {
+            "name": "worldbank/GISTEmbed",
+            "stars": 29,
+            "img": "https://avatars.githubusercontent.com/u/6454132?s=40&v=4",
+            "owner": "worldbank",
+            "repo_name": "GISTEmbed"
+        },
+        {
+            "name": "xinghaow99/DenoSent",
+            "stars": 14,
+            "img": "https://avatars.githubusercontent.com/u/50691954?s=40&v=4",
+            "owner": "xinghaow99",
+            "repo_name": "DenoSent"
+        },
+        {
+            "name": "xuhaike/Bi-metric-search",
+            "stars": 2,
+            "img": "https://avatars.githubusercontent.com/u/118020105?s=40&v=4",
+            "owner": "xuhaike",
+            "repo_name": "Bi-metric-search"
+        }
+    ],
+    "total_dependents_number": 138,
+    "public_dependents_number": 138,
+    "private_dependents_number": -138,
+    "public_dependents_stars": 20908,
+    "badges": {
+        "total_doc_url": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by&message=138&color=informational&logo=slickpic)](https://github.com/nvuillam/github-dependents-info)",
+        "total": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by&message=138&color=informational&logo=slickpic)](https://github.com/embeddings-benchmark/mteb/network/dependents)",
+        "public": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(public)&message=138&color=informational&logo=slickpic)](https://github.com/embeddings-benchmark/mteb/network/dependents)",
+        "private": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(private)&message=-138&color=informational&logo=slickpic)](https://github.com/embeddings-benchmark/mteb/network/dependents)",
+        "stars": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(stars)&message=20908&color=informational&logo=slickpic)](https://github.com/embeddings-benchmark/mteb/network/dependents)"
+    }
+}

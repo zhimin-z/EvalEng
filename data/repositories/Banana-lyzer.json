@@ -1,0 +1,132 @@
+{
+  "SourcegraphEndpoint": "https://sourcegraph.com",
+  "Query": "context:global \"bananalyzer\" select:repo count:all",
+  "Site": {
+    "BuildVersion": "289780_2024-09-03_5.6-f216bc3dfea3"
+  },
+  "Results": [
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/EthicalML/awesome-production-machine-learning"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/EthicalML/awesome-production-machine-learning\" rel=\"nofollow\"\u003egithub.com/EthicalML/awesome-production-machine-learning\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/EthicalML/awesome-production-machine-learning",
+      "url": "/github.com/EthicalML/awesome-production-machine-learning"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/d-Rickyy-b/pastepwn"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/d-Rickyy-b/pastepwn\" rel=\"nofollow\"\u003egithub.com/d-Rickyy-b/pastepwn\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/d-Rickyy-b/pastepwn",
+      "url": "/github.com/d-Rickyy-b/pastepwn"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/slavakurilyak/awesome-ai-agents"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/slavakurilyak/awesome-ai-agents\" rel=\"nofollow\"\u003egithub.com/slavakurilyak/awesome-ai-agents\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/slavakurilyak/awesome-ai-agents",
+      "url": "/github.com/slavakurilyak/awesome-ai-agents"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/megaacheyounes/portfolio-tailwind"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/megaacheyounes/portfolio-tailwind\" rel=\"nofollow\"\u003egithub.com/megaacheyounes/portfolio-tailwind\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/megaacheyounes/portfolio-tailwind",
+      "url": "/github.com/megaacheyounes/portfolio-tailwind"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/reworkd/bananalyzer"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/reworkd/bananalyzer\" rel=\"nofollow\"\u003egithub.com/reworkd/bananalyzer\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/reworkd/bananalyzer",
+      "url": "/github.com/reworkd/bananalyzer"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/feedarchive/libera-feedbot-live"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/feedarchive/libera-feedbot-live\" rel=\"nofollow\"\u003egithub.com/feedarchive/libera-feedbot-live\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/feedarchive/libera-feedbot-live",
+      "url": "/github.com/feedarchive/libera-feedbot-live"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/nvuillam/node-java-caller"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/nvuillam/node-java-caller\" rel=\"nofollow\"\u003egithub.com/nvuillam/node-java-caller\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/nvuillam/node-java-caller",
+      "url": "/github.com/nvuillam/node-java-caller"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/reworkd/tarsier"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/reworkd/tarsier\" rel=\"nofollow\"\u003egithub.com/reworkd/tarsier\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/reworkd/tarsier",
+      "url": "/github.com/reworkd/tarsier"
+    }
+  ],
+  "LimitHit": false,
+  "Cloning": [],
+  "Missing": [],
+  "Timedout": [],
+  "ResultCount": 8,
+  "ElapsedMilliseconds": 34794,
+  "Alert": {
+    "Title": "",
+    "Description": "",
+    "ProposedQueries": null
+  }
+}
