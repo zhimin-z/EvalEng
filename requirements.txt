@@ -1,7 +1,9 @@
 github-dependents-info
 ineqpy
 keyboard
+matplotlib
 nbformat
+networkx
 pandas
 plotly
 PyGithub
