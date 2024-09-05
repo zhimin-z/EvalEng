@@ -26,6 +26,7 @@ src search -json "context:global \"lm_eval\" select:repo count:all" > "${path_re
 src search -json "context:global \"lighteval\" select:repo count:all" > "${path_repository}/LightEval.json" 
 src search -json "context:global \"llm-autoeval\" select:repo count:all" > "${path_repository}/LLM AutoEval.json" 
 src search -json "context:global \"llmperf\" select:repo count:all" > "${path_repository}/LLMPerf.json" 
+src search -json "context:global \"cm4mlops\" select:repo count:all" > "${path_repository}/MLPerf Inference.json" 
 src search -json "context:global \"olmo_eval\" select:repo count:all" > "${path_repository}/OLMo-Eval.json" 
 src search -json "context:global \"opencompass\" select:repo count:all" > "${path_repository}/OpenCompass.json" 
 src search -json "context:global \"optimum-benchmark\" select:repo count:all" > "${path_repository}/Optimum-Benchmark.json" 

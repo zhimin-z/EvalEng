@@ -1,5 +1,6 @@
 github-dependents-info
 ineqpy
+keyboard
 nbformat
 pandas
 plotly

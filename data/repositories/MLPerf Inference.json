@@ -1,0 +1,76 @@
+{
+  "SourcegraphEndpoint": "https://sourcegraph.com",
+  "Query": "context:global \"cm4mlops\" select:repo count:all",
+  "Site": {
+    "BuildVersion": "289870_2024-09-04_5.6-cf920b57bea0"
+  },
+  "Results": [
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/mlcommons/ck"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/mlcommons/ck\" rel=\"nofollow\"\u003egithub.com/mlcommons/ck\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/mlcommons/ck",
+      "url": "/github.com/mlcommons/ck"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/mlcommons/inference"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/mlcommons/inference\" rel=\"nofollow\"\u003egithub.com/mlcommons/inference\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/mlcommons/inference",
+      "url": "/github.com/mlcommons/inference"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/ctuning/artifact-evaluation"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/ctuning/artifact-evaluation\" rel=\"nofollow\"\u003egithub.com/ctuning/artifact-evaluation\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/ctuning/artifact-evaluation",
+      "url": "/github.com/ctuning/artifact-evaluation"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/koaning/arxiv-frontpage"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/koaning/arxiv-frontpage\" rel=\"nofollow\"\u003egithub.com/koaning/arxiv-frontpage\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/koaning/arxiv-frontpage",
+      "url": "/github.com/koaning/arxiv-frontpage"
+    }
+  ],
+  "LimitHit": false,
+  "Cloning": [],
+  "Missing": [],
+  "Timedout": [],
+  "ResultCount": 4,
+  "ElapsedMilliseconds": 5855,
+  "Alert": {
+    "Title": "",
+    "Description": "",
+    "ProposedQueries": null
+  }
+}
