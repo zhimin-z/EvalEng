@@ -1,8 +1,8 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global \"bigcode_eval\" select:repo count:all",
+  "Query": "context:global /bigcode_eval|(bigcode-project\\/evaluation-harness)/ select:repo count:all",
   "Site": {
-    "BuildVersion": "289780_2024-09-03_5.6-f216bc3dfea3"
+    "BuildVersion": "290292_2024-09-05_5.7-902ac2bfc210"
   },
   "Results": [
     {
@@ -38,62 +38,6 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/Kludex/awesome-fastapi-projects"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/Kludex/awesome-fastapi-projects\" rel=\"nofollow\"\u003egithub.com/Kludex/awesome-fastapi-projects\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/Kludex/awesome-fastapi-projects",
-      "url": "/github.com/Kludex/awesome-fastapi-projects"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/OpenBMB/Eurus"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/OpenBMB/Eurus\" rel=\"nofollow\"\u003egithub.com/OpenBMB/Eurus\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/OpenBMB/Eurus",
-      "url": "/github.com/OpenBMB/Eurus"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/likenneth/q_probe"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/likenneth/q_probe\" rel=\"nofollow\"\u003egithub.com/likenneth/q_probe\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/likenneth/q_probe",
-      "url": "/github.com/likenneth/q_probe"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/kaistAI/LangBridge"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/kaistAI/LangBridge\" rel=\"nofollow\"\u003egithub.com/kaistAI/LangBridge\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/kaistAI/LangBridge",
-      "url": "/github.com/kaistAI/LangBridge"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
           "url": "https://github.com/xingyaoww/code-act"
         }
       ],
@@ -122,6 +66,20 @@
       "externalURLs": [
         {
           "serviceType": "github",
+          "url": "https://github.com/OpenBMB/Eurus"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/OpenBMB/Eurus\" rel=\"nofollow\"\u003egithub.com/OpenBMB/Eurus\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/OpenBMB/Eurus",
+      "url": "/github.com/OpenBMB/Eurus"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
           "url": "https://github.com/Cerebras/modelzoo"
         }
       ],
@@ -130,6 +88,48 @@
       },
       "name": "github.com/Cerebras/modelzoo",
       "url": "/github.com/Cerebras/modelzoo"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/likenneth/q_probe"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/likenneth/q_probe\" rel=\"nofollow\"\u003egithub.com/likenneth/q_probe\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/likenneth/q_probe",
+      "url": "/github.com/likenneth/q_probe"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Xwin-LM/Xwin-LM"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Xwin-LM/Xwin-LM\" rel=\"nofollow\"\u003egithub.com/Xwin-LM/Xwin-LM\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Xwin-LM/Xwin-LM",
+      "url": "/github.com/Xwin-LM/Xwin-LM"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/kaistAI/LangBridge"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/kaistAI/LangBridge\" rel=\"nofollow\"\u003egithub.com/kaistAI/LangBridge\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/kaistAI/LangBridge",
+      "url": "/github.com/kaistAI/LangBridge"
     },
     {
       "__typename": "Repository",
@@ -150,20 +150,6 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/Spico197/MoE-SFT"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/Spico197/MoE-SFT\" rel=\"nofollow\"\u003egithub.com/Spico197/MoE-SFT\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/Spico197/MoE-SFT",
-      "url": "/github.com/Spico197/MoE-SFT"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
           "url": "https://github.com/openvinotoolkit/openvino_notebooks"
         }
       ],
@@ -172,20 +158,6 @@
       },
       "name": "github.com/openvinotoolkit/openvino_notebooks",
       "url": "/github.com/openvinotoolkit/openvino_notebooks"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/intel/neural-compressor"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/intel/neural-compressor\" rel=\"nofollow\"\u003egithub.com/intel/neural-compressor\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/intel/neural-compressor",
-      "url": "/github.com/intel/neural-compressor"
     },
     {
       "__typename": "Repository",
@@ -206,6 +178,48 @@
       "externalURLs": [
         {
           "serviceType": "github",
+          "url": "https://github.com/Spico197/MoE-SFT"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Spico197/MoE-SFT\" rel=\"nofollow\"\u003egithub.com/Spico197/MoE-SFT\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Spico197/MoE-SFT",
+      "url": "/github.com/Spico197/MoE-SFT"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Kludex/awesome-fastapi-projects"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Kludex/awesome-fastapi-projects\" rel=\"nofollow\"\u003egithub.com/Kludex/awesome-fastapi-projects\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Kludex/awesome-fastapi-projects",
+      "url": "/github.com/Kludex/awesome-fastapi-projects"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/intel/neural-compressor"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/intel/neural-compressor\" rel=\"nofollow\"\u003egithub.com/intel/neural-compressor\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/intel/neural-compressor",
+      "url": "/github.com/intel/neural-compressor"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
           "url": "https://github.com/uukuguy/speechless"
         }
       ],
@@ -220,8 +234,8 @@
   "Cloning": [],
   "Missing": [],
   "Timedout": [],
-  "ResultCount": 15,
-  "ElapsedMilliseconds": 4641,
+  "ResultCount": 16,
+  "ElapsedMilliseconds": 46543,
   "Alert": {
     "Title": "",
     "Description": "",
