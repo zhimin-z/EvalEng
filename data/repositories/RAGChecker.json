@@ -2,23 +2,9 @@
   "SourcegraphEndpoint": "https://sourcegraph.com",
   "Query": "context:global \"ragchecker\" select:repo count:all",
   "Site": {
-    "BuildVersion": "289780_2024-09-03_5.6-f216bc3dfea3"
+    "BuildVersion": "290390_2024-09-06_5.7-64a7efa93265"
   },
   "Results": [
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/EthicalML/awesome-production-machine-learning"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/EthicalML/awesome-production-machine-learning\" rel=\"nofollow\"\u003egithub.com/EthicalML/awesome-production-machine-learning\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/EthicalML/awesome-production-machine-learning",
-      "url": "/github.com/EthicalML/awesome-production-machine-learning"
-    },
     {
       "__typename": "Repository",
       "externalURLs": [
@@ -52,6 +38,48 @@
       "externalURLs": [
         {
           "serviceType": "github",
+          "url": "https://github.com/kimtth/awesome-azure-openai-llm"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/kimtth/awesome-azure-openai-llm\" rel=\"nofollow\"\u003egithub.com/kimtth/awesome-azure-openai-llm\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/kimtth/awesome-azure-openai-llm",
+      "url": "/github.com/kimtth/awesome-azure-openai-llm"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/EthicalML/awesome-production-machine-learning"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/EthicalML/awesome-production-machine-learning\" rel=\"nofollow\"\u003egithub.com/EthicalML/awesome-production-machine-learning\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/EthicalML/awesome-production-machine-learning",
+      "url": "/github.com/EthicalML/awesome-production-machine-learning"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/open-android/DragFooterView"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/open-android/DragFooterView\" rel=\"nofollow\"\u003egithub.com/open-android/DragFooterView\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/open-android/DragFooterView",
+      "url": "/github.com/open-android/DragFooterView"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
           "url": "https://github.com/explodinggradients/ragas"
         }
       ],
@@ -66,14 +94,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/Xnhyacinth/Awesome-LLM-Long-Context-Modeling"
+          "url": "https://github.com/uin3566/DragFooterView"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/Xnhyacinth/Awesome-LLM-Long-Context-Modeling\" rel=\"nofollow\"\u003egithub.com/Xnhyacinth/Awesome-LLM-Long-Context-Modeling\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/uin3566/DragFooterView\" rel=\"nofollow\"\u003egithub.com/uin3566/DragFooterView\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/Xnhyacinth/Awesome-LLM-Long-Context-Modeling",
-      "url": "/github.com/Xnhyacinth/Awesome-LLM-Long-Context-Modeling"
+      "name": "github.com/uin3566/DragFooterView",
+      "url": "/github.com/uin3566/DragFooterView"
     },
     {
       "__typename": "Repository",
@@ -108,6 +136,48 @@
       "externalURLs": [
         {
           "serviceType": "github",
+          "url": "https://github.com/yangzhenglun/hookPro"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/yangzhenglun/hookPro\" rel=\"nofollow\"\u003egithub.com/yangzhenglun/hookPro\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/yangzhenglun/hookPro",
+      "url": "/github.com/yangzhenglun/hookPro"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/liangruibupt/aws-is-how"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/liangruibupt/aws-is-how\" rel=\"nofollow\"\u003egithub.com/liangruibupt/aws-is-how\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/liangruibupt/aws-is-how",
+      "url": "/github.com/liangruibupt/aws-is-how"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Xnhyacinth/Awesome-LLM-Long-Context-Modeling"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Xnhyacinth/Awesome-LLM-Long-Context-Modeling\" rel=\"nofollow\"\u003egithub.com/Xnhyacinth/Awesome-LLM-Long-Context-Modeling\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Xnhyacinth/Awesome-LLM-Long-Context-Modeling",
+      "url": "/github.com/Xnhyacinth/Awesome-LLM-Long-Context-Modeling"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
           "url": "https://github.com/Tencent/Hippy"
         }
       ],
@@ -136,48 +206,6 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/kimtth/awesome-azure-openai-llm"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/kimtth/awesome-azure-openai-llm\" rel=\"nofollow\"\u003egithub.com/kimtth/awesome-azure-openai-llm\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/kimtth/awesome-azure-openai-llm",
-      "url": "/github.com/kimtth/awesome-azure-openai-llm"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/feedarchive/libera-feedbot-live"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/feedarchive/libera-feedbot-live\" rel=\"nofollow\"\u003egithub.com/feedarchive/libera-feedbot-live\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/feedarchive/libera-feedbot-live",
-      "url": "/github.com/feedarchive/libera-feedbot-live"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/uin3566/DragFooterView"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/uin3566/DragFooterView\" rel=\"nofollow\"\u003egithub.com/uin3566/DragFooterView\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/uin3566/DragFooterView",
-      "url": "/github.com/uin3566/DragFooterView"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
           "url": "https://github.com/charliedream1/ai_wiki"
         }
       ],
@@ -186,62 +214,6 @@
       },
       "name": "github.com/charliedream1/ai_wiki",
       "url": "/github.com/charliedream1/ai_wiki"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/liangruibupt/aws-is-how"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/liangruibupt/aws-is-how\" rel=\"nofollow\"\u003egithub.com/liangruibupt/aws-is-how\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/liangruibupt/aws-is-how",
-      "url": "/github.com/liangruibupt/aws-is-how"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/go2coding/go2coding.github.io"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/go2coding/go2coding.github.io\" rel=\"nofollow\"\u003egithub.com/go2coding/go2coding.github.io\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/go2coding/go2coding.github.io",
-      "url": "/github.com/go2coding/go2coding.github.io"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/sailfish009/paper"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/sailfish009/paper\" rel=\"nofollow\"\u003egithub.com/sailfish009/paper\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/sailfish009/paper",
-      "url": "/github.com/sailfish009/paper"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/yangzhenglun/hookPro"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/yangzhenglun/hookPro\" rel=\"nofollow\"\u003egithub.com/yangzhenglun/hookPro\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/yangzhenglun/hookPro",
-      "url": "/github.com/yangzhenglun/hookPro"
     },
     {
       "__typename": "Repository",
@@ -262,14 +234,42 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/open-android/DragFooterView"
+          "url": "https://github.com/feedarchive/libera-feedbot-live"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/open-android/DragFooterView\" rel=\"nofollow\"\u003egithub.com/open-android/DragFooterView\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/feedarchive/libera-feedbot-live\" rel=\"nofollow\"\u003egithub.com/feedarchive/libera-feedbot-live\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/open-android/DragFooterView",
-      "url": "/github.com/open-android/DragFooterView"
+      "name": "github.com/feedarchive/libera-feedbot-live",
+      "url": "/github.com/feedarchive/libera-feedbot-live"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/sailfish009/paper"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/sailfish009/paper\" rel=\"nofollow\"\u003egithub.com/sailfish009/paper\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/sailfish009/paper",
+      "url": "/github.com/sailfish009/paper"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/go2coding/go2coding.github.io"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/go2coding/go2coding.github.io\" rel=\"nofollow\"\u003egithub.com/go2coding/go2coding.github.io\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/go2coding/go2coding.github.io",
+      "url": "/github.com/go2coding/go2coding.github.io"
     }
   ],
   "LimitHit": false,
@@ -277,7 +277,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 19,
-  "ElapsedMilliseconds": 18532,
+  "ElapsedMilliseconds": 11800,
   "Alert": {
     "Title": "",
     "Description": "",

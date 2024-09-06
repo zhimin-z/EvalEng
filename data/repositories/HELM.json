@@ -2,7 +2,7 @@
   "SourcegraphEndpoint": "https://sourcegraph.com",
   "Query": "context:global \"crfm-helm\" select:repo count:all",
   "Site": {
-    "BuildVersion": "289780_2024-09-03_5.6-f216bc3dfea3"
+    "BuildVersion": "290390_2024-09-06_5.7-64a7efa93265"
   },
   "Results": [
     {
@@ -18,6 +18,20 @@
       },
       "name": "github.com/hetailang/SqueezeAttention",
       "url": "/github.com/hetailang/SqueezeAttention"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/teamreboott/data-modori"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/teamreboott/data-modori\" rel=\"nofollow\"\u003egithub.com/teamreboott/data-modori\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/teamreboott/data-modori",
+      "url": "/github.com/teamreboott/data-modori"
     },
     {
       "__typename": "Repository",
@@ -52,14 +66,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/teamreboott/data-modori"
+          "url": "https://github.com/FMInference/H2O"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/teamreboott/data-modori\" rel=\"nofollow\"\u003egithub.com/teamreboott/data-modori\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/FMInference/H2O\" rel=\"nofollow\"\u003egithub.com/FMInference/H2O\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/teamreboott/data-modori",
-      "url": "/github.com/teamreboott/data-modori"
+      "name": "github.com/FMInference/H2O",
+      "url": "/github.com/FMInference/H2O"
     },
     {
       "__typename": "Repository",
@@ -74,20 +88,6 @@
       },
       "name": "github.com/microsoft/unilm",
       "url": "/github.com/microsoft/unilm"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/FMInference/H2O"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/FMInference/H2O\" rel=\"nofollow\"\u003egithub.com/FMInference/H2O\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/FMInference/H2O",
-      "url": "/github.com/FMInference/H2O"
     },
     {
       "__typename": "Repository",
@@ -122,48 +122,6 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/LaVi-Lab/CLEVA"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/LaVi-Lab/CLEVA\" rel=\"nofollow\"\u003egithub.com/LaVi-Lab/CLEVA\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/LaVi-Lab/CLEVA",
-      "url": "/github.com/LaVi-Lab/CLEVA"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/FMInference/FlexGen"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/FMInference/FlexGen\" rel=\"nofollow\"\u003egithub.com/FMInference/FlexGen\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/FMInference/FlexGen",
-      "url": "/github.com/FMInference/FlexGen"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/stanford-crfm/levanter"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/stanford-crfm/levanter\" rel=\"nofollow\"\u003egithub.com/stanford-crfm/levanter\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/stanford-crfm/levanter",
-      "url": "/github.com/stanford-crfm/levanter"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
           "url": "https://github.com/debjitpaul/refiner"
         }
       ],
@@ -172,20 +130,6 @@
       },
       "name": "github.com/debjitpaul/refiner",
       "url": "/github.com/debjitpaul/refiner"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/AI-secure/DecodingTrust"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/AI-secure/DecodingTrust\" rel=\"nofollow\"\u003egithub.com/AI-secure/DecodingTrust\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/AI-secure/DecodingTrust",
-      "url": "/github.com/AI-secure/DecodingTrust"
     },
     {
       "__typename": "Repository",
@@ -206,6 +150,20 @@
       "externalURLs": [
         {
           "serviceType": "github",
+          "url": "https://github.com/FMInference/FlexGen"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/FMInference/FlexGen\" rel=\"nofollow\"\u003egithub.com/FMInference/FlexGen\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/FMInference/FlexGen",
+      "url": "/github.com/FMInference/FlexGen"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
           "url": "https://github.com/bethgelab/frequency_determines_performance"
         }
       ],
@@ -220,14 +178,28 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/modelscope/data-juicer"
+          "url": "https://github.com/stanford-crfm/levanter"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/modelscope/data-juicer\" rel=\"nofollow\"\u003egithub.com/modelscope/data-juicer\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/stanford-crfm/levanter\" rel=\"nofollow\"\u003egithub.com/stanford-crfm/levanter\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/modelscope/data-juicer",
-      "url": "/github.com/modelscope/data-juicer"
+      "name": "github.com/stanford-crfm/levanter",
+      "url": "/github.com/stanford-crfm/levanter"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/AI-secure/DecodingTrust"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/AI-secure/DecodingTrust\" rel=\"nofollow\"\u003egithub.com/AI-secure/DecodingTrust\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/AI-secure/DecodingTrust",
+      "url": "/github.com/AI-secure/DecodingTrust"
     },
     {
       "__typename": "Repository",
@@ -242,6 +214,34 @@
       },
       "name": "github.com/stanford-crfm/helm",
       "url": "/github.com/stanford-crfm/helm"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/LaVi-Lab/CLEVA"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/LaVi-Lab/CLEVA\" rel=\"nofollow\"\u003egithub.com/LaVi-Lab/CLEVA\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/LaVi-Lab/CLEVA",
+      "url": "/github.com/LaVi-Lab/CLEVA"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/modelscope/data-juicer"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/modelscope/data-juicer\" rel=\"nofollow\"\u003egithub.com/modelscope/data-juicer\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/modelscope/data-juicer",
+      "url": "/github.com/modelscope/data-juicer"
     },
     {
       "__typename": "Repository",
@@ -263,7 +263,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 18,
-  "ElapsedMilliseconds": 850,
+  "ElapsedMilliseconds": 932,
   "Alert": {
     "Title": "",
     "Description": "",

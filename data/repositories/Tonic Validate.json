@@ -2,7 +2,7 @@
   "SourcegraphEndpoint": "https://sourcegraph.com",
   "Query": "context:global \"tonic-validate\" select:repo count:all",
   "Site": {
-    "BuildVersion": "289780_2024-09-03_5.6-f216bc3dfea3"
+    "BuildVersion": "290390_2024-09-06_5.7-64a7efa93265"
   },
   "Results": [
     {
@@ -24,42 +24,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/fusion-jena/automatic-KG-creation-with-LLM"
+          "url": "https://github.com/klay-liu/tutorial-in-bilibili"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/fusion-jena/automatic-KG-creation-with-LLM\" rel=\"nofollow\"\u003egithub.com/fusion-jena/automatic-KG-creation-with-LLM\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/klay-liu/tutorial-in-bilibili\" rel=\"nofollow\"\u003egithub.com/klay-liu/tutorial-in-bilibili\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/fusion-jena/automatic-KG-creation-with-LLM",
-      "url": "/github.com/fusion-jena/automatic-KG-creation-with-LLM"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/sydverma123/awesome-ai-repositories"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/sydverma123/awesome-ai-repositories\" rel=\"nofollow\"\u003egithub.com/sydverma123/awesome-ai-repositories\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/sydverma123/awesome-ai-repositories",
-      "url": "/github.com/sydverma123/awesome-ai-repositories"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/Azure-Samples/llama-index-python"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/Azure-Samples/llama-index-python\" rel=\"nofollow\"\u003egithub.com/Azure-Samples/llama-index-python\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/Azure-Samples/llama-index-python",
-      "url": "/github.com/Azure-Samples/llama-index-python"
+      "name": "github.com/klay-liu/tutorial-in-bilibili",
+      "url": "/github.com/klay-liu/tutorial-in-bilibili"
     },
     {
       "__typename": "Repository",
@@ -80,14 +52,28 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/klay-liu/tutorial-in-bilibili"
+          "url": "https://github.com/sydverma123/awesome-ai-repositories"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/klay-liu/tutorial-in-bilibili\" rel=\"nofollow\"\u003egithub.com/klay-liu/tutorial-in-bilibili\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/sydverma123/awesome-ai-repositories\" rel=\"nofollow\"\u003egithub.com/sydverma123/awesome-ai-repositories\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/klay-liu/tutorial-in-bilibili",
-      "url": "/github.com/klay-liu/tutorial-in-bilibili"
+      "name": "github.com/sydverma123/awesome-ai-repositories",
+      "url": "/github.com/sydverma123/awesome-ai-repositories"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Josephrp/scitonic"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Josephrp/scitonic\" rel=\"nofollow\"\u003egithub.com/Josephrp/scitonic\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Josephrp/scitonic",
+      "url": "/github.com/Josephrp/scitonic"
     },
     {
       "__typename": "Repository",
@@ -108,14 +94,28 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/Josephrp/scitonic"
+          "url": "https://github.com/fusion-jena/automatic-KG-creation-with-LLM"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/Josephrp/scitonic\" rel=\"nofollow\"\u003egithub.com/Josephrp/scitonic\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/fusion-jena/automatic-KG-creation-with-LLM\" rel=\"nofollow\"\u003egithub.com/fusion-jena/automatic-KG-creation-with-LLM\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/Josephrp/scitonic",
-      "url": "/github.com/Josephrp/scitonic"
+      "name": "github.com/fusion-jena/automatic-KG-creation-with-LLM",
+      "url": "/github.com/fusion-jena/automatic-KG-creation-with-LLM"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Azure-Samples/llama-index-python"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Azure-Samples/llama-index-python\" rel=\"nofollow\"\u003egithub.com/Azure-Samples/llama-index-python\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Azure-Samples/llama-index-python",
+      "url": "/github.com/Azure-Samples/llama-index-python"
     },
     {
       "__typename": "Repository",
@@ -137,7 +137,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 9,
-  "ElapsedMilliseconds": 3852,
+  "ElapsedMilliseconds": 2449,
   "Alert": {
     "Title": "",
     "Description": "",

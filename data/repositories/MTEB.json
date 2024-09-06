@@ -16,7 +16,7 @@
         },
         {
             "name": "AIR-Bench/AIR-Bench",
-            "stars": 95,
+            "stars": 96,
             "img": "https://avatars.githubusercontent.com/u/168951412?s=40&v=4",
             "owner": "AIR-Bench",
             "repo_name": "AIR-Bench"
@@ -27,6 +27,13 @@
             "img": "https://avatars.githubusercontent.com/u/161190053?s=40&v=4",
             "owner": "AnqiGou",
             "repo_name": "TextDiffuser"
+        },
+        {
+            "name": "AnswerDotAI/byaldi",
+            "stars": 130,
+            "img": "https://avatars.githubusercontent.com/u/156509747?s=40&v=4",
+            "owner": "AnswerDotAI",
+            "repo_name": "byaldi"
         },
         {
             "name": "Athe-kunal/COLPALI-SEC-Filings",
@@ -44,14 +51,14 @@
         },
         {
             "name": "Azure/azureml-assets",
-            "stars": 58,
+            "stars": 59,
             "img": "https://avatars.githubusercontent.com/u/6844498?s=40&v=4",
             "owner": "Azure",
             "repo_name": "azureml-assets"
         },
         {
             "name": "BlackPearl-Lab/KddCup-2024-OAG-Challenge-1st-Solutions",
-            "stars": 92,
+            "stars": 93,
             "img": "https://avatars.githubusercontent.com/u/172470581?s=40&v=4",
             "owner": "BlackPearl-Lab",
             "repo_name": "KddCup-2024-OAG-Challenge-1st-Solutions"
@@ -65,7 +72,7 @@
         },
         {
             "name": "ContextualAI/gritlm",
-            "stars": 517,
+            "stars": 519,
             "img": "https://avatars.githubusercontent.com/u/127712327?s=40&v=4",
             "owner": "ContextualAI",
             "repo_name": "gritlm"
@@ -107,7 +114,7 @@
         },
         {
             "name": "FlagOpen/FlagEmbedding",
-            "stars": 6663,
+            "stars": 6706,
             "img": "https://avatars.githubusercontent.com/u/114467038?s=40&v=4",
             "owner": "FlagOpen",
             "repo_name": "FlagEmbedding"
@@ -135,7 +142,7 @@
         },
         {
             "name": "IntelLabs/fastRAG",
-            "stars": 1243,
+            "stars": 1246,
             "img": "https://avatars.githubusercontent.com/u/1492758?s=40&v=4",
             "owner": "IntelLabs",
             "repo_name": "fastRAG"
@@ -198,7 +205,7 @@
         },
         {
             "name": "LeeSureman/E5-Retrieval-Reproduction",
-            "stars": 5,
+            "stars": 6,
             "img": "https://avatars.githubusercontent.com/u/32452367?s=40&v=4",
             "owner": "LeeSureman",
             "repo_name": "E5-Retrieval-Reproduction"
@@ -275,14 +282,14 @@
         },
         {
             "name": "PaddlePaddle/PaddleNLP",
-            "stars": 11923,
+            "stars": 11933,
             "img": "https://avatars.githubusercontent.com/u/23534030?s=40&v=4",
             "owner": "PaddlePaddle",
             "repo_name": "PaddleNLP"
         },
         {
             "name": "Qihoo360/360zhinao",
-            "stars": 274,
+            "stars": 275,
             "img": "https://avatars.githubusercontent.com/u/4082929?s=40&v=4",
             "owner": "Qihoo360",
             "repo_name": "360zhinao"
@@ -342,6 +349,13 @@
             "img": "https://avatars.githubusercontent.com/u/64581094?s=40&v=4",
             "owner": "WillPowellUk",
             "repo_name": "MatryoshkaAdaptor"
+        },
+        {
+            "name": "WowCZ/LongMIT",
+            "stars": 7,
+            "img": "https://avatars.githubusercontent.com/u/38067534?s=40&v=4",
+            "owner": "WowCZ",
+            "repo_name": "LongMIT"
         },
         {
             "name": "YAI12xLinq-B/IMASCL",
@@ -491,6 +505,13 @@
             "repo_name": "LongEmbed"
         },
         {
+            "name": "f-linus/matryoshka_adaptor",
+            "stars": 2,
+            "img": "https://avatars.githubusercontent.com/u/84272959?s=40&v=4",
+            "owner": "f-linus",
+            "repo_name": "matryoshka_adaptor"
+        },
+        {
             "name": "fork-the-planet/unilm",
             "stars": 0,
             "img": "https://avatars.githubusercontent.com/u/179139331?s=40&v=4",
@@ -513,7 +534,7 @@
         },
         {
             "name": "gkamradt/langchain-tutorials",
-            "stars": 6623,
+            "stars": 6630,
             "img": "https://avatars.githubusercontent.com/u/9809213?s=40&v=4",
             "owner": "gkamradt",
             "repo_name": "langchain-tutorials"
@@ -590,21 +611,21 @@
         },
         {
             "name": "illuin-tech/colpali",
-            "stars": 318,
+            "stars": 382,
             "img": "https://avatars.githubusercontent.com/u/26204301?s=40&v=4",
             "owner": "illuin-tech",
             "repo_name": "colpali"
         },
         {
             "name": "illuin-tech/vidore-benchmark",
-            "stars": 77,
+            "stars": 89,
             "img": "https://avatars.githubusercontent.com/u/26204301?s=40&v=4",
             "owner": "illuin-tech",
             "repo_name": "vidore-benchmark"
         },
         {
             "name": "intel/intel-extension-for-transformers",
-            "stars": 2102,
+            "stars": 2098,
             "img": "https://avatars.githubusercontent.com/u/17888862?s=40&v=4",
             "owner": "intel",
             "repo_name": "intel-extension-for-transformers"
@@ -688,7 +709,7 @@
         },
         {
             "name": "microsoft/unilm",
-            "stars": 19470,
+            "stars": 19482,
             "img": "https://avatars.githubusercontent.com/u/6154722?s=40&v=4",
             "owner": "microsoft",
             "repo_name": "unilm"
@@ -709,7 +730,7 @@
         },
         {
             "name": "netease-youdao/BCEmbedding",
-            "stars": 1344,
+            "stars": 1346,
             "img": "https://avatars.githubusercontent.com/u/3909232?s=40&v=4",
             "owner": "netease-youdao",
             "repo_name": "BCEmbedding"
@@ -730,7 +751,7 @@
         },
         {
             "name": "nomic-ai/contrastors",
-            "stars": 498,
+            "stars": 499,
             "img": "https://avatars.githubusercontent.com/u/102670180?s=40&v=4",
             "owner": "nomic-ai",
             "repo_name": "contrastors"
@@ -933,7 +954,7 @@
         },
         {
             "name": "wangyuxinwhy/uniem",
-            "stars": 811,
+            "stars": 813,
             "img": "https://avatars.githubusercontent.com/u/22192665?s=40&v=4",
             "owner": "wangyuxinwhy",
             "repo_name": "uniem"
@@ -967,15 +988,15 @@
             "repo_name": "Bi-metric-search"
         }
     ],
-    "total_dependents_number": 138,
-    "public_dependents_number": 138,
-    "private_dependents_number": -138,
-    "public_dependents_stars": 20908,
+    "total_dependents_number": 141,
+    "public_dependents_number": 141,
+    "private_dependents_number": -141,
+    "public_dependents_stars": 20948,
     "badges": {
-        "total_doc_url": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by&message=138&color=informational&logo=slickpic)](https://github.com/nvuillam/github-dependents-info)",
-        "total": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by&message=138&color=informational&logo=slickpic)](https://github.com/embeddings-benchmark/mteb/network/dependents)",
-        "public": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(public)&message=138&color=informational&logo=slickpic)](https://github.com/embeddings-benchmark/mteb/network/dependents)",
-        "private": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(private)&message=-138&color=informational&logo=slickpic)](https://github.com/embeddings-benchmark/mteb/network/dependents)",
-        "stars": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(stars)&message=20908&color=informational&logo=slickpic)](https://github.com/embeddings-benchmark/mteb/network/dependents)"
+        "total_doc_url": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by&message=141&color=informational&logo=slickpic)](https://github.com/nvuillam/github-dependents-info)",
+        "total": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by&message=141&color=informational&logo=slickpic)](https://github.com/embeddings-benchmark/mteb/network/dependents)",
+        "public": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(public)&message=141&color=informational&logo=slickpic)](https://github.com/embeddings-benchmark/mteb/network/dependents)",
+        "private": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(private)&message=-141&color=informational&logo=slickpic)](https://github.com/embeddings-benchmark/mteb/network/dependents)",
+        "stars": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(stars)&message=20948&color=informational&logo=slickpic)](https://github.com/embeddings-benchmark/mteb/network/dependents)"
     }
 }

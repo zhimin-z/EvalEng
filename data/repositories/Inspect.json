@@ -2,7 +2,7 @@
   "SourcegraphEndpoint": "https://sourcegraph.com",
   "Query": "context:global \"inspect-ai\" select:repo count:all",
   "Site": {
-    "BuildVersion": "289780_2024-09-03_5.6-f216bc3dfea3"
+    "BuildVersion": "290390_2024-09-06_5.7-64a7efa93265"
   },
   "Results": [
     {
@@ -81,7 +81,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 5,
-  "ElapsedMilliseconds": 3573,
+  "ElapsedMilliseconds": 3475,
   "Alert": {
     "Title": "",
     "Description": "",

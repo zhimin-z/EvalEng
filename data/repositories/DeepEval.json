@@ -9,7 +9,7 @@
         },
         {
             "name": "AG-ITAcademy/PITS",
-            "stars": 0,
+            "stars": 1,
             "img": "https://avatars.githubusercontent.com/u/148534930?s=40&v=4",
             "owner": "AG-ITAcademy",
             "repo_name": "PITS"
@@ -93,7 +93,7 @@
         },
         {
             "name": "Canner/WrenAI",
-            "stars": 1654,
+            "stars": 1667,
             "img": "https://avatars.githubusercontent.com/u/7250217?s=40&v=4",
             "owner": "Canner",
             "repo_name": "WrenAI"
@@ -169,13 +169,6 @@
             "repo_name": "BIAM-Urb"
         },
         {
-            "name": "IntelLabs/RAGFoundry",
-            "stars": 453,
-            "img": "https://avatars.githubusercontent.com/u/1492758?s=40&v=4",
-            "owner": "IntelLabs",
-            "repo_name": "RAGFoundry"
-        },
-        {
             "name": "KHoonKim/AIchat",
             "stars": 0,
             "img": "https://avatars.githubusercontent.com/u/17717111?s=40&v=4",
@@ -219,7 +212,7 @@
         },
         {
             "name": "NirDiamant/RAG_Techniques",
-            "stars": 5361,
+            "stars": 5526,
             "img": "https://avatars.githubusercontent.com/u/28316913?s=40&v=4",
             "owner": "NirDiamant",
             "repo_name": "RAG_Techniques"
@@ -254,7 +247,7 @@
         },
         {
             "name": "PacktPublishing/Building-Data-Driven-Applications-with-LlamaIndex",
-            "stars": 42,
+            "stars": 43,
             "img": "https://avatars.githubusercontent.com/u/10974906?s=40&v=4",
             "owner": "PacktPublishing",
             "repo_name": "Building-Data-Driven-Applications-with-LlamaIndex"
@@ -289,7 +282,7 @@
         },
         {
             "name": "RamiAwar/dataline",
-            "stars": 632,
+            "stars": 702,
             "img": "https://avatars.githubusercontent.com/u/8523191?s=40&v=4",
             "owner": "RamiAwar",
             "repo_name": "dataline"
@@ -358,6 +351,13 @@
             "repo_name": "llama_index"
         },
         {
+            "name": "XMUDM/DQABench",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/44944055?s=40&v=4",
+            "owner": "XMUDM",
+            "repo_name": "DQABench"
+        },
+        {
             "name": "Yvesvc/LLM-assisted-evaluation",
             "stars": 1,
             "img": "https://avatars.githubusercontent.com/u/24839014?s=40&v=4",
@@ -414,6 +414,13 @@
             "repo_name": "cortado-ai-challenge"
         },
         {
+            "name": "amm-ds/llamaindex_query_engine_agent",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/163922780?s=40&v=4",
+            "owner": "amm-ds",
+            "repo_name": "llamaindex_query_engine_agent"
+        },
+        {
             "name": "andresharpe/cute",
             "stars": 1,
             "img": "https://avatars.githubusercontent.com/u/7415999?s=40&v=4",
@@ -422,7 +429,7 @@
         },
         {
             "name": "apocas/restai",
-            "stars": 355,
+            "stars": 354,
             "img": "https://avatars.githubusercontent.com/u/597413?s=40&v=4",
             "owner": "apocas",
             "repo_name": "restai"
@@ -590,7 +597,7 @@
         },
         {
             "name": "fastrepl/canary",
-            "stars": 33,
+            "stars": 34,
             "img": "https://avatars.githubusercontent.com/u/142983232?s=40&v=4",
             "owner": "fastrepl",
             "repo_name": "canary"
@@ -625,7 +632,7 @@
         },
         {
             "name": "getzep/graphiti",
-            "stars": 61,
+            "stars": 447,
             "img": "https://avatars.githubusercontent.com/u/132832125?s=40&v=4",
             "owner": "getzep",
             "repo_name": "graphiti"
@@ -660,7 +667,7 @@
         },
         {
             "name": "i-dot-ai/redbox",
-            "stars": 83,
+            "stars": 84,
             "img": "https://avatars.githubusercontent.com/u/105285801?s=40&v=4",
             "owner": "i-dot-ai",
             "repo_name": "redbox"
@@ -828,7 +835,7 @@
         },
         {
             "name": "microsoft/call-center-ai",
-            "stars": 171,
+            "stars": 173,
             "img": "https://avatars.githubusercontent.com/u/6154722?s=40&v=4",
             "owner": "microsoft",
             "repo_name": "call-center-ai"
@@ -853,6 +860,13 @@
             "img": "https://avatars.githubusercontent.com/u/2761999?s=40&v=4",
             "owner": "nehiljain",
             "repo_name": "find-your-mate-ai"
+        },
+        {
+            "name": "neurafusionai/LangChain",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/175128880?s=40&v=4",
+            "owner": "neurafusionai",
+            "repo_name": "LangChain"
         },
         {
             "name": "nikhilkomakula/llm-rag-op-chatbot",
@@ -898,7 +912,7 @@
         },
         {
             "name": "pingcap/tidb.ai",
-            "stars": 165,
+            "stars": 167,
             "img": "https://avatars.githubusercontent.com/u/11855343?s=40&v=4",
             "owner": "pingcap",
             "repo_name": "tidb.ai"
@@ -933,14 +947,14 @@
         },
         {
             "name": "rootflo/flo-ai",
-            "stars": 25,
+            "stars": 27,
             "img": "https://avatars.githubusercontent.com/u/91535658?s=40&v=4",
             "owner": "rootflo",
             "repo_name": "flo-ai"
         },
         {
             "name": "run-llama/llama_index",
-            "stars": 35151,
+            "stars": 35225,
             "img": "https://avatars.githubusercontent.com/u/130722866?s=40&v=4",
             "owner": "run-llama",
             "repo_name": "llama_index"
@@ -1009,6 +1023,13 @@
             "repo_name": "RAG-Techniques"
         },
         {
+            "name": "sunholo-data/sunholo-py",
+            "stars": 10,
+            "img": "https://avatars.githubusercontent.com/u/147247777?s=40&v=4",
+            "owner": "sunholo-data",
+            "repo_name": "sunholo-py"
+        },
+        {
             "name": "supermomo668/lm_act_eval",
             "stars": 0,
             "img": "https://avatars.githubusercontent.com/u/28805779?s=40&v=4",
@@ -1031,7 +1052,7 @@
         },
         {
             "name": "topoteretes/cognee",
-            "stars": 791,
+            "stars": 793,
             "img": "https://avatars.githubusercontent.com/u/125468716?s=40&v=4",
             "owner": "topoteretes",
             "repo_name": "cognee"
@@ -1114,15 +1135,15 @@
             "repo_name": "hack-day24"
         }
     ],
-    "total_dependents_number": 159,
-    "public_dependents_number": 159,
-    "private_dependents_number": -159,
-    "public_dependents_stars": 12,
+    "total_dependents_number": 162,
+    "public_dependents_number": 162,
+    "private_dependents_number": -162,
+    "public_dependents_stars": 112,
     "badges": {
-        "total_doc_url": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by&message=159&color=informational&logo=slickpic)](https://github.com/nvuillam/github-dependents-info)",
-        "total": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by&message=159&color=informational&logo=slickpic)](https://github.com/confident-ai/deepeval/network/dependents)",
-        "public": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(public)&message=159&color=informational&logo=slickpic)](https://github.com/confident-ai/deepeval/network/dependents)",
-        "private": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(private)&message=-159&color=informational&logo=slickpic)](https://github.com/confident-ai/deepeval/network/dependents)",
-        "stars": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(stars)&message=12&color=informational&logo=slickpic)](https://github.com/confident-ai/deepeval/network/dependents)"
+        "total_doc_url": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by&message=162&color=informational&logo=slickpic)](https://github.com/nvuillam/github-dependents-info)",
+        "total": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by&message=162&color=informational&logo=slickpic)](https://github.com/confident-ai/deepeval/network/dependents)",
+        "public": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(public)&message=162&color=informational&logo=slickpic)](https://github.com/confident-ai/deepeval/network/dependents)",
+        "private": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(private)&message=-162&color=informational&logo=slickpic)](https://github.com/confident-ai/deepeval/network/dependents)",
+        "stars": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(stars)&message=112&color=informational&logo=slickpic)](https://github.com/confident-ai/deepeval/network/dependents)"
     }
 }

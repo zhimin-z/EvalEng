@@ -2,37 +2,9 @@
   "SourcegraphEndpoint": "https://sourcegraph.com",
   "Query": "context:global \"intercode-bench\" select:repo count:all",
   "Site": {
-    "BuildVersion": "289780_2024-09-03_5.6-f216bc3dfea3"
+    "BuildVersion": "290390_2024-09-06_5.7-64a7efa93265"
   },
   "Results": [
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/MiscellaneousStuff/anterion"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/MiscellaneousStuff/anterion\" rel=\"nofollow\"\u003egithub.com/MiscellaneousStuff/anterion\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/MiscellaneousStuff/anterion",
-      "url": "/github.com/MiscellaneousStuff/anterion"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/huybery/Awesome-Code-LLM"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/huybery/Awesome-Code-LLM\" rel=\"nofollow\"\u003egithub.com/huybery/Awesome-Code-LLM\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/huybery/Awesome-Code-LLM",
-      "url": "/github.com/huybery/Awesome-Code-LLM"
-    },
     {
       "__typename": "Repository",
       "externalURLs": [
@@ -46,20 +18,6 @@
       },
       "name": "github.com/entropy-research/Devon",
       "url": "/github.com/entropy-research/Devon"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/princeton-nlp/SWE-agent"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/princeton-nlp/SWE-agent\" rel=\"nofollow\"\u003egithub.com/princeton-nlp/SWE-agent\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/princeton-nlp/SWE-agent",
-      "url": "/github.com/princeton-nlp/SWE-agent"
     },
     {
       "__typename": "Repository",
@@ -80,42 +38,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/princeton-nlp/intercode"
+          "url": "https://github.com/huybery/Awesome-Code-LLM"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/princeton-nlp/intercode\" rel=\"nofollow\"\u003egithub.com/princeton-nlp/intercode\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/huybery/Awesome-Code-LLM\" rel=\"nofollow\"\u003egithub.com/huybery/Awesome-Code-LLM\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/princeton-nlp/intercode",
-      "url": "/github.com/princeton-nlp/intercode"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/ozyyshr/RepoGraph"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/ozyyshr/RepoGraph\" rel=\"nofollow\"\u003egithub.com/ozyyshr/RepoGraph\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/ozyyshr/RepoGraph",
-      "url": "/github.com/ozyyshr/RepoGraph"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/SAILResearch/awesome-foundation-model-leaderboards"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/SAILResearch/awesome-foundation-model-leaderboards\" rel=\"nofollow\"\u003egithub.com/SAILResearch/awesome-foundation-model-leaderboards\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/SAILResearch/awesome-foundation-model-leaderboards",
-      "url": "/github.com/SAILResearch/awesome-foundation-model-leaderboards"
+      "name": "github.com/huybery/Awesome-Code-LLM",
+      "url": "/github.com/huybery/Awesome-Code-LLM"
     },
     {
       "__typename": "Repository",
@@ -136,6 +66,34 @@
       "externalURLs": [
         {
           "serviceType": "github",
+          "url": "https://github.com/princeton-nlp/intercode"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/princeton-nlp/intercode\" rel=\"nofollow\"\u003egithub.com/princeton-nlp/intercode\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/princeton-nlp/intercode",
+      "url": "/github.com/princeton-nlp/intercode"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/SAILResearch/awesome-foundation-model-leaderboards"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/SAILResearch/awesome-foundation-model-leaderboards\" rel=\"nofollow\"\u003egithub.com/SAILResearch/awesome-foundation-model-leaderboards\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/SAILResearch/awesome-foundation-model-leaderboards",
+      "url": "/github.com/SAILResearch/awesome-foundation-model-leaderboards"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
           "url": "https://github.com/tjunlp-lab/Awesome-LLMs-Evaluation-Papers"
         }
       ],
@@ -150,14 +108,42 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/koaning/arxiv-frontpage"
+          "url": "https://github.com/princeton-nlp/SWE-agent"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/koaning/arxiv-frontpage\" rel=\"nofollow\"\u003egithub.com/koaning/arxiv-frontpage\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/princeton-nlp/SWE-agent\" rel=\"nofollow\"\u003egithub.com/princeton-nlp/SWE-agent\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/koaning/arxiv-frontpage",
-      "url": "/github.com/koaning/arxiv-frontpage"
+      "name": "github.com/princeton-nlp/SWE-agent",
+      "url": "/github.com/princeton-nlp/SWE-agent"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/MiscellaneousStuff/anterion"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/MiscellaneousStuff/anterion\" rel=\"nofollow\"\u003egithub.com/MiscellaneousStuff/anterion\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/MiscellaneousStuff/anterion",
+      "url": "/github.com/MiscellaneousStuff/anterion"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/ozyyshr/RepoGraph"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/ozyyshr/RepoGraph\" rel=\"nofollow\"\u003egithub.com/ozyyshr/RepoGraph\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/ozyyshr/RepoGraph",
+      "url": "/github.com/ozyyshr/RepoGraph"
     },
     {
       "__typename": "Repository",
@@ -172,6 +158,20 @@
       },
       "name": "github.com/UKGovernmentBEIS/inspect_ai",
       "url": "/github.com/UKGovernmentBEIS/inspect_ai"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/koaning/arxiv-frontpage"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/koaning/arxiv-frontpage\" rel=\"nofollow\"\u003egithub.com/koaning/arxiv-frontpage\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/koaning/arxiv-frontpage",
+      "url": "/github.com/koaning/arxiv-frontpage"
     }
   ],
   "LimitHit": false,
@@ -179,7 +179,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 12,
-  "ElapsedMilliseconds": 4123,
+  "ElapsedMilliseconds": 4475,
   "Alert": {
     "Title": "",
     "Description": "",

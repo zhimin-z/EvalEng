@@ -2,23 +2,9 @@
   "SourcegraphEndpoint": "https://sourcegraph.com",
   "Query": "context:global \"alpaca-eval\" select:repo count:all",
   "Site": {
-    "BuildVersion": "289780_2024-09-03_5.6-f216bc3dfea3"
+    "BuildVersion": "290390_2024-09-06_5.7-64a7efa93265"
   },
   "Results": [
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/spack/spack-tutorial"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/spack/spack-tutorial\" rel=\"nofollow\"\u003egithub.com/spack/spack-tutorial\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/spack/spack-tutorial",
-      "url": "/github.com/spack/spack-tutorial"
-    },
     {
       "__typename": "Repository",
       "externalURLs": [
@@ -38,34 +24,6 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/win4r/MoA"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/win4r/MoA\" rel=\"nofollow\"\u003egithub.com/win4r/MoA\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/win4r/MoA",
-      "url": "/github.com/win4r/MoA"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/chujiezheng/LLM-Extrapolation"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/chujiezheng/LLM-Extrapolation\" rel=\"nofollow\"\u003egithub.com/chujiezheng/LLM-Extrapolation\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/chujiezheng/LLM-Extrapolation",
-      "url": "/github.com/chujiezheng/LLM-Extrapolation"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
           "url": "https://github.com/calpt/awesome-adapter-resources"
         }
       ],
@@ -74,6 +32,104 @@
       },
       "name": "github.com/calpt/awesome-adapter-resources",
       "url": "/github.com/calpt/awesome-adapter-resources"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/hanxuhu/SeqIns"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/hanxuhu/SeqIns\" rel=\"nofollow\"\u003egithub.com/hanxuhu/SeqIns\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/hanxuhu/SeqIns",
+      "url": "/github.com/hanxuhu/SeqIns"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/thunlp/UltraChat"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/thunlp/UltraChat\" rel=\"nofollow\"\u003egithub.com/thunlp/UltraChat\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/thunlp/UltraChat",
+      "url": "/github.com/thunlp/UltraChat"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/mudler/LocalAI"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/mudler/LocalAI\" rel=\"nofollow\"\u003egithub.com/mudler/LocalAI\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/mudler/LocalAI",
+      "url": "/github.com/mudler/LocalAI"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/argilla-io/notus"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/argilla-io/notus\" rel=\"nofollow\"\u003egithub.com/argilla-io/notus\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/argilla-io/notus",
+      "url": "/github.com/argilla-io/notus"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/tatsu-lab/alpaca_eval"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/tatsu-lab/alpaca_eval\" rel=\"nofollow\"\u003egithub.com/tatsu-lab/alpaca_eval\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/tatsu-lab/alpaca_eval",
+      "url": "/github.com/tatsu-lab/alpaca_eval"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/yuchenlin/LLM-Blender"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/yuchenlin/LLM-Blender\" rel=\"nofollow\"\u003egithub.com/yuchenlin/LLM-Blender\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/yuchenlin/LLM-Blender",
+      "url": "/github.com/yuchenlin/LLM-Blender"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/open-compass/opencompass"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/open-compass/opencompass\" rel=\"nofollow\"\u003egithub.com/open-compass/opencompass\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/open-compass/opencompass",
+      "url": "/github.com/open-compass/opencompass"
     },
     {
       "__typename": "Repository",
@@ -108,70 +164,84 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/sail-sg/sdft"
+          "url": "https://github.com/premAI-io/state-of-open-source-ai"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/sail-sg/sdft\" rel=\"nofollow\"\u003egithub.com/sail-sg/sdft\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/premAI-io/state-of-open-source-ai\" rel=\"nofollow\"\u003egithub.com/premAI-io/state-of-open-source-ai\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/sail-sg/sdft",
-      "url": "/github.com/sail-sg/sdft"
+      "name": "github.com/premAI-io/state-of-open-source-ai",
+      "url": "/github.com/premAI-io/state-of-open-source-ai"
     },
     {
       "__typename": "Repository",
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/argilla-io/notus"
+          "url": "https://github.com/princeton-nlp/SimPO"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/argilla-io/notus\" rel=\"nofollow\"\u003egithub.com/argilla-io/notus\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/princeton-nlp/SimPO\" rel=\"nofollow\"\u003egithub.com/princeton-nlp/SimPO\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/argilla-io/notus",
-      "url": "/github.com/argilla-io/notus"
+      "name": "github.com/princeton-nlp/SimPO",
+      "url": "/github.com/princeton-nlp/SimPO"
     },
     {
       "__typename": "Repository",
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/CLUEbenchmark/SuperCLUE-Open"
+          "url": "https://github.com/THU-KEG/ADELIE"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/CLUEbenchmark/SuperCLUE-Open\" rel=\"nofollow\"\u003egithub.com/CLUEbenchmark/SuperCLUE-Open\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/THU-KEG/ADELIE\" rel=\"nofollow\"\u003egithub.com/THU-KEG/ADELIE\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/CLUEbenchmark/SuperCLUE-Open",
-      "url": "/github.com/CLUEbenchmark/SuperCLUE-Open"
+      "name": "github.com/THU-KEG/ADELIE",
+      "url": "/github.com/THU-KEG/ADELIE"
     },
     {
       "__typename": "Repository",
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/pldlgb/nuggets"
+          "url": "https://github.com/luchris429/DiscoPOP"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/pldlgb/nuggets\" rel=\"nofollow\"\u003egithub.com/pldlgb/nuggets\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/luchris429/DiscoPOP\" rel=\"nofollow\"\u003egithub.com/luchris429/DiscoPOP\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/pldlgb/nuggets",
-      "url": "/github.com/pldlgb/nuggets"
+      "name": "github.com/luchris429/DiscoPOP",
+      "url": "/github.com/luchris429/DiscoPOP"
     },
     {
       "__typename": "Repository",
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/thunlp/UltraChat"
+          "url": "https://github.com/MozerWang/Loong"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/thunlp/UltraChat\" rel=\"nofollow\"\u003egithub.com/thunlp/UltraChat\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/MozerWang/Loong\" rel=\"nofollow\"\u003egithub.com/MozerWang/Loong\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/thunlp/UltraChat",
-      "url": "/github.com/thunlp/UltraChat"
+      "name": "github.com/MozerWang/Loong",
+      "url": "/github.com/MozerWang/Loong"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/architsharma97/dpo-rlaif"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/architsharma97/dpo-rlaif\" rel=\"nofollow\"\u003egithub.com/architsharma97/dpo-rlaif\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/architsharma97/dpo-rlaif",
+      "url": "/github.com/architsharma97/dpo-rlaif"
     },
     {
       "__typename": "Repository",
@@ -206,84 +276,28 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/mudler/LocalAI"
+          "url": "https://github.com/CLUEbenchmark/SuperCLUE-Open"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/mudler/LocalAI\" rel=\"nofollow\"\u003egithub.com/mudler/LocalAI\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/CLUEbenchmark/SuperCLUE-Open\" rel=\"nofollow\"\u003egithub.com/CLUEbenchmark/SuperCLUE-Open\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/mudler/LocalAI",
-      "url": "/github.com/mudler/LocalAI"
+      "name": "github.com/CLUEbenchmark/SuperCLUE-Open",
+      "url": "/github.com/CLUEbenchmark/SuperCLUE-Open"
     },
     {
       "__typename": "Repository",
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/luchris429/DiscoPOP"
+          "url": "https://github.com/pldlgb/nuggets"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/luchris429/DiscoPOP\" rel=\"nofollow\"\u003egithub.com/luchris429/DiscoPOP\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/pldlgb/nuggets\" rel=\"nofollow\"\u003egithub.com/pldlgb/nuggets\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/luchris429/DiscoPOP",
-      "url": "/github.com/luchris429/DiscoPOP"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/wwxu21/CUT"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/wwxu21/CUT\" rel=\"nofollow\"\u003egithub.com/wwxu21/CUT\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/wwxu21/CUT",
-      "url": "/github.com/wwxu21/CUT"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/hkust-nlp/deita"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/hkust-nlp/deita\" rel=\"nofollow\"\u003egithub.com/hkust-nlp/deita\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/hkust-nlp/deita",
-      "url": "/github.com/hkust-nlp/deita"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/km1994/llms_paper"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/km1994/llms_paper\" rel=\"nofollow\"\u003egithub.com/km1994/llms_paper\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/km1994/llms_paper",
-      "url": "/github.com/km1994/llms_paper"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/yuchenlin/LLM-Blender"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/yuchenlin/LLM-Blender\" rel=\"nofollow\"\u003egithub.com/yuchenlin/LLM-Blender\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/yuchenlin/LLM-Blender",
-      "url": "/github.com/yuchenlin/LLM-Blender"
+      "name": "github.com/pldlgb/nuggets",
+      "url": "/github.com/pldlgb/nuggets"
     },
     {
       "__typename": "Repository",
@@ -304,28 +318,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/togethercomputer/MoA"
+          "url": "https://github.com/wwxu21/CUT"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/togethercomputer/MoA\" rel=\"nofollow\"\u003egithub.com/togethercomputer/MoA\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/wwxu21/CUT\" rel=\"nofollow\"\u003egithub.com/wwxu21/CUT\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/togethercomputer/MoA",
-      "url": "/github.com/togethercomputer/MoA"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/SUSTechBruce/LOOK-M"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/SUSTechBruce/LOOK-M\" rel=\"nofollow\"\u003egithub.com/SUSTechBruce/LOOK-M\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/SUSTechBruce/LOOK-M",
-      "url": "/github.com/SUSTechBruce/LOOK-M"
+      "name": "github.com/wwxu21/CUT",
+      "url": "/github.com/wwxu21/CUT"
     },
     {
       "__typename": "Repository",
@@ -346,28 +346,56 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/Aligner2024/aligner"
+          "url": "https://github.com/spack/spack-tutorial"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/Aligner2024/aligner\" rel=\"nofollow\"\u003egithub.com/Aligner2024/aligner\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/spack/spack-tutorial\" rel=\"nofollow\"\u003egithub.com/spack/spack-tutorial\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/Aligner2024/aligner",
-      "url": "/github.com/Aligner2024/aligner"
+      "name": "github.com/spack/spack-tutorial",
+      "url": "/github.com/spack/spack-tutorial"
     },
     {
       "__typename": "Repository",
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/architsharma97/dpo-rlaif"
+          "url": "https://github.com/km1994/llms_paper"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/architsharma97/dpo-rlaif\" rel=\"nofollow\"\u003egithub.com/architsharma97/dpo-rlaif\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/km1994/llms_paper\" rel=\"nofollow\"\u003egithub.com/km1994/llms_paper\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/architsharma97/dpo-rlaif",
-      "url": "/github.com/architsharma97/dpo-rlaif"
+      "name": "github.com/km1994/llms_paper",
+      "url": "/github.com/km1994/llms_paper"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/sail-sg/sdft"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/sail-sg/sdft\" rel=\"nofollow\"\u003egithub.com/sail-sg/sdft\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/sail-sg/sdft",
+      "url": "/github.com/sail-sg/sdft"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/tenstorrent/tt-buda"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/tenstorrent/tt-buda\" rel=\"nofollow\"\u003egithub.com/tenstorrent/tt-buda\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/tenstorrent/tt-buda",
+      "url": "/github.com/tenstorrent/tt-buda"
     },
     {
       "__typename": "Repository",
@@ -388,98 +416,28 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/princeton-nlp/SimPO"
+          "url": "https://github.com/hkust-nlp/deita"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/princeton-nlp/SimPO\" rel=\"nofollow\"\u003egithub.com/princeton-nlp/SimPO\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/hkust-nlp/deita\" rel=\"nofollow\"\u003egithub.com/hkust-nlp/deita\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/princeton-nlp/SimPO",
-      "url": "/github.com/princeton-nlp/SimPO"
+      "name": "github.com/hkust-nlp/deita",
+      "url": "/github.com/hkust-nlp/deita"
     },
     {
       "__typename": "Repository",
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/stanfordnlp/pyreft"
+          "url": "https://github.com/Aligner2024/aligner"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/stanfordnlp/pyreft\" rel=\"nofollow\"\u003egithub.com/stanfordnlp/pyreft\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Aligner2024/aligner\" rel=\"nofollow\"\u003egithub.com/Aligner2024/aligner\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/stanfordnlp/pyreft",
-      "url": "/github.com/stanfordnlp/pyreft"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/YiVal/YiVal"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/YiVal/YiVal\" rel=\"nofollow\"\u003egithub.com/YiVal/YiVal\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/YiVal/YiVal",
-      "url": "/github.com/YiVal/YiVal"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/premAI-io/state-of-open-source-ai"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/premAI-io/state-of-open-source-ai\" rel=\"nofollow\"\u003egithub.com/premAI-io/state-of-open-source-ai\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/premAI-io/state-of-open-source-ai",
-      "url": "/github.com/premAI-io/state-of-open-source-ai"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/open-compass/opencompass"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/open-compass/opencompass\" rel=\"nofollow\"\u003egithub.com/open-compass/opencompass\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/open-compass/opencompass",
-      "url": "/github.com/open-compass/opencompass"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/THU-KEG/ADELIE"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/THU-KEG/ADELIE\" rel=\"nofollow\"\u003egithub.com/THU-KEG/ADELIE\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/THU-KEG/ADELIE",
-      "url": "/github.com/THU-KEG/ADELIE"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/tatsu-lab/alpaca_eval"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/tatsu-lab/alpaca_eval\" rel=\"nofollow\"\u003egithub.com/tatsu-lab/alpaca_eval\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/tatsu-lab/alpaca_eval",
-      "url": "/github.com/tatsu-lab/alpaca_eval"
+      "name": "github.com/Aligner2024/aligner",
+      "url": "/github.com/Aligner2024/aligner"
     },
     {
       "__typename": "Repository",
@@ -500,14 +458,84 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/MozerWang/Loong"
+          "url": "https://github.com/togethercomputer/MoA"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/MozerWang/Loong\" rel=\"nofollow\"\u003egithub.com/MozerWang/Loong\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/togethercomputer/MoA\" rel=\"nofollow\"\u003egithub.com/togethercomputer/MoA\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/MozerWang/Loong",
-      "url": "/github.com/MozerWang/Loong"
+      "name": "github.com/togethercomputer/MoA",
+      "url": "/github.com/togethercomputer/MoA"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/YiVal/YiVal"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/YiVal/YiVal\" rel=\"nofollow\"\u003egithub.com/YiVal/YiVal\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/YiVal/YiVal",
+      "url": "/github.com/YiVal/YiVal"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/win4r/MoA"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/win4r/MoA\" rel=\"nofollow\"\u003egithub.com/win4r/MoA\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/win4r/MoA",
+      "url": "/github.com/win4r/MoA"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/chujiezheng/LLM-Extrapolation"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/chujiezheng/LLM-Extrapolation\" rel=\"nofollow\"\u003egithub.com/chujiezheng/LLM-Extrapolation\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/chujiezheng/LLM-Extrapolation",
+      "url": "/github.com/chujiezheng/LLM-Extrapolation"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/stanfordnlp/pyreft"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/stanfordnlp/pyreft\" rel=\"nofollow\"\u003egithub.com/stanfordnlp/pyreft\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/stanfordnlp/pyreft",
+      "url": "/github.com/stanfordnlp/pyreft"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/SUSTechBruce/LOOK-M"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/SUSTechBruce/LOOK-M\" rel=\"nofollow\"\u003egithub.com/SUSTechBruce/LOOK-M\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/SUSTechBruce/LOOK-M",
+      "url": "/github.com/SUSTechBruce/LOOK-M"
     },
     {
       "__typename": "Repository",
@@ -542,48 +570,6 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/hanxuhu/SeqIns"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/hanxuhu/SeqIns\" rel=\"nofollow\"\u003egithub.com/hanxuhu/SeqIns\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/hanxuhu/SeqIns",
-      "url": "/github.com/hanxuhu/SeqIns"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/tenstorrent/tt-buda"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/tenstorrent/tt-buda\" rel=\"nofollow\"\u003egithub.com/tenstorrent/tt-buda\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/tenstorrent/tt-buda",
-      "url": "/github.com/tenstorrent/tt-buda"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/FudanDNN-NLP/RAG"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/FudanDNN-NLP/RAG\" rel=\"nofollow\"\u003egithub.com/FudanDNN-NLP/RAG\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/FudanDNN-NLP/RAG",
-      "url": "/github.com/FudanDNN-NLP/RAG"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
           "url": "https://github.com/kh-kim/arxiv-translator"
         }
       ],
@@ -592,6 +578,20 @@
       },
       "name": "github.com/kh-kim/arxiv-translator",
       "url": "/github.com/kh-kim/arxiv-translator"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/sailfish009/paper"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/sailfish009/paper\" rel=\"nofollow\"\u003egithub.com/sailfish009/paper\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/sailfish009/paper",
+      "url": "/github.com/sailfish009/paper"
     },
     {
       "__typename": "Repository",
@@ -612,14 +612,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/sailfish009/paper"
+          "url": "https://github.com/FudanDNN-NLP/RAG"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/sailfish009/paper\" rel=\"nofollow\"\u003egithub.com/sailfish009/paper\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/FudanDNN-NLP/RAG\" rel=\"nofollow\"\u003egithub.com/FudanDNN-NLP/RAG\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/sailfish009/paper",
-      "url": "/github.com/sailfish009/paper"
+      "name": "github.com/FudanDNN-NLP/RAG",
+      "url": "/github.com/FudanDNN-NLP/RAG"
     }
   ],
   "LimitHit": false,
@@ -627,7 +627,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 44,
-  "ElapsedMilliseconds": 10513,
+  "ElapsedMilliseconds": 2242,
   "Alert": {
     "Title": "",
     "Description": "",

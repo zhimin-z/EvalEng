@@ -2,7 +2,7 @@
   "SourcegraphEndpoint": "https://sourcegraph.com",
   "Query": "context:global /bigcode_eval|(bigcode-project\\/evaluation-harness)/ select:repo count:all",
   "Site": {
-    "BuildVersion": "290292_2024-09-05_5.7-902ac2bfc210"
+    "BuildVersion": "290390_2024-09-06_5.7-64a7efa93265"
   },
   "Results": [
     {
@@ -66,14 +66,42 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/OpenBMB/Eurus"
+          "url": "https://github.com/openvinotoolkit/openvino_notebooks"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/OpenBMB/Eurus\" rel=\"nofollow\"\u003egithub.com/OpenBMB/Eurus\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/openvinotoolkit/openvino_notebooks\" rel=\"nofollow\"\u003egithub.com/openvinotoolkit/openvino_notebooks\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/OpenBMB/Eurus",
-      "url": "/github.com/OpenBMB/Eurus"
+      "name": "github.com/openvinotoolkit/openvino_notebooks",
+      "url": "/github.com/openvinotoolkit/openvino_notebooks"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/intel/neural-compressor"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/intel/neural-compressor\" rel=\"nofollow\"\u003egithub.com/intel/neural-compressor\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/intel/neural-compressor",
+      "url": "/github.com/intel/neural-compressor"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/kaistAI/LangBridge"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/kaistAI/LangBridge\" rel=\"nofollow\"\u003egithub.com/kaistAI/LangBridge\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/kaistAI/LangBridge",
+      "url": "/github.com/kaistAI/LangBridge"
     },
     {
       "__typename": "Repository",
@@ -122,42 +150,28 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/kaistAI/LangBridge"
+          "url": "https://github.com/Spico197/MoE-SFT"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/kaistAI/LangBridge\" rel=\"nofollow\"\u003egithub.com/kaistAI/LangBridge\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Spico197/MoE-SFT\" rel=\"nofollow\"\u003egithub.com/Spico197/MoE-SFT\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/kaistAI/LangBridge",
-      "url": "/github.com/kaistAI/LangBridge"
+      "name": "github.com/Spico197/MoE-SFT",
+      "url": "/github.com/Spico197/MoE-SFT"
     },
     {
       "__typename": "Repository",
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/huggingface/optimum-intel"
+          "url": "https://github.com/OpenBMB/Eurus"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/huggingface/optimum-intel\" rel=\"nofollow\"\u003egithub.com/huggingface/optimum-intel\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/OpenBMB/Eurus\" rel=\"nofollow\"\u003egithub.com/OpenBMB/Eurus\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/huggingface/optimum-intel",
-      "url": "/github.com/huggingface/optimum-intel"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/openvinotoolkit/openvino_notebooks"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/openvinotoolkit/openvino_notebooks\" rel=\"nofollow\"\u003egithub.com/openvinotoolkit/openvino_notebooks\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/openvinotoolkit/openvino_notebooks",
-      "url": "/github.com/openvinotoolkit/openvino_notebooks"
+      "name": "github.com/OpenBMB/Eurus",
+      "url": "/github.com/OpenBMB/Eurus"
     },
     {
       "__typename": "Repository",
@@ -178,14 +192,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/Spico197/MoE-SFT"
+          "url": "https://github.com/huggingface/optimum-intel"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/Spico197/MoE-SFT\" rel=\"nofollow\"\u003egithub.com/Spico197/MoE-SFT\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/huggingface/optimum-intel\" rel=\"nofollow\"\u003egithub.com/huggingface/optimum-intel\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/Spico197/MoE-SFT",
-      "url": "/github.com/Spico197/MoE-SFT"
+      "name": "github.com/huggingface/optimum-intel",
+      "url": "/github.com/huggingface/optimum-intel"
     },
     {
       "__typename": "Repository",
@@ -200,20 +214,6 @@
       },
       "name": "github.com/Kludex/awesome-fastapi-projects",
       "url": "/github.com/Kludex/awesome-fastapi-projects"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/intel/neural-compressor"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/intel/neural-compressor\" rel=\"nofollow\"\u003egithub.com/intel/neural-compressor\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/intel/neural-compressor",
-      "url": "/github.com/intel/neural-compressor"
     },
     {
       "__typename": "Repository",
@@ -235,7 +235,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 16,
-  "ElapsedMilliseconds": 46543,
+  "ElapsedMilliseconds": 19413,
   "Alert": {
     "Title": "",
     "Description": "",
