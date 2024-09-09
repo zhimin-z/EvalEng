@@ -1,8 +1,8 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global \"ragchecker\" select:repo count:all",
+  "Query": "context:global /ragchecker-cli|import ragchecker|from ragchecker.* import / select:repo count:all",
   "Site": {
-    "BuildVersion": "290390_2024-09-06_5.7-64a7efa93265"
+    "BuildVersion": "290581_2024-09-09_5.7-61be881a36c5"
   },
   "Results": [
     {
@@ -24,90 +24,6 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/dair-ai/ML-Papers-of-the-Week"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/dair-ai/ML-Papers-of-the-Week\" rel=\"nofollow\"\u003egithub.com/dair-ai/ML-Papers-of-the-Week\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/dair-ai/ML-Papers-of-the-Week",
-      "url": "/github.com/dair-ai/ML-Papers-of-the-Week"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/kimtth/awesome-azure-openai-llm"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/kimtth/awesome-azure-openai-llm\" rel=\"nofollow\"\u003egithub.com/kimtth/awesome-azure-openai-llm\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/kimtth/awesome-azure-openai-llm",
-      "url": "/github.com/kimtth/awesome-azure-openai-llm"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/EthicalML/awesome-production-machine-learning"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/EthicalML/awesome-production-machine-learning\" rel=\"nofollow\"\u003egithub.com/EthicalML/awesome-production-machine-learning\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/EthicalML/awesome-production-machine-learning",
-      "url": "/github.com/EthicalML/awesome-production-machine-learning"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/open-android/DragFooterView"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/open-android/DragFooterView\" rel=\"nofollow\"\u003egithub.com/open-android/DragFooterView\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/open-android/DragFooterView",
-      "url": "/github.com/open-android/DragFooterView"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/explodinggradients/ragas"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/explodinggradients/ragas\" rel=\"nofollow\"\u003egithub.com/explodinggradients/ragas\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/explodinggradients/ragas",
-      "url": "/github.com/explodinggradients/ragas"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/uin3566/DragFooterView"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/uin3566/DragFooterView\" rel=\"nofollow\"\u003egithub.com/uin3566/DragFooterView\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/uin3566/DragFooterView",
-      "url": "/github.com/uin3566/DragFooterView"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
           "url": "https://github.com/amazon-science/RAGChecker"
         }
       ],
@@ -116,168 +32,14 @@
       },
       "name": "github.com/amazon-science/RAGChecker",
       "url": "/github.com/amazon-science/RAGChecker"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/snappmarket/frontend-toolbox"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/snappmarket/frontend-toolbox\" rel=\"nofollow\"\u003egithub.com/snappmarket/frontend-toolbox\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/snappmarket/frontend-toolbox",
-      "url": "/github.com/snappmarket/frontend-toolbox"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/yangzhenglun/hookPro"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/yangzhenglun/hookPro\" rel=\"nofollow\"\u003egithub.com/yangzhenglun/hookPro\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/yangzhenglun/hookPro",
-      "url": "/github.com/yangzhenglun/hookPro"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/liangruibupt/aws-is-how"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/liangruibupt/aws-is-how\" rel=\"nofollow\"\u003egithub.com/liangruibupt/aws-is-how\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/liangruibupt/aws-is-how",
-      "url": "/github.com/liangruibupt/aws-is-how"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/Xnhyacinth/Awesome-LLM-Long-Context-Modeling"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/Xnhyacinth/Awesome-LLM-Long-Context-Modeling\" rel=\"nofollow\"\u003egithub.com/Xnhyacinth/Awesome-LLM-Long-Context-Modeling\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/Xnhyacinth/Awesome-LLM-Long-Context-Modeling",
-      "url": "/github.com/Xnhyacinth/Awesome-LLM-Long-Context-Modeling"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/Tencent/Hippy"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/Tencent/Hippy\" rel=\"nofollow\"\u003egithub.com/Tencent/Hippy\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/Tencent/Hippy",
-      "url": "/github.com/Tencent/Hippy"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/trackawesomelist/trackawesomelist"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/trackawesomelist/trackawesomelist\" rel=\"nofollow\"\u003egithub.com/trackawesomelist/trackawesomelist\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/trackawesomelist/trackawesomelist",
-      "url": "/github.com/trackawesomelist/trackawesomelist"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/charliedream1/ai_wiki"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/charliedream1/ai_wiki\" rel=\"nofollow\"\u003egithub.com/charliedream1/ai_wiki\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/charliedream1/ai_wiki",
-      "url": "/github.com/charliedream1/ai_wiki"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/hist0613/arxivbot"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/hist0613/arxivbot\" rel=\"nofollow\"\u003egithub.com/hist0613/arxivbot\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/hist0613/arxivbot",
-      "url": "/github.com/hist0613/arxivbot"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/feedarchive/libera-feedbot-live"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/feedarchive/libera-feedbot-live\" rel=\"nofollow\"\u003egithub.com/feedarchive/libera-feedbot-live\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/feedarchive/libera-feedbot-live",
-      "url": "/github.com/feedarchive/libera-feedbot-live"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/sailfish009/paper"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/sailfish009/paper\" rel=\"nofollow\"\u003egithub.com/sailfish009/paper\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/sailfish009/paper",
-      "url": "/github.com/sailfish009/paper"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/go2coding/go2coding.github.io"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/go2coding/go2coding.github.io\" rel=\"nofollow\"\u003egithub.com/go2coding/go2coding.github.io\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/go2coding/go2coding.github.io",
-      "url": "/github.com/go2coding/go2coding.github.io"
     }
   ],
   "LimitHit": false,
   "Cloning": [],
   "Missing": [],
   "Timedout": [],
-  "ResultCount": 19,
-  "ElapsedMilliseconds": 11800,
+  "ResultCount": 2,
+  "ElapsedMilliseconds": 6313,
   "Alert": {
     "Title": "",
     "Description": "",

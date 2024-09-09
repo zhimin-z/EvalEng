@@ -1,8 +1,8 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global \"flageval-serving\" select:repo count:all",
+  "Query": "context:global /import flageval|from flageval.* import / select:repo count:all",
   "Site": {
-    "BuildVersion": "290390_2024-09-06_5.7-64a7efa93265"
+    "BuildVersion": "290581_2024-09-09_5.7-61be881a36c5"
   },
   "Results": [
     {
@@ -10,22 +10,50 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/FlagOpen/FlagEval"
+          "url": "https://github.com/open-feature/python-sdk"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/FlagOpen/FlagEval\" rel=\"nofollow\"\u003egithub.com/FlagOpen/FlagEval\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/open-feature/python-sdk\" rel=\"nofollow\"\u003egithub.com/open-feature/python-sdk\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/FlagOpen/FlagEval",
-      "url": "/github.com/FlagOpen/FlagEval"
+      "name": "github.com/open-feature/python-sdk",
+      "url": "/github.com/open-feature/python-sdk"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/thomaspoignant/go-feature-flag"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/thomaspoignant/go-feature-flag\" rel=\"nofollow\"\u003egithub.com/thomaspoignant/go-feature-flag\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/thomaspoignant/go-feature-flag",
+      "url": "/github.com/thomaspoignant/go-feature-flag"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/open-feature/openfeature.dev"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/open-feature/openfeature.dev\" rel=\"nofollow\"\u003egithub.com/open-feature/openfeature.dev\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/open-feature/openfeature.dev",
+      "url": "/github.com/open-feature/openfeature.dev"
     }
   ],
   "LimitHit": false,
   "Cloning": [],
   "Missing": [],
   "Timedout": [],
-  "ResultCount": 1,
-  "ElapsedMilliseconds": 3403,
+  "ResultCount": 3,
+  "ElapsedMilliseconds": 5144,
   "Alert": {
     "Title": "",
     "Description": "",

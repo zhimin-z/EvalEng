@@ -2,7 +2,7 @@
   "SourcegraphEndpoint": "https://sourcegraph.com",
   "Query": "context:global \"intercode-bench\" select:repo count:all",
   "Site": {
-    "BuildVersion": "290390_2024-09-06_5.7-64a7efa93265"
+    "BuildVersion": "290581_2024-09-09_5.7-61be881a36c5"
   },
   "Results": [
     {
@@ -10,14 +10,28 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/entropy-research/Devon"
+          "url": "https://github.com/UKGovernmentBEIS/inspect_ai"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/entropy-research/Devon\" rel=\"nofollow\"\u003egithub.com/entropy-research/Devon\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/UKGovernmentBEIS/inspect_ai\" rel=\"nofollow\"\u003egithub.com/UKGovernmentBEIS/inspect_ai\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/entropy-research/Devon",
-      "url": "/github.com/entropy-research/Devon"
+      "name": "github.com/UKGovernmentBEIS/inspect_ai",
+      "url": "/github.com/UKGovernmentBEIS/inspect_ai"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/koaning/arxiv-frontpage"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/koaning/arxiv-frontpage\" rel=\"nofollow\"\u003egithub.com/koaning/arxiv-frontpage\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/koaning/arxiv-frontpage",
+      "url": "/github.com/koaning/arxiv-frontpage"
     },
     {
       "__typename": "Repository",
@@ -38,6 +52,48 @@
       "externalURLs": [
         {
           "serviceType": "github",
+          "url": "https://github.com/ozyyshr/RepoGraph"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/ozyyshr/RepoGraph\" rel=\"nofollow\"\u003egithub.com/ozyyshr/RepoGraph\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/ozyyshr/RepoGraph",
+      "url": "/github.com/ozyyshr/RepoGraph"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/entropy-research/Devon"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/entropy-research/Devon\" rel=\"nofollow\"\u003egithub.com/entropy-research/Devon\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/entropy-research/Devon",
+      "url": "/github.com/entropy-research/Devon"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/tjunlp-lab/Awesome-LLMs-Evaluation-Papers"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/tjunlp-lab/Awesome-LLMs-Evaluation-Papers\" rel=\"nofollow\"\u003egithub.com/tjunlp-lab/Awesome-LLMs-Evaluation-Papers\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/tjunlp-lab/Awesome-LLMs-Evaluation-Papers",
+      "url": "/github.com/tjunlp-lab/Awesome-LLMs-Evaluation-Papers"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
           "url": "https://github.com/huybery/Awesome-Code-LLM"
         }
       ],
@@ -46,34 +102,6 @@
       },
       "name": "github.com/huybery/Awesome-Code-LLM",
       "url": "/github.com/huybery/Awesome-Code-LLM"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/metame-ai/awesome-llm-plaza"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/metame-ai/awesome-llm-plaza\" rel=\"nofollow\"\u003egithub.com/metame-ai/awesome-llm-plaza\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/metame-ai/awesome-llm-plaza",
-      "url": "/github.com/metame-ai/awesome-llm-plaza"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/princeton-nlp/intercode"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/princeton-nlp/intercode\" rel=\"nofollow\"\u003egithub.com/princeton-nlp/intercode\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/princeton-nlp/intercode",
-      "url": "/github.com/princeton-nlp/intercode"
     },
     {
       "__typename": "Repository",
@@ -94,14 +122,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/tjunlp-lab/Awesome-LLMs-Evaluation-Papers"
+          "url": "https://github.com/princeton-nlp/intercode"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/tjunlp-lab/Awesome-LLMs-Evaluation-Papers\" rel=\"nofollow\"\u003egithub.com/tjunlp-lab/Awesome-LLMs-Evaluation-Papers\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/princeton-nlp/intercode\" rel=\"nofollow\"\u003egithub.com/princeton-nlp/intercode\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/tjunlp-lab/Awesome-LLMs-Evaluation-Papers",
-      "url": "/github.com/tjunlp-lab/Awesome-LLMs-Evaluation-Papers"
+      "name": "github.com/princeton-nlp/intercode",
+      "url": "/github.com/princeton-nlp/intercode"
     },
     {
       "__typename": "Repository",
@@ -136,42 +164,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/ozyyshr/RepoGraph"
+          "url": "https://github.com/metame-ai/awesome-llm-plaza"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/ozyyshr/RepoGraph\" rel=\"nofollow\"\u003egithub.com/ozyyshr/RepoGraph\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/metame-ai/awesome-llm-plaza\" rel=\"nofollow\"\u003egithub.com/metame-ai/awesome-llm-plaza\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/ozyyshr/RepoGraph",
-      "url": "/github.com/ozyyshr/RepoGraph"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/UKGovernmentBEIS/inspect_ai"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/UKGovernmentBEIS/inspect_ai\" rel=\"nofollow\"\u003egithub.com/UKGovernmentBEIS/inspect_ai\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/UKGovernmentBEIS/inspect_ai",
-      "url": "/github.com/UKGovernmentBEIS/inspect_ai"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/koaning/arxiv-frontpage"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/koaning/arxiv-frontpage\" rel=\"nofollow\"\u003egithub.com/koaning/arxiv-frontpage\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/koaning/arxiv-frontpage",
-      "url": "/github.com/koaning/arxiv-frontpage"
+      "name": "github.com/metame-ai/awesome-llm-plaza",
+      "url": "/github.com/metame-ai/awesome-llm-plaza"
     }
   ],
   "LimitHit": false,
@@ -179,7 +179,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 12,
-  "ElapsedMilliseconds": 4475,
+  "ElapsedMilliseconds": 4598,
   "Alert": {
     "Title": "",
     "Description": "",

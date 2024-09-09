@@ -1,8 +1,8 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global \"tonic-validate\" select:repo count:all",
+  "Query": "context:global /import tonic_validate|from tonic_validate.* import / select:repo count:all",
   "Site": {
-    "BuildVersion": "290390_2024-09-06_5.7-64a7efa93265"
+    "BuildVersion": "290581_2024-09-09_5.7-61be881a36c5"
   },
   "Results": [
     {
@@ -24,20 +24,6 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/klay-liu/tutorial-in-bilibili"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/klay-liu/tutorial-in-bilibili\" rel=\"nofollow\"\u003egithub.com/klay-liu/tutorial-in-bilibili\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/klay-liu/tutorial-in-bilibili",
-      "url": "/github.com/klay-liu/tutorial-in-bilibili"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
           "url": "https://github.com/TonicAI/tonic_validate"
         }
       ],
@@ -52,14 +38,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/sydverma123/awesome-ai-repositories"
+          "url": "https://github.com/klay-liu/tutorial-in-bilibili"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/sydverma123/awesome-ai-repositories\" rel=\"nofollow\"\u003egithub.com/sydverma123/awesome-ai-repositories\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/klay-liu/tutorial-in-bilibili\" rel=\"nofollow\"\u003egithub.com/klay-liu/tutorial-in-bilibili\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/sydverma123/awesome-ai-repositories",
-      "url": "/github.com/sydverma123/awesome-ai-repositories"
+      "name": "github.com/klay-liu/tutorial-in-bilibili",
+      "url": "/github.com/klay-liu/tutorial-in-bilibili"
     },
     {
       "__typename": "Repository",
@@ -80,34 +66,6 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/explodinggradients/ragas"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/explodinggradients/ragas\" rel=\"nofollow\"\u003egithub.com/explodinggradients/ragas\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/explodinggradients/ragas",
-      "url": "/github.com/explodinggradients/ragas"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/fusion-jena/automatic-KG-creation-with-LLM"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/fusion-jena/automatic-KG-creation-with-LLM\" rel=\"nofollow\"\u003egithub.com/fusion-jena/automatic-KG-creation-with-LLM\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/fusion-jena/automatic-KG-creation-with-LLM",
-      "url": "/github.com/fusion-jena/automatic-KG-creation-with-LLM"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
           "url": "https://github.com/Azure-Samples/llama-index-python"
         }
       ],
@@ -122,22 +80,22 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/cognitivetech/ollama-ebook-summary"
+          "url": "https://github.com/predlico/ARAGOG"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/cognitivetech/ollama-ebook-summary\" rel=\"nofollow\"\u003egithub.com/cognitivetech/ollama-ebook-summary\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/predlico/ARAGOG\" rel=\"nofollow\"\u003egithub.com/predlico/ARAGOG\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/cognitivetech/ollama-ebook-summary",
-      "url": "/github.com/cognitivetech/ollama-ebook-summary"
+      "name": "github.com/predlico/ARAGOG",
+      "url": "/github.com/predlico/ARAGOG"
     }
   ],
   "LimitHit": false,
   "Cloning": [],
   "Missing": [],
   "Timedout": [],
-  "ResultCount": 9,
-  "ElapsedMilliseconds": 2449,
+  "ResultCount": 6,
+  "ElapsedMilliseconds": 4506,
   "Alert": {
     "Title": "",
     "Description": "",

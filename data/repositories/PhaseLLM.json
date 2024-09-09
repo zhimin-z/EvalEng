@@ -1,52 +1,10 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global \"phasellm\" select:repo count:all",
+  "Query": "context:global /import phasellm|from phasellm.* import / select:repo count:all",
   "Site": {
-    "BuildVersion": "290390_2024-09-06_5.7-64a7efa93265"
+    "BuildVersion": "290581_2024-09-09_5.7-61be881a36c5"
   },
   "Results": [
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/LuxLang/lux"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/LuxLang/lux\" rel=\"nofollow\"\u003egithub.com/LuxLang/lux\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/LuxLang/lux",
-      "url": "/github.com/LuxLang/lux"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/EthicalML/awesome-production-machine-learning"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/EthicalML/awesome-production-machine-learning\" rel=\"nofollow\"\u003egithub.com/EthicalML/awesome-production-machine-learning\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/EthicalML/awesome-production-machine-learning",
-      "url": "/github.com/EthicalML/awesome-production-machine-learning"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/transitive-bullshit/bens-bites-ai-search"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/transitive-bullshit/bens-bites-ai-search\" rel=\"nofollow\"\u003egithub.com/transitive-bullshit/bens-bites-ai-search\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/transitive-bullshit/bens-bites-ai-search",
-      "url": "/github.com/transitive-bullshit/bens-bites-ai-search"
-    },
     {
       "__typename": "Repository",
       "externalURLs": [
@@ -66,20 +24,6 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/onejune2018/Awesome-LLM-Eval"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/onejune2018/Awesome-LLM-Eval\" rel=\"nofollow\"\u003egithub.com/onejune2018/Awesome-LLM-Eval\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/onejune2018/Awesome-LLM-Eval",
-      "url": "/github.com/onejune2018/Awesome-LLM-Eval"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
           "url": "https://github.com/wgryc/phasellm"
         }
       ],
@@ -88,28 +32,14 @@
       },
       "name": "github.com/wgryc/phasellm",
       "url": "/github.com/wgryc/phasellm"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/anvaka/map-of-github-data"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/anvaka/map-of-github-data\" rel=\"nofollow\"\u003egithub.com/anvaka/map-of-github-data\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/anvaka/map-of-github-data",
-      "url": "/github.com/anvaka/map-of-github-data"
     }
   ],
   "LimitHit": false,
   "Cloning": [],
   "Missing": [],
   "Timedout": [],
-  "ResultCount": 7,
-  "ElapsedMilliseconds": 1796,
+  "ResultCount": 2,
+  "ElapsedMilliseconds": 4973,
   "Alert": {
     "Title": "",
     "Description": "",

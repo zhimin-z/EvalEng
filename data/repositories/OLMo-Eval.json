@@ -2,7 +2,7 @@
   "SourcegraphEndpoint": "https://sourcegraph.com",
   "Query": "context:global \"olmo_eval\" select:repo count:all",
   "Site": {
-    "BuildVersion": "290390_2024-09-06_5.7-64a7efa93265"
+    "BuildVersion": "290581_2024-09-09_5.7-61be881a36c5"
   },
   "Results": [
     {
@@ -25,7 +25,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 1,
-  "ElapsedMilliseconds": 1933,
+  "ElapsedMilliseconds": 1441,
   "Alert": {
     "Title": "",
     "Description": "",

@@ -93,7 +93,7 @@
         },
         {
             "name": "Canner/WrenAI",
-            "stars": 1667,
+            "stars": 1672,
             "img": "https://avatars.githubusercontent.com/u/7250217?s=40&v=4",
             "owner": "Canner",
             "repo_name": "WrenAI"
@@ -148,6 +148,13 @@
             "repo_name": "llama_index"
         },
         {
+            "name": "GaoDalie/Evaluation_RAG",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/53352801?s=40&v=4",
+            "owner": "GaoDalie",
+            "repo_name": "Evaluation_RAG"
+        },
+        {
             "name": "Hujaifa-Git/LLM-Evaluation-using-DeepEval",
             "stars": 0,
             "img": "https://avatars.githubusercontent.com/u/60604941?s=40&v=4",
@@ -160,13 +167,6 @@
             "img": "https://avatars.githubusercontent.com/u/46764336?s=40&v=4",
             "owner": "IMJONEZZ",
             "repo_name": "LLMs-in-Production"
-        },
-        {
-            "name": "ITMO-NSS-team/BIAM-Urb",
-            "stars": 0,
-            "img": "https://avatars.githubusercontent.com/u/49489434?s=40&v=4",
-            "owner": "ITMO-NSS-team",
-            "repo_name": "BIAM-Urb"
         },
         {
             "name": "KHoonKim/AIchat",
@@ -212,7 +212,7 @@
         },
         {
             "name": "NirDiamant/RAG_Techniques",
-            "stars": 5526,
+            "stars": 5699,
             "img": "https://avatars.githubusercontent.com/u/28316913?s=40&v=4",
             "owner": "NirDiamant",
             "repo_name": "RAG_Techniques"
@@ -247,7 +247,7 @@
         },
         {
             "name": "PacktPublishing/Building-Data-Driven-Applications-with-LlamaIndex",
-            "stars": 43,
+            "stars": 44,
             "img": "https://avatars.githubusercontent.com/u/10974906?s=40&v=4",
             "owner": "PacktPublishing",
             "repo_name": "Building-Data-Driven-Applications-with-LlamaIndex"
@@ -282,7 +282,7 @@
         },
         {
             "name": "RamiAwar/dataline",
-            "stars": 702,
+            "stars": 715,
             "img": "https://avatars.githubusercontent.com/u/8523191?s=40&v=4",
             "owner": "RamiAwar",
             "repo_name": "dataline"
@@ -428,6 +428,13 @@
             "repo_name": "cute"
         },
         {
+            "name": "anonym-nlp-ai/cirrr",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/172591224?s=40&v=4",
+            "owner": "anonym-nlp-ai",
+            "repo_name": "cirrr"
+        },
+        {
             "name": "apocas/restai",
             "stars": 354,
             "img": "https://avatars.githubusercontent.com/u/597413?s=40&v=4",
@@ -468,6 +475,13 @@
             "img": "https://avatars.githubusercontent.com/u/93145909?s=40&v=4",
             "owner": "ash0ts",
             "repo_name": "snowflake-arctic-weave-demo"
+        },
+        {
+            "name": "aunali1932/advance-rag-app",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/68739329?s=40&v=4",
+            "owner": "aunali1932",
+            "repo_name": "advance-rag-app"
         },
         {
             "name": "baldpanda/pydata-manchester-talk",
@@ -597,7 +611,7 @@
         },
         {
             "name": "fastrepl/canary",
-            "stars": 34,
+            "stars": 35,
             "img": "https://avatars.githubusercontent.com/u/142983232?s=40&v=4",
             "owner": "fastrepl",
             "repo_name": "canary"
@@ -625,14 +639,14 @@
         },
         {
             "name": "genai-apps/aggrag",
-            "stars": 6,
+            "stars": 7,
             "img": "https://avatars.githubusercontent.com/u/173376439?s=40&v=4",
             "owner": "genai-apps",
             "repo_name": "aggrag"
         },
         {
             "name": "getzep/graphiti",
-            "stars": 447,
+            "stars": 503,
             "img": "https://avatars.githubusercontent.com/u/132832125?s=40&v=4",
             "owner": "getzep",
             "repo_name": "graphiti"
@@ -835,7 +849,7 @@
         },
         {
             "name": "microsoft/call-center-ai",
-            "stars": 173,
+            "stars": 176,
             "img": "https://avatars.githubusercontent.com/u/6154722?s=40&v=4",
             "owner": "microsoft",
             "repo_name": "call-center-ai"
@@ -912,7 +926,7 @@
         },
         {
             "name": "pingcap/tidb.ai",
-            "stars": 167,
+            "stars": 168,
             "img": "https://avatars.githubusercontent.com/u/11855343?s=40&v=4",
             "owner": "pingcap",
             "repo_name": "tidb.ai"
@@ -954,7 +968,7 @@
         },
         {
             "name": "run-llama/llama_index",
-            "stars": 35225,
+            "stars": 35289,
             "img": "https://avatars.githubusercontent.com/u/130722866?s=40&v=4",
             "owner": "run-llama",
             "repo_name": "llama_index"
@@ -1024,7 +1038,7 @@
         },
         {
             "name": "sunholo-data/sunholo-py",
-            "stars": 10,
+            "stars": 11,
             "img": "https://avatars.githubusercontent.com/u/147247777?s=40&v=4",
             "owner": "sunholo-data",
             "repo_name": "sunholo-py"
@@ -1052,7 +1066,7 @@
         },
         {
             "name": "topoteretes/cognee",
-            "stars": 793,
+            "stars": 798,
             "img": "https://avatars.githubusercontent.com/u/125468716?s=40&v=4",
             "owner": "topoteretes",
             "repo_name": "cognee"
@@ -1135,15 +1149,15 @@
             "repo_name": "hack-day24"
         }
     ],
-    "total_dependents_number": 162,
-    "public_dependents_number": 162,
-    "private_dependents_number": -162,
-    "public_dependents_stars": 112,
+    "total_dependents_number": 164,
+    "public_dependents_number": 164,
+    "private_dependents_number": -164,
+    "public_dependents_stars": 35402,
     "badges": {
-        "total_doc_url": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by&message=162&color=informational&logo=slickpic)](https://github.com/nvuillam/github-dependents-info)",
-        "total": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by&message=162&color=informational&logo=slickpic)](https://github.com/confident-ai/deepeval/network/dependents)",
-        "public": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(public)&message=162&color=informational&logo=slickpic)](https://github.com/confident-ai/deepeval/network/dependents)",
-        "private": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(private)&message=-162&color=informational&logo=slickpic)](https://github.com/confident-ai/deepeval/network/dependents)",
-        "stars": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(stars)&message=112&color=informational&logo=slickpic)](https://github.com/confident-ai/deepeval/network/dependents)"
+        "total_doc_url": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by&message=164&color=informational&logo=slickpic)](https://github.com/nvuillam/github-dependents-info)",
+        "total": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by&message=164&color=informational&logo=slickpic)](https://github.com/confident-ai/deepeval/network/dependents)",
+        "public": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(public)&message=164&color=informational&logo=slickpic)](https://github.com/confident-ai/deepeval/network/dependents)",
+        "private": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(private)&message=-164&color=informational&logo=slickpic)](https://github.com/confident-ai/deepeval/network/dependents)",
+        "stars": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(stars)&message=35402&color=informational&logo=slickpic)](https://github.com/confident-ai/deepeval/network/dependents)"
     }
 }

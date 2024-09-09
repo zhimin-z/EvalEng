@@ -2,7 +2,7 @@
   "SourcegraphEndpoint": "https://sourcegraph.com",
   "Query": "context:global \"runbenchmark.py\" select:repo count:all",
   "Site": {
-    "BuildVersion": "290390_2024-09-06_5.7-64a7efa93265"
+    "BuildVersion": "290581_2024-09-09_5.7-61be881a36c5"
   },
   "Results": [
     {
@@ -24,20 +24,6 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/bnpy/bnpy"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/bnpy/bnpy\" rel=\"nofollow\"\u003egithub.com/bnpy/bnpy\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/bnpy/bnpy",
-      "url": "/github.com/bnpy/bnpy"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
           "url": "https://github.com/Asoul/stockflow"
         }
       ],
@@ -46,6 +32,20 @@
       },
       "name": "github.com/Asoul/stockflow",
       "url": "/github.com/Asoul/stockflow"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/bnpy/bnpy"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/bnpy/bnpy\" rel=\"nofollow\"\u003egithub.com/bnpy/bnpy\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/bnpy/bnpy",
+      "url": "/github.com/bnpy/bnpy"
     },
     {
       "__typename": "Repository",
@@ -66,20 +66,6 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/microsoft/nni"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/microsoft/nni\" rel=\"nofollow\"\u003egithub.com/microsoft/nni\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/microsoft/nni",
-      "url": "/github.com/microsoft/nni"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
           "url": "https://github.com/openml/automlbenchmark"
         }
       ],
@@ -88,6 +74,20 @@
       },
       "name": "github.com/openml/automlbenchmark",
       "url": "/github.com/openml/automlbenchmark"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/microsoft/nni"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/microsoft/nni\" rel=\"nofollow\"\u003egithub.com/microsoft/nni\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/microsoft/nni",
+      "url": "/github.com/microsoft/nni"
     },
     {
       "__typename": "Repository",
@@ -109,7 +109,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 7,
-  "ElapsedMilliseconds": 2153,
+  "ElapsedMilliseconds": 4021,
   "Alert": {
     "Title": "",
     "Description": "",

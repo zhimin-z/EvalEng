@@ -1,8 +1,8 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global /arize-phoenix|(arizephoenix\\/phoenix)/ select:repo count:all",
+  "Query": "context:global /arize-phoenix|arizephoenix\\/phoenix/ select:repo count:all",
   "Site": {
-    "BuildVersion": "290390_2024-09-06_5.7-64a7efa93265"
+    "BuildVersion": "290581_2024-09-09_5.7-61be881a36c5"
   },
   "Results": [
     {
@@ -18,6 +18,20 @@
       },
       "name": "github.com/academic/awesome-datascience",
       "url": "/github.com/academic/awesome-datascience"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/adithya-s-k/AI-Engineering.academy"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/adithya-s-k/AI-Engineering.academy\" rel=\"nofollow\"\u003egithub.com/adithya-s-k/AI-Engineering.academy\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/adithya-s-k/AI-Engineering.academy",
+      "url": "/github.com/adithya-s-k/AI-Engineering.academy"
     },
     {
       "__typename": "Repository",
@@ -52,14 +66,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/run-llama/create-llama"
+          "url": "https://github.com/adithya-s-k/RAG-SaaS"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/run-llama/create-llama\" rel=\"nofollow\"\u003egithub.com/run-llama/create-llama\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/adithya-s-k/RAG-SaaS\" rel=\"nofollow\"\u003egithub.com/adithya-s-k/RAG-SaaS\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/run-llama/create-llama",
-      "url": "/github.com/run-llama/create-llama"
+      "name": "github.com/adithya-s-k/RAG-SaaS",
+      "url": "/github.com/adithya-s-k/RAG-SaaS"
     },
     {
       "__typename": "Repository",
@@ -94,6 +108,20 @@
       "externalURLs": [
         {
           "serviceType": "github",
+          "url": "https://github.com/ytang07/ai_agents_cookbooks"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/ytang07/ai_agents_cookbooks\" rel=\"nofollow\"\u003egithub.com/ytang07/ai_agents_cookbooks\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/ytang07/ai_agents_cookbooks",
+      "url": "/github.com/ytang07/ai_agents_cookbooks"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
           "url": "https://github.com/Hannibal046/Awesome-LLM"
         }
       ],
@@ -102,20 +130,6 @@
       },
       "name": "github.com/Hannibal046/Awesome-LLM",
       "url": "/github.com/Hannibal046/Awesome-LLM"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/The-Art-of-Hacking/h4cker"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/The-Art-of-Hacking/h4cker\" rel=\"nofollow\"\u003egithub.com/The-Art-of-Hacking/h4cker\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/The-Art-of-Hacking/h4cker",
-      "url": "/github.com/The-Art-of-Hacking/h4cker"
     },
     {
       "__typename": "Repository",
@@ -136,84 +150,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/promptslab/Awesome-Prompt-Engineering"
+          "url": "https://github.com/The-Art-of-Hacking/h4cker"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/promptslab/Awesome-Prompt-Engineering\" rel=\"nofollow\"\u003egithub.com/promptslab/Awesome-Prompt-Engineering\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/The-Art-of-Hacking/h4cker\" rel=\"nofollow\"\u003egithub.com/The-Art-of-Hacking/h4cker\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/promptslab/Awesome-Prompt-Engineering",
-      "url": "/github.com/promptslab/Awesome-Prompt-Engineering"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/jayita13/GenerativeAI"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/jayita13/GenerativeAI\" rel=\"nofollow\"\u003egithub.com/jayita13/GenerativeAI\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/jayita13/GenerativeAI",
-      "url": "/github.com/jayita13/GenerativeAI"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/Atomic-man007/Awesome_Multimodel_LLM"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/Atomic-man007/Awesome_Multimodel_LLM\" rel=\"nofollow\"\u003egithub.com/Atomic-man007/Awesome_Multimodel_LLM\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/Atomic-man007/Awesome_Multimodel_LLM",
-      "url": "/github.com/Atomic-man007/Awesome_Multimodel_LLM"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/zenbase-ai/core"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/zenbase-ai/core\" rel=\"nofollow\"\u003egithub.com/zenbase-ai/core\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/zenbase-ai/core",
-      "url": "/github.com/zenbase-ai/core"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/PacktPublishing/Building-Data-Driven-Applications-with-LlamaIndex"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/PacktPublishing/Building-Data-Driven-Applications-with-LlamaIndex\" rel=\"nofollow\"\u003egithub.com/PacktPublishing/Building-Data-Driven-Applications-with-LlamaIndex\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/PacktPublishing/Building-Data-Driven-Applications-with-LlamaIndex",
-      "url": "/github.com/PacktPublishing/Building-Data-Driven-Applications-with-LlamaIndex"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/mistralai/cookbook"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/mistralai/cookbook\" rel=\"nofollow\"\u003egithub.com/mistralai/cookbook\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/mistralai/cookbook",
-      "url": "/github.com/mistralai/cookbook"
+      "name": "github.com/The-Art-of-Hacking/h4cker",
+      "url": "/github.com/The-Art-of-Hacking/h4cker"
     },
     {
       "__typename": "Repository",
@@ -234,6 +178,34 @@
       "externalURLs": [
         {
           "serviceType": "github",
+          "url": "https://github.com/andysingal/llm-course"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/andysingal/llm-course\" rel=\"nofollow\"\u003egithub.com/andysingal/llm-course\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/andysingal/llm-course",
+      "url": "/github.com/andysingal/llm-course"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/baidubce/app-builder"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/baidubce/app-builder\" rel=\"nofollow\"\u003egithub.com/baidubce/app-builder\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/baidubce/app-builder",
+      "url": "/github.com/baidubce/app-builder"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
           "url": "https://github.com/Azure/awesome-azd"
         }
       ],
@@ -248,28 +220,84 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/tensorchord/Awesome-LLMOps"
+          "url": "https://github.com/Azure-Samples/llama-index-python"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/tensorchord/Awesome-LLMOps\" rel=\"nofollow\"\u003egithub.com/tensorchord/Awesome-LLMOps\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Azure-Samples/llama-index-python\" rel=\"nofollow\"\u003egithub.com/Azure-Samples/llama-index-python\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/tensorchord/Awesome-LLMOps",
-      "url": "/github.com/tensorchord/Awesome-LLMOps"
+      "name": "github.com/Azure-Samples/llama-index-python",
+      "url": "/github.com/Azure-Samples/llama-index-python"
     },
     {
       "__typename": "Repository",
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/ganarajpr/awesome-dspy"
+          "url": "https://github.com/prefix-dev/pixi"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/ganarajpr/awesome-dspy\" rel=\"nofollow\"\u003egithub.com/ganarajpr/awesome-dspy\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/prefix-dev/pixi\" rel=\"nofollow\"\u003egithub.com/prefix-dev/pixi\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/ganarajpr/awesome-dspy",
-      "url": "/github.com/ganarajpr/awesome-dspy"
+      "name": "github.com/prefix-dev/pixi",
+      "url": "/github.com/prefix-dev/pixi"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Arize-ai/phoenix"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Arize-ai/phoenix\" rel=\"nofollow\"\u003egithub.com/Arize-ai/phoenix\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Arize-ai/phoenix",
+      "url": "/github.com/Arize-ai/phoenix"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/promptslab/Awesome-Prompt-Engineering"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/promptslab/Awesome-Prompt-Engineering\" rel=\"nofollow\"\u003egithub.com/promptslab/Awesome-Prompt-Engineering\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/promptslab/Awesome-Prompt-Engineering",
+      "url": "/github.com/promptslab/Awesome-Prompt-Engineering"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/kesamet/retrieval-augmented-generation"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/kesamet/retrieval-augmented-generation\" rel=\"nofollow\"\u003egithub.com/kesamet/retrieval-augmented-generation\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/kesamet/retrieval-augmented-generation",
+      "url": "/github.com/kesamet/retrieval-augmented-generation"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/PacktPublishing/Building-Data-Driven-Applications-with-LlamaIndex"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/PacktPublishing/Building-Data-Driven-Applications-with-LlamaIndex\" rel=\"nofollow\"\u003egithub.com/PacktPublishing/Building-Data-Driven-Applications-with-LlamaIndex\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/PacktPublishing/Building-Data-Driven-Applications-with-LlamaIndex",
+      "url": "/github.com/PacktPublishing/Building-Data-Driven-Applications-with-LlamaIndex"
     },
     {
       "__typename": "Repository",
@@ -284,6 +312,20 @@
       },
       "name": "github.com/deepset-ai/haystack-integrations",
       "url": "/github.com/deepset-ai/haystack-integrations"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Atomic-man007/Awesome_Multimodel_LLM"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Atomic-man007/Awesome_Multimodel_LLM\" rel=\"nofollow\"\u003egithub.com/Atomic-man007/Awesome_Multimodel_LLM\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Atomic-man007/Awesome_Multimodel_LLM",
+      "url": "/github.com/Atomic-man007/Awesome_Multimodel_LLM"
     },
     {
       "__typename": "Repository",
@@ -318,6 +360,34 @@
       "externalURLs": [
         {
           "serviceType": "github",
+          "url": "https://github.com/run-llama/create-llama"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/run-llama/create-llama\" rel=\"nofollow\"\u003egithub.com/run-llama/create-llama\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/run-llama/create-llama",
+      "url": "/github.com/run-llama/create-llama"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/zenbase-ai/core"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/zenbase-ai/core\" rel=\"nofollow\"\u003egithub.com/zenbase-ai/core\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/zenbase-ai/core",
+      "url": "/github.com/zenbase-ai/core"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
           "url": "https://github.com/insightbuilder/python_de_learners_data"
         }
       ],
@@ -346,14 +416,42 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/Arize-ai/phoenix"
+          "url": "https://github.com/Mirascope/mirascope"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/Arize-ai/phoenix\" rel=\"nofollow\"\u003egithub.com/Arize-ai/phoenix\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Mirascope/mirascope\" rel=\"nofollow\"\u003egithub.com/Mirascope/mirascope\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/Arize-ai/phoenix",
-      "url": "/github.com/Arize-ai/phoenix"
+      "name": "github.com/Mirascope/mirascope",
+      "url": "/github.com/Mirascope/mirascope"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/mistralai/cookbook"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/mistralai/cookbook\" rel=\"nofollow\"\u003egithub.com/mistralai/cookbook\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/mistralai/cookbook",
+      "url": "/github.com/mistralai/cookbook"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/tensorchord/Awesome-LLMOps"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/tensorchord/Awesome-LLMOps\" rel=\"nofollow\"\u003egithub.com/tensorchord/Awesome-LLMOps\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/tensorchord/Awesome-LLMOps",
+      "url": "/github.com/tensorchord/Awesome-LLMOps"
     },
     {
       "__typename": "Repository",
@@ -368,6 +466,20 @@
       },
       "name": "github.com/dsdanielpark/open-llm-datasets",
       "url": "/github.com/dsdanielpark/open-llm-datasets"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/jayita13/GenerativeAI"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/jayita13/GenerativeAI\" rel=\"nofollow\"\u003egithub.com/jayita13/GenerativeAI\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/jayita13/GenerativeAI",
+      "url": "/github.com/jayita13/GenerativeAI"
     },
     {
       "__typename": "Repository",
@@ -402,14 +514,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/prefix-dev/pixi"
+          "url": "https://github.com/AaronWard/generative-ai-workbook"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/prefix-dev/pixi\" rel=\"nofollow\"\u003egithub.com/prefix-dev/pixi\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/AaronWard/generative-ai-workbook\" rel=\"nofollow\"\u003egithub.com/AaronWard/generative-ai-workbook\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/prefix-dev/pixi",
-      "url": "/github.com/prefix-dev/pixi"
+      "name": "github.com/AaronWard/generative-ai-workbook",
+      "url": "/github.com/AaronWard/generative-ai-workbook"
     },
     {
       "__typename": "Repository",
@@ -430,28 +542,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/ytang07/ai_agents_cookbooks"
+          "url": "https://github.com/ganarajpr/awesome-dspy"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/ytang07/ai_agents_cookbooks\" rel=\"nofollow\"\u003egithub.com/ytang07/ai_agents_cookbooks\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/ganarajpr/awesome-dspy\" rel=\"nofollow\"\u003egithub.com/ganarajpr/awesome-dspy\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/ytang07/ai_agents_cookbooks",
-      "url": "/github.com/ytang07/ai_agents_cookbooks"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/AaronWard/generative-ai-workbook"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/AaronWard/generative-ai-workbook\" rel=\"nofollow\"\u003egithub.com/AaronWard/generative-ai-workbook\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/AaronWard/generative-ai-workbook",
-      "url": "/github.com/AaronWard/generative-ai-workbook"
+      "name": "github.com/ganarajpr/awesome-dspy",
+      "url": "/github.com/ganarajpr/awesome-dspy"
     },
     {
       "__typename": "Repository",
@@ -486,20 +584,6 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/Azure-Samples/llama-index-python"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/Azure-Samples/llama-index-python\" rel=\"nofollow\"\u003egithub.com/Azure-Samples/llama-index-python\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/Azure-Samples/llama-index-python",
-      "url": "/github.com/Azure-Samples/llama-index-python"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
           "url": "https://github.com/DataDog/guarddog"
         }
       ],
@@ -508,34 +592,6 @@
       },
       "name": "github.com/DataDog/guarddog",
       "url": "/github.com/DataDog/guarddog"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/Mirascope/mirascope"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/Mirascope/mirascope\" rel=\"nofollow\"\u003egithub.com/Mirascope/mirascope\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/Mirascope/mirascope",
-      "url": "/github.com/Mirascope/mirascope"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/baidubce/app-builder"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/baidubce/app-builder\" rel=\"nofollow\"\u003egithub.com/baidubce/app-builder\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/baidubce/app-builder",
-      "url": "/github.com/baidubce/app-builder"
     },
     {
       "__typename": "Repository",
@@ -570,20 +626,6 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/andysingal/llm-course"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/andysingal/llm-course\" rel=\"nofollow\"\u003egithub.com/andysingal/llm-course\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/andysingal/llm-course",
-      "url": "/github.com/andysingal/llm-course"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
           "url": "https://github.com/icopy-site/awesome"
         }
       ],
@@ -592,20 +634,6 @@
       },
       "name": "github.com/icopy-site/awesome",
       "url": "/github.com/icopy-site/awesome"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/adithya-s-k/AI-Engineering.academy"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/adithya-s-k/AI-Engineering.academy\" rel=\"nofollow\"\u003egithub.com/adithya-s-k/AI-Engineering.academy\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/adithya-s-k/AI-Engineering.academy",
-      "url": "/github.com/adithya-s-k/AI-Engineering.academy"
     },
     {
       "__typename": "Repository",
@@ -626,36 +654,22 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/adithya-s-k/RAG-SaaS"
+          "url": "https://github.com/hugovk/top-pypi-packages"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/adithya-s-k/RAG-SaaS\" rel=\"nofollow\"\u003egithub.com/adithya-s-k/RAG-SaaS\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/hugovk/top-pypi-packages\" rel=\"nofollow\"\u003egithub.com/hugovk/top-pypi-packages\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/adithya-s-k/RAG-SaaS",
-      "url": "/github.com/adithya-s-k/RAG-SaaS"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/kesamet/retrieval-augmented-generation"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/kesamet/retrieval-augmented-generation\" rel=\"nofollow\"\u003egithub.com/kesamet/retrieval-augmented-generation\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/kesamet/retrieval-augmented-generation",
-      "url": "/github.com/kesamet/retrieval-augmented-generation"
+      "name": "github.com/hugovk/top-pypi-packages",
+      "url": "/github.com/hugovk/top-pypi-packages"
     }
   ],
   "LimitHit": false,
   "Cloning": [],
   "Missing": [],
   "Timedout": [],
-  "ResultCount": 46,
-  "ElapsedMilliseconds": 8945,
+  "ResultCount": 47,
+  "ElapsedMilliseconds": 8253,
   "Alert": {
     "Title": "",
     "Description": "",
