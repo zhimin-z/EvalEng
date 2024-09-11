@@ -1,8 +1,8 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global /refchecker-cli|import refchecker|from refchecker.* import / select:repo count:all",
+  "Query": "context:global /refchecker-cli|import\\s+refchecker|from\\s+refchecker.* import / select:repo count:all",
   "Site": {
-    "BuildVersion": "290581_2024-09-09_5.7-61be881a36c5"
+    "BuildVersion": "290746_2024-09-10_5.7-5c5c14be9d78"
   },
   "Results": [
     {
@@ -53,7 +53,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 3,
-  "ElapsedMilliseconds": 5656,
+  "ElapsedMilliseconds": 20020,
   "Alert": {
     "Title": "",
     "Description": "",

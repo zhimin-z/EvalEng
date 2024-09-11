@@ -1,8 +1,8 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global /import trustllm|from trustllm.* import / select:repo count:all",
+  "Query": "context:global /import\\s+trustllm|from\\s+trustllm.* import / select:repo count:all",
   "Site": {
-    "BuildVersion": "290581_2024-09-09_5.7-61be881a36c5"
+    "BuildVersion": "290746_2024-09-10_5.7-5c5c14be9d78"
   },
   "Results": [
     {
@@ -39,7 +39,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 2,
-  "ElapsedMilliseconds": 2030,
+  "ElapsedMilliseconds": 2190,
   "Alert": {
     "Title": "",
     "Description": "",

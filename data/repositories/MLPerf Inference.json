@@ -1,38 +1,10 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global \"cm4mlops\" select:repo count:all",
+  "Query": "context:global \"cm run script\" select:repo count:all",
   "Site": {
-    "BuildVersion": "290581_2024-09-09_5.7-61be881a36c5"
+    "BuildVersion": "290746_2024-09-10_5.7-5c5c14be9d78"
   },
   "Results": [
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/koaning/arxiv-frontpage"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/koaning/arxiv-frontpage\" rel=\"nofollow\"\u003egithub.com/koaning/arxiv-frontpage\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/koaning/arxiv-frontpage",
-      "url": "/github.com/koaning/arxiv-frontpage"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/mlcommons/ck"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/mlcommons/ck\" rel=\"nofollow\"\u003egithub.com/mlcommons/ck\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/mlcommons/ck",
-      "url": "/github.com/mlcommons/ck"
-    },
     {
       "__typename": "Repository",
       "externalURLs": [
@@ -52,14 +24,42 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/ctuning/artifact-evaluation"
+          "url": "https://github.com/MEM-Zone/MEM.Zone"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/ctuning/artifact-evaluation\" rel=\"nofollow\"\u003egithub.com/ctuning/artifact-evaluation\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/MEM-Zone/MEM.Zone\" rel=\"nofollow\"\u003egithub.com/MEM-Zone/MEM.Zone\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/ctuning/artifact-evaluation",
-      "url": "/github.com/ctuning/artifact-evaluation"
+      "name": "github.com/MEM-Zone/MEM.Zone",
+      "url": "/github.com/MEM-Zone/MEM.Zone"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/SamsungLabs/Sparse-Multi-DNN-Scheduling"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/SamsungLabs/Sparse-Multi-DNN-Scheduling\" rel=\"nofollow\"\u003egithub.com/SamsungLabs/Sparse-Multi-DNN-Scheduling\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/SamsungLabs/Sparse-Multi-DNN-Scheduling",
+      "url": "/github.com/SamsungLabs/Sparse-Multi-DNN-Scheduling"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/mlcommons/ck"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/mlcommons/ck\" rel=\"nofollow\"\u003egithub.com/mlcommons/ck\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/mlcommons/ck",
+      "url": "/github.com/mlcommons/ck"
     }
   ],
   "LimitHit": false,
@@ -67,7 +67,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 4,
-  "ElapsedMilliseconds": 997,
+  "ElapsedMilliseconds": 3118,
   "Alert": {
     "Title": "",
     "Description": "",

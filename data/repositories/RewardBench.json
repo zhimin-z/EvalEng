@@ -2,9 +2,23 @@
   "SourcegraphEndpoint": "https://sourcegraph.com",
   "Query": "context:global \"rewardbench\" select:repo count:all",
   "Site": {
-    "BuildVersion": "290581_2024-09-09_5.7-61be881a36c5"
+    "BuildVersion": "290746_2024-09-10_5.7-5c5c14be9d78"
   },
   "Results": [
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/metame-ai/awesome-llm-plaza"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/metame-ai/awesome-llm-plaza\" rel=\"nofollow\"\u003egithub.com/metame-ai/awesome-llm-plaza\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/metame-ai/awesome-llm-plaza",
+      "url": "/github.com/metame-ai/awesome-llm-plaza"
+    },
     {
       "__typename": "Repository",
       "externalURLs": [
@@ -18,6 +32,20 @@
       },
       "name": "github.com/dair-ai/ML-Papers-of-the-Week",
       "url": "/github.com/dair-ai/ML-Papers-of-the-Week"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/deep-diver/hf-daily-paper-newsletter"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/deep-diver/hf-daily-paper-newsletter\" rel=\"nofollow\"\u003egithub.com/deep-diver/hf-daily-paper-newsletter\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/deep-diver/hf-daily-paper-newsletter",
+      "url": "/github.com/deep-diver/hf-daily-paper-newsletter"
     },
     {
       "__typename": "Repository",
@@ -52,34 +80,6 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/genai-handbook/genai-handbook.github.io"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/genai-handbook/genai-handbook.github.io\" rel=\"nofollow\"\u003egithub.com/genai-handbook/genai-handbook.github.io\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/genai-handbook/genai-handbook.github.io",
-      "url": "/github.com/genai-handbook/genai-handbook.github.io"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/MozerWang/Loong"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/MozerWang/Loong\" rel=\"nofollow\"\u003egithub.com/MozerWang/Loong\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/MozerWang/Loong",
-      "url": "/github.com/MozerWang/Loong"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
           "url": "https://github.com/ljvmiranda921/ljvmiranda921.github.io"
         }
       ],
@@ -94,14 +94,28 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/InternLM/InternLM"
+          "url": "https://github.com/genai-handbook/genai-handbook.github.io"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/InternLM/InternLM\" rel=\"nofollow\"\u003egithub.com/InternLM/InternLM\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/genai-handbook/genai-handbook.github.io\" rel=\"nofollow\"\u003egithub.com/genai-handbook/genai-handbook.github.io\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/InternLM/InternLM",
-      "url": "/github.com/InternLM/InternLM"
+      "name": "github.com/genai-handbook/genai-handbook.github.io",
+      "url": "/github.com/genai-handbook/genai-handbook.github.io"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/l-yohai/daily_papers_ko"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/l-yohai/daily_papers_ko\" rel=\"nofollow\"\u003egithub.com/l-yohai/daily_papers_ko\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/l-yohai/daily_papers_ko",
+      "url": "/github.com/l-yohai/daily_papers_ko"
     },
     {
       "__typename": "Repository",
@@ -122,14 +136,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/SAILResearch/awesome-foundation-model-leaderboards"
+          "url": "https://github.com/MozerWang/Loong"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/SAILResearch/awesome-foundation-model-leaderboards\" rel=\"nofollow\"\u003egithub.com/SAILResearch/awesome-foundation-model-leaderboards\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/MozerWang/Loong\" rel=\"nofollow\"\u003egithub.com/MozerWang/Loong\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/SAILResearch/awesome-foundation-model-leaderboards",
-      "url": "/github.com/SAILResearch/awesome-foundation-model-leaderboards"
+      "name": "github.com/MozerWang/Loong",
+      "url": "/github.com/MozerWang/Loong"
     },
     {
       "__typename": "Repository",
@@ -144,6 +158,62 @@
       },
       "name": "github.com/InternLM/xtuner",
       "url": "/github.com/InternLM/xtuner"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/RLHFlow/RLHF-Reward-Modeling"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/RLHFlow/RLHF-Reward-Modeling\" rel=\"nofollow\"\u003egithub.com/RLHFlow/RLHF-Reward-Modeling\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/RLHFlow/RLHF-Reward-Modeling",
+      "url": "/github.com/RLHFlow/RLHF-Reward-Modeling"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/SAILResearch/awesome-foundation-model-leaderboards"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/SAILResearch/awesome-foundation-model-leaderboards\" rel=\"nofollow\"\u003egithub.com/SAILResearch/awesome-foundation-model-leaderboards\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/SAILResearch/awesome-foundation-model-leaderboards",
+      "url": "/github.com/SAILResearch/awesome-foundation-model-leaderboards"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/InternLM/InternLM"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/InternLM/InternLM\" rel=\"nofollow\"\u003egithub.com/InternLM/InternLM\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/InternLM/InternLM",
+      "url": "/github.com/InternLM/InternLM"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/allenai/reward-bench"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/allenai/reward-bench\" rel=\"nofollow\"\u003egithub.com/allenai/reward-bench\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/allenai/reward-bench",
+      "url": "/github.com/allenai/reward-bench"
     },
     {
       "__typename": "Repository",
@@ -178,20 +248,6 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/RLHFlow/RLHF-Reward-Modeling"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/RLHFlow/RLHF-Reward-Modeling\" rel=\"nofollow\"\u003egithub.com/RLHFlow/RLHF-Reward-Modeling\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/RLHFlow/RLHF-Reward-Modeling",
-      "url": "/github.com/RLHFlow/RLHF-Reward-Modeling"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
           "url": "https://github.com/RLHFlow/Online-RLHF"
         }
       ],
@@ -200,34 +256,6 @@
       },
       "name": "github.com/RLHFlow/Online-RLHF",
       "url": "/github.com/RLHFlow/Online-RLHF"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/stanfordnlp/pyreft"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/stanfordnlp/pyreft\" rel=\"nofollow\"\u003egithub.com/stanfordnlp/pyreft\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/stanfordnlp/pyreft",
-      "url": "/github.com/stanfordnlp/pyreft"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/allenai/reward-bench"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/allenai/reward-bench\" rel=\"nofollow\"\u003egithub.com/allenai/reward-bench\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/allenai/reward-bench",
-      "url": "/github.com/allenai/reward-bench"
     },
     {
       "__typename": "Repository",
@@ -248,42 +276,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/qhduan/cn-chat-arxiv"
+          "url": "https://github.com/stanfordnlp/pyreft"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/qhduan/cn-chat-arxiv\" rel=\"nofollow\"\u003egithub.com/qhduan/cn-chat-arxiv\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/stanfordnlp/pyreft\" rel=\"nofollow\"\u003egithub.com/stanfordnlp/pyreft\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/qhduan/cn-chat-arxiv",
-      "url": "/github.com/qhduan/cn-chat-arxiv"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/metame-ai/awesome-llm-plaza"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/metame-ai/awesome-llm-plaza\" rel=\"nofollow\"\u003egithub.com/metame-ai/awesome-llm-plaza\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/metame-ai/awesome-llm-plaza",
-      "url": "/github.com/metame-ai/awesome-llm-plaza"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/deep-diver/hf-daily-paper-newsletter"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/deep-diver/hf-daily-paper-newsletter\" rel=\"nofollow\"\u003egithub.com/deep-diver/hf-daily-paper-newsletter\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/deep-diver/hf-daily-paper-newsletter",
-      "url": "/github.com/deep-diver/hf-daily-paper-newsletter"
+      "name": "github.com/stanfordnlp/pyreft",
+      "url": "/github.com/stanfordnlp/pyreft"
     },
     {
       "__typename": "Repository",
@@ -298,6 +298,34 @@
       },
       "name": "github.com/MatrixAINetwork/go-matrix",
       "url": "/github.com/MatrixAINetwork/go-matrix"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/qhduan/cn-chat-arxiv"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/qhduan/cn-chat-arxiv\" rel=\"nofollow\"\u003egithub.com/qhduan/cn-chat-arxiv\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/qhduan/cn-chat-arxiv",
+      "url": "/github.com/qhduan/cn-chat-arxiv"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/feedarchive/libera-feedbot-live"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/feedarchive/libera-feedbot-live\" rel=\"nofollow\"\u003egithub.com/feedarchive/libera-feedbot-live\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/feedarchive/libera-feedbot-live",
+      "url": "/github.com/feedarchive/libera-feedbot-live"
     },
     {
       "__typename": "Repository",
@@ -326,34 +354,6 @@
       },
       "name": "github.com/Lyken17/arXiv-stats",
       "url": "/github.com/Lyken17/arXiv-stats"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/feedarchive/libera-feedbot-live"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/feedarchive/libera-feedbot-live\" rel=\"nofollow\"\u003egithub.com/feedarchive/libera-feedbot-live\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/feedarchive/libera-feedbot-live",
-      "url": "/github.com/feedarchive/libera-feedbot-live"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/l-yohai/daily_papers_ko"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/l-yohai/daily_papers_ko\" rel=\"nofollow\"\u003egithub.com/l-yohai/daily_papers_ko\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/l-yohai/daily_papers_ko",
-      "url": "/github.com/l-yohai/daily_papers_ko"
     }
   ],
   "LimitHit": false,
@@ -361,7 +361,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 25,
-  "ElapsedMilliseconds": 2940,
+  "ElapsedMilliseconds": 5078,
   "Alert": {
     "Title": "",
     "Description": "",

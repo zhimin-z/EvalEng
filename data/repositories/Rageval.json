@@ -1,8 +1,8 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global /import rageval|from rageval.* import / select:repo count:all",
+  "Query": "context:global /import\\s+rageval|from\\s+rageval.* import / select:repo count:all",
   "Site": {
-    "BuildVersion": "290581_2024-09-09_5.7-61be881a36c5"
+    "BuildVersion": "290746_2024-09-10_5.7-5c5c14be9d78"
   },
   "Results": [
     {
@@ -81,7 +81,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 5,
-  "ElapsedMilliseconds": 3651,
+  "ElapsedMilliseconds": 24102,
   "Alert": {
     "Title": "",
     "Description": "",

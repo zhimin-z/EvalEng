@@ -1,24 +1,10 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global /import trulens|from trulens.* import / select:repo count:all",
+  "Query": "context:global /import\\s+trulens|from\\s+trulens.* import / select:repo count:all",
   "Site": {
-    "BuildVersion": "290581_2024-09-09_5.7-61be881a36c5"
+    "BuildVersion": "290746_2024-09-10_5.7-5c5c14be9d78"
   },
   "Results": [
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/langchain-ai/langchain"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/langchain-ai/langchain\" rel=\"nofollow\"\u003egithub.com/langchain-ai/langchain\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/langchain-ai/langchain",
-      "url": "/github.com/langchain-ai/langchain"
-    },
     {
       "__typename": "Repository",
       "externalURLs": [
@@ -52,6 +38,20 @@
       "externalURLs": [
         {
           "serviceType": "github",
+          "url": "https://github.com/langchain-ai/langchain"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/langchain-ai/langchain\" rel=\"nofollow\"\u003egithub.com/langchain-ai/langchain\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/langchain-ai/langchain",
+      "url": "/github.com/langchain-ai/langchain"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
           "url": "https://github.com/run-llama/llama_index"
         }
       ],
@@ -66,28 +66,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/adithya-s-k/AI-Engineering.academy"
+          "url": "https://github.com/kimtth/awesome-azure-openai-llm"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/adithya-s-k/AI-Engineering.academy\" rel=\"nofollow\"\u003egithub.com/adithya-s-k/AI-Engineering.academy\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/kimtth/awesome-azure-openai-llm\" rel=\"nofollow\"\u003egithub.com/kimtth/awesome-azure-openai-llm\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/adithya-s-k/AI-Engineering.academy",
-      "url": "/github.com/adithya-s-k/AI-Engineering.academy"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/datastax/ragstack-ai"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/datastax/ragstack-ai\" rel=\"nofollow\"\u003egithub.com/datastax/ragstack-ai\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/datastax/ragstack-ai",
-      "url": "/github.com/datastax/ragstack-ai"
+      "name": "github.com/kimtth/awesome-azure-openai-llm",
+      "url": "/github.com/kimtth/awesome-azure-openai-llm"
     },
     {
       "__typename": "Repository",
@@ -108,14 +94,42 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/Josephrp/DataTonic"
+          "url": "https://github.com/adithya-s-k/AI-Engineering.academy"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/Josephrp/DataTonic\" rel=\"nofollow\"\u003egithub.com/Josephrp/DataTonic\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/adithya-s-k/AI-Engineering.academy\" rel=\"nofollow\"\u003egithub.com/adithya-s-k/AI-Engineering.academy\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/Josephrp/DataTonic",
-      "url": "/github.com/Josephrp/DataTonic"
+      "name": "github.com/adithya-s-k/AI-Engineering.academy",
+      "url": "/github.com/adithya-s-k/AI-Engineering.academy"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Snowflake-Labs/sfquickstarts"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Snowflake-Labs/sfquickstarts\" rel=\"nofollow\"\u003egithub.com/Snowflake-Labs/sfquickstarts\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Snowflake-Labs/sfquickstarts",
+      "url": "/github.com/Snowflake-Labs/sfquickstarts"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/datastax/ragstack-ai"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/datastax/ragstack-ai\" rel=\"nofollow\"\u003egithub.com/datastax/ragstack-ai\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/datastax/ragstack-ai",
+      "url": "/github.com/datastax/ragstack-ai"
     },
     {
       "__typename": "Repository",
@@ -150,6 +164,20 @@
       "externalURLs": [
         {
           "serviceType": "github",
+          "url": "https://github.com/JohannesJolkkonen/funktio-ai-samples"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/JohannesJolkkonen/funktio-ai-samples\" rel=\"nofollow\"\u003egithub.com/JohannesJolkkonen/funktio-ai-samples\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/JohannesJolkkonen/funktio-ai-samples",
+      "url": "/github.com/JohannesJolkkonen/funktio-ai-samples"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
           "url": "https://github.com/datawhalechina/llm-cookbook"
         }
       ],
@@ -178,62 +206,6 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/JohannesJolkkonen/funktio-ai-samples"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/JohannesJolkkonen/funktio-ai-samples\" rel=\"nofollow\"\u003egithub.com/JohannesJolkkonen/funktio-ai-samples\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/JohannesJolkkonen/funktio-ai-samples",
-      "url": "/github.com/JohannesJolkkonen/funktio-ai-samples"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/dzlab/deeplearning.ai"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/dzlab/deeplearning.ai\" rel=\"nofollow\"\u003egithub.com/dzlab/deeplearning.ai\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/dzlab/deeplearning.ai",
-      "url": "/github.com/dzlab/deeplearning.ai"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/kimtth/awesome-azure-openai-llm"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/kimtth/awesome-azure-openai-llm\" rel=\"nofollow\"\u003egithub.com/kimtth/awesome-azure-openai-llm\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/kimtth/awesome-azure-openai-llm",
-      "url": "/github.com/kimtth/awesome-azure-openai-llm"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/kesamet/retrieval-augmented-generation"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/kesamet/retrieval-augmented-generation\" rel=\"nofollow\"\u003egithub.com/kesamet/retrieval-augmented-generation\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/kesamet/retrieval-augmented-generation",
-      "url": "/github.com/kesamet/retrieval-augmented-generation"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
           "url": "https://github.com/lablab-ai/community-content"
         }
       ],
@@ -242,20 +214,6 @@
       },
       "name": "github.com/lablab-ai/community-content",
       "url": "/github.com/lablab-ai/community-content"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/krishnaik06/The-Grand-Complete-Data-Science-Materials"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/krishnaik06/The-Grand-Complete-Data-Science-Materials\" rel=\"nofollow\"\u003egithub.com/krishnaik06/The-Grand-Complete-Data-Science-Materials\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/krishnaik06/The-Grand-Complete-Data-Science-Materials",
-      "url": "/github.com/krishnaik06/The-Grand-Complete-Data-Science-Materials"
     },
     {
       "__typename": "Repository",
@@ -276,14 +234,56 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/elder-plinius/Leda"
+          "url": "https://github.com/Josephrp/DataTonic"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/elder-plinius/Leda\" rel=\"nofollow\"\u003egithub.com/elder-plinius/Leda\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Josephrp/DataTonic\" rel=\"nofollow\"\u003egithub.com/Josephrp/DataTonic\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/elder-plinius/Leda",
-      "url": "/github.com/elder-plinius/Leda"
+      "name": "github.com/Josephrp/DataTonic",
+      "url": "/github.com/Josephrp/DataTonic"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/kesamet/retrieval-augmented-generation"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/kesamet/retrieval-augmented-generation\" rel=\"nofollow\"\u003egithub.com/kesamet/retrieval-augmented-generation\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/kesamet/retrieval-augmented-generation",
+      "url": "/github.com/kesamet/retrieval-augmented-generation"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/krishnaik06/The-Grand-Complete-Data-Science-Materials"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/krishnaik06/The-Grand-Complete-Data-Science-Materials\" rel=\"nofollow\"\u003egithub.com/krishnaik06/The-Grand-Complete-Data-Science-Materials\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/krishnaik06/The-Grand-Complete-Data-Science-Materials",
+      "url": "/github.com/krishnaik06/The-Grand-Complete-Data-Science-Materials"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/dzlab/deeplearning.ai"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/dzlab/deeplearning.ai\" rel=\"nofollow\"\u003egithub.com/dzlab/deeplearning.ai\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/dzlab/deeplearning.ai",
+      "url": "/github.com/dzlab/deeplearning.ai"
     },
     {
       "__typename": "Repository",
@@ -304,14 +304,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/Snowflake-Labs/sfquickstarts"
+          "url": "https://github.com/elder-plinius/Leda"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/Snowflake-Labs/sfquickstarts\" rel=\"nofollow\"\u003egithub.com/Snowflake-Labs/sfquickstarts\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/elder-plinius/Leda\" rel=\"nofollow\"\u003egithub.com/elder-plinius/Leda\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/Snowflake-Labs/sfquickstarts",
-      "url": "/github.com/Snowflake-Labs/sfquickstarts"
+      "name": "github.com/elder-plinius/Leda",
+      "url": "/github.com/elder-plinius/Leda"
     }
   ],
   "LimitHit": false,
@@ -319,7 +319,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 22,
-  "ElapsedMilliseconds": 10186,
+  "ElapsedMilliseconds": 7291,
   "Alert": {
     "Title": "",
     "Description": "",

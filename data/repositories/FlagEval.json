@@ -1,10 +1,24 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global /import flageval|from flageval.* import / select:repo count:all",
+  "Query": "context:global /import\\s+flageval|from\\s+flageval.* import / select:repo count:all",
   "Site": {
-    "BuildVersion": "290581_2024-09-09_5.7-61be881a36c5"
+    "BuildVersion": "290746_2024-09-10_5.7-5c5c14be9d78"
   },
   "Results": [
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/open-feature/openfeature.dev"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/open-feature/openfeature.dev\" rel=\"nofollow\"\u003egithub.com/open-feature/openfeature.dev\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/open-feature/openfeature.dev",
+      "url": "/github.com/open-feature/openfeature.dev"
+    },
     {
       "__typename": "Repository",
       "externalURLs": [
@@ -32,20 +46,6 @@
       },
       "name": "github.com/thomaspoignant/go-feature-flag",
       "url": "/github.com/thomaspoignant/go-feature-flag"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/open-feature/openfeature.dev"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/open-feature/openfeature.dev\" rel=\"nofollow\"\u003egithub.com/open-feature/openfeature.dev\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/open-feature/openfeature.dev",
-      "url": "/github.com/open-feature/openfeature.dev"
     }
   ],
   "LimitHit": false,
@@ -53,7 +53,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 3,
-  "ElapsedMilliseconds": 5144,
+  "ElapsedMilliseconds": 2349,
   "Alert": {
     "Title": "",
     "Description": "",

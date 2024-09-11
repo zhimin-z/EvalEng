@@ -2,9 +2,23 @@
   "SourcegraphEndpoint": "https://sourcegraph.com",
   "Query": "context:global \"llm-autoeval\" select:repo count:all",
   "Site": {
-    "BuildVersion": "290581_2024-09-09_5.7-61be881a36c5"
+    "BuildVersion": "290746_2024-09-10_5.7-5c5c14be9d78"
   },
   "Results": [
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/swyxio/ai-notes"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/swyxio/ai-notes\" rel=\"nofollow\"\u003egithub.com/swyxio/ai-notes\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/swyxio/ai-notes",
+      "url": "/github.com/swyxio/ai-notes"
+    },
     {
       "__typename": "Repository",
       "externalURLs": [
@@ -94,14 +108,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/swyxio/ai-notes"
+          "url": "https://github.com/mlabonne/llm-autoeval"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/swyxio/ai-notes\" rel=\"nofollow\"\u003egithub.com/swyxio/ai-notes\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/mlabonne/llm-autoeval\" rel=\"nofollow\"\u003egithub.com/mlabonne/llm-autoeval\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/swyxio/ai-notes",
-      "url": "/github.com/swyxio/ai-notes"
+      "name": "github.com/mlabonne/llm-autoeval",
+      "url": "/github.com/mlabonne/llm-autoeval"
     },
     {
       "__typename": "Repository",
@@ -116,20 +130,6 @@
       },
       "name": "github.com/friendmine/llm-course-chn",
       "url": "/github.com/friendmine/llm-course-chn"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/mlabonne/llm-autoeval"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/mlabonne/llm-autoeval\" rel=\"nofollow\"\u003egithub.com/mlabonne/llm-autoeval\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/mlabonne/llm-autoeval",
-      "url": "/github.com/mlabonne/llm-autoeval"
     }
   ],
   "LimitHit": false,
@@ -137,7 +137,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 9,
-  "ElapsedMilliseconds": 944,
+  "ElapsedMilliseconds": 6598,
   "Alert": {
     "Title": "",
     "Description": "",

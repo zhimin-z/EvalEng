@@ -1,8 +1,8 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global \"./scripts/run_pipeline.py\" select:repo count:all",
+  "Query": "context:global /\\.\\/scripts\\/evaluate_completions\\.sh|python(\\d+(\\.\\d+)?)?\\s+\\.\\/scripts\\/run_pipeline\\.py/ select:repo count:all",
   "Site": {
-    "BuildVersion": "290581_2024-09-09_5.7-61be881a36c5"
+    "BuildVersion": "290746_2024-09-10_5.7-5c5c14be9d78"
   },
   "Results": [
     {
@@ -18,28 +18,14 @@
       },
       "name": "github.com/centerforaisafety/HarmBench",
       "url": "/github.com/centerforaisafety/HarmBench"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/fudan-zvg/S-NeRF"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/fudan-zvg/S-NeRF\" rel=\"nofollow\"\u003egithub.com/fudan-zvg/S-NeRF\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/fudan-zvg/S-NeRF",
-      "url": "/github.com/fudan-zvg/S-NeRF"
     }
   ],
   "LimitHit": false,
   "Cloning": [],
   "Missing": [],
   "Timedout": [],
-  "ResultCount": 2,
-  "ElapsedMilliseconds": 2364,
+  "ResultCount": 1,
+  "ElapsedMilliseconds": 3310,
   "Alert": {
     "Title": "",
     "Description": "",

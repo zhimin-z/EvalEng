@@ -1,24 +1,10 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global /import bananalyzer|from bananalyzer.* import / select:repo count:all",
+  "Query": "context:global /import\\s+bananalyzer|from\\s+bananalyzer.* import / select:repo count:all",
   "Site": {
-    "BuildVersion": "290581_2024-09-09_5.7-61be881a36c5"
+    "BuildVersion": "290746_2024-09-10_5.7-5c5c14be9d78"
   },
   "Results": [
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/reworkd/tarsier"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/reworkd/tarsier\" rel=\"nofollow\"\u003egithub.com/reworkd/tarsier\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/reworkd/tarsier",
-      "url": "/github.com/reworkd/tarsier"
-    },
     {
       "__typename": "Repository",
       "externalURLs": [
@@ -32,6 +18,20 @@
       },
       "name": "github.com/reworkd/bananalyzer",
       "url": "/github.com/reworkd/bananalyzer"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/reworkd/tarsier"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/reworkd/tarsier\" rel=\"nofollow\"\u003egithub.com/reworkd/tarsier\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/reworkd/tarsier",
+      "url": "/github.com/reworkd/tarsier"
     }
   ],
   "LimitHit": false,
@@ -39,7 +39,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 2,
-  "ElapsedMilliseconds": 60945,
+  "ElapsedMilliseconds": 29393,
   "Alert": {
     "Title": "",
     "Description": "",

@@ -2,23 +2,9 @@
   "SourcegraphEndpoint": "https://sourcegraph.com",
   "Query": "context:global /bigcode_eval|bigcode-project\\/evaluation-harness/ select:repo count:all",
   "Site": {
-    "BuildVersion": "290581_2024-09-09_5.7-61be881a36c5"
+    "BuildVersion": "290746_2024-09-10_5.7-5c5c14be9d78"
   },
   "Results": [
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/bigcode-project/bigcode-evaluation-harness"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/bigcode-project/bigcode-evaluation-harness\" rel=\"nofollow\"\u003egithub.com/bigcode-project/bigcode-evaluation-harness\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/bigcode-project/bigcode-evaluation-harness",
-      "url": "/github.com/bigcode-project/bigcode-evaluation-harness"
-    },
     {
       "__typename": "Repository",
       "externalURLs": [
@@ -38,42 +24,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/xingyaoww/code-act"
+          "url": "https://github.com/bigcode-project/bigcode-evaluation-harness"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/xingyaoww/code-act\" rel=\"nofollow\"\u003egithub.com/xingyaoww/code-act\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/bigcode-project/bigcode-evaluation-harness\" rel=\"nofollow\"\u003egithub.com/bigcode-project/bigcode-evaluation-harness\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/xingyaoww/code-act",
-      "url": "/github.com/xingyaoww/code-act"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/openvinotoolkit/openvino_notebooks"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/openvinotoolkit/openvino_notebooks\" rel=\"nofollow\"\u003egithub.com/openvinotoolkit/openvino_notebooks\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/openvinotoolkit/openvino_notebooks",
-      "url": "/github.com/openvinotoolkit/openvino_notebooks"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/intel/intel-extension-for-transformers"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/intel/intel-extension-for-transformers\" rel=\"nofollow\"\u003egithub.com/intel/intel-extension-for-transformers\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/intel/intel-extension-for-transformers",
-      "url": "/github.com/intel/intel-extension-for-transformers"
+      "name": "github.com/bigcode-project/bigcode-evaluation-harness",
+      "url": "/github.com/bigcode-project/bigcode-evaluation-harness"
     },
     {
       "__typename": "Repository",
@@ -94,6 +52,34 @@
       "externalURLs": [
         {
           "serviceType": "github",
+          "url": "https://github.com/openvinotoolkit/openvino_notebooks"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/openvinotoolkit/openvino_notebooks\" rel=\"nofollow\"\u003egithub.com/openvinotoolkit/openvino_notebooks\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/openvinotoolkit/openvino_notebooks",
+      "url": "/github.com/openvinotoolkit/openvino_notebooks"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/xingyaoww/code-act"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/xingyaoww/code-act\" rel=\"nofollow\"\u003egithub.com/xingyaoww/code-act\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/xingyaoww/code-act",
+      "url": "/github.com/xingyaoww/code-act"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
           "url": "https://github.com/intel/neural-compressor"
         }
       ],
@@ -108,6 +94,20 @@
       "externalURLs": [
         {
           "serviceType": "github",
+          "url": "https://github.com/intel/intel-extension-for-transformers"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/intel/intel-extension-for-transformers\" rel=\"nofollow\"\u003egithub.com/intel/intel-extension-for-transformers\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/intel/intel-extension-for-transformers",
+      "url": "/github.com/intel/intel-extension-for-transformers"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
           "url": "https://github.com/uukuguy/speechless"
         }
       ],
@@ -116,6 +116,20 @@
       },
       "name": "github.com/uukuguy/speechless",
       "url": "/github.com/uukuguy/speechless"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/kaistAI/LangBridge"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/kaistAI/LangBridge\" rel=\"nofollow\"\u003egithub.com/kaistAI/LangBridge\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/kaistAI/LangBridge",
+      "url": "/github.com/kaistAI/LangBridge"
     },
     {
       "__typename": "Repository",
@@ -150,34 +164,6 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/allenai/open-instruct"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/allenai/open-instruct\" rel=\"nofollow\"\u003egithub.com/allenai/open-instruct\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/allenai/open-instruct",
-      "url": "/github.com/allenai/open-instruct"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/kaistAI/LangBridge"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/kaistAI/LangBridge\" rel=\"nofollow\"\u003egithub.com/kaistAI/LangBridge\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/kaistAI/LangBridge",
-      "url": "/github.com/kaistAI/LangBridge"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
           "url": "https://github.com/likenneth/q_probe"
         }
       ],
@@ -186,6 +172,20 @@
       },
       "name": "github.com/likenneth/q_probe",
       "url": "/github.com/likenneth/q_probe"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/allenai/open-instruct"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/allenai/open-instruct\" rel=\"nofollow\"\u003egithub.com/allenai/open-instruct\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/allenai/open-instruct",
+      "url": "/github.com/allenai/open-instruct"
     },
     {
       "__typename": "Repository",
@@ -235,7 +235,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 16,
-  "ElapsedMilliseconds": 60958,
+  "ElapsedMilliseconds": 9045,
   "Alert": {
     "Title": "",
     "Description": "",
