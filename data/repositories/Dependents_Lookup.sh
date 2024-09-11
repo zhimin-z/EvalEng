@@ -47,7 +47,7 @@ src search -json 'context:global /bash run_uptrain\.sh|import\s+uptrain|from\s+u
 src search -json 'context:global "vbench" select:repo count:all' >"${path_repository}/VBench.json"
 src search -json 'context:global /import\s+vlmeval|from\s+vlmeval.* import / select:repo count:all' >"${path_repository}/VLMEvalKit.json"
 
-# github-dependents-info --repo confident-ai/deepeval -p -j >"${path_repository}/DeepEval.json"
-# github-dependents-info --repo huggingface/evaluate -p -j >"${path_repository}/Evaluate.json"
-# github-dependents-info --repo embeddings-benchmark/mteb -p -j >"${path_repository}/MTEB.json"
-# github-dependents-info --repo explodinggradients/ragas -p -j >"${path_repository}/Ragas.json"
+github-dependents-info --repo confident-ai/deepeval -p -j >"${path_repository}/DeepEval.json"
+github-dependents-info --repo huggingface/evaluate -p -j >"${path_repository}/Evaluate.json"
+github-dependents-info --repo embeddings-benchmark/mteb -p -j >"${path_repository}/MTEB.json"
+github-dependents-info --repo explodinggradients/ragas -p -j >"${path_repository}/Ragas.json"
