@@ -30,6 +30,7 @@ src search -json 'context:global "lmms-eval" select:repo count:all' >"${path_rep
 src search -json 'context:global "cm run script" select:repo count:all' >"${path_repository}/MLPerf Inference.json"
 src search -json 'context:global "olmo_eval" select:repo count:all' >"${path_repository}/OLMo-Eval.json"
 src search -json 'context:global "opencompass" select:repo count:all' >"${path_repository}/OpenCompass.json"
+src search -json 'context:global /import\s+opik|from\s+opik(\.\w+)?\s+import |comet-ml\/opik\/opik-(backend|frontend)/ select:repo count:all' >"${path_repository}/Opik.json"
 src search -json 'context:global /optimum-benchmark|import\s+optimum_benchmark|from\s+optimum_benchmark(\.\w+)?\s+import / select:repo count:all' >"${path_repository}/Optimum-Benchmark.json"
 src search -json 'context:global /import\s+phasellm|from\s+phasellm(\.\w+)?\s+import / select:repo count:all' >"${path_repository}/PhaseLLM.json"
 src search -json 'context:global /arize-phoenix|arizephoenix\/phoenix/ select:repo count:all' >"${path_repository}/Phoenix.json"
