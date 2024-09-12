@@ -1,24 +1,10 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global /evidently\\s+ui|import\\s+evidently|from\\s+evidently.* import / select:repo count:all",
+  "Query": "context:global /evidently\\s+ui|import\\s+evidently|from\\s+evidently(\\.\\w+)?\\s+import / select:repo count:all",
   "Site": {
-    "BuildVersion": "290746_2024-09-10_5.7-5c5c14be9d78"
+    "BuildVersion": "291022_2024-09-12_5.7-52e089a13592"
   },
   "Results": [
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/khuyentran1401/Data-science"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/khuyentran1401/Data-science\" rel=\"nofollow\"\u003egithub.com/khuyentran1401/Data-science\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/khuyentran1401/Data-science",
-      "url": "/github.com/khuyentran1401/Data-science"
-    },
     {
       "__typename": "Repository",
       "externalURLs": [
@@ -38,14 +24,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/squaredev-io/whitebox"
+          "url": "https://github.com/DataTalksClub/mlops-zoomcamp"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/squaredev-io/whitebox\" rel=\"nofollow\"\u003egithub.com/squaredev-io/whitebox\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/DataTalksClub/mlops-zoomcamp\" rel=\"nofollow\"\u003egithub.com/DataTalksClub/mlops-zoomcamp\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/squaredev-io/whitebox",
-      "url": "/github.com/squaredev-io/whitebox"
+      "name": "github.com/DataTalksClub/mlops-zoomcamp",
+      "url": "/github.com/DataTalksClub/mlops-zoomcamp"
     },
     {
       "__typename": "Repository",
@@ -80,42 +66,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/DataTalksClub/mlops-zoomcamp"
+          "url": "https://github.com/pycaret/pycaret"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/DataTalksClub/mlops-zoomcamp\" rel=\"nofollow\"\u003egithub.com/DataTalksClub/mlops-zoomcamp\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/pycaret/pycaret\" rel=\"nofollow\"\u003egithub.com/pycaret/pycaret\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/DataTalksClub/mlops-zoomcamp",
-      "url": "/github.com/DataTalksClub/mlops-zoomcamp"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/awslabs/iot-app-kit"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/awslabs/iot-app-kit\" rel=\"nofollow\"\u003egithub.com/awslabs/iot-app-kit\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/awslabs/iot-app-kit",
-      "url": "/github.com/awslabs/iot-app-kit"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/PacktPublishing/Debugging-Machine-Learning-Models-with-Python"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/PacktPublishing/Debugging-Machine-Learning-Models-with-Python\" rel=\"nofollow\"\u003egithub.com/PacktPublishing/Debugging-Machine-Learning-Models-with-Python\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/PacktPublishing/Debugging-Machine-Learning-Models-with-Python",
-      "url": "/github.com/PacktPublishing/Debugging-Machine-Learning-Models-with-Python"
+      "name": "github.com/pycaret/pycaret",
+      "url": "/github.com/pycaret/pycaret"
     },
     {
       "__typename": "Repository",
@@ -136,14 +94,42 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/pycaret/pycaret"
+          "url": "https://github.com/PacktPublishing/Machine-Learning-Engineering-with-MLflow"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/pycaret/pycaret\" rel=\"nofollow\"\u003egithub.com/pycaret/pycaret\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/PacktPublishing/Machine-Learning-Engineering-with-MLflow\" rel=\"nofollow\"\u003egithub.com/PacktPublishing/Machine-Learning-Engineering-with-MLflow\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/pycaret/pycaret",
-      "url": "/github.com/pycaret/pycaret"
+      "name": "github.com/PacktPublishing/Machine-Learning-Engineering-with-MLflow",
+      "url": "/github.com/PacktPublishing/Machine-Learning-Engineering-with-MLflow"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/squaredev-io/whitebox"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/squaredev-io/whitebox\" rel=\"nofollow\"\u003egithub.com/squaredev-io/whitebox\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/squaredev-io/whitebox",
+      "url": "/github.com/squaredev-io/whitebox"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/PacktPublishing/Debugging-Machine-Learning-Models-with-Python"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/PacktPublishing/Debugging-Machine-Learning-Models-with-Python\" rel=\"nofollow\"\u003egithub.com/PacktPublishing/Debugging-Machine-Learning-Models-with-Python\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/PacktPublishing/Debugging-Machine-Learning-Models-with-Python",
+      "url": "/github.com/PacktPublishing/Debugging-Machine-Learning-Models-with-Python"
     },
     {
       "__typename": "Repository",
@@ -164,14 +150,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/PacktPublishing/Machine-Learning-Engineering-with-MLflow"
+          "url": "https://github.com/awslabs/iot-app-kit"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/PacktPublishing/Machine-Learning-Engineering-with-MLflow\" rel=\"nofollow\"\u003egithub.com/PacktPublishing/Machine-Learning-Engineering-with-MLflow\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/awslabs/iot-app-kit\" rel=\"nofollow\"\u003egithub.com/awslabs/iot-app-kit\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/PacktPublishing/Machine-Learning-Engineering-with-MLflow",
-      "url": "/github.com/PacktPublishing/Machine-Learning-Engineering-with-MLflow"
+      "name": "github.com/awslabs/iot-app-kit",
+      "url": "/github.com/awslabs/iot-app-kit"
     },
     {
       "__typename": "Repository",
@@ -206,42 +192,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/evidentlyai/ml_observability_course"
+          "url": "https://github.com/avnyadav/machine_learning_project"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/evidentlyai/ml_observability_course\" rel=\"nofollow\"\u003egithub.com/evidentlyai/ml_observability_course\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/avnyadav/machine_learning_project\" rel=\"nofollow\"\u003egithub.com/avnyadav/machine_learning_project\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/evidentlyai/ml_observability_course",
-      "url": "/github.com/evidentlyai/ml_observability_course"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/aws/aws-sdk-js"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/aws/aws-sdk-js\" rel=\"nofollow\"\u003egithub.com/aws/aws-sdk-js\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/aws/aws-sdk-js",
-      "url": "/github.com/aws/aws-sdk-js"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/neptune-ai/examples"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/neptune-ai/examples\" rel=\"nofollow\"\u003egithub.com/neptune-ai/examples\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/neptune-ai/examples",
-      "url": "/github.com/neptune-ai/examples"
+      "name": "github.com/avnyadav/machine_learning_project",
+      "url": "/github.com/avnyadav/machine_learning_project"
     },
     {
       "__typename": "Repository",
@@ -290,42 +248,42 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/avnyadav/machine_learning_project"
+          "url": "https://github.com/evidentlyai/ml_observability_course"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/avnyadav/machine_learning_project\" rel=\"nofollow\"\u003egithub.com/avnyadav/machine_learning_project\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/evidentlyai/ml_observability_course\" rel=\"nofollow\"\u003egithub.com/evidentlyai/ml_observability_course\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/avnyadav/machine_learning_project",
-      "url": "/github.com/avnyadav/machine_learning_project"
+      "name": "github.com/evidentlyai/ml_observability_course",
+      "url": "/github.com/evidentlyai/ml_observability_course"
     },
     {
       "__typename": "Repository",
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/zenml-io/zenml-projects"
+          "url": "https://github.com/aws/aws-sdk-js"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/zenml-io/zenml-projects\" rel=\"nofollow\"\u003egithub.com/zenml-io/zenml-projects\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/aws/aws-sdk-js\" rel=\"nofollow\"\u003egithub.com/aws/aws-sdk-js\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/zenml-io/zenml-projects",
-      "url": "/github.com/zenml-io/zenml-projects"
+      "name": "github.com/aws/aws-sdk-js",
+      "url": "/github.com/aws/aws-sdk-js"
     },
     {
       "__typename": "Repository",
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/SkafteNicki/dtu_mlops"
+          "url": "https://github.com/neptune-ai/examples"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/SkafteNicki/dtu_mlops\" rel=\"nofollow\"\u003egithub.com/SkafteNicki/dtu_mlops\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/neptune-ai/examples\" rel=\"nofollow\"\u003egithub.com/neptune-ai/examples\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/SkafteNicki/dtu_mlops",
-      "url": "/github.com/SkafteNicki/dtu_mlops"
+      "name": "github.com/neptune-ai/examples",
+      "url": "/github.com/neptune-ai/examples"
     },
     {
       "__typename": "Repository",
@@ -374,20 +332,6 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/mlrun/mlrun"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/mlrun/mlrun\" rel=\"nofollow\"\u003egithub.com/mlrun/mlrun\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/mlrun/mlrun",
-      "url": "/github.com/mlrun/mlrun"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
           "url": "https://github.com/MLOpsVN/mlops-crash-course-code"
         }
       ],
@@ -396,6 +340,34 @@
       },
       "name": "github.com/MLOpsVN/mlops-crash-course-code",
       "url": "/github.com/MLOpsVN/mlops-crash-course-code"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/khuyentran1401/Data-science"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/khuyentran1401/Data-science\" rel=\"nofollow\"\u003egithub.com/khuyentran1401/Data-science\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/khuyentran1401/Data-science",
+      "url": "/github.com/khuyentran1401/Data-science"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/zenml-io/zenml-projects"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/zenml-io/zenml-projects\" rel=\"nofollow\"\u003egithub.com/zenml-io/zenml-projects\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/zenml-io/zenml-projects",
+      "url": "/github.com/zenml-io/zenml-projects"
     },
     {
       "__typename": "Repository",
@@ -416,6 +388,34 @@
       "externalURLs": [
         {
           "serviceType": "github",
+          "url": "https://github.com/SkafteNicki/dtu_mlops"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/SkafteNicki/dtu_mlops\" rel=\"nofollow\"\u003egithub.com/SkafteNicki/dtu_mlops\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/SkafteNicki/dtu_mlops",
+      "url": "/github.com/SkafteNicki/dtu_mlops"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/mlrun/mlrun"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/mlrun/mlrun\" rel=\"nofollow\"\u003egithub.com/mlrun/mlrun\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/mlrun/mlrun",
+      "url": "/github.com/mlrun/mlrun"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
           "url": "https://github.com/foo-software/lighthouse-check-action"
         }
       ],
@@ -424,20 +424,6 @@
       },
       "name": "github.com/foo-software/lighthouse-check-action",
       "url": "/github.com/foo-software/lighthouse-check-action"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/aws/aws-cdk-go"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/aws/aws-cdk-go\" rel=\"nofollow\"\u003egithub.com/aws/aws-cdk-go\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/aws/aws-cdk-go",
-      "url": "/github.com/aws/aws-cdk-go"
     },
     {
       "__typename": "Repository",
@@ -458,20 +444,6 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/songdaochuanshu/songdaochuanshu"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/songdaochuanshu/songdaochuanshu\" rel=\"nofollow\"\u003egithub.com/songdaochuanshu/songdaochuanshu\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/songdaochuanshu/songdaochuanshu",
-      "url": "/github.com/songdaochuanshu/songdaochuanshu"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
           "url": "https://github.com/iterative/dvc.org"
         }
       ],
@@ -480,6 +452,34 @@
       },
       "name": "github.com/iterative/dvc.org",
       "url": "/github.com/iterative/dvc.org"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/aws/aws-cdk-go"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/aws/aws-cdk-go\" rel=\"nofollow\"\u003egithub.com/aws/aws-cdk-go\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/aws/aws-cdk-go",
+      "url": "/github.com/aws/aws-cdk-go"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/songdaochuanshu/songdaochuanshu"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/songdaochuanshu/songdaochuanshu\" rel=\"nofollow\"\u003egithub.com/songdaochuanshu/songdaochuanshu\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/songdaochuanshu/songdaochuanshu",
+      "url": "/github.com/songdaochuanshu/songdaochuanshu"
     }
   ],
   "LimitHit": false,
@@ -487,7 +487,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 34,
-  "ElapsedMilliseconds": 48317,
+  "ElapsedMilliseconds": 47600,
   "Alert": {
     "Title": "",
     "Description": "",

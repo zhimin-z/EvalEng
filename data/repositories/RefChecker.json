@@ -1,24 +1,10 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global /refchecker-cli|import\\s+refchecker|from\\s+refchecker.* import / select:repo count:all",
+  "Query": "context:global /refchecker-cli|import\\s+refchecker|from\\s+refchecker(\\.\\w+)?\\s+import / select:repo count:all",
   "Site": {
-    "BuildVersion": "290746_2024-09-10_5.7-5c5c14be9d78"
+    "BuildVersion": "291022_2024-09-12_5.7-52e089a13592"
   },
   "Results": [
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/amazon-science/RefChecker"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/amazon-science/RefChecker\" rel=\"nofollow\"\u003egithub.com/amazon-science/RefChecker\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/amazon-science/RefChecker",
-      "url": "/github.com/amazon-science/RefChecker"
-    },
     {
       "__typename": "Repository",
       "externalURLs": [
@@ -32,6 +18,20 @@
       },
       "name": "github.com/amazon-science/RAGChecker",
       "url": "/github.com/amazon-science/RAGChecker"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/amazon-science/RefChecker"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/amazon-science/RefChecker\" rel=\"nofollow\"\u003egithub.com/amazon-science/RefChecker\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/amazon-science/RefChecker",
+      "url": "/github.com/amazon-science/RefChecker"
     },
     {
       "__typename": "Repository",
@@ -53,7 +53,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 3,
-  "ElapsedMilliseconds": 20020,
+  "ElapsedMilliseconds": 19177,
   "Alert": {
     "Title": "",
     "Description": "",

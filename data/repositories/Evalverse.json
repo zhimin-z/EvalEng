@@ -2,7 +2,7 @@
   "SourcegraphEndpoint": "https://sourcegraph.com",
   "Query": "context:global \"evalverse\" select:repo count:all",
   "Site": {
-    "BuildVersion": "290746_2024-09-10_5.7-5c5c14be9d78"
+    "BuildVersion": "291022_2024-09-12_5.7-52e089a13592"
   },
   "Results": [
     {
@@ -24,6 +24,34 @@
       "externalURLs": [
         {
           "serviceType": "github",
+          "url": "https://github.com/aneasystone/github-trending"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/aneasystone/github-trending\" rel=\"nofollow\"\u003egithub.com/aneasystone/github-trending\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/aneasystone/github-trending",
+      "url": "/github.com/aneasystone/github-trending"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/UpstageAI/cookbook"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/UpstageAI/cookbook\" rel=\"nofollow\"\u003egithub.com/UpstageAI/cookbook\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/UpstageAI/cookbook",
+      "url": "/github.com/UpstageAI/cookbook"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
           "url": "https://github.com/EthicalML/awesome-production-machine-learning"
         }
       ],
@@ -32,20 +60,6 @@
       },
       "name": "github.com/EthicalML/awesome-production-machine-learning",
       "url": "/github.com/EthicalML/awesome-production-machine-learning"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/jihoo-kim/awesome-production-llm"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/jihoo-kim/awesome-production-llm\" rel=\"nofollow\"\u003egithub.com/jihoo-kim/awesome-production-llm\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/jihoo-kim/awesome-production-llm",
-      "url": "/github.com/jihoo-kim/awesome-production-llm"
     },
     {
       "__typename": "Repository",
@@ -80,20 +94,6 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/Ares-Developers/Ares"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/Ares-Developers/Ares\" rel=\"nofollow\"\u003egithub.com/Ares-Developers/Ares\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/Ares-Developers/Ares",
-      "url": "/github.com/Ares-Developers/Ares"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
           "url": "https://github.com/MozerWang/Loong"
         }
       ],
@@ -108,14 +108,28 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/aneasystone/github-trending"
+          "url": "https://github.com/jihoo-kim/awesome-production-llm"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/aneasystone/github-trending\" rel=\"nofollow\"\u003egithub.com/aneasystone/github-trending\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/jihoo-kim/awesome-production-llm\" rel=\"nofollow\"\u003egithub.com/jihoo-kim/awesome-production-llm\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/aneasystone/github-trending",
-      "url": "/github.com/aneasystone/github-trending"
+      "name": "github.com/jihoo-kim/awesome-production-llm",
+      "url": "/github.com/jihoo-kim/awesome-production-llm"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Ares-Developers/Ares"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Ares-Developers/Ares\" rel=\"nofollow\"\u003egithub.com/Ares-Developers/Ares\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Ares-Developers/Ares",
+      "url": "/github.com/Ares-Developers/Ares"
     },
     {
       "__typename": "Repository",
@@ -130,6 +144,48 @@
       },
       "name": "github.com/bonfy/github-trending",
       "url": "/github.com/bonfy/github-trending"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/qhduan/cn-chat-arxiv"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/qhduan/cn-chat-arxiv\" rel=\"nofollow\"\u003egithub.com/qhduan/cn-chat-arxiv\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/qhduan/cn-chat-arxiv",
+      "url": "/github.com/qhduan/cn-chat-arxiv"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/feedarchive/libera-feedbot-live"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/feedarchive/libera-feedbot-live\" rel=\"nofollow\"\u003egithub.com/feedarchive/libera-feedbot-live\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/feedarchive/libera-feedbot-live",
+      "url": "/github.com/feedarchive/libera-feedbot-live"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Lyken17/arXiv-stats"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Lyken17/arXiv-stats\" rel=\"nofollow\"\u003egithub.com/Lyken17/arXiv-stats\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Lyken17/arXiv-stats",
+      "url": "/github.com/Lyken17/arXiv-stats"
     },
     {
       "__typename": "Repository",
@@ -164,20 +220,6 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/qhduan/cn-chat-arxiv"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/qhduan/cn-chat-arxiv\" rel=\"nofollow\"\u003egithub.com/qhduan/cn-chat-arxiv\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/qhduan/cn-chat-arxiv",
-      "url": "/github.com/qhduan/cn-chat-arxiv"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
           "url": "https://github.com/henson/Scraper"
         }
       ],
@@ -186,48 +228,6 @@
       },
       "name": "github.com/henson/Scraper",
       "url": "/github.com/henson/Scraper"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/feedarchive/libera-feedbot-live"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/feedarchive/libera-feedbot-live\" rel=\"nofollow\"\u003egithub.com/feedarchive/libera-feedbot-live\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/feedarchive/libera-feedbot-live",
-      "url": "/github.com/feedarchive/libera-feedbot-live"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/UpstageAI/cookbook"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/UpstageAI/cookbook\" rel=\"nofollow\"\u003egithub.com/UpstageAI/cookbook\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/UpstageAI/cookbook",
-      "url": "/github.com/UpstageAI/cookbook"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/Lyken17/arXiv-stats"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/Lyken17/arXiv-stats\" rel=\"nofollow\"\u003egithub.com/Lyken17/arXiv-stats\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/Lyken17/arXiv-stats",
-      "url": "/github.com/Lyken17/arXiv-stats"
     }
   ],
   "LimitHit": false,
@@ -235,7 +235,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 16,
-  "ElapsedMilliseconds": 7955,
+  "ElapsedMilliseconds": 1780,
   "Alert": {
     "Title": "",
     "Description": "",

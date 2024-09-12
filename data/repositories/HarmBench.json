@@ -2,7 +2,7 @@
   "SourcegraphEndpoint": "https://sourcegraph.com",
   "Query": "context:global /\\.\\/scripts\\/evaluate_completions\\.sh|python(\\d+(\\.\\d+)?)?\\s+\\.\\/scripts\\/run_pipeline\\.py/ select:repo count:all",
   "Site": {
-    "BuildVersion": "290746_2024-09-10_5.7-5c5c14be9d78"
+    "BuildVersion": "291022_2024-09-12_5.7-52e089a13592"
   },
   "Results": [
     {
@@ -25,7 +25,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 1,
-  "ElapsedMilliseconds": 3310,
+  "ElapsedMilliseconds": 3780,
   "Alert": {
     "Title": "",
     "Description": "",

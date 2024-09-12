@@ -2,23 +2,9 @@
   "SourcegraphEndpoint": "https://sourcegraph.com",
   "Query": "context:global \"inspect-ai\" select:repo count:all",
   "Site": {
-    "BuildVersion": "290746_2024-09-10_5.7-5c5c14be9d78"
+    "BuildVersion": "291022_2024-09-12_5.7-52e089a13592"
   },
   "Results": [
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/UKGovernmentBEIS/inspect_ai"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/UKGovernmentBEIS/inspect_ai\" rel=\"nofollow\"\u003egithub.com/UKGovernmentBEIS/inspect_ai\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/UKGovernmentBEIS/inspect_ai",
-      "url": "/github.com/UKGovernmentBEIS/inspect_ai"
-    },
     {
       "__typename": "Repository",
       "externalURLs": [
@@ -32,6 +18,20 @@
       },
       "name": "github.com/scamsniffer/scam-database",
       "url": "/github.com/scamsniffer/scam-database"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/UKGovernmentBEIS/inspect_ai"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/UKGovernmentBEIS/inspect_ai\" rel=\"nofollow\"\u003egithub.com/UKGovernmentBEIS/inspect_ai\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/UKGovernmentBEIS/inspect_ai",
+      "url": "/github.com/UKGovernmentBEIS/inspect_ai"
     },
     {
       "__typename": "Repository",
@@ -81,7 +81,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 5,
-  "ElapsedMilliseconds": 3476,
+  "ElapsedMilliseconds": 4732,
   "Alert": {
     "Title": "",
     "Description": "",

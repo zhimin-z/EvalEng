@@ -2,7 +2,7 @@
   "SourcegraphEndpoint": "https://sourcegraph.com",
   "Query": "context:global /python(\\d+(\\.\\d+)?)?\\s+runbenchmark\\.py/ select:repo count:all",
   "Site": {
-    "BuildVersion": "290746_2024-09-10_5.7-5c5c14be9d78"
+    "BuildVersion": "291022_2024-09-12_5.7-52e089a13592"
   },
   "Results": [
     {
@@ -67,7 +67,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 4,
-  "ElapsedMilliseconds": 5317,
+  "ElapsedMilliseconds": 8907,
   "Alert": {
     "Title": "",
     "Description": "",

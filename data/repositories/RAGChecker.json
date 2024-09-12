@@ -1,8 +1,8 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global /ragchecker-cli|import\\s+ragchecker|from\\s+ragchecker.* import / select:repo count:all",
+  "Query": "context:global /ragchecker-cli|import\\s+ragchecker|from\\s+ragchecker(\\.\\w+)?\\s+import / select:repo count:all",
   "Site": {
-    "BuildVersion": "290746_2024-09-10_5.7-5c5c14be9d78"
+    "BuildVersion": "291022_2024-09-12_5.7-52e089a13592"
   },
   "Results": [
     {
@@ -39,7 +39,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 2,
-  "ElapsedMilliseconds": 19648,
+  "ElapsedMilliseconds": 6485,
   "Alert": {
     "Title": "",
     "Description": "",

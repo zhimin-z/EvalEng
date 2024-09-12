@@ -1,8 +1,8 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global /import\\s+vlmeval|from\\s+vlmeval.* import / select:repo count:all",
+  "Query": "context:global /import\\s+vlmeval|from\\s+vlmeval(\\.\\w+)?\\s+import / select:repo count:all",
   "Site": {
-    "BuildVersion": "290746_2024-09-10_5.7-5c5c14be9d78"
+    "BuildVersion": "291022_2024-09-12_5.7-52e089a13592"
   },
   "Results": [
     {
@@ -38,14 +38,28 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/open-compass/MMBench"
+          "url": "https://github.com/open-compass/opencompass"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/open-compass/MMBench\" rel=\"nofollow\"\u003egithub.com/open-compass/MMBench\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/open-compass/opencompass\" rel=\"nofollow\"\u003egithub.com/open-compass/opencompass\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/open-compass/MMBench",
-      "url": "/github.com/open-compass/MMBench"
+      "name": "github.com/open-compass/opencompass",
+      "url": "/github.com/open-compass/opencompass"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/OpenGVLab/MMT-Bench"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/OpenGVLab/MMT-Bench\" rel=\"nofollow\"\u003egithub.com/OpenGVLab/MMT-Bench\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/OpenGVLab/MMT-Bench",
+      "url": "/github.com/OpenGVLab/MMT-Bench"
     },
     {
       "__typename": "Repository",
@@ -60,48 +74,6 @@
       },
       "name": "github.com/OpenGVLab/MMIU",
       "url": "/github.com/OpenGVLab/MMIU"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/MMStar-Benchmark/MMStar"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/MMStar-Benchmark/MMStar\" rel=\"nofollow\"\u003egithub.com/MMStar-Benchmark/MMStar\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/MMStar-Benchmark/MMStar",
-      "url": "/github.com/MMStar-Benchmark/MMStar"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/HyperGAI/HPT"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/HyperGAI/HPT\" rel=\"nofollow\"\u003egithub.com/HyperGAI/HPT\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/HyperGAI/HPT",
-      "url": "/github.com/HyperGAI/HPT"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/open-compass/opencompass"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/open-compass/opencompass\" rel=\"nofollow\"\u003egithub.com/open-compass/opencompass\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/open-compass/opencompass",
-      "url": "/github.com/open-compass/opencompass"
     },
     {
       "__typename": "Repository",
@@ -136,14 +108,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/modelscope/ms-swift"
+          "url": "https://github.com/HyperGAI/HPT"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/modelscope/ms-swift\" rel=\"nofollow\"\u003egithub.com/modelscope/ms-swift\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/HyperGAI/HPT\" rel=\"nofollow\"\u003egithub.com/HyperGAI/HPT\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/modelscope/ms-swift",
-      "url": "/github.com/modelscope/ms-swift"
+      "name": "github.com/HyperGAI/HPT",
+      "url": "/github.com/HyperGAI/HPT"
     },
     {
       "__typename": "Repository",
@@ -164,6 +136,20 @@
       "externalURLs": [
         {
           "serviceType": "github",
+          "url": "https://github.com/modelscope/ms-swift"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/modelscope/ms-swift\" rel=\"nofollow\"\u003egithub.com/modelscope/ms-swift\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/modelscope/ms-swift",
+      "url": "/github.com/modelscope/ms-swift"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
           "url": "https://github.com/alibaba/conv-llava"
         }
       ],
@@ -178,14 +164,28 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/OpenGVLab/MMT-Bench"
+          "url": "https://github.com/MMStar-Benchmark/MMStar"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/OpenGVLab/MMT-Bench\" rel=\"nofollow\"\u003egithub.com/OpenGVLab/MMT-Bench\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/MMStar-Benchmark/MMStar\" rel=\"nofollow\"\u003egithub.com/MMStar-Benchmark/MMStar\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/OpenGVLab/MMT-Bench",
-      "url": "/github.com/OpenGVLab/MMT-Bench"
+      "name": "github.com/MMStar-Benchmark/MMStar",
+      "url": "/github.com/MMStar-Benchmark/MMStar"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/open-compass/MMBench"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/open-compass/MMBench\" rel=\"nofollow\"\u003egithub.com/open-compass/MMBench\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/open-compass/MMBench",
+      "url": "/github.com/open-compass/MMBench"
     },
     {
       "__typename": "Repository",
@@ -207,7 +207,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 14,
-  "ElapsedMilliseconds": 4357,
+  "ElapsedMilliseconds": 1100,
   "Alert": {
     "Title": "",
     "Description": "",

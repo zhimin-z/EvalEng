@@ -1,8 +1,8 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global /bash run_uptrain\\.sh|import\\s+uptrain|from\\s+uptrain.* import / select:repo count:all",
+  "Query": "context:global /bash run_uptrain\\.sh|import\\s+uptrain|from\\s+uptrain(\\.\\w+)?\\s+import / select:repo count:all",
   "Site": {
-    "BuildVersion": "290746_2024-09-10_5.7-5c5c14be9d78"
+    "BuildVersion": "291022_2024-09-12_5.7-52e089a13592"
   },
   "Results": [
     {
@@ -66,20 +66,6 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/lgalke/vec4ir"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/lgalke/vec4ir\" rel=\"nofollow\"\u003egithub.com/lgalke/vec4ir\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/lgalke/vec4ir",
-      "url": "/github.com/lgalke/vec4ir"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
           "url": "https://github.com/techwithtim/GitHub-AI-Assitant-Agent"
         }
       ],
@@ -102,6 +88,20 @@
       },
       "name": "github.com/uptrain-ai/uptrain",
       "url": "/github.com/uptrain-ai/uptrain"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/lgalke/vec4ir"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/lgalke/vec4ir\" rel=\"nofollow\"\u003egithub.com/lgalke/vec4ir\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/lgalke/vec4ir",
+      "url": "/github.com/lgalke/vec4ir"
     }
   ],
   "LimitHit": false,
@@ -109,7 +109,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 7,
-  "ElapsedMilliseconds": 21570,
+  "ElapsedMilliseconds": 6008,
   "Alert": {
     "Title": "",
     "Description": "",

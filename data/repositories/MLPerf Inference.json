@@ -2,7 +2,7 @@
   "SourcegraphEndpoint": "https://sourcegraph.com",
   "Query": "context:global \"cm run script\" select:repo count:all",
   "Site": {
-    "BuildVersion": "290746_2024-09-10_5.7-5c5c14be9d78"
+    "BuildVersion": "291022_2024-09-12_5.7-52e089a13592"
   },
   "Results": [
     {
@@ -38,20 +38,6 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/SamsungLabs/Sparse-Multi-DNN-Scheduling"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/SamsungLabs/Sparse-Multi-DNN-Scheduling\" rel=\"nofollow\"\u003egithub.com/SamsungLabs/Sparse-Multi-DNN-Scheduling\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/SamsungLabs/Sparse-Multi-DNN-Scheduling",
-      "url": "/github.com/SamsungLabs/Sparse-Multi-DNN-Scheduling"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
           "url": "https://github.com/mlcommons/ck"
         }
       ],
@@ -60,6 +46,20 @@
       },
       "name": "github.com/mlcommons/ck",
       "url": "/github.com/mlcommons/ck"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/SamsungLabs/Sparse-Multi-DNN-Scheduling"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/SamsungLabs/Sparse-Multi-DNN-Scheduling\" rel=\"nofollow\"\u003egithub.com/SamsungLabs/Sparse-Multi-DNN-Scheduling\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/SamsungLabs/Sparse-Multi-DNN-Scheduling",
+      "url": "/github.com/SamsungLabs/Sparse-Multi-DNN-Scheduling"
     }
   ],
   "LimitHit": false,
@@ -67,7 +67,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 4,
-  "ElapsedMilliseconds": 3118,
+  "ElapsedMilliseconds": 2592,
   "Alert": {
     "Title": "",
     "Description": "",
