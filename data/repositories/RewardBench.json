@@ -1,8 +1,8 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global \"rewardbench\" select:repo count:all",
+  "Query": "context:global \"rewardbench\" case:yes select:repo count:all",
   "Site": {
-    "BuildVersion": "291022_2024-09-12_5.7-52e089a13592"
+    "BuildVersion": "291182_2024-09-12_5.7-5dcdaa774b88"
   },
   "Results": [
     {
@@ -10,196 +10,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/metame-ai/awesome-llm-plaza"
+          "url": "https://github.com/stanfordnlp/pyreft"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/metame-ai/awesome-llm-plaza\" rel=\"nofollow\"\u003egithub.com/metame-ai/awesome-llm-plaza\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/stanfordnlp/pyreft\" rel=\"nofollow\"\u003egithub.com/stanfordnlp/pyreft\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/metame-ai/awesome-llm-plaza",
-      "url": "/github.com/metame-ai/awesome-llm-plaza"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/koaning/arxiv-frontpage"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/koaning/arxiv-frontpage\" rel=\"nofollow\"\u003egithub.com/koaning/arxiv-frontpage\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/koaning/arxiv-frontpage",
-      "url": "/github.com/koaning/arxiv-frontpage"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/deep-diver/hf-daily-paper-newsletter"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/deep-diver/hf-daily-paper-newsletter\" rel=\"nofollow\"\u003egithub.com/deep-diver/hf-daily-paper-newsletter\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/deep-diver/hf-daily-paper-newsletter",
-      "url": "/github.com/deep-diver/hf-daily-paper-newsletter"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/EthicalML/awesome-production-machine-learning"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/EthicalML/awesome-production-machine-learning\" rel=\"nofollow\"\u003egithub.com/EthicalML/awesome-production-machine-learning\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/EthicalML/awesome-production-machine-learning",
-      "url": "/github.com/EthicalML/awesome-production-machine-learning"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/dair-ai/ML-Papers-of-the-Week"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/dair-ai/ML-Papers-of-the-Week\" rel=\"nofollow\"\u003egithub.com/dair-ai/ML-Papers-of-the-Week\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/dair-ai/ML-Papers-of-the-Week",
-      "url": "/github.com/dair-ai/ML-Papers-of-the-Week"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/genai-handbook/genai-handbook.github.io"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/genai-handbook/genai-handbook.github.io\" rel=\"nofollow\"\u003egithub.com/genai-handbook/genai-handbook.github.io\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/genai-handbook/genai-handbook.github.io",
-      "url": "/github.com/genai-handbook/genai-handbook.github.io"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/l-yohai/daily_papers_ko"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/l-yohai/daily_papers_ko\" rel=\"nofollow\"\u003egithub.com/l-yohai/daily_papers_ko\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/l-yohai/daily_papers_ko",
-      "url": "/github.com/l-yohai/daily_papers_ko"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/ljvmiranda921/ljvmiranda921.github.io"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/ljvmiranda921/ljvmiranda921.github.io\" rel=\"nofollow\"\u003egithub.com/ljvmiranda921/ljvmiranda921.github.io\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/ljvmiranda921/ljvmiranda921.github.io",
-      "url": "/github.com/ljvmiranda921/ljvmiranda921.github.io"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/MozerWang/Loong"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/MozerWang/Loong\" rel=\"nofollow\"\u003egithub.com/MozerWang/Loong\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/MozerWang/Loong",
-      "url": "/github.com/MozerWang/Loong"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/InternLM/InternLM"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/InternLM/InternLM\" rel=\"nofollow\"\u003egithub.com/InternLM/InternLM\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/InternLM/InternLM",
-      "url": "/github.com/InternLM/InternLM"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/alopatenko/LLMEvaluation"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/alopatenko/LLMEvaluation\" rel=\"nofollow\"\u003egithub.com/alopatenko/LLMEvaluation\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/alopatenko/LLMEvaluation",
-      "url": "/github.com/alopatenko/LLMEvaluation"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/InternLM/xtuner"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/InternLM/xtuner\" rel=\"nofollow\"\u003egithub.com/InternLM/xtuner\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/InternLM/xtuner",
-      "url": "/github.com/InternLM/xtuner"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/SAILResearch/awesome-foundation-model-leaderboards"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/SAILResearch/awesome-foundation-model-leaderboards\" rel=\"nofollow\"\u003egithub.com/SAILResearch/awesome-foundation-model-leaderboards\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/SAILResearch/awesome-foundation-model-leaderboards",
-      "url": "/github.com/SAILResearch/awesome-foundation-model-leaderboards"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/RLHFlow/RLHF-Reward-Modeling"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/RLHFlow/RLHF-Reward-Modeling\" rel=\"nofollow\"\u003egithub.com/RLHFlow/RLHF-Reward-Modeling\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/RLHFlow/RLHF-Reward-Modeling",
-      "url": "/github.com/RLHFlow/RLHF-Reward-Modeling"
+      "name": "github.com/stanfordnlp/pyreft",
+      "url": "/github.com/stanfordnlp/pyreft"
     },
     {
       "__typename": "Repository",
@@ -220,90 +38,6 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/TsinghuaC3I/UltraMedical"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/TsinghuaC3I/UltraMedical\" rel=\"nofollow\"\u003egithub.com/TsinghuaC3I/UltraMedical\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/TsinghuaC3I/UltraMedical",
-      "url": "/github.com/TsinghuaC3I/UltraMedical"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/RLHFlow/Online-RLHF"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/RLHFlow/Online-RLHF\" rel=\"nofollow\"\u003egithub.com/RLHFlow/Online-RLHF\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/RLHFlow/Online-RLHF",
-      "url": "/github.com/RLHFlow/Online-RLHF"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/Yangyi-Chen/Multimodal-AND-Large-Language-Models"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/Yangyi-Chen/Multimodal-AND-Large-Language-Models\" rel=\"nofollow\"\u003egithub.com/Yangyi-Chen/Multimodal-AND-Large-Language-Models\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/Yangyi-Chen/Multimodal-AND-Large-Language-Models",
-      "url": "/github.com/Yangyi-Chen/Multimodal-AND-Large-Language-Models"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/stanfordnlp/pyreft"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/stanfordnlp/pyreft\" rel=\"nofollow\"\u003egithub.com/stanfordnlp/pyreft\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/stanfordnlp/pyreft",
-      "url": "/github.com/stanfordnlp/pyreft"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/qhduan/cn-chat-arxiv"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/qhduan/cn-chat-arxiv\" rel=\"nofollow\"\u003egithub.com/qhduan/cn-chat-arxiv\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/qhduan/cn-chat-arxiv",
-      "url": "/github.com/qhduan/cn-chat-arxiv"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/MatrixAINetwork/go-matrix"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/MatrixAINetwork/go-matrix\" rel=\"nofollow\"\u003egithub.com/MatrixAINetwork/go-matrix\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/MatrixAINetwork/go-matrix",
-      "url": "/github.com/MatrixAINetwork/go-matrix"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
           "url": "https://github.com/feedarchive/libera-feedbot-live"
         }
       ],
@@ -318,50 +52,22 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/2404589803/hf-daily-paper-newsletter-chinese"
+          "url": "https://github.com/ljvmiranda921/ljvmiranda921.github.io"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/2404589803/hf-daily-paper-newsletter-chinese\" rel=\"nofollow\"\u003egithub.com/2404589803/hf-daily-paper-newsletter-chinese\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/ljvmiranda921/ljvmiranda921.github.io\" rel=\"nofollow\"\u003egithub.com/ljvmiranda921/ljvmiranda921.github.io\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/2404589803/hf-daily-paper-newsletter-chinese",
-      "url": "/github.com/2404589803/hf-daily-paper-newsletter-chinese"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/taesiri/ArXivQA"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/taesiri/ArXivQA\" rel=\"nofollow\"\u003egithub.com/taesiri/ArXivQA\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/taesiri/ArXivQA",
-      "url": "/github.com/taesiri/ArXivQA"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/Lyken17/arXiv-stats"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/Lyken17/arXiv-stats\" rel=\"nofollow\"\u003egithub.com/Lyken17/arXiv-stats\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/Lyken17/arXiv-stats",
-      "url": "/github.com/Lyken17/arXiv-stats"
+      "name": "github.com/ljvmiranda921/ljvmiranda921.github.io",
+      "url": "/github.com/ljvmiranda921/ljvmiranda921.github.io"
     }
   ],
   "LimitHit": false,
   "Cloning": [],
   "Missing": [],
   "Timedout": [],
-  "ResultCount": 25,
-  "ElapsedMilliseconds": 3088,
+  "ResultCount": 4,
+  "ElapsedMilliseconds": 4535,
   "Alert": {
     "Title": "",
     "Description": "",

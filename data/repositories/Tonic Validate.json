@@ -1,24 +1,10 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global /import\\s+tonic_validate|from\\s+tonic_validate(\\.\\w+)?\\s+import / select:repo count:all",
+  "Query": "context:global /import\\s+tonic_validate|from\\s+tonic_validate(\\.\\w+)?\\s+import / case:yes select:repo count:all",
   "Site": {
-    "BuildVersion": "291022_2024-09-12_5.7-52e089a13592"
+    "BuildVersion": "291182_2024-09-12_5.7-5dcdaa774b88"
   },
   "Results": [
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/run-llama/llama_index"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/run-llama/llama_index\" rel=\"nofollow\"\u003egithub.com/run-llama/llama_index\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/run-llama/llama_index",
-      "url": "/github.com/run-llama/llama_index"
-    },
     {
       "__typename": "Repository",
       "externalURLs": [
@@ -32,6 +18,20 @@
       },
       "name": "github.com/klay-liu/tutorial-in-bilibili",
       "url": "/github.com/klay-liu/tutorial-in-bilibili"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/run-llama/llama_index"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/run-llama/llama_index\" rel=\"nofollow\"\u003egithub.com/run-llama/llama_index\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/run-llama/llama_index",
+      "url": "/github.com/run-llama/llama_index"
     },
     {
       "__typename": "Repository",
@@ -95,7 +95,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 6,
-  "ElapsedMilliseconds": 3354,
+  "ElapsedMilliseconds": 6165,
   "Alert": {
     "Title": "",
     "Description": "",

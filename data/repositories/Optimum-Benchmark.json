@@ -1,8 +1,8 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global /optimum-benchmark|import\\s+optimum_benchmark|from\\s+optimum_benchmark(\\.\\w+)?\\s+import / select:repo count:all",
+  "Query": "context:global /optimum-benchmark|import\\s+optimum_benchmark|from\\s+optimum_benchmark(\\.\\w+)?\\s+import / case:yes select:repo count:all",
   "Site": {
-    "BuildVersion": "291022_2024-09-12_5.7-52e089a13592"
+    "BuildVersion": "291182_2024-09-12_5.7-5dcdaa774b88"
   },
   "Results": [
     {
@@ -38,14 +38,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/ku-nlp/kwja"
+          "url": "https://github.com/LeslieLeung/opensource-lighthouse"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/ku-nlp/kwja\" rel=\"nofollow\"\u003egithub.com/ku-nlp/kwja\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/LeslieLeung/opensource-lighthouse\" rel=\"nofollow\"\u003egithub.com/LeslieLeung/opensource-lighthouse\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/ku-nlp/kwja",
-      "url": "/github.com/ku-nlp/kwja"
+      "name": "github.com/LeslieLeung/opensource-lighthouse",
+      "url": "/github.com/LeslieLeung/opensource-lighthouse"
     },
     {
       "__typename": "Repository",
@@ -66,42 +66,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/langchain-ai/langchain"
+          "url": "https://github.com/ku-nlp/kwja"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/langchain-ai/langchain\" rel=\"nofollow\"\u003egithub.com/langchain-ai/langchain\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/ku-nlp/kwja\" rel=\"nofollow\"\u003egithub.com/ku-nlp/kwja\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/langchain-ai/langchain",
-      "url": "/github.com/langchain-ai/langchain"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/sacdallago/biotrainer"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/sacdallago/biotrainer\" rel=\"nofollow\"\u003egithub.com/sacdallago/biotrainer\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/sacdallago/biotrainer",
-      "url": "/github.com/sacdallago/biotrainer"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/google-research/timesfm"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/google-research/timesfm\" rel=\"nofollow\"\u003egithub.com/google-research/timesfm\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/google-research/timesfm",
-      "url": "/github.com/google-research/timesfm"
+      "name": "github.com/ku-nlp/kwja",
+      "url": "/github.com/ku-nlp/kwja"
     },
     {
       "__typename": "Repository",
@@ -122,14 +94,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/aws-samples/bedrock-claude-chat"
+          "url": "https://github.com/google-research/timesfm"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/aws-samples/bedrock-claude-chat\" rel=\"nofollow\"\u003egithub.com/aws-samples/bedrock-claude-chat\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/google-research/timesfm\" rel=\"nofollow\"\u003egithub.com/google-research/timesfm\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/aws-samples/bedrock-claude-chat",
-      "url": "/github.com/aws-samples/bedrock-claude-chat"
+      "name": "github.com/google-research/timesfm",
+      "url": "/github.com/google-research/timesfm"
     },
     {
       "__typename": "Repository",
@@ -144,34 +116,6 @@
       },
       "name": "github.com/wisupai/e2m",
       "url": "/github.com/wisupai/e2m"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/truera/trulens"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/truera/trulens\" rel=\"nofollow\"\u003egithub.com/truera/trulens\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/truera/trulens",
-      "url": "/github.com/truera/trulens"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/bigcode-project/bigcode-evaluation-harness"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/bigcode-project/bigcode-evaluation-harness\" rel=\"nofollow\"\u003egithub.com/bigcode-project/bigcode-evaluation-harness\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/bigcode-project/bigcode-evaluation-harness",
-      "url": "/github.com/bigcode-project/bigcode-evaluation-harness"
     },
     {
       "__typename": "Repository",
@@ -206,6 +150,48 @@
       "externalURLs": [
         {
           "serviceType": "github",
+          "url": "https://github.com/awslabs/fortuna"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/awslabs/fortuna\" rel=\"nofollow\"\u003egithub.com/awslabs/fortuna\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/awslabs/fortuna",
+      "url": "/github.com/awslabs/fortuna"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/decodingml/llm-twin-course"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/decodingml/llm-twin-course\" rel=\"nofollow\"\u003egithub.com/decodingml/llm-twin-course\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/decodingml/llm-twin-course",
+      "url": "/github.com/decodingml/llm-twin-course"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/truera/trulens"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/truera/trulens\" rel=\"nofollow\"\u003egithub.com/truera/trulens\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/truera/trulens",
+      "url": "/github.com/truera/trulens"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
           "url": "https://github.com/monarch-initiative/curate-gpt"
         }
       ],
@@ -214,34 +200,6 @@
       },
       "name": "github.com/monarch-initiative/curate-gpt",
       "url": "/github.com/monarch-initiative/curate-gpt"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/shell-nlp/gpt_server"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/shell-nlp/gpt_server\" rel=\"nofollow\"\u003egithub.com/shell-nlp/gpt_server\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/shell-nlp/gpt_server",
-      "url": "/github.com/shell-nlp/gpt_server"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/ericmjl/llamabot"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/ericmjl/llamabot\" rel=\"nofollow\"\u003egithub.com/ericmjl/llamabot\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/ericmjl/llamabot",
-      "url": "/github.com/ericmjl/llamabot"
     },
     {
       "__typename": "Repository",
@@ -262,28 +220,42 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/davidberenstein1957/fast-sentence-transformers"
+          "url": "https://github.com/parea-ai/parea-sdk-py"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/davidberenstein1957/fast-sentence-transformers\" rel=\"nofollow\"\u003egithub.com/davidberenstein1957/fast-sentence-transformers\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/parea-ai/parea-sdk-py\" rel=\"nofollow\"\u003egithub.com/parea-ai/parea-sdk-py\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/davidberenstein1957/fast-sentence-transformers",
-      "url": "/github.com/davidberenstein1957/fast-sentence-transformers"
+      "name": "github.com/parea-ai/parea-sdk-py",
+      "url": "/github.com/parea-ai/parea-sdk-py"
     },
     {
       "__typename": "Repository",
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/grillazz/fastapi-sqlalchemy-asyncpg"
+          "url": "https://github.com/aws-samples/bedrock-claude-chat"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/grillazz/fastapi-sqlalchemy-asyncpg\" rel=\"nofollow\"\u003egithub.com/grillazz/fastapi-sqlalchemy-asyncpg\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/aws-samples/bedrock-claude-chat\" rel=\"nofollow\"\u003egithub.com/aws-samples/bedrock-claude-chat\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/grillazz/fastapi-sqlalchemy-asyncpg",
-      "url": "/github.com/grillazz/fastapi-sqlalchemy-asyncpg"
+      "name": "github.com/aws-samples/bedrock-claude-chat",
+      "url": "/github.com/aws-samples/bedrock-claude-chat"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/shell-nlp/gpt_server"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/shell-nlp/gpt_server\" rel=\"nofollow\"\u003egithub.com/shell-nlp/gpt_server\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/shell-nlp/gpt_server",
+      "url": "/github.com/shell-nlp/gpt_server"
     },
     {
       "__typename": "Repository",
@@ -304,56 +276,42 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/traceloop/openllmetry"
+          "url": "https://github.com/raznem/parsera"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/traceloop/openllmetry\" rel=\"nofollow\"\u003egithub.com/traceloop/openllmetry\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/raznem/parsera\" rel=\"nofollow\"\u003egithub.com/raznem/parsera\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/traceloop/openllmetry",
-      "url": "/github.com/traceloop/openllmetry"
+      "name": "github.com/raznem/parsera",
+      "url": "/github.com/raznem/parsera"
     },
     {
       "__typename": "Repository",
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/All-Hands-AI/OpenHands"
+          "url": "https://github.com/uukuguy/speechless"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/All-Hands-AI/OpenHands\" rel=\"nofollow\"\u003egithub.com/All-Hands-AI/OpenHands\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/uukuguy/speechless\" rel=\"nofollow\"\u003egithub.com/uukuguy/speechless\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/All-Hands-AI/OpenHands",
-      "url": "/github.com/All-Hands-AI/OpenHands"
+      "name": "github.com/uukuguy/speechless",
+      "url": "/github.com/uukuguy/speechless"
     },
     {
       "__typename": "Repository",
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/camel-ai/camel"
+          "url": "https://github.com/aigc-apps/PAI-RAG"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/camel-ai/camel\" rel=\"nofollow\"\u003egithub.com/camel-ai/camel\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/aigc-apps/PAI-RAG\" rel=\"nofollow\"\u003egithub.com/aigc-apps/PAI-RAG\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/camel-ai/camel",
-      "url": "/github.com/camel-ai/camel"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/mem0ai/mem0"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/mem0ai/mem0\" rel=\"nofollow\"\u003egithub.com/mem0ai/mem0\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/mem0ai/mem0",
-      "url": "/github.com/mem0ai/mem0"
+      "name": "github.com/aigc-apps/PAI-RAG",
+      "url": "/github.com/aigc-apps/PAI-RAG"
     },
     {
       "__typename": "Repository",
@@ -374,28 +332,98 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/raznem/parsera"
+          "url": "https://github.com/davidberenstein1957/fast-sentence-transformers"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/raznem/parsera\" rel=\"nofollow\"\u003egithub.com/raznem/parsera\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/davidberenstein1957/fast-sentence-transformers\" rel=\"nofollow\"\u003egithub.com/davidberenstein1957/fast-sentence-transformers\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/raznem/parsera",
-      "url": "/github.com/raznem/parsera"
+      "name": "github.com/davidberenstein1957/fast-sentence-transformers",
+      "url": "/github.com/davidberenstein1957/fast-sentence-transformers"
     },
     {
       "__typename": "Repository",
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/neo4j/neo4j-genai-python"
+          "url": "https://github.com/facebookresearch/Mephisto"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/neo4j/neo4j-genai-python\" rel=\"nofollow\"\u003egithub.com/neo4j/neo4j-genai-python\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/facebookresearch/Mephisto\" rel=\"nofollow\"\u003egithub.com/facebookresearch/Mephisto\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/neo4j/neo4j-genai-python",
-      "url": "/github.com/neo4j/neo4j-genai-python"
+      "name": "github.com/facebookresearch/Mephisto",
+      "url": "/github.com/facebookresearch/Mephisto"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/camel-ai/camel"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/camel-ai/camel\" rel=\"nofollow\"\u003egithub.com/camel-ai/camel\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/camel-ai/camel",
+      "url": "/github.com/camel-ai/camel"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/ericmjl/llamabot"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/ericmjl/llamabot\" rel=\"nofollow\"\u003egithub.com/ericmjl/llamabot\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/ericmjl/llamabot",
+      "url": "/github.com/ericmjl/llamabot"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/zylon-ai/private-gpt"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/zylon-ai/private-gpt\" rel=\"nofollow\"\u003egithub.com/zylon-ai/private-gpt\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/zylon-ai/private-gpt",
+      "url": "/github.com/zylon-ai/private-gpt"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/SynaLinks/HybridAGI"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/SynaLinks/HybridAGI\" rel=\"nofollow\"\u003egithub.com/SynaLinks/HybridAGI\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/SynaLinks/HybridAGI",
+      "url": "/github.com/SynaLinks/HybridAGI"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/grillazz/fastapi-sqlalchemy-asyncpg"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/grillazz/fastapi-sqlalchemy-asyncpg\" rel=\"nofollow\"\u003egithub.com/grillazz/fastapi-sqlalchemy-asyncpg\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/grillazz/fastapi-sqlalchemy-asyncpg",
+      "url": "/github.com/grillazz/fastapi-sqlalchemy-asyncpg"
     },
     {
       "__typename": "Repository",
@@ -430,42 +458,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/SynaLinks/HybridAGI"
+          "url": "https://github.com/All-Hands-AI/OpenHands"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/SynaLinks/HybridAGI\" rel=\"nofollow\"\u003egithub.com/SynaLinks/HybridAGI\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/All-Hands-AI/OpenHands\" rel=\"nofollow\"\u003egithub.com/All-Hands-AI/OpenHands\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/SynaLinks/HybridAGI",
-      "url": "/github.com/SynaLinks/HybridAGI"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/uukuguy/speechless"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/uukuguy/speechless\" rel=\"nofollow\"\u003egithub.com/uukuguy/speechless\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/uukuguy/speechless",
-      "url": "/github.com/uukuguy/speechless"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/EthicalML/awesome-production-machine-learning"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/EthicalML/awesome-production-machine-learning\" rel=\"nofollow\"\u003egithub.com/EthicalML/awesome-production-machine-learning\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/EthicalML/awesome-production-machine-learning",
-      "url": "/github.com/EthicalML/awesome-production-machine-learning"
+      "name": "github.com/All-Hands-AI/OpenHands",
+      "url": "/github.com/All-Hands-AI/OpenHands"
     },
     {
       "__typename": "Repository",
@@ -500,168 +500,42 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/umcu/clinlp"
+          "url": "https://github.com/NVIDIA/ChatRTX"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/umcu/clinlp\" rel=\"nofollow\"\u003egithub.com/umcu/clinlp\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/NVIDIA/ChatRTX\" rel=\"nofollow\"\u003egithub.com/NVIDIA/ChatRTX\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/umcu/clinlp",
-      "url": "/github.com/umcu/clinlp"
+      "name": "github.com/NVIDIA/ChatRTX",
+      "url": "/github.com/NVIDIA/ChatRTX"
     },
     {
       "__typename": "Repository",
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/zylon-ai/private-gpt"
+          "url": "https://github.com/mem0ai/mem0"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/zylon-ai/private-gpt\" rel=\"nofollow\"\u003egithub.com/zylon-ai/private-gpt\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/mem0ai/mem0\" rel=\"nofollow\"\u003egithub.com/mem0ai/mem0\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/zylon-ai/private-gpt",
-      "url": "/github.com/zylon-ai/private-gpt"
+      "name": "github.com/mem0ai/mem0",
+      "url": "/github.com/mem0ai/mem0"
     },
     {
       "__typename": "Repository",
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/andysingal/llm-course"
+          "url": "https://github.com/EthicalML/awesome-production-machine-learning"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/andysingal/llm-course\" rel=\"nofollow\"\u003egithub.com/andysingal/llm-course\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/EthicalML/awesome-production-machine-learning\" rel=\"nofollow\"\u003egithub.com/EthicalML/awesome-production-machine-learning\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/andysingal/llm-course",
-      "url": "/github.com/andysingal/llm-course"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/LeslieLeung/opensource-lighthouse"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/LeslieLeung/opensource-lighthouse\" rel=\"nofollow\"\u003egithub.com/LeslieLeung/opensource-lighthouse\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/LeslieLeung/opensource-lighthouse",
-      "url": "/github.com/LeslieLeung/opensource-lighthouse"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/overeasy-sh/overeasy"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/overeasy-sh/overeasy\" rel=\"nofollow\"\u003egithub.com/overeasy-sh/overeasy\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/overeasy-sh/overeasy",
-      "url": "/github.com/overeasy-sh/overeasy"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/peggy1502/Amazing-Resources"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/peggy1502/Amazing-Resources\" rel=\"nofollow\"\u003egithub.com/peggy1502/Amazing-Resources\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/peggy1502/Amazing-Resources",
-      "url": "/github.com/peggy1502/Amazing-Resources"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/aigc-apps/PAI-RAG"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/aigc-apps/PAI-RAG\" rel=\"nofollow\"\u003egithub.com/aigc-apps/PAI-RAG\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/aigc-apps/PAI-RAG",
-      "url": "/github.com/aigc-apps/PAI-RAG"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/michaelfeil/infinity"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/michaelfeil/infinity\" rel=\"nofollow\"\u003egithub.com/michaelfeil/infinity\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/michaelfeil/infinity",
-      "url": "/github.com/michaelfeil/infinity"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/datastax/ragstack-ai"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/datastax/ragstack-ai\" rel=\"nofollow\"\u003egithub.com/datastax/ragstack-ai\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/datastax/ragstack-ai",
-      "url": "/github.com/datastax/ragstack-ai"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/eidolon-ai/eidolon"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/eidolon-ai/eidolon\" rel=\"nofollow\"\u003egithub.com/eidolon-ai/eidolon\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/eidolon-ai/eidolon",
-      "url": "/github.com/eidolon-ai/eidolon"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/ibm-granite/granite-tsfm"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/ibm-granite/granite-tsfm\" rel=\"nofollow\"\u003egithub.com/ibm-granite/granite-tsfm\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/ibm-granite/granite-tsfm",
-      "url": "/github.com/ibm-granite/granite-tsfm"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/aurelio-labs/semantic-router"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/aurelio-labs/semantic-router\" rel=\"nofollow\"\u003egithub.com/aurelio-labs/semantic-router\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/aurelio-labs/semantic-router",
-      "url": "/github.com/aurelio-labs/semantic-router"
+      "name": "github.com/EthicalML/awesome-production-machine-learning",
+      "url": "/github.com/EthicalML/awesome-production-machine-learning"
     },
     {
       "__typename": "Repository",
@@ -696,140 +570,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/GAIR-NLP/anole"
+          "url": "https://github.com/andysingal/llm-course"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/GAIR-NLP/anole\" rel=\"nofollow\"\u003egithub.com/GAIR-NLP/anole\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/andysingal/llm-course\" rel=\"nofollow\"\u003egithub.com/andysingal/llm-course\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/GAIR-NLP/anole",
-      "url": "/github.com/GAIR-NLP/anole"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/VikParuchuri/marker"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/VikParuchuri/marker\" rel=\"nofollow\"\u003egithub.com/VikParuchuri/marker\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/VikParuchuri/marker",
-      "url": "/github.com/VikParuchuri/marker"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/llm-jp/llm-jp-eval"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/llm-jp/llm-jp-eval\" rel=\"nofollow\"\u003egithub.com/llm-jp/llm-jp-eval\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/llm-jp/llm-jp-eval",
-      "url": "/github.com/llm-jp/llm-jp-eval"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/cohere-ai/cohere-toolkit"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/cohere-ai/cohere-toolkit\" rel=\"nofollow\"\u003egithub.com/cohere-ai/cohere-toolkit\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/cohere-ai/cohere-toolkit",
-      "url": "/github.com/cohere-ai/cohere-toolkit"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/denser-org/denser-retriever"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/denser-org/denser-retriever\" rel=\"nofollow\"\u003egithub.com/denser-org/denser-retriever\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/denser-org/denser-retriever",
-      "url": "/github.com/denser-org/denser-retriever"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/cpacker/MemGPT"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/cpacker/MemGPT\" rel=\"nofollow\"\u003egithub.com/cpacker/MemGPT\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/cpacker/MemGPT",
-      "url": "/github.com/cpacker/MemGPT"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/Renumics/spotlight"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/Renumics/spotlight\" rel=\"nofollow\"\u003egithub.com/Renumics/spotlight\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/Renumics/spotlight",
-      "url": "/github.com/Renumics/spotlight"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/superlinked/superlinked"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/superlinked/superlinked\" rel=\"nofollow\"\u003egithub.com/superlinked/superlinked\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/superlinked/superlinked",
-      "url": "/github.com/superlinked/superlinked"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/camel-ai/crab"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/camel-ai/crab\" rel=\"nofollow\"\u003egithub.com/camel-ai/crab\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/camel-ai/crab",
-      "url": "/github.com/camel-ai/crab"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/premAI-io/benchmarks"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/premAI-io/benchmarks\" rel=\"nofollow\"\u003egithub.com/premAI-io/benchmarks\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/premAI-io/benchmarks",
-      "url": "/github.com/premAI-io/benchmarks"
+      "name": "github.com/andysingal/llm-course",
+      "url": "/github.com/andysingal/llm-course"
     },
     {
       "__typename": "Repository",
@@ -850,14 +598,56 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/prefix-dev/pixi"
+          "url": "https://github.com/umcu/clinlp"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/prefix-dev/pixi\" rel=\"nofollow\"\u003egithub.com/prefix-dev/pixi\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/umcu/clinlp\" rel=\"nofollow\"\u003egithub.com/umcu/clinlp\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/prefix-dev/pixi",
-      "url": "/github.com/prefix-dev/pixi"
+      "name": "github.com/umcu/clinlp",
+      "url": "/github.com/umcu/clinlp"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/cohere-ai/cohere-toolkit"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/cohere-ai/cohere-toolkit\" rel=\"nofollow\"\u003egithub.com/cohere-ai/cohere-toolkit\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/cohere-ai/cohere-toolkit",
+      "url": "/github.com/cohere-ai/cohere-toolkit"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/PetroIvaniuk/llms-tools"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/PetroIvaniuk/llms-tools\" rel=\"nofollow\"\u003egithub.com/PetroIvaniuk/llms-tools\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/PetroIvaniuk/llms-tools",
+      "url": "/github.com/PetroIvaniuk/llms-tools"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/superlinked/superlinked"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/superlinked/superlinked\" rel=\"nofollow\"\u003egithub.com/superlinked/superlinked\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/superlinked/superlinked",
+      "url": "/github.com/superlinked/superlinked"
     },
     {
       "__typename": "Repository",
@@ -892,14 +682,42 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/patched-codes/patchwork"
+          "url": "https://github.com/traceloop/openllmetry"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/patched-codes/patchwork\" rel=\"nofollow\"\u003egithub.com/patched-codes/patchwork\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/traceloop/openllmetry\" rel=\"nofollow\"\u003egithub.com/traceloop/openllmetry\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/patched-codes/patchwork",
-      "url": "/github.com/patched-codes/patchwork"
+      "name": "github.com/traceloop/openllmetry",
+      "url": "/github.com/traceloop/openllmetry"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/eidolon-ai/eidolon"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/eidolon-ai/eidolon\" rel=\"nofollow\"\u003egithub.com/eidolon-ai/eidolon\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/eidolon-ai/eidolon",
+      "url": "/github.com/eidolon-ai/eidolon"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/VikParuchuri/marker"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/VikParuchuri/marker\" rel=\"nofollow\"\u003egithub.com/VikParuchuri/marker\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/VikParuchuri/marker",
+      "url": "/github.com/VikParuchuri/marker"
     },
     {
       "__typename": "Repository",
@@ -920,14 +738,56 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/Aggregate-Intellect/sherpa"
+          "url": "https://github.com/peggy1502/Amazing-Resources"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/Aggregate-Intellect/sherpa\" rel=\"nofollow\"\u003egithub.com/Aggregate-Intellect/sherpa\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/peggy1502/Amazing-Resources\" rel=\"nofollow\"\u003egithub.com/peggy1502/Amazing-Resources\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/Aggregate-Intellect/sherpa",
-      "url": "/github.com/Aggregate-Intellect/sherpa"
+      "name": "github.com/peggy1502/Amazing-Resources",
+      "url": "/github.com/peggy1502/Amazing-Resources"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/ibm-granite/granite-tsfm"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/ibm-granite/granite-tsfm\" rel=\"nofollow\"\u003egithub.com/ibm-granite/granite-tsfm\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/ibm-granite/granite-tsfm",
+      "url": "/github.com/ibm-granite/granite-tsfm"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/GAIR-NLP/anole"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/GAIR-NLP/anole\" rel=\"nofollow\"\u003egithub.com/GAIR-NLP/anole\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/GAIR-NLP/anole",
+      "url": "/github.com/GAIR-NLP/anole"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/prefix-dev/pixi"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/prefix-dev/pixi\" rel=\"nofollow\"\u003egithub.com/prefix-dev/pixi\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/prefix-dev/pixi",
+      "url": "/github.com/prefix-dev/pixi"
     },
     {
       "__typename": "Repository",
@@ -948,14 +808,126 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/openshieldai/openshield"
+          "url": "https://github.com/langchain-ai/langchain"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/openshieldai/openshield\" rel=\"nofollow\"\u003egithub.com/openshieldai/openshield\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/langchain-ai/langchain\" rel=\"nofollow\"\u003egithub.com/langchain-ai/langchain\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/openshieldai/openshield",
-      "url": "/github.com/openshieldai/openshield"
+      "name": "github.com/langchain-ai/langchain",
+      "url": "/github.com/langchain-ai/langchain"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/camel-ai/crab"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/camel-ai/crab\" rel=\"nofollow\"\u003egithub.com/camel-ai/crab\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/camel-ai/crab",
+      "url": "/github.com/camel-ai/crab"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/cpacker/MemGPT"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/cpacker/MemGPT\" rel=\"nofollow\"\u003egithub.com/cpacker/MemGPT\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/cpacker/MemGPT",
+      "url": "/github.com/cpacker/MemGPT"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/llm-jp/llm-jp-eval"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/llm-jp/llm-jp-eval\" rel=\"nofollow\"\u003egithub.com/llm-jp/llm-jp-eval\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/llm-jp/llm-jp-eval",
+      "url": "/github.com/llm-jp/llm-jp-eval"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/premAI-io/benchmarks"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/premAI-io/benchmarks\" rel=\"nofollow\"\u003egithub.com/premAI-io/benchmarks\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/premAI-io/benchmarks",
+      "url": "/github.com/premAI-io/benchmarks"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/bigcode-project/bigcode-evaluation-harness"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/bigcode-project/bigcode-evaluation-harness\" rel=\"nofollow\"\u003egithub.com/bigcode-project/bigcode-evaluation-harness\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/bigcode-project/bigcode-evaluation-harness",
+      "url": "/github.com/bigcode-project/bigcode-evaluation-harness"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/overeasy-sh/overeasy"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/overeasy-sh/overeasy\" rel=\"nofollow\"\u003egithub.com/overeasy-sh/overeasy\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/overeasy-sh/overeasy",
+      "url": "/github.com/overeasy-sh/overeasy"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/michaelfeil/infinity"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/michaelfeil/infinity\" rel=\"nofollow\"\u003egithub.com/michaelfeil/infinity\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/michaelfeil/infinity",
+      "url": "/github.com/michaelfeil/infinity"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/datastax/ragstack-ai"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/datastax/ragstack-ai\" rel=\"nofollow\"\u003egithub.com/datastax/ragstack-ai\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/datastax/ragstack-ai",
+      "url": "/github.com/datastax/ragstack-ai"
     },
     {
       "__typename": "Repository",
@@ -976,154 +948,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/kaistAI/LangBridge"
+          "url": "https://github.com/langwatch/langevals"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/kaistAI/LangBridge\" rel=\"nofollow\"\u003egithub.com/kaistAI/LangBridge\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/langwatch/langevals\" rel=\"nofollow\"\u003egithub.com/langwatch/langevals\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/kaistAI/LangBridge",
-      "url": "/github.com/kaistAI/LangBridge"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/huggingface/setfit"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/huggingface/setfit\" rel=\"nofollow\"\u003egithub.com/huggingface/setfit\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/huggingface/setfit",
-      "url": "/github.com/huggingface/setfit"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/ChatFAQ/ChatFAQ"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/ChatFAQ/ChatFAQ\" rel=\"nofollow\"\u003egithub.com/ChatFAQ/ChatFAQ\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/ChatFAQ/ChatFAQ",
-      "url": "/github.com/ChatFAQ/ChatFAQ"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/VikParuchuri/texify"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/VikParuchuri/texify\" rel=\"nofollow\"\u003egithub.com/VikParuchuri/texify\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/VikParuchuri/texify",
-      "url": "/github.com/VikParuchuri/texify"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/griptape-ai/griptape"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/griptape-ai/griptape\" rel=\"nofollow\"\u003egithub.com/griptape-ai/griptape\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/griptape-ai/griptape",
-      "url": "/github.com/griptape-ai/griptape"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/getzep/graphiti"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/getzep/graphiti\" rel=\"nofollow\"\u003egithub.com/getzep/graphiti\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/getzep/graphiti",
-      "url": "/github.com/getzep/graphiti"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/bghira/SimpleTuner"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/bghira/SimpleTuner\" rel=\"nofollow\"\u003egithub.com/bghira/SimpleTuner\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/bghira/SimpleTuner",
-      "url": "/github.com/bghira/SimpleTuner"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/redis-developer/redis-product-search"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/redis-developer/redis-product-search\" rel=\"nofollow\"\u003egithub.com/redis-developer/redis-product-search\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/redis-developer/redis-product-search",
-      "url": "/github.com/redis-developer/redis-product-search"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/turbo-llm/turbo-alignment"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/turbo-llm/turbo-alignment\" rel=\"nofollow\"\u003egithub.com/turbo-llm/turbo-alignment\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/turbo-llm/turbo-alignment",
-      "url": "/github.com/turbo-llm/turbo-alignment"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/biocypher/biochatter"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/biocypher/biochatter\" rel=\"nofollow\"\u003egithub.com/biocypher/biochatter\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/biocypher/biochatter",
-      "url": "/github.com/biocypher/biochatter"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/realpython/materials"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/realpython/materials\" rel=\"nofollow\"\u003egithub.com/realpython/materials\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/realpython/materials",
-      "url": "/github.com/realpython/materials"
+      "name": "github.com/langwatch/langevals",
+      "url": "/github.com/langwatch/langevals"
     },
     {
       "__typename": "Repository",
@@ -1144,14 +976,140 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/macrocosm-os/prompting"
+          "url": "https://github.com/aurelio-labs/semantic-router"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/macrocosm-os/prompting\" rel=\"nofollow\"\u003egithub.com/macrocosm-os/prompting\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/aurelio-labs/semantic-router\" rel=\"nofollow\"\u003egithub.com/aurelio-labs/semantic-router\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/macrocosm-os/prompting",
-      "url": "/github.com/macrocosm-os/prompting"
+      "name": "github.com/aurelio-labs/semantic-router",
+      "url": "/github.com/aurelio-labs/semantic-router"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/kaistAI/LangBridge"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/kaistAI/LangBridge\" rel=\"nofollow\"\u003egithub.com/kaistAI/LangBridge\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/kaistAI/LangBridge",
+      "url": "/github.com/kaistAI/LangBridge"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/VikParuchuri/texify"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/VikParuchuri/texify\" rel=\"nofollow\"\u003egithub.com/VikParuchuri/texify\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/VikParuchuri/texify",
+      "url": "/github.com/VikParuchuri/texify"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/bghira/SimpleTuner"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/bghira/SimpleTuner\" rel=\"nofollow\"\u003egithub.com/bghira/SimpleTuner\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/bghira/SimpleTuner",
+      "url": "/github.com/bghira/SimpleTuner"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/denser-org/denser-retriever"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/denser-org/denser-retriever\" rel=\"nofollow\"\u003egithub.com/denser-org/denser-retriever\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/denser-org/denser-retriever",
+      "url": "/github.com/denser-org/denser-retriever"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/turbo-llm/turbo-alignment"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/turbo-llm/turbo-alignment\" rel=\"nofollow\"\u003egithub.com/turbo-llm/turbo-alignment\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/turbo-llm/turbo-alignment",
+      "url": "/github.com/turbo-llm/turbo-alignment"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/griptape-ai/griptape"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/griptape-ai/griptape\" rel=\"nofollow\"\u003egithub.com/griptape-ai/griptape\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/griptape-ai/griptape",
+      "url": "/github.com/griptape-ai/griptape"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Renumics/spotlight"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Renumics/spotlight\" rel=\"nofollow\"\u003egithub.com/Renumics/spotlight\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Renumics/spotlight",
+      "url": "/github.com/Renumics/spotlight"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/huggingface/setfit"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/huggingface/setfit\" rel=\"nofollow\"\u003egithub.com/huggingface/setfit\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/huggingface/setfit",
+      "url": "/github.com/huggingface/setfit"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/realpython/materials"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/realpython/materials\" rel=\"nofollow\"\u003egithub.com/realpython/materials\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/realpython/materials",
+      "url": "/github.com/realpython/materials"
     },
     {
       "__typename": "Repository",
@@ -1172,6 +1130,20 @@
       "externalURLs": [
         {
           "serviceType": "github",
+          "url": "https://github.com/patched-codes/patchwork"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/patched-codes/patchwork\" rel=\"nofollow\"\u003egithub.com/patched-codes/patchwork\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/patched-codes/patchwork",
+      "url": "/github.com/patched-codes/patchwork"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
           "url": "https://github.com/kserve/kserve"
         }
       ],
@@ -1186,84 +1158,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/NVIDIA/ChatRTX"
+          "url": "https://github.com/openshieldai/openshield"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/NVIDIA/ChatRTX\" rel=\"nofollow\"\u003egithub.com/NVIDIA/ChatRTX\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/openshieldai/openshield\" rel=\"nofollow\"\u003egithub.com/openshieldai/openshield\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/NVIDIA/ChatRTX",
-      "url": "/github.com/NVIDIA/ChatRTX"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/encord-team/text-to-image-eval"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/encord-team/text-to-image-eval\" rel=\"nofollow\"\u003egithub.com/encord-team/text-to-image-eval\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/encord-team/text-to-image-eval",
-      "url": "/github.com/encord-team/text-to-image-eval"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/decodingml/llm-twin-course"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/decodingml/llm-twin-course\" rel=\"nofollow\"\u003egithub.com/decodingml/llm-twin-course\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/decodingml/llm-twin-course",
-      "url": "/github.com/decodingml/llm-twin-course"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/SqueezeAILab/KVQuant"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/SqueezeAILab/KVQuant\" rel=\"nofollow\"\u003egithub.com/SqueezeAILab/KVQuant\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/SqueezeAILab/KVQuant",
-      "url": "/github.com/SqueezeAILab/KVQuant"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/huggingface/text-generation-inference"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/huggingface/text-generation-inference\" rel=\"nofollow\"\u003egithub.com/huggingface/text-generation-inference\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/huggingface/text-generation-inference",
-      "url": "/github.com/huggingface/text-generation-inference"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/hongbo-miao/hongbomiao.com"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/hongbo-miao/hongbomiao.com\" rel=\"nofollow\"\u003egithub.com/hongbo-miao/hongbomiao.com\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/hongbo-miao/hongbomiao.com",
-      "url": "/github.com/hongbo-miao/hongbomiao.com"
+      "name": "github.com/openshieldai/openshield",
+      "url": "/github.com/openshieldai/openshield"
     },
     {
       "__typename": "Repository",
@@ -1284,6 +1186,34 @@
       "externalURLs": [
         {
           "serviceType": "github",
+          "url": "https://github.com/ChatFAQ/ChatFAQ"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/ChatFAQ/ChatFAQ\" rel=\"nofollow\"\u003egithub.com/ChatFAQ/ChatFAQ\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/ChatFAQ/ChatFAQ",
+      "url": "/github.com/ChatFAQ/ChatFAQ"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/huggingface/text-generation-inference"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/huggingface/text-generation-inference\" rel=\"nofollow\"\u003egithub.com/huggingface/text-generation-inference\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/huggingface/text-generation-inference",
+      "url": "/github.com/huggingface/text-generation-inference"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
           "url": "https://github.com/project-ryoma/ryoma"
         }
       ],
@@ -1298,14 +1228,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/parea-ai/parea-sdk-py"
+          "url": "https://github.com/Aggregate-Intellect/sherpa"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/parea-ai/parea-sdk-py\" rel=\"nofollow\"\u003egithub.com/parea-ai/parea-sdk-py\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Aggregate-Intellect/sherpa\" rel=\"nofollow\"\u003egithub.com/Aggregate-Intellect/sherpa\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/parea-ai/parea-sdk-py",
-      "url": "/github.com/parea-ai/parea-sdk-py"
+      "name": "github.com/Aggregate-Intellect/sherpa",
+      "url": "/github.com/Aggregate-Intellect/sherpa"
     },
     {
       "__typename": "Repository",
@@ -1326,42 +1256,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/facebookresearch/Mephisto"
+          "url": "https://github.com/encord-team/text-to-image-eval"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/facebookresearch/Mephisto\" rel=\"nofollow\"\u003egithub.com/facebookresearch/Mephisto\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/encord-team/text-to-image-eval\" rel=\"nofollow\"\u003egithub.com/encord-team/text-to-image-eval\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/facebookresearch/Mephisto",
-      "url": "/github.com/facebookresearch/Mephisto"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/langwatch/langevals"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/langwatch/langevals\" rel=\"nofollow\"\u003egithub.com/langwatch/langevals\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/langwatch/langevals",
-      "url": "/github.com/langwatch/langevals"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/awslabs/fortuna"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/awslabs/fortuna\" rel=\"nofollow\"\u003egithub.com/awslabs/fortuna\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/awslabs/fortuna",
-      "url": "/github.com/awslabs/fortuna"
+      "name": "github.com/encord-team/text-to-image-eval",
+      "url": "/github.com/encord-team/text-to-image-eval"
     },
     {
       "__typename": "Repository",
@@ -1376,6 +1278,62 @@
       },
       "name": "github.com/IvanaXu/TianChiProj",
       "url": "/github.com/IvanaXu/TianChiProj"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/dreadnode/rigging"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/dreadnode/rigging\" rel=\"nofollow\"\u003egithub.com/dreadnode/rigging\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/dreadnode/rigging",
+      "url": "/github.com/dreadnode/rigging"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/getzep/graphiti"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/getzep/graphiti\" rel=\"nofollow\"\u003egithub.com/getzep/graphiti\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/getzep/graphiti",
+      "url": "/github.com/getzep/graphiti"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/macrocosm-os/prompting"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/macrocosm-os/prompting\" rel=\"nofollow\"\u003egithub.com/macrocosm-os/prompting\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/macrocosm-os/prompting",
+      "url": "/github.com/macrocosm-os/prompting"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/redis-developer/redis-product-search"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/redis-developer/redis-product-search\" rel=\"nofollow\"\u003egithub.com/redis-developer/redis-product-search\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/redis-developer/redis-product-search",
+      "url": "/github.com/redis-developer/redis-product-search"
     },
     {
       "__typename": "Repository",
@@ -1410,6 +1368,20 @@
       "externalURLs": [
         {
           "serviceType": "github",
+          "url": "https://github.com/biocypher/biochatter"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/biocypher/biochatter\" rel=\"nofollow\"\u003egithub.com/biocypher/biochatter\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/biocypher/biochatter",
+      "url": "/github.com/biocypher/biochatter"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
           "url": "https://github.com/huggingface/optimum-amd"
         }
       ],
@@ -1418,6 +1390,20 @@
       },
       "name": "github.com/huggingface/optimum-amd",
       "url": "/github.com/huggingface/optimum-amd"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/SqueezeAILab/KVQuant"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/SqueezeAILab/KVQuant\" rel=\"nofollow\"\u003egithub.com/SqueezeAILab/KVQuant\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/SqueezeAILab/KVQuant",
+      "url": "/github.com/SqueezeAILab/KVQuant"
     },
     {
       "__typename": "Repository",
@@ -1452,36 +1438,36 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/dreadnode/rigging"
+          "url": "https://github.com/sacdallago/biotrainer"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/dreadnode/rigging\" rel=\"nofollow\"\u003egithub.com/dreadnode/rigging\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/sacdallago/biotrainer\" rel=\"nofollow\"\u003egithub.com/sacdallago/biotrainer\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/dreadnode/rigging",
-      "url": "/github.com/dreadnode/rigging"
+      "name": "github.com/sacdallago/biotrainer",
+      "url": "/github.com/sacdallago/biotrainer"
     },
     {
       "__typename": "Repository",
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/PetroIvaniuk/llms-tools"
+          "url": "https://github.com/hongbo-miao/hongbomiao.com"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/PetroIvaniuk/llms-tools\" rel=\"nofollow\"\u003egithub.com/PetroIvaniuk/llms-tools\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/hongbo-miao/hongbomiao.com\" rel=\"nofollow\"\u003egithub.com/hongbo-miao/hongbomiao.com\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/PetroIvaniuk/llms-tools",
-      "url": "/github.com/PetroIvaniuk/llms-tools"
+      "name": "github.com/hongbo-miao/hongbomiao.com",
+      "url": "/github.com/hongbo-miao/hongbomiao.com"
     }
   ],
   "LimitHit": false,
   "Cloning": [],
   "Missing": [],
   "Timedout": [],
-  "ResultCount": 105,
-  "ElapsedMilliseconds": 6903,
+  "ResultCount": 104,
+  "ElapsedMilliseconds": 3761,
   "Alert": {
     "Title": "",
     "Description": "",

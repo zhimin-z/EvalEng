@@ -1,8 +1,8 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global /import\\s+trulens|from\\s+trulens(\\.\\w+)?\\s+import / select:repo count:all",
+  "Query": "context:global /import\\s+trulens|from\\s+trulens(\\.\\w+)?\\s+import / case:yes select:repo count:all",
   "Site": {
-    "BuildVersion": "291022_2024-09-12_5.7-52e089a13592"
+    "BuildVersion": "291182_2024-09-12_5.7-5dcdaa774b88"
   },
   "Results": [
     {
@@ -53,7 +53,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 3,
-  "ElapsedMilliseconds": 10903,
+  "ElapsedMilliseconds": 5517,
   "Alert": {
     "Title": "",
     "Description": "",

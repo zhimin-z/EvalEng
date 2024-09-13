@@ -1759,7 +1759,7 @@
         },
         {
             "name": "All-Hands-AI/OpenHands",
-            "stars": 31234,
+            "stars": 31247,
             "img": "https://avatars.githubusercontent.com/u/169105795?s=40&v=4",
             "owner": "All-Hands-AI",
             "repo_name": "OpenHands"
@@ -3103,7 +3103,7 @@
         },
         {
             "name": "Bavest/fin-llama",
-            "stars": 81,
+            "stars": 82,
             "img": "https://avatars.githubusercontent.com/u/82750705?s=40&v=4",
             "owner": "Bavest",
             "repo_name": "fin-llama"
@@ -4622,7 +4622,7 @@
         },
         {
             "name": "Codium-ai/AlphaCodium",
-            "stars": 3384,
+            "stars": 3385,
             "img": "https://avatars.githubusercontent.com/u/108689340?s=40&v=4",
             "owner": "Codium-ai",
             "repo_name": "AlphaCodium"
@@ -5413,7 +5413,7 @@
         },
         {
             "name": "DeepAuto-AI/hip-attention",
-            "stars": 11,
+            "stars": 12,
             "img": "https://avatars.githubusercontent.com/u/116326151?s=40&v=4",
             "owner": "DeepAuto-AI",
             "repo_name": "hip-attention"
@@ -6155,7 +6155,7 @@
         },
         {
             "name": "EleutherAI/lm-evaluation-harness",
-            "stars": 6394,
+            "stars": 6399,
             "img": "https://avatars.githubusercontent.com/u/68924597?s=40&v=4",
             "owner": "EleutherAI",
             "repo_name": "lm-evaluation-harness"
@@ -6414,7 +6414,7 @@
         },
         {
             "name": "EvolvingLMMs-Lab/lmms-eval",
-            "stars": 1328,
+            "stars": 1331,
             "img": "https://avatars.githubusercontent.com/u/154951679?s=40&v=4",
             "owner": "EvolvingLMMs-Lab",
             "repo_name": "lmms-eval"
@@ -6950,6 +6950,13 @@
             "img": "https://avatars.githubusercontent.com/u/57372801?s=40&v=4",
             "owner": "Fran-98",
             "repo_name": "reconocedor-de-billetes"
+        },
+        {
+            "name": "FrancescaBoccardi/Hate-Speech-Detection-EvalIta-2020",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/80034365?s=40&v=4",
+            "owner": "FrancescaBoccardi",
+            "repo_name": "Hate-Speech-Detection-EvalIta-2020"
         },
         {
             "name": "FrancoETrujillo/CS598_Final",
@@ -7863,7 +7870,7 @@
         },
         {
             "name": "HKUDS/GraphGPT",
-            "stars": 525,
+            "stars": 526,
             "img": "https://avatars.githubusercontent.com/u/118165258?s=40&v=4",
             "owner": "HKUDS",
             "repo_name": "GraphGPT"
@@ -8073,7 +8080,7 @@
         },
         {
             "name": "HanGuo97/lq-lora",
-            "stars": 116,
+            "stars": 117,
             "img": "https://avatars.githubusercontent.com/u/18187806?s=40&v=4",
             "owner": "HanGuo97",
             "repo_name": "lq-lora"
@@ -8140,6 +8147,13 @@
             "img": "https://avatars.githubusercontent.com/u/146706530?s=40&v=4",
             "owner": "Hanyun-Yin",
             "repo_name": "Distributed-Training"
+        },
+        {
+            "name": "Hao-Zhang-2000/Group36-INLPT-WS2023",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/53338438?s=40&v=4",
+            "owner": "Hao-Zhang-2000",
+            "repo_name": "Group36-INLPT-WS2023"
         },
         {
             "name": "Haoqi7/research",
@@ -9074,7 +9088,7 @@
         },
         {
             "name": "Infini-AI-Lab/Sirius",
-            "stars": 6,
+            "stars": 7,
             "img": "https://avatars.githubusercontent.com/u/149595684?s=40&v=4",
             "owner": "Infini-AI-Lab",
             "repo_name": "Sirius"
@@ -10124,7 +10138,7 @@
         },
         {
             "name": "JonnoB/clocrc",
-            "stars": 3,
+            "stars": 4,
             "img": "https://avatars.githubusercontent.com/u/7391192?s=40&v=4",
             "owner": "JonnoB",
             "repo_name": "clocrc"
@@ -11314,7 +11328,7 @@
         },
         {
             "name": "LLaVA-VL/LLaVA-NeXT",
-            "stars": 2370,
+            "stars": 2374,
             "img": "https://avatars.githubusercontent.com/u/131001649?s=40&v=4",
             "owner": "LLaVA-VL",
             "repo_name": "LLaVA-NeXT"
@@ -11516,6 +11530,13 @@
             "repo_name": "Vietnamese_Disfluency_Detection"
         },
         {
+            "name": "LearningBoy2002/NewProject",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/110668522?s=40&v=4",
+            "owner": "LearningBoy2002",
+            "repo_name": "NewProject"
+        },
+        {
             "name": "LeeGitHub1/AI-",
             "stars": 1,
             "img": "https://avatars.githubusercontent.com/u/151184649?s=40&v=4",
@@ -11671,7 +11692,7 @@
         },
         {
             "name": "Lightblues/AgentRE",
-            "stars": 8,
+            "stars": 11,
             "img": "https://avatars.githubusercontent.com/u/40855072?s=40&v=4",
             "owner": "Lightblues",
             "repo_name": "AgentRE"
@@ -11804,7 +11825,7 @@
         },
         {
             "name": "LlamaFamily/Llama-Chinese",
-            "stars": 13595,
+            "stars": 13596,
             "img": "https://avatars.githubusercontent.com/u/139942525?s=40&v=4",
             "owner": "LlamaFamily",
             "repo_name": "Llama-Chinese"
@@ -12693,7 +12714,7 @@
         },
         {
             "name": "Marker-Inc-Korea/AutoRAG",
-            "stars": 1366,
+            "stars": 1365,
             "img": "https://avatars.githubusercontent.com/u/74290595?s=40&v=4",
             "owner": "Marker-Inc-Korea",
             "repo_name": "AutoRAG"
@@ -13462,13 +13483,6 @@
             "repo_name": "grouphug"
         },
         {
-            "name": "MrCosta57/TitleQuill",
-            "stars": 1,
-            "img": "https://avatars.githubusercontent.com/u/58561655?s=40&v=4",
-            "owner": "MrCosta57",
-            "repo_name": "TitleQuill"
-        },
-        {
             "name": "MrExplode/lyrics-classifier",
             "stars": 0,
             "img": "https://avatars.githubusercontent.com/u/25108970?s=40&v=4",
@@ -13799,14 +13813,14 @@
         },
         {
             "name": "NVlabs/DoRA",
-            "stars": 556,
+            "stars": 560,
             "img": "https://avatars.githubusercontent.com/u/2695301?s=40&v=4",
             "owner": "NVlabs",
             "repo_name": "DoRA"
         },
         {
             "name": "NVlabs/EAGLE",
-            "stars": 387,
+            "stars": 388,
             "img": "https://avatars.githubusercontent.com/u/2695301?s=40&v=4",
             "owner": "NVlabs",
             "repo_name": "EAGLE"
@@ -14842,7 +14856,7 @@
         },
         {
             "name": "OscarKjell/text",
-            "stars": 130,
+            "stars": 131,
             "img": "https://avatars.githubusercontent.com/u/24781683?s=40&v=4",
             "owner": "OscarKjell",
             "repo_name": "text"
@@ -14982,7 +14996,7 @@
         },
         {
             "name": "PKU-YuanGroup/LanguageBind",
-            "stars": 678,
+            "stars": 679,
             "img": "https://avatars.githubusercontent.com/u/135824553?s=40&v=4",
             "owner": "PKU-YuanGroup",
             "repo_name": "LanguageBind"
@@ -15066,7 +15080,7 @@
         },
         {
             "name": "PaddlePaddle/PaddleNLP",
-            "stars": 11953,
+            "stars": 11954,
             "img": "https://avatars.githubusercontent.com/u/23534030?s=40&v=4",
             "owner": "PaddlePaddle",
             "repo_name": "PaddleNLP"
@@ -15178,7 +15192,7 @@
         },
         {
             "name": "ParisNeo/lollms-webui",
-            "stars": 4212,
+            "stars": 4215,
             "img": "https://avatars.githubusercontent.com/u/827993?s=40&v=4",
             "owner": "ParisNeo",
             "repo_name": "lollms-webui"
@@ -16514,6 +16528,13 @@
             "repo_name": "instruction-finetuning-pipeline"
         },
         {
+            "name": "Rohit128256/Text_summarizer_end_to_end",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/133235392?s=40&v=4",
+            "owner": "Rohit128256",
+            "repo_name": "Text_summarizer_end_to_end"
+        },
+        {
             "name": "RokafNet/rokafnet",
             "stars": 0,
             "img": "https://avatars.githubusercontent.com/u/153960810?s=40&v=4",
@@ -16634,7 +16655,7 @@
         },
         {
             "name": "RulinShao/retrieval-scaling",
-            "stars": 77,
+            "stars": 78,
             "img": "https://avatars.githubusercontent.com/u/61305636?s=40&v=4",
             "owner": "RulinShao",
             "repo_name": "retrieval-scaling"
@@ -16935,7 +16956,7 @@
         },
         {
             "name": "SYSTRAN/faster-whisper",
-            "stars": 11324,
+            "stars": 11329,
             "img": "https://avatars.githubusercontent.com/u/1520500?s=40&v=4",
             "owner": "SYSTRAN",
             "repo_name": "faster-whisper"
@@ -17299,7 +17320,7 @@
         },
         {
             "name": "ScalingIntelligence/CATS",
-            "stars": 9,
+            "stars": 10,
             "img": "https://avatars.githubusercontent.com/u/171742855?s=40&v=4",
             "owner": "ScalingIntelligence",
             "repo_name": "CATS"
@@ -17978,7 +17999,7 @@
         },
         {
             "name": "Siddhant-Goswami/100x-LLM",
-            "stars": 4,
+            "stars": 5,
             "img": "https://avatars.githubusercontent.com/u/32980158?s=40&v=4",
             "owner": "Siddhant-Goswami",
             "repo_name": "100x-LLM"
@@ -19490,7 +19511,7 @@
         },
         {
             "name": "The-FinAI/PIXIU",
-            "stars": 495,
+            "stars": 496,
             "img": "https://avatars.githubusercontent.com/u/26429143?s=40&v=4",
             "owner": "The-FinAI",
             "repo_name": "PIXIU"
@@ -20729,7 +20750,7 @@
         },
         {
             "name": "Vasanthengineer4949/NLP-Projects-NHV",
-            "stars": 387,
+            "stars": 388,
             "img": "https://avatars.githubusercontent.com/u/64586431?s=40&v=4",
             "owner": "Vasanthengineer4949",
             "repo_name": "NLP-Projects-NHV"
@@ -20890,7 +20911,7 @@
         },
         {
             "name": "VikParuchuri/texify",
-            "stars": 786,
+            "stars": 787,
             "img": "https://avatars.githubusercontent.com/u/913340?s=40&v=4",
             "owner": "VikParuchuri",
             "repo_name": "texify"
@@ -23858,7 +23879,7 @@
         },
         {
             "name": "aigc-apps/PAI-RAG",
-            "stars": 276,
+            "stars": 277,
             "img": "https://avatars.githubusercontent.com/u/141981933?s=40&v=4",
             "owner": "aigc-apps",
             "repo_name": "PAI-RAG"
@@ -24677,7 +24698,7 @@
         },
         {
             "name": "allenai/noncompliance",
-            "stars": 16,
+            "stars": 17,
             "img": "https://avatars.githubusercontent.com/u/5667695?s=40&v=4",
             "owner": "allenai",
             "repo_name": "noncompliance"
@@ -26147,7 +26168,7 @@
         },
         {
             "name": "artidoro/qlora",
-            "stars": 9903,
+            "stars": 9901,
             "img": "https://avatars.githubusercontent.com/u/11949572?s=40&v=4",
             "owner": "artidoro",
             "repo_name": "qlora"
@@ -26735,7 +26756,7 @@
         },
         {
             "name": "aulukelvin/LoRA_E5",
-            "stars": 12,
+            "stars": 13,
             "img": "https://avatars.githubusercontent.com/u/18715103?s=40&v=4",
             "owner": "aulukelvin",
             "repo_name": "LoRA_E5"
@@ -26882,7 +26903,7 @@
         },
         {
             "name": "aws-neuron/aws-neuron-samples",
-            "stars": 119,
+            "stars": 120,
             "img": "https://avatars.githubusercontent.com/u/96802785?s=40&v=4",
             "owner": "aws-neuron",
             "repo_name": "aws-neuron-samples"
@@ -27057,7 +27078,7 @@
         },
         {
             "name": "aws/amazon-sagemaker-examples",
-            "stars": 9975,
+            "stars": 9976,
             "img": "https://avatars.githubusercontent.com/u/2232217?s=40&v=4",
             "owner": "aws",
             "repo_name": "amazon-sagemaker-examples"
@@ -27127,7 +27148,7 @@
         },
         {
             "name": "axolotl-ai-cloud/axolotl",
-            "stars": 7519,
+            "stars": 7520,
             "img": "https://avatars.githubusercontent.com/u/167502477?s=40&v=4",
             "owner": "axolotl-ai-cloud",
             "repo_name": "axolotl"
@@ -27512,7 +27533,7 @@
         },
         {
             "name": "bboylyg/BackdoorLLM",
-            "stars": 25,
+            "stars": 26,
             "img": "https://avatars.githubusercontent.com/u/34542868?s=40&v=4",
             "owner": "bboylyg",
             "repo_name": "BackdoorLLM"
@@ -30571,7 +30592,7 @@
         },
         {
             "name": "collabora/WhisperLive",
-            "stars": 1778,
+            "stars": 1781,
             "img": "https://avatars.githubusercontent.com/u/4499761?s=40&v=4",
             "owner": "collabora",
             "repo_name": "WhisperLive"
@@ -31684,7 +31705,7 @@
         },
         {
             "name": "data-science-on-aws/data-science-on-aws",
-            "stars": 3336,
+            "stars": 3337,
             "img": "https://avatars.githubusercontent.com/u/58440920?s=40&v=4",
             "owner": "data-science-on-aws",
             "repo_name": "data-science-on-aws"
@@ -32300,7 +32321,7 @@
         },
         {
             "name": "dell-research-harvard/linktransformer",
-            "stars": 98,
+            "stars": 99,
             "img": "https://avatars.githubusercontent.com/u/52378843?s=40&v=4",
             "owner": "dell-research-harvard",
             "repo_name": "linktransformer"
@@ -33602,7 +33623,7 @@
         },
         {
             "name": "du-nlp-lab/MLR-Copilot",
-            "stars": 38,
+            "stars": 39,
             "img": "https://avatars.githubusercontent.com/u/166258132?s=40&v=4",
             "owner": "du-nlp-lab",
             "repo_name": "MLR-Copilot"
@@ -34371,6 +34392,13 @@
             "repo_name": "gpt-challenge-dataset"
         },
         {
+            "name": "emiliog01/cleanmusic",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/98350450?s=40&v=4",
+            "owner": "emiliog01",
+            "repo_name": "cleanmusic"
+        },
+        {
             "name": "emille42/NER-X5TechRetailHack2024",
             "stars": 1,
             "img": "https://avatars.githubusercontent.com/u/90960114?s=40&v=4",
@@ -34827,7 +34855,7 @@
         },
         {
             "name": "evidentlyai/evidently",
-            "stars": 5120,
+            "stars": 5121,
             "img": "https://avatars.githubusercontent.com/u/75031056?s=40&v=4",
             "owner": "evidentlyai",
             "repo_name": "evidently"
@@ -35499,7 +35527,7 @@
         },
         {
             "name": "fixie-ai/ultravox",
-            "stars": 835,
+            "stars": 837,
             "img": "https://avatars.githubusercontent.com/u/104391453?s=40&v=4",
             "owner": "fixie-ai",
             "repo_name": "ultravox"
@@ -37431,7 +37459,7 @@
         },
         {
             "name": "h2oai/h2ogpt",
-            "stars": 11218,
+            "stars": 11220,
             "img": "https://avatars.githubusercontent.com/u/1402695?s=40&v=4",
             "owner": "h2oai",
             "repo_name": "h2ogpt"
@@ -38600,7 +38628,7 @@
         },
         {
             "name": "hpcaitech/ColossalAI",
-            "stars": 38593,
+            "stars": 38592,
             "img": "https://avatars.githubusercontent.com/u/88699314?s=40&v=4",
             "owner": "hpcaitech",
             "repo_name": "ColossalAI"
@@ -38761,14 +38789,14 @@
         },
         {
             "name": "huggingface/accelerate",
-            "stars": 7643,
+            "stars": 7648,
             "img": "https://avatars.githubusercontent.com/u/25720743?s=40&v=4",
             "owner": "huggingface",
             "repo_name": "accelerate"
         },
         {
             "name": "huggingface/autotrain-advanced",
-            "stars": 3773,
+            "stars": 3774,
             "img": "https://avatars.githubusercontent.com/u/25720743?s=40&v=4",
             "owner": "huggingface",
             "repo_name": "autotrain-advanced"
@@ -38789,14 +38817,14 @@
         },
         {
             "name": "huggingface/distil-whisper",
-            "stars": 3486,
+            "stars": 3487,
             "img": "https://avatars.githubusercontent.com/u/25720743?s=40&v=4",
             "owner": "huggingface",
             "repo_name": "distil-whisper"
         },
         {
             "name": "huggingface/evaluate",
-            "stars": 1961,
+            "stars": 1962,
             "img": "https://avatars.githubusercontent.com/u/25720743?s=40&v=4",
             "owner": "huggingface",
             "repo_name": "evaluate"
@@ -38831,7 +38859,7 @@
         },
         {
             "name": "huggingface/optimum",
-            "stars": 2453,
+            "stars": 2454,
             "img": "https://avatars.githubusercontent.com/u/25720743?s=40&v=4",
             "owner": "huggingface",
             "repo_name": "optimum"
@@ -38873,7 +38901,7 @@
         },
         {
             "name": "huggingface/peft",
-            "stars": 15792,
+            "stars": 15795,
             "img": "https://avatars.githubusercontent.com/u/25720743?s=40&v=4",
             "owner": "huggingface",
             "repo_name": "peft"
@@ -38894,7 +38922,7 @@
         },
         {
             "name": "huggingface/transformers",
-            "stars": 131915,
+            "stars": 131926,
             "img": "https://avatars.githubusercontent.com/u/25720743?s=40&v=4",
             "owner": "huggingface",
             "repo_name": "transformers"
@@ -39573,7 +39601,7 @@
         },
         {
             "name": "idavidrein/gpqa",
-            "stars": 132,
+            "stars": 135,
             "img": "https://avatars.githubusercontent.com/u/26013403?s=40&v=4",
             "owner": "idavidrein",
             "repo_name": "gpqa"
@@ -39993,7 +40021,7 @@
         },
         {
             "name": "intel-analytics/ipex-llm",
-            "stars": 6472,
+            "stars": 6473,
             "img": "https://avatars.githubusercontent.com/u/10941215?s=40&v=4",
             "owner": "intel-analytics",
             "repo_name": "ipex-llm"
@@ -40049,14 +40077,14 @@
         },
         {
             "name": "intel/llm-on-ray",
-            "stars": 93,
+            "stars": 94,
             "img": "https://avatars.githubusercontent.com/u/17888862?s=40&v=4",
             "owner": "intel",
             "repo_name": "llm-on-ray"
         },
         {
             "name": "intel/neural-compressor",
-            "stars": 2142,
+            "stars": 2143,
             "img": "https://avatars.githubusercontent.com/u/17888862?s=40&v=4",
             "owner": "intel",
             "repo_name": "neural-compressor"
@@ -42744,7 +42772,7 @@
         },
         {
             "name": "jxmorris12/vec2text",
-            "stars": 680,
+            "stars": 682,
             "img": "https://avatars.githubusercontent.com/u/13238952?s=40&v=4",
             "owner": "jxmorris12",
             "repo_name": "vec2text"
@@ -42800,7 +42828,7 @@
         },
         {
             "name": "jzhang38/TinyLlama",
-            "stars": 7607,
+            "stars": 7609,
             "img": "https://avatars.githubusercontent.com/u/42993249?s=40&v=4",
             "owner": "jzhang38",
             "repo_name": "TinyLlama"
@@ -43455,6 +43483,13 @@
             "img": "https://avatars.githubusercontent.com/u/41457888?s=40&v=4",
             "owner": "keven980716",
             "repo_name": "my_env"
+        },
+        {
+            "name": "kevin-291/disease-classification",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/145477057?s=40&v=4",
+            "owner": "kevin-291",
+            "repo_name": "disease-classification"
         },
         {
             "name": "kevin-tofu/huggingface-trainer",
@@ -44186,7 +44221,7 @@
         },
         {
             "name": "krishnaik06/The-Grand-Complete-Data-Science-Materials",
-            "stars": 6601,
+            "stars": 6604,
             "img": "https://avatars.githubusercontent.com/u/20041231?s=40&v=4",
             "owner": "krishnaik06",
             "repo_name": "The-Grand-Complete-Data-Science-Materials"
@@ -46391,7 +46426,7 @@
         },
         {
             "name": "lyogavin/airllm",
-            "stars": 4028,
+            "stars": 4031,
             "img": "https://avatars.githubusercontent.com/u/1113905?s=40&v=4",
             "owner": "lyogavin",
             "repo_name": "airllm"
@@ -47721,7 +47756,7 @@
         },
         {
             "name": "maxisses/openshift-rag-testbench",
-            "stars": 4,
+            "stars": 5,
             "img": "https://avatars.githubusercontent.com/u/39557161?s=40&v=4",
             "owner": "maxisses",
             "repo_name": "openshift-rag-testbench"
@@ -48085,7 +48120,7 @@
         },
         {
             "name": "meta-llama/llama-recipes",
-            "stars": 11561,
+            "stars": 11566,
             "img": "https://avatars.githubusercontent.com/u/153379578?s=40&v=4",
             "owner": "meta-llama",
             "repo_name": "llama-recipes"
@@ -48155,7 +48190,7 @@
         },
         {
             "name": "michaelfeil/infinity",
-            "stars": 1248,
+            "stars": 1250,
             "img": "https://avatars.githubusercontent.com/u/63565275?s=40&v=4",
             "owner": "michaelfeil",
             "repo_name": "infinity"
@@ -48288,7 +48323,7 @@
         },
         {
             "name": "microsoft/LMOps",
-            "stars": 3557,
+            "stars": 3558,
             "img": "https://avatars.githubusercontent.com/u/6154722?s=40&v=4",
             "owner": "microsoft",
             "repo_name": "LMOps"
@@ -48337,7 +48372,7 @@
         },
         {
             "name": "microsoft/RecAI",
-            "stars": 516,
+            "stars": 518,
             "img": "https://avatars.githubusercontent.com/u/6154722?s=40&v=4",
             "owner": "microsoft",
             "repo_name": "RecAI"
@@ -48400,21 +48435,21 @@
         },
         {
             "name": "microsoft/rag-experiment-accelerator",
-            "stars": 171,
+            "stars": 172,
             "img": "https://avatars.githubusercontent.com/u/6154722?s=40&v=4",
             "owner": "microsoft",
             "repo_name": "rag-experiment-accelerator"
         },
         {
             "name": "microsoft/semantic-kernel",
-            "stars": 21303,
+            "stars": 21306,
             "img": "https://avatars.githubusercontent.com/u/6154722?s=40&v=4",
             "owner": "microsoft",
             "repo_name": "semantic-kernel"
         },
         {
             "name": "microsoft/unilm",
-            "stars": 19526,
+            "stars": 19528,
             "img": "https://avatars.githubusercontent.com/u/6154722?s=40&v=4",
             "owner": "microsoft",
             "repo_name": "unilm"
@@ -48560,11 +48595,11 @@
             "repo_name": "meister-ml"
         },
         {
-            "name": "mimimamalah/nlp-language-models-text-simplification",
+            "name": "mimimamalah/nlp-lm-text-simplification",
             "stars": 0,
             "img": "https://avatars.githubusercontent.com/u/106238482?s=40&v=4",
             "owner": "mimimamalah",
-            "repo_name": "nlp-language-models-text-simplification"
+            "repo_name": "nlp-lm-text-simplification"
         },
         {
             "name": "mims-harvard/TDC",
@@ -48596,7 +48631,7 @@
         },
         {
             "name": "mindsdb/mindsdb",
-            "stars": 26219,
+            "stars": 26223,
             "img": "https://avatars.githubusercontent.com/u/31035808?s=40&v=4",
             "owner": "mindsdb",
             "repo_name": "mindsdb"
@@ -48960,7 +48995,7 @@
         },
         {
             "name": "mlcommons/inference",
-            "stars": 1183,
+            "stars": 1184,
             "img": "https://avatars.githubusercontent.com/u/67760141?s=40&v=4",
             "owner": "mlcommons",
             "repo_name": "inference"
@@ -49002,7 +49037,7 @@
         },
         {
             "name": "mlflow/mlflow",
-            "stars": 18317,
+            "stars": 18319,
             "img": "https://avatars.githubusercontent.com/u/39938107?s=40&v=4",
             "owner": "mlflow",
             "repo_name": "mlflow"
@@ -51480,7 +51515,7 @@
         },
         {
             "name": "nomic-ai/gpt4all",
-            "stars": 69092,
+            "stars": 69105,
             "img": "https://avatars.githubusercontent.com/u/102670180?s=40&v=4",
             "owner": "nomic-ai",
             "repo_name": "gpt4all"
@@ -52166,7 +52201,7 @@
         },
         {
             "name": "openai/evals",
-            "stars": 14670,
+            "stars": 14673,
             "img": "https://avatars.githubusercontent.com/u/14957082?s=40&v=4",
             "owner": "openai",
             "repo_name": "evals"
@@ -53657,7 +53692,7 @@
         },
         {
             "name": "postgresml/postgresml",
-            "stars": 5891,
+            "stars": 5892,
             "img": "https://avatars.githubusercontent.com/u/103390393?s=40&v=4",
             "owner": "postgresml",
             "repo_name": "postgresml"
@@ -53888,7 +53923,7 @@
         },
         {
             "name": "princeton-nlp/CEPE",
-            "stars": 130,
+            "stars": 131,
             "img": "https://avatars.githubusercontent.com/u/44678448?s=40&v=4",
             "owner": "princeton-nlp",
             "repo_name": "CEPE"
@@ -53955,41 +53990,6 @@
             "img": "https://avatars.githubusercontent.com/u/21159660?s=40&v=4",
             "owner": "priyabagaria",
             "repo_name": "scientific-er"
-        },
-        {
-            "name": "prkumar112451/actionitem",
-            "stars": 0,
-            "img": "https://avatars.githubusercontent.com/u/38156723?s=40&v=4",
-            "owner": "prkumar112451",
-            "repo_name": "actionitem"
-        },
-        {
-            "name": "prkumar112451/merged_1",
-            "stars": 0,
-            "img": "https://avatars.githubusercontent.com/u/38156723?s=40&v=4",
-            "owner": "prkumar112451",
-            "repo_name": "merged_1"
-        },
-        {
-            "name": "prkumar112451/summarize_v1",
-            "stars": 0,
-            "img": "https://avatars.githubusercontent.com/u/38156723?s=40&v=4",
-            "owner": "prkumar112451",
-            "repo_name": "summarize_v1"
-        },
-        {
-            "name": "prkumar112451/traingemma",
-            "stars": 0,
-            "img": "https://avatars.githubusercontent.com/u/38156723?s=40&v=4",
-            "owner": "prkumar112451",
-            "repo_name": "traingemma"
-        },
-        {
-            "name": "prkumar112451/trainphi",
-            "stars": 0,
-            "img": "https://avatars.githubusercontent.com/u/38156723?s=40&v=4",
-            "owner": "prkumar112451",
-            "repo_name": "trainphi"
         },
         {
             "name": "profii/semeval2024_task8",
@@ -54973,7 +54973,7 @@
         },
         {
             "name": "ray-project/ray",
-            "stars": 33007,
+            "stars": 33011,
             "img": "https://avatars.githubusercontent.com/u/22125274?s=40&v=4",
             "owner": "ray-project",
             "repo_name": "ray"
@@ -55294,13 +55294,6 @@
             "repo_name": "bigcode-evaluation-harness"
         },
         {
-            "name": "replit/transformers",
-            "stars": 2,
-            "img": "https://avatars.githubusercontent.com/u/983194?s=40&v=4",
-            "owner": "replit",
-            "repo_name": "transformers"
-        },
-        {
             "name": "reprostudy/mm-adapter",
             "stars": 0,
             "img": "https://avatars.githubusercontent.com/u/160225027?s=40&v=4",
@@ -55414,7 +55407,7 @@
         },
         {
             "name": "rh-aiservices-bu/llm-on-openshift",
-            "stars": 84,
+            "stars": 86,
             "img": "https://avatars.githubusercontent.com/u/73964756?s=40&v=4",
             "owner": "rh-aiservices-bu",
             "repo_name": "llm-on-openshift"
@@ -55621,6 +55614,13 @@
             "img": "https://avatars.githubusercontent.com/u/102994642?s=40&v=4",
             "owner": "rk-izak",
             "repo_name": "DATA72000-IBE"
+        },
+        {
+            "name": "rk68/HyPA-RAG",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/71785159?s=40&v=4",
+            "owner": "rk68",
+            "repo_name": "HyPA-RAG"
         },
         {
             "name": "rkassila/mlops-audio_classification",
@@ -56135,7 +56135,7 @@
         },
         {
             "name": "run-llama/llama_index",
-            "stars": 35353,
+            "stars": 35361,
             "img": "https://avatars.githubusercontent.com/u/130722866?s=40&v=4",
             "owner": "run-llama",
             "repo_name": "llama_index"
@@ -56807,7 +56807,7 @@
         },
         {
             "name": "sambanova/ai-starter-kit",
-            "stars": 17,
+            "stars": 19,
             "img": "https://avatars.githubusercontent.com/u/80118584?s=40&v=4",
             "owner": "sambanova",
             "repo_name": "ai-starter-kit"
@@ -57590,13 +57590,6 @@
             "repo_name": "Human-Think-Language"
         },
         {
-            "name": "seandi/docai-benchmark",
-            "stars": 0,
-            "img": "https://avatars.githubusercontent.com/u/39460992?s=40&v=4",
-            "owner": "seandi",
-            "repo_name": "docai-benchmark"
-        },
-        {
             "name": "seanghay/khmer-text-classification-roberta",
             "stars": 0,
             "img": "https://avatars.githubusercontent.com/u/15277233?s=40&v=4",
@@ -58088,7 +58081,7 @@
         },
         {
             "name": "shan18/Perceiver-Resampler-XAttn-Captioning",
-            "stars": 13,
+            "stars": 14,
             "img": "https://avatars.githubusercontent.com/u/12576178?s=40&v=4",
             "owner": "shan18",
             "repo_name": "Perceiver-Resampler-XAttn-Captioning"
@@ -58701,6 +58694,13 @@
             "img": "https://avatars.githubusercontent.com/u/109148330?s=40&v=4",
             "owner": "signon-project",
             "repo_name": "wp4-second-adaptable-pipeline"
+        },
+        {
+            "name": "sihechen0530/HackAI",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/180472775?s=40&v=4",
+            "owner": "sihechen0530",
+            "repo_name": "HackAI"
         },
         {
             "name": "sikso1892/practice-whisperkittools",
@@ -59852,7 +59852,7 @@
         },
         {
             "name": "stanfordnlp/pyreft",
-            "stars": 1069,
+            "stars": 1070,
             "img": "https://avatars.githubusercontent.com/u/3046006?s=40&v=4",
             "owner": "stanfordnlp",
             "repo_name": "pyreft"
@@ -60013,7 +60013,7 @@
         },
         {
             "name": "stochasticai/xTuring",
-            "stars": 2584,
+            "stars": 2585,
             "img": "https://avatars.githubusercontent.com/u/66399337?s=40&v=4",
             "owner": "stochasticai",
             "repo_name": "xTuring"
@@ -60706,7 +60706,7 @@
         },
         {
             "name": "t-redactyl/simple-rag-document-qa",
-            "stars": 32,
+            "stars": 33,
             "img": "https://avatars.githubusercontent.com/u/5158813?s=40&v=4",
             "owner": "t-redactyl",
             "repo_name": "simple-rag-document-qa"
@@ -64205,13 +64205,6 @@
             "repo_name": "error_norm_truncation"
         },
         {
-            "name": "tianjianl/understanding_synthetic_data",
-            "stars": 0,
-            "img": "https://avatars.githubusercontent.com/u/20365304?s=40&v=4",
-            "owner": "tianjianl",
-            "repo_name": "understanding_synthetic_data"
-        },
-        {
             "name": "tianjunz/TEMPERA",
             "stars": 40,
             "img": "https://avatars.githubusercontent.com/u/30253325?s=40&v=4",
@@ -65690,7 +65683,7 @@
         },
         {
             "name": "vasistalodagala/whisper-finetune",
-            "stars": 217,
+            "stars": 218,
             "img": "https://avatars.githubusercontent.com/u/33978457?s=40&v=4",
             "owner": "vasistalodagala",
             "repo_name": "whisper-finetune"
@@ -66579,7 +66572,7 @@
         },
         {
             "name": "web-arena-x/webarena",
-            "stars": 677,
+            "stars": 678,
             "img": "https://avatars.githubusercontent.com/u/139842542?s=40&v=4",
             "owner": "web-arena-x",
             "repo_name": "webarena"
@@ -67545,7 +67538,7 @@
         },
         {
             "name": "xingjian-zhang/massw",
-            "stars": 5,
+            "stars": 6,
             "img": "https://avatars.githubusercontent.com/u/49838100?s=40&v=4",
             "owner": "xingjian-zhang",
             "repo_name": "massw"
@@ -67657,7 +67650,7 @@
         },
         {
             "name": "xu1868/SaySelf",
-            "stars": 79,
+            "stars": 80,
             "img": "https://avatars.githubusercontent.com/u/51815229?s=40&v=4",
             "owner": "xu1868",
             "repo_name": "SaySelf"
@@ -67881,7 +67874,7 @@
         },
         {
             "name": "yale-nlp/QTSumm",
-            "stars": 15,
+            "stars": 16,
             "img": "https://avatars.githubusercontent.com/u/142171434?s=40&v=4",
             "owner": "yale-nlp",
             "repo_name": "QTSumm"
@@ -69351,7 +69344,7 @@
         },
         {
             "name": "zenml-io/zenml",
-            "stars": 3925,
+            "stars": 3927,
             "img": "https://avatars.githubusercontent.com/u/88676955?s=40&v=4",
             "owner": "zenml-io",
             "repo_name": "zenml"
@@ -69960,7 +69953,7 @@
         },
         {
             "name": "zylon-ai/private-gpt",
-            "stars": 53537,
+            "stars": 53539,
             "img": "https://avatars.githubusercontent.com/u/143802295?s=40&v=4",
             "owner": "zylon-ai",
             "repo_name": "private-gpt"
@@ -69987,15 +69980,15 @@
             "repo_name": "flower"
         }
     ],
-    "total_dependents_number": 9998,
-    "public_dependents_number": 9998,
-    "private_dependents_number": -9998,
-    "public_dependents_stars": 2007,
+    "total_dependents_number": 9997,
+    "public_dependents_number": 9997,
+    "private_dependents_number": -9997,
+    "public_dependents_stars": 46,
     "badges": {
-        "total_doc_url": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by&message=9998&color=informational&logo=slickpic)](https://github.com/nvuillam/github-dependents-info)",
-        "total": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by&message=9998&color=informational&logo=slickpic)](https://github.com/huggingface/evaluate/network/dependents)",
-        "public": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(public)&message=9998&color=informational&logo=slickpic)](https://github.com/huggingface/evaluate/network/dependents)",
-        "private": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(private)&message=-9998&color=informational&logo=slickpic)](https://github.com/huggingface/evaluate/network/dependents)",
-        "stars": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(stars)&message=2007&color=informational&logo=slickpic)](https://github.com/huggingface/evaluate/network/dependents)"
+        "total_doc_url": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by&message=9997&color=informational&logo=slickpic)](https://github.com/nvuillam/github-dependents-info)",
+        "total": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by&message=9997&color=informational&logo=slickpic)](https://github.com/huggingface/evaluate/network/dependents)",
+        "public": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(public)&message=9997&color=informational&logo=slickpic)](https://github.com/huggingface/evaluate/network/dependents)",
+        "private": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(private)&message=-9997&color=informational&logo=slickpic)](https://github.com/huggingface/evaluate/network/dependents)",
+        "stars": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(stars)&message=46&color=informational&logo=slickpic)](https://github.com/huggingface/evaluate/network/dependents)"
     }
 }

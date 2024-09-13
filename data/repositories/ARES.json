@@ -1,38 +1,10 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global /import\\s+ares|from\\s+ares(\\.\\w+)?\\s+import / select:repo count:all",
+  "Query": "context:global /import\\s+ares|from\\s+ares(\\.\\w+)?\\s+import / case:yes select:repo count:all",
   "Site": {
-    "BuildVersion": "291022_2024-09-12_5.7-52e089a13592"
+    "BuildVersion": "291182_2024-09-12_5.7-5dcdaa774b88"
   },
   "Results": [
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/gevent/gevent"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/gevent/gevent\" rel=\"nofollow\"\u003egithub.com/gevent/gevent\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/gevent/gevent",
-      "url": "/github.com/gevent/gevent"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/wwqgtxx/wwqLyParse"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/wwqgtxx/wwqLyParse\" rel=\"nofollow\"\u003egithub.com/wwqgtxx/wwqLyParse\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/wwqgtxx/wwqLyParse",
-      "url": "/github.com/wwqgtxx/wwqLyParse"
-    },
     {
       "__typename": "Repository",
       "externalURLs": [
@@ -52,14 +24,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/shuup/shuup"
+          "url": "https://github.com/gevent/gevent"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/shuup/shuup\" rel=\"nofollow\"\u003egithub.com/shuup/shuup\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/gevent/gevent\" rel=\"nofollow\"\u003egithub.com/gevent/gevent\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/shuup/shuup",
-      "url": "/github.com/shuup/shuup"
+      "name": "github.com/gevent/gevent",
+      "url": "/github.com/gevent/gevent"
     },
     {
       "__typename": "Repository",
@@ -74,56 +46,14 @@
       },
       "name": "github.com/tjusenchen/StoryDroid",
       "url": "/github.com/tjusenchen/StoryDroid"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/wrye-bash/wrye-bash"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/wrye-bash/wrye-bash\" rel=\"nofollow\"\u003egithub.com/wrye-bash/wrye-bash\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/wrye-bash/wrye-bash",
-      "url": "/github.com/wrye-bash/wrye-bash"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/thu-ml/ares"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/thu-ml/ares\" rel=\"nofollow\"\u003egithub.com/thu-ml/ares\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/thu-ml/ares",
-      "url": "/github.com/thu-ml/ares"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/gustavochm/sgtpy"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/gustavochm/sgtpy\" rel=\"nofollow\"\u003egithub.com/gustavochm/sgtpy\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/gustavochm/sgtpy",
-      "url": "/github.com/gustavochm/sgtpy"
     }
   ],
   "LimitHit": false,
   "Cloning": [],
   "Missing": [],
   "Timedout": [],
-  "ResultCount": 8,
-  "ElapsedMilliseconds": 60160,
+  "ResultCount": 3,
+  "ElapsedMilliseconds": 60930,
   "Alert": {
     "Title": "",
     "Description": "",

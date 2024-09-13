@@ -1,8 +1,8 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global \"cm run script\" select:repo count:all",
+  "Query": "context:global \"cm run script\" case:yes select:repo count:all",
   "Site": {
-    "BuildVersion": "291022_2024-09-12_5.7-52e089a13592"
+    "BuildVersion": "291182_2024-09-12_5.7-5dcdaa774b88"
   },
   "Results": [
     {
@@ -24,14 +24,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/MEM-Zone/MEM.Zone"
+          "url": "https://github.com/SamsungLabs/Sparse-Multi-DNN-Scheduling"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/MEM-Zone/MEM.Zone\" rel=\"nofollow\"\u003egithub.com/MEM-Zone/MEM.Zone\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/SamsungLabs/Sparse-Multi-DNN-Scheduling\" rel=\"nofollow\"\u003egithub.com/SamsungLabs/Sparse-Multi-DNN-Scheduling\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/MEM-Zone/MEM.Zone",
-      "url": "/github.com/MEM-Zone/MEM.Zone"
+      "name": "github.com/SamsungLabs/Sparse-Multi-DNN-Scheduling",
+      "url": "/github.com/SamsungLabs/Sparse-Multi-DNN-Scheduling"
     },
     {
       "__typename": "Repository",
@@ -46,28 +46,14 @@
       },
       "name": "github.com/mlcommons/ck",
       "url": "/github.com/mlcommons/ck"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/SamsungLabs/Sparse-Multi-DNN-Scheduling"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/SamsungLabs/Sparse-Multi-DNN-Scheduling\" rel=\"nofollow\"\u003egithub.com/SamsungLabs/Sparse-Multi-DNN-Scheduling\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/SamsungLabs/Sparse-Multi-DNN-Scheduling",
-      "url": "/github.com/SamsungLabs/Sparse-Multi-DNN-Scheduling"
     }
   ],
   "LimitHit": false,
   "Cloning": [],
   "Missing": [],
   "Timedout": [],
-  "ResultCount": 4,
-  "ElapsedMilliseconds": 2592,
+  "ResultCount": 3,
+  "ElapsedMilliseconds": 2809,
   "Alert": {
     "Title": "",
     "Description": "",

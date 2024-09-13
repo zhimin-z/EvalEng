@@ -1,24 +1,10 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global /bigcode_eval|bigcode-project\\/evaluation-harness/ select:repo count:all",
+  "Query": "context:global /bigcode_eval|bigcode-project\\/evaluation-harness/ case:yes select:repo count:all",
   "Site": {
-    "BuildVersion": "291022_2024-09-12_5.7-52e089a13592"
+    "BuildVersion": "291182_2024-09-12_5.7-5dcdaa774b88"
   },
   "Results": [
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/All-Hands-AI/OpenHands"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/All-Hands-AI/OpenHands\" rel=\"nofollow\"\u003egithub.com/All-Hands-AI/OpenHands\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/All-Hands-AI/OpenHands",
-      "url": "/github.com/All-Hands-AI/OpenHands"
-    },
     {
       "__typename": "Repository",
       "externalURLs": [
@@ -38,14 +24,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/xingyaoww/code-act"
+          "url": "https://github.com/All-Hands-AI/OpenHands"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/xingyaoww/code-act\" rel=\"nofollow\"\u003egithub.com/xingyaoww/code-act\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/All-Hands-AI/OpenHands\" rel=\"nofollow\"\u003egithub.com/All-Hands-AI/OpenHands\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/xingyaoww/code-act",
-      "url": "/github.com/xingyaoww/code-act"
+      "name": "github.com/All-Hands-AI/OpenHands",
+      "url": "/github.com/All-Hands-AI/OpenHands"
     },
     {
       "__typename": "Repository",
@@ -66,14 +52,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/openvinotoolkit/openvino_notebooks"
+          "url": "https://github.com/xingyaoww/code-act"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/openvinotoolkit/openvino_notebooks\" rel=\"nofollow\"\u003egithub.com/openvinotoolkit/openvino_notebooks\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/xingyaoww/code-act\" rel=\"nofollow\"\u003egithub.com/xingyaoww/code-act\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/openvinotoolkit/openvino_notebooks",
-      "url": "/github.com/openvinotoolkit/openvino_notebooks"
+      "name": "github.com/xingyaoww/code-act",
+      "url": "/github.com/xingyaoww/code-act"
     },
     {
       "__typename": "Repository",
@@ -88,6 +74,20 @@
       },
       "name": "github.com/intel/intel-extension-for-transformers",
       "url": "/github.com/intel/intel-extension-for-transformers"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/openvinotoolkit/openvino_notebooks"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/openvinotoolkit/openvino_notebooks\" rel=\"nofollow\"\u003egithub.com/openvinotoolkit/openvino_notebooks\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/openvinotoolkit/openvino_notebooks",
+      "url": "/github.com/openvinotoolkit/openvino_notebooks"
     },
     {
       "__typename": "Repository",
@@ -235,7 +235,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 16,
-  "ElapsedMilliseconds": 36395,
+  "ElapsedMilliseconds": 35510,
   "Alert": {
     "Title": "",
     "Description": "",

@@ -1,59 +1,16 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global /import\\s+flageval|from\\s+flageval(\\.\\w+)?\\s+import / select:repo count:all",
+  "Query": "context:global /import\\s+flageval|from\\s+flageval(\\.\\w+)?\\s+import / case:yes select:repo count:all",
   "Site": {
-    "BuildVersion": "291022_2024-09-12_5.7-52e089a13592"
+    "BuildVersion": "291182_2024-09-12_5.7-5dcdaa774b88"
   },
-  "Results": [
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/open-feature/python-sdk"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/open-feature/python-sdk\" rel=\"nofollow\"\u003egithub.com/open-feature/python-sdk\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/open-feature/python-sdk",
-      "url": "/github.com/open-feature/python-sdk"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/thomaspoignant/go-feature-flag"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/thomaspoignant/go-feature-flag\" rel=\"nofollow\"\u003egithub.com/thomaspoignant/go-feature-flag\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/thomaspoignant/go-feature-flag",
-      "url": "/github.com/thomaspoignant/go-feature-flag"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/open-feature/openfeature.dev"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/open-feature/openfeature.dev\" rel=\"nofollow\"\u003egithub.com/open-feature/openfeature.dev\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/open-feature/openfeature.dev",
-      "url": "/github.com/open-feature/openfeature.dev"
-    }
-  ],
+  "Results": [],
   "LimitHit": false,
   "Cloning": [],
   "Missing": [],
   "Timedout": [],
-  "ResultCount": 3,
-  "ElapsedMilliseconds": 2428,
+  "ResultCount": 0,
+  "ElapsedMilliseconds": 58565,
   "Alert": {
     "Title": "",
     "Description": "",

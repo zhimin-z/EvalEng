@@ -1,8 +1,8 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global \"lmms-eval\" select:repo count:all",
+  "Query": "context:global \"lmms-eval\" case:yes select:repo count:all",
   "Site": {
-    "BuildVersion": "291022_2024-09-12_5.7-52e089a13592"
+    "BuildVersion": "291182_2024-09-12_5.7-5dcdaa774b88"
   },
   "Results": [
     {
@@ -38,14 +38,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/chenshuang-zhang/imagenet_d"
+          "url": "https://github.com/EvolvingLMMs-Lab/LongVA"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/chenshuang-zhang/imagenet_d\" rel=\"nofollow\"\u003egithub.com/chenshuang-zhang/imagenet_d\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/EvolvingLMMs-Lab/LongVA\" rel=\"nofollow\"\u003egithub.com/EvolvingLMMs-Lab/LongVA\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/chenshuang-zhang/imagenet_d",
-      "url": "/github.com/chenshuang-zhang/imagenet_d"
+      "name": "github.com/EvolvingLMMs-Lab/LongVA",
+      "url": "/github.com/EvolvingLMMs-Lab/LongVA"
     },
     {
       "__typename": "Repository",
@@ -66,14 +66,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/EvolvingLMMs-Lab/LongVA"
+          "url": "https://github.com/chenshuang-zhang/imagenet_d"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/EvolvingLMMs-Lab/LongVA\" rel=\"nofollow\"\u003egithub.com/EvolvingLMMs-Lab/LongVA\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/chenshuang-zhang/imagenet_d\" rel=\"nofollow\"\u003egithub.com/chenshuang-zhang/imagenet_d\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/EvolvingLMMs-Lab/LongVA",
-      "url": "/github.com/EvolvingLMMs-Lab/LongVA"
+      "name": "github.com/chenshuang-zhang/imagenet_d",
+      "url": "/github.com/chenshuang-zhang/imagenet_d"
     },
     {
       "__typename": "Repository",
@@ -94,20 +94,6 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/LeslieLeung/opensource-lighthouse"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/LeslieLeung/opensource-lighthouse\" rel=\"nofollow\"\u003egithub.com/LeslieLeung/opensource-lighthouse\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/LeslieLeung/opensource-lighthouse",
-      "url": "/github.com/LeslieLeung/opensource-lighthouse"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
           "url": "https://github.com/ZrrSkywalker/MathVerse"
         }
       ],
@@ -122,42 +108,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/koaning/arxiv-frontpage"
+          "url": "https://github.com/LeslieLeung/opensource-lighthouse"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/koaning/arxiv-frontpage\" rel=\"nofollow\"\u003egithub.com/koaning/arxiv-frontpage\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/LeslieLeung/opensource-lighthouse\" rel=\"nofollow\"\u003egithub.com/LeslieLeung/opensource-lighthouse\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/koaning/arxiv-frontpage",
-      "url": "/github.com/koaning/arxiv-frontpage"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/deep-diver/hf-daily-paper-newsletter"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/deep-diver/hf-daily-paper-newsletter\" rel=\"nofollow\"\u003egithub.com/deep-diver/hf-daily-paper-newsletter\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/deep-diver/hf-daily-paper-newsletter",
-      "url": "/github.com/deep-diver/hf-daily-paper-newsletter"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/EthicalML/awesome-production-machine-learning"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/EthicalML/awesome-production-machine-learning\" rel=\"nofollow\"\u003egithub.com/EthicalML/awesome-production-machine-learning\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/EthicalML/awesome-production-machine-learning",
-      "url": "/github.com/EthicalML/awesome-production-machine-learning"
+      "name": "github.com/LeslieLeung/opensource-lighthouse",
+      "url": "/github.com/LeslieLeung/opensource-lighthouse"
     },
     {
       "__typename": "Repository",
@@ -178,14 +136,28 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/LLaVA-VL/LLaVA-NeXT"
+          "url": "https://github.com/mu-cai/matryoshka-mm"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/LLaVA-VL/LLaVA-NeXT\" rel=\"nofollow\"\u003egithub.com/LLaVA-VL/LLaVA-NeXT\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/mu-cai/matryoshka-mm\" rel=\"nofollow\"\u003egithub.com/mu-cai/matryoshka-mm\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/LLaVA-VL/LLaVA-NeXT",
-      "url": "/github.com/LLaVA-VL/LLaVA-NeXT"
+      "name": "github.com/mu-cai/matryoshka-mm",
+      "url": "/github.com/mu-cai/matryoshka-mm"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/koaning/arxiv-frontpage"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/koaning/arxiv-frontpage\" rel=\"nofollow\"\u003egithub.com/koaning/arxiv-frontpage\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/koaning/arxiv-frontpage",
+      "url": "/github.com/koaning/arxiv-frontpage"
     },
     {
       "__typename": "Repository",
@@ -206,14 +178,28 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/charliedream1/ai_wiki"
+          "url": "https://github.com/EthicalML/awesome-production-machine-learning"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/charliedream1/ai_wiki\" rel=\"nofollow\"\u003egithub.com/charliedream1/ai_wiki\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/EthicalML/awesome-production-machine-learning\" rel=\"nofollow\"\u003egithub.com/EthicalML/awesome-production-machine-learning\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/charliedream1/ai_wiki",
-      "url": "/github.com/charliedream1/ai_wiki"
+      "name": "github.com/EthicalML/awesome-production-machine-learning",
+      "url": "/github.com/EthicalML/awesome-production-machine-learning"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/LLaVA-VL/LLaVA-NeXT"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/LLaVA-VL/LLaVA-NeXT\" rel=\"nofollow\"\u003egithub.com/LLaVA-VL/LLaVA-NeXT\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/LLaVA-VL/LLaVA-NeXT",
+      "url": "/github.com/LLaVA-VL/LLaVA-NeXT"
     },
     {
       "__typename": "Repository",
@@ -248,14 +234,28 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/WeihuangLin/INF-LLaVA"
+          "url": "https://github.com/YiyangZhou/CSR"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/WeihuangLin/INF-LLaVA\" rel=\"nofollow\"\u003egithub.com/WeihuangLin/INF-LLaVA\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/YiyangZhou/CSR\" rel=\"nofollow\"\u003egithub.com/YiyangZhou/CSR\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/WeihuangLin/INF-LLaVA",
-      "url": "/github.com/WeihuangLin/INF-LLaVA"
+      "name": "github.com/YiyangZhou/CSR",
+      "url": "/github.com/YiyangZhou/CSR"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Yuliang-Liu/MultimodalOCR"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Yuliang-Liu/MultimodalOCR\" rel=\"nofollow\"\u003egithub.com/Yuliang-Liu/MultimodalOCR\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Yuliang-Liu/MultimodalOCR",
+      "url": "/github.com/Yuliang-Liu/MultimodalOCR"
     },
     {
       "__typename": "Repository",
@@ -276,34 +276,6 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/sailfish009/paper"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/sailfish009/paper\" rel=\"nofollow\"\u003egithub.com/sailfish009/paper\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/sailfish009/paper",
-      "url": "/github.com/sailfish009/paper"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/YiyangZhou/CSR"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/YiyangZhou/CSR\" rel=\"nofollow\"\u003egithub.com/YiyangZhou/CSR\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/YiyangZhou/CSR",
-      "url": "/github.com/YiyangZhou/CSR"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
           "url": "https://github.com/Q-Future/A-Bench"
         }
       ],
@@ -312,6 +284,48 @@
       },
       "name": "github.com/Q-Future/A-Bench",
       "url": "/github.com/Q-Future/A-Bench"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/WeihuangLin/INF-LLaVA"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/WeihuangLin/INF-LLaVA\" rel=\"nofollow\"\u003egithub.com/WeihuangLin/INF-LLaVA\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/WeihuangLin/INF-LLaVA",
+      "url": "/github.com/WeihuangLin/INF-LLaVA"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Q-Future/Q-Bench"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Q-Future/Q-Bench\" rel=\"nofollow\"\u003egithub.com/Q-Future/Q-Bench\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Q-Future/Q-Bench",
+      "url": "/github.com/Q-Future/Q-Bench"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/dylanhogg/awesome-python"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/dylanhogg/awesome-python\" rel=\"nofollow\"\u003egithub.com/dylanhogg/awesome-python\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/dylanhogg/awesome-python",
+      "url": "/github.com/dylanhogg/awesome-python"
     },
     {
       "__typename": "Repository",
@@ -340,34 +354,6 @@
       },
       "name": "github.com/EvolvingLMMs-Lab/lmms-eval",
       "url": "/github.com/EvolvingLMMs-Lab/lmms-eval"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/l-yohai/daily_papers_ko"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/l-yohai/daily_papers_ko\" rel=\"nofollow\"\u003egithub.com/l-yohai/daily_papers_ko\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/l-yohai/daily_papers_ko",
-      "url": "/github.com/l-yohai/daily_papers_ko"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/Q-Future/Q-Bench"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/Q-Future/Q-Bench\" rel=\"nofollow\"\u003egithub.com/Q-Future/Q-Bench\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/Q-Future/Q-Bench",
-      "url": "/github.com/Q-Future/Q-Bench"
     },
     {
       "__typename": "Repository",
@@ -416,48 +402,6 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/dylanhogg/awesome-python"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/dylanhogg/awesome-python\" rel=\"nofollow\"\u003egithub.com/dylanhogg/awesome-python\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/dylanhogg/awesome-python",
-      "url": "/github.com/dylanhogg/awesome-python"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/Yuliang-Liu/MultimodalOCR"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/Yuliang-Liu/MultimodalOCR\" rel=\"nofollow\"\u003egithub.com/Yuliang-Liu/MultimodalOCR\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/Yuliang-Liu/MultimodalOCR",
-      "url": "/github.com/Yuliang-Liu/MultimodalOCR"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/mbzuai-oryx/LLaVA-pp"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/mbzuai-oryx/LLaVA-pp\" rel=\"nofollow\"\u003egithub.com/mbzuai-oryx/LLaVA-pp\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/mbzuai-oryx/LLaVA-pp",
-      "url": "/github.com/mbzuai-oryx/LLaVA-pp"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
           "url": "https://github.com/Paranioar/Awesome_Matching_Pretraining_Transfering"
         }
       ],
@@ -472,34 +416,6 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/hist0613/arxivbot"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/hist0613/arxivbot\" rel=\"nofollow\"\u003egithub.com/hist0613/arxivbot\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/hist0613/arxivbot",
-      "url": "/github.com/hist0613/arxivbot"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/alibaba/conv-llava"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/alibaba/conv-llava\" rel=\"nofollow\"\u003egithub.com/alibaba/conv-llava\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/alibaba/conv-llava",
-      "url": "/github.com/alibaba/conv-llava"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
           "url": "https://github.com/llyx97/TempCompass"
         }
       ],
@@ -508,6 +424,20 @@
       },
       "name": "github.com/llyx97/TempCompass",
       "url": "/github.com/llyx97/TempCompass"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/mbzuai-oryx/LLaVA-pp"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/mbzuai-oryx/LLaVA-pp\" rel=\"nofollow\"\u003egithub.com/mbzuai-oryx/LLaVA-pp\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/mbzuai-oryx/LLaVA-pp",
+      "url": "/github.com/mbzuai-oryx/LLaVA-pp"
     },
     {
       "__typename": "Repository",
@@ -542,14 +472,28 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/huggingface/blog"
+          "url": "https://github.com/2404589803/hf-daily-paper-newsletter-chinese"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/huggingface/blog\" rel=\"nofollow\"\u003egithub.com/huggingface/blog\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/2404589803/hf-daily-paper-newsletter-chinese\" rel=\"nofollow\"\u003egithub.com/2404589803/hf-daily-paper-newsletter-chinese\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/huggingface/blog",
-      "url": "/github.com/huggingface/blog"
+      "name": "github.com/2404589803/hf-daily-paper-newsletter-chinese",
+      "url": "/github.com/2404589803/hf-daily-paper-newsletter-chinese"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/alibaba/conv-llava"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/alibaba/conv-llava\" rel=\"nofollow\"\u003egithub.com/alibaba/conv-llava\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/alibaba/conv-llava",
+      "url": "/github.com/alibaba/conv-llava"
     },
     {
       "__typename": "Repository",
@@ -584,6 +528,34 @@
       "externalURLs": [
         {
           "serviceType": "github",
+          "url": "https://github.com/charliedream1/ai_wiki"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/charliedream1/ai_wiki\" rel=\"nofollow\"\u003egithub.com/charliedream1/ai_wiki\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/charliedream1/ai_wiki",
+      "url": "/github.com/charliedream1/ai_wiki"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/huggingface/blog"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/huggingface/blog\" rel=\"nofollow\"\u003egithub.com/huggingface/blog\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/huggingface/blog",
+      "url": "/github.com/huggingface/blog"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
           "url": "https://github.com/pkunlp-icler/FastV"
         }
       ],
@@ -592,48 +564,6 @@
       },
       "name": "github.com/pkunlp-icler/FastV",
       "url": "/github.com/pkunlp-icler/FastV"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/mu-cai/matryoshka-mm"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/mu-cai/matryoshka-mm\" rel=\"nofollow\"\u003egithub.com/mu-cai/matryoshka-mm\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/mu-cai/matryoshka-mm",
-      "url": "/github.com/mu-cai/matryoshka-mm"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/feedarchive/libera-feedbot-live"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/feedarchive/libera-feedbot-live\" rel=\"nofollow\"\u003egithub.com/feedarchive/libera-feedbot-live\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/feedarchive/libera-feedbot-live",
-      "url": "/github.com/feedarchive/libera-feedbot-live"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/Trustworthy-AI-Group/Adversarial_Examples_Papers"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/Trustworthy-AI-Group/Adversarial_Examples_Papers\" rel=\"nofollow\"\u003egithub.com/Trustworthy-AI-Group/Adversarial_Examples_Papers\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/Trustworthy-AI-Group/Adversarial_Examples_Papers",
-      "url": "/github.com/Trustworthy-AI-Group/Adversarial_Examples_Papers"
     },
     {
       "__typename": "Repository",
@@ -668,20 +598,6 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/2404589803/hf-daily-paper-newsletter-chinese"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/2404589803/hf-daily-paper-newsletter-chinese\" rel=\"nofollow\"\u003egithub.com/2404589803/hf-daily-paper-newsletter-chinese\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/2404589803/hf-daily-paper-newsletter-chinese",
-      "url": "/github.com/2404589803/hf-daily-paper-newsletter-chinese"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
           "url": "https://github.com/FanshuoZeng/Simignore"
         }
       ],
@@ -696,22 +612,22 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/go2coding/go2coding.github.io"
+          "url": "https://github.com/feedarchive/libera-feedbot-live"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/go2coding/go2coding.github.io\" rel=\"nofollow\"\u003egithub.com/go2coding/go2coding.github.io\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/feedarchive/libera-feedbot-live\" rel=\"nofollow\"\u003egithub.com/feedarchive/libera-feedbot-live\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/go2coding/go2coding.github.io",
-      "url": "/github.com/go2coding/go2coding.github.io"
+      "name": "github.com/feedarchive/libera-feedbot-live",
+      "url": "/github.com/feedarchive/libera-feedbot-live"
     }
   ],
   "LimitHit": false,
   "Cloning": [],
   "Missing": [],
   "Timedout": [],
-  "ResultCount": 50,
-  "ElapsedMilliseconds": 864,
+  "ResultCount": 44,
+  "ElapsedMilliseconds": 510,
   "Alert": {
     "Title": "",
     "Description": "",

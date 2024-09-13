@@ -1,8 +1,8 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global /python(\\d+(\\.\\d+)?)?\\s+(evalscope|llmuses)\\/run\\.py|import\\s+(evalscope|llmuses)|from\\s+(evalscope|llmuses)(\\.\\w+)?\\s+import / select:repo count:all",
+  "Query": "context:global /python(\\d+(\\.\\d+)?)?\\s+(evalscope|llmuses)\\/run\\.py|import\\s+(evalscope|llmuses)|from\\s+(evalscope|llmuses)(\\.\\w+)?\\s+import / case:yes select:repo count:all",
   "Site": {
-    "BuildVersion": "291022_2024-09-12_5.7-52e089a13592"
+    "BuildVersion": "291182_2024-09-12_5.7-5dcdaa774b88"
   },
   "Results": [
     {
@@ -18,20 +18,6 @@
       },
       "name": "github.com/modelscope/evalscope",
       "url": "/github.com/modelscope/evalscope"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/charliedream1/ai_wiki"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/charliedream1/ai_wiki\" rel=\"nofollow\"\u003egithub.com/charliedream1/ai_wiki\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/charliedream1/ai_wiki",
-      "url": "/github.com/charliedream1/ai_wiki"
     },
     {
       "__typename": "Repository",
@@ -60,6 +46,20 @@
       },
       "name": "github.com/modelscope/ms-swift",
       "url": "/github.com/modelscope/ms-swift"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/charliedream1/ai_wiki"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/charliedream1/ai_wiki\" rel=\"nofollow\"\u003egithub.com/charliedream1/ai_wiki\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/charliedream1/ai_wiki",
+      "url": "/github.com/charliedream1/ai_wiki"
     }
   ],
   "LimitHit": false,
@@ -67,7 +67,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 4,
-  "ElapsedMilliseconds": 14950,
+  "ElapsedMilliseconds": 9646,
   "Alert": {
     "Title": "",
     "Description": "",

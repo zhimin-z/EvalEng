@@ -1,8 +1,8 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global /refchecker-cli|import\\s+refchecker|from\\s+refchecker(\\.\\w+)?\\s+import / select:repo count:all",
+  "Query": "context:global /refchecker-cli|import\\s+refchecker|from\\s+refchecker(\\.\\w+)?\\s+import / case:yes select:repo count:all",
   "Site": {
-    "BuildVersion": "291022_2024-09-12_5.7-52e089a13592"
+    "BuildVersion": "291182_2024-09-12_5.7-5dcdaa774b88"
   },
   "Results": [
     {
@@ -32,28 +32,14 @@
       },
       "name": "github.com/amazon-science/RefChecker",
       "url": "/github.com/amazon-science/RefChecker"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/storyblok/storyblok-react"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/storyblok/storyblok-react\" rel=\"nofollow\"\u003egithub.com/storyblok/storyblok-react\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/storyblok/storyblok-react",
-      "url": "/github.com/storyblok/storyblok-react"
     }
   ],
   "LimitHit": false,
   "Cloning": [],
   "Missing": [],
   "Timedout": [],
-  "ResultCount": 3,
-  "ElapsedMilliseconds": 19177,
+  "ResultCount": 2,
+  "ElapsedMilliseconds": 10069,
   "Alert": {
     "Title": "",
     "Description": "",

@@ -1,24 +1,10 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global \"llm-autoeval\" select:repo count:all",
+  "Query": "context:global \"llm-autoeval\" case:yes select:repo count:all",
   "Site": {
-    "BuildVersion": "291022_2024-09-12_5.7-52e089a13592"
+    "BuildVersion": "291182_2024-09-12_5.7-5dcdaa774b88"
   },
   "Results": [
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/swyxio/ai-notes"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/swyxio/ai-notes\" rel=\"nofollow\"\u003egithub.com/swyxio/ai-notes\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/swyxio/ai-notes",
-      "url": "/github.com/swyxio/ai-notes"
-    },
     {
       "__typename": "Repository",
       "externalURLs": [
@@ -46,6 +32,20 @@
       },
       "name": "github.com/mlabonne/llm-course",
       "url": "/github.com/mlabonne/llm-course"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/swyxio/ai-notes"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/swyxio/ai-notes\" rel=\"nofollow\"\u003egithub.com/swyxio/ai-notes\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/swyxio/ai-notes",
+      "url": "/github.com/swyxio/ai-notes"
     },
     {
       "__typename": "Repository",
@@ -137,7 +137,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 9,
-  "ElapsedMilliseconds": 2000,
+  "ElapsedMilliseconds": 603,
   "Alert": {
     "Title": "",
     "Description": "",

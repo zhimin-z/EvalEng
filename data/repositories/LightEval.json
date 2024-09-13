@@ -1,10 +1,24 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global /lighteval\\s+(accelerate|nanotron)|python(\\d+(\\.\\d+)?)?\\s+run_evals_accelerate\\.py|import\\s+lighteval|from\\s+lighteval(\\.\\w+)?\\s+import / select:repo count:all",
+  "Query": "context:global /lighteval\\s+(accelerate|nanotron)|python(\\d+(\\.\\d+)?)?\\s+run_evals_accelerate\\.py|import\\s+lighteval|from\\s+lighteval(\\.\\w+)?\\s+import / case:yes select:repo count:all",
   "Site": {
-    "BuildVersion": "291022_2024-09-12_5.7-52e089a13592"
+    "BuildVersion": "291182_2024-09-12_5.7-5dcdaa774b88"
   },
   "Results": [
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/huggingface/datatrove"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/huggingface/datatrove\" rel=\"nofollow\"\u003egithub.com/huggingface/datatrove\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/huggingface/datatrove",
+      "url": "/github.com/huggingface/datatrove"
+    },
     {
       "__typename": "Repository",
       "externalURLs": [
@@ -18,20 +32,6 @@
       },
       "name": "github.com/huggingface/cosmopedia",
       "url": "/github.com/huggingface/cosmopedia"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/huggingface/nanotron"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/huggingface/nanotron\" rel=\"nofollow\"\u003egithub.com/huggingface/nanotron\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/huggingface/nanotron",
-      "url": "/github.com/huggingface/nanotron"
     },
     {
       "__typename": "Repository",
@@ -74,28 +74,14 @@
       },
       "name": "github.com/huggingface/lighteval",
       "url": "/github.com/huggingface/lighteval"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/huggingface/datatrove"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/huggingface/datatrove\" rel=\"nofollow\"\u003egithub.com/huggingface/datatrove\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/huggingface/datatrove",
-      "url": "/github.com/huggingface/datatrove"
     }
   ],
   "LimitHit": false,
   "Cloning": [],
   "Missing": [],
   "Timedout": [],
-  "ResultCount": 6,
-  "ElapsedMilliseconds": 21000,
+  "ResultCount": 5,
+  "ElapsedMilliseconds": 6875,
   "Alert": {
     "Title": "",
     "Description": "",

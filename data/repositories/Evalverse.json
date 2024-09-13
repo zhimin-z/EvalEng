@@ -1,8 +1,8 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global \"evalverse\" select:repo count:all",
+  "Query": "context:global \"evalverse\" case:yes select:repo count:all",
   "Site": {
-    "BuildVersion": "291022_2024-09-12_5.7-52e089a13592"
+    "BuildVersion": "291182_2024-09-12_5.7-5dcdaa774b88"
   },
   "Results": [
     {
@@ -38,20 +38,6 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/UpstageAI/cookbook"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/UpstageAI/cookbook\" rel=\"nofollow\"\u003egithub.com/UpstageAI/cookbook\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/UpstageAI/cookbook",
-      "url": "/github.com/UpstageAI/cookbook"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
           "url": "https://github.com/EthicalML/awesome-production-machine-learning"
         }
       ],
@@ -60,20 +46,6 @@
       },
       "name": "github.com/EthicalML/awesome-production-machine-learning",
       "url": "/github.com/EthicalML/awesome-production-machine-learning"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/hollobit/GenAI_LLM_timeline"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/hollobit/GenAI_LLM_timeline\" rel=\"nofollow\"\u003egithub.com/hollobit/GenAI_LLM_timeline\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/hollobit/GenAI_LLM_timeline",
-      "url": "/github.com/hollobit/GenAI_LLM_timeline"
     },
     {
       "__typename": "Repository",
@@ -94,14 +66,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/MozerWang/Loong"
+          "url": "https://github.com/hollobit/GenAI_LLM_timeline"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/MozerWang/Loong\" rel=\"nofollow\"\u003egithub.com/MozerWang/Loong\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/hollobit/GenAI_LLM_timeline\" rel=\"nofollow\"\u003egithub.com/hollobit/GenAI_LLM_timeline\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/MozerWang/Loong",
-      "url": "/github.com/MozerWang/Loong"
+      "name": "github.com/hollobit/GenAI_LLM_timeline",
+      "url": "/github.com/hollobit/GenAI_LLM_timeline"
     },
     {
       "__typename": "Repository",
@@ -122,14 +94,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/Ares-Developers/Ares"
+          "url": "https://github.com/yangwenmai/github-trending-backup"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/Ares-Developers/Ares\" rel=\"nofollow\"\u003egithub.com/Ares-Developers/Ares\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/yangwenmai/github-trending-backup\" rel=\"nofollow\"\u003egithub.com/yangwenmai/github-trending-backup\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/Ares-Developers/Ares",
-      "url": "/github.com/Ares-Developers/Ares"
+      "name": "github.com/yangwenmai/github-trending-backup",
+      "url": "/github.com/yangwenmai/github-trending-backup"
     },
     {
       "__typename": "Repository",
@@ -150,14 +122,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/qhduan/cn-chat-arxiv"
+          "url": "https://github.com/larsbijl/trending_archive"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/qhduan/cn-chat-arxiv\" rel=\"nofollow\"\u003egithub.com/qhduan/cn-chat-arxiv\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/larsbijl/trending_archive\" rel=\"nofollow\"\u003egithub.com/larsbijl/trending_archive\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/qhduan/cn-chat-arxiv",
-      "url": "/github.com/qhduan/cn-chat-arxiv"
+      "name": "github.com/larsbijl/trending_archive",
+      "url": "/github.com/larsbijl/trending_archive"
     },
     {
       "__typename": "Repository",
@@ -178,48 +150,6 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/Lyken17/arXiv-stats"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/Lyken17/arXiv-stats\" rel=\"nofollow\"\u003egithub.com/Lyken17/arXiv-stats\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/Lyken17/arXiv-stats",
-      "url": "/github.com/Lyken17/arXiv-stats"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/yangwenmai/github-trending-backup"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/yangwenmai/github-trending-backup\" rel=\"nofollow\"\u003egithub.com/yangwenmai/github-trending-backup\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/yangwenmai/github-trending-backup",
-      "url": "/github.com/yangwenmai/github-trending-backup"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/larsbijl/trending_archive"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/larsbijl/trending_archive\" rel=\"nofollow\"\u003egithub.com/larsbijl/trending_archive\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/larsbijl/trending_archive",
-      "url": "/github.com/larsbijl/trending_archive"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
           "url": "https://github.com/henson/Scraper"
         }
       ],
@@ -234,8 +164,8 @@
   "Cloning": [],
   "Missing": [],
   "Timedout": [],
-  "ResultCount": 16,
-  "ElapsedMilliseconds": 1780,
+  "ResultCount": 11,
+  "ElapsedMilliseconds": 1150,
   "Alert": {
     "Title": "",
     "Description": "",

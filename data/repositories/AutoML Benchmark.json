@@ -1,8 +1,8 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global /python(\\d+(\\.\\d+)?)?\\s+runbenchmark\\.py/ select:repo count:all",
+  "Query": "context:global /python(\\d+(\\.\\d+)?)?\\s+runbenchmark\\.py/ case:yes select:repo count:all",
   "Site": {
-    "BuildVersion": "291022_2024-09-12_5.7-52e089a13592"
+    "BuildVersion": "291182_2024-09-12_5.7-5dcdaa774b88"
   },
   "Results": [
     {
@@ -18,20 +18,6 @@
       },
       "name": "github.com/automl/auto-sklearn",
       "url": "/github.com/automl/auto-sklearn"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/bnpy/bnpy"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/bnpy/bnpy\" rel=\"nofollow\"\u003egithub.com/bnpy/bnpy\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/bnpy/bnpy",
-      "url": "/github.com/bnpy/bnpy"
     },
     {
       "__typename": "Repository",
@@ -66,8 +52,8 @@
   "Cloning": [],
   "Missing": [],
   "Timedout": [],
-  "ResultCount": 4,
-  "ElapsedMilliseconds": 8907,
+  "ResultCount": 3,
+  "ElapsedMilliseconds": 30857,
   "Alert": {
     "Title": "",
     "Description": "",

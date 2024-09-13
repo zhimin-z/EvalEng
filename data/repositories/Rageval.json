@@ -1,8 +1,8 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global /import\\s+rageval|from\\s+rageval(\\.\\w+)?\\s+import / select:repo count:all",
+  "Query": "context:global /import\\s+rageval|from\\s+rageval(\\.\\w+)?\\s+import / case:yes select:repo count:all",
   "Site": {
-    "BuildVersion": "291022_2024-09-12_5.7-52e089a13592"
+    "BuildVersion": "291182_2024-09-12_5.7-5dcdaa774b88"
   },
   "Results": [
     {
@@ -18,70 +18,14 @@
       },
       "name": "github.com/gomate-community/rageval",
       "url": "/github.com/gomate-community/rageval"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/run-llama/llama_index"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/run-llama/llama_index\" rel=\"nofollow\"\u003egithub.com/run-llama/llama_index\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/run-llama/llama_index",
-      "url": "/github.com/run-llama/llama_index"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/andysingal/llm-course"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/andysingal/llm-course\" rel=\"nofollow\"\u003egithub.com/andysingal/llm-course\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/andysingal/llm-course",
-      "url": "/github.com/andysingal/llm-course"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/felipearosr/RAG-LlamaIndex"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/felipearosr/RAG-LlamaIndex\" rel=\"nofollow\"\u003egithub.com/felipearosr/RAG-LlamaIndex\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/felipearosr/RAG-LlamaIndex",
-      "url": "/github.com/felipearosr/RAG-LlamaIndex"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/athina-ai/ariadne"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/athina-ai/ariadne\" rel=\"nofollow\"\u003egithub.com/athina-ai/ariadne\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/athina-ai/ariadne",
-      "url": "/github.com/athina-ai/ariadne"
     }
   ],
   "LimitHit": false,
   "Cloning": [],
   "Missing": [],
   "Timedout": [],
-  "ResultCount": 5,
-  "ElapsedMilliseconds": 12137,
+  "ResultCount": 1,
+  "ElapsedMilliseconds": 6504,
   "Alert": {
     "Title": "",
     "Description": "",

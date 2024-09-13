@@ -1,8 +1,8 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global /import\\s+opik|from\\s+opik(\\.\\w+)?\\s+import |comet-ml\\/opik\\/opik-(backend|frontend)/ select:repo count:all",
+  "Query": "context:global /import\\s+opik|from\\s+opik(\\.\\w+)?\\s+import |comet-ml\\/opik\\/opik-(backend|frontend)/ case:yes select:repo count:all",
   "Site": {
-    "BuildVersion": "291162_2024-09-12_5.7-e52b570747e6"
+    "BuildVersion": "291182_2024-09-12_5.7-5dcdaa774b88"
   },
   "Results": [],
   "LimitHit": false,
@@ -10,7 +10,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 0,
-  "ElapsedMilliseconds": 22951,
+  "ElapsedMilliseconds": 6261,
   "Alert": {
     "Title": "",
     "Description": "",

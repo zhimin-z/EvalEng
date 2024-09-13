@@ -1,38 +1,10 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global /import\\s+vlmeval|from\\s+vlmeval(\\.\\w+)?\\s+import / select:repo count:all",
+  "Query": "context:global /import\\s+vlmeval|from\\s+vlmeval(\\.\\w+)?\\s+import / case:yes select:repo count:all",
   "Site": {
-    "BuildVersion": "291022_2024-09-12_5.7-52e089a13592"
+    "BuildVersion": "291182_2024-09-12_5.7-5dcdaa774b88"
   },
   "Results": [
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/bilibili/Index-1.9B"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/bilibili/Index-1.9B\" rel=\"nofollow\"\u003egithub.com/bilibili/Index-1.9B\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/bilibili/Index-1.9B",
-      "url": "/github.com/bilibili/Index-1.9B"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/modelscope/evalscope"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/modelscope/evalscope\" rel=\"nofollow\"\u003egithub.com/modelscope/evalscope\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/modelscope/evalscope",
-      "url": "/github.com/modelscope/evalscope"
-    },
     {
       "__typename": "Repository",
       "externalURLs": [
@@ -46,6 +18,20 @@
       },
       "name": "github.com/open-compass/opencompass",
       "url": "/github.com/open-compass/opencompass"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/bilibili/Index-1.9B"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/bilibili/Index-1.9B\" rel=\"nofollow\"\u003egithub.com/bilibili/Index-1.9B\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/bilibili/Index-1.9B",
+      "url": "/github.com/bilibili/Index-1.9B"
     },
     {
       "__typename": "Repository",
@@ -66,14 +52,28 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/OpenGVLab/MMIU"
+          "url": "https://github.com/modelscope/evalscope"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/OpenGVLab/MMIU\" rel=\"nofollow\"\u003egithub.com/OpenGVLab/MMIU\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/modelscope/evalscope\" rel=\"nofollow\"\u003egithub.com/modelscope/evalscope\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/OpenGVLab/MMIU",
-      "url": "/github.com/OpenGVLab/MMIU"
+      "name": "github.com/modelscope/evalscope",
+      "url": "/github.com/modelscope/evalscope"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/OpenBMB/MiniCPM-V"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/OpenBMB/MiniCPM-V\" rel=\"nofollow\"\u003egithub.com/OpenBMB/MiniCPM-V\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/OpenBMB/MiniCPM-V",
+      "url": "/github.com/OpenBMB/MiniCPM-V"
     },
     {
       "__typename": "Repository",
@@ -94,14 +94,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/OpenBMB/MiniCPM-V"
+          "url": "https://github.com/OpenGVLab/MMIU"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/OpenBMB/MiniCPM-V\" rel=\"nofollow\"\u003egithub.com/OpenBMB/MiniCPM-V\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/OpenGVLab/MMIU\" rel=\"nofollow\"\u003egithub.com/OpenGVLab/MMIU\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/OpenBMB/MiniCPM-V",
-      "url": "/github.com/OpenBMB/MiniCPM-V"
+      "name": "github.com/OpenGVLab/MMIU",
+      "url": "/github.com/OpenGVLab/MMIU"
     },
     {
       "__typename": "Repository",
@@ -136,14 +136,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/modelscope/ms-swift"
+          "url": "https://github.com/MMStar-Benchmark/MMStar"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/modelscope/ms-swift\" rel=\"nofollow\"\u003egithub.com/modelscope/ms-swift\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/MMStar-Benchmark/MMStar\" rel=\"nofollow\"\u003egithub.com/MMStar-Benchmark/MMStar\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/modelscope/ms-swift",
-      "url": "/github.com/modelscope/ms-swift"
+      "name": "github.com/MMStar-Benchmark/MMStar",
+      "url": "/github.com/MMStar-Benchmark/MMStar"
     },
     {
       "__typename": "Repository",
@@ -164,14 +164,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/MMStar-Benchmark/MMStar"
+          "url": "https://github.com/FudanDNN-NLP/RAG"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/MMStar-Benchmark/MMStar\" rel=\"nofollow\"\u003egithub.com/MMStar-Benchmark/MMStar\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/FudanDNN-NLP/RAG\" rel=\"nofollow\"\u003egithub.com/FudanDNN-NLP/RAG\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/MMStar-Benchmark/MMStar",
-      "url": "/github.com/MMStar-Benchmark/MMStar"
+      "name": "github.com/FudanDNN-NLP/RAG",
+      "url": "/github.com/FudanDNN-NLP/RAG"
     },
     {
       "__typename": "Repository",
@@ -186,28 +186,14 @@
       },
       "name": "github.com/open-compass/MMBench",
       "url": "/github.com/open-compass/MMBench"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/FudanDNN-NLP/RAG"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/FudanDNN-NLP/RAG\" rel=\"nofollow\"\u003egithub.com/FudanDNN-NLP/RAG\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/FudanDNN-NLP/RAG",
-      "url": "/github.com/FudanDNN-NLP/RAG"
     }
   ],
   "LimitHit": false,
   "Cloning": [],
   "Missing": [],
   "Timedout": [],
-  "ResultCount": 14,
-  "ElapsedMilliseconds": 1100,
+  "ResultCount": 13,
+  "ElapsedMilliseconds": 427,
   "Alert": {
     "Title": "",
     "Description": "",
