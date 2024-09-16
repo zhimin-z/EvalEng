@@ -2,7 +2,7 @@
   "SourcegraphEndpoint": "https://sourcegraph.com",
   "Query": "context:global \"crfm-helm\" case:yes select:repo count:all",
   "Site": {
-    "BuildVersion": "291182_2024-09-12_5.7-5dcdaa774b88"
+    "BuildVersion": "291267_2024-09-13_5.7-c635b2287985"
   },
   "Results": [
     {
@@ -10,28 +10,28 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/hetailang/SqueezeAttention"
+          "url": "https://github.com/FMInference/FlexiGen"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/hetailang/SqueezeAttention\" rel=\"nofollow\"\u003egithub.com/hetailang/SqueezeAttention\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/FMInference/FlexiGen\" rel=\"nofollow\"\u003egithub.com/FMInference/FlexiGen\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/hetailang/SqueezeAttention",
-      "url": "/github.com/hetailang/SqueezeAttention"
+      "name": "github.com/FMInference/FlexiGen",
+      "url": "/github.com/FMInference/FlexiGen"
     },
     {
       "__typename": "Repository",
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/teamreboott/data-modori"
+          "url": "https://github.com/debjitpaul/refiner"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/teamreboott/data-modori\" rel=\"nofollow\"\u003egithub.com/teamreboott/data-modori\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/debjitpaul/refiner\" rel=\"nofollow\"\u003egithub.com/debjitpaul/refiner\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/teamreboott/data-modori",
-      "url": "/github.com/teamreboott/data-modori"
+      "name": "github.com/debjitpaul/refiner",
+      "url": "/github.com/debjitpaul/refiner"
     },
     {
       "__typename": "Repository",
@@ -52,42 +52,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/AI-secure/DecodingTrust"
+          "url": "https://github.com/microsoft/unilm"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/AI-secure/DecodingTrust\" rel=\"nofollow\"\u003egithub.com/AI-secure/DecodingTrust\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/microsoft/unilm\" rel=\"nofollow\"\u003egithub.com/microsoft/unilm\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/AI-secure/DecodingTrust",
-      "url": "/github.com/AI-secure/DecodingTrust"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/mlfoundations/dclm"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/mlfoundations/dclm\" rel=\"nofollow\"\u003egithub.com/mlfoundations/dclm\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/mlfoundations/dclm",
-      "url": "/github.com/mlfoundations/dclm"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/LaVi-Lab/CLEVA"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/LaVi-Lab/CLEVA\" rel=\"nofollow\"\u003egithub.com/LaVi-Lab/CLEVA\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/LaVi-Lab/CLEVA",
-      "url": "/github.com/LaVi-Lab/CLEVA"
+      "name": "github.com/microsoft/unilm",
+      "url": "/github.com/microsoft/unilm"
     },
     {
       "__typename": "Repository",
@@ -108,14 +80,56 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/microsoft/unilm"
+          "url": "https://github.com/LaVi-Lab/CLEVA"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/microsoft/unilm\" rel=\"nofollow\"\u003egithub.com/microsoft/unilm\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/LaVi-Lab/CLEVA\" rel=\"nofollow\"\u003egithub.com/LaVi-Lab/CLEVA\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/microsoft/unilm",
-      "url": "/github.com/microsoft/unilm"
+      "name": "github.com/LaVi-Lab/CLEVA",
+      "url": "/github.com/LaVi-Lab/CLEVA"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/tatsu-lab/opinions_qa"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/tatsu-lab/opinions_qa\" rel=\"nofollow\"\u003egithub.com/tatsu-lab/opinions_qa\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/tatsu-lab/opinions_qa",
+      "url": "/github.com/tatsu-lab/opinions_qa"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/teamreboott/data-modori"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/teamreboott/data-modori\" rel=\"nofollow\"\u003egithub.com/teamreboott/data-modori\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/teamreboott/data-modori",
+      "url": "/github.com/teamreboott/data-modori"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/mlfoundations/dclm"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/mlfoundations/dclm\" rel=\"nofollow\"\u003egithub.com/mlfoundations/dclm\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/mlfoundations/dclm",
+      "url": "/github.com/mlfoundations/dclm"
     },
     {
       "__typename": "Repository",
@@ -150,14 +164,42 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/debjitpaul/refiner"
+          "url": "https://github.com/AI-secure/DecodingTrust"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/debjitpaul/refiner\" rel=\"nofollow\"\u003egithub.com/debjitpaul/refiner\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/AI-secure/DecodingTrust\" rel=\"nofollow\"\u003egithub.com/AI-secure/DecodingTrust\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/debjitpaul/refiner",
-      "url": "/github.com/debjitpaul/refiner"
+      "name": "github.com/AI-secure/DecodingTrust",
+      "url": "/github.com/AI-secure/DecodingTrust"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/modelscope/data-juicer"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/modelscope/data-juicer\" rel=\"nofollow\"\u003egithub.com/modelscope/data-juicer\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/modelscope/data-juicer",
+      "url": "/github.com/modelscope/data-juicer"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/stanford-crfm/levanter"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/stanford-crfm/levanter\" rel=\"nofollow\"\u003egithub.com/stanford-crfm/levanter\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/stanford-crfm/levanter",
+      "url": "/github.com/stanford-crfm/levanter"
     },
     {
       "__typename": "Repository",
@@ -192,28 +234,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/FMInference/FlexiGen"
+          "url": "https://github.com/hetailang/SqueezeAttention"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/FMInference/FlexGen\" rel=\"nofollow\"\u003egithub.com/FMInference/FlexGen\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/hetailang/SqueezeAttention\" rel=\"nofollow\"\u003egithub.com/hetailang/SqueezeAttention\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/FMInference/FlexGen",
-      "url": "/github.com/FMInference/FlexGen"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/stanford-crfm/levanter"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/stanford-crfm/levanter\" rel=\"nofollow\"\u003egithub.com/stanford-crfm/levanter\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/stanford-crfm/levanter",
-      "url": "/github.com/stanford-crfm/levanter"
+      "name": "github.com/hetailang/SqueezeAttention",
+      "url": "/github.com/hetailang/SqueezeAttention"
     },
     {
       "__typename": "Repository",
@@ -228,34 +256,6 @@
       },
       "name": "github.com/IBM/unitxt",
       "url": "/github.com/IBM/unitxt"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/modelscope/data-juicer"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/modelscope/data-juicer\" rel=\"nofollow\"\u003egithub.com/modelscope/data-juicer\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/modelscope/data-juicer",
-      "url": "/github.com/modelscope/data-juicer"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/tatsu-lab/opinions_qa"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/tatsu-lab/opinions_qa\" rel=\"nofollow\"\u003egithub.com/tatsu-lab/opinions_qa\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/tatsu-lab/opinions_qa",
-      "url": "/github.com/tatsu-lab/opinions_qa"
     }
   ],
   "LimitHit": false,
@@ -263,7 +263,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 18,
-  "ElapsedMilliseconds": 3410,
+  "ElapsedMilliseconds": 1432,
   "Alert": {
     "Title": "",
     "Description": "",

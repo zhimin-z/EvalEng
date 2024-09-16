@@ -1,8 +1,8 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global /run_uptrain\\.sh|import\\s+uptrain|from\\s+uptrain(\\.\\w+)?\\s+import / case:yes select:repo count:all",
+  "Query": "context:global /run_uptrain\\.sh|import\\s+uptrain|from\\s+uptrain(\\.\\w+)*\\s+import / case:yes select:repo count:all",
   "Site": {
-    "BuildVersion": "291182_2024-09-12_5.7-5dcdaa774b88"
+    "BuildVersion": "291267_2024-09-13_5.7-c635b2287985"
   },
   "Results": [
     {
@@ -38,14 +38,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/langfuse/langfuse-docs"
+          "url": "https://github.com/uptrain-ai/uptrain"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/langfuse/langfuse-docs\" rel=\"nofollow\"\u003egithub.com/langfuse/langfuse-docs\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/uptrain-ai/uptrain\" rel=\"nofollow\"\u003egithub.com/uptrain-ai/uptrain\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/langfuse/langfuse-docs",
-      "url": "/github.com/langfuse/langfuse-docs"
+      "name": "github.com/uptrain-ai/uptrain",
+      "url": "/github.com/uptrain-ai/uptrain"
     },
     {
       "__typename": "Repository",
@@ -80,14 +80,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/uptrain-ai/uptrain"
+          "url": "https://github.com/langfuse/langfuse-docs"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/uptrain-ai/uptrain\" rel=\"nofollow\"\u003egithub.com/uptrain-ai/uptrain\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/langfuse/langfuse-docs\" rel=\"nofollow\"\u003egithub.com/langfuse/langfuse-docs\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/uptrain-ai/uptrain",
-      "url": "/github.com/uptrain-ai/uptrain"
+      "name": "github.com/langfuse/langfuse-docs",
+      "url": "/github.com/langfuse/langfuse-docs"
     }
   ],
   "LimitHit": false,
@@ -95,7 +95,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 6,
-  "ElapsedMilliseconds": 60572,
+  "ElapsedMilliseconds": 12604,
   "Alert": {
     "Title": "",
     "Description": "",

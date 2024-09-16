@@ -93,7 +93,7 @@
         },
         {
             "name": "Canner/WrenAI",
-            "stars": 1685,
+            "stars": 1694,
             "img": "https://avatars.githubusercontent.com/u/7250217?s=40&v=4",
             "owner": "Canner",
             "repo_name": "WrenAI"
@@ -163,7 +163,7 @@
         },
         {
             "name": "IMJONEZZ/LLMs-in-Production",
-            "stars": 26,
+            "stars": 28,
             "img": "https://avatars.githubusercontent.com/u/46764336?s=40&v=4",
             "owner": "IMJONEZZ",
             "repo_name": "LLMs-in-Production"
@@ -211,8 +211,15 @@
             "repo_name": "navreas-dataset"
         },
         {
+            "name": "Michiel-DK/rag_techniques",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/68035619?s=40&v=4",
+            "owner": "Michiel-DK",
+            "repo_name": "rag_techniques"
+        },
+        {
             "name": "NirDiamant/RAG_Techniques",
-            "stars": 5852,
+            "stars": 6097,
             "img": "https://avatars.githubusercontent.com/u/28316913?s=40&v=4",
             "owner": "NirDiamant",
             "repo_name": "RAG_Techniques"
@@ -247,7 +254,7 @@
         },
         {
             "name": "PacktPublishing/Building-Data-Driven-Applications-with-LlamaIndex",
-            "stars": 44,
+            "stars": 45,
             "img": "https://avatars.githubusercontent.com/u/10974906?s=40&v=4",
             "owner": "PacktPublishing",
             "repo_name": "Building-Data-Driven-Applications-with-LlamaIndex"
@@ -282,7 +289,7 @@
         },
         {
             "name": "RamiAwar/dataline",
-            "stars": 740,
+            "stars": 743,
             "img": "https://avatars.githubusercontent.com/u/8523191?s=40&v=4",
             "owner": "RamiAwar",
             "repo_name": "dataline"
@@ -324,7 +331,7 @@
         },
         {
             "name": "SylphAI-Inc/AdalFlow",
-            "stars": 1281,
+            "stars": 1318,
             "img": "https://avatars.githubusercontent.com/u/109630329?s=40&v=4",
             "owner": "SylphAI-Inc",
             "repo_name": "AdalFlow"
@@ -359,7 +366,7 @@
         },
         {
             "name": "XMUDM/DQABench",
-            "stars": 26,
+            "stars": 29,
             "img": "https://avatars.githubusercontent.com/u/44944055?s=40&v=4",
             "owner": "XMUDM",
             "repo_name": "DQABench"
@@ -547,13 +554,6 @@
             "repo_name": "LLMGomokuColosseum"
         },
         {
-            "name": "claymccullough/experiments",
-            "stars": 0,
-            "img": "https://avatars.githubusercontent.com/u/8537966?s=40&v=4",
-            "owner": "claymccullough",
-            "repo_name": "experiments"
-        },
-        {
             "name": "csprabala/RAG-Evaluation",
             "stars": 0,
             "img": "https://avatars.githubusercontent.com/u/2096282?s=40&v=4",
@@ -576,7 +576,7 @@
         },
         {
             "name": "deepset-ai/haystack-core-integrations",
-            "stars": 101,
+            "stars": 104,
             "img": "https://avatars.githubusercontent.com/u/51827949?s=40&v=4",
             "owner": "deepset-ai",
             "repo_name": "haystack-core-integrations"
@@ -596,11 +596,25 @@
             "repo_name": "model-evaluation"
         },
         {
+            "name": "dividor/climate-change-assistant",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/8402586?s=40&v=4",
+            "owner": "dividor",
+            "repo_name": "climate-change-assistant"
+        },
+        {
             "name": "dlt-hub/qdrant_dlt_rag",
             "stars": 1,
             "img": "https://avatars.githubusercontent.com/u/89419010?s=40&v=4",
             "owner": "dlt-hub",
             "repo_name": "qdrant_dlt_rag"
+        },
+        {
+            "name": "dr-redtec/uas_chatbot_sose24",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/83216541?s=40&v=4",
+            "owner": "dr-redtec",
+            "repo_name": "uas_chatbot_sose24"
         },
         {
             "name": "evgeny-danilov/llm-quality",
@@ -632,7 +646,7 @@
         },
         {
             "name": "fastrepl/canary",
-            "stars": 36,
+            "stars": 39,
             "img": "https://avatars.githubusercontent.com/u/142983232?s=40&v=4",
             "owner": "fastrepl",
             "repo_name": "canary"
@@ -659,6 +673,13 @@
             "repo_name": "llama_index"
         },
         {
+            "name": "garvk/social-media-with-aggrag",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/20950585?s=40&v=4",
+            "owner": "garvk",
+            "repo_name": "social-media-with-aggrag"
+        },
+        {
             "name": "genai-apps/aggrag",
             "stars": 7,
             "img": "https://avatars.githubusercontent.com/u/173376439?s=40&v=4",
@@ -667,7 +688,7 @@
         },
         {
             "name": "getzep/graphiti",
-            "stars": 527,
+            "stars": 572,
             "img": "https://avatars.githubusercontent.com/u/132832125?s=40&v=4",
             "owner": "getzep",
             "repo_name": "graphiti"
@@ -709,7 +730,7 @@
         },
         {
             "name": "ilchos/Red-Teaming-Framework",
-            "stars": 1,
+            "stars": 6,
             "img": "https://avatars.githubusercontent.com/u/42416069?s=40&v=4",
             "owner": "ilchos",
             "repo_name": "Red-Teaming-Framework"
@@ -744,7 +765,7 @@
         },
         {
             "name": "johnsonhk88/AI-Bank-Statement-Document-Automation-By-LLM-And-Personal-Finanical-Analysis-Prediction",
-            "stars": 2,
+            "stars": 3,
             "img": "https://avatars.githubusercontent.com/u/5248533?s=40&v=4",
             "owner": "johnsonhk88",
             "repo_name": "AI-Bank-Statement-Document-Automation-By-LLM-And-Personal-Finanical-Analysis-Prediction"
@@ -884,7 +905,7 @@
         },
         {
             "name": "microsoft/call-center-ai",
-            "stars": 178,
+            "stars": 182,
             "img": "https://avatars.githubusercontent.com/u/6154722?s=40&v=4",
             "owner": "microsoft",
             "repo_name": "call-center-ai"
@@ -996,14 +1017,14 @@
         },
         {
             "name": "rootflo/flo-ai",
-            "stars": 28,
+            "stars": 29,
             "img": "https://avatars.githubusercontent.com/u/91535658?s=40&v=4",
             "owner": "rootflo",
             "repo_name": "flo-ai"
         },
         {
             "name": "run-llama/llama_index",
-            "stars": 35361,
+            "stars": 35435,
             "img": "https://avatars.githubusercontent.com/u/130722866?s=40&v=4",
             "owner": "run-llama",
             "repo_name": "llama_index"
@@ -1101,7 +1122,7 @@
         },
         {
             "name": "topoteretes/cognee",
-            "stars": 803,
+            "stars": 807,
             "img": "https://avatars.githubusercontent.com/u/125468716?s=40&v=4",
             "owner": "topoteretes",
             "repo_name": "cognee"
@@ -1150,7 +1171,7 @@
         },
         {
             "name": "xingbow/SciDaEx",
-            "stars": 10,
+            "stars": 11,
             "img": "https://avatars.githubusercontent.com/u/38446633?s=40&v=4",
             "owner": "xingbow",
             "repo_name": "SciDaEx"
@@ -1184,15 +1205,15 @@
             "repo_name": "hack-day24"
         }
     ],
-    "total_dependents_number": 169,
-    "public_dependents_number": 169,
-    "private_dependents_number": -169,
-    "public_dependents_stars": 35477,
+    "total_dependents_number": 172,
+    "public_dependents_number": 172,
+    "private_dependents_number": -172,
+    "public_dependents_stars": 35781,
     "badges": {
-        "total_doc_url": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by&message=169&color=informational&logo=slickpic)](https://github.com/nvuillam/github-dependents-info)",
-        "total": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by&message=169&color=informational&logo=slickpic)](https://github.com/confident-ai/deepeval/network/dependents)",
-        "public": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(public)&message=169&color=informational&logo=slickpic)](https://github.com/confident-ai/deepeval/network/dependents)",
-        "private": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(private)&message=-169&color=informational&logo=slickpic)](https://github.com/confident-ai/deepeval/network/dependents)",
-        "stars": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(stars)&message=35477&color=informational&logo=slickpic)](https://github.com/confident-ai/deepeval/network/dependents)"
+        "total_doc_url": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by&message=172&color=informational&logo=slickpic)](https://github.com/nvuillam/github-dependents-info)",
+        "total": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by&message=172&color=informational&logo=slickpic)](https://github.com/confident-ai/deepeval/network/dependents)",
+        "public": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(public)&message=172&color=informational&logo=slickpic)](https://github.com/confident-ai/deepeval/network/dependents)",
+        "private": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(private)&message=-172&color=informational&logo=slickpic)](https://github.com/confident-ai/deepeval/network/dependents)",
+        "stars": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(stars)&message=35781&color=informational&logo=slickpic)](https://github.com/confident-ai/deepeval/network/dependents)"
     }
 }

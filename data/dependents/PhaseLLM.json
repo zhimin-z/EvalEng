@@ -1,24 +1,10 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global /import\\s+phasellm|from\\s+phasellm(\\.\\w+)?\\s+import / case:yes select:repo count:all",
+  "Query": "context:global /import\\s+phasellm|from\\s+phasellm(\\.\\w+)*\\s+import / case:yes select:repo count:all",
   "Site": {
-    "BuildVersion": "291182_2024-09-12_5.7-5dcdaa774b88"
+    "BuildVersion": "291267_2024-09-13_5.7-c635b2287985"
   },
   "Results": [
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/wgryc/emerging-trajectories"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/wgryc/emerging-trajectories\" rel=\"nofollow\"\u003egithub.com/wgryc/emerging-trajectories\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/wgryc/emerging-trajectories",
-      "url": "/github.com/wgryc/emerging-trajectories"
-    },
     {
       "__typename": "Repository",
       "externalURLs": [
@@ -32,6 +18,20 @@
       },
       "name": "github.com/wgryc/phasellm",
       "url": "/github.com/wgryc/phasellm"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/wgryc/emerging-trajectories"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/wgryc/emerging-trajectories\" rel=\"nofollow\"\u003egithub.com/wgryc/emerging-trajectories\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/wgryc/emerging-trajectories",
+      "url": "/github.com/wgryc/emerging-trajectories"
     }
   ],
   "LimitHit": false,
@@ -39,7 +39,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 2,
-  "ElapsedMilliseconds": 1273,
+  "ElapsedMilliseconds": 3142,
   "Alert": {
     "Title": "",
     "Description": "",

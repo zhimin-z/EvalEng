@@ -1,24 +1,10 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global /python(\\d+(\\.\\d+)?)?\\s+(evalscope|llmuses)\\/run\\.py|import\\s+(evalscope|llmuses)|from\\s+(evalscope|llmuses)(\\.\\w+)?\\s+import / case:yes select:repo count:all",
+  "Query": "context:global /python(\\d+(\\.\\d+)?)?\\s+(evalscope|llmuses)\\/run\\.py|import\\s+(evalscope|llmuses)|from\\s+(evalscope|llmuses)(\\.\\w+)*\\s+import / case:yes select:repo count:all",
   "Site": {
-    "BuildVersion": "291182_2024-09-12_5.7-5dcdaa774b88"
+    "BuildVersion": "291267_2024-09-13_5.7-c635b2287985"
   },
   "Results": [
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/modelscope/evalscope"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/modelscope/evalscope\" rel=\"nofollow\"\u003egithub.com/modelscope/evalscope\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/modelscope/evalscope",
-      "url": "/github.com/modelscope/evalscope"
-    },
     {
       "__typename": "Repository",
       "externalURLs": [
@@ -52,6 +38,20 @@
       "externalURLs": [
         {
           "serviceType": "github",
+          "url": "https://github.com/modelscope/evalscope"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/modelscope/evalscope\" rel=\"nofollow\"\u003egithub.com/modelscope/evalscope\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/modelscope/evalscope",
+      "url": "/github.com/modelscope/evalscope"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
           "url": "https://github.com/charliedream1/ai_wiki"
         }
       ],
@@ -67,7 +67,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 4,
-  "ElapsedMilliseconds": 9646,
+  "ElapsedMilliseconds": 11093,
   "Alert": {
     "Title": "",
     "Description": "",

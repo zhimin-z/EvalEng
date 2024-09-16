@@ -2,23 +2,9 @@
   "SourcegraphEndpoint": "https://sourcegraph.com",
   "Query": "context:global \"llm-autoeval\" case:yes select:repo count:all",
   "Site": {
-    "BuildVersion": "291182_2024-09-12_5.7-5dcdaa774b88"
+    "BuildVersion": "291267_2024-09-13_5.7-c635b2287985"
   },
   "Results": [
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/LouisShark/chatgpt_system_prompt"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/LouisShark/chatgpt_system_prompt\" rel=\"nofollow\"\u003egithub.com/LouisShark/chatgpt_system_prompt\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/LouisShark/chatgpt_system_prompt",
-      "url": "/github.com/LouisShark/chatgpt_system_prompt"
-    },
     {
       "__typename": "Repository",
       "externalURLs": [
@@ -32,20 +18,6 @@
       },
       "name": "github.com/mlabonne/llm-course",
       "url": "/github.com/mlabonne/llm-course"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/swyxio/ai-notes"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/swyxio/ai-notes\" rel=\"nofollow\"\u003egithub.com/swyxio/ai-notes\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/swyxio/ai-notes",
-      "url": "/github.com/swyxio/ai-notes"
     },
     {
       "__typename": "Repository",
@@ -66,20 +38,6 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/EthicalML/awesome-production-machine-learning"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/EthicalML/awesome-production-machine-learning\" rel=\"nofollow\"\u003egithub.com/EthicalML/awesome-production-machine-learning\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/EthicalML/awesome-production-machine-learning",
-      "url": "/github.com/EthicalML/awesome-production-machine-learning"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
           "url": "https://github.com/0xeb/TheBigPromptLibrary"
         }
       ],
@@ -94,14 +52,42 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/andysingal/llm-course"
+          "url": "https://github.com/EthicalML/awesome-production-machine-learning"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/andysingal/llm-course\" rel=\"nofollow\"\u003egithub.com/andysingal/llm-course\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/EthicalML/awesome-production-machine-learning\" rel=\"nofollow\"\u003egithub.com/EthicalML/awesome-production-machine-learning\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/andysingal/llm-course",
-      "url": "/github.com/andysingal/llm-course"
+      "name": "github.com/EthicalML/awesome-production-machine-learning",
+      "url": "/github.com/EthicalML/awesome-production-machine-learning"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/LouisShark/chatgpt_system_prompt"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/LouisShark/chatgpt_system_prompt\" rel=\"nofollow\"\u003egithub.com/LouisShark/chatgpt_system_prompt\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/LouisShark/chatgpt_system_prompt",
+      "url": "/github.com/LouisShark/chatgpt_system_prompt"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/friendmine/llm-course-chn"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/friendmine/llm-course-chn\" rel=\"nofollow\"\u003egithub.com/friendmine/llm-course-chn\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/friendmine/llm-course-chn",
+      "url": "/github.com/friendmine/llm-course-chn"
     },
     {
       "__typename": "Repository",
@@ -122,14 +108,28 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/friendmine/llm-course-chn"
+          "url": "https://github.com/swyxio/ai-notes"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/friendmine/llm-course-chn\" rel=\"nofollow\"\u003egithub.com/friendmine/llm-course-chn\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/swyxio/ai-notes\" rel=\"nofollow\"\u003egithub.com/swyxio/ai-notes\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/friendmine/llm-course-chn",
-      "url": "/github.com/friendmine/llm-course-chn"
+      "name": "github.com/swyxio/ai-notes",
+      "url": "/github.com/swyxio/ai-notes"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/andysingal/llm-course"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/andysingal/llm-course\" rel=\"nofollow\"\u003egithub.com/andysingal/llm-course\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/andysingal/llm-course",
+      "url": "/github.com/andysingal/llm-course"
     }
   ],
   "LimitHit": false,
@@ -137,7 +137,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 9,
-  "ElapsedMilliseconds": 603,
+  "ElapsedMilliseconds": 4908,
   "Alert": {
     "Title": "",
     "Description": "",

@@ -30,7 +30,7 @@
         },
         {
             "name": "AnswerDotAI/byaldi",
-            "stars": 300,
+            "stars": 318,
             "img": "https://avatars.githubusercontent.com/u/156509747?s=40&v=4",
             "owner": "AnswerDotAI",
             "repo_name": "byaldi"
@@ -58,7 +58,7 @@
         },
         {
             "name": "BlackPearl-Lab/KddCup-2024-OAG-Challenge-1st-Solutions",
-            "stars": 101,
+            "stars": 102,
             "img": "https://avatars.githubusercontent.com/u/172470581?s=40&v=4",
             "owner": "BlackPearl-Lab",
             "repo_name": "KddCup-2024-OAG-Challenge-1st-Solutions"
@@ -72,7 +72,7 @@
         },
         {
             "name": "ContextualAI/gritlm",
-            "stars": 522,
+            "stars": 525,
             "img": "https://avatars.githubusercontent.com/u/127712327?s=40&v=4",
             "owner": "ContextualAI",
             "repo_name": "gritlm"
@@ -114,7 +114,7 @@
         },
         {
             "name": "FlagOpen/FlagEmbedding",
-            "stars": 6791,
+            "stars": 6819,
             "img": "https://avatars.githubusercontent.com/u/114467038?s=40&v=4",
             "owner": "FlagOpen",
             "repo_name": "FlagEmbedding"
@@ -125,6 +125,13 @@
             "img": "https://avatars.githubusercontent.com/u/3730888?s=40&v=4",
             "owner": "Fohlen",
             "repo_name": "fohlen.github.io"
+        },
+        {
+            "name": "HandsOnLLM/Hands-On-Large-Language-Models",
+            "stars": 129,
+            "img": "https://avatars.githubusercontent.com/u/174106807?s=40&v=4",
+            "owner": "HandsOnLLM",
+            "repo_name": "Hands-On-Large-Language-Models"
         },
         {
             "name": "Hekang001/MSSE",
@@ -142,7 +149,7 @@
         },
         {
             "name": "IntelLabs/fastRAG",
-            "stars": 1254,
+            "stars": 1255,
             "img": "https://avatars.githubusercontent.com/u/1492758?s=40&v=4",
             "owner": "IntelLabs",
             "repo_name": "fastRAG"
@@ -177,7 +184,7 @@
         },
         {
             "name": "KingJupyter/Fast-Rag",
-            "stars": 1,
+            "stars": 2,
             "img": "https://avatars.githubusercontent.com/u/177731046?s=40&v=4",
             "owner": "KingJupyter",
             "repo_name": "Fast-Rag"
@@ -282,10 +289,17 @@
         },
         {
             "name": "PaddlePaddle/PaddleNLP",
-            "stars": 11954,
+            "stars": 11965,
             "img": "https://avatars.githubusercontent.com/u/23534030?s=40&v=4",
             "owner": "PaddlePaddle",
             "repo_name": "PaddleNLP"
+        },
+        {
+            "name": "PragmaticMachineLearning/docai",
+            "stars": 187,
+            "img": "https://avatars.githubusercontent.com/u/181650191?s=40&v=4",
+            "owner": "PragmaticMachineLearning",
+            "repo_name": "docai"
         },
         {
             "name": "Qihoo360/360zhinao",
@@ -309,6 +323,13 @@
             "repo_name": "PaddleNLP"
         },
         {
+            "name": "Shyam-Sundar-7/rag-on-colpali",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/101181076?s=40&v=4",
+            "owner": "Shyam-Sundar-7",
+            "repo_name": "rag-on-colpali"
+        },
+        {
             "name": "SonishMaharjanfuse/unilm2_for_self_training",
             "stars": 0,
             "img": "https://avatars.githubusercontent.com/u/141208885?s=40&v=4",
@@ -321,6 +342,13 @@
             "img": "https://avatars.githubusercontent.com/u/43956168?s=40&v=4",
             "owner": "TankNee",
             "repo_name": "Tool-ChatGPT"
+        },
+        {
+            "name": "Tongqing-Wei/FlagEmbedding",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/88024316?s=40&v=4",
+            "owner": "Tongqing-Wei",
+            "repo_name": "FlagEmbedding"
         },
         {
             "name": "Tonygemini/PaddleNLP",
@@ -352,7 +380,7 @@
         },
         {
             "name": "WowCZ/LongMIT",
-            "stars": 23,
+            "stars": 24,
             "img": "https://avatars.githubusercontent.com/u/38067534?s=40&v=4",
             "owner": "WowCZ",
             "repo_name": "LongMIT"
@@ -541,7 +569,7 @@
         },
         {
             "name": "gkamradt/langchain-tutorials",
-            "stars": 6642,
+            "stars": 6647,
             "img": "https://avatars.githubusercontent.com/u/9809213?s=40&v=4",
             "owner": "gkamradt",
             "repo_name": "langchain-tutorials"
@@ -618,21 +646,21 @@
         },
         {
             "name": "illuin-tech/colpali",
-            "stars": 489,
+            "stars": 503,
             "img": "https://avatars.githubusercontent.com/u/26204301?s=40&v=4",
             "owner": "illuin-tech",
             "repo_name": "colpali"
         },
         {
             "name": "illuin-tech/vidore-benchmark",
-            "stars": 97,
+            "stars": 101,
             "img": "https://avatars.githubusercontent.com/u/26204301?s=40&v=4",
             "owner": "illuin-tech",
             "repo_name": "vidore-benchmark"
         },
         {
             "name": "intel/intel-extension-for-transformers",
-            "stars": 2104,
+            "stars": 2106,
             "img": "https://avatars.githubusercontent.com/u/17888862?s=40&v=4",
             "owner": "intel",
             "repo_name": "intel-extension-for-transformers"
@@ -708,13 +736,6 @@
             "repo_name": "cloud-embeddings"
         },
         {
-            "name": "madisonmay/docai",
-            "stars": 167,
-            "img": "https://avatars.githubusercontent.com/u/2645393?s=40&v=4",
-            "owner": "madisonmay",
-            "repo_name": "docai"
-        },
-        {
             "name": "manubhat97/RETnet",
             "stars": 0,
             "img": "https://avatars.githubusercontent.com/u/20859249?s=40&v=4",
@@ -723,7 +744,7 @@
         },
         {
             "name": "microsoft/unilm",
-            "stars": 19528,
+            "stars": 19544,
             "img": "https://avatars.githubusercontent.com/u/6154722?s=40&v=4",
             "owner": "microsoft",
             "repo_name": "unilm"
@@ -744,7 +765,7 @@
         },
         {
             "name": "netease-youdao/BCEmbedding",
-            "stars": 1358,
+            "stars": 1367,
             "img": "https://avatars.githubusercontent.com/u/3909232?s=40&v=4",
             "owner": "netease-youdao",
             "repo_name": "BCEmbedding"
@@ -765,7 +786,7 @@
         },
         {
             "name": "nomic-ai/contrastors",
-            "stars": 502,
+            "stars": 505,
             "img": "https://avatars.githubusercontent.com/u/102670180?s=40&v=4",
             "owner": "nomic-ai",
             "repo_name": "contrastors"
@@ -890,13 +911,6 @@
             "repo_name": "BEiT_ViT"
         },
         {
-            "name": "shyamsundar009/rag-on-colpali",
-            "stars": 0,
-            "img": "https://avatars.githubusercontent.com/u/167984593?s=40&v=4",
-            "owner": "shyamsundar009",
-            "repo_name": "rag-on-colpali"
-        },
-        {
             "name": "skeskinen/bert.cpp",
             "stars": 460,
             "img": "https://avatars.githubusercontent.com/u/908332?s=40&v=4",
@@ -1009,15 +1023,15 @@
             "repo_name": "Bi-metric-search"
         }
     ],
-    "total_dependents_number": 144,
-    "public_dependents_number": 144,
-    "private_dependents_number": -144,
-    "public_dependents_stars": 39743,
+    "total_dependents_number": 146,
+    "public_dependents_number": 146,
+    "private_dependents_number": -146,
+    "public_dependents_stars": 39799,
     "badges": {
-        "total_doc_url": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by&message=144&color=informational&logo=slickpic)](https://github.com/nvuillam/github-dependents-info)",
-        "total": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by&message=144&color=informational&logo=slickpic)](https://github.com/embeddings-benchmark/mteb/network/dependents)",
-        "public": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(public)&message=144&color=informational&logo=slickpic)](https://github.com/embeddings-benchmark/mteb/network/dependents)",
-        "private": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(private)&message=-144&color=informational&logo=slickpic)](https://github.com/embeddings-benchmark/mteb/network/dependents)",
-        "stars": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(stars)&message=39743&color=informational&logo=slickpic)](https://github.com/embeddings-benchmark/mteb/network/dependents)"
+        "total_doc_url": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by&message=146&color=informational&logo=slickpic)](https://github.com/nvuillam/github-dependents-info)",
+        "total": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by&message=146&color=informational&logo=slickpic)](https://github.com/embeddings-benchmark/mteb/network/dependents)",
+        "public": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(public)&message=146&color=informational&logo=slickpic)](https://github.com/embeddings-benchmark/mteb/network/dependents)",
+        "private": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(private)&message=-146&color=informational&logo=slickpic)](https://github.com/embeddings-benchmark/mteb/network/dependents)",
+        "stars": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(stars)&message=39799&color=informational&logo=slickpic)](https://github.com/embeddings-benchmark/mteb/network/dependents)"
     }
 }

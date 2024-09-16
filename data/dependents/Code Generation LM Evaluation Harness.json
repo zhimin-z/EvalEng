@@ -2,7 +2,7 @@
   "SourcegraphEndpoint": "https://sourcegraph.com",
   "Query": "context:global /bigcode_eval|bigcode-project\\/evaluation-harness/ case:yes select:repo count:all",
   "Site": {
-    "BuildVersion": "291182_2024-09-12_5.7-5dcdaa774b88"
+    "BuildVersion": "291267_2024-09-13_5.7-c635b2287985"
   },
   "Results": [
     {
@@ -10,14 +10,28 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/bigcode-project/bigcode-evaluation-harness"
+          "url": "https://github.com/Kludex/awesome-fastapi-projects"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/bigcode-project/bigcode-evaluation-harness\" rel=\"nofollow\"\u003egithub.com/bigcode-project/bigcode-evaluation-harness\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Kludex/awesome-fastapi-projects\" rel=\"nofollow\"\u003egithub.com/Kludex/awesome-fastapi-projects\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/bigcode-project/bigcode-evaluation-harness",
-      "url": "/github.com/bigcode-project/bigcode-evaluation-harness"
+      "name": "github.com/Kludex/awesome-fastapi-projects",
+      "url": "/github.com/Kludex/awesome-fastapi-projects"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Cerebras/modelzoo"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Cerebras/modelzoo\" rel=\"nofollow\"\u003egithub.com/Cerebras/modelzoo\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Cerebras/modelzoo",
+      "url": "/github.com/Cerebras/modelzoo"
     },
     {
       "__typename": "Repository",
@@ -38,14 +52,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/huggingface/optimum-intel"
+          "url": "https://github.com/bigcode-project/bigcode-evaluation-harness"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/huggingface/optimum-intel\" rel=\"nofollow\"\u003egithub.com/huggingface/optimum-intel\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/bigcode-project/bigcode-evaluation-harness\" rel=\"nofollow\"\u003egithub.com/bigcode-project/bigcode-evaluation-harness\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/huggingface/optimum-intel",
-      "url": "/github.com/huggingface/optimum-intel"
+      "name": "github.com/bigcode-project/bigcode-evaluation-harness",
+      "url": "/github.com/bigcode-project/bigcode-evaluation-harness"
     },
     {
       "__typename": "Repository",
@@ -80,76 +94,6 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/openvinotoolkit/openvino_notebooks"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/openvinotoolkit/openvino_notebooks\" rel=\"nofollow\"\u003egithub.com/openvinotoolkit/openvino_notebooks\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/openvinotoolkit/openvino_notebooks",
-      "url": "/github.com/openvinotoolkit/openvino_notebooks"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/uukuguy/speechless"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/uukuguy/speechless\" rel=\"nofollow\"\u003egithub.com/uukuguy/speechless\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/uukuguy/speechless",
-      "url": "/github.com/uukuguy/speechless"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/Cerebras/modelzoo"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/Cerebras/modelzoo\" rel=\"nofollow\"\u003egithub.com/Cerebras/modelzoo\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/Cerebras/modelzoo",
-      "url": "/github.com/Cerebras/modelzoo"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/Xwin-LM/Xwin-LM"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/Xwin-LM/Xwin-LM\" rel=\"nofollow\"\u003egithub.com/Xwin-LM/Xwin-LM\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/Xwin-LM/Xwin-LM",
-      "url": "/github.com/Xwin-LM/Xwin-LM"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/kaistAI/LangBridge"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/kaistAI/LangBridge\" rel=\"nofollow\"\u003egithub.com/kaistAI/LangBridge\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/kaistAI/LangBridge",
-      "url": "/github.com/kaistAI/LangBridge"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
           "url": "https://github.com/likenneth/q_probe"
         }
       ],
@@ -158,20 +102,6 @@
       },
       "name": "github.com/likenneth/q_probe",
       "url": "/github.com/likenneth/q_probe"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/allenai/open-instruct"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/allenai/open-instruct\" rel=\"nofollow\"\u003egithub.com/allenai/open-instruct\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/allenai/open-instruct",
-      "url": "/github.com/allenai/open-instruct"
     },
     {
       "__typename": "Repository",
@@ -206,6 +136,62 @@
       "externalURLs": [
         {
           "serviceType": "github",
+          "url": "https://github.com/openvinotoolkit/openvino_notebooks"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/openvinotoolkit/openvino_notebooks\" rel=\"nofollow\"\u003egithub.com/openvinotoolkit/openvino_notebooks\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/openvinotoolkit/openvino_notebooks",
+      "url": "/github.com/openvinotoolkit/openvino_notebooks"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/allenai/open-instruct"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/allenai/open-instruct\" rel=\"nofollow\"\u003egithub.com/allenai/open-instruct\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/allenai/open-instruct",
+      "url": "/github.com/allenai/open-instruct"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/Xwin-LM/Xwin-LM"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/Xwin-LM/Xwin-LM\" rel=\"nofollow\"\u003egithub.com/Xwin-LM/Xwin-LM\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/Xwin-LM/Xwin-LM",
+      "url": "/github.com/Xwin-LM/Xwin-LM"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/huggingface/optimum-intel"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/huggingface/optimum-intel\" rel=\"nofollow\"\u003egithub.com/huggingface/optimum-intel\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/huggingface/optimum-intel",
+      "url": "/github.com/huggingface/optimum-intel"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
           "url": "https://github.com/intel/neural-compressor"
         }
       ],
@@ -220,14 +206,28 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/Kludex/awesome-fastapi-projects"
+          "url": "https://github.com/kaistAI/LangBridge"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/Kludex/awesome-fastapi-projects\" rel=\"nofollow\"\u003egithub.com/Kludex/awesome-fastapi-projects\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/kaistAI/LangBridge\" rel=\"nofollow\"\u003egithub.com/kaistAI/LangBridge\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/Kludex/awesome-fastapi-projects",
-      "url": "/github.com/Kludex/awesome-fastapi-projects"
+      "name": "github.com/kaistAI/LangBridge",
+      "url": "/github.com/kaistAI/LangBridge"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/uukuguy/speechless"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/uukuguy/speechless\" rel=\"nofollow\"\u003egithub.com/uukuguy/speechless\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/uukuguy/speechless",
+      "url": "/github.com/uukuguy/speechless"
     }
   ],
   "LimitHit": false,
@@ -235,7 +235,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 16,
-  "ElapsedMilliseconds": 35510,
+  "ElapsedMilliseconds": 7850,
   "Alert": {
     "Title": "",
     "Description": "",

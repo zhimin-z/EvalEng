@@ -2,7 +2,7 @@
   "SourcegraphEndpoint": "https://sourcegraph.com",
   "Query": "context:global \"inspect-ai\" case:yes select:repo count:all",
   "Site": {
-    "BuildVersion": "291182_2024-09-12_5.7-5dcdaa774b88"
+    "BuildVersion": "291267_2024-09-13_5.7-c635b2287985"
   },
   "Results": [
     {
@@ -10,14 +10,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/scamsniffer/scam-database"
+          "url": "https://github.com/genai-handbook/genai-handbook.github.io"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/scamsniffer/scam-database\" rel=\"nofollow\"\u003egithub.com/scamsniffer/scam-database\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/genai-handbook/genai-handbook.github.io\" rel=\"nofollow\"\u003egithub.com/genai-handbook/genai-handbook.github.io\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/scamsniffer/scam-database",
-      "url": "/github.com/scamsniffer/scam-database"
+      "name": "github.com/genai-handbook/genai-handbook.github.io",
+      "url": "/github.com/genai-handbook/genai-handbook.github.io"
     },
     {
       "__typename": "Repository",
@@ -38,28 +38,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/genai-handbook/genai-handbook.github.io"
+          "url": "https://github.com/scamsniffer/scam-database"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/genai-handbook/genai-handbook.github.io\" rel=\"nofollow\"\u003egithub.com/genai-handbook/genai-handbook.github.io\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/scamsniffer/scam-database\" rel=\"nofollow\"\u003egithub.com/scamsniffer/scam-database\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/genai-handbook/genai-handbook.github.io",
-      "url": "/github.com/genai-handbook/genai-handbook.github.io"
-    },
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/METR/vivaria"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/METR/vivaria\" rel=\"nofollow\"\u003egithub.com/METR/vivaria\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/METR/vivaria",
-      "url": "/github.com/METR/vivaria"
+      "name": "github.com/scamsniffer/scam-database",
+      "url": "/github.com/scamsniffer/scam-database"
     },
     {
       "__typename": "Repository",
@@ -74,6 +60,20 @@
       },
       "name": "github.com/ianarawjo/ChainForge",
       "url": "/github.com/ianarawjo/ChainForge"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
+          "url": "https://github.com/METR/vivaria"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/METR/vivaria\" rel=\"nofollow\"\u003egithub.com/METR/vivaria\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/METR/vivaria",
+      "url": "/github.com/METR/vivaria"
     }
   ],
   "LimitHit": false,
@@ -81,7 +81,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 5,
-  "ElapsedMilliseconds": 2580,
+  "ElapsedMilliseconds": 4261,
   "Alert": {
     "Title": "",
     "Description": "",

@@ -58,10 +58,17 @@
         },
         {
             "name": "AI-Commandos/RAGMeUp",
-            "stars": 394,
+            "stars": 395,
             "img": "https://avatars.githubusercontent.com/u/172363045?s=40&v=4",
             "owner": "AI-Commandos",
             "repo_name": "RAGMeUp"
+        },
+        {
+            "name": "AIPrintOrcl/langchain-kr-nsm",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/111674633?s=40&v=4",
+            "owner": "AIPrintOrcl",
+            "repo_name": "langchain-kr-nsm"
         },
         {
             "name": "AKZIZ/Appli_IA",
@@ -142,7 +149,7 @@
         },
         {
             "name": "Agenta-AI/agenta",
-            "stars": 1161,
+            "stars": 1165,
             "img": "https://avatars.githubusercontent.com/u/127993667?s=40&v=4",
             "owner": "Agenta-AI",
             "repo_name": "agenta"
@@ -316,6 +323,13 @@
             "repo_name": "promptlytech-rag-hub"
         },
         {
+            "name": "Azure-Samples/azure-openai-raft",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/1844662?s=40&v=4",
+            "owner": "Azure-Samples",
+            "repo_name": "azure-openai-raft"
+        },
+        {
             "name": "Azure/azure-search-vector-samples",
             "stars": 731,
             "img": "https://avatars.githubusercontent.com/u/6844498?s=40&v=4",
@@ -408,7 +422,7 @@
         },
         {
             "name": "Canner/WrenAI",
-            "stars": 1685,
+            "stars": 1694,
             "img": "https://avatars.githubusercontent.com/u/7250217?s=40&v=4",
             "owner": "Canner",
             "repo_name": "WrenAI"
@@ -876,6 +890,13 @@
             "repo_name": "gpt-semantic-search"
         },
         {
+            "name": "JangSeonguk/Assistants_AI",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/35093312?s=40&v=4",
+            "owner": "JangSeonguk",
+            "repo_name": "Assistants_AI"
+        },
+        {
             "name": "JeongwooLee1124/Car_Sales_Chatbot",
             "stars": 0,
             "img": "https://avatars.githubusercontent.com/u/68156494?s=40&v=4",
@@ -902,6 +923,13 @@
             "img": "https://avatars.githubusercontent.com/u/55784702?s=40&v=4",
             "owner": "Jorge-Polanco-Roque",
             "repo_name": "bot_cli"
+        },
+        {
+            "name": "JorgeAbrego/ask_the_book_rag_project",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/65416755?s=40&v=4",
+            "owner": "JorgeAbrego",
+            "repo_name": "ask_the_book_rag_project"
         },
         {
             "name": "Juileepatil84/AI-Powered-Project-Management-Assistant",
@@ -989,7 +1017,7 @@
         },
         {
             "name": "KruxAI/ragbuilder",
-            "stars": 313,
+            "stars": 365,
             "img": "https://avatars.githubusercontent.com/u/168459675?s=40&v=4",
             "owner": "KruxAI",
             "repo_name": "ragbuilder"
@@ -1121,6 +1149,13 @@
             "repo_name": "pipy_server"
         },
         {
+            "name": "MadisonEvans94/splade",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/100099375?s=40&v=4",
+            "owner": "MadisonEvans94",
+            "repo_name": "splade"
+        },
+        {
             "name": "Maksimov-Dmitry/RAG_LLM_MASTER_THESIS",
             "stars": 0,
             "img": "https://avatars.githubusercontent.com/u/61335724?s=40&v=4",
@@ -1136,7 +1171,7 @@
         },
         {
             "name": "Marker-Inc-Korea/AutoRAG",
-            "stars": 1365,
+            "stars": 1377,
             "img": "https://avatars.githubusercontent.com/u/74290595?s=40&v=4",
             "owner": "Marker-Inc-Korea",
             "repo_name": "AutoRAG"
@@ -1154,6 +1189,13 @@
             "img": "https://avatars.githubusercontent.com/u/68936353?s=40&v=4",
             "owner": "MazenTej",
             "repo_name": "SeniorDesign"
+        },
+        {
+            "name": "Michiel-DK/rag_techniques",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/68035619?s=40&v=4",
+            "owner": "Michiel-DK",
+            "repo_name": "rag_techniques"
         },
         {
             "name": "Midhun-Kanadan/Interactive-Argument-Completion-Tool",
@@ -1269,7 +1311,7 @@
         },
         {
             "name": "NVIDIA/GenerativeAIExamples",
-            "stars": 2127,
+            "stars": 2137,
             "img": "https://avatars.githubusercontent.com/u/1728152?s=40&v=4",
             "owner": "NVIDIA",
             "repo_name": "GenerativeAIExamples"
@@ -1297,14 +1339,14 @@
         },
         {
             "name": "NirDiamant/Controllable-RAG-Agent",
-            "stars": 388,
+            "stars": 410,
             "img": "https://avatars.githubusercontent.com/u/28316913?s=40&v=4",
             "owner": "NirDiamant",
             "repo_name": "Controllable-RAG-Agent"
         },
         {
             "name": "NirDiamant/RAG_Techniques",
-            "stars": 5852,
+            "stars": 6098,
             "img": "https://avatars.githubusercontent.com/u/28316913?s=40&v=4",
             "owner": "NirDiamant",
             "repo_name": "RAG_Techniques"
@@ -1360,7 +1402,7 @@
         },
         {
             "name": "PacktPublishing/Building-Data-Driven-Applications-with-LlamaIndex",
-            "stars": 44,
+            "stars": 45,
             "img": "https://avatars.githubusercontent.com/u/10974906?s=40&v=4",
             "owner": "PacktPublishing",
             "repo_name": "Building-Data-Driven-Applications-with-LlamaIndex"
@@ -1465,14 +1507,14 @@
         },
         {
             "name": "QuivrHQ/quivr",
-            "stars": 35910,
+            "stars": 35964,
             "img": "https://avatars.githubusercontent.com/u/159330290?s=40&v=4",
             "owner": "QuivrHQ",
             "repo_name": "quivr"
         },
         {
             "name": "RamiAwar/dataline",
-            "stars": 740,
+            "stars": 743,
             "img": "https://avatars.githubusercontent.com/u/8523191?s=40&v=4",
             "owner": "RamiAwar",
             "repo_name": "dataline"
@@ -1525,6 +1567,13 @@
             "img": "https://avatars.githubusercontent.com/u/29958932?s=40&v=4",
             "owner": "RohinMahesh",
             "repo_name": "kant_rag"
+        },
+        {
+            "name": "Roman210302/KVADR_RAG",
+            "stars": 4,
+            "img": "https://avatars.githubusercontent.com/u/61327642?s=40&v=4",
+            "owner": "Roman210302",
+            "repo_name": "KVADR_RAG"
         },
         {
             "name": "Roseco-crs/RAG_Retrieval_Augmented_Generation",
@@ -1605,7 +1654,7 @@
         },
         {
             "name": "SkatAI/workshop_rag",
-            "stars": 5,
+            "stars": 6,
             "img": "https://avatars.githubusercontent.com/u/132282617?s=40&v=4",
             "owner": "SkatAI",
             "repo_name": "workshop_rag"
@@ -1646,6 +1695,13 @@
             "repo_name": "llm_eval"
         },
         {
+            "name": "SudeepMungara/AI-Scheduling-Agent",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/93944873?s=40&v=4",
+            "owner": "SudeepMungara",
+            "repo_name": "AI-Scheduling-Agent"
+        },
+        {
             "name": "SuryaKalvakolu/RAGFINAL",
             "stars": 0,
             "img": "https://avatars.githubusercontent.com/u/106411605?s=40&v=4",
@@ -1661,7 +1717,7 @@
         },
         {
             "name": "SylphAI-Inc/AdalFlow",
-            "stars": 1281,
+            "stars": 1318,
             "img": "https://avatars.githubusercontent.com/u/109630329?s=40&v=4",
             "owner": "SylphAI-Inc",
             "repo_name": "AdalFlow"
@@ -1773,7 +1829,7 @@
         },
         {
             "name": "VectorInstitute/rag_bootcamp",
-            "stars": 11,
+            "stars": 12,
             "img": "https://avatars.githubusercontent.com/u/40637123?s=40&v=4",
             "owner": "VectorInstitute",
             "repo_name": "rag_bootcamp"
@@ -1815,7 +1871,7 @@
         },
         {
             "name": "XMUDM/DQABench",
-            "stars": 26,
+            "stars": 29,
             "img": "https://avatars.githubusercontent.com/u/44944055?s=40&v=4",
             "owner": "XMUDM",
             "repo_name": "DQABench"
@@ -1906,7 +1962,7 @@
         },
         {
             "name": "abhinav-kimothi/A-Simple-Guide-to-RAG",
-            "stars": 88,
+            "stars": 94,
             "img": "https://avatars.githubusercontent.com/u/118165775?s=40&v=4",
             "owner": "abhinav-kimothi",
             "repo_name": "A-Simple-Guide-to-RAG"
@@ -2087,6 +2143,13 @@
             "repo_name": "llm-software-responsibility-extraction"
         },
         {
+            "name": "ambiyad/ambiyad",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/160027454?s=40&v=4",
+            "owner": "ambiyad",
+            "repo_name": "ambiyad"
+        },
+        {
             "name": "amilcar-cs/MedInforma",
             "stars": 1,
             "img": "https://avatars.githubusercontent.com/u/172880125?s=40&v=4",
@@ -2255,6 +2318,13 @@
             "repo_name": "GenAIComps"
         },
         {
+            "name": "asuracoder91/assistants-gpt",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/91269684?s=40&v=4",
+            "owner": "asuracoder91",
+            "repo_name": "assistants-gpt"
+        },
+        {
             "name": "aswathsr101/Rag_based_langgraph_agents",
             "stars": 0,
             "img": "https://avatars.githubusercontent.com/u/22993782?s=40&v=4",
@@ -2263,7 +2333,7 @@
         },
         {
             "name": "athina-ai/athina-evals",
-            "stars": 193,
+            "stars": 194,
             "img": "https://avatars.githubusercontent.com/u/139258696?s=40&v=4",
             "owner": "athina-ai",
             "repo_name": "athina-evals"
@@ -2305,7 +2375,7 @@
         },
         {
             "name": "aws-samples/amazon-bedrock-samples",
-            "stars": 473,
+            "stars": 478,
             "img": "https://avatars.githubusercontent.com/u/8931462?s=40&v=4",
             "owner": "aws-samples",
             "repo_name": "amazon-bedrock-samples"
@@ -2500,6 +2570,13 @@
             "repo_name": "UCU_ML_Course"
         },
         {
+            "name": "bosun-ai/swiftide-tutorial",
+            "stars": 1,
+            "img": "https://avatars.githubusercontent.com/u/128094732?s=40&v=4",
+            "owner": "bosun-ai",
+            "repo_name": "swiftide-tutorial"
+        },
+        {
             "name": "brunopistone/llm-evaluation-ragas-api-gateway",
             "stars": 1,
             "img": "https://avatars.githubusercontent.com/u/10196125?s=40&v=4",
@@ -2549,13 +2626,6 @@
             "repo_name": "cryptonews-ml-pipeline"
         },
         {
-            "name": "cfiestas6/multi-agent-autogen",
-            "stars": 0,
-            "img": "https://avatars.githubusercontent.com/u/69156596?s=40&v=4",
-            "owner": "cfiestas6",
-            "repo_name": "multi-agent-autogen"
-        },
-        {
             "name": "channy33/HR_RAG_system",
             "stars": 0,
             "img": "https://avatars.githubusercontent.com/u/110794099?s=40&v=4",
@@ -2582,13 +2652,6 @@
             "img": "https://avatars.githubusercontent.com/u/87516929?s=40&v=4",
             "owner": "cintiaching",
             "repo_name": "in-context-chatbot"
-        },
-        {
-            "name": "claymccullough/experiments",
-            "stars": 0,
-            "img": "https://avatars.githubusercontent.com/u/8537966?s=40&v=4",
-            "owner": "claymccullough",
-            "repo_name": "experiments"
         },
         {
             "name": "clem-corp/Quivr",
@@ -2627,7 +2690,7 @@
         },
         {
             "name": "confident-ai/deepeval",
-            "stars": 2957,
+            "stars": 2981,
             "img": "https://avatars.githubusercontent.com/u/130858411?s=40&v=4",
             "owner": "confident-ai",
             "repo_name": "deepeval"
@@ -2746,7 +2809,7 @@
         },
         {
             "name": "decodingml/llm-twin-course",
-            "stars": 2407,
+            "stars": 2434,
             "img": "https://avatars.githubusercontent.com/u/153360176?s=40&v=4",
             "owner": "decodingml",
             "repo_name": "llm-twin-course"
@@ -2760,7 +2823,7 @@
         },
         {
             "name": "deepset-ai/haystack-core-integrations",
-            "stars": 101,
+            "stars": 104,
             "img": "https://avatars.githubusercontent.com/u/51827949?s=40&v=4",
             "owner": "deepset-ai",
             "repo_name": "haystack-core-integrations"
@@ -2871,6 +2934,13 @@
             "repo_name": "langchain"
         },
         {
+            "name": "dorumugs/llm_code",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/8895609?s=40&v=4",
+            "owner": "dorumugs",
+            "repo_name": "llm_code"
+        },
+        {
             "name": "douglarek/ai-notebook",
             "stars": 0,
             "img": "https://avatars.githubusercontent.com/u/1488134?s=40&v=4",
@@ -2885,11 +2955,11 @@
             "repo_name": "RAG"
         },
         {
-            "name": "drumalv/tfm",
+            "name": "drumalv/RAG-spanish-law",
             "stars": 0,
             "img": "https://avatars.githubusercontent.com/u/43895121?s=40&v=4",
             "owner": "drumalv",
-            "repo_name": "tfm"
+            "repo_name": "RAG-spanish-law"
         },
         {
             "name": "dsdgithub/langchain",
@@ -3019,7 +3089,7 @@
         },
         {
             "name": "explodinggradients/ragas",
-            "stars": 6545,
+            "stars": 6573,
             "img": "https://avatars.githubusercontent.com/u/122604797?s=40&v=4",
             "owner": "explodinggradients",
             "repo_name": "ragas"
@@ -3047,7 +3117,7 @@
         },
         {
             "name": "fastrepl/canary",
-            "stars": 36,
+            "stars": 39,
             "img": "https://avatars.githubusercontent.com/u/142983232?s=40&v=4",
             "owner": "fastrepl",
             "repo_name": "canary"
@@ -3152,7 +3222,7 @@
         },
         {
             "name": "fusion-jena/automatic-KG-creation-with-LLM",
-            "stars": 109,
+            "stars": 110,
             "img": "https://avatars.githubusercontent.com/u/18527053?s=40&v=4",
             "owner": "fusion-jena",
             "repo_name": "automatic-KG-creation-with-LLM"
@@ -3163,6 +3233,13 @@
             "img": "https://avatars.githubusercontent.com/u/72029219?s=40&v=4",
             "owner": "ganchun1130",
             "repo_name": "Boosting-RAG-in-Education"
+        },
+        {
+            "name": "garvk/social-media-with-aggrag",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/20950585?s=40&v=4",
+            "owner": "garvk",
+            "repo_name": "social-media-with-aggrag"
         },
         {
             "name": "gelifatsy/PrecisionRAG-AutomationSuite",
@@ -3194,7 +3271,7 @@
         },
         {
             "name": "getzep/graphiti",
-            "stars": 527,
+            "stars": 572,
             "img": "https://avatars.githubusercontent.com/u/132832125?s=40&v=4",
             "owner": "getzep",
             "repo_name": "graphiti"
@@ -3208,7 +3285,7 @@
         },
         {
             "name": "gkamradt/langchain-tutorials",
-            "stars": 6642,
+            "stars": 6647,
             "img": "https://avatars.githubusercontent.com/u/9809213?s=40&v=4",
             "owner": "gkamradt",
             "repo_name": "langchain-tutorials"
@@ -3310,6 +3387,20 @@
             "img": "https://avatars.githubusercontent.com/u/76821598?s=40&v=4",
             "owner": "hillaryke",
             "repo_name": "rag-optimization-cnn-dailymail"
+        },
+        {
+            "name": "hironow/wandbot",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/1401816?s=40&v=4",
+            "owner": "hironow",
+            "repo_name": "wandbot"
+        },
+        {
+            "name": "hjw1112/python_GPT_challenge",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/127692906?s=40&v=4",
+            "owner": "hjw1112",
+            "repo_name": "python_GPT_challenge"
         },
         {
             "name": "hk-kiran/ProfessorBot",
@@ -3480,6 +3571,13 @@
             "repo_name": "rag_eval_framework_comparisons"
         },
         {
+            "name": "jamesakanoa/LogistAI",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/125221460?s=40&v=4",
+            "owner": "jamesakanoa",
+            "repo_name": "LogistAI"
+        },
+        {
             "name": "jamesdunwoody/ragas_exploration",
             "stars": 0,
             "img": "https://avatars.githubusercontent.com/u/73263401?s=40&v=4",
@@ -3492,6 +3590,13 @@
             "img": "https://avatars.githubusercontent.com/u/43743156?s=40&v=4",
             "owner": "janaab11",
             "repo_name": "dense-rags"
+        },
+        {
+            "name": "javaidiqbal11/RAG-State-of-the-Art-Approaches",
+            "stars": 1,
+            "img": "https://avatars.githubusercontent.com/u/30682562?s=40&v=4",
+            "owner": "javaidiqbal11",
+            "repo_name": "RAG-State-of-the-Art-Approaches"
         },
         {
             "name": "javaidiqbal11/fast-rag-llm-langcahin",
@@ -3593,7 +3698,7 @@
         },
         {
             "name": "johnsonhk88/AI-Bank-Statement-Document-Automation-By-LLM-And-Personal-Finanical-Analysis-Prediction",
-            "stars": 2,
+            "stars": 3,
             "img": "https://avatars.githubusercontent.com/u/5248533?s=40&v=4",
             "owner": "johnsonhk88",
             "repo_name": "AI-Bank-Statement-Document-Automation-By-LLM-And-Personal-Finanical-Analysis-Prediction"
@@ -3866,7 +3971,7 @@
         },
         {
             "name": "lumina-ai-inc/benchmark",
-            "stars": 33,
+            "stars": 34,
             "img": "https://avatars.githubusercontent.com/u/133187075?s=40&v=4",
             "owner": "lumina-ai-inc",
             "repo_name": "benchmark"
@@ -3978,14 +4083,14 @@
         },
         {
             "name": "michelin/LLMInspector",
-            "stars": 4,
+            "stars": 5,
             "img": "https://avatars.githubusercontent.com/u/7904414?s=40&v=4",
             "owner": "michelin",
             "repo_name": "LLMInspector"
         },
         {
             "name": "microsoft/call-center-ai",
-            "stars": 178,
+            "stars": 182,
             "img": "https://avatars.githubusercontent.com/u/6154722?s=40&v=4",
             "owner": "microsoft",
             "repo_name": "call-center-ai"
@@ -4082,6 +4187,13 @@
             "repo_name": "workshops"
         },
         {
+            "name": "motiong-io/RAG-Eval",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/139441364?s=40&v=4",
+            "owner": "motiong-io",
+            "repo_name": "RAG-Eval"
+        },
+        {
             "name": "mozilla-ai/lm-buddy",
             "stars": 62,
             "img": "https://avatars.githubusercontent.com/u/129804596?s=40&v=4",
@@ -4101,6 +4213,13 @@
             "img": "https://avatars.githubusercontent.com/u/38316850?s=40&v=4",
             "owner": "muhammadBadawy",
             "repo_name": "task"
+        },
+        {
+            "name": "mustavikhan05/chatbot-physics",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/28396947?s=40&v=4",
+            "owner": "mustavikhan05",
+            "repo_name": "chatbot-physics"
         },
         {
             "name": "natybkl/RAG-Chatbot-LangChain",
@@ -4223,17 +4342,24 @@
         },
         {
             "name": "opea-project/GenAIComps",
-            "stars": 42,
+            "stars": 44,
             "img": "https://avatars.githubusercontent.com/u/165422283?s=40&v=4",
             "owner": "opea-project",
             "repo_name": "GenAIComps"
         },
         {
             "name": "opea-project/GenAIEval",
-            "stars": 17,
+            "stars": 18,
             "img": "https://avatars.githubusercontent.com/u/165422283?s=40&v=4",
             "owner": "opea-project",
             "repo_name": "GenAIEval"
+        },
+        {
+            "name": "outan/local_rag",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/1635306?s=40&v=4",
+            "owner": "outan",
+            "repo_name": "local_rag"
         },
         {
             "name": "padalac/rag2",
@@ -4311,6 +4437,13 @@
             "img": "https://avatars.githubusercontent.com/u/410782?s=40&v=4",
             "owner": "pickettd",
             "repo_name": "sweet-230-htw-hackathon-2024"
+        },
+        {
+            "name": "polux0/knowledge-graph-llama-index",
+            "stars": 4,
+            "img": "https://avatars.githubusercontent.com/u/46107730?s=40&v=4",
+            "owner": "polux0",
+            "repo_name": "knowledge-graph-llama-index"
         },
         {
             "name": "potoju-divya-ashok-kumar/chat_bot_RAG_F1",
@@ -4447,7 +4580,7 @@
         },
         {
             "name": "redis-developer/redis-ai-resources",
-            "stars": 145,
+            "stars": 147,
             "img": "https://avatars.githubusercontent.com/u/69006381?s=40&v=4",
             "owner": "redis-developer",
             "repo_name": "redis-ai-resources"
@@ -4461,7 +4594,7 @@
         },
         {
             "name": "relari-ai/continuous-eval",
-            "stars": 430,
+            "stars": 432,
             "img": "https://avatars.githubusercontent.com/u/135984758?s=40&v=4",
             "owner": "relari-ai",
             "repo_name": "continuous-eval"
@@ -4538,7 +4671,7 @@
         },
         {
             "name": "rootflo/flo-ai",
-            "stars": 28,
+            "stars": 29,
             "img": "https://avatars.githubusercontent.com/u/91535658?s=40&v=4",
             "owner": "rootflo",
             "repo_name": "flo-ai"
@@ -5000,7 +5133,7 @@
         },
         {
             "name": "teddylee777/langchain-kr",
-            "stars": 988,
+            "stars": 995,
             "img": "https://avatars.githubusercontent.com/u/10074379?s=40&v=4",
             "owner": "teddylee777",
             "repo_name": "langchain-kr"
@@ -5048,6 +5181,13 @@
             "repo_name": "experiment"
         },
         {
+            "name": "tkosht/langx",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/36367491?s=40&v=4",
+            "owner": "tkosht",
+            "repo_name": "langx"
+        },
+        {
             "name": "tmq077/GA_Capstone_Project",
             "stars": 0,
             "img": "https://avatars.githubusercontent.com/u/142147568?s=40&v=4",
@@ -5077,7 +5217,7 @@
         },
         {
             "name": "topoteretes/cognee",
-            "stars": 803,
+            "stars": 807,
             "img": "https://avatars.githubusercontent.com/u/125468716?s=40&v=4",
             "owner": "topoteretes",
             "repo_name": "cognee"
@@ -5112,7 +5252,7 @@
         },
         {
             "name": "turbo-llm/turbo-alignment",
-            "stars": 59,
+            "stars": 60,
             "img": "https://avatars.githubusercontent.com/u/175729991?s=40&v=4",
             "owner": "turbo-llm",
             "repo_name": "turbo-alignment"
@@ -5182,7 +5322,7 @@
         },
         {
             "name": "verbis-ai/verbis",
-            "stars": 75,
+            "stars": 77,
             "img": "https://avatars.githubusercontent.com/u/169883996?s=40&v=4",
             "owner": "verbis-ai",
             "repo_name": "verbis"
@@ -5259,10 +5399,17 @@
         },
         {
             "name": "wandb/wandbot",
-            "stars": 235,
+            "stars": 236,
             "img": "https://avatars.githubusercontent.com/u/26401354?s=40&v=4",
             "owner": "wandb",
             "repo_name": "wandbot"
+        },
+        {
+            "name": "weige15/rag_evaluation_new",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/56604491?s=40&v=4",
+            "owner": "weige15",
+            "repo_name": "rag_evaluation_new"
         },
         {
             "name": "whymath/AIM-AI-Engineering",
@@ -5298,6 +5445,20 @@
             "img": "https://avatars.githubusercontent.com/u/19212471?s=40&v=4",
             "owner": "wwetzel",
             "repo_name": "maven_midterm"
+        },
+        {
+            "name": "xmriz/chatbot-ojk",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/88937716?s=40&v=4",
+            "owner": "xmriz",
+            "repo_name": "chatbot-ojk"
+        },
+        {
+            "name": "xmriz/chatbot-ojk-lc",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/88937716?s=40&v=4",
+            "owner": "xmriz",
+            "repo_name": "chatbot-ojk-lc"
         },
         {
             "name": "yYorky/Langchain-Project",
@@ -5412,6 +5573,13 @@
             "repo_name": "Hoshiakari"
         },
         {
+            "name": "yvens94/Irise_Chatbot",
+            "stars": 0,
+            "img": "https://avatars.githubusercontent.com/u/68969793?s=40&v=4",
+            "owner": "yvens94",
+            "repo_name": "Irise_Chatbot"
+        },
+        {
             "name": "zc277584121/evalparrot",
             "stars": 0,
             "img": "https://avatars.githubusercontent.com/u/17022025?s=40&v=4",
@@ -5427,7 +5595,7 @@
         },
         {
             "name": "zongzi531/modular-rag",
-            "stars": 0,
+            "stars": 1,
             "img": "https://avatars.githubusercontent.com/u/22429236?s=40&v=4",
             "owner": "zongzi531",
             "repo_name": "modular-rag"
@@ -5454,15 +5622,15 @@
             "repo_name": "nlg-evaluation-azureml"
         }
     ],
-    "total_dependents_number": 779,
-    "public_dependents_number": 779,
-    "private_dependents_number": -779,
-    "public_dependents_stars": 5,
+    "total_dependents_number": 803,
+    "public_dependents_number": 803,
+    "private_dependents_number": -803,
+    "public_dependents_stars": 3077,
     "badges": {
-        "total_doc_url": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by&message=779&color=informational&logo=slickpic)](https://github.com/nvuillam/github-dependents-info)",
-        "total": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by&message=779&color=informational&logo=slickpic)](https://github.com/explodinggradients/ragas/network/dependents)",
-        "public": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(public)&message=779&color=informational&logo=slickpic)](https://github.com/explodinggradients/ragas/network/dependents)",
-        "private": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(private)&message=-779&color=informational&logo=slickpic)](https://github.com/explodinggradients/ragas/network/dependents)",
-        "stars": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(stars)&message=5&color=informational&logo=slickpic)](https://github.com/explodinggradients/ragas/network/dependents)"
+        "total_doc_url": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by&message=803&color=informational&logo=slickpic)](https://github.com/nvuillam/github-dependents-info)",
+        "total": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by&message=803&color=informational&logo=slickpic)](https://github.com/explodinggradients/ragas/network/dependents)",
+        "public": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(public)&message=803&color=informational&logo=slickpic)](https://github.com/explodinggradients/ragas/network/dependents)",
+        "private": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(private)&message=-803&color=informational&logo=slickpic)](https://github.com/explodinggradients/ragas/network/dependents)",
+        "stars": "[![Generated by github-dependents-info](https://img.shields.io/static/v1?label=Used%20by%20(stars)&message=3077&color=informational&logo=slickpic)](https://github.com/explodinggradients/ragas/network/dependents)"
     }
 }

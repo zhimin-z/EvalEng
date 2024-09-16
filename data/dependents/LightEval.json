@@ -1,24 +1,10 @@
 {
   "SourcegraphEndpoint": "https://sourcegraph.com",
-  "Query": "context:global /lighteval\\s+(accelerate|nanotron)|python(\\d+(\\.\\d+)?)?\\s+run_evals_accelerate\\.py|import\\s+lighteval|from\\s+lighteval(\\.\\w+)?\\s+import / case:yes select:repo count:all",
+  "Query": "context:global /lighteval\\s+(accelerate|nanotron)|python(\\d+(\\.\\d+)?)?\\s+run_evals_accelerate\\.py|import\\s+lighteval|from\\s+lighteval(\\.\\w+)*\\s+import / case:yes select:repo count:all",
   "Site": {
-    "BuildVersion": "291182_2024-09-12_5.7-5dcdaa774b88"
+    "BuildVersion": "291267_2024-09-13_5.7-c635b2287985"
   },
   "Results": [
-    {
-      "__typename": "Repository",
-      "externalURLs": [
-        {
-          "serviceType": "github",
-          "url": "https://github.com/huggingface/datatrove"
-        }
-      ],
-      "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/huggingface/datatrove\" rel=\"nofollow\"\u003egithub.com/huggingface/datatrove\u003c/a\u003e\u003c/p\u003e\n"
-      },
-      "name": "github.com/huggingface/datatrove",
-      "url": "/github.com/huggingface/datatrove"
-    },
     {
       "__typename": "Repository",
       "externalURLs": [
@@ -52,6 +38,20 @@
       "externalURLs": [
         {
           "serviceType": "github",
+          "url": "https://github.com/huggingface/lighteval"
+        }
+      ],
+      "label": {
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/huggingface/lighteval\" rel=\"nofollow\"\u003egithub.com/huggingface/lighteval\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "name": "github.com/huggingface/lighteval",
+      "url": "/github.com/huggingface/lighteval"
+    },
+    {
+      "__typename": "Repository",
+      "externalURLs": [
+        {
+          "serviceType": "github",
           "url": "https://github.com/mlabonne/llm-autoeval"
         }
       ],
@@ -66,14 +66,14 @@
       "externalURLs": [
         {
           "serviceType": "github",
-          "url": "https://github.com/huggingface/lighteval"
+          "url": "https://github.com/huggingface/datatrove"
         }
       ],
       "label": {
-        "html": "\u003cp\u003e\u003ca href=\"/github.com/huggingface/lighteval\" rel=\"nofollow\"\u003egithub.com/huggingface/lighteval\u003c/a\u003e\u003c/p\u003e\n"
+        "html": "\u003cp\u003e\u003ca href=\"/github.com/huggingface/datatrove\" rel=\"nofollow\"\u003egithub.com/huggingface/datatrove\u003c/a\u003e\u003c/p\u003e\n"
       },
-      "name": "github.com/huggingface/lighteval",
-      "url": "/github.com/huggingface/lighteval"
+      "name": "github.com/huggingface/datatrove",
+      "url": "/github.com/huggingface/datatrove"
     }
   ],
   "LimitHit": false,
@@ -81,7 +81,7 @@
   "Missing": [],
   "Timedout": [],
   "ResultCount": 5,
-  "ElapsedMilliseconds": 6875,
+  "ElapsedMilliseconds": 20114,
   "Alert": {
     "Title": "",
     "Description": "",
