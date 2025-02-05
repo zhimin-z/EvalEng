@@ -23,7 +23,7 @@ src search -json 'context:global /scripts\/(generate_test_cases|merge_test_cases
 src search -json 'context:global "crfm-helm" case:yes select:repo count:all' >"${path_repository}/HELM.json"
 src search -json 'context:global "inspect-ai" case:yes select:repo count:all' >"${path_repository}/Inspect.json"
 src search -json 'context:global /import\s+intercode|from\s+intercode(\.\w+)*\s+import / case:yes select:repo count:all' >"${path_repository}/InterCode.json"
-src search -json 'context:global "lm_eval" case:yes select:repo count:all' >"${path_repository}/Language Model Evaluation Harness.json"
+src search -json 'context:global /lm_eval|lm-eval/ case:yes select:repo count:all' >"${path_repository}/Language Model Evaluation Harness.json"
 src search -json 'context:global /lighteval\s+(accelerate|nanotron)|python(\d+(\.\d+)?)?\s+run_evals_accelerate\.py|import\s+lighteval|from\s+lighteval(\.\w+)*\s+import / case:yes select:repo count:all' >"${path_repository}/LightEval.json"
 src search -json 'context:global "llm-autoeval" case:yes select:repo count:all' >"${path_repository}/LLM AutoEval.json"
 src search -json 'context:global /python(\d+(\.\d+)?)?\s+(run_benchmark|llm_correctness)\.py|import\s+llmperf|from\s+llmperf(\.\w+)*\s+import / case:yes select:repo count:all' >"${path_repository}/LLMPerf.json"
