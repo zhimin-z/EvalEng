@@ -5243,6 +5243,29 @@
             ]
         }
     },
+    "openai__simple-evals": {
+        "unused_code": [
+            "https://github.com/openai/simple-evals/blob/main/common.py#L346: \u001b[91mDC02\u001b[0m Function `\u001b[1mmake_report_from_example_htmls\u001b[0m` is never used",
+            "https://github.com/openai/simple-evals/blob/main/drop_eval.py#L201: \u001b[91mDC02\u001b[0m Function `\u001b[1manswer_json_to_string\u001b[0m` is never used",
+            "https://github.com/openai/simple-evals/blob/main/mgsm_eval.py#L121: \u001b[91mDC02\u001b[0m Function `\u001b[1mget_all_examples\u001b[0m` is never used"
+        ],
+        "cli_arguments": {
+            "argparse": [
+                "https://github.com/openai/simple-evals/blob/main/healthbench_eval.py#L523: argparse.add_argument(\"--run_mode\")",
+                "https://github.com/openai/simple-evals/blob/main/healthbench_eval.py#L527: argparse.add_argument(\"--examples\")",
+                "https://github.com/openai/simple-evals/blob/main/healthbench_eval.py#L529: argparse.add_argument(\"--n-threads\")",
+                "https://github.com/openai/simple-evals/blob/main/simple_evals.py#L34: argparse.add_argument(\"--list-models\")",
+                "https://github.com/openai/simple-evals/blob/main/simple_evals.py#L37: argparse.add_argument(\"--model\")",
+                "https://github.com/openai/simple-evals/blob/main/simple_evals.py#L42: argparse.add_argument(\"--eval\")",
+                "https://github.com/openai/simple-evals/blob/main/simple_evals.py#L47: argparse.add_argument(\"--n-repeats\")",
+                "https://github.com/openai/simple-evals/blob/main/simple_evals.py#L53: argparse.add_argument(\"--n-threads\")",
+                "https://github.com/openai/simple-evals/blob/main/simple_evals.py#L58: argparse.add_argument(\"--debug\")",
+                "https://github.com/openai/simple-evals/blob/main/simple_evals.py#L60: argparse.add_argument(\"--examples\")"
+            ],
+            "click": [],
+            "fire": []
+        }
+    },
     "OpenLMLab__GAOKAO-Bench": {
         "unused_code": [
             "https://github.com/OpenLMLab/GAOKAO-Bench/blob/main/Bench/bench_function.py#L16: \u001b[91mDC02\u001b[0m Function `\u001b[1mget_api_key\u001b[0m` is never used",
