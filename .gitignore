@@ -2,6 +2,6 @@
 .DS_Store
 *.venv
 *.lock
-key
-src
+package*.json
 repos/
+node_modules/
