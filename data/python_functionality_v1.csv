@@ -97,7 +97,6 @@ api,https://github.com/beir-cellar/beir/blob/6ef8c9097ebfb203ad360bd64e0cfb93e64
 api,https://github.com/beir-cellar/beir/blob/6ef8c9097ebfb203ad360bd64e0cfb93e64f4a44/beir/util.py#L158: [91mDC02[0m Function `[1msave_results[0m` is never used
 cli,https://github.com/bigcode-project/bigcode-evaluation-harness/blob/6116c6a9a5672c69bd624373cfbc8938b7acc249/main.py#L413: __main__
 cli,https://github.com/bigcode-project/bigcode-evaluation-harness/blob/6116c6a9a5672c69bd624373cfbc8938b7acc249/bigcode_eval/tasks/humanevalpack_openai.py#L190: __main__
-cli,https://github.com/bigcode-project/bigcode-evaluation-harness/blob/6116c6a9a5672c69bd624373cfbc8938b7acc249/bigcode_eval/tasks/instruct_wizard_humaneval.py#L83: __main__
 cli,https://github.com/bigcode-project/bigcode-evaluation-harness/blob/6116c6a9a5672c69bd624373cfbc8938b7acc249/bigcode_eval/tasks/custom_metrics/codexglue_code_to_text_bleu.py#L227: __main__
 cli,https://github.com/bigcode-project/bigcode-evaluation-harness/blob/6116c6a9a5672c69bd624373cfbc8938b7acc249/bigcode_eval/tasks/custom_metrics/multiple_metrics/eval_cpp.py#L40: __main__
 cli,https://github.com/bigcode-project/bigcode-evaluation-harness/blob/6116c6a9a5672c69bd624373cfbc8938b7acc249/bigcode_eval/tasks/custom_metrics/multiple_metrics/eval_cs.py#L75: __main__
@@ -2183,7 +2182,6 @@ cli,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015
 cli,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/megabench/evaluator.py#L406: __main__
 cli,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/megabench/breakdown/derive_breakdown_results.py#L135: __main__
 cli,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/megabench/metrics/metric_type.py#L202: __main__
-cli,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/megabench/metrics/scoring/program_judge.py#L59: __main__
 cli,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/mmsearch/utils/image_utils.py#L201: __main__
 cli,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/multidocvqa/utils.py#L114: __main__
 cli,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/ocrbench_v2/IoUscore_metric.py#L74: __main__
@@ -3501,7 +3499,6 @@ cli,https://github.com/open-compass/VLMEvalKit/blob/50c954aad1d92dab9bf5d23f6257
 cli,https://github.com/open-compass/VLMEvalKit/blob/50c954aad1d92dab9bf5d23f62576c994b4a675f/vlmeval/dataset/utils/ccocr_evaluator/ocr_evaluator.py#L105: __main__
 cli,https://github.com/open-compass/VLMEvalKit/blob/50c954aad1d92dab9bf5d23f62576c994b4a675f/vlmeval/dataset/utils/megabench/evaluator.py#L384: __main__
 cli,https://github.com/open-compass/VLMEvalKit/blob/50c954aad1d92dab9bf5d23f62576c994b4a675f/vlmeval/dataset/utils/megabench/metric_type.py#L256: __main__
-cli,https://github.com/open-compass/VLMEvalKit/blob/50c954aad1d92dab9bf5d23f62576c994b4a675f/vlmeval/dataset/utils/megabench/scoring/program_judge.py#L89: __main__
 cli,https://github.com/open-compass/VLMEvalKit/blob/50c954aad1d92dab9bf5d23f62576c994b4a675f/vlmeval/dataset/utils/vgrpbench/score.py#L437: __main__
 cli,https://github.com/open-compass/VLMEvalKit/blob/50c954aad1d92dab9bf5d23f62576c994b4a675f/vlmeval/vlm/mmalaya.py#L334: __main__
 cli,https://github.com/open-compass/VLMEvalKit/blob/50c954aad1d92dab9bf5d23f62576c994b4a675f/vlmeval/vlm/ola/ola/conversation.py#L136: __main__
