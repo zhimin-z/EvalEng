@@ -2,12 +2,17 @@ github-dependents-info
 gitpython
 ineqpy
 keyboard
+hf_xet
 matplotlib
 nbformat
 networkx
 pandas
 plotly
 PyGithub
+scikit-learn
+seaborn
 selenium
 seleniumbase
+sentence-transformers
 spacy
+umap-learn
