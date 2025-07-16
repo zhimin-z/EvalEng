@@ -16,3 +16,4 @@ seleniumbase
 sentence-transformers
 spacy
 umap-learn
+vulture
