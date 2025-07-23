@@ -3,6 +3,7 @@ gitpython
 ineqpy
 keyboard
 hf_xet
+kaleido
 matplotlib
 nbformat
 networkx

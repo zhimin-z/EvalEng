@@ -20,13 +20,13 @@ cli,https://github.com/allenai/reward-bench/blob/09eb3b5dd9d2157adc854c693a6a381
 cli,https://github.com/allenai/reward-bench/blob/09eb3b5dd9d2157adc854c693a6a38105a8b3c87/analysis/plot_per_model_dist.py#L202,,download scores
 cli,https://github.com/allenai/reward-bench/blob/09eb3b5dd9d2157adc854c693a6a38105a8b3c87/analysis/plot_per_subset_dist.py#L179,,generate distribution plots
 cli,https://github.com/allenai/reward-bench/blob/09eb3b5dd9d2157adc854c693a6a38105a8b3c87/analysis/run_ensemble_offline.py#L49,,aggregate ensemble scores
-cli,https://github.com/allenai/reward-bench/blob/09eb3b5dd9d2157adc854c693a6a38105a8b3c87/rewardbench/rewardbench.py#L700,,unimplemented function
-cli,https://github.com/allenai/reward-bench/blob/09eb3b5dd9d2157adc854c693a6a38105a8b3c87/scripts/run_bon.py#L323,,unimplemented function
+cli,https://github.com/allenai/reward-bench/blob/09eb3b5dd9d2157adc854c693a6a38105a8b3c87/rewardbench/rewardbench.py#L700,,evaluate rewards
+cli,https://github.com/allenai/reward-bench/blob/09eb3b5dd9d2157adc854c693a6a38105a8b3c87/scripts/run_bon.py#L323,,evaluate rankings
 cli,https://github.com/allenai/reward-bench/blob/09eb3b5dd9d2157adc854c693a6a38105a8b3c87/scripts/run_dpo.py#L330,,evaluate reward model
 cli,https://github.com/allenai/reward-bench/blob/09eb3b5dd9d2157adc854c693a6a38105a8b3c87/scripts/run_generative.py#L453,,run reward model
 cli,https://github.com/allenai/reward-bench/blob/09eb3b5dd9d2157adc854c693a6a38105a8b3c87/scripts/run_generative_v2.py#L544,,run reward model
 cli,https://github.com/allenai/reward-bench/blob/09eb3b5dd9d2157adc854c693a6a38105a8b3c87/scripts/run_rm.py#L400,,evaluate reward model
-cli,https://github.com/allenai/reward-bench/blob/09eb3b5dd9d2157adc854c693a6a38105a8b3c87/scripts/run_v2.py#L401,,unimplemented function
+cli,https://github.com/allenai/reward-bench/blob/09eb3b5dd9d2157adc854c693a6a38105a8b3c87/scripts/run_v2.py#L401,,evaluate rewards
 cli,https://github.com/allenai/reward-bench/blob/09eb3b5dd9d2157adc854c693a6a38105a8b3c87/scripts/submit_eval_jobs_v2.py#L181,,generate beaker experiment
 cli,https://github.com/allenai/reward-bench/blob/09eb3b5dd9d2157adc854c693a6a38105a8b3c87/scripts/submit_generative_jobs.py#L171,,generate beaker experiment
 cli,https://github.com/amazon-science/RAGChecker/blob/6091f08c00e676e87a970f2aeb4a23a484746348/data/benchmark/process_bioasq.py#L60,,extract bioasq queries
@@ -39,7 +39,7 @@ cli,https://github.com/amazon-science/RAGChecker/blob/6091f08c00e676e87a970f2aeb
 cli,https://github.com/amazon-science/RAGChecker/blob/6091f08c00e676e87a970f2aeb4a23a484746348/rag_baselines/chunking.py#L28,,split text
 cli,https://github.com/amazon-science/RAGChecker/blob/6091f08c00e676e87a970f2aeb4a23a484746348/rag_baselines/embedding.py#L300,,generate text embeddings
 cli,https://github.com/amazon-science/RAGChecker/blob/6091f08c00e676e87a970f2aeb4a23a484746348/rag_baselines/format_bedrock_corpus.py#L23,,convert file format
-cli,https://github.com/amazon-science/RAGChecker/blob/6091f08c00e676e87a970f2aeb4a23a484746348/rag_baselines/generation.py#L188,,unimplemented function
+cli,https://github.com/amazon-science/RAGChecker/blob/6091f08c00e676e87a970f2aeb4a23a484746348/rag_baselines/generation.py#L188,,generate answers
 cli,https://github.com/amazon-science/RAGChecker/blob/6091f08c00e676e87a970f2aeb4a23a484746348/rag_baselines/indexing.py#L68,,build search index
 cli,https://github.com/amazon-science/RAGChecker/blob/6091f08c00e676e87a970f2aeb4a23a484746348/rag_baselines/retrieval.py#L52,,retrieve query results
 cli,https://github.com/amazon-science/RAGChecker/blob/6091f08c00e676e87a970f2aeb4a23a484746348/scripts/synthesize_benchmark.py#L19,,generate testset
@@ -203,7 +203,7 @@ cli,https://github.com/Cloud-CV/EvalAI/blob/8d1444f233a84f57b4a6b3db2bc7503da4cc
 cli,https://github.com/Cloud-CV/EvalAI/blob/8d1444f233a84f57b4a6b3db2bc7503da4cc7194/evalai/celery.py#L17,,configure celery
 cli,https://github.com/Cloud-CV/EvalAI/blob/8d1444f233a84f57b4a6b3db2bc7503da4cc7194/scripts/monitoring/auto_cancel_submissions.py#L64,,cancel stale submissions
 cli,https://github.com/Cloud-CV/EvalAI/blob/8d1444f233a84f57b4a6b3db2bc7503da4cc7194/scripts/monitoring/auto_scale_ec2_workers.py#L142,,manage ec2 instances
-cli,https://github.com/Cloud-CV/EvalAI/blob/8d1444f233a84f57b4a6b3db2bc7503da4cc7194/scripts/monitoring/auto_scale_eks_nodes.py#L290,,unimplemented function
+cli,https://github.com/Cloud-CV/EvalAI/blob/8d1444f233a84f57b4a6b3db2bc7503da4cc7194/scripts/monitoring/auto_scale_eks_nodes.py#L290,,scale eks nodes
 cli,https://github.com/Cloud-CV/EvalAI/blob/8d1444f233a84f57b4a6b3db2bc7503da4cc7194/scripts/monitoring/auto_scale_workers.py#L137,,scale workers
 cli,https://github.com/Cloud-CV/EvalAI/blob/8d1444f233a84f57b4a6b3db2bc7503da4cc7194/scripts/monitoring/auto_stop_workers.py#L118,,manage challenge workers
 cli,https://github.com/Cloud-CV/EvalAI/blob/8d1444f233a84f57b4a6b3db2bc7503da4cc7194/scripts/monitoring/monitor_containers.py#L150,,check container status
@@ -1042,7 +1042,7 @@ api,https://github.com/evidentlyai/evidently/blob/609cc2afbfa28c6b37be725b9f1f61
 cli,https://github.com/evidentlyai/evidently/blob/609cc2afbfa28c6b37be725b9f1f61bd18136990/setup.py#L125,,build package
 cli,https://github.com/evidentlyai/evidently/blob/609cc2afbfa28c6b37be725b9f1f61bd18136990/src/evidently/telemetry.py#L61,,send telemetry event
 cli,https://github.com/evidentlyai/evidently/blob/609cc2afbfa28c6b37be725b9f1f61bd18136990/src/evidently/metrics/recsys.py#L226,,calculate ranking metrics
-cli,https://github.com/evidentlyai/evidently/blob/609cc2afbfa28c6b37be725b9f1f61bd18136990/src/evidently/ui/backport.py#L445,,unimplemented function
+cli,https://github.com/evidentlyai/evidently/blob/609cc2afbfa28c6b37be725b9f1f61bd18136990/src/evidently/ui/backport.py#L445,,convert metrics format
 cli,https://github.com/evidentlyai/evidently/blob/609cc2afbfa28c6b37be725b9f1f61bd18136990/src/evidently/ui/service/app.py#L76,,run webapp
 api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/api/metrics.py#L17,EvolvingLMMs-Lab__lmms-eval/bypass_agg,return fixed value
 api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/api/metrics.py#L39,EvolvingLMMs-Lab__lmms-eval/weighted_perplexity,calculate weighted perplexity
@@ -1976,8 +1976,8 @@ cli,https://github.com/facebookresearch/DomainBed/blob/b93c22a1cfc3b2428398272c1
 cli,https://github.com/facebookresearch/DomainBed/blob/b93c22a1cfc3b2428398272c1a116c8de1f4139e/domainbed/scripts/list_top_hparams.py#L108,,print hyperparameters
 cli,https://github.com/facebookresearch/DomainBed/blob/b93c22a1cfc3b2428398272c1a116c8de1f4139e/domainbed/scripts/save_images.py#L15,,save dataset images
 cli,https://github.com/facebookresearch/DomainBed/blob/b93c22a1cfc3b2428398272c1a116c8de1f4139e/domainbed/scripts/sweep.py#L138,,launch training jobs
-cli,https://github.com/facebookresearch/DomainBed/blob/b93c22a1cfc3b2428398272c1a116c8de1f4139e/domainbed/scripts/train.py#L24,,unimplemented function
-cli,https://github.com/facebookresearch/DomainBed/blob/b93c22a1cfc3b2428398272c1a116c8de1f4139e/domainbed/scripts/train_autolr.py#L24,,unimplemented function
+cli,https://github.com/facebookresearch/DomainBed/blob/b93c22a1cfc3b2428398272c1a116c8de1f4139e/domainbed/scripts/train.py#L24,,train model
+cli,https://github.com/facebookresearch/DomainBed/blob/b93c22a1cfc3b2428398272c1a116c8de1f4139e/domainbed/scripts/train_autolr.py#L24,,train model
 api,https://github.com/Farama-Foundation/Metaworld/blob/cdafedfaaa896472fb7e76e2fe103e120b67a9b6/metaworld/evaluation.py#L106,Farama-Foundation__Metaworld/metalearning_evaluation,evaluate meta-learning performance
 api,https://github.com/Farama-Foundation/Metaworld/blob/cdafedfaaa896472fb7e76e2fe103e120b67a9b6/metaworld/policies/policy.py#L72,Farama-Foundation__Metaworld/get_action,unimplemented function
 api,https://github.com/Farama-Foundation/Metaworld/blob/cdafedfaaa896472fb7e76e2fe103e120b67a9b6/metaworld/policies/sawyer_assembly_v3_policy.py#L24,Farama-Foundation__Metaworld/get_action,generate action
@@ -2272,7 +2272,7 @@ api,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36e
 api,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/utils/imports.py#L50,huggingface__lighteval/is_autogptq_available,check autogptq availability
 api,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/utils/utils.py#L142,huggingface__lighteval/flatten,flatten list
 api,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/utils/utils.py#L184,huggingface__lighteval/boolstring_to_bool,convert string format
-cli,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/tasks/extended/mix_eval/prompts.py#L194,,unimplemented function
+cli,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/tasks/extended/mix_eval/prompts.py#L194,,generate prompts
 api,https://github.com/HumanCompatibleAI/overcooked_ai/blob/739950a079cdaed5a44fcc662efc40244c205d06/src/human_aware_rl/human/data_processing_utils.py#L72,HumanCompatibleAI__overcooked_ai/extract_df_for_worker_on_layout,deprecated function
 api,https://github.com/HumanCompatibleAI/overcooked_ai/blob/739950a079cdaed5a44fcc662efc40244c205d06/src/human_aware_rl/human/process_dataframes.py#L75,HumanCompatibleAI__overcooked_ai/csv_to_df_pickle,convert file
 api,https://github.com/HumanCompatibleAI/overcooked_ai/blob/739950a079cdaed5a44fcc662efc40244c205d06/src/human_aware_rl/human/process_dataframes.py#L244,HumanCompatibleAI__overcooked_ai/filter_transitions,filter trials
@@ -2493,7 +2493,7 @@ api,https://github.com/microsoft/promptbench/blob/fcda538bd779ad11612818e0645a38
 api,https://github.com/microsoft/promptbench/blob/fcda538bd779ad11612818e0645a387a462b5c3b/promptbench/utils/visualize.py#L60,microsoft__promptbench/vis_by_grad,calculate word importance
 api,https://github.com/microsoft/promptbench/blob/fcda538bd779ad11612818e0645a387a462b5c3b/promptbench/utils/visualize.py#L100,microsoft__promptbench/vis_by_delete,calculate word importance
 cli,https://github.com/microsoft/promptbench/blob/fcda538bd779ad11612818e0645a387a462b5c3b/promptbench/metrics/squad_v2/compute_score.py#L320,,evaluate squad
-cli,https://github.com/microsoft/promptbench/blob/fcda538bd779ad11612818e0645a387a462b5c3b/promptbench/utils/defense.py#L20,,unimplemented function
+cli,https://github.com/microsoft/promptbench/blob/fcda538bd779ad11612818e0645a387a462b5c3b/promptbench/utils/defense.py#L20,,correct spelling
 api,https://github.com/mir-evaluation/mir_eval/blob/8db0b3812e2032544c1fc00d02d4256cab043f3d/mir_eval/alignment.py#L312,mir-evaluation__mir_eval/evaluate,calculate metrics
 api,https://github.com/mir-evaluation/mir_eval/blob/8db0b3812e2032544c1fc00d02d4256cab043f3d/mir_eval/beat.py#L715,mir-evaluation__mir_eval/evaluate,calculate metrics
 api,https://github.com/mir-evaluation/mir_eval/blob/8db0b3812e2032544c1fc00d02d4256cab043f3d/mir_eval/chord.py#L1524,mir-evaluation__mir_eval/evaluate,calculate metrics
@@ -2618,7 +2618,7 @@ cli,https://github.com/mlcommons/inference/blob/cc7d6d8eabc5cc60f8b2e540f25f1edd
 cli,https://github.com/mlcommons/inference/blob/cc7d6d8eabc5cc60f8b2e540f25f1edd2a9f6cd3/language/llama2-70b/main.py#L225,,run mlperf benchmark
 cli,https://github.com/mlcommons/inference/blob/cc7d6d8eabc5cc60f8b2e540f25f1edd2a9f6cd3/language/llama2-70b/processorca.py#L328,,generate dataset samples
 cli,https://github.com/mlcommons/inference/blob/cc7d6d8eabc5cc60f8b2e540f25f1edd2a9f6cd3/language/llama3.1-405b/evaluate-accuracy.py#L203,,evaluate prediction accuracy
-cli,https://github.com/mlcommons/inference/blob/cc7d6d8eabc5cc60f8b2e540f25f1edd2a9f6cd3/language/llama3.1-405b/main.py#L207,,unimplemented function
+cli,https://github.com/mlcommons/inference/blob/cc7d6d8eabc5cc60f8b2e540f25f1edd2a9f6cd3/language/llama3.1-405b/main.py#L207,,run benchmark
 cli,https://github.com/mlcommons/inference/blob/cc7d6d8eabc5cc60f8b2e540f25f1edd2a9f6cd3/language/mixtral-8x7b/evaluate-accuracy.py#L248,,evaluate model predictions
 cli,https://github.com/mlcommons/inference/blob/cc7d6d8eabc5cc60f8b2e540f25f1edd2a9f6cd3/language/mixtral-8x7b/main.py#L162,,run benchmark
 cli,https://github.com/mlcommons/inference/blob/cc7d6d8eabc5cc60f8b2e540f25f1edd2a9f6cd3/language/mixtral-8x7b/standalone_infer/hf_eval_all.py#L182,,generate model outputs
@@ -2837,7 +2837,7 @@ cli,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823
 cli,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/viz.py#L365,,display evaluation results
 cli,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/docs/download_images.py#L42,,download markdown images
 cli,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/evalscope/config.py#L278,,initialize task configuration
-cli,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/evalscope/run.py#L190,,unimplemented function
+cli,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/evalscope/run.py#L190,,run evaluation
 cli,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/evalscope/run_arena.py#L201,,execute evaluation workflow
 cli,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/evalscope/summarizer.py#L134,,generate evaluation reports
 cli,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/evalscope/app/app.py#L769,,launch evalscope dashboard
@@ -2848,9 +2848,9 @@ cli,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823
 cli,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/evalscope/backend/rag_eval/clip_benchmark/utils/webdataset_convert.py#L194,,convert dataset
 cli,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/evalscope/backend/rag_eval/utils/clip.py#L138,,encode image
 cli,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/evalscope/cli/cli.py#L28,,execute command
-cli,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/evalscope/collections/sampler.py#L127,,unimplemented function
+cli,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/evalscope/collections/sampler.py#L127,,sample data
 cli,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/evalscope/collections/schema.py#L105,,flatten datasets
-cli,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/evalscope/evaluator/reviewer/auto_reviewer.py#L369,,unimplemented function
+cli,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/evalscope/evaluator/reviewer/auto_reviewer.py#L369,,run evaluation
 cli,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/evalscope/metrics/t2v_metrics/models/vqascore_models/lavis/processors/randaugment.py#L389,,apply image augmentations
 cli,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/evalscope/models/custom/dummy_model.py#L46,,rewrite evaluation results
 cli,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/evalscope/perf/main.py#L99,,run performance benchmark
@@ -2997,13 +2997,13 @@ cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a7
 cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/parallel_to_m2.py#L207,,annotate parallel sentences
 cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/modules/alignment.py#L326,,align sentences
 cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/modules/merger.py#L260,,merge edit sequences
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/modules/tokenizer.py#L89,,unimplemented function
+cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/modules/tokenizer.py#L89,,tokenize text
 cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/medbench/dataset_loader.py#L322,,process dataset
 cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/musr/tree.py#L520,,build logic tree
 cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/supergpqa/supergpqa_utils.py#L152,,evaluate responses
 cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/supergpqa/supergpqa_dataset_config/config_wrapper.py#L57,,load config
 cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/evaluator/math_evaluator.py#L70,,verify math expressions
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/lagent/actions/ipython_interpreter.py#L308,,unimplemented function
+cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/lagent/actions/ipython_interpreter.py#L308,,execute python code
 cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/tasks/openicl_attack.py#L197,,run attack
 cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/tasks/openicl_eval.py#L458,,evaluate model predictions
 cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/tasks/openicl_infer.py#L156,,run inference
@@ -3161,9 +3161,9 @@ cli,https://github.com/open-compass/VLMEvalKit/blob/50c954aad1d92dab9bf5d23f6257
 cli,https://github.com/open-compass/VLMEvalKit/blob/50c954aad1d92dab9bf5d23f62576c994b4a675f/setup.py#L121,,parse requirements
 cli,https://github.com/open-compass/VLMEvalKit/blob/50c954aad1d92dab9bf5d23f62576c994b4a675f/scripts/data_browser.py#L171,,visualize dataset
 cli,https://github.com/open-compass/VLMEvalKit/blob/50c954aad1d92dab9bf5d23f62576c994b4a675f/scripts/mmb_eval_gradio.py#L113,,process evaluation
-cli,https://github.com/open-compass/VLMEvalKit/blob/50c954aad1d92dab9bf5d23f62576c994b4a675f/scripts/summarize.py#L110,,unimplemented function
+cli,https://github.com/open-compass/VLMEvalKit/blob/50c954aad1d92dab9bf5d23f62576c994b4a675f/scripts/summarize.py#L110,,generate summary table
 cli,https://github.com/open-compass/VLMEvalKit/blob/50c954aad1d92dab9bf5d23f62576c994b4a675f/vlmeval/api/doubao_vl_api.py#L199,,generate vision response
-cli,https://github.com/open-compass/VLMEvalKit/blob/50c954aad1d92dab9bf5d23f62576c994b4a675f/vlmeval/dataset/utils/ccocr_evaluator/common.py#L212,,unimplemented function
+cli,https://github.com/open-compass/VLMEvalKit/blob/50c954aad1d92dab9bf5d23f62576c994b4a675f/vlmeval/dataset/utils/ccocr_evaluator/common.py#L212,,summarize results
 cli,https://github.com/open-compass/VLMEvalKit/blob/50c954aad1d92dab9bf5d23f62576c994b4a675f/vlmeval/dataset/utils/ccocr_evaluator/doc_parsing_evaluator.py#L255,,compute parsing scores
 cli,https://github.com/open-compass/VLMEvalKit/blob/50c954aad1d92dab9bf5d23f62576c994b4a675f/vlmeval/dataset/utils/ccocr_evaluator/kie_evaluator.py#L384,,evaluate kie
 cli,https://github.com/open-compass/VLMEvalKit/blob/50c954aad1d92dab9bf5d23f62576c994b4a675f/vlmeval/dataset/utils/ccocr_evaluator/ocr_evaluator.py#L105,,passthrough function
@@ -3241,7 +3241,7 @@ cli,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0
 cli,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0f/evals/elsuite/ballots/scripts/make_plots.py#L298,,generate bar plots
 cli,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0f/evals/elsuite/bluff/scripts/make_plots.py#L140,,generate winrate plots
 cli,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0f/evals/elsuite/bugged_tools/bugged_tools.py#L156,,generate incorrect outputs
-cli,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0f/evals/elsuite/cant_do_that_anymore/scripts/dataset_creation.py#L273,,unimplemented function
+cli,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0f/evals/elsuite/cant_do_that_anymore/scripts/dataset_creation.py#L273,,create dataset
 cli,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0f/evals/elsuite/cant_do_that_anymore/scripts/diagonal_dataset_creation.py#L288,,generate bishop diagonal dataset
 cli,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0f/evals/elsuite/cant_do_that_anymore/scripts/make_plots.py#L127,,extract and plot results
 cli,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0f/evals/elsuite/error_recovery/scripts/dataset_creation.py#L155,,generate error recovery datasets
@@ -3286,10 +3286,10 @@ cli,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0
 cli,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0f/evals/registry/data/points_on_line/eval_generator.py#L124,,generate line points
 cli,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0f/evals/registry/data/poker_analysis/poker_analysis_sample_generator.py#L169,,generate winning probabilities
 cli,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0f/evals/registry/data/solve-for-variable/tools/problem.py#L174,,generate equation problems
-cli,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0f/evals/registry/data/word_association/corpus_tools/corpus.py#L99,,unimplemented function
-cli,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0f/evals/registry/data/word_association/corpus_tools/related_words.py#L189,,unimplemented function
-cli,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0f/evals/registry/data/word_association/corpus_tools/sample_generators.py#L195,,unimplemented function
-cli,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0f/evals/registry/data/word_association/corpus_tools/validators.py#L293,,unimplemented function
+cli,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0f/evals/registry/data/word_association/corpus_tools/corpus.py#L99,,process corpus
+cli,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0f/evals/registry/data/word_association/corpus_tools/related_words.py#L189,,fetch related words
+cli,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0f/evals/registry/data/word_association/corpus_tools/sample_generators.py#L195,,generate word associations
+cli,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0f/evals/registry/data/word_association/corpus_tools/validators.py#L293,,validate similarity
 cli,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0f/scripts/pattern_identification_generator.py#L54,,generate pattern examples
 api,https://github.com/openai/human-eval/blob/6d43fb980f9fee3c892a914eda09951f772ad10d/human_eval/execution.py#L130,openai__human-eval/read,raise ioerror
 api,https://github.com/openai/human-eval/blob/6d43fb980f9fee3c892a914eda09951f772ad10d/human_eval/execution.py#L133,openai__human-eval/readline,raise ioerror
@@ -3321,10 +3321,10 @@ api,https://github.com/plurai-ai/intellagent/blob/2680da4545b87717a8dbc869738238
 api,https://github.com/plurai-ai/intellagent/blob/2680da4545b87717a8dbc869738238022ca84ee4/simulator/utils/sqlite_handler.py#L122,plurai-ai__intellagent/read_dialog,fetch dialog messages
 api,https://github.com/plurai-ai/intellagent/blob/2680da4545b87717a8dbc869738238022ca84ee4/simulator/utils/sqlite_handler.py#L133,plurai-ai__intellagent/read_thought,retrieve thoughts
 api,https://github.com/plurai-ai/intellagent/blob/2680da4545b87717a8dbc869738238022ca84ee4/simulator/utils/sqlite_handler.py#L144,plurai-ai__intellagent/read_tool,fetch tool records
-api,https://github.com/plurai-ai/intellagent/blob/2680da4545b87717a8dbc869738238022ca84ee4/simulator/visualization/pages/2_����_Session_Visualizer.py#L10,plurai-ai__intellagent/add_dataframe,add dataframe
+api,https://github.com/plurai-ai/intellagent/blob/2680da4545b87717a8dbc869738238022ca84ee4/simulator/visualization/pages/2_🤖_Session_Visualizer.py#L10,plurai-ai__intellagent/add_dataframe,add dataframe
 cli,https://github.com/plurai-ai/intellagent/blob/2680da4545b87717a8dbc869738238022ca84ee4/run.py#L33,,run simulation
 cli,https://github.com/plurai-ai/intellagent/blob/2680da4545b87717a8dbc869738238022ca84ee4/simulator/healthcare_analytics.py#L157,,send usage event
-cli,https://github.com/plurai-ai/intellagent/blob/2680da4545b87717a8dbc869738238022ca84ee4/simulator/visualization/pages/2_����_Session_Visualizer.py#L181,,display thread dialogs
+cli,https://github.com/plurai-ai/intellagent/blob/2680da4545b87717a8dbc869738238022ca84ee4/simulator/visualization/pages/2_🤖_Session_Visualizer.py#L181,,display thread dialogs
 api,https://github.com/prometheus-eval/prometheus-eval/blob/dcfb44272d5d0414832f5dbb8c2a05ebc2614234/BiGGen-Bench/run_api_inference.py#L16,prometheus-eval__prometheus-eval/dummy_completions,generate dummy outputs
 api,https://github.com/prometheus-eval/prometheus-eval/blob/dcfb44272d5d0414832f5dbb8c2a05ebc2614234/BiGGen-Bench/run_base_inference.py#L64,prometheus-eval__prometheus-eval/dummy_completions,generate dummy outputs
 api,https://github.com/prometheus-eval/prometheus-eval/blob/dcfb44272d5d0414832f5dbb8c2a05ebc2614234/BiGGen-Bench/run_chat_inference.py#L38,prometheus-eval__prometheus-eval/dummy_completions,generate dummy outputs
@@ -3354,7 +3354,7 @@ cli,https://github.com/prometheus-eval/prometheus-eval/blob/dcfb44272d5d0414832f
 cli,https://github.com/prometheus-eval/prometheus-eval/blob/dcfb44272d5d0414832f5dbb8c2a05ebc2614234/eval/run_evaluate.py#L473,,run model evaluation
 cli,https://github.com/prometheus-eval/prometheus-eval/blob/dcfb44272d5d0414832f5dbb8c2a05ebc2614234/eval/transitivity.py#L216,,calculate cycle consistency
 cli,https://github.com/prometheus-eval/prometheus-eval/blob/dcfb44272d5d0414832f5dbb8c2a05ebc2614234/eval/utils.py#L305,,calculate evaluation results
-cli,https://github.com/prometheus-eval/prometheus-eval/blob/dcfb44272d5d0414832f5dbb8c2a05ebc2614234/eval/benchmark/data_loader.py#L215,,unimplemented function
+cli,https://github.com/prometheus-eval/prometheus-eval/blob/dcfb44272d5d0414832f5dbb8c2a05ebc2614234/eval/benchmark/data_loader.py#L215,,load records
 cli,https://github.com/prometheus-eval/prometheus-eval/blob/dcfb44272d5d0414832f5dbb8c2a05ebc2614234/eval/benchmark/autoj_utils/pairwise_eval.py#L291,,evaluate prediction agreement
 cli,https://github.com/prometheus-eval/prometheus-eval/blob/dcfb44272d5d0414832f5dbb8c2a05ebc2614234/eval/llms/vllm_utils.py#L130,,generate model completions
 cli,https://github.com/prometheus-eval/prometheus-eval/blob/dcfb44272d5d0414832f5dbb8c2a05ebc2614234/libs/prometheus-eval/prometheus_eval/litellm.py#L132,,generate message completions
@@ -3429,7 +3429,7 @@ api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded
 cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/benchmarking/benchmark_splitting.py#L185,,benchmark dataset splitting
 cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L735,,provide commandline interface
 cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/version.py#L127,,retrieve version
-cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/contrib/lightning.py#L329,,unimplemented function
+cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/contrib/lightning.py#L329,,integrate training loop
 cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/aristo.py#L63,,load dataset
 cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/biokg.py#L69,,load biokg dataset
 cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/ckg.py#L103,,load clinical graph
@@ -3445,7 +3445,7 @@ cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded
 cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/generate.py#L73,,split triples
 cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/globi.py#L69,,load biotic interactions
 cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/hetionet.py#L71,,load dataset
-cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/ogb.py#L334,,unimplemented function
+cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/ogb.py#L334,,load dataset
 cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/openbiolink.py#L103,,load datasets
 cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/pharmebinet.py#L72,,load dataset
 cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/pharmkg.py#L114,,load pharmkg datasets
@@ -3459,9 +3459,9 @@ cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded
 cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/inductive/ilpc2022.py#L92,,initialize inductive datasets
 cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/inductive/ilp_teru.py#L248,,load inductive datasets
 cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/hpo/cli.py#L53,,optimize hyperparameters
-cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/triples/deteriorate.py#L123,,unimplemented function
-cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/triples/leakage.py#L380,,unimplemented function
-cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/triples/remix.py#L88,,unimplemented function
+cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/triples/deteriorate.py#L123,,remove records
+cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/triples/leakage.py#L380,,remove leakage
+cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/triples/remix.py#L88,,remix splits
 click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L729,data\repos\pykeen__pykeen/optimize,optimize experiments
 click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L730,data\repos\pykeen__pykeen/experiments,optimize experiments
 click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L733,data\repos\pykeen__pykeen/tokenize,tokenize dataset
@@ -3630,7 +3630,7 @@ api,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598ffff
 api,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/utils/gitutils.py#L101,pytorch__benchmark/get_current_branch,retrieve branch
 api,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/utils/gitutils.py#L111,pytorch__benchmark/get_git_origin,retrieve remote url
 cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/bisection.py#L694,,run performance bisection
-cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/gen_summary_metadata.py#L130,,unimplemented function
+cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/gen_summary_metadata.py#L130,,generate metadata
 cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/install.py#L14,,install torchbench
 cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/regression_detector.py#L266,,detect regressions
 cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/run.py#L595,,run model
@@ -3738,7 +3738,7 @@ cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598ffff
 cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/torchbenchmark/models/maml_omniglot/install.py#L4,,checkout s3 data
 cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/torchbenchmark/models/moco/install.py#L3,,passthrough function
 cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/torchbenchmark/models/moco/main_lincls.py#L613,,train linear classifier
-cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/torchbenchmark/models/moco/main_moco.py#L531,,unimplemented function
+cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/torchbenchmark/models/moco/main_moco.py#L531,,train imagenet model
 cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/torchbenchmark/models/moco/detection/convert-pretrain-to-detectron2.py#L9,,convert model
 cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/torchbenchmark/models/moco/detection/train_net.py#L71,,train detection model
 cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/torchbenchmark/models/moondream/install.py#L10,,install requirements
@@ -3788,15 +3788,15 @@ cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598ffff
 cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/torchbenchmark/models/vision_maskrcnn/install.py#L4,,download s3 data
 cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/torchbenchmark/models/yolov3/detect.py#L213,,perform object detection
 cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/torchbenchmark/models/yolov3/install.py#L18,,download data
-cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/torchbenchmark/util/classify_graphs.py#L154,,unimplemented function
+cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/torchbenchmark/util/classify_graphs.py#L154,,compress graphs
 cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/torchbenchmark/util/machine_config.py#L361,,configure machine
 cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/torchbenchmark/util/distributed/submit.py#L201,,submit distributed training
-cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/userbenchmark/cpu/run_config.py#L138,,unimplemented function
+cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/userbenchmark/cpu/run_config.py#L138,,benchmark models
 cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/userbenchmark/distributed/install.py#L11,,install packages
-cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/userbenchmark/dynamo/dynamobench/common.py#L4214,,unimplemented function
-cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/userbenchmark/dynamo/dynamobench/huggingface.py#L627,,unimplemented function
-cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/userbenchmark/dynamo/dynamobench/timm_models.py#L444,,unimplemented function
-cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/userbenchmark/dynamo/dynamobench/torchbench.py#L485,,unimplemented function
+cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/userbenchmark/dynamo/dynamobench/common.py#L4214,,raise runtimerror
+cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/userbenchmark/dynamo/dynamobench/huggingface.py#L627,,benchmark model
+cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/userbenchmark/dynamo/dynamobench/timm_models.py#L444,,benchmark model
+cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/userbenchmark/dynamo/dynamobench/torchbench.py#L485,,run benchmark
 cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/userbenchmark/lazy-tensor/run.py#L744,,run benchmark experiments
 cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/userbenchmark/mast-sample/main.py#L83,,measure linear speedup
 cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/userbenchmark/optim/run.py#L826,,run optimizer benchmarks
@@ -3815,14 +3815,14 @@ api,https://github.com/RobustNLP/CipherChat/blob/540b95e6afb54e7776f08ae2c094f9d
 cli,https://github.com/RobustNLP/CipherChat/blob/540b95e6afb54e7776f08ae2c094f9d7ff7e7b1f/main.py#L224,,query unsafe text
 api,https://github.com/simpler-env/SimplerEnv/blob/4ab7178e83e84ee06894034ec6dbf9e7aad1e882/simpler_env/utils/io.py#L40,simpler-env__SimplerEnv/load_image_arrays,load and convert images
 api,https://github.com/simpler-env/SimplerEnv/blob/4ab7178e83e84ee06894034ec6dbf9e7aad1e882/simpler_env/utils/visualization.py#L31,simpler-env__SimplerEnv/plot_pred_and_gt_action_trajectory,plot action trajectories
-cli,https://github.com/simpler-env/SimplerEnv/blob/4ab7178e83e84ee06894034ec6dbf9e7aad1e882/simpler_env/main_inference.py#L18,,unimplemented function
+cli,https://github.com/simpler-env/SimplerEnv/blob/4ab7178e83e84ee06894034ec6dbf9e7aad1e882/simpler_env/main_inference.py#L18,,evaluate model policy
 cli,https://github.com/simpler-env/SimplerEnv/blob/4ab7178e83e84ee06894034ec6dbf9e7aad1e882/tools/calc_metrics.py#L23,,compute evaluation metrics
 cli,https://github.com/simpler-env/SimplerEnv/blob/4ab7178e83e84ee06894034ec6dbf9e7aad1e882/tools/coacd_process_mesh.py#L20,,generate convex mesh
-cli,https://github.com/simpler-env/SimplerEnv/blob/4ab7178e83e84ee06894034ec6dbf9e7aad1e882/tools/merge_videos.py#L189,,unimplemented function
+cli,https://github.com/simpler-env/SimplerEnv/blob/4ab7178e83e84ee06894034ec6dbf9e7aad1e882/tools/merge_videos.py#L189,,merge videos
 cli,https://github.com/simpler-env/SimplerEnv/blob/4ab7178e83e84ee06894034ec6dbf9e7aad1e882/tools/save_video_frame.py#L36,,extract video frame
 cli,https://github.com/simpler-env/SimplerEnv/blob/4ab7178e83e84ee06894034ec6dbf9e7aad1e882/tools/visualize_dataset.py#L19,,generate dataset videos
-cli,https://github.com/simpler-env/SimplerEnv/blob/4ab7178e83e84ee06894034ec6dbf9e7aad1e882/tools/sysid/prepare_sysid_dataset.py#L28,,unimplemented function
-cli,https://github.com/simpler-env/SimplerEnv/blob/4ab7178e83e84ee06894034ec6dbf9e7aad1e882/tools/sysid/sysid.py#L180,,unimplemented function
+cli,https://github.com/simpler-env/SimplerEnv/blob/4ab7178e83e84ee06894034ec6dbf9e7aad1e882/tools/sysid/prepare_sysid_dataset.py#L28,,export trajectory dataset
+cli,https://github.com/simpler-env/SimplerEnv/blob/4ab7178e83e84ee06894034ec6dbf9e7aad1e882/tools/sysid/sysid.py#L180,,optimize robot parameters
 api,https://github.com/snap-stanford/ogb/blob/61e9784ca76edeaa6e259ba0f836099608ff0586/ogb/graphproppred/dataset_pyg.py#L120,snap-stanford__ogb/process,read and prepare graph data
 api,https://github.com/snap-stanford/ogb/blob/61e9784ca76edeaa6e259ba0f836099608ff0586/ogb/graphproppred/mol_encoder.py#L21,snap-stanford__ogb/forward,compute atom embeddings
 api,https://github.com/snap-stanford/ogb/blob/61e9784ca76edeaa6e259ba0f836099608ff0586/ogb/graphproppred/mol_encoder.py#L42,snap-stanford__ogb/forward,compute atom embeddings
@@ -3840,7 +3840,7 @@ cli,https://github.com/snap-stanford/ogb/blob/61e9784ca76edeaa6e259ba0f836099608
 cli,https://github.com/snap-stanford/ogb/blob/61e9784ca76edeaa6e259ba0f836099608ff0586/ogb/io/read_graph_dgl.py#L87,,convert graphs
 cli,https://github.com/snap-stanford/ogb/blob/61e9784ca76edeaa6e259ba0f836099608ff0586/ogb/io/read_graph_pyg.py#L109,,convert graphs
 cli,https://github.com/snap-stanford/ogb/blob/61e9784ca76edeaa6e259ba0f836099608ff0586/ogb/io/read_graph_raw.py#L650,,load graph
-cli,https://github.com/snap-stanford/ogb/blob/61e9784ca76edeaa6e259ba0f836099608ff0586/ogb/io/save_dataset.py#L661,,unimplemented function
+cli,https://github.com/snap-stanford/ogb/blob/61e9784ca76edeaa6e259ba0f836099608ff0586/ogb/io/save_dataset.py#L661,,save dataset
 cli,https://github.com/snap-stanford/ogb/blob/61e9784ca76edeaa6e259ba0f836099608ff0586/ogb/linkproppred/dataset.py#L154,,load link prediction dataset
 cli,https://github.com/snap-stanford/ogb/blob/61e9784ca76edeaa6e259ba0f836099608ff0586/ogb/linkproppred/dataset_dgl.py#L157,,load and preprocess dataset
 cli,https://github.com/snap-stanford/ogb/blob/61e9784ca76edeaa6e259ba0f836099608ff0586/ogb/linkproppred/dataset_pyg.py#L145,,load graph dataset
@@ -4342,7 +4342,7 @@ api,https://github.com/stepjam/RLBench/blob/02720bba4c73fe02eb75df946b8791b80602
 api,https://github.com/stepjam/RLBench/blob/02720bba4c73fe02eb75df946b8791b806028a9d/rlbench/task_environment.py#L60,stepjam__RLBench/sample_variation,generate variation number
 api,https://github.com/stepjam/RLBench/blob/02720bba4c73fe02eb75df946b8791b806028a9d/rlbench/tasks/push_buttons.py#L42,stepjam__RLBench/print_permutations,display permutations
 cli,https://github.com/stepjam/RLBench/blob/02720bba4c73fe02eb75df946b8791b806028a9d/rlbench/dataset_generator.py#L335,,collect rlbench demonstrations
-cli,https://github.com/stepjam/RLBench/blob/02720bba4c73fe02eb75df946b8791b806028a9d/tools/cinematic_recorder.py#L155,,unimplemented function
+cli,https://github.com/stepjam/RLBench/blob/02720bba4c73fe02eb75df946b8791b806028a9d/tools/cinematic_recorder.py#L155,,record task videos
 cli,https://github.com/stepjam/RLBench/blob/02720bba4c73fe02eb75df946b8791b806028a9d/tools/task_builder.py#L269,,manage rlbench tasks
 cli,https://github.com/stepjam/RLBench/blob/02720bba4c73fe02eb75df946b8791b806028a9d/tools/task_validator.py#L116,,validate task variations
 api,https://github.com/tatsu-lab/alpaca_eval/blob/f19c323d8309d0d6f306bd26597db44fc6c62d57/scripts/precompute.py#L14,tatsu-lab__alpaca_eval/precompute_on_all_human_leaderboard,precompute annotations
@@ -5042,7 +5042,7 @@ cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb4765938
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/static_filter.py#L183,,filter videos
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/competitions/run_eval.py#L118,,evaluate video
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/prompts/augmented_prompts/Wan2.1-T2V-1.3B/aug.py#L91,,augment prompts
-cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/prompts/augmented_prompts/Wan2.1-T2V-1.3B/prompt_extend_fix_seed.py#L472,,unimplemented function
+cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/prompts/augmented_prompts/Wan2.1-T2V-1.3B/prompt_extend_fix_seed.py#L472,,expand prompt
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/scripts/cal_final_score.py#L69,,extract submission
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/scripts/cal_i2v_final_score.py#L69,,extract submission
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/vbench/launch/evaluate.py#L152,,perform video evaluation
@@ -5050,9 +5050,9 @@ cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb4765938
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/vbench/third_party/amt/flow_generation/liteflownet/run.py#L372,,estimate optical flow
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/vbench/third_party/grit_src/centernet2/train_net.py#L212,,train model
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/vbench/third_party/tag2Text/tag2text.py#L423,,generate captions
-cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/vbench/third_party/umt/models/clip.py#L281,,unimplemented function
+cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/vbench/third_party/umt/models/clip.py#L281,,load clip model
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/vbench/third_party/umt/models/modeling_finetune.py#L367,,classify video frames
-cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/vbench/third_party/umt/models/modeling_pretrain_umt.py#L316,,unimplemented function
+cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/vbench/third_party/umt/models/modeling_pretrain_umt.py#L316,,train model
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/evaluate.py#L152,,perform video evaluation
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/scripts/cal_final_score.py#L80,,extract submission data
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/launch/evaluate.py#L138,,execute video evaluation
@@ -5061,7 +5061,7 @@ cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb4765938
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/cotracker/evaluation/evaluate.py#L189,,run evaluation
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/LLaVA_NeXT/llava/conversation.py#L584,,generate prompt
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/LLaVA_NeXT/llava/eval/evaluate_interleave.py#L159,,evaluate prediction scores
-cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/LLaVA_NeXT/llava/eval/model_vqa.py#L223,,unimplemented function
+cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/LLaVA_NeXT/llava/eval/model_vqa.py#L223,,evaluate model answers
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/LLaVA_NeXT/llava/model/apply_delta.py#L39,,apply model delta
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/LLaVA_NeXT/llava/model/consolidate.py#L23,,consolidate model
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/LLaVA_NeXT/llava/model/make_delta.py#L44,,generate model delta
@@ -5072,8 +5072,8 @@ cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb4765938
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/LLaVA_NeXT/llava/serve/model_worker.py#L249,,execute model
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/LLaVA_NeXT/llava/serve/register_worker.py#L12,,register worker
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/LLaVA_NeXT/llava/serve/sglang_worker.py#L222,,stream model responses
-cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/LLaVA_NeXT/llava/train/train.py#L1720,,unimplemented function
-cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/LLaVA_NeXT/llava/train/train_dpo.py#L1781,,unimplemented function
+cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/LLaVA_NeXT/llava/train/train.py#L1720,,train model
+cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/LLaVA_NeXT/llava/train/train_dpo.py#L1781,,train dpo model
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/LLaVA_NeXT/llava/train/train_mem.py#L3,,execute training
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/LLaVA_NeXT/playground/2d_hist.py#L131,,generate histograms
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/LLaVA_NeXT/playground/data_checker.py#L354,,process dataset
@@ -5089,12 +5089,12 @@ cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb4765938
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/ViTDetector/inference.py#L424,,detect abnormality
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/ViTDetector/main_finetune.py#L329,,train image classifier
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/ViTDetector/third_party/YOLO-World/deploy/export_onnx.py#L181,,export onnx
-cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/ViTDetector/third_party/YOLO-World/deploy/easydeploy/tools/build_engine.py#L134,,unimplemented function
+cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/ViTDetector/third_party/YOLO-World/deploy/easydeploy/tools/build_engine.py#L134,,build tensorrt engine
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/ViTDetector/third_party/YOLO-World/deploy/easydeploy/tools/export_onnx.py#L156,,export onnx
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/ViTDetector/third_party/YOLO-World/mmyolo/setup.py#L158,,setup python package
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/ViTDetector/third_party/YOLO-World/mmyolo/mmyolo/utils/collect_env.py#L19,,collect environment information
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/ViTDetector/third_party/YOLO-World/mmyolo/projects/assigner_visualization/assigner_visualization.py#L176,,visualize assignment results
-cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/ViTDetector/third_party/YOLO-World/mmyolo/projects/easydeploy/tools/build_engine.py#L134,,unimplemented function
+cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/ViTDetector/third_party/YOLO-World/mmyolo/projects/easydeploy/tools/build_engine.py#L134,,build tensorrt engine
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/ViTDetector/third_party/YOLO-World/mmyolo/projects/easydeploy/tools/export_onnx.py#L156,,export onnx model
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/ViTDetector/third_party/YOLO-World/mmyolo/tools/train.py#L122,,train detector
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/ViTDetector/third_party/YOLO-World/mmyolo/tools/analysis_tools/benchmark.py#L187,,measure inference speed
@@ -5104,7 +5104,7 @@ cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb4765938
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/ViTDetector/third_party/YOLO-World/mmyolo/tools/analysis_tools/confusion_matrix.py#L272,,generate confusion matrix
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/ViTDetector/third_party/YOLO-World/mmyolo/tools/analysis_tools/dataset_analysis.py#L497,,generate dataset visualizations
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/ViTDetector/third_party/YOLO-World/mmyolo/tools/analysis_tools/get_flops.py#L122,,calculate model flops
-cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/ViTDetector/third_party/YOLO-World/mmyolo/tools/analysis_tools/optimize_anchors.py#L646,,unimplemented function
+cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/ViTDetector/third_party/YOLO-World/mmyolo/tools/analysis_tools/optimize_anchors.py#L646,,optimize anchors
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/ViTDetector/third_party/YOLO-World/mmyolo/tools/analysis_tools/vis_scheduler.py#L294,,visualize hyperparameter scheduler
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/ViTDetector/third_party/YOLO-World/mmyolo/tools/dataset_converters/balloon2coco.py#L53,,convert annotations
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/ViTDetector/third_party/YOLO-World/mmyolo/tools/dataset_converters/labelme2coco.py#L324,,convert labelme dataset
@@ -5116,7 +5116,7 @@ cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb4765938
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/ViTDetector/third_party/YOLO-World/mmyolo/tools/misc/print_config.py#L58,,parse and save configuration
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/ViTDetector/third_party/YOLO-World/mmyolo/tools/misc/publish_model.py#L56,,clean checkpoint
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/ViTDetector/third_party/YOLO-World/mmyolo/tools/model_converters/convert_kd_ckpt_to_student.py#L53,,convert kd checkpoint
-cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/ViTDetector/third_party/YOLO-World/mmyolo/tools/model_converters/ppyoloe_to_mmyolo.py#L183,,unimplemented function
+cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/ViTDetector/third_party/YOLO-World/mmyolo/tools/model_converters/ppyoloe_to_mmyolo.py#L183,,convert model weights
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/ViTDetector/third_party/YOLO-World/mmyolo/tools/model_converters/rtmdet_to_mmyolo.py#L60,,convert model keys
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/ViTDetector/third_party/YOLO-World/mmyolo/tools/model_converters/yolov5u_to_mmyolo.py#L87,,convert model keys
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/ViTDetector/third_party/YOLO-World/mmyolo/tools/model_converters/yolov5_to_mmyolo.py#L127,,convert model keys
@@ -5130,12 +5130,12 @@ cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb4765938
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/ViTDetector/third_party/YOLO-World/tools/reparameterize_yoloworld.py#L138,,reparameterize model
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/ViTDetector/third_party/YOLO-World/tools/train.py#L119,,train detector
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/YOLO-World/deploy/export_onnx.py#L181,,export onnx
-cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/YOLO-World/deploy/easydeploy/tools/build_engine.py#L134,,unimplemented function
+cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/YOLO-World/deploy/easydeploy/tools/build_engine.py#L134,,build engine
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/YOLO-World/deploy/easydeploy/tools/export_onnx.py#L156,,export onnx model
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/YOLO-World/mmyolo/setup.py#L158,,setup python package
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/YOLO-World/mmyolo/mmyolo/utils/collect_env.py#L19,,collect environment information
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/YOLO-World/mmyolo/projects/assigner_visualization/assigner_visualization.py#L176,,visualize assignment results
-cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/YOLO-World/mmyolo/projects/easydeploy/tools/build_engine.py#L134,,unimplemented function
+cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/YOLO-World/mmyolo/projects/easydeploy/tools/build_engine.py#L134,,build tensorrt engine
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/YOLO-World/mmyolo/projects/easydeploy/tools/export_onnx.py#L156,,export onnx
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/YOLO-World/mmyolo/tools/train.py#L122,,train detector
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/YOLO-World/mmyolo/tools/analysis_tools/benchmark.py#L187,,measure inference speed
@@ -5145,7 +5145,7 @@ cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb4765938
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/YOLO-World/mmyolo/tools/analysis_tools/confusion_matrix.py#L272,,generate confusion matrix
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/YOLO-World/mmyolo/tools/analysis_tools/dataset_analysis.py#L497,,generate dataset visualizations
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/YOLO-World/mmyolo/tools/analysis_tools/get_flops.py#L122,,calculate model flops
-cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/YOLO-World/mmyolo/tools/analysis_tools/optimize_anchors.py#L646,,unimplemented function
+cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/YOLO-World/mmyolo/tools/analysis_tools/optimize_anchors.py#L646,,optimize anchors
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/YOLO-World/mmyolo/tools/analysis_tools/vis_scheduler.py#L294,,visualize hyperparameter scheduler
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/YOLO-World/mmyolo/tools/dataset_converters/balloon2coco.py#L53,,convert annotations
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/YOLO-World/mmyolo/tools/dataset_converters/labelme2coco.py#L324,,convert labelme dataset
@@ -5157,7 +5157,7 @@ cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb4765938
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/YOLO-World/mmyolo/tools/misc/print_config.py#L58,,parse and save configuration
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/YOLO-World/mmyolo/tools/misc/publish_model.py#L56,,process checkpoint
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/YOLO-World/mmyolo/tools/model_converters/convert_kd_ckpt_to_student.py#L53,,convert kd checkpoint
-cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/YOLO-World/mmyolo/tools/model_converters/ppyoloe_to_mmyolo.py#L183,,unimplemented function
+cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/YOLO-World/mmyolo/tools/model_converters/ppyoloe_to_mmyolo.py#L183,,convert weights format
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/YOLO-World/mmyolo/tools/model_converters/rtmdet_to_mmyolo.py#L60,,convert model keys
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/YOLO-World/mmyolo/tools/model_converters/yolov5u_to_mmyolo.py#L87,,convert model keys
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/YOLO-World/mmyolo/tools/model_converters/yolov5_to_mmyolo.py#L127,,convert model keys
