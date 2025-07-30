@@ -128,23 +128,36 @@ cli,https://github.com/bigcode-project/bigcode-evaluation-harness/blob/6116c6a9a
 api,https://github.com/bigcode-project/bigcode-evaluation-harness/blob/6116c6a9a5672c69bd624373cfbc8938b7acc249/finetuning/CodeDefect/train.py#L47,bigcode-project__bigcode-evaluation-harness/on_epoch_end,trigger evaluation
 cli,https://github.com/bigcode-project/bigcode-evaluation-harness/blob/6116c6a9a5672c69bd624373cfbc8938b7acc249/main.py#L413,,evaluate model
 api,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/challenges.py#L105,Cloud-CV__evalai-cli/past,list challenges
+click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/challenges.py#L106,Cloud-CV__evalai-cli/past,display challenge list
 api,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/challenges.py#L116,Cloud-CV__evalai-cli/future,list upcoming challenges
+click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/challenges.py#L117,Cloud-CV__evalai-cli/future,display challenge list
+click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/challenges.py#L129,Cloud-CV__evalai-cli/phases,display challenge list
+click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/challenges.py#L169,Cloud-CV__evalai-cli/submissions,display challenge details
 api,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/challenges.py#L181,Cloud-CV__evalai-cli/splits,display phase splits
+click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/challenges.py#L183,Cloud-CV__evalai-cli/splits,display challenge list
+click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/challenges.py#L196,Cloud-CV__evalai-cli/leaderboard,display leaderboard
 api,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/challenges.py#L206,Cloud-CV__evalai-cli/participate,accept challenge
+click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/challenges.py#L209,Cloud-CV__evalai-cli/participate,participate in challenge
 api,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/challenges.py#L236,Cloud-CV__evalai-cli/submit,upload submission files
-click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/challenges.py#L430,repos__Cloud-CV__evalai-cli/phase,display phase details
+click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/challenges.py#L248,Cloud-CV__evalai-cli/submit,upload submission files
+click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/challenges.py#L430,Cloud-CV__evalai-cli/phase,display phase details
 api,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/challenges.py#L94,Cloud-CV__evalai-cli/ongoing,display active challenges
-click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/main.py#L51,repos__Cloud-CV__evalai-cli/challenges,list challenges
-click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/main.py#L52,repos__Cloud-CV__evalai-cli/challenge,display challenge details
-click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/main.py#L53,repos__Cloud-CV__evalai-cli/download_file,download file
-click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/main.py#L54,repos__Cloud-CV__evalai-cli/host,configure host url
-click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/main.py#L55,repos__Cloud-CV__evalai-cli/push,push image
-click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/main.py#L56,repos__Cloud-CV__evalai-cli/set_token,set token
-click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/main.py#L57,repos__Cloud-CV__evalai-cli/submission,display submission details
-click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/main.py#L58,repos__Cloud-CV__evalai-cli/teams,list teams
-click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/main.py#L59,repos__Cloud-CV__evalai-cli/get_token,get token
-click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/main.py#L60,repos__Cloud-CV__evalai-cli/login,login user
+click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/challenges.py#L95,Cloud-CV__evalai-cli/ongoing,display challenge list
+click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/main.py#L51,Cloud-CV__evalai-cli/challenges,list challenges
+click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/main.py#L52,Cloud-CV__evalai-cli/challenge,display challenge details
+click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/main.py#L53,Cloud-CV__evalai-cli/download_file,download file
+click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/main.py#L54,Cloud-CV__evalai-cli/host,configure host url
+click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/main.py#L55,Cloud-CV__evalai-cli/push,push image
+click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/main.py#L56,Cloud-CV__evalai-cli/set_token,set token
+click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/main.py#L57,Cloud-CV__evalai-cli/submission,display submission details
+click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/main.py#L58,Cloud-CV__evalai-cli/teams,list teams
+click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/main.py#L59,Cloud-CV__evalai-cli/get_token,get token
+click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/main.py#L60,Cloud-CV__evalai-cli/login,login user
+click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/submissions.py#L371,Cloud-CV__evalai-cli/download_file,download file
+click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/submissions.py#L58,Cloud-CV__evalai-cli/result,display submission results
+click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/submissions.py#L86,Cloud-CV__evalai-cli/push,push docker image
 api,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/teams.py#L37,Cloud-CV__evalai-cli/create,create team
+click,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/teams.py#L39,Cloud-CV__evalai-cli/create,create team
 api,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/utils/common.py#L147,Cloud-CV__evalai-cli/generate_random_string,generate random string
 api,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/utils/common.py#L31,Cloud-CV__evalai-cli/convert,parse date
 api,https://github.com/Cloud-CV/EvalAI/blob/8d1444f233a84f57b4a6b3db2bc7503da4cc7194/apps/accounts/models.py#L75,Cloud-CV__EvalAI/create_user_profile,create user profile
@@ -264,7 +277,10 @@ api,https://github.com/comet-ml/opik/blob/72628f77bade9dfb508cc22ce71362bb0e6ed1
 api,https://github.com/comet-ml/opik/blob/72628f77bade9dfb508cc22ce71362bb0e6ed132/sdks/python/src/opik/api_objects/optimization/optimization.py#L37,comet-ml__opik/fetch_content,retrieve optimization data
 api,https://github.com/comet-ml/opik/blob/72628f77bade9dfb508cc22ce71362bb0e6ed132/sdks/python/src/opik/api_objects/span/span_client.py#L242,comet-ml__opik/log_feedback_score,log feedback score
 api,https://github.com/comet-ml/opik/blob/72628f77bade9dfb508cc22ce71362bb0e6ed132/sdks/python/src/opik/api_objects/trace/trace_client.py#L215,comet-ml__opik/log_feedback_score,log feedback score
+click,https://github.com/comet-ml/opik/blob/72628f77bade9dfb508cc22ce71362bb0e6ed132/sdks/python/src/opik/cli.py#L123,comet-ml__opik/proxy,start server proxy
+click,https://github.com/comet-ml/opik/blob/72628f77bade9dfb508cc22ce71362bb0e6ed132/sdks/python/src/opik/cli.py#L183,comet-ml__opik/healthcheck,perform healthcheck
 cli,https://github.com/comet-ml/opik/blob/72628f77bade9dfb508cc22ce71362bb0e6ed132/sdks/python/src/opik/cli.py#L192,,run opik cli
+click,https://github.com/comet-ml/opik/blob/72628f77bade9dfb508cc22ce71362bb0e6ed132/sdks/python/src/opik/cli.py#L45,comet-ml__opik/configure,configure sdk
 api,https://github.com/comet-ml/opik/blob/72628f77bade9dfb508cc22ce71362bb0e6ed132/sdks/python/src/opik/cli.py#L88,comet-ml__opik/proxy,start server
 api,https://github.com/comet-ml/opik/blob/72628f77bade9dfb508cc22ce71362bb0e6ed132/sdks/python/src/opik/config.py#L83,comet-ml__opik/settings_customise_sources,configure settings sources
 api,https://github.com/comet-ml/opik/blob/72628f77bade9dfb508cc22ce71362bb0e6ed132/sdks/python/src/opik/decorator/inspect_helpers.py#L29,comet-ml__opik/is_generator,check generator
@@ -316,43 +332,43 @@ api,https://github.com/comet-ml/opik/blob/72628f77bade9dfb508cc22ce71362bb0e6ed1
 api,https://github.com/comet-ml/opik/blob/72628f77bade9dfb508cc22ce71362bb0e6ed132/sdks/python/src/opik/validation/validator_helpers.py#L44,comet-ml__opik/validate_type_dict,check dictionary validity
 api,https://github.com/comet-ml/opik/blob/72628f77bade9dfb508cc22ce71362bb0e6ed132/sdks/python/src/opik/validation/validator_helpers.py#L6,comet-ml__opik/validate_type_str,check string validity
 api,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L132,confident-ai__deepeval/logout,remove api key
-typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L133,repos__confident-ai__deepeval/logout,remove key
+typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L133,confident-ai__deepeval/logout,remove key
 api,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L138,confident-ai__deepeval/enable_grpc_logging,enable grpc logging
-typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L139,repos__confident-ai__deepeval/enable_grpc_logging,enable logging
+typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L139,confident-ai__deepeval/enable_grpc_logging,enable logging
 api,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L143,confident-ai__deepeval/set_azure_openai_env,set azure openai environment
-typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L144,repos__confident-ai__deepeval/set_azure_openai_env,set credentials
+typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L144,confident-ai__deepeval/set_azure_openai_env,set credentials
 api,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L189,confident-ai__deepeval/set_azure_openai_embedding_env,set azure embedding environment
-typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L190,repos__confident-ai__deepeval/set_azure_openai_embedding_env,set embedding environment
+typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L190,confident-ai__deepeval/set_azure_openai_embedding_env,set embedding environment
 api,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L208,confident-ai__deepeval/unset_azure_openai_env,remove azure openai keys
-typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L209,repos__confident-ai__deepeval/unset_azure_openai_env,clear credentials
+typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L209,confident-ai__deepeval/unset_azure_openai_env,clear credentials
 api,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L224,confident-ai__deepeval/unset_azure_openai_embedding_env,remove azure openai embedding settings
-typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L225,repos__confident-ai__deepeval/unset_azure_openai_embedding_env,unset embedding environment
+typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L225,confident-ai__deepeval/unset_azure_openai_embedding_env,unset embedding environment
 api,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L239,confident-ai__deepeval/set_ollama_model_env,set model environment
-typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L240,repos__confident-ai__deepeval/set_ollama_model_env,set model environment
+typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L240,confident-ai__deepeval/set_ollama_model_env,set model environment
 api,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L259,confident-ai__deepeval/unset_ollama_model_env,remove model environment variables
-typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L260,repos__confident-ai__deepeval/unset_ollama_model_env,unset model environment
+typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L260,confident-ai__deepeval/unset_ollama_model_env,unset model environment
 api,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L270,confident-ai__deepeval/set_ollama_embeddings_env,set embedding environment
-typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L271,repos__confident-ai__deepeval/set_ollama_embeddings_env,set embedding environment
+typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L271,confident-ai__deepeval/set_ollama_embeddings_env,set embedding environment
 api,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L293,confident-ai__deepeval/unset_ollama_embeddings_env,remove embedding keys
-typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L294,repos__confident-ai__deepeval/unset_ollama_embeddings_env,unset embedding environment
+typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L294,confident-ai__deepeval/unset_ollama_embeddings_env,unset embedding environment
 api,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L310,confident-ai__deepeval/set_local_model_env,configure local model
-typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L311,repos__confident-ai__deepeval/set_local_model_env,set model environment
+typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L311,confident-ai__deepeval/set_local_model_env,set model environment
 api,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L340,confident-ai__deepeval/unset_local_model_env,remove local model settings
-typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L341,repos__confident-ai__deepeval/unset_local_model_env,unset model environment
+typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L341,confident-ai__deepeval/unset_local_model_env,unset model environment
 api,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L358,confident-ai__deepeval/set_local_embeddings_env,configure local embeddings
-typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L359,repos__confident-ai__deepeval/set_local_embeddings_env,set embedding environment
+typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L359,confident-ai__deepeval/set_local_embeddings_env,set embedding environment
 api,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L383,confident-ai__deepeval/unset_local_embeddings_env,remove local embedding settings
-typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L384,repos__confident-ai__deepeval/unset_local_embeddings_env,unset embedding environment
+typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L384,confident-ai__deepeval/unset_local_embeddings_env,unset embedding environment
 api,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L400,confident-ai__deepeval/set_gemini_model_env,configure gemini model environment
-typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L401,repos__confident-ai__deepeval/set_gemini_model_env,set model environment
+typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L401,confident-ai__deepeval/set_gemini_model_env,set model environment
 api,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L42,confident-ai__deepeval/set_confident_region_command,set data region
-typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L43,repos__confident-ai__deepeval/set_confident_region_command,set region
+typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L43,confident-ai__deepeval/set_confident_region_command,set region
 api,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L444,confident-ai__deepeval/unset_gemini_model_env,remove gemini environment
-typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L445,repos__confident-ai__deepeval/unset_gemini_model_env,unset model environment
+typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L445,confident-ai__deepeval/unset_gemini_model_env,unset model environment
 cli,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L458,,manage deepeval configuration
 api,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L57,confident-ai__deepeval/login,initiate user login
-typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L58,repos__confident-ai__deepeval/login,authenticate user
-typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/recommend.py#L58,repos__confident-ai__deepeval/metrics,recommend metrics
+typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L58,confident-ai__deepeval/login,authenticate user
+typer,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/recommend.py#L58,confident-ai__deepeval/metrics,recommend metrics
 api,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/server.py#L17,confident-ai__deepeval/log_message,record log message
 api,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/server.py#L20,confident-ai__deepeval/do_OPTIONS,send cors headers
 api,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/server.py#L28,confident-ai__deepeval/do_POST,process login request
@@ -928,44 +944,44 @@ cli,https://github.com/erikbern/ann-benchmarks/blob/36681911472059cd4cb9fcac1686
 cli,https://github.com/erikbern/ann-benchmarks/blob/36681911472059cd4cb9fcac1686709201a2cbc0/install.py#L31,,build docker images
 cli,https://github.com/erikbern/ann-benchmarks/blob/36681911472059cd4cb9fcac1686709201a2cbc0/plot.py#L95,,generate performance plot
 cli,https://github.com/erikbern/ann-benchmarks/blob/36681911472059cd4cb9fcac1686709201a2cbc0/run.py#L5,,run benchmark
-fire,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/evalplus/codegen.py#L268,repos__evalplus__evalplus/run_codegen,duplicate function
+fire,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/evalplus/codegen.py#L268,evalplus__evalplus/run_codegen,duplicate function
 cli,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/evalplus/codegen.py#L271,,generate code
 api,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/evalplus/eval/utils.py#L87,evalplus__evalplus/readline,raise ioerror
 api,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/evalplus/eval/utils.py#L93,evalplus__evalplus/readable,check readability
-fire,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/evalplus/evalperf.py#L554,repos__evalplus__evalplus/script,duplicate function
+fire,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/evalplus/evalperf.py#L554,evalplus__evalplus/script,duplicate function
 cli,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/evalplus/evalperf.py#L557,,compute performance scores
-fire,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/evalplus/evaluate.py#L371,repos__evalplus__evalplus/evaluate,duplicate function
+fire,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/evalplus/evaluate.py#L371,evalplus__evalplus/evaluate,duplicate function
 cli,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/evalplus/evaluate.py#L374,,evaluate code correctness
 cli,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/evalplus/inputgen.py#L107,,generate input jsonl
-fire,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/evalplus/lecacy_sanitize.py#L197,repos__evalplus__evalplus/script,duplicate function
+fire,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/evalplus/lecacy_sanitize.py#L197,evalplus__evalplus/script,duplicate function
 cli,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/evalplus/lecacy_sanitize.py#L200,,sanitize python code
 api,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/evalplus/perf/profile.py#L50,evalplus__evalplus/physical_runtime_profiler,measure execution time
 cli,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/evalplus/perf/sampling.py#L292,,generate task inputs
-fire,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/evalplus/perf/sampling.py#L295,repos__evalplus__evalplus/main,duplicate function
+fire,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/evalplus/perf/sampling.py#L295,evalplus__evalplus/main,duplicate function
 cli,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/evalplus/perf/sas.py#L165,,generate test synthesizers
-fire,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/evalplus/perf/sas.py#L168,repos__evalplus__evalplus/main,duplicate function
-fire,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/evalplus/perf/select_pe_inputs.py#L122,repos__evalplus__evalplus/script,duplicate function
+fire,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/evalplus/perf/sas.py#L168,evalplus__evalplus/main,duplicate function
+fire,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/evalplus/perf/select_pe_inputs.py#L122,evalplus__evalplus/script,duplicate function
 cli,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/evalplus/perf/select_pe_inputs.py#L125,,select performance inputs
-fire,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/evalplus/perf/select_pe_tasks.py#L236,repos__evalplus__evalplus/script,duplicate function
+fire,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/evalplus/perf/select_pe_tasks.py#L236,evalplus__evalplus/script,duplicate function
 cli,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/evalplus/perf/select_pe_tasks.py#L239,,filter variance
-fire,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/evalplus/sanitize.py#L249,repos__evalplus__evalplus/script,duplicate function
+fire,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/evalplus/sanitize.py#L249,evalplus__evalplus/script,duplicate function
 cli,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/evalplus/sanitize.py#L252,,sanitize python code
-fire,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/evalplus/syncheck.py#L114,repos__evalplus__evalplus/script,duplicate function
+fire,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/evalplus/syncheck.py#L114,evalplus__evalplus/script,duplicate function
 cli,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/evalplus/syncheck.py#L117,,check codegen completeness
 cli,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/tools/checker.py#L5,,execute sanitization
-fire,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/tools/collect_valid_solutions.py#L197,repos__evalplus__evalplus/script,duplicate function
+fire,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/tools/collect_valid_solutions.py#L197,evalplus__evalplus/script,duplicate function
 cli,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/tools/collect_valid_solutions.py#L200,,test and clean solutions
 api,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/tools/collect_valid_solutions.py#L85,evalplus__evalplus/has_print_in_non_main_functions,detects print calls
 cli,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/tools/directory_to_jsonl.py#L45,,convert solutions
-fire,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/tools/directory_to_jsonl.py#L48,repos__evalplus__evalplus/main,duplicate function
+fire,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/tools/directory_to_jsonl.py#L48,evalplus__evalplus/main,duplicate function
 cli,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/tools/evalperf/hf_upload.py#L62,,process evalplus dataset
-fire,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/tools/evalperf/hf_upload.py#L63,repos__evalplus__evalplus/main,duplicate function
+fire,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/tools/evalperf/hf_upload.py#L63,evalplus__evalplus/main,duplicate function
 cli,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/tools/evalperf/intra_model_viz.py#L193,,compare prompting strategies
-fire,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/tools/evalperf/intra_model_viz.py#L196,repos__evalplus__evalplus/main,duplicate function
+fire,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/tools/evalperf/intra_model_viz.py#L196,evalplus__evalplus/main,duplicate function
 cli,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/tools/evalperf/pairwise_heatmap.py#L114,,generate model heatmap
-fire,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/tools/evalperf/pairwise_heatmap.py#L117,repos__evalplus__evalplus/main,duplicate function
+fire,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/tools/evalperf/pairwise_heatmap.py#L117,evalplus__evalplus/main,duplicate function
 cli,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/tools/evalperf/viz_by_params.py#L200,,compare prompting strategies
-fire,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/tools/evalperf/viz_by_params.py#L203,repos__evalplus__evalplus/main,duplicate function
+fire,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/tools/evalperf/viz_by_params.py#L203,evalplus__evalplus/main,duplicate function
 cli,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/tools/filter_inputs.py#L22,,filter invalid inputs
 cli,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/tools/humaneval/check_ground_truth.py#L12,,verify contract independence
 cli,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/tools/humaneval/filter_extreme.py#L1,,filter task inputs
@@ -1005,7 +1021,7 @@ api,https://github.com/evidentlyai/evidently/blob/609cc2afbfa28c6b37be725b9f1f61
 api,https://github.com/evidentlyai/evidently/blob/609cc2afbfa28c6b37be725b9f1f61bd18136990/setupbase.py#L235,evidentlyai__evidently/get_outputs,return empty list
 api,https://github.com/evidentlyai/evidently/blob/609cc2afbfa28c6b37be725b9f1f61bd18136990/setupbase.py#L94,evidentlyai__evidently/find_packages,identify packages
 api,https://github.com/evidentlyai/evidently/blob/609cc2afbfa28c6b37be725b9f1f61bd18136990/src/evidently/cli/main.py#L8,evidentlyai__evidently/evidently_callback,evaluate data
-typer,https://github.com/evidentlyai/evidently/blob/609cc2afbfa28c6b37be725b9f1f61bd18136990/src/evidently/cli/ui.py#L29,repos__evidentlyai__evidently/ui,launch ui service
+typer,https://github.com/evidentlyai/evidently/blob/609cc2afbfa28c6b37be725b9f1f61bd18136990/src/evidently/cli/ui.py#L29,evidentlyai__evidently/ui,launch ui service
 api,https://github.com/evidentlyai/evidently/blob/609cc2afbfa28c6b37be725b9f1f61bd18136990/src/evidently/core/metric_types.py#L1060,evidentlyai__evidently/label_metric,unimplemented function
 api,https://github.com/evidentlyai/evidently/blob/609cc2afbfa28c6b37be725b9f1f61bd18136990/src/evidently/core/metric_types.py#L1066,evidentlyai__evidently/share_label_display_name,unimplemented function
 api,https://github.com/evidentlyai/evidently/blob/609cc2afbfa28c6b37be725b9f1f61bd18136990/src/evidently/core/metric_types.py#L314,evidentlyai__evidently/convert_labels,transform label types
@@ -2231,17 +2247,17 @@ api,https://github.com/huggingface/evaluate/blob/5aa3982a9a8c86e506860e381d428a6
 api,https://github.com/huggingface/evaluate/blob/5aa3982a9a8c86e506860e381d428a64b0cce73b/src/evaluate/utils/logging.py#L85,huggingface__evaluate/get_verbosity,retrieve logging level
 api,https://github.com/huggingface/evaluate/blob/5aa3982a9a8c86e506860e381d428a64b0cce73b/src/evaluate/visualization.py#L138,huggingface__evaluate/radar_plot,create radar chart
 api,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/logging/evaluation_tracker.py#L402,huggingface__lighteval/push_details_to_hub,upload details
-typer,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/main_custom.py#L45,repos__huggingface__lighteval/custom,evaluate models
+typer,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/main_custom.py#L45,huggingface__lighteval/custom,evaluate models
 api,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/main_endpoint.py#L166,huggingface__lighteval/tgi,evaluate model
-typer,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/main_endpoint.py#L167,repos__huggingface__lighteval/tgi,evaluate models
-typer,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/main_endpoint.py#L292,repos__huggingface__lighteval/litellm,evaluate models
+typer,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/main_endpoint.py#L167,huggingface__lighteval/tgi,evaluate models
+typer,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/main_endpoint.py#L292,huggingface__lighteval/litellm,evaluate models
 api,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/main_endpoint.py#L38,huggingface__lighteval/inference_endpoint,evaluate model
-typer,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/main_endpoint.py#L39,repos__huggingface__lighteval/inference_endpoint,evaluate models
+typer,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/main_endpoint.py#L39,huggingface__lighteval/inference_endpoint,evaluate models
 api,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/main_endpoint.py#L420,huggingface__lighteval/inference_providers,evaluate model
-typer,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/main_endpoint.py#L421,repos__huggingface__lighteval/inference_providers,evaluate models
-typer,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/main_tasks.py#L36,repos__huggingface__lighteval/inspect,inspect tasks
-typer,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/main_tasks.py#L71,repos__huggingface__lighteval/list,display tasks
-typer,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/main_tasks.py#L82,repos__huggingface__lighteval/create,generate task file
+typer,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/main_endpoint.py#L421,huggingface__lighteval/inference_providers,evaluate models
+typer,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/main_tasks.py#L36,huggingface__lighteval/inspect,inspect tasks
+typer,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/main_tasks.py#L71,huggingface__lighteval/list,display tasks
+typer,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/main_tasks.py#L82,huggingface__lighteval/create,generate task file
 api,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/metrics/dynamic_metrics.py#L103,huggingface__lighteval/probability_metric,calculate probability
 api,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/metrics/dynamic_metrics.py#L78,huggingface__lighteval/normalized_multi_choice_prob_metric,calculate probability
 api,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/metrics/imports/data_stats_metric.py#L125,huggingface__lighteval/evaluate_batch,unimplemented function
@@ -2416,6 +2432,8 @@ api,https://github.com/HumanCompatibleAI/overcooked_ai/blob/739950a079cdaed5a44f
 api,https://github.com/HumanCompatibleAI/overcooked_ai/blob/739950a079cdaed5a44fcc662efc40244c205d06/src/overcooked_ai_py/visualization/state_visualizer.py#L162,HumanCompatibleAI__overcooked_ai/display_rendered_trajectory,save trajectory images
 api,https://github.com/HumanCompatibleAI/overcooked_ai/blob/739950a079cdaed5a44fcc662efc40244c205d06/src/overcooked_ai_py/visualization/visualization_utils.py#L9,HumanCompatibleAI__overcooked_ai/ipython_images_slider,display image
 cli,https://github.com/jitsi/jiwer/blob/c1b0d5e005431f5ce4fa6797f48639a8ccaa5042/src/jiwer/cli.py#L142,,compute error rate
+click,https://github.com/jitsi/jiwer/blob/c1b0d5e005431f5ce4fa6797f48639a8ccaa5042/src/jiwer/cli.py#L72,jitsi__jiwer/cli,duplicate function
+click,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/api/app.py#L1016,Marker-Inc-Korea__AutoRAG/main,duplicate function
 cli,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/api/app.py#L1020,,manage project trials
 api,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/api/app.py#L108,Marker-Inc-Korea__AutoRAG/add_cors_headers,set cors headers
 api,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/api/app.py#L122,Marker-Inc-Korea__AutoRAG/options_handler,set cors headers
@@ -2451,14 +2469,21 @@ api,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c
 api,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/api/src/schema.py#L185,Marker-Inc-Korea__AutoRAG/create_directories,create directories
 api,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/api/tasks/processing.py#L5,Marker-Inc-Korea__AutoRAG/process_documents,count documents
 api,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/api/utils/task_utils.py#L7,Marker-Inc-Korea__AutoRAG/get_task_info,retrieve task details
-click,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/cli.py#L200,repos__Marker-Inc-Korea__AutoRAG/evaluate,run evaluation
-click,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/cli.py#L201,repos__Marker-Inc-Korea__AutoRAG/run_api,start server
-click,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/cli.py#L202,repos__Marker-Inc-Korea__AutoRAG/run_web,launch interface
-click,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/cli.py#L203,repos__Marker-Inc-Korea__AutoRAG/run_dashboard,launch dashboard
-click,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/cli.py#L204,repos__Marker-Inc-Korea__AutoRAG/extract_best_config,extract configuration
-click,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/cli.py#L205,repos__Marker-Inc-Korea__AutoRAG/restart_evaluate,restart evaluation
-click,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/cli.py#L206,repos__Marker-Inc-Korea__AutoRAG/validate,validate configuration
-cli,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/cli.py#L208,,redundant function
+click,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/cli.py#L103,Marker-Inc-Korea__AutoRAG/run_web,duplicate function
+click,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/cli.py#L151,Marker-Inc-Korea__AutoRAG/run_dashboard,duplicate function
+click,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/cli.py#L162,Marker-Inc-Korea__AutoRAG/extract_best_config,duplicate function
+click,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/cli.py#L168,Marker-Inc-Korea__AutoRAG/restart_evaluate,duplicate function
+click,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/cli.py#L191,Marker-Inc-Korea__AutoRAG/validate,duplicate function
+click,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/cli.py#L200,Marker-Inc-Korea__AutoRAG/evaluate,run evaluation
+click,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/cli.py#L201,Marker-Inc-Korea__AutoRAG/run_api,start server
+click,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/cli.py#L202,Marker-Inc-Korea__AutoRAG/run_web,launch interface
+click,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/cli.py#L203,Marker-Inc-Korea__AutoRAG/run_dashboard,launch dashboard
+click,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/cli.py#L204,Marker-Inc-Korea__AutoRAG/extract_best_config,extract configuration
+click,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/cli.py#L205,Marker-Inc-Korea__AutoRAG/restart_evaluate,restart evaluation
+click,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/cli.py#L206,Marker-Inc-Korea__AutoRAG/validate,validate configuration
+cli,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/cli.py#L208,,duplicate function
+click,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/cli.py#L54,Marker-Inc-Korea__AutoRAG/evaluate,duplicate function
+click,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/cli.py#L81,Marker-Inc-Korea__AutoRAG/run_api,duplicate function
 api,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/data/chunk/langchain_chunk.py#L12,Marker-Inc-Korea__AutoRAG/langchain_chunk,chunk texts
 api,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/data/chunk/llama_index_chunk.py#L16,Marker-Inc-Korea__AutoRAG/llama_index_chunk,chunk texts
 api,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/data/parse/clova.py#L14,Marker-Inc-Korea__AutoRAG/clova_ocr,parse documents
@@ -2507,10 +2532,15 @@ api,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c
 api,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/utils/util.py#L443,Marker-Inc-Korea__AutoRAG/find_trial_dir,find trial directories
 api,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/utils/util.py#L458,Marker-Inc-Korea__AutoRAG/find_node_summary_files,locate summary files
 api,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/utils/util.py#L710,Marker-Inc-Korea__AutoRAG/decode_multiple_json_from_bytes,decode json objects
+click,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/web.py#L70,Marker-Inc-Korea__AutoRAG/run_web_server,launch web server
 cli,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/web.py#L80,,run webserver
+click,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/sample_dataset/eli5/load_eli5_dataset.py#L15,Marker-Inc-Korea__AutoRAG/load_eli5_dataset,save dataset
 cli,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/sample_dataset/eli5/load_eli5_dataset.py#L34,,load eli5 dataset
+click,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/sample_dataset/hotpotqa/load_hotpotqa_dataset.py#L15,Marker-Inc-Korea__AutoRAG/load_hotpotqa_dataset,load dataset
 cli,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/sample_dataset/hotpotqa/load_hotpotqa_dataset.py#L34,,save hotpotqa
+click,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/sample_dataset/msmarco/load_msmarco_dataset.py#L15,Marker-Inc-Korea__AutoRAG/load_msmarco_dataset,load dataset
 cli,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/sample_dataset/msmarco/load_msmarco_dataset.py#L36,,load dataset
+click,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/sample_dataset/triviaqa/load_triviaqa_dataset.py#L15,Marker-Inc-Korea__AutoRAG/load_triviaqa_dataset,load dataset
 cli,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/sample_dataset/triviaqa/load_triviaqa_dataset.py#L36,,load triviaqa dataset
 api,https://github.com/microsoft/promptbench/blob/fcda538bd779ad11612818e0645a387a462b5c3b/promptbench/dyval/dyval_utils.py#L100,microsoft__promptbench/process_dyval_inputs,format inputs
 api,https://github.com/microsoft/promptbench/blob/fcda538bd779ad11612818e0645a387a462b5c3b/promptbench/dyval/dyval_utils.py#L172,microsoft__promptbench/process_dyval_preds,extract prediction
@@ -3068,7 +3098,7 @@ cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a7
 cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/tools/prediction_merger.py#L115,,merge predictions
 cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/tools/prompt_viewer.py#L226,,generate prompts
 cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/tools/update_dataset_suffix.py#L144,,rename python files
-typer,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/tools/viz_multi_model.py#L15,repos__open-compass__OpenCompass/main,duplicated function
+typer,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/tools/viz_multi_model.py#L15,open-compass__OpenCompass/main,duplicate function
 cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/tools/viz_multi_model.py#L49,,visualize model results
 cli,https://github.com/open-compass/VLMEvalKit/blob/50c954aad1d92dab9bf5d23f62576c994b4a675f/run.py#L508,,run model evaluation
 cli,https://github.com/open-compass/VLMEvalKit/blob/50c954aad1d92dab9bf5d23f62576c994b4a675f/scripts/data_browser.py#L171,,visualize dataset
@@ -3343,7 +3373,7 @@ api,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0
 api,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0f/evals/registry/data/word_association/corpus_tools/validators.py#L282,openai__evals/set_model,set gpt model
 cli,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0f/evals/registry/data/word_association/corpus_tools/validators.py#L293,,validate similarity
 cli,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0f/scripts/pattern_identification_generator.py#L54,,generate pattern examples
-fire,https://github.com/openai/human-eval/blob/6d43fb980f9fee3c892a914eda09951f772ad10d/human_eval/evaluate_functional_correctness.py#L25,repos__openai__human-eval/entry_point,evaluate samples
+fire,https://github.com/openai/human-eval/blob/6d43fb980f9fee3c892a914eda09951f772ad10d/human_eval/evaluate_functional_correctness.py#L25,openai__human-eval/entry_point,evaluate samples
 api,https://github.com/openai/human-eval/blob/6d43fb980f9fee3c892a914eda09951f772ad10d/human_eval/execution.py#L130,openai__human-eval/read,raise ioerror
 api,https://github.com/openai/human-eval/blob/6d43fb980f9fee3c892a914eda09951f772ad10d/human_eval/execution.py#L133,openai__human-eval/readline,raise ioerror
 api,https://github.com/openai/human-eval/blob/6d43fb980f9fee3c892a914eda09951f772ad10d/human_eval/execution.py#L136,openai__human-eval/readlines,raise ioerror
@@ -3376,8 +3406,8 @@ api,https://github.com/plurai-ai/intellagent/blob/2680da4545b87717a8dbc869738238
 api,https://github.com/plurai-ai/intellagent/blob/2680da4545b87717a8dbc869738238022ca84ee4/simulator/utils/sqlite_handler.py#L133,plurai-ai__intellagent/read_thought,retrieve thoughts
 api,https://github.com/plurai-ai/intellagent/blob/2680da4545b87717a8dbc869738238022ca84ee4/simulator/utils/sqlite_handler.py#L144,plurai-ai__intellagent/read_tool,fetch tool records
 api,https://github.com/plurai-ai/intellagent/blob/2680da4545b87717a8dbc869738238022ca84ee4/simulator/utils/sqlite_handler.py#L71,plurai-ai__intellagent/exit,close connection
-api,https://github.com/plurai-ai/intellagent/blob/2680da4545b87717a8dbc869738238022ca84ee4/simulator/visualization/pages/2_����_Session_Visualizer.py#L10,plurai-ai__intellagent/add_dataframe,add dataframe
-cli,https://github.com/plurai-ai/intellagent/blob/2680da4545b87717a8dbc869738238022ca84ee4/simulator/visualization/pages/2_����_Session_Visualizer.py#L181,,visualize sessions
+api,https://github.com/plurai-ai/intellagent/blob/2680da4545b87717a8dbc869738238022ca84ee4/simulator/visualization/pages/2_🤖_Session_Visualizer.py#L10,plurai-ai__intellagent/add_dataframe,add dataframe
+cli,https://github.com/plurai-ai/intellagent/blob/2680da4545b87717a8dbc869738238022ca84ee4/simulator/visualization/pages/2_🤖_Session_Visualizer.py#L181,,visualize session
 cli,https://github.com/prometheus-eval/prometheus-eval/blob/dcfb44272d5d0414832f5dbb8c2a05ebc2614234/BiGGen-Bench/make_report.py#L67,,generate performance report
 api,https://github.com/prometheus-eval/prometheus-eval/blob/dcfb44272d5d0414832f5dbb8c2a05ebc2614234/BiGGen-Bench/run_api_inference.py#L16,prometheus-eval__prometheus-eval/dummy_completions,generate dummy outputs
 cli,https://github.com/prometheus-eval/prometheus-eval/blob/dcfb44272d5d0414832f5dbb8c2a05ebc2614234/BiGGen-Bench/run_api_inference.py#L79,,generate model completions
@@ -3420,18 +3450,35 @@ api,https://github.com/prometheus-eval/prometheus-eval/blob/dcfb44272d5d0414832f
 api,https://github.com/prometheus-eval/prometheus-eval/blob/dcfb44272d5d0414832f5dbb8c2a05ebc2614234/train/src/alignment/conversation.py#L292,prometheus-eval__prometheus-eval/to_gradio_chatbot,convert conversation format
 cli,https://github.com/prometheus-eval/prometheus-eval/blob/dcfb44272d5d0414832f5dbb8c2a05ebc2614234/train/src/alignment/release.py#L103,,update version
 cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/benchmarking/benchmark_splitting.py#L185,,benchmark dataset splitting
+click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/benchmarking/benchmark_splitting.py#L52,pykeen__pykeen/main,duplicate function
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L217,pykeen__pykeen/importers,list importers
+click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L218,pykeen__pykeen/importers,display importer
+click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L236,pykeen__pykeen/datasets,display dataset
+click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L263,pykeen__pykeen/training_loops,display training approach
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L277,pykeen__pykeen/negative_samplers,display negative samplers
+click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L279,pykeen__pykeen/negative_samplers,display sampler
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L293,pykeen__pykeen/stoppers,display stoppers
+click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L295,pykeen__pykeen/stoppers,display stopper
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L309,pykeen__pykeen/evaluators,display evaluators
+click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L311,pykeen__pykeen/evaluators,display evaluator
+click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L327,pykeen__pykeen/losses,display loss
+click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L343,pykeen__pykeen/optimizers,display optimizer
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L363,pykeen__pykeen/lr_schedulers,display optimizer list
+click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L365,pykeen__pykeen/lr_schedulers,display optimizer
+click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L387,pykeen__pykeen/regularizers,display regularizer
+click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L429,pykeen__pykeen/metrics,display metrics
+click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L456,pykeen__pykeen/trackers,display tracker
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L470,pykeen__pykeen/hpo_samplers,display hpo samplers
+click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L472,pykeen__pykeen/hpo_samplers,display sampler
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L637,pykeen__pykeen/readme,generate readme content
-click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L726,repos__pykeen__pykeen/build_cli_from_cls,generate command
-click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L729,repos__pykeen__pykeen/optimize,optimize experiments
-click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L730,repos__pykeen__pykeen/experiments,optimize experiments
-click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L733,repos__pykeen__pykeen/tokenize,tokenize dataset
-cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L735,,redundant function
+click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L639,pykeen__pykeen/readme,generate readme
+click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L726,pykeen__pykeen/build_cli_from_cls,generate command
+click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L729,pykeen__pykeen/optimize,optimize experiments
+click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L73,pykeen__pykeen/version,print version
+click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L730,pykeen__pykeen/experiments,optimize experiments
+click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L733,pykeen__pykeen/tokenize,tokenize dataset
+cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L735,,duplicate function
+click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L88,pykeen__pykeen/models,display model
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L93,pykeen__pykeen/format_class,generate name
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/contrib/lightning.py#L122,pykeen__pykeen/training_step,execute training iteration
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/contrib/lightning.py#L126,pykeen__pykeen/validation_step,perform validation
@@ -3442,14 +3489,20 @@ api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded
 cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/contrib/lightning.py#L329,,integrate training loop
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/analysis.py#L331,pykeen__pykeen/get_relation_injectivity_df,calculate relation injectivity
 cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/aristo.py#L63,,load dataset
+click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/base.py#L311,pykeen__pykeen/main,misidentified function
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/base.py#L361,pykeen__pykeen/restrict,restrict dataset
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/base.py#L488,pykeen__pykeen/merged,merge triples
 cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/biokg.py#L69,,load biokg dataset
 cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/ckg.py#L103,,load clinical graph
+click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/cli.py#L210,pykeen__pykeen/verify,verify datasets
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/cli.py#L246,pykeen__pykeen/expected_metrics,compute metrics
+click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/cli.py#L262,pykeen__pykeen/expected_metrics,compute metrics
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/cli.py#L377,pykeen__pykeen/degree,analyze degree distributions
+click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/cli.py#L391,pykeen__pykeen/degree,analyze degrees
 cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/cli.py#L511,,run dataset analysis
+click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/cli.py#L54,pykeen__pykeen/summarize,summarize datasets
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/cli.py#L67,pykeen__pykeen/analyze,generate analysis
+click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/cli.py#L75,pykeen__pykeen/analyze,analyze datasets
 cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/codex.py#L141,,load codex datasets
 cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/conceptnet.py#L70,,load conceptnet dataset
 cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/countries.py#L46,,load countries dataset
@@ -3460,6 +3513,7 @@ cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded
 cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/ea/openea.py#L163,,load openea dataset
 cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/ea/wk3l.py#L252,,load wk3l datasets
 cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/freebase.py#L96,,load freebase datasets
+click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/generate.py#L26,pykeen__pykeen/main,duplicate function
 cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/generate.py#L73,,split triples
 cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/globi.py#L69,,load biotic interactions
 cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/datasets/hetionet.py#L71,,load dataset
@@ -3478,6 +3532,7 @@ api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/evaluation/rank_based_evaluator.py#L254,pykeen__pykeen/create_random,generate random results
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/evaluation/rank_based_evaluator.py#L408,pykeen__pykeen/finalize_with_confidence,compute confidence intervals
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/evaluation/ranks.py#L163,pykeen__pykeen/compute,calculate ranks
+click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/hpo/cli.py#L21,pykeen__pykeen/optimize,duplicate function
 cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/hpo/cli.py#L53,,optimize hyperparameters
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/hpo/hpo.py#L416,pykeen__pykeen/save_to_ftp,upload files
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/hpo/hpo.py#L436,pykeen__pykeen/save_to_s3,upload artifacts
@@ -3490,6 +3545,7 @@ api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/models/base.py#L306,pykeen__pykeen/load_state,load model state
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/models/base.py#L500,pykeen__pykeen/score_hrt_inverse,calculate inverse scores
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/models/base.py#L524,pykeen__pykeen/score_t_inverse,score tail predictions
+click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/models/cli/builders.py#L127,pykeen__pykeen/main,misidentified function
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/models/inductive/base.py#L97,pykeen__pykeen/replace_entity_representations_,update entity representations
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/models/inductive/inductive_nodepiece.py#L147,pykeen__pykeen/create_entity_representation_for_new_triples,create node piece representation
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/nn/init.py#L244,pykeen__pykeen/as_embedding,generate embedding
@@ -3497,6 +3553,7 @@ api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/nn/modules.py#L3804,pykeen__pykeen/latex_visualize,generate latex visualization
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/nn/node_piece/anchor_search.py#L415,pykeen__pykeen/precalculate_anchor_ppr,sort anchors
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/nn/node_piece/anchor_search.py#L56,pykeen__pykeen/topk_argsort,return top-k indices
+click,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/nn/node_piece/cli.py#L30,pykeen__pykeen/tokenize,duplicate function
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/nn/node_piece/representation.py#L213,pykeen__pykeen/save_assignment,save assignment
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/nn/node_piece/representation.py#L368,pykeen__pykeen/estimate_diversity,estimate hash diversity
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/nn/representation.py#L1239,pykeen__pykeen/from_dataset,generate text representation
@@ -3741,6 +3798,7 @@ cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598ffff
 cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/torchbenchmark/models/speech_transformer/speech_transformer/utils/utils.py#L24,,add recognition results
 cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/torchbenchmark/models/stable_diffusion_text_encoder/install.py#L18,,load model checkpoint
 cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/torchbenchmark/models/stable_diffusion_unet/install.py#L18,,load model checkpoint
+click,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/torchbenchmark/models/Super_SloMo/eval.py#L174,pytorch__benchmark/main,duplicate function
 cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/torchbenchmark/models/Super_SloMo/eval.py#L194,,convert video
 cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/torchbenchmark/models/Super_SloMo/install.py#L4,,download s3 data
 api,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/torchbenchmark/models/Super_SloMo/train.py#L114,pytorch__benchmark/get_lr,calculate learning rate
@@ -4402,17 +4460,17 @@ cli,https://github.com/stepjam/RLBench/blob/02720bba4c73fe02eb75df946b8791b80602
 api,https://github.com/tatsu-lab/alpaca_eval/blob/f19c323d8309d0d6f306bd26597db44fc6c62d57/scripts/precompute.py#L103,tatsu-lab__alpaca_eval/run_all_length_corrected_winrates,load and evaluate leaderboard
 api,https://github.com/tatsu-lab/alpaca_eval/blob/f19c323d8309d0d6f306bd26597db44fc6c62d57/scripts/precompute.py#L14,tatsu-lab__alpaca_eval/precompute_on_all_human_leaderboard,precompute annotations
 cli,https://github.com/tatsu-lab/alpaca_eval/blob/f19c323d8309d0d6f306bd26597db44fc6c62d57/scripts/precompute.py#L143,,precompute leaderboards
-fire,https://github.com/tatsu-lab/alpaca_eval/blob/f19c323d8309d0d6f306bd26597db44fc6c62d57/scripts/precompute.py#L144,repos__tatsu-lab__alpaca_eval/main,duplicate function
+fire,https://github.com/tatsu-lab/alpaca_eval/blob/f19c323d8309d0d6f306bd26597db44fc6c62d57/scripts/precompute.py#L144,tatsu-lab__alpaca_eval/main,duplicate function
 api,https://github.com/tatsu-lab/alpaca_eval/blob/f19c323d8309d0d6f306bd26597db44fc6c62d57/scripts/precompute.py#L29,tatsu-lab__alpaca_eval/precompute_evaluator_leaderboard,precompute leaderboard
 api,https://github.com/tatsu-lab/alpaca_eval/blob/f19c323d8309d0d6f306bd26597db44fc6c62d57/scripts/precompute.py#L66,tatsu-lab__alpaca_eval/update_leaderboard,update leaderboard
 api,https://github.com/tatsu-lab/alpaca_eval/blob/f19c323d8309d0d6f306bd26597db44fc6c62d57/scripts/precompute.py#L89,tatsu-lab__alpaca_eval/make_leaderboard_like,create leaderboard
 api,https://github.com/tatsu-lab/alpaca_eval/blob/f19c323d8309d0d6f306bd26597db44fc6c62d57/src/alpaca_eval/annotators/pairwise_evaluator.py#L66,tatsu-lab__alpaca_eval/annotate_samples,sample and annotate outputs
 api,https://github.com/tatsu-lab/alpaca_eval/blob/f19c323d8309d0d6f306bd26597db44fc6c62d57/src/alpaca_eval/completion_parsers.py#L209,tatsu-lab__alpaca_eval/replace_parser,replace substring
 api,https://github.com/tatsu-lab/alpaca_eval/blob/f19c323d8309d0d6f306bd26597db44fc6c62d57/src/alpaca_eval/constants.py#L98,tatsu-lab__alpaca_eval/ALPACAEVAL_INSTRUCTION_PARAMETERS,download and load data
-fire,https://github.com/tatsu-lab/alpaca_eval/blob/f19c323d8309d0d6f306bd26597db44fc6c62d57/src/alpaca_eval/main.py#L608,repos__tatsu-lab__alpaca_eval/ALL_FUNCTIONS,duplicate function
-fire,https://github.com/tatsu-lab/alpaca_eval/blob/f19c323d8309d0d6f306bd26597db44fc6c62d57/src/alpaca_eval/main.py#L611,repos__tatsu-lab__alpaca_eval/evaluate,duplicate function
+fire,https://github.com/tatsu-lab/alpaca_eval/blob/f19c323d8309d0d6f306bd26597db44fc6c62d57/src/alpaca_eval/main.py#L608,tatsu-lab__alpaca_eval/ALL_FUNCTIONS,duplicate function
+fire,https://github.com/tatsu-lab/alpaca_eval/blob/f19c323d8309d0d6f306bd26597db44fc6c62d57/src/alpaca_eval/main.py#L611,tatsu-lab__alpaca_eval/evaluate,duplicate function
 cli,https://github.com/tatsu-lab/alpaca_eval/blob/f19c323d8309d0d6f306bd26597db44fc6c62d57/src/alpaca_eval/main.py#L614,,evaluate model outputs
-fire,https://github.com/tatsu-lab/alpaca_eval/blob/f19c323d8309d0d6f306bd26597db44fc6c62d57/src/alpaca_eval/main.py#L615,repos__tatsu-lab__alpaca_eval/ALL_FUNCTIONS,duplicate function
+fire,https://github.com/tatsu-lab/alpaca_eval/blob/f19c323d8309d0d6f306bd26597db44fc6c62d57/src/alpaca_eval/main.py#L615,tatsu-lab__alpaca_eval/ALL_FUNCTIONS,duplicate function
 api,https://github.com/tatsu-lab/alpaca_eval/blob/f19c323d8309d0d6f306bd26597db44fc6c62d57/src/alpaca_eval/plotting.py#L102,tatsu-lab__alpaca_eval/plot_benchmark_correlations,plot correlations
 api,https://github.com/tatsu-lab/alpaca_eval/blob/f19c323d8309d0d6f306bd26597db44fc6c62d57/src/alpaca_eval/plotting.py#L165,tatsu-lab__alpaca_eval/show_new_lb,display label
 api,https://github.com/tatsu-lab/alpaca_eval/blob/f19c323d8309d0d6f306bd26597db44fc6c62d57/src/alpaca_eval/plotting.py#L335,tatsu-lab__alpaca_eval/plot_quality_vs_price_and_time,plot quality
@@ -4909,7 +4967,7 @@ api,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb4765938
 api,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/LLaVA_NeXT/scripts/archived/convert_sqa_to_llava.py#L51,Vchitect__VBench/convert_to_jsonl,convert data
 api,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/LLaVA_NeXT/scripts/archived/convert_sqa_to_llava.py#L8,Vchitect__VBench/convert_to_llava,convert data
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/LLaVA_NeXT/scripts/archived/convert_sqa_to_llava.py#L87,,convert problems
-fire,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/LLaVA_NeXT/scripts/archived/convert_sqa_to_llava.py#L88,repos__Vchitect__VBench/main,duplicate function
+fire,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/LLaVA_NeXT/scripts/archived/convert_sqa_to_llava.py#L88,Vchitect__VBench/main,duplicate function
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/LLaVA_NeXT/scripts/archived/convert_vizwiz_for_submission.py#L16,,process evaluation results
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/LLaVA_NeXT/scripts/archived/convert_vqav2_for_submission.py#L16,,process evaluation answers
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/LLaVA_NeXT/scripts/archived/data_info.py#L123,,generate image and token histograms
