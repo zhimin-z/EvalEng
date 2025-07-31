@@ -71,6 +71,7 @@ cli,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c4
 cli,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/tools/humaneval/to_original_fmt.py#L205,
 cli,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/tools/mbpp/fix_v020.py#L41,
 cli,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/tools/tsr/sample_init.py#L47,
+typer,https://github.com/evidentlyai/evidently/blob/609cc2afbfa28c6b37be725b9f1f61bd18136990/src/evidently/cli/ui.py#L29,evidentlyai__evidently/ui
 api,https://github.com/evidentlyai/evidently/blob/609cc2afbfa28c6b37be725b9f1f61bd18136990/src/evidently/metrics/column_statistics.py#L411,evidentlyai__evidently/to_config
 api,https://github.com/evidentlyai/evidently/blob/609cc2afbfa28c6b37be725b9f1f61bd18136990/src/evidently/metrics/group_by.py#L79,evidentlyai__evidently/label_metric
 cli,https://github.com/evidentlyai/evidently/blob/609cc2afbfa28c6b37be725b9f1f61bd18136990/src/evidently/metrics/recsys.py#L226,
@@ -139,6 +140,7 @@ api,https://github.com/Farama-Foundation/Metaworld/blob/cdafedfaaa896472fb7e76e2
 api,https://github.com/Farama-Foundation/Metaworld/blob/cdafedfaaa896472fb7e76e2fe103e120b67a9b6/metaworld/sawyer_xyz_env.py#L327,Farama-Foundation__Metaworld/discretize_goal_space
 api,https://github.com/Farama-Foundation/Metaworld/blob/cdafedfaaa896472fb7e76e2fe103e120b67a9b6/metaworld/wrappers.py#L31,Farama-Foundation__Metaworld/observation
 api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/client/python_utils.py#L17,Giskard-AI__giskard/get_python_requirements
+api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/client/python_utils.py#L29,Giskard-AI__giskard/get_python_version
 api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/core/suite.py#L237,Giskard-AI__giskard/to_junit
 api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/registry/decorators_utils.py#L65,Giskard-AI__giskard/insert_arg
 cli,https://github.com/google-deepmind/meltingpot/blob/f280a35a4ffe5a7613b5c4a062a66fd18c64876c/meltingpot/human_players/play_allelopathic_harvest.py#L77,
@@ -154,6 +156,7 @@ api,https://github.com/HumanCompatibleAI/overcooked_ai/blob/739950a079cdaed5a44f
 api,https://github.com/HumanCompatibleAI/overcooked_ai/blob/739950a079cdaed5a44fcc662efc40244c205d06/src/human_aware_rl/ppo/ppo_rllib.py#L81,HumanCompatibleAI__overcooked_ai/forward
 api,https://github.com/HumanCompatibleAI/overcooked_ai/blob/739950a079cdaed5a44fcc662efc40244c205d06/src/human_aware_rl/utils.py#L15,HumanCompatibleAI__overcooked_ai/delete_dir_if_exists
 api,https://github.com/HumanCompatibleAI/overcooked_ai/blob/739950a079cdaed5a44fcc662efc40244c205d06/src/overcooked_ai_py/planning/search.py#L36,HumanCompatibleAI__overcooked_ai/A_star_graph_search
+click,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/cli.py#L201,Marker-Inc-Korea__AutoRAG/run_api
 api,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/evaluation/retrieval_contents.py#L14,Marker-Inc-Korea__AutoRAG/evaluate_retrieval_contents
 api,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/nodes/passageaugmenter/run.py#L16,Marker-Inc-Korea__AutoRAG/run_passage_augmenter_node
 api,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/utils/util.py#L198,Marker-Inc-Korea__AutoRAG/replace_value_in_dict
@@ -214,8 +217,6 @@ cli,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0
 cli,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0f/evals/registry/data/poker_analysis/poker_analysis_sample_generator.py#L169,
 cli,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0f/evals/registry/data/word_association/corpus_tools/related_words.py#L189,
 api,https://github.com/openai/human-eval/blob/6d43fb980f9fee3c892a914eda09951f772ad10d/human_eval/execution.py#L130,openai__human-eval/read
-cli,https://github.com/openai/simple-evals/blob/3ec4e9b5ae3931a1858580e2fd3ce80c7fcbe1d9/healthbench_eval.py#L631,
-cli,https://github.com/openai/simple-evals/blob/3ec4e9b5ae3931a1858580e2fd3ce80c7fcbe1d9/simple_evals.py#L428,
 api,https://github.com/OpenLMLab/GAOKAO-Bench/blob/6dbb24f8d8439041e5431c4c184a582182a6ce9c/Bench/bench_function.py#L16,OpenLMLab__GAOKAO-Bench/get_api_key
 api,https://github.com/OpenLMLab/GAOKAO-Bench/blob/6dbb24f8d8439041e5431c4c184a582182a6ce9c/Bench/SUB_score_evaluation.py#L210,OpenLMLab__GAOKAO-Bench/year_sub_score_eval
 cli,https://github.com/OpenLMLab/GAOKAO-Bench/blob/6dbb24f8d8439041e5431c4c184a582182a6ce9c/Models/openai_gpt4.py#L80,
@@ -234,7 +235,6 @@ cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598ffff
 cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/scripts/upload_scribe_v2.py#L227,
 cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/scripts/userbenchmark/upload_s3_csv.py#L56,
 cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/scripts/userbenchmark/upload_s3.py#L41,
-cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/scripts/userbenchmark/upload_scribe.py#L134,
 cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/torchbenchmark/canary_models/diffuser_instruct_pix2pix/install.py#L18,
 cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/torchbenchmark/canary_models/hf_mixtral/install.py#L10,
 cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/torchbenchmark/canary_models/orca_2/install.py#L8,
@@ -357,4 +357,3 @@ api,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb4765938
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/vbench2_beta_long/eval_long.py#L282,
 api,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/vbench2_beta_long/overall_consistency.py#L4,Vchitect__VBench/compute_long_overall_consistency
 api,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/vbench2_beta_trustworthiness/culture_fairness.py#L80,Vchitect__VBench/compute_culture_fairness
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/client/python_utils.py#L29,Giskard-AI__giskard/get_python_version
