@@ -1,4 +1,4 @@
-type,line of code,function
+type,line of code,component/function/instruction
 api,https://github.com/allenai/reward-bench/blob/09eb3b5dd9d2157adc854c693a6a38105a8b3c87/rewardbench/models/beaver.py#L397,allenai__reward-bench/get_decoder
 api,https://github.com/allenai/reward-bench/blob/09eb3b5dd9d2157adc854c693a6a38105a8b3c87/rewardbench/models/starling.py#L107,allenai__reward-bench/get_device
 cli,https://github.com/amazon-science/RAGChecker/blob/6091f08c00e676e87a970f2aeb4a23a484746348/rag_baselines/chunking.py#L28,

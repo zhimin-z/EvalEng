@@ -1,4 +1,4 @@
-type,line of code,function,label,author rater's name,author rater's comment,crowdsourced rater's name,crowdsourced rater's comment
+type,line of code,component/function/instruction,label,author rater's name,author rater's comment,crowdsourced rater's name,crowdsourced rater's comment
 api,https://github.com/allenai/reward-bench/blob/09eb3b5dd9d2157adc854c693a6a38105a8b3c87/rewardbench/models/beaver.py#L397,allenai__reward-bench/get_decoder,retrieve model,Zhimin Zhao,Yes,Amir Mohammad Ebrahimi,Yes
 api,https://github.com/allenai/reward-bench/blob/09eb3b5dd9d2157adc854c693a6a38105a8b3c87/rewardbench/models/starling.py#L107,allenai__reward-bench/get_device,retrieve device,Zhimin Zhao,Yes,,
 cli,https://github.com/amazon-science/RAGChecker/blob/6091f08c00e676e87a970f2aeb4a23a484746348/rag_baselines/chunking.py#L28,,split text,Zhimin Zhao,Yes,Amir Mohammad Ebrahimi,Yes
