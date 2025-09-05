@@ -5,4 +5,5 @@
 package*.json
 repos/
 node_modules/
+summary/
 .env
