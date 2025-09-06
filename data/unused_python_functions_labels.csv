@@ -1148,9 +1148,9 @@ api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015
 api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/synthdog/utils.py#L11,EvolvingLMMs-Lab__lmms-eval/synthdog_doc_to_visual,convert images
 api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/websrc/utils.py#L30,EvolvingLMMs-Lab__lmms-eval/websrc_doc_to_visual,convert images
 api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/xlrs/mcq_utils.py#L25,EvolvingLMMs-Lab__lmms-eval/xlrs_doc_to_visual,convert images
-api,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/torchbenchmark/models/yolov3/yolo_utils/datasets.py#L926,pytorch__benchmark/convert_images2bmp,convert images bmp
-api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/olympiadbench/cn_utils.py#L18,EvolvingLMMs-Lab__lmms-eval/olympiadbench_doc_to_visual,convert images to rgb
-api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/olympiadbench/en_utils.py#L18,EvolvingLMMs-Lab__lmms-eval/olympiadbench_doc_to_visual,convert images to rgb
+api,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/torchbenchmark/models/yolov3/yolo_utils/datasets.py#L926,pytorch__benchmark/convert_images2bmp,convert images
+api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/olympiadbench/cn_utils.py#L18,EvolvingLMMs-Lab__lmms-eval/olympiadbench_doc_to_visual,convert images
+api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/olympiadbench/en_utils.py#L18,EvolvingLMMs-Lab__lmms-eval/olympiadbench_doc_to_visual,convert images
 cli,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260eb9c4e6/src/helm/benchmark/scenarios/code_scenario_helper.py#L194,,convert indentation
 api,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/torchbenchmark/models/yolov3/yolo_utils/utils.py#L92,pytorch__benchmark/coco80_to_coco91_class,convert indexes
 cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/torchbenchmark/models/speech_transformer/speech_transformer/utils/scp2json.py#L9,,convert input format
