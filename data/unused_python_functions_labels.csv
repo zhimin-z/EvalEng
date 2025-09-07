@@ -3276,8 +3276,8 @@ api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015
 api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/gqa/utils.py#L7,EvolvingLMMs-Lab__lmms-eval/gqa_doc_to_visual,load and retrieve image
 api,https://github.com/beir-cellar/beir/blob/6ef8c9097ebfb203ad360bd64e0cfb93e64f4a44/beir/datasets/data_loader_hf.py#L91,beir-cellar__beir/load_corpus,load and return corpus
 api,https://github.com/beir-cellar/beir/blob/6ef8c9097ebfb203ad360bd64e0cfb93e64f4a44/beir/datasets/data_loader.py#L93,beir-cellar__beir/load_corpus,load and return corpus
-api,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/torchbenchmark/models/yolov3/yolo_utils/utils.py#L754,pytorch__benchmark/create_backbone,load and save model
-api,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260eb9c4e6/src/helm/clients/image_generation/dalle_mini/vqgan_jax/convert_pt_model_to_jax.py#L91,stanford-crfm__helm/convert_model,load and save model
+api,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/torchbenchmark/models/yolov3/yolo_utils/utils.py#L754,pytorch__benchmark/create_backbone,create model backbone
+api,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260eb9c4e6/src/helm/clients/image_generation/dalle_mini/vqgan_jax/convert_pt_model_to_jax.py#L91,stanford-crfm__helm/convert_model,convert model
 api,https://github.com/mlcommons/inference/blob/cc7d6d8eabc5cc60f8b2e540f25f1edd2a9f6cd3/vision/classification_and_detection/python/models/base_model_r34.py#L104,mlcommons__inference/tailor_module,load and transfer weights
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/arcface/data/dataset.py#L57,,load and transform images
 api,https://github.com/HumanCompatibleAI/overcooked_ai/blob/739950a079cdaed5a44fcc662efc40244c205d06/src/overcooked_ai_py/agents/benchmarking.py#L442,HumanCompatibleAI__overcooked_ai/load_trajectories,load and validate trajectories

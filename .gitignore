@@ -1,9 +1,7 @@
 
 .DS_Store
 *.venv
-*.lock
-package*.json
 repos/
-node_modules/
-summary/
+workflows/
+configurations/
 .env
