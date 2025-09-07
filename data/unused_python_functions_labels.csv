@@ -1,6 +1,6 @@
 type,line of code,component/function/instruction,label
 api,https://github.com/Cloud-CV/evalai-cli/blob/6426f26a9add307841665215e795d4dca86ee362/evalai/challenges.py#L206,Cloud-CV__evalai-cli/participate,accept challenge
-api,https://github.com/tensorflow/model-analysis/blob/b703eae15ebb46ca40923e2daa955750e3893a20/tensorflow_model_analysis/eval_metrics_graph/eval_metrics_graph.py#L198,tensorflow__model-analysis/graph_as_default,activate default graph
+api,https://github.com/tensorflow/model-analysis/blob/b703eae15ebb46ca40923e2daa955750e3893a20/tensorflow_model_analysis/eval_metrics_graph/eval_metrics_graph.py#L198,tensorflow__model-analysis/graph_as_default,activate graph
 api,https://github.com/truera/trulens/blob/57df4120d19dd1a0b59efc6cccb0de205ac403e0/src/core/trulens/core/otel/instrument.py#L383,truera__trulens/enable_all_instrumentation,activate instrumentation
 api,https://github.com/explodinggradients/ragas/blob/5d59549ad5ef511f621502c563bc55ac5aeb9188/ragas/src/ragas/prompt/mixin.py#L63,explodinggradients__ragas/adapt_prompts,adapt prompts
 api,https://github.com/comet-ml/opik/blob/72628f77bade9dfb508cc22ce71362bb0e6ed132/sdks/python/src/opik/validation/parameters_validator.py#L35,comet-ml__opik/add_bool_parameter,add boolean parameter
@@ -669,7 +669,7 @@ api,https://github.com/AmenRa/ranx/blob/f60b1ac230ab97bd3c6ad2c210f79882293b306d
 api,https://github.com/truera/trulens/blob/57df4120d19dd1a0b59efc6cccb0de205ac403e0/src/core/trulens/core/feedback/endpoint.py#L669,truera__trulens/track_cost,calculate usage
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/metrics/ranking.py#L399,pykeen__pykeen/numeric_variance_with_ci,calculate variance
 api,https://github.com/mir-evaluation/mir_eval/blob/8db0b3812e2032544c1fc00d02d4256cab043f3d/mir_eval/melody.py#L515,mir-evaluation__mir_eval/voicing_measures,calculate voicing metrics
-cli,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/ocrbench_v2/vqa_metric.py#L277,,calculate vqa score
+cli,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/ocrbench_v2/vqa_metric.py#L277,,calculate score
 api,https://github.com/EleutherAI/lm-evaluation-harness/blob/9f152e0b89e777a17a21e9207da2ae4c1ea8beec/lm_eval/tasks/aradice/ArabicMMLU/EGY/metrics.py#L20,EleutherAI__lm-evaluation-harness/weighted_f1_score,calculate weighted f1 score
 api,https://github.com/EleutherAI/lm-evaluation-harness/blob/9f152e0b89e777a17a21e9207da2ae4c1ea8beec/lm_eval/tasks/aradice/ArabicMMLU/LEV/metrics.py#L20,EleutherAI__lm-evaluation-harness/weighted_f1_score,calculate weighted f1 score
 api,https://github.com/EleutherAI/lm-evaluation-harness/blob/9f152e0b89e777a17a21e9207da2ae4c1ea8beec/lm_eval/tasks/aradice/boolq/EGY/metrics.py#L20,EleutherAI__lm-evaluation-harness/weighted_f1_score,calculate weighted f1 score
@@ -697,9 +697,9 @@ api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015
 api,https://github.com/OpenLMLab/GAOKAO-Bench/blob/6dbb24f8d8439041e5431c4c184a582182a6ce9c/Bench/OBJ_score_evaluation.py#L213,OpenLMLab__GAOKAO-Bench/year_obj_score_eval,calculate scores
 api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/pope/utils.py#L74,EvolvingLMMs-Lab__lmms-eval/pope_aggregate_yes_ratio,calculate yes ratio
 api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/models/batch_gpt4.py#L200,EvolvingLMMs-Lab__lmms-eval/cancel_batch,cancel batch
-cli,https://github.com/Cloud-CV/EvalAI/blob/8d1444f233a84f57b4a6b3db2bc7503da4cc7194/scripts/monitoring/auto_cancel_submissions.py#L64,,cancel stale submissions
+cli,https://github.com/Cloud-CV/EvalAI/blob/8d1444f233a84f57b4a6b3db2bc7503da4cc7194/scripts/monitoring/auto_cancel_submissions.py#L64,,cancel submissions
 cli,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/tools/live_bench/create_dataset.py#L4,,capture dataset
-api,https://github.com/stepjam/RLBench/blob/02720bba4c73fe02eb75df946b8791b806028a9d/rlbench/gym.py#L95,stepjam__RLBench/render,capture rgb frame
+api,https://github.com/stepjam/RLBench/blob/02720bba4c73fe02eb75df946b8791b806028a9d/rlbench/gym.py#L95,stepjam__RLBench/render,capture image frame
 api,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260eb9c4e6/docs/mkdocs_macros.py#L7,stanford-crfm__helm/define_env,categorize models
 api,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/torchbenchmark/util/env_check.py#L205,pytorch__benchmark/has_native_amp,check amp support
 api,https://github.com/bigcode-project/bigcode-evaluation-harness/blob/6116c6a9a5672c69bd624373cfbc8938b7acc249/bigcode_eval/tasks/custom_metrics/multiple_metrics/generic_eval.py#L102,bigcode-project__bigcode-evaluation-harness/main_check_stubs,check and record test results
@@ -973,7 +973,7 @@ api,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260
 api,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260eb9c4e6/src/helm/benchmark/run_specs/classic_run_specs.py#L1085,stanford-crfm__helm/get_med_mcqa_spec,configure medical mcqa
 gui,https://github.com/dezoito/ollama-grid-search,Prompts,configure model
 api,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260eb9c4e6/src/helm/benchmark/run_specs/vlm_run_specs.py#L395,stanford-crfm__helm/get_mscoco_categorization_spec,configure mscoco categorization
-api,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260eb9c4e6/src/helm/benchmark/run_specs/classic_run_specs.py#L1346,stanford-crfm__helm/get_opinions_qa_spec,configure opinion qa run
+api,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260eb9c4e6/src/helm/benchmark/run_specs/classic_run_specs.py#L1346,stanford-crfm__helm/get_opinions_qa_spec,configure run
 cli,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/setup.py#L5,,configure package setup
 api,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260eb9c4e6/src/helm/benchmark/run_specs/melt_run_specs.py#L34,stanford-crfm__helm/get_melt_question_answering_mlqa_spec,configure prompt style
 api,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260eb9c4e6/src/helm/benchmark/run_specs/melt_run_specs.py#L71,stanford-crfm__helm/get_melt_question_answering_xquad_spec,configure prompt style
@@ -1004,7 +1004,7 @@ api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a7
 api,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/nodes/passagereranker/tart/tokenization_enc_t5.py#L87,Marker-Inc-Korea__AutoRAG/build_inputs_with_special_tokens,construct input sequence
 api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/mix_evals/audio2text/utils.py#L117,EvolvingLMMs-Lab__lmms-eval/mix_evals_audio2text_doc_to_text,construct prompt
 api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/wavcaps/utils.py#L15,EvolvingLMMs-Lab__lmms-eval/wavcaps_doc_to_text,construct prompt
-api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/muchomusic/utils.py#L22,EvolvingLMMs-Lab__lmms-eval/muchomusic_doc_to_text,construct prompt text
+api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/muchomusic/utils.py#L22,EvolvingLMMs-Lab__lmms-eval/muchomusic_doc_to_text,construct prompt
 api,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/vbench/third_party/grit_src/centernet2/centernet/modeling/backbone/fpn_p5.py#L36,Vchitect__VBench/build_p67_resnet_fpn_backbone,construct backbone module
 api,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/vbench/third_party/grit_src/centernet2/centernet/modeling/backbone/res2net.py#L758,Vchitect__VBench/build_p67_res2net_fpn_backbone,construct backbone module
 api,https://github.com/mlcommons/inference/blob/cc7d6d8eabc5cc60f8b2e540f25f1edd2a9f6cd3/automotive/3d-object-detection/model/segmentation/modeling.py#L52,mlcommons__inference/deeplabv3_resnet50,construct deeplabv3 model
@@ -1015,7 +1015,7 @@ api,https://github.com/open-compass/VLMEvalKit/blob/50c954aad1d92dab9bf5d23f6257
 api,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/LLaVA_NeXT/scripts/archived/convert_sqa_to_llava_base_prompt.py#L269,Vchitect__VBench/build_prompt_gpt4,construct prompt array
 api,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/LLaVA_NeXT/scripts/archived/convert_sqa_to_llava_base_prompt.py#L236,Vchitect__VBench/build_prompt,construct prompt input
 api,https://github.com/EleutherAI/lm-evaluation-harness/blob/9f152e0b89e777a17a21e9207da2ae4c1ea8beec/lm_eval/tasks/humaneval/utils.py#L30,EleutherAI__lm-evaluation-harness/build_predictions_instruct,construct prompt responses
-api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/mix_evals/video2text/utils.py#L176,EvolvingLMMs-Lab__lmms-eval/mix_evals_video2text_doc_to_text,construct prompt text
+api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/mix_evals/video2text/utils.py#L176,EvolvingLMMs-Lab__lmms-eval/mix_evals_video2text_doc_to_text,construct prompt
 api,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/arcface/models/resnet.py#L319,Vchitect__VBench/resnet101,construct resnet-101 model
 api,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/arcface/models/resnet.py#L330,Vchitect__VBench/resnet152,construct resnet-152 model
 api,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/arcface/models/resnet.py#L297,Vchitect__VBench/resnet34,construct resnet-34 model
@@ -1306,12 +1306,12 @@ api,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb4765938
 api,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/vbench/third_party/RAFT/core/datasets.py#L199,Vchitect__VBench/fetch_dataloader,create data loader
 api,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0f/evals/elsuite/hr_ml_agent_bench/benchmarks/spaceship_titanic/env/train.py#L4,openai__evals/create_new_dataframe,create dataframe
 cli,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0f/evals/elsuite/cant_do_that_anymore/scripts/dataset_creation.py#L273,,create dataset
-api,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/evalscope/backend/rag_eval/ragas/tasks/build_transform.py#L18,modelscope__evalscope/default_transforms,create default transforms
+api,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/evalscope/backend/rag_eval/ragas/tasks/build_transform.py#L18,modelscope__evalscope/default_transforms,define transformation
 api,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/api/src/schema.py#L185,Marker-Inc-Korea__AutoRAG/create_directories,create directory
 api,https://github.com/HumanCompatibleAI/overcooked_ai/blob/739950a079cdaed5a44fcc662efc40244c205d06/src/human_aware_rl/utils.py#L22,HumanCompatibleAI__overcooked_ai/create_dir_if_not_exists,create directory
 api,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/torchbenchmark/models/drq/drqutils.py#L44,pytorch__benchmark/make_dir,create directory
 api,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260eb9c4e6/scripts/fact_completion/utils.py#L62,stanford-crfm__helm/create_dir,create directory
-api,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/tasks/default_prompts.py#L729,huggingface__lighteval/crows_pair,create doc
+api,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/tasks/default_prompts.py#L729,huggingface__lighteval/crows_pair,create documentation
 api,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/tasks/default_prompts.py#L1005,huggingface__lighteval/humaneval,create documentation
 api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/llm/embeddings/openai.py#L59,Giskard-AI__giskard/try_get_openai_embeddings,create embedding
 api,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260eb9c4e6/src/helm/benchmark/run_specs/classic_run_specs.py#L918,stanford-crfm__helm/get_entity_matching_spec,create entity matching specification
@@ -1371,8 +1371,8 @@ api,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c
 api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/openicl/icl_dataset_reader.py#L181,open-compass__OpenCompass/generate_input_output_field_prompt,create prompt
 gui,https://github.com/dezoito/ollama-grid-search,Prompts - Add Another Prompt,create prompt
 gui,https://github.com/dezoito/ollama-grid-search,Manage Prompts - Create a new Prompt,create prompt
-api,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/tasks/default_prompts.py#L1987,huggingface__lighteval/newsqa,create qa document
-api,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260eb9c4e6/src/helm/benchmark/run_specs/classic_run_specs.py#L251,stanford-crfm__helm/get_news_qa_spec,create qa specification
+api,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/tasks/default_prompts.py#L1987,huggingface__lighteval/newsqa,create document
+api,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260eb9c4e6/src/helm/benchmark/run_specs/classic_run_specs.py#L251,stanford-crfm__helm/get_news_qa_spec,create dataset specification
 api,https://github.com/huggingface/evaluate/blob/5aa3982a9a8c86e506860e381d428a64b0cce73b/src/evaluate/visualization.py#L138,huggingface__evaluate/radar_plot,create radar chart
 api,https://github.com/explodinggradients/ragas/blob/5d59549ad5ef511f621502c563bc55ac5aeb9188/ragas/src/ragas/integrations/griptape.py#L13,explodinggradients__ragas/transform_to_ragas_dataset,create dataset
 api,https://github.com/explodinggradients/ragas/blob/5d59549ad5ef511f621502c563bc55ac5aeb9188/ragas/src/ragas/integrations/r2r.py#L52,explodinggradients__ragas/transform_to_ragas_dataset,create dataset
@@ -1481,7 +1481,7 @@ api,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260
 api,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260eb9c4e6/src/helm/benchmark/run_specs/medhelm_run_specs.py#L1034,stanford-crfm__helm/get_medhallu_spec,define judgment criteria
 api,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260eb9c4e6/src/helm/benchmark/run_specs/medhelm_run_specs.py#L867,stanford-crfm__helm/get_mental_health_spec,define mental health scenario
 cli,https://github.com/open-compass/VLMEvalKit/blob/50c954aad1d92dab9bf5d23f62576c994b4a675f/vlmeval/dataset/utils/megabench/metric_type.py#L256,,define metrics
-api,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260eb9c4e6/src/helm/benchmark/run_specs/medhelm_run_specs.py#L913,stanford-crfm__helm/get_pubmed_qa_spec,define qa specification
+api,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260eb9c4e6/src/helm/benchmark/run_specs/medhelm_run_specs.py#L913,stanford-crfm__helm/get_pubmed_qa_spec,define dataset specification
 api,https://github.com/mlcommons/inference/blob/cc7d6d8eabc5cc60f8b2e540f25f1edd2a9f6cd3/vision/classification_and_detection/tools/resnet_save.py#L281,mlcommons__inference/define_resnet_flags,define resnet flags
 api,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260eb9c4e6/src/helm/benchmark/run_specs/seahelm_run_specs.py#L136,stanford-crfm__helm/get_nusax_spec,define run configuration
 api,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260eb9c4e6/src/helm/benchmark/run_specs/seahelm_run_specs.py#L161,stanford-crfm__helm/get_uitvsfc_spec,define run configuration
@@ -1547,7 +1547,7 @@ api,https://github.com/EleutherAI/lm-evaluation-harness/blob/9f152e0b89e777a17a2
 api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/models/mplug_owl_video/processing_mplug_owl.py#L120,EvolvingLMMs-Lab__lmms-eval/detokenize_generations,detokenize tokens
 api,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/RAFT/core/raft.py#L58,Vchitect__VBench/freeze_bn,disable batchnorm
 api,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/vbench/third_party/RAFT/core/raft.py#L58,Vchitect__VBench/freeze_bn,disable batchnorm
-api,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260eb9c4e6/src/helm/clients/audio_language/llama_omni/utils.py#L180,stanford-crfm__helm/disable_torch_init,disable default initialization
+api,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260eb9c4e6/src/helm/clients/audio_language/llama_omni/utils.py#L180,stanford-crfm__helm/disable_torch_init,disable initialization
 api,https://github.com/truera/trulens/blob/57df4120d19dd1a0b59efc6cccb0de205ac403e0/src/core/trulens/core/otel/instrument.py#L387,truera__trulens/disable_all_instrumentation,disable instrumentation
 api,https://github.com/huggingface/evaluate/blob/5aa3982a9a8c86e506860e381d428a64b0cce73b/src/evaluate/utils/logging.py#L153,huggingface__evaluate/disable_propagation,disable log propagation
 api,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260eb9c4e6/src/helm/clients/image_generation/cogview2/sr_pipeline/dsr_model.py#L159,stanford-crfm__helm/disable_untrainable_params,disable parameter updates
@@ -2041,16 +2041,16 @@ api,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823
 api,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/evalscope/metrics/t2v_metrics/models/vqascore_models/lavis/models/blip2_models/blip2_qformer.py#L321,modelscope__evalscope/extract_features,extract features
 api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/vlmsareblind/utils.py#L5,EvolvingLMMs-Lab__lmms-eval/vlmsareblind_doc_to_visual,extract image
 api,https://github.com/open-compass/VLMEvalKit/blob/50c954aad1d92dab9bf5d23f62576c994b4a675f/vlmeval/vlm/ola/ola/model/speech_encoder/beats/Tokenizers.py#L140,open-compass__VLMEvalKit/extract_labels,extract label indices
-api,https://github.com/HumanCompatibleAI/overcooked_ai/blob/739950a079cdaed5a44fcc662efc40244c205d06/src/human_aware_rl/utils.py#L214,HumanCompatibleAI__overcooked_ai/get_last_episode_rewards,extract last episode rewards
+api,https://github.com/HumanCompatibleAI/overcooked_ai/blob/739950a079cdaed5a44fcc662efc40244c205d06/src/human_aware_rl/utils.py#L214,HumanCompatibleAI__overcooked_ai/get_last_episode_rewards,extract episode rewards
 api,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260eb9c4e6/src/helm/clients/audio_language/llama_omni/utils.py#L190,stanford-crfm__helm/get_model_name_from_path,extract model name
 api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/cinepile/utils.py#L75,EvolvingLMMs-Lab__lmms-eval/normalize_string,extract option data
 api,https://github.com/HumanCompatibleAI/overcooked_ai/blob/739950a079cdaed5a44fcc662efc40244c205d06/src/overcooked_ai_py/agents/benchmarking.py#L534,HumanCompatibleAI__overcooked_ai/take_traj_indices,extract trajectory subset
 api,https://github.com/plurai-ai/intellagent/blob/2680da4545b87717a8dbc869738238022ca84ee4/simulator/utils/sqlite_handler.py#L122,plurai-ai__intellagent/read_dialog,fetch dialog messages
-api,https://github.com/EleutherAI/lm-evaluation-harness/blob/9f152e0b89e777a17a21e9207da2ae4c1ea8beec/lm_eval/tasks/ruler/qa_utils.py#L239,EleutherAI__lm-evaluation-harness/get_hotpotqa,fetch hotpotqa dataset
+api,https://github.com/EleutherAI/lm-evaluation-harness/blob/9f152e0b89e777a17a21e9207da2ae4c1ea8beec/lm_eval/tasks/ruler/qa_utils.py#L239,EleutherAI__lm-evaluation-harness/get_hotpotqa,retrieve dataset
 cli,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/utils/torch_nightly_utils.py#L186,,fetch nightly wheels
 api,https://github.com/evidentlyai/evidently/blob/609cc2afbfa28c6b37be725b9f1f61bd18136990/src/evidently/sdk/prompts.py#L119,evidentlyai__evidently/list_prompts,fetch prompts
-cli,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0f/evals/registry/data/word_association/corpus_tools/related_words.py#L189,,fetch related words
-api,https://github.com/EleutherAI/lm-evaluation-harness/blob/9f152e0b89e777a17a21e9207da2ae4c1ea8beec/lm_eval/tasks/ruler/qa_utils.py#L235,EleutherAI__lm-evaluation-harness/get_squad,fetch squad dataset
+cli,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0f/evals/registry/data/word_association/corpus_tools/related_words.py#L189,,fetch words
+api,https://github.com/EleutherAI/lm-evaluation-harness/blob/9f152e0b89e777a17a21e9207da2ae4c1ea8beec/lm_eval/tasks/ruler/qa_utils.py#L235,EleutherAI__lm-evaluation-harness/get_squad,retrieve dataset
 api,https://github.com/plurai-ai/intellagent/blob/2680da4545b87717a8dbc869738238022ca84ee4/simulator/utils/sqlite_handler.py#L144,plurai-ai__intellagent/read_tool,fetch tool records
 api,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/api/app.py#L266,Marker-Inc-Korea__AutoRAG/get_trial_lists,fetch trial data
 api,https://github.com/HumanCompatibleAI/overcooked_ai/blob/739950a079cdaed5a44fcc662efc40244c205d06/src/human_aware_rl/human/process_dataframes.py#L484,HumanCompatibleAI__overcooked_ai/display_interactive_by_workerid,filter and display trials
@@ -2297,7 +2297,7 @@ api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015
 api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/tempcompass/utils.py#L108,EvolvingLMMs-Lab__lmms-eval/tempcompass_doc_to_text_captioning,generate caption text
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/vbench/third_party/tag2Text/tag2text.py#L423,,generate captions
 api,https://github.com/stanford-futuredata/ARES/blob/c7c9018a755faf8347c4da415632bae1593ef104/ares/RAG_Automatic_Evaluation/ppi.py#L128,stanford-futuredata__ARES/product,generate cartesian product
-cli,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/chartqa/upload_chartqa.py#L123,,generate chartqa dataset
+cli,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/chartqa/upload_chartqa.py#L123,,generate dataset
 cli,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0f/evals/elsuite/multistep_web_tasks/solvers/strong_solver/strong_solver.py#L225,,generate chat actions
 cli,https://github.com/OpenLMLab/GAOKAO-Bench/blob/6dbb24f8d8439041e5431c4c184a582182a6ce9c/Models/openai_gpt4.py#L80,,generate chat completions
 api,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/evalscope/perf/utils/local_server.py#L88,modelscope__evalscope/create_chat_completion,generate chat response
@@ -2352,7 +2352,7 @@ cli,https://github.com/mlcommons/inference/blob/cc7d6d8eabc5cc60f8b2e540f25f1edd
 cli,https://github.com/simpler-env/SimplerEnv/blob/4ab7178e83e84ee06894034ec6dbf9e7aad1e882/tools/visualize_dataset.py#L19,,generate dataset videos
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/ViTDetector/third_party/YOLO-World/mmyolo/tools/analysis_tools/dataset_analysis.py#L497,,generate dataset visualizations
 cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/YOLO-World/mmyolo/tools/analysis_tools/dataset_analysis.py#L497,,generate dataset visualizations
-api,https://github.com/HumanCompatibleAI/overcooked_ai/blob/739950a079cdaed5a44fcc662efc40244c205d06/src/overcooked_ai_py/mdp/layout_generator.py#L52,HumanCompatibleAI__overcooked_ai/DEFAILT_PARAMS_SCHEDULE_FN,generate default parameters
+api,https://github.com/HumanCompatibleAI/overcooked_ai/blob/739950a079cdaed5a44fcc662efc40244c205d06/src/overcooked_ai_py/mdp/layout_generator.py#L52,HumanCompatibleAI__overcooked_ai/DEFAILT_PARAMS_SCHEDULE_FN,generate parameters
 api,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/vbench/third_party/grit_model.py#L19,Vchitect__VBench/image_dense_caption,generate dense caption
 api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/cuva/utils.py#L123,EvolvingLMMs-Lab__lmms-eval/cuva_doc_to_text,generate descriptive questions
 api,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260eb9c4e6/src/helm/benchmark/run_specs/heim_run_specs.py#L246,stanford-crfm__helm/get_detection_spec,generate detection configuration
@@ -2625,37 +2625,37 @@ cli,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb4765938
 api,https://github.com/EleutherAI/lm-evaluation-harness/blob/9f152e0b89e777a17a21e9207da2ae4c1ea8beec/lm_eval/tasks/metabench/process_docs_permute.py#L170,EleutherAI__lm-evaluation-harness/process_winogrande,generate prompt and update dataset
 api,https://github.com/EleutherAI/lm-evaluation-harness/blob/9f152e0b89e777a17a21e9207da2ae4c1ea8beec/lm_eval/tasks/metabench/process_docs.py#L144,EleutherAI__lm-evaluation-harness/process_winogrande,generate prompt and update dataset
 cli,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/evalscope/perf/plugin/datasets/custom.py#L27,,generate prompt messages
-api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/ai2d/utils.py#L7,EvolvingLMMs-Lab__lmms-eval/ai2d_doc_to_text,generate prompt text
-api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/charades_sta/utils.py#L59,EvolvingLMMs-Lab__lmms-eval/temporal_grounding_doc_to_text,generate prompt text
-api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/chartqa/utils.py#L5,EvolvingLMMs-Lab__lmms-eval/chartqa_doc_to_text,generate prompt text
-api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/docvqa/utils.py#L13,EvolvingLMMs-Lab__lmms-eval/docvqa_doc_to_text,generate prompt text
-api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/gqa_ru/utils.py#L19,EvolvingLMMs-Lab__lmms-eval/gqa_doc_to_text,generate prompt text
-api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/gqa/utils.py#L19,EvolvingLMMs-Lab__lmms-eval/gqa_doc_to_text,generate prompt text
-api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/hrbench/utils.py#L49,EvolvingLMMs-Lab__lmms-eval/hrbench_doc_to_text,generate prompt text
-api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/ii_bench/utils.py#L18,EvolvingLMMs-Lab__lmms-eval/ii_bench_doc_to_text,generate prompt text
-api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/jmmmu/utils.py#L58,EvolvingLMMs-Lab__lmms-eval/jmmmu_doc_to_text,generate prompt text
-api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/mirb/utils.py#L27,EvolvingLMMs-Lab__lmms-eval/mirb_doc_to_text,generate prompt text
-api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/mix_evals/image2text/utils.py#L207,EvolvingLMMs-Lab__lmms-eval/mix_evals_image2text_doc_to_text,generate prompt text
-api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/mme_cot/utils.py#L85,EvolvingLMMs-Lab__lmms-eval/mmecot_doc_to_text,generate prompt text
-api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/multidocvqa/utils.py#L12,EvolvingLMMs-Lab__lmms-eval/multidocvqa_doc_to_text,generate prompt text
-api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/omni_bench/utils.py#L13,EvolvingLMMs-Lab__lmms-eval/omni_bench_original_doc_to_text,generate prompt text
-api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/plm_videobench/rcap/rcap_utils.py#L42,EvolvingLMMs-Lab__lmms-eval/plm_rcap_doc_to_text,generate prompt text
-api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/scienceqa/utils.py#L1,EvolvingLMMs-Lab__lmms-eval/sqa_doc_to_text,generate prompt text
-api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/stvqa/utils.py#L8,EvolvingLMMs-Lab__lmms-eval/stvqa_doc_to_text,generate prompt text
-api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/vmcbench/utils.py#L37,EvolvingLMMs-Lab__lmms-eval/vmcbench_doc_to_text,generate prompt text
-api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/worldsense/utils.py#L191,EvolvingLMMs-Lab__lmms-eval/worldsense_doc_to_text,generate prompt text
+api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/ai2d/utils.py#L7,EvolvingLMMs-Lab__lmms-eval/ai2d_doc_to_text,generate prompt
+api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/charades_sta/utils.py#L59,EvolvingLMMs-Lab__lmms-eval/temporal_grounding_doc_to_text,generate prompt
+api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/chartqa/utils.py#L5,EvolvingLMMs-Lab__lmms-eval/chartqa_doc_to_text,generate prompt
+api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/docvqa/utils.py#L13,EvolvingLMMs-Lab__lmms-eval/docvqa_doc_to_text,generate prompt
+api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/gqa_ru/utils.py#L19,EvolvingLMMs-Lab__lmms-eval/gqa_doc_to_text,generate prompt
+api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/gqa/utils.py#L19,EvolvingLMMs-Lab__lmms-eval/gqa_doc_to_text,generate prompt
+api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/hrbench/utils.py#L49,EvolvingLMMs-Lab__lmms-eval/hrbench_doc_to_text,generate prompt
+api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/ii_bench/utils.py#L18,EvolvingLMMs-Lab__lmms-eval/ii_bench_doc_to_text,generate prompt
+api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/jmmmu/utils.py#L58,EvolvingLMMs-Lab__lmms-eval/jmmmu_doc_to_text,generate prompt
+api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/mirb/utils.py#L27,EvolvingLMMs-Lab__lmms-eval/mirb_doc_to_text,generate prompt
+api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/mix_evals/image2text/utils.py#L207,EvolvingLMMs-Lab__lmms-eval/mix_evals_image2text_doc_to_text,generate prompt
+api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/mme_cot/utils.py#L85,EvolvingLMMs-Lab__lmms-eval/mmecot_doc_to_text,generate prompt
+api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/multidocvqa/utils.py#L12,EvolvingLMMs-Lab__lmms-eval/multidocvqa_doc_to_text,generate prompt
+api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/omni_bench/utils.py#L13,EvolvingLMMs-Lab__lmms-eval/omni_bench_original_doc_to_text,generate prompt
+api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/plm_videobench/rcap/rcap_utils.py#L42,EvolvingLMMs-Lab__lmms-eval/plm_rcap_doc_to_text,generate prompt
+api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/scienceqa/utils.py#L1,EvolvingLMMs-Lab__lmms-eval/sqa_doc_to_text,generate prompt
+api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/stvqa/utils.py#L8,EvolvingLMMs-Lab__lmms-eval/stvqa_doc_to_text,generate prompt
+api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/vmcbench/utils.py#L37,EvolvingLMMs-Lab__lmms-eval/vmcbench_doc_to_text,generate prompt
+api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/worldsense/utils.py#L191,EvolvingLMMs-Lab__lmms-eval/worldsense_doc_to_text,generate prompt
 cli,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/tasks/extended/mix_eval/prompts.py#L194,,generate prompts
 cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/agieval/dataset_loader.py#L389,,generate prompts
 cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/tools/prompt_viewer.py#L226,,generate prompts
 cli,https://github.com/EleutherAI/lm-evaluation-harness/blob/9f152e0b89e777a17a21e9207da2ae4c1ea8beec/scripts/build_benchmark.py#L25,,generate promptsource files
 api,https://github.com/tatsu-lab/alpaca_eval/blob/f19c323d8309d0d6f306bd26597db44fc6c62d57/src/alpaca_eval/plotting.py#L518,tatsu-lab__alpaca_eval/plot_all_properties,generate property plots
-cli,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/tools/mbpp/init_ground_truth.py#L10,,generate python texts
-api,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/tasks/default_prompts.py#L1968,huggingface__lighteval/natural_qa_openbook_longans,generate qa pair
-api,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/tasks/default_prompts.py#L1959,huggingface__lighteval/natural_qa_closedbook,generate qa prompt
-api,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/tasks/default_prompts.py#L1978,huggingface__lighteval/natural_qa_openbook_wiki,generate qa prompt
-api,https://github.com/EleutherAI/lm-evaluation-harness/blob/9f152e0b89e777a17a21e9207da2ae4c1ea8beec/lm_eval/tasks/hrm8k/default/utils.py#L14,EleutherAI__lm-evaluation-harness/doc_to_text_mmmlu,generate qa prompt text
-api,https://github.com/EleutherAI/lm-evaluation-harness/blob/9f152e0b89e777a17a21e9207da2ae4c1ea8beec/lm_eval/tasks/hrm8k/en/utils.py#L14,EleutherAI__lm-evaluation-harness/doc_to_text_mmmlu,generate qa prompt text
-api,https://github.com/EleutherAI/lm-evaluation-harness/blob/9f152e0b89e777a17a21e9207da2ae4c1ea8beec/lm_eval/tasks/super_glue/wsc/preprocess_wsc.py#L4,EleutherAI__lm-evaluation-harness/default_doc_to_text,generate qa text
+cli,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/tools/mbpp/init_ground_truth.py#L10,,create ground truth
+api,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/tasks/default_prompts.py#L1968,huggingface__lighteval/natural_qa_openbook_longans,generate prompt
+api,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/tasks/default_prompts.py#L1959,huggingface__lighteval/natural_qa_closedbook,generate prompt
+api,https://github.com/huggingface/lighteval/blob/9771f3a02ba28a57f8777902d0c36ea7dd445026/src/lighteval/tasks/default_prompts.py#L1978,huggingface__lighteval/natural_qa_openbook_wiki,generate prompt
+api,https://github.com/EleutherAI/lm-evaluation-harness/blob/9f152e0b89e777a17a21e9207da2ae4c1ea8beec/lm_eval/tasks/hrm8k/default/utils.py#L14,EleutherAI__lm-evaluation-harness/doc_to_text_mmmlu,generate prompt
+api,https://github.com/EleutherAI/lm-evaluation-harness/blob/9f152e0b89e777a17a21e9207da2ae4c1ea8beec/lm_eval/tasks/hrm8k/en/utils.py#L14,EleutherAI__lm-evaluation-harness/doc_to_text_mmmlu,generate prompt
+api,https://github.com/EleutherAI/lm-evaluation-harness/blob/9f152e0b89e777a17a21e9207da2ae4c1ea8beec/lm_eval/tasks/super_glue/wsc/preprocess_wsc.py#L4,EleutherAI__lm-evaluation-harness/default_doc_to_text,generate prompt
 api,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/LLaVA_NeXT/trl/trainer/utils.py#L662,Vchitect__VBench/get_quantization_config,generate quantization configuration
 api,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/data/qa/evolve/llama_index_query_evolve.py#L28,Marker-Inc-Korea__AutoRAG/conditional_evolve_ragas,generate query
 api,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/autorag/data/qa/evolve/openai_query_evolve.py#L42,Marker-Inc-Korea__AutoRAG/conditional_evolve_ragas,generate query
@@ -3020,7 +3020,7 @@ api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015
 api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/mix_evals/video2text/utils.py#L167,EvolvingLMMs-Lab__lmms-eval/mix_evals_video2text_doc_to_visual,retrieve filepath
 cli,https://github.com/open-compass/VLMEvalKit/blob/50c954aad1d92dab9bf5d23f62576c994b4a675f/vlmeval/api/doubao_vl_api.py#L199,,generate vision response
 api,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260eb9c4e6/src/helm/benchmark/run_specs/audio_run_specs.py#L276,stanford-crfm__helm/get_vocal_sound_run_spec,generate vocal sound specification
-api,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260eb9c4e6/src/helm/benchmark/run_specs/vlm_run_specs.py#L460,stanford-crfm__helm/get_vqa_spec,generate vqa specification
+api,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260eb9c4e6/src/helm/benchmark/run_specs/vlm_run_specs.py#L460,stanford-crfm__helm/get_vqa_spec,generate dataset specification
 api,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260eb9c4e6/src/helm/benchmark/run_specs/vlm_run_specs.py#L522,stanford-crfm__helm/get_image2webpage_spec,generate webpage specification
 cli,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0f/evals/registry/data/poker_analysis/poker_analysis_sample_generator.py#L169,,generate training dataset
 cli,https://github.com/openai/evals/blob/cdb8ce9547e68b8e5e4520b6a162294c06865c0f/evals/elsuite/bluff/scripts/make_plots.py#L140,,generate winrate plots
@@ -3123,7 +3123,7 @@ api,https://github.com/mlcommons/inference/blob/cc7d6d8eabc5cc60f8b2e540f25f1edd
 api,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260eb9c4e6/src/helm/clients/image_generation/dalle_mini/vqgan_jax/modeling_flax_vqgan.py#L558,stanford-crfm__helm/init_weights,initialize weights
 api,https://github.com/facebookresearch/DomainBed/blob/b93c22a1cfc3b2428398272c1a116c8de1f4139e/domainbed/lib/wide_resnet.py#L27,facebookresearch__DomainBed/conv_init,initialize weights and biases
 api,https://github.com/truera/trulens/blob/57df4120d19dd1a0b59efc6cccb0de205ac403e0/src/core/trulens/core/run.py#L894,truera__trulens/compute_metrics,initiate metrics computation
-api,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/api/app.py#L577,Marker-Inc-Korea__AutoRAG/create_qa,initiate qa generation
+api,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/api/app.py#L577,Marker-Inc-Korea__AutoRAG/create_qa,create dataset
 api,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260eb9c4e6/src/helm/proxy/server.py#L249,stanford-crfm__helm/handle_shutdown,initiate shutdown
 api,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/main.py#L57,confident-ai__deepeval/login,initiate user login
 api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/phybench/extended_zss.py#L29,open-compass__OpenCompass/addkid,insert child node
@@ -3375,7 +3375,7 @@ api,https://github.com/EleutherAI/lm-evaluation-harness/blob/9f152e0b89e777a17a2
 api,https://github.com/mir-evaluation/mir_eval/blob/8db0b3812e2032544c1fc00d02d4256cab043f3d/mir_eval/io.py#L293,mir-evaluation__mir_eval/load_time_series,load time series
 api,https://github.com/mir-evaluation/mir_eval/blob/8db0b3812e2032544c1fc00d02d4256cab043f3d/mir_eval/io.py#L594,mir-evaluation__mir_eval/load_ragged_time_series,load time series data
 api,https://github.com/Unbabel/COMET/blob/49c348dd0ff569c4d7c3f2b7c720fd5696f8de59/comet/models/base.py#L504,Unbabel__COMET/train_dataloader,load training data
-cli,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/sample_dataset/triviaqa/load_triviaqa_dataset.py#L36,,load triviaqa dataset
+cli,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/autorag/sample_dataset/triviaqa/load_triviaqa_dataset.py#L36,,load dataset
 api,https://github.com/pytorch/benchmark/blob/68cf9dffe5df4eedac42512dc92598fffff335ae/torchbenchmark/models/pytorch_unet/pytorch_unet/hubconf.py#L5,pytorch__benchmark/unet_carvana,load unet model
 api,https://github.com/Unbabel/COMET/blob/49c348dd0ff569c4d7c3f2b7c720fd5696f8de59/comet/models/base.py#L523,Unbabel__COMET/val_dataloader,load validation data
 api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/tasks/longvideobench/utils.py#L169,EvolvingLMMs-Lab__lmms-eval/longvideobench_doc_to_visual_i,load video data
@@ -3893,7 +3893,7 @@ api,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c
 api,https://github.com/Marker-Inc-Korea/AutoRAG/blob/8c72159df28006e0d6c548bbf0c133dde2650fd8/api/app.py#L989,Marker-Inc-Korea__AutoRAG/get_all_env_keys,retrieve environment variables
 api,https://github.com/huggingface/evaluate/blob/5aa3982a9a8c86e506860e381d428a64b0cce73b/src/evaluate/utils/file_utils.py#L391,huggingface__evaluate/request_etag,retrieve etag
 api,https://github.com/Cloud-CV/EvalAI/blob/8d1444f233a84f57b4a6b3db2bc7503da4cc7194/apps/jobs/serializers.py#L86,Cloud-CV__EvalAI/get_execution_time,retrieve execution time
-api,https://github.com/Cloud-CV/EvalAI/blob/8d1444f233a84f57b4a6b3db2bc7503da4cc7194/apps/participants/serializers.py#L88,Cloud-CV__EvalAI/get_first_name,retrieve first name
+api,https://github.com/Cloud-CV/EvalAI/blob/8d1444f233a84f57b4a6b3db2bc7503da4cc7194/apps/participants/serializers.py#L88,Cloud-CV__EvalAI/get_first_name,retrieve name
 api,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260eb9c4e6/src/helm/proxy/server.py#L101,stanford-crfm__helm/handle_get_general_info,retrieve general information
 api,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/vbench/third_party/amt/utils/dist_utils.py#L17,Vchitect__VBench/get_global_rank,retrieve global rank
 api,https://github.com/stanford-futuredata/ARES/blob/c7c9018a755faf8347c4da415632bae1593ef104/ares/LLM_as_a_Judge_Adaptation/General_Binary_Classifier.py#L125,stanford-futuredata__ARES/get_gpu_memory,retrieve gpu memory
@@ -3912,7 +3912,7 @@ api,https://github.com/truera/trulens/blob/57df4120d19dd1a0b59efc6cccb0de205ac40
 api,https://github.com/open-compass/VLMEvalKit/blob/50c954aad1d92dab9bf5d23f62576c994b4a675f/vlmeval/dataset/Omnidocbench/metrics.py#L157,open-compass__VLMEvalKit/list_items,retrieve item keys
 api,https://github.com/stanford-crfm/helm/blob/68b6aa9a01598aa0d371507c4c7299260eb9c4e6/src/helm/common/cache.py#L87,stanford-crfm__helm/get_all_from_sqlite,retrieve key-value pairs
 api,https://github.com/EleutherAI/lm-evaluation-harness/blob/9f152e0b89e777a17a21e9207da2ae4c1ea8beec/lm_eval/tasks/afrobench/uhura-arc-easy/utils.py#L8,EleutherAI__lm-evaluation-harness/get_language_from_code,retrieve language name
-api,https://github.com/Cloud-CV/EvalAI/blob/8d1444f233a84f57b4a6b3db2bc7503da4cc7194/apps/participants/serializers.py#L91,Cloud-CV__EvalAI/get_last_name,retrieve last name
+api,https://github.com/Cloud-CV/EvalAI/blob/8d1444f233a84f57b4a6b3db2bc7503da4cc7194/apps/participants/serializers.py#L91,Cloud-CV__EvalAI/get_last_name,retrieve name
 api,https://github.com/Cloud-CV/EvalAI/blob/8d1444f233a84f57b4a6b3db2bc7503da4cc7194/apps/challenges/serializers.py#L529,Cloud-CV__EvalAI/get_leaderboard,retrieve leaderboard metrics
 api,https://github.com/Cloud-CV/EvalAI/blob/8d1444f233a84f57b4a6b3db2bc7503da4cc7194/apps/challenges/serializers.py#L523,Cloud-CV__EvalAI/get_leaderboard_decimal_precision,retrieve leaderboard precision
 api,https://github.com/Cloud-CV/EvalAI/blob/8d1444f233a84f57b4a6b3db2bc7503da4cc7194/apps/challenges/serializers.py#L195,Cloud-CV__EvalAI/get_leaderboard_schema,retrieve leaderboard schema
@@ -4345,7 +4345,7 @@ api,https://github.com/google-deepmind/meltingpot/blob/f280a35a4ffe5a7613b5c4a06
 api,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/evalscope/third_party/thinkbench/tools/llm.py#L36,modelscope__evalscope/request_local,send chat request
 api,https://github.com/truera/trulens/blob/57df4120d19dd1a0b59efc6cccb0de205ac403e0/src/feedback/trulens/feedback/dummy/endpoint.py#L422,truera__trulens/acompletion,send completion request
 api,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/cli/server.py#L20,confident-ai__deepeval/do_OPTIONS,send cors headers
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/utils/lark.py#L52,,send larkmessage
+cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/utils/lark.py#L52,,send message
 api,https://github.com/truera/trulens/blob/57df4120d19dd1a0b59efc6cccb0de205ac403e0/src/core/trulens/core/feedback/endpoint.py#L920,truera__trulens/apost_json_first,send post request
 cli,https://github.com/evidentlyai/evidently/blob/609cc2afbfa28c6b37be725b9f1f61bd18136990/src/evidently/telemetry.py#L61,,send telemetry event
 api,https://github.com/confident-ai/deepeval/blob/f296dc03b76b5fb5cc124d2dbb10367af0a5777d/deepeval/tracing/api.py#L154,confident-ai__deepeval/run_thread_metrics,send thread metrics
@@ -4929,7 +4929,7 @@ cli,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c4
 cli,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/tools/humaneval/fix_v014.py#L60,,update dataset
 cli,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/tools/humaneval/fix_v015.py#L41,,update dataset
 api,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/evalscope/app/app.py#L580,modelscope__evalscope/update_single_report_dataset,update dataset and generate report
-api,https://github.com/HumanCompatibleAI/overcooked_ai/blob/739950a079cdaed5a44fcc662efc40244c205d06/src/overcooked_ai_py/visualization/state_visualizer.py#L132,HumanCompatibleAI__overcooked_ai/configure_defaults,update default settings
+api,https://github.com/HumanCompatibleAI/overcooked_ai/blob/739950a079cdaed5a44fcc662efc40244c205d06/src/overcooked_ai_py/visualization/state_visualizer.py#L132,HumanCompatibleAI__overcooked_ai/configure_defaults,update settings
 api,https://github.com/truera/trulens/blob/57df4120d19dd1a0b59efc6cccb0de205ac403e0/src/core/trulens/core/utils/containers.py#L203,truera__trulens/dict_set_with_multikey,update dictionary entries
 api,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/evalscope/app/app.py#L370,modelscope__evalscope/update_dropdown_choices,update dropdown choices
 api,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/evalscope/app/app.py#L741,modelscope__evalscope/update_displays,update dropdowns
@@ -4954,9 +4954,9 @@ api,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb4765938
 api,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/VBench-2.0/vbench2/third_party/LLaVA_NeXT/llava/model/multimodal_resampler/qformer.py#L640,Vchitect__VBench/set_input_embeddings,update input embeddings
 api,https://github.com/Vchitect/VBench/blob/d2c30cab5497472af4798bc86f6eb47659381cb4/vbench/third_party/tag2Text/med.py#L674,Vchitect__VBench/set_input_embeddings,update input embeddings
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/triples/triples_factory.py#L549,pykeen__pykeen/with_labels,update labelings
-api,https://github.com/prometheus-eval/prometheus-eval/blob/dcfb44272d5d0414832f5dbb8c2a05ebc2614234/BiGGen-Bench/urial_conversation.py#L318,prometheus-eval__prometheus-eval/update_last_message,update last message
-api,https://github.com/prometheus-eval/prometheus-eval/blob/dcfb44272d5d0414832f5dbb8c2a05ebc2614234/train/scripts/conversation.py#L284,prometheus-eval__prometheus-eval/update_last_message,update last message
-api,https://github.com/prometheus-eval/prometheus-eval/blob/dcfb44272d5d0414832f5dbb8c2a05ebc2614234/train/src/alignment/conversation.py#L284,prometheus-eval__prometheus-eval/update_last_message,update last message
+api,https://github.com/prometheus-eval/prometheus-eval/blob/dcfb44272d5d0414832f5dbb8c2a05ebc2614234/BiGGen-Bench/urial_conversation.py#L318,prometheus-eval__prometheus-eval/update_last_message,update message
+api,https://github.com/prometheus-eval/prometheus-eval/blob/dcfb44272d5d0414832f5dbb8c2a05ebc2614234/train/scripts/conversation.py#L284,prometheus-eval__prometheus-eval/update_last_message,update message
+api,https://github.com/prometheus-eval/prometheus-eval/blob/dcfb44272d5d0414832f5dbb8c2a05ebc2614234/train/src/alignment/conversation.py#L284,prometheus-eval__prometheus-eval/update_last_message,update message
 api,https://github.com/tatsu-lab/alpaca_eval/blob/f19c323d8309d0d6f306bd26597db44fc6c62d57/scripts/precompute.py#L66,tatsu-lab__alpaca_eval/update_leaderboard,update leaderboard
 api,https://github.com/tensorflow/model-analysis/blob/b703eae15ebb46ca40923e2daa955750e3893a20/tensorflow_model_analysis/eval_metrics_graph/eval_metrics_graph.py#L440,tensorflow__model-analysis/set_metric_variables,update variables
 api,https://github.com/Cloud-CV/EvalAI/blob/8d1444f233a84f57b4a6b3db2bc7503da4cc7194/middleware/metrics/metrics_middleware.py#L27,Cloud-CV__EvalAI/process_response,update metrics
