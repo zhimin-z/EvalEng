@@ -1,4 +1,4 @@
-harness name,from awesome ml,github repo,distribution (non-git-clone),user interface,major release,evaluation subject,primary evaluation task,evaluator type,ground truth nature,evaluation modality
+harness name,from awesome ml,github repo,distribution (non-git-clone),user interface,major release,evaluation target,primary evaluation task,evaluator type,ground truth nature,evaluation modality
 AlpacaEval,yes,https://github.com/tatsu-lab/alpaca_eval,"pypi package,github package","api,cli",2,LLM,instruction following,"model-based,algorithmic","comparative baseline,implicit standard",static analysis
 ANN-Benchmarks,yes,https://github.com/erikbern/ann-benchmarks,,"api,cli",1,ANN algorithm,nearest neighbor retrieval,"algorithmic,environmental","explicit label,behavioral specification,comparative baseline","dynamic execution,static analysis"
 ARES,yes,https://github.com/stanford-futuredata/ARES,pypi package,api,1,RAG system,question answering,"model-based,algorithmic","explicit label,implicit standard,comparative baseline",static analysis
