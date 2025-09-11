@@ -3,6 +3,7 @@ matplotlib
 nbformat
 pandas
 plotly
+python-docx
 scikit-learn
 seaborn
 spacy

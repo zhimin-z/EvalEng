@@ -2,6 +2,7 @@
 .DS_Store
 *.venv
 repos/
+docs/
 workflows/
 configurations/
 .env

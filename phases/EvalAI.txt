@@ -1,0 +1,23 @@
+Well-Supported Phases
+Step 6 - SHIP
+EvalAI excels at comprehensive result packaging and standardized outputs. The platform provides robust leaderboard functionality, persistent storage of submissions and results, standardized evaluation metrics display, and comprehensive reporting dashboards. The web interface offers rich visualization capabilities, and the system maintains detailed logs of all evaluation runs with proper artifact management.
+
+Step 7 - GOVERN 
+EvalAI demonstrates strong governance capabilities through its production-ready platform design with robust error handling, comprehensive user management and authentication systems, detailed audit trails and submission tracking, and CI/CD integration support. The platform includes compliance features for challenge management, reproducibility through containerized environments, and established workflows for iterative challenge improvement.
+
+Partially-Supported Phases
+Step 1 - PLAN 
+EvalAI provides basic configuration capabilities through challenge creation interfaces and evaluation phase definitions. However, the planning phase support is limited to predefined templates and structures. While organizers can configure multiple evaluation phases, dataset splits, and basic evaluation protocols, the system lacks comprehensive support for advanced evaluation mode selection, automated evaluator configuration, or sophisticated environment setup beyond Docker containers.
+
+Step 3 - EXECUTE
+The platform supports Docker-based code submission evaluation and has infrastructure for handling multiple submission types. EvalAI includes basic concurrency management and worker node capabilities for evaluation execution. However, the execution phase is primarily designed for standard inference tasks and lacks comprehensive support for specialized evaluation types like ANN benchmarks, MLPerf scenarios, or complex multi-modal evaluations. The instrumentation and tracing capabilities are basic.
+
+Step 4 - SCORE
+EvalAI handles basic output capture and scoring through its evaluation script framework. The platform supports custom evaluation metrics and can process various output formats. However, the scoring capabilities are somewhat limited in scope - while it handles standard ML evaluation metrics well, it lacks built-in support for advanced scoring methods like LLM-as-judge evaluations, statistical validation with confidence intervals, or specialized metrics for retrieval and ANN tasks.
+
+Minimally-Supported Phases
+Step 2 - PREPARE
+EvalAI provides minimal data preparation support, primarily expecting organizers to handle dataset preparation externally. The platform lacks built-in capabilities for dataset preprocessing, index building (FAISS, ColBERT, BM25), vector processing, or advanced data validation. While it can handle uploaded datasets, there's no integrated support for modality-specific preprocessing, corpus cleaning, or automated data integrity validation.
+
+Step 5 - ANALYZE
+The analysis capabilities in EvalAI are quite basic, focusing primarily on leaderboard generation and simple metric aggregation. While the platform displays results and rankings, it lacks sophisticated analysis features like slice-wise performance breakdowns, diagnostic plot generation, statistical significance testing, or advanced comparative analysis. The system doesn't provide built-in support for ROC curves, calibration plots, or detailed performance analysis beyond basic metric display.

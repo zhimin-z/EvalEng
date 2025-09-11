@@ -1,0 +1,16 @@
+Well-Supported Phases
+Step 4 - SCORE TrustLLM provides comprehensive scoring capabilities with over 30 different evaluation metrics across multiple trustworthiness dimensions. The framework includes automatic evaluation scripts, GPT-based evaluators, and hybrid approaches. It supports diverse metric types including accuracy, F1-scores, embedding similarity, toxicity values, and specialized metrics like RtA (Refusal to Answer). The scoring system is production-ready with clear metric definitions and directional indicators (↑/↓) for interpretation.
+
+Step 5 - ANALYZE The framework excels at analysis with comprehensive aggregation across multiple trustworthiness dimensions (truthfulness, safety, fairness, robustness, privacy, ethics). It provides detailed slice-wise analysis by task type, domain, and trustworthiness category. The integrated leaderboard system enables model comparisons and rankings, with statistical analysis capabilities and performance breakdowns across 16+ mainstream LLMs evaluated on the benchmark.
+
+Partially-Supported Phases
+Step 1 - PLAN TrustLLM provides a structured evaluation framework with predefined task categories and evaluation modes, but lacks comprehensive configuration management. While it covers major trustworthiness dimensions (8 primary areas with 16 sub-dimensions), the planning phase requires manual configuration of model paths, API keys, and evaluation parameters. The framework supports multiple model backends (local, API-based) but doesn't provide unified configuration files or automated orchestration.
+
+Step 2 - PREPARE The toolkit includes dataset download functionality and supports over 30 datasets, but data preparation is somewhat manual. It provides preprocessing for different data types and includes validation mechanisms, but lacks comprehensive index building for retrieval scenarios or automated data integrity checks. The preparation phase works well for the included datasets but requires significant manual work for custom datasets.
+
+Step 3 - EXECUTE TrustLLM provides a generation framework with support for multiple model types (local, API-based including replicate, deepinfra, Azure OpenAI) and includes basic reliability features like retry mechanisms and timeout handling. However, the execution phase lacks advanced features like sophisticated batching, streaming support, comprehensive resource management, and detailed instrumentation beyond basic logging.
+
+Step 6 - SHIP The framework generates standardized outputs in JSON format and provides integration with leaderboards and visualization tools. It includes basic artifact persistence and supports reproducibility through dataset versioning, but lacks comprehensive artifact management, advanced reporting formats, or sophisticated caching mechanisms for partial re-runs.
+
+Minimally-Supported Phases
+Step 7 - GOVERN TrustLLM provides minimal governance capabilities with basic reproducibility through dataset versions and model specifications, but lacks comprehensive CI/CD integration, automated compliance validation, or production monitoring capabilities. While it supports iterative evaluation, it doesn't provide sophisticated drift detection or automated quality gates.

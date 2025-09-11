@@ -1,0 +1,16 @@
+Well-Supported Phases
+Step 2 - PREPARE OGB excels at data preparation with comprehensive dataset handling. The framework provides standardized data loaders for PyTorch Geometric and DGL that automatically handle dataset downloading, preprocessing, and standardized dataset splitting. The datasets cover diverse domains (scientific, social/information networks, heterogeneous knowledge graphs) and scales (small to large requiring multiple GPUs). The data loaders are production-ready with robust implementations that seamlessly integrate with popular graph deep learning frameworks.
+
+Step 4 - SCORE OGB provides standardized evaluators that are a core strength of the framework. Each dataset comes with a dedicated evaluator that takes standardized input dictionaries and produces metric outputs (e.g., ROC-AUC scores). The evaluators handle per-unit scoring with clear input/output format specifications, enabling reliable comparison across different methods. This standardized evaluation protocol is well-documented and production-ready.
+
+Partially-Supported Phases
+Step 1 - PLAN OGB provides some planning support through its structured dataset categorization (node/link/graph prediction tasks) and clear task definitions. However, the framework is primarily focused on graph machine learning tasks and doesn't provide comprehensive configuration management for broader evaluation objectives, multiple evaluation modes, or advanced orchestration capabilities that would be needed for complex evaluation workflows.
+
+Step 3 - EXECUTE The framework supports basic execution through its example scripts and baseline implementations across different datasets. The examples demonstrate inference loops and provide working code for various GNN architectures (GIN, GCN, etc.). However, the execution support lacks advanced features like robust retry mechanisms, circuit breakers, comprehensive instrumentation, or resource management beyond basic GPU utilization.
+
+Step 5 - ANALYZE OGB provides basic analysis capabilities through its evaluation metrics and baseline comparisons. The framework enables model performance comparison and includes leaderboard functionality. However, it lacks advanced analytical features like comprehensive slice analysis, diagnostic plotting, statistical validation with confidence intervals, or detailed performance profiling capabilities.
+
+Minimally-Supported Phases
+Step 6 - SHIP OGB has rudimentary artifact management through its result saving functionality (as seen in the filename parameter for saving results dictionaries). However, it lacks comprehensive logging systems, standardized output formats beyond basic metrics, interactive dashboards, or sophisticated artifact packaging for reproducibility and compliance.
+
+Step 7 - GOVERN The framework provides minimal governance support. While it has version control and some reproducibility features through standardized datasets and evaluation protocols, it lacks CI/CD integration, compliance validation systems, automated regression detection, or production monitoring capabilities. The governance is primarily manual and relies on researchers following the standardized protocols.

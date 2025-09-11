@@ -1,0 +1,16 @@
+Well-Supported Phases
+Step 4 - SCORE The evaluate library excels at the scoring phase with implementations of dozens of popular metrics covering NLP to Computer Vision tasks, including dataset-specific metrics. It provides a standardized interface with evaluate.load() and module.compute() methods, type checking for input validation, and comprehensive metric cards describing values, limitations, and ranges. The library supports both individual metrics and comparisons between models (like exact match and McNemar tests), making it production-ready for converting raw outputs into quantified evaluation metrics.
+
+Partially-Supported Phases
+Step 5 - ANALYZE The library provides basic comparison functionality through dedicated comparison modules (exact match, McNemar) that can analyze differences between models. However, the analysis capabilities appear limited to simple statistical comparisons rather than comprehensive slice analysis, diagnostic plots, or performance trade-off visualizations that would constitute full analytical support.
+
+Step 6 - SHIP The evaluate library supports standardized output formats and integrates with the Hugging Face Hub for sharing and discovering metrics. Metric cards provide documentation and examples, enabling some level of result packaging and sharing. However, the shipping capabilities seem focused on metric definitions rather than comprehensive result artifacts, dashboards, or submission-ready bundles.
+
+Minimally-Supported Phases
+Step 1 - PLAN While the library allows loading and configuring different metrics, it lacks comprehensive orchestration capabilities for defining evaluation tasks, selecting datasets, configuring backends, or specifying complete evaluation workflows. The planning phase requires significant manual configuration outside the library.
+
+Step 2 - PREPARE The library provides minimal data preparation support. While it includes type checking for inputs, it doesn't offer built-in dataset loading, preprocessing pipelines, index building for retrieval systems, or validation mechanisms that would constitute robust preparation capabilities.
+
+Step 3 - EXECUTE The evaluate library focuses on metric computation rather than execution orchestration. It lacks built-in support for inference loops, batching, streaming, instrumentation, retry mechanisms, resource management, or the comprehensive execution control needed for robust evaluation runs.
+
+Step 7 - GOVERN The library provides basic reproducibility through standardized metric implementations but lacks CI/CD integration, compliance validation, drift detection, or production monitoring capabilities that would support comprehensive governance of evaluation processes.

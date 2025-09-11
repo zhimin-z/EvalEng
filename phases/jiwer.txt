@@ -1,0 +1,16 @@
+Well-Supported Phases
+Step 4 - SCORE JiWER excels at the scoring phase, providing comprehensive per-unit scoring capabilities specifically designed for speech-to-text evaluation. It offers multiple evaluation metrics (WER, MER, WIL, WIP, CER) computed using efficient minimum-edit distance algorithms via RapidFuzz. The library handles edge cases like empty references and provides clear, standardized scoring outputs. This is the core strength of JiWER - converting raw speech recognition outputs into quantified, comparable metrics.
+
+Partially-Supported Phases
+Step 3 - EXECUTE JiWER provides basic execution capabilities for computing evaluation metrics on speech recognition outputs, but this is limited to the scoring computation itself rather than a full evaluation execution framework. It can process reference and hypothesis pairs efficiently, but lacks broader execution features like batching, streaming, instrumentation, retry logic, or resource management that would be needed for comprehensive evaluation workflows.
+
+Step 5 - ANALYZE The library offers fundamental analysis through its multiple metric types (WER, MER, WIL, WIP, CER), allowing for different perspectives on speech recognition performance. However, it lacks advanced aggregation, slicing capabilities, statistical analysis features, or diagnostic visualizations that would constitute full analysis phase support.
+
+Minimally-Supported Phases
+Step 1 - PLAN JiWER has minimal planning support - it's focused specifically on speech-to-text evaluation with predefined metrics, but doesn't provide configuration management, task definition frameworks, or evaluation orchestration capabilities needed for comprehensive planning.
+
+Step 2 - PREPARE The library has rudimentary data preparation as it can process reference and hypothesis text pairs, but lacks broader dataset management, preprocessing pipelines, validation frameworks, or integration with speech recognition systems and datasets.
+
+Step 6 - SHIP JiWER provides basic outputs (metric scores) but lacks comprehensive artifact management, standardized reporting formats, dashboard generation, or integration with broader evaluation infrastructure needed for full shipping capabilities.
+
+Step 7 - GOVERN There is minimal governance support - while the library provides reliable metric computation, it lacks CI/CD integration, compliance validation, reproducibility frameworks, or production monitoring capabilities.

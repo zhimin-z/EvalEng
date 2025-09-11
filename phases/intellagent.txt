@@ -1,0 +1,16 @@
+Well-Supported Phases
+Step 3 - EXECUTE IntellAgent excels at the execution phase with its core multi-agent simulation framework. The system can simulate thousands of realistic user-chatbot interactions, handle diverse scenarios with varying complexity levels, and supports concurrent execution with configurable workers and timeout handling. The framework provides robust control mechanisms including rate limiting, timeout management, and error handling through its configuration system.
+
+Step 4 - SCORE The framework provides comprehensive scoring capabilities through its critique system that evaluates conversations against specific policies. It captures detailed interaction data, analyzes performance across different scenarios, and provides feedback on tested policies. The system can assess conversational quality, policy adherence, and agent performance with statistical validation.
+
+Step 6 - SHIP IntellAgent has strong artifact management and output capabilities. It provides a Streamlit-based visualization dashboard, generates comprehensive result packages, supports various output formats, and maintains detailed logs of all interactions. The system creates structured outputs that can be easily consumed and shared, with built-in analytics and reporting features.
+
+Partially-Supported Phases
+Step 1 - PLAN The framework provides basic configuration through YAML files that allow users to specify LLM providers, model settings, number of samples, and cost limits. However, it lacks comprehensive orchestration for different evaluation domains beyond conversational agents. The planning is focused specifically on conversational AI evaluation rather than providing a general evaluation planning framework.
+
+Step 2 - PREPARE IntellAgent includes some data preparation capabilities through its policy graph decomposition and scenario generation. It can handle database schema integration and tool definitions, but the preparation phase is primarily automated within the simulation workflow rather than providing explicit data preparation tools. Users have limited control over dataset preprocessing and validation.
+
+Step 5 - ANALYZE The system provides analysis through its visualization dashboard and can aggregate metrics across experiments. However, the analysis capabilities appear to be primarily focused on conversational performance rather than providing comprehensive statistical analysis, slicing across different dimensions, or advanced diagnostic tools that would be expected in a general evaluation framework.
+
+Minimally-Supported Phases
+Step 7 - GOVERN While IntellAgent includes basic cost controls and configuration management, it lacks comprehensive governance features like CI/CD integration, compliance validation, reproducibility documentation, or production monitoring capabilities. The framework doesn't provide robust mechanisms for ensuring evaluation quality across iterations or managing evaluation workflows in production environments.

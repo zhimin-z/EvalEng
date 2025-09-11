@@ -1,0 +1,16 @@
+Well-Supported Phases
+Step 4 - SCORE GAOKAO-Bench provides comprehensive scoring functionality with rule-based answer extraction for objective questions and LLM-as-a-Judge evaluation for subjective questions. The framework includes dedicated scripts (OBJ_score_evaluation.py, SUB_score_evaluation.py) that compute per-unit scores, handle statistical validation, and generate detailed score breakdowns by subject area. The scoring system is production-ready with robust handling of both multiple-choice and open-ended questions, supporting confidence intervals and baseline comparisons.
+
+Step 5 - ANALYZE The framework excels at aggregating and analyzing results across multiple dimensions. It provides detailed performance breakdowns by subject (Chinese, English, Math, Physics, Chemistry, Biology, Politics, History, Geography), supports slice analysis by question type (objective vs subjective), and generates comprehensive model rankings. The merge_OBJ_SUB_score.py script demonstrates sophisticated aggregation capabilities that convert individual scores into standardized GAOKAO total scores for direct model comparison.
+
+Partially-Supported Phases
+Step 3 - EXECUTE GAOKAO-Bench provides a solid execution framework through objective_bench.py and subjective_bench.py scripts that handle model inference loops. The framework supports multiple model APIs (demonstrated with OpenAI integration) and includes basic error handling. However, it lacks advanced features like batching optimization, circuit breakers, comprehensive retry mechanisms, or resource management controls that would be expected in a production-grade execution system.
+
+Step 6 - SHIP The framework generates standardized JSON outputs and provides basic result packaging through organized directory structures (./Results/). It supports both objective and subjective question outputs with proper formatting. However, it lacks comprehensive artifact management, interactive dashboards, multiple export formats, or advanced caching mechanisms for reproducibility that would characterize a fully-featured shipping phase.
+
+Minimally-Supported Phases
+Step 1 - PLAN While GAOKAO-Bench provides basic configuration through prompt templates (Obj_Prompt.json, Sub_Prompt.json) and command-line arguments, it lacks a comprehensive planning framework. There's no centralized configuration system, limited task definition capabilities beyond the fixed GAOKAO format, and minimal support for defining custom evaluation objectives or success criteria.
+
+Step 2 - PREPARE The framework assumes pre-processed datasets and provides minimal data preparation functionality. While it includes the GAOKAO dataset, there's limited support for data validation, preprocessing pipelines, or handling of different data modalities. The preparation phase relies heavily on manual dataset organization without automated validation or integrity checking.
+
+Step 7 - GOVERN GAOKAO-Bench provides basic reproducibility through fixed datasets and deterministic evaluation procedures, but lacks comprehensive governance features. There are no CI/CD integration capabilities, compliance validation frameworks, automated regression detection, or production monitoring systems. The governance phase would require significant manual implementation for any production deployment.

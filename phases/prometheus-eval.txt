@@ -1,0 +1,16 @@
+Well-Supported Phases
+Step 4 - SCORE The repository provides comprehensive scoring capabilities through its LLM-as-judge evaluation system. It includes detailed scoring rubrics (1-5 scale), the Prometheus model family for evaluation, and structured output formats. The BiGGen-Bench demonstrates robust per-unit scoring across 77 tasks with instance-specific criteria, statistical validation, and baseline comparisons. The run_response_eval.py script provides production-ready scoring functionality with support for various evaluation metrics.
+
+Step 5 - ANALYZE The analysis phase is well-supported through comprehensive aggregation and slicing capabilities. The make_table.py script generates summary tables with average scores and insights across different capabilities (reasoning, grounding, planning, etc.). The BiGGen-Bench covers 9 key capabilities across 77 tasks with 765 unique instances, enabling detailed slice analysis by capability, task type, and model performance. The system provides model rankings and comparative analysis features.
+
+Partially-Supported Phases
+Step 1 - PLAN The repository provides some planning capabilities through its configuration system and task definitions. The BiGGen-Bench includes predefined evaluation scopes across 9 capabilities and 77 tasks with detailed documentation. However, it lacks comprehensive orchestration tools for defining custom evaluation workflows, automated configuration generation, or flexible task composition beyond the predefined benchmark structure.
+
+Step 3 - EXECUTE Execution is partially supported through multiple inference scripts (run_api_inference.py, run_base_inference.py, run_chat_inference.py) that handle different model types and APIs. The system supports various backends (vLLM, LiteLLM, HuggingFace) and includes basic reliability measures. However, it lacks advanced features like comprehensive instrumentation, live tracing, circuit breakers, or sophisticated resource management beyond basic VLLM configurations.
+
+Step 6 - SHIP The repository provides basic artifact management through structured JSON outputs and sample response formats. It generates standardized evaluation results and supports caching for reproducibility. However, it lacks comprehensive logging systems, interactive dashboards, automated report generation, or submission-ready bundles for regulatory compliance.
+
+Minimally-Supported Phases
+Step 2 - PREPARE Data preparation is minimally supported with basic dataset loading capabilities and predefined benchmark data. While the BiGGen-Bench provides preprocessed tasks and examples, the system lacks comprehensive data preprocessing pipelines, index building for retrieval scenarios, or validation frameworks for custom datasets.
+
+Step 7 - GOVERN Governance features are minimal, with basic reproducibility through configuration files and model specifications. The repository lacks CI/CD integration, compliance validation frameworks, automated quality gates, production monitoring capabilities, or systematic iteration planning tools.

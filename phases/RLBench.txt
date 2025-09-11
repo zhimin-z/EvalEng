@@ -1,0 +1,16 @@
+Well-Supported Phases
+Step 3 - EXECUTE RLBench provides robust execution capabilities with comprehensive environment management through CoppeliaSim v4.1.0 and PyRep. The framework supports multiple action modes (joint velocity, discrete gripper actions), various observation modalities (RGB, depth, state), headless rendering for cloud/cluster deployment, and multiple robotic arm configurations. The execution loop is production-ready with proper error handling, deterministic episode management, and support for both single-task and multi-task scenarios across 100+ predefined tasks.
+
+Step 4 - SCORE The framework provides solid scoring infrastructure with built-in reward systems, success criteria validation, and episode termination conditions. Each task implements specific success metrics, and the system captures comprehensive observation data including joint positions, velocities, and multi-modal sensor outputs. The scoring system integrates seamlessly with the task execution, providing immediate feedback on task completion and performance metrics.
+
+Partially-Supported Phases
+Step 1 - PLAN RLBench offers good planning support through predefined task sets (FS10, FS25, FS50, FS95 for few-shot learning; MT15, MT30, MT55, MT100 for multi-task learning) and configurable action modes. The framework supports domain randomization for sim-to-real transfer and multiple observation configurations. However, it lacks comprehensive configuration management tools and automated objective specification - users must manually configure environments and select appropriate task combinations.
+
+Step 2 - PREPARE The framework provides solid data preparation through demonstration collection capabilities, standardized observation formats, and deterministic environment initialization. It supports visual randomization for domain transfer and proper dataset management for imitation learning. However, data validation tools are limited, and there's minimal support for external dataset integration or advanced preprocessing pipelines beyond the built-in demonstration system.
+
+Step 5 - ANALYZE RLBench provides basic analysis capabilities through episode data collection, observation logging, and task completion tracking. The framework captures rich multimodal data suitable for analysis and supports benchmark comparisons through standardized task sets. However, it lacks built-in statistical analysis tools, automated performance aggregation, or sophisticated diagnostic capabilities - analysis must be implemented externally.
+
+Minimally-Supported Phases
+Step 6 - SHIP RLBench has minimal shipping capabilities, primarily limited to basic logging and observation data export. While the framework can capture episode trajectories and observations, it lacks standardized output formats, automated report generation, or comprehensive artifact management. Users must implement their own result packaging and sharing mechanisms.
+
+Step 7 - GOVERN The framework provides very limited governance support with basic reproducibility through deterministic seeding and configuration consistency. While it supports continuous integration through GitHub Actions for testing, it lacks compliance validation, automated quality gates, performance regression detection, or production monitoring capabilities. Governance processes must be implemented entirely outside the framework.
