@@ -1741,77 +1741,77 @@ api,https://github.com/Farama-Foundation/Metaworld/blob/cdafedfaaa896472fb7e76e2
 api,https://github.com/Farama-Foundation/Metaworld/blob/cdafedfaaa896472fb7e76e2fe103e120b67a9b6/metaworld/wrappers.py#L31,Farama-Foundation__Metaworld/observation,concatenate observation
 api,https://github.com/Farama-Foundation/Metaworld/blob/cdafedfaaa896472fb7e76e2fe103e120b67a9b6/scripts/env_runtime.py#L42,Farama-Foundation__Metaworld/toggle_sample_tasks_on_reset,set sample tasks
 api,https://github.com/Farama-Foundation/Metaworld/blob/cdafedfaaa896472fb7e76e2fe103e120b67a9b6/scripts/env_runtime.py#L52,Farama-Foundation__Metaworld/sample_tasks,sample tasks
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/docs/conf.py#L137,Giskard-AI__giskard/linkcode_resolve,generate source link
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/docs/scrapper.py#L53,Giskard-AI__giskard/parse_item,record missing link
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/client/io_utils.py#L17,Giskard-AI__giskard/pickle_dumps,serialize data
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/client/io_utils.py#L26,Giskard-AI__giskard/load_decompress,decompress data
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/client/python_utils.py#L17,Giskard-AI__giskard/get_python_requirements,retrieve python requirements
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/client/python_utils.py#L29,Giskard-AI__giskard/get_python_version,retrieve python version
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/client/python_utils.py#L37,Giskard-AI__giskard/format_pylib_extras,format extras list
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/core/core.py#L116,Giskard-AI__giskard/from_json,create object
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/core/model_validation.py#L143,Giskard-AI__giskard/validate_model_loading_and_saving,validate model serialization
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/core/model_validation.py#L190,Giskard-AI__giskard/validate_model_type,validate model type
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/core/suite.py#L237,Giskard-AI__giskard/to_junit,generate junit xml
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/datasets/metadata/indexing.py#L62,Giskard-AI__giskard/available_providers,retrieve provider names
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/datasets/metadata/indexing.py#L70,Giskard-AI__giskard/has,check provider availability
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/functions/slicing.py#L17,Giskard-AI__giskard/keyword_lookup_slicing_fn,check keywords
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/functions/slicing.py#L25,Giskard-AI__giskard/positive_sentiment_analysis,filter positive sentiment
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/functions/slicing.py#L33,Giskard-AI__giskard/offensive_sentiment_analysis,filter offensive sentiment
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/functions/slicing.py#L41,Giskard-AI__giskard/irony_sentiment_analysis,filter ironic sentiment
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/functions/slicing.py#L49,Giskard-AI__giskard/hate_sentiment_analysis,filter hate sentiments
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/functions/slicing.py#L57,Giskard-AI__giskard/emotion_sentiment_analysis,filter emotion rows
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/functions/slicing.py#L76,Giskard-AI__giskard/incorrect_rows,filter mismatched rows
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/functions/slicing.py#L81,Giskard-AI__giskard/outlier_filter,identify outliers
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/functions/slicing.py#L9,Giskard-AI__giskard/short_comment_slicing_fn,filter short comments
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/functions/transformation.py#L100,Giskard-AI__giskard/text_typo_from_ocr,correct typos
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/functions/transformation.py#L107,Giskard-AI__giskard/text_punctuation_removal,remove punctuation
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/functions/transformation.py#L114,Giskard-AI__giskard/text_accent_removal,remove accents
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/functions/transformation.py#L121,Giskard-AI__giskard/text_gender_switch,transform gender labels
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/functions/transformation.py#L128,Giskard-AI__giskard/text_number_to_word,convert numbers
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/functions/transformation.py#L135,Giskard-AI__giskard/text_religion_switch,transform religion data
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/functions/transformation.py#L142,Giskard-AI__giskard/text_nationality_switch,transform nationality
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/functions/transformation.py#L151,Giskard-AI__giskard/text_typo_from_speech,generate typo text
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/functions/transformation.py#L158,Giskard-AI__giskard/change_writing_style,rewrite text
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/functions/transformation.py#L197,Giskard-AI__giskard/mad_transformation,apply mad adjustment
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/functions/transformation.py#L211,Giskard-AI__giskard/add_value,add data
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/functions/transformation.py#L45,Giskard-AI__giskard/keyboard_typo_transformation,generate typo
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/functions/transformation.py#L72,Giskard-AI__giskard/text_uppercase,convert text format
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/functions/transformation.py#L79,Giskard-AI__giskard/text_lowercase,convert text format
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/functions/transformation.py#L86,Giskard-AI__giskard/text_title_case,convert title
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/functions/transformation.py#L93,Giskard-AI__giskard/text_typo,introduce typo errors
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/integrations/mlflow/giskard_evaluator.py#L22,Giskard-AI__giskard/can_evaluate,check model compatibility
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/llm/client/logger.py#L27,Giskard-AI__giskard/log_error,record error
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/llm/embeddings/openai.py#L59,Giskard-AI__giskard/try_get_openai_embeddings,create embedding
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/models/base/model.py#L472,Giskard-AI__giskard/cast_labels,convert labels
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/models/base/model.py#L567,Giskard-AI__giskard/talk,generate response
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/models/model_explanation.py#L228,Giskard-AI__giskard/explain,generate explanation chart
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/models/model_explanation.py#L246,Giskard-AI__giskard/explain_text,generate text explanation
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/models/utils.py#L31,Giskard-AI__giskard/fix_seed,set random seeds
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/rag/knowledge_base.py#L170,Giskard-AI__giskard/from_pandas,create knowledgebase
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/rag/knowledge_base.py#L287,Giskard-AI__giskard/plot_topics,display knowledge plot
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/rag/knowledge_base.py#L325,Giskard-AI__giskard/similarity_search_with_score,compute similarity scores
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/rag/metrics/ragas_metrics.py#L51,Giskard-AI__giskard/agenerate_text,generate text
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/rag/metrics/ragas_metrics.py#L66,Giskard-AI__giskard/embed_query,generate text embedding
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/rag/metrics/ragas_metrics.py#L69,Giskard-AI__giskard/embed_documents,generate embeddings
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/rag/question_generators/utils.py#L16,Giskard-AI__giskard/maybe_trange,create range
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/rag/report.py#L245,Giskard-AI__giskard/get_failures,filter failures
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/registry/decorators_utils.py#L65,Giskard-AI__giskard/insert_arg,insert parameter
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/registry/registry.py#L33,Giskard-AI__giskard/load_plugins,load and import plugins
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/scanner/issues.py#L227,Giskard-AI__giskard/set_detector_name,set detector name
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/scanner/report.py#L335,Giskard-AI__giskard/to_avid,generate scan report
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/scanner/report.py#L359,Giskard-AI__giskard/generate_rails,generate rails representation
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/scanner/report.py#L382,Giskard-AI__giskard/update_rails_config,generate rails configuration
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/slicing/slice.py#L104,Giskard-AI__giskard/init_code,generate class identifier
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/slicing/slice.py#L122,Giskard-AI__giskard/init_code,generate class identifier
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/slicing/slice.py#L139,Giskard-AI__giskard/init_code,generate class identifier
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/slicing/slice.py#L160,Giskard-AI__giskard/init_code,generate class identifier
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/slicing/slice.py#L82,Giskard-AI__giskard/init_code,generate class identifier
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/slicing/utils.py#L25,Giskard-AI__giskard/get_slice_feature_intervals,generate feature intervals
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/utils/analytics_collector.py#L148,Giskard-AI__giskard/init_server_info,set server information
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/utils/environment_detector.py#L132,Giskard-AI__giskard/is_cloud_env,detect environment type
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/utils/file_utils.py#L11,Giskard-AI__giskard/job_logs_path,generate log file path
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/utils/file_utils.py#L7,Giskard-AI__giskard/get_file_name,generate file name
-api,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/utils/logging_utils.py#L68,Giskard-AI__giskard/prepare_message_template,return message template
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/docs/conf.py#L137,Giskard-AI__giskard-oss/linkcode_resolve,generate source link
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/docs/scrapper.py#L53,Giskard-AI__giskard-oss/parse_item,record missing link
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/client/io_utils.py#L17,Giskard-AI__giskard-oss/pickle_dumps,serialize data
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/client/io_utils.py#L26,Giskard-AI__giskard-oss/load_decompress,decompress data
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/client/python_utils.py#L17,Giskard-AI__giskard-oss/get_python_requirements,retrieve python requirements
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/client/python_utils.py#L29,Giskard-AI__giskard-oss/get_python_version,retrieve python version
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/client/python_utils.py#L37,Giskard-AI__giskard-oss/format_pylib_extras,format extras list
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/core/core.py#L116,Giskard-AI__giskard-oss/from_json,create object
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/core/model_validation.py#L143,Giskard-AI__giskard-oss/validate_model_loading_and_saving,validate model serialization
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/core/model_validation.py#L190,Giskard-AI__giskard-oss/validate_model_type,validate model type
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/core/suite.py#L237,Giskard-AI__giskard-oss/to_junit,generate junit xml
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/datasets/metadata/indexing.py#L62,Giskard-AI__giskard-oss/available_providers,retrieve provider names
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/datasets/metadata/indexing.py#L70,Giskard-AI__giskard-oss/has,check provider availability
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/functions/slicing.py#L17,Giskard-AI__giskard-oss/keyword_lookup_slicing_fn,check keywords
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/functions/slicing.py#L25,Giskard-AI__giskard-oss/positive_sentiment_analysis,filter positive sentiment
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/functions/slicing.py#L33,Giskard-AI__giskard-oss/offensive_sentiment_analysis,filter offensive sentiment
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/functions/slicing.py#L41,Giskard-AI__giskard-oss/irony_sentiment_analysis,filter ironic sentiment
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/functions/slicing.py#L49,Giskard-AI__giskard-oss/hate_sentiment_analysis,filter hate sentiments
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/functions/slicing.py#L57,Giskard-AI__giskard-oss/emotion_sentiment_analysis,filter emotion rows
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/functions/slicing.py#L76,Giskard-AI__giskard-oss/incorrect_rows,filter mismatched rows
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/functions/slicing.py#L81,Giskard-AI__giskard-oss/outlier_filter,identify outliers
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/functions/slicing.py#L9,Giskard-AI__giskard-oss/short_comment_slicing_fn,filter short comments
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/functions/transformation.py#L100,Giskard-AI__giskard-oss/text_typo_from_ocr,correct typos
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/functions/transformation.py#L107,Giskard-AI__giskard-oss/text_punctuation_removal,remove punctuation
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/functions/transformation.py#L114,Giskard-AI__giskard-oss/text_accent_removal,remove accents
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/functions/transformation.py#L121,Giskard-AI__giskard-oss/text_gender_switch,transform gender labels
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/functions/transformation.py#L128,Giskard-AI__giskard-oss/text_number_to_word,convert numbers
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/functions/transformation.py#L135,Giskard-AI__giskard-oss/text_religion_switch,transform religion data
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/functions/transformation.py#L142,Giskard-AI__giskard-oss/text_nationality_switch,transform nationality
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/functions/transformation.py#L151,Giskard-AI__giskard-oss/text_typo_from_speech,generate typo text
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/functions/transformation.py#L158,Giskard-AI__giskard-oss/change_writing_style,rewrite text
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/functions/transformation.py#L197,Giskard-AI__giskard-oss/mad_transformation,apply mad adjustment
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/functions/transformation.py#L211,Giskard-AI__giskard-oss/add_value,add data
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/functions/transformation.py#L45,Giskard-AI__giskard-oss/keyboard_typo_transformation,generate typo
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/functions/transformation.py#L72,Giskard-AI__giskard-oss/text_uppercase,convert text format
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/functions/transformation.py#L79,Giskard-AI__giskard-oss/text_lowercase,convert text format
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/functions/transformation.py#L86,Giskard-AI__giskard-oss/text_title_case,convert title
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/functions/transformation.py#L93,Giskard-AI__giskard-oss/text_typo,introduce typo errors
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/integrations/mlflow/giskard_evaluator.py#L22,Giskard-AI__giskard-oss/can_evaluate,check model compatibility
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/llm/client/logger.py#L27,Giskard-AI__giskard-oss/log_error,record error
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/llm/embeddings/openai.py#L59,Giskard-AI__giskard-oss/try_get_openai_embeddings,create embedding
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/models/base/model.py#L472,Giskard-AI__giskard-oss/cast_labels,convert labels
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/models/base/model.py#L567,Giskard-AI__giskard-oss/talk,generate response
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/models/model_explanation.py#L228,Giskard-AI__giskard-oss/explain,generate explanation chart
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/models/model_explanation.py#L246,Giskard-AI__giskard-oss/explain_text,generate text explanation
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/models/utils.py#L31,Giskard-AI__giskard-oss/fix_seed,set random seeds
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/rag/knowledge_base.py#L170,Giskard-AI__giskard-oss/from_pandas,create knowledgebase
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/rag/knowledge_base.py#L287,Giskard-AI__giskard-oss/plot_topics,display knowledge plot
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/rag/knowledge_base.py#L325,Giskard-AI__giskard-oss/similarity_search_with_score,compute similarity scores
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/rag/metrics/ragas_metrics.py#L51,Giskard-AI__giskard-oss/agenerate_text,generate text
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/rag/metrics/ragas_metrics.py#L66,Giskard-AI__giskard-oss/embed_query,generate text embedding
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/rag/metrics/ragas_metrics.py#L69,Giskard-AI__giskard-oss/embed_documents,generate embeddings
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/rag/question_generators/utils.py#L16,Giskard-AI__giskard-oss/maybe_trange,create range
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/rag/report.py#L245,Giskard-AI__giskard-oss/get_failures,filter failures
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/registry/decorators_utils.py#L65,Giskard-AI__giskard-oss/insert_arg,insert parameter
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/registry/registry.py#L33,Giskard-AI__giskard-oss/load_plugins,load and import plugins
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/scanner/issues.py#L227,Giskard-AI__giskard-oss/set_detector_name,set detector name
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/scanner/report.py#L335,Giskard-AI__giskard-oss/to_avid,generate scan report
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/scanner/report.py#L359,Giskard-AI__giskard-oss/generate_rails,generate rails representation
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/scanner/report.py#L382,Giskard-AI__giskard-oss/update_rails_config,generate rails configuration
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/slicing/slice.py#L104,Giskard-AI__giskard-oss/init_code,generate class identifier
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/slicing/slice.py#L122,Giskard-AI__giskard-oss/init_code,generate class identifier
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/slicing/slice.py#L139,Giskard-AI__giskard-oss/init_code,generate class identifier
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/slicing/slice.py#L160,Giskard-AI__giskard-oss/init_code,generate class identifier
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/slicing/slice.py#L82,Giskard-AI__giskard-oss/init_code,generate class identifier
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/slicing/utils.py#L25,Giskard-AI__giskard-oss/get_slice_feature_intervals,generate feature intervals
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/utils/analytics_collector.py#L148,Giskard-AI__giskard-oss/init_server_info,set server information
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/utils/environment_detector.py#L132,Giskard-AI__giskard-oss/is_cloud_env,detect environment type
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/utils/file_utils.py#L11,Giskard-AI__giskard-oss/job_logs_path,generate log file path
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/utils/file_utils.py#L7,Giskard-AI__giskard-oss/get_file_name,generate file name
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/utils/logging_utils.py#L68,Giskard-AI__giskard-oss/prepare_message_template,return message template
 api,https://github.com/google-deepmind/meltingpot/blob/f280a35a4ffe5a7613b5c4a062a66fd18c64876c/meltingpot/configs/substrates/reaction_graph_utils.py#L160,google-deepmind__meltingpot/adjust_color_opacity,adjust color opacity
 api,https://github.com/google-deepmind/meltingpot/blob/f280a35a4ffe5a7613b5c4a062a66fd18c64876c/meltingpot/human_players/level_playing_utils.py#L118,google-deepmind__meltingpot/get_key_number_four_pressed,check pressed key
 api,https://github.com/google-deepmind/meltingpot/blob/f280a35a4ffe5a7613b5c4a062a66fd18c64876c/meltingpot/human_players/level_playing_utils.py#L138,google-deepmind__meltingpot/get_key_c_pressed,check pressed key
@@ -2422,128 +2422,128 @@ api,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823
 api,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/evalscope/utils/io_utils.py#L155,modelscope__evalscope/are_paths_same,compare paths
 api,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/evalscope/utils/io_utils.py#L76,modelscope__evalscope/jsonl_to_reader,open jsonl file
 api,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/evalscope/utils/utils.py#L79,modelscope__evalscope/parse_first_capital,extract letter
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/agieval/constructions.py#L100,open-compass__OpenCompass/to_tsv,convert file format
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/agieval/dataset_loader.py#L330,open-compass__OpenCompass/generate_second_stage_input,generate input
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/agieval/evaluation.py#L16,open-compass__OpenCompass/evaluate_single_sample,compare predictions
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/agieval/post_process.py#L46,open-compass__OpenCompass/try_parse_few_shot_pattern,identify pattern
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/agieval/post_process.py#L82,open-compass__OpenCompass/extract_answer_in_bracket,extract content
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/bigcodebench/extractor.py#L106,open-compass__OpenCompass/has_return_statement,check return
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/chinese_simpleqa.py#L87,open-compass__OpenCompass/chinese_simpleqa_preprocess,extract question
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/flores.py#L75,open-compass__OpenCompass/flores_postprocess_chinese,tokenize text
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/humaneval_multi.py#L141,open-compass__OpenCompass/for_file,parse and evaluate data
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions_registry.py#L175,open-compass__OpenCompass/conflict_make,establish mutual conflicts
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L1071,open-compass__OpenCompass/get_instruction_args_keys,retrieve arguments
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L110,open-compass__OpenCompass/get_instruction_args_keys,unimplemented function
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L1116,open-compass__OpenCompass/get_instruction_args_keys,retrieve arguments
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L1168,open-compass__OpenCompass/get_instruction_args_keys,retrieve arguments
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L1200,open-compass__OpenCompass/get_instruction_args_keys,retrieve arguments
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L1251,open-compass__OpenCompass/get_instruction_args_keys,retrieve arguments
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L1286,open-compass__OpenCompass/get_instruction_args_keys,retrieve arguments
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L1310,open-compass__OpenCompass/get_instruction_args_keys,retrieve arguments
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L1387,open-compass__OpenCompass/get_instruction_args_keys,retrieve arguments
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L1416,open-compass__OpenCompass/get_instruction_args_keys,retrieve arguments
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L1448,open-compass__OpenCompass/get_instruction_args_keys,retrieve arguments
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L1478,open-compass__OpenCompass/get_instruction_args_keys,retrieve arguments
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L148,open-compass__OpenCompass/get_instruction_args_keys,retrieve arguments
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L1532,open-compass__OpenCompass/get_instruction_args_keys,retrieve arguments
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L1563,open-compass__OpenCompass/get_instruction_args_keys,retrieve arguments
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L221,open-compass__OpenCompass/get_instruction_args_keys,retrieve arguments
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L271,open-compass__OpenCompass/get_instruction_args_keys,retrieve arguments
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L316,open-compass__OpenCompass/get_instruction_args_keys,retrieve arguments
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L353,open-compass__OpenCompass/get_instruction_args_keys,retrieve arguments
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L400,open-compass__OpenCompass/get_instruction_args_keys,retrieve arguments
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L450,open-compass__OpenCompass/get_instruction_args_keys,retrieve arguments
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L518,open-compass__OpenCompass/get_instruction_args_keys,retrieve arguments
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L568,open-compass__OpenCompass/get_instruction_args_keys,retrieve arguments
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L625,open-compass__OpenCompass/get_instruction_args_keys,retrieve arguments
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L683,open-compass__OpenCompass/get_instruction_args_keys,retrieve arguments
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L749,open-compass__OpenCompass/get_instruction_args_keys,retrieve arguments
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L820,open-compass__OpenCompass/get_instruction_args_keys,retrieve arguments
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L882,open-compass__OpenCompass/get_instruction_args_keys,retrieve arguments
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L909,open-compass__OpenCompass/get_instruction_args_keys,retrieve arguments
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L978,open-compass__OpenCompass/get_instruction_args_keys,retrieve arguments
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/korbench/korbench_dataset_config/config_wrapper.py#L35,open-compass__OpenCompass/print_all_keys,display keys
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/korbench/korbench_utils.py#L130,open-compass__OpenCompass/print_all_keys,display keys
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/korbench/korbench_utils.py#L188,open-compass__OpenCompass/read_yaml,load configuration
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/korbench/korbench_utils.py#L197,open-compass__OpenCompass/write_jsonl_lines,save data
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/korbench/korbench_utils.py#L208,open-compass__OpenCompass/print_info,display information
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/korbench/korbench_utils.py#L222,open-compass__OpenCompass/read_json_or_jsonl,load and parse data
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/korbench/korbench_utils.py#L248,open-compass__OpenCompass/read_json_or_jsonl_with_idx,load and retrieve data
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/korbench/korbench_utils.py#L386,open-compass__OpenCompass/normalize_string,extract and sort numbers
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/korbench/korbench_utils.py#L457,open-compass__OpenCompass/method_equal,check answer
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/korbench/korbench_utils.py#L65,open-compass__OpenCompass/load_split_data,load data files
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/korbench/korbench_utils.py#L77,open-compass__OpenCompass/process_mixed_data,load and process data
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/char_smi.py#L131,open-compass__OpenCompass/shape_distance,calculate shape distance
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/char_smi.py#L183,open-compass__OpenCompass/pronunciation_distance,calculate pronunciation difference
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/char_smi.py#L218,open-compass__OpenCompass/load_dict,load character frequencies
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/char_smi.py#L394,open-compass__OpenCompass/pinyin_map,map pinyin
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/function_utils.py#L44,open-compass__OpenCompass/compute_gleu,calculate gleu score
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/modules/tokenization.py#L129,open-compass__OpenCompass/convert_tokens_to_ids,map tokens to ids
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/modules/tokenization.py#L132,open-compass__OpenCompass/convert_ids_to_tokens,map ids to tokens
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/modules/tokenization.py#L46,open-compass__OpenCompass/printable_text,convert text
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/modules/tokenization.py#L95,open-compass__OpenCompass/convert_tokens_to_ids,map tokens to ids
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/modules/tokenization.py#L99,open-compass__OpenCompass/convert_ids_to_tokens,map ids to tokens
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/rc_f1.py#L142,open-compass__OpenCompass/human_performance,calculate total scores
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/rc_f1.py#L146,open-compass__OpenCompass/model_performance,calculate performance scores
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/rc_f1.py#L39,open-compass__OpenCompass/preds_to_dict,create prediction dictionary
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/LCBench.py#L105,open-compass__OpenCompass/readable,check readability
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/livecodebench/execute_utils.py#L168,open-compass__OpenCompass/readable,check readability
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/math.py#L184,open-compass__OpenCompass/math_judement_preprocess,extract answer
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/mbpp.py#L228,open-compass__OpenCompass/readable,check readability
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/medbench/constructions.py#L100,open-compass__OpenCompass/to_tsv,convert file format
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/medbench/dataset_loader.py#L278,open-compass__OpenCompass/generate_second_stage_input,generate second stage input
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/medbench/evaluation.py#L16,open-compass__OpenCompass/evaluate_single_sample,compare predictions
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/medbench/post_process.py#L46,open-compass__OpenCompass/try_parse_few_shot_pattern,identify pattern
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/medbench/post_process.py#L82,open-compass__OpenCompass/extract_answer_in_bracket,extract content
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/musr/tree.py#L630,open-compass__OpenCompass/murder_mystery_ex,generate logic tree
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/NPHardEval/utils.py#L5,open-compass__OpenCompass/append_root_tags,add root tags
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/phybench/extended_zss.py#L25,open-compass__OpenCompass/get_label,retrieve node label
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/phybench/extended_zss.py#L29,open-compass__OpenCompass/addkid,insert child node
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/phybench/latex_pre_process.py#L28,open-compass__OpenCompass/remove_non_ascii,remove non-ascii
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/phybench/latex_pre_process.py#L325,open-compass__OpenCompass/remove_outer_braces,remove outer braces
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/scicode.py#L193,open-compass__OpenCompass/cmp_tuple_or_list,compare sequences
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/scicode.py#L40,open-compass__OpenCompass/return_dataset,return dataset
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/scicode.py#L97,open-compass__OpenCompass/process_hdf5_to_tuple,extract data
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/subjective/alignbench.py#L61,open-compass__OpenCompass/category2type,map category to type
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/subjective/arena_hard.py#L137,open-compass__OpenCompass/preety_print_two_ratings,create ratings table
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/subjective/commonbench.py#L45,open-compass__OpenCompass/commonbench_postprocess,generate capability results
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/subjective/creationbench.py#L293,open-compass__OpenCompass/prompt_construct_compare,generate comparison prompt
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/subjective/creationbench.py#L302,open-compass__OpenCompass/prompt_construct_compare_4opt,construct comparison prompt
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/supergpqa/supergpqa_dataset_config/config_wrapper.py#L35,open-compass__OpenCompass/print_all_keys,display keys
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/supergpqa/supergpqa_utils.py#L130,open-compass__OpenCompass/print_all_keys,display keys
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/supergpqa/supergpqa_utils.py#L188,open-compass__OpenCompass/read_yaml,load configuration
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/supergpqa/supergpqa_utils.py#L197,open-compass__OpenCompass/write_jsonl_lines,save data
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/supergpqa/supergpqa_utils.py#L208,open-compass__OpenCompass/print_info,display information
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/supergpqa/supergpqa_utils.py#L222,open-compass__OpenCompass/read_json_or_jsonl,load and parse data
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/supergpqa/supergpqa_utils.py#L248,open-compass__OpenCompass/read_json_or_jsonl_with_idx,load and retrieve data
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/supergpqa/supergpqa_utils.py#L386,open-compass__OpenCompass/normalize_string,extract and sort numbers
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/supergpqa/supergpqa_utils.py#L457,open-compass__OpenCompass/method_equal,check answer
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/supergpqa/supergpqa_utils.py#L65,open-compass__OpenCompass/load_split_data,load data files
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/supergpqa/supergpqa_utils.py#L77,open-compass__OpenCompass/process_mixed_data,load and process data
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/teval/evaluators/reason_retrieve_understand_evaluator.py#L14,open-compass__OpenCompass/input_postprocess,clean and trim text
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/teval/utils/template.py#L5,open-compass__OpenCompass/format_string,format string
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/models/claude_api/postprocessors.py#L114,open-compass__OpenCompass/xsum_postprocess,postprocess text
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/models/claude_api/postprocessors.py#L90,open-compass__OpenCompass/flores_postprocess_chinese,tokenize text
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/models/yayi_api.py#L31,open-compass__OpenCompass/get_current_time,return time
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/openicl/icl_dataset_reader.py#L158,open-compass__OpenCompass/generate_output_field_corpus,generate output prompts
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/openicl/icl_dataset_reader.py#L181,open-compass__OpenCompass/generate_input_output_field_prompt,create prompt
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/openicl/icl_evaluator/icl_base_evaluator.py#L17,open-compass__OpenCompass/compute_pass_at_k,calculate pass probability
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/openicl/icl_evaluator/icl_korbench_evaluator.py#L11,open-compass__OpenCompass/read_json_or_jsonl,load and parse data
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/openicl/icl_evaluator/icl_korbench_evaluator.py#L37,open-compass__OpenCompass/read_json_or_jsonl_with_idx,load and retrieve data
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/summarizers/subjective/arenahard.py#L72,open-compass__OpenCompass/preety_print_two_ratings,create ratings table
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/summarizers/subjective/arenahard.py#L82,open-compass__OpenCompass/visualize_bootstrap_scores,create bootstrap score plot
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/summarizers/subjective/compass_arena_bradley_terry.py#L202,open-compass__OpenCompass/compute_elo,calculate elo ratings
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/summarizers/subjective/compass_arena_bradley_terry.py#L224,open-compass__OpenCompass/compute_bootstrap_elo,calculate elo ratings
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/utils/dependency.py#L7,open-compass__OpenCompass/satisfy_requirement,check python requirements
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/utils/dict_postprocessors.py#L4,open-compass__OpenCompass/base_postprocess,return output
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/utils/fileio.py#L137,open-compass__OpenCompass/jsonl_writer,write json lines
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/utils/fileio.py#L28,open-compass__OpenCompass/read_json,read json data
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/utils/fileio.py#L86,open-compass__OpenCompass/save_json,save json file
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/utils/network.py#L43,open-compass__OpenCompass/check_network_connectivity,check network connectivity
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/utils/text_postprocessors.py#L169,open-compass__OpenCompass/first_number_postprocess,extract number
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/utils/text_postprocessors.py#L215,open-compass__OpenCompass/general_eval_wrapper_postprocess,postprocess text
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/utils/text_postprocessors.py#L61,open-compass__OpenCompass/think_pred_postprocess,extract text
-api,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/utils/types.py#L9,open-compass__OpenCompass/get_type_from_cfg,retrieve object type
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/agieval/constructions.py#L100,open-compass__opencompass/to_tsv,convert file format
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/agieval/dataset_loader.py#L330,open-compass__opencompass/generate_second_stage_input,generate input
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/agieval/evaluation.py#L16,open-compass__opencompass/evaluate_single_sample,compare predictions
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/agieval/post_process.py#L46,open-compass__opencompass/try_parse_few_shot_pattern,identify pattern
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/agieval/post_process.py#L82,open-compass__opencompass/extract_answer_in_bracket,extract content
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/bigcodebench/extractor.py#L106,open-compass__opencompass/has_return_statement,check return
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/chinese_simpleqa.py#L87,open-compass__opencompass/chinese_simpleqa_preprocess,extract question
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/flores.py#L75,open-compass__opencompass/flores_postprocess_chinese,tokenize text
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/humaneval_multi.py#L141,open-compass__opencompass/for_file,parse and evaluate data
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions_registry.py#L175,open-compass__opencompass/conflict_make,establish mutual conflicts
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L1071,open-compass__opencompass/get_instruction_args_keys,retrieve arguments
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L110,open-compass__opencompass/get_instruction_args_keys,unimplemented function
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L1116,open-compass__opencompass/get_instruction_args_keys,retrieve arguments
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L1168,open-compass__opencompass/get_instruction_args_keys,retrieve arguments
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L1200,open-compass__opencompass/get_instruction_args_keys,retrieve arguments
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L1251,open-compass__opencompass/get_instruction_args_keys,retrieve arguments
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L1286,open-compass__opencompass/get_instruction_args_keys,retrieve arguments
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L1310,open-compass__opencompass/get_instruction_args_keys,retrieve arguments
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L1387,open-compass__opencompass/get_instruction_args_keys,retrieve arguments
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L1416,open-compass__opencompass/get_instruction_args_keys,retrieve arguments
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L1448,open-compass__opencompass/get_instruction_args_keys,retrieve arguments
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L1478,open-compass__opencompass/get_instruction_args_keys,retrieve arguments
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L148,open-compass__opencompass/get_instruction_args_keys,retrieve arguments
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L1532,open-compass__opencompass/get_instruction_args_keys,retrieve arguments
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L1563,open-compass__opencompass/get_instruction_args_keys,retrieve arguments
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L221,open-compass__opencompass/get_instruction_args_keys,retrieve arguments
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L271,open-compass__opencompass/get_instruction_args_keys,retrieve arguments
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L316,open-compass__opencompass/get_instruction_args_keys,retrieve arguments
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L353,open-compass__opencompass/get_instruction_args_keys,retrieve arguments
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L400,open-compass__opencompass/get_instruction_args_keys,retrieve arguments
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L450,open-compass__opencompass/get_instruction_args_keys,retrieve arguments
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L518,open-compass__opencompass/get_instruction_args_keys,retrieve arguments
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L568,open-compass__opencompass/get_instruction_args_keys,retrieve arguments
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L625,open-compass__opencompass/get_instruction_args_keys,retrieve arguments
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L683,open-compass__opencompass/get_instruction_args_keys,retrieve arguments
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L749,open-compass__opencompass/get_instruction_args_keys,retrieve arguments
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L820,open-compass__opencompass/get_instruction_args_keys,retrieve arguments
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L882,open-compass__opencompass/get_instruction_args_keys,retrieve arguments
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L909,open-compass__opencompass/get_instruction_args_keys,retrieve arguments
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/IFEval/instructions.py#L978,open-compass__opencompass/get_instruction_args_keys,retrieve arguments
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/korbench/korbench_dataset_config/config_wrapper.py#L35,open-compass__opencompass/print_all_keys,display keys
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/korbench/korbench_utils.py#L130,open-compass__opencompass/print_all_keys,display keys
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/korbench/korbench_utils.py#L188,open-compass__opencompass/read_yaml,load configuration
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/korbench/korbench_utils.py#L197,open-compass__opencompass/write_jsonl_lines,save data
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/korbench/korbench_utils.py#L208,open-compass__opencompass/print_info,display information
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/korbench/korbench_utils.py#L222,open-compass__opencompass/read_json_or_jsonl,load and parse data
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/korbench/korbench_utils.py#L248,open-compass__opencompass/read_json_or_jsonl_with_idx,load and retrieve data
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/korbench/korbench_utils.py#L386,open-compass__opencompass/normalize_string,extract and sort numbers
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/korbench/korbench_utils.py#L457,open-compass__opencompass/method_equal,check answer
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/korbench/korbench_utils.py#L65,open-compass__opencompass/load_split_data,load data files
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/korbench/korbench_utils.py#L77,open-compass__opencompass/process_mixed_data,load and process data
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/char_smi.py#L131,open-compass__opencompass/shape_distance,calculate shape distance
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/char_smi.py#L183,open-compass__opencompass/pronunciation_distance,calculate pronunciation difference
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/char_smi.py#L218,open-compass__opencompass/load_dict,load character frequencies
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/char_smi.py#L394,open-compass__opencompass/pinyin_map,map pinyin
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/function_utils.py#L44,open-compass__opencompass/compute_gleu,calculate gleu score
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/modules/tokenization.py#L129,open-compass__opencompass/convert_tokens_to_ids,map tokens to ids
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/modules/tokenization.py#L132,open-compass__opencompass/convert_ids_to_tokens,map ids to tokens
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/modules/tokenization.py#L46,open-compass__opencompass/printable_text,convert text
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/modules/tokenization.py#L95,open-compass__opencompass/convert_tokens_to_ids,map tokens to ids
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/modules/tokenization.py#L99,open-compass__opencompass/convert_ids_to_tokens,map ids to tokens
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/rc_f1.py#L142,open-compass__opencompass/human_performance,calculate total scores
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/rc_f1.py#L146,open-compass__opencompass/model_performance,calculate performance scores
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/rc_f1.py#L39,open-compass__opencompass/preds_to_dict,create prediction dictionary
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/LCBench.py#L105,open-compass__opencompass/readable,check readability
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/livecodebench/execute_utils.py#L168,open-compass__opencompass/readable,check readability
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/math.py#L184,open-compass__opencompass/math_judement_preprocess,extract answer
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/mbpp.py#L228,open-compass__opencompass/readable,check readability
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/medbench/constructions.py#L100,open-compass__opencompass/to_tsv,convert file format
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/medbench/dataset_loader.py#L278,open-compass__opencompass/generate_second_stage_input,generate second stage input
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/medbench/evaluation.py#L16,open-compass__opencompass/evaluate_single_sample,compare predictions
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/medbench/post_process.py#L46,open-compass__opencompass/try_parse_few_shot_pattern,identify pattern
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/medbench/post_process.py#L82,open-compass__opencompass/extract_answer_in_bracket,extract content
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/musr/tree.py#L630,open-compass__opencompass/murder_mystery_ex,generate logic tree
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/NPHardEval/utils.py#L5,open-compass__opencompass/append_root_tags,add root tags
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/phybench/extended_zss.py#L25,open-compass__opencompass/get_label,retrieve node label
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/phybench/extended_zss.py#L29,open-compass__opencompass/addkid,insert child node
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/phybench/latex_pre_process.py#L28,open-compass__opencompass/remove_non_ascii,remove non-ascii
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/phybench/latex_pre_process.py#L325,open-compass__opencompass/remove_outer_braces,remove outer braces
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/scicode.py#L193,open-compass__opencompass/cmp_tuple_or_list,compare sequences
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/scicode.py#L40,open-compass__opencompass/return_dataset,return dataset
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/scicode.py#L97,open-compass__opencompass/process_hdf5_to_tuple,extract data
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/subjective/alignbench.py#L61,open-compass__opencompass/category2type,map category to type
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/subjective/arena_hard.py#L137,open-compass__opencompass/preety_print_two_ratings,create ratings table
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/subjective/commonbench.py#L45,open-compass__opencompass/commonbench_postprocess,generate capability results
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/subjective/creationbench.py#L293,open-compass__opencompass/prompt_construct_compare,generate comparison prompt
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/subjective/creationbench.py#L302,open-compass__opencompass/prompt_construct_compare_4opt,construct comparison prompt
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/supergpqa/supergpqa_dataset_config/config_wrapper.py#L35,open-compass__opencompass/print_all_keys,display keys
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/supergpqa/supergpqa_utils.py#L130,open-compass__opencompass/print_all_keys,display keys
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/supergpqa/supergpqa_utils.py#L188,open-compass__opencompass/read_yaml,load configuration
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/supergpqa/supergpqa_utils.py#L197,open-compass__opencompass/write_jsonl_lines,save data
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/supergpqa/supergpqa_utils.py#L208,open-compass__opencompass/print_info,display information
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/supergpqa/supergpqa_utils.py#L222,open-compass__opencompass/read_json_or_jsonl,load and parse data
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/supergpqa/supergpqa_utils.py#L248,open-compass__opencompass/read_json_or_jsonl_with_idx,load and retrieve data
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/supergpqa/supergpqa_utils.py#L386,open-compass__opencompass/normalize_string,extract and sort numbers
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/supergpqa/supergpqa_utils.py#L457,open-compass__opencompass/method_equal,check answer
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/supergpqa/supergpqa_utils.py#L65,open-compass__opencompass/load_split_data,load data files
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/supergpqa/supergpqa_utils.py#L77,open-compass__opencompass/process_mixed_data,load and process data
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/teval/evaluators/reason_retrieve_understand_evaluator.py#L14,open-compass__opencompass/input_postprocess,clean and trim text
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/teval/utils/template.py#L5,open-compass__opencompass/format_string,format string
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/models/claude_api/postprocessors.py#L114,open-compass__opencompass/xsum_postprocess,postprocess text
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/models/claude_api/postprocessors.py#L90,open-compass__opencompass/flores_postprocess_chinese,tokenize text
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/models/yayi_api.py#L31,open-compass__opencompass/get_current_time,return time
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/openicl/icl_dataset_reader.py#L158,open-compass__opencompass/generate_output_field_corpus,generate output prompts
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/openicl/icl_dataset_reader.py#L181,open-compass__opencompass/generate_input_output_field_prompt,create prompt
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/openicl/icl_evaluator/icl_base_evaluator.py#L17,open-compass__opencompass/compute_pass_at_k,calculate pass probability
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/openicl/icl_evaluator/icl_korbench_evaluator.py#L11,open-compass__opencompass/read_json_or_jsonl,load and parse data
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/openicl/icl_evaluator/icl_korbench_evaluator.py#L37,open-compass__opencompass/read_json_or_jsonl_with_idx,load and retrieve data
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/summarizers/subjective/arenahard.py#L72,open-compass__opencompass/preety_print_two_ratings,create ratings table
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/summarizers/subjective/arenahard.py#L82,open-compass__opencompass/visualize_bootstrap_scores,create bootstrap score plot
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/summarizers/subjective/compass_arena_bradley_terry.py#L202,open-compass__opencompass/compute_elo,calculate elo ratings
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/summarizers/subjective/compass_arena_bradley_terry.py#L224,open-compass__opencompass/compute_bootstrap_elo,calculate elo ratings
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/utils/dependency.py#L7,open-compass__opencompass/satisfy_requirement,check python requirements
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/utils/dict_postprocessors.py#L4,open-compass__opencompass/base_postprocess,return output
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/utils/fileio.py#L137,open-compass__opencompass/jsonl_writer,write json lines
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/utils/fileio.py#L28,open-compass__opencompass/read_json,read json data
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/utils/fileio.py#L86,open-compass__opencompass/save_json,save json file
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/utils/network.py#L43,open-compass__opencompass/check_network_connectivity,check network connectivity
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/utils/text_postprocessors.py#L169,open-compass__opencompass/first_number_postprocess,extract number
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/utils/text_postprocessors.py#L215,open-compass__opencompass/general_eval_wrapper_postprocess,postprocess text
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/utils/text_postprocessors.py#L61,open-compass__opencompass/think_pred_postprocess,extract text
+api,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/utils/types.py#L9,open-compass__opencompass/get_type_from_cfg,retrieve object type
 api,https://github.com/open-compass/VLMEvalKit/blob/50c954aad1d92dab9bf5d23f62576c994b4a675f/vlmeval/api/gpt.py#L11,open-compass__VLMEvalKit/GPT_context_window,check context window size
 api,https://github.com/open-compass/VLMEvalKit/blob/50c954aad1d92dab9bf5d23f62576c994b4a675f/vlmeval/dataset/creation.py#L301,open-compass__VLMEvalKit/is_criteria_valid,validate criteria
 api,https://github.com/open-compass/VLMEvalKit/blob/50c954aad1d92dab9bf5d23f62576c994b4a675f/vlmeval/dataset/longvideobench.py#L19,open-compass__VLMEvalKit/uniformly_subsample,select items
@@ -4299,7 +4299,7 @@ cli,https://github.com/facebookresearch/DomainBed/blob/b93c22a1cfc3b2428398272c1
 cli,https://github.com/facebookresearch/DomainBed/blob/b93c22a1cfc3b2428398272c1a116c8de1f4139e/domainbed/scripts/train.py#L24,,train model
 cli,https://github.com/Farama-Foundation/Metaworld/blob/cdafedfaaa896472fb7e76e2fe103e120b67a9b6/scripts/env_runtime.py#L105,,benchmark environments
 cli,https://github.com/Farama-Foundation/Metaworld/blob/cdafedfaaa896472fb7e76e2fe103e120b67a9b6/scripts/profile_memory_usage.py#L39,,profile memory
-cli,https://github.com/Giskard-AI/giskard/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/docs/scrapper.py#L74,,crawl broken links
+cli,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/docs/scrapper.py#L74,,crawl broken links
 cli,https://github.com/google-deepmind/meltingpot/blob/f280a35a4ffe5a7613b5c4a062a66fd18c64876c/meltingpot/human_players/play_allelopathic_harvest.py#L77,,run human player
 cli,https://github.com/google-deepmind/meltingpot/blob/f280a35a4ffe5a7613b5c4a062a66fd18c64876c/meltingpot/human_players/play_anything_in_the_matrix.py#L133,,run human player
 cli,https://github.com/google-deepmind/meltingpot/blob/f280a35a4ffe5a7613b5c4a062a66fd18c64876c/meltingpot/human_players/play_boat_race.py#L97,,run boat race
@@ -4429,38 +4429,38 @@ cli,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823
 cli,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/evalscope/utils/utils.py#L328,,parse answer
 cli,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/setup.py#L118,,parse requirements
 cli,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/viz.py#L365,,display evaluation results
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/cli/main.py#L443,,run evaluation
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/agieval/dataset_loader.py#L389,,generate prompts
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/korbench/korbench_dataset_config/config_wrapper.py#L57,,load config
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/korbench/korbench_utils.py#L152,,evaluate responses
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/char_smi.py#L440,,compute character similarity
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/compare_m2_for_evaluation.py#L431,,evaluate error corrections
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/modules/alignment.py#L326,,align sentences
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/modules/merger.py#L260,,merge edit sequences
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/modules/tokenizer.py#L89,,tokenize text
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/parallel_to_m2.py#L207,,annotate sentences
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/medbench/dataset_loader.py#L322,,process dataset
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/musr/tree.py#L520,,build logic tree
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/supergpqa/supergpqa_dataset_config/config_wrapper.py#L57,,load config
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/supergpqa/supergpqa_utils.py#L152,,evaluate responses
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/evaluator/math_evaluator.py#L70,,verify math expressions
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/lagent/actions/ipython_interpreter.py#L308,,execute python code
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/tasks/openicl_attack.py#L197,,run attack
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/tasks/openicl_eval.py#L458,,evaluate model predictions
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/tasks/openicl_infer.py#L156,,run inference
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/tasks/subjective_eval.py#L457,,run subjective evaluation
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/utils/lark.py#L52,,send message
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/run.py#L3,,run evaluation
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/setup.py#L163,,perform package setup
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/tools/case_analyzer.py#L193,,analyze prediction cases
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/tools/collect_code_preds.py#L208,,collect dataset predictions
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/tools/compare_configs.py#L83,,compare folder contents
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/tools/convert_alignmentbench.py#L87,,extract predictions
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/tools/list_configs.py#L36,,list matching configs
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/tools/prediction_merger.py#L115,,merge predictions
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/tools/prompt_viewer.py#L226,,generate prompts
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/tools/update_dataset_suffix.py#L144,,rename python files
-cli,https://github.com/open-compass/OpenCompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/tools/viz_multi_model.py#L49,,visualize model results
+cli,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/cli/main.py#L443,,run evaluation
+cli,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/agieval/dataset_loader.py#L389,,generate prompts
+cli,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/korbench/korbench_dataset_config/config_wrapper.py#L57,,load config
+cli,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/korbench/korbench_utils.py#L152,,evaluate responses
+cli,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/char_smi.py#L440,,compute character similarity
+cli,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/compare_m2_for_evaluation.py#L431,,evaluate error corrections
+cli,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/modules/alignment.py#L326,,align sentences
+cli,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/modules/merger.py#L260,,merge edit sequences
+cli,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/modules/tokenizer.py#L89,,tokenize text
+cli,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/lawbench/utils/parallel_to_m2.py#L207,,annotate sentences
+cli,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/medbench/dataset_loader.py#L322,,process dataset
+cli,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/musr/tree.py#L520,,build logic tree
+cli,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/supergpqa/supergpqa_dataset_config/config_wrapper.py#L57,,load config
+cli,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/datasets/supergpqa/supergpqa_utils.py#L152,,evaluate responses
+cli,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/evaluator/math_evaluator.py#L70,,verify math expressions
+cli,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/lagent/actions/ipython_interpreter.py#L308,,execute python code
+cli,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/tasks/openicl_attack.py#L197,,run attack
+cli,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/tasks/openicl_eval.py#L458,,evaluate model predictions
+cli,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/tasks/openicl_infer.py#L156,,run inference
+cli,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/tasks/subjective_eval.py#L457,,run subjective evaluation
+cli,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/opencompass/utils/lark.py#L52,,send message
+cli,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/run.py#L3,,run evaluation
+cli,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/setup.py#L163,,perform package setup
+cli,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/tools/case_analyzer.py#L193,,analyze prediction cases
+cli,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/tools/collect_code_preds.py#L208,,collect dataset predictions
+cli,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/tools/compare_configs.py#L83,,compare folder contents
+cli,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/tools/convert_alignmentbench.py#L87,,extract predictions
+cli,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/tools/list_configs.py#L36,,list matching configs
+cli,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/tools/prediction_merger.py#L115,,merge predictions
+cli,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/tools/prompt_viewer.py#L226,,generate prompts
+cli,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/tools/update_dataset_suffix.py#L144,,rename python files
+cli,https://github.com/open-compass/opencompass/blob/8379c4bca0e19aab4059a0eb7a739fa58f3b2759/tools/viz_multi_model.py#L49,,visualize model results
 cli,https://github.com/open-compass/VLMEvalKit/blob/50c954aad1d92dab9bf5d23f62576c994b4a675f/run.py#L508,,run model evaluation
 cli,https://github.com/open-compass/VLMEvalKit/blob/50c954aad1d92dab9bf5d23f62576c994b4a675f/scripts/data_browser.py#L171,,visualize dataset
 cli,https://github.com/open-compass/VLMEvalKit/blob/50c954aad1d92dab9bf5d23f62576c994b4a675f/scripts/mmb_eval_gradio.py#L113,,process evaluation
