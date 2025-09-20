@@ -22,7 +22,7 @@ cli,https://github.com/EleutherAI/lm-evaluation-harness/blob/9f152e0b89e777a17a2
 cli,https://github.com/EleutherAI/lm-evaluation-harness/blob/9f152e0b89e777a17a21e9207da2ae4c1ea8beec/lm_eval/tasks/xnli/utils.py#L165,,generate language configs,Adekunle Ajibode,6,12,Yes,Zhimin Zhao,Agreed
 cli,https://github.com/erikbern/ann-benchmarks/blob/36681911472059cd4cb9fcac1686709201a2cbc0/plot.py#L95,,generate performance plot,Adekunle Ajibode,6,12,Yes,Zhimin Zhao,Agreed
 cli,https://github.com/erikbern/ann-benchmarks/blob/36681911472059cd4cb9fcac1686709201a2cbc0/run.py#L5,,run benchmark,Adekunle Ajibode,6,12,"No, the label should be [run program]",Zhimin Zhao,Disagreed
-cli,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/tools/humaneval/fix_v019.py#L31,,apply contract fixes,Adekunle Ajibode,6,12,Yes,Zhimin Zhao,Agreed
+api,https://github.com/truera/trulens/blob/57df4120d19dd1a0b59efc6cccb0de205ac403e0/src/core/trulens/core/session.py#L379,truera__trulens/Basic,deprecated function,Adekunle Ajibode,6,12,Yes,Zhimin Zhao,Agreed
 cli,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/tools/humaneval/init_ground_truth.py#L6,,create groundtruth files,Adekunle Ajibode,6,12,Yes,Zhimin Zhao,Agreed
 cli,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/tools/humaneval/to_original_fmt.py#L205,,generate test code,Adekunle Ajibode,6,12,Yes,Zhimin Zhao,Agreed
 cli,https://github.com/evalplus/evalplus/blob/d362e933265c3e7e3df8101c930a89c3c470cd9f/tools/mbpp/fix_v020.py#L41,,update canonical solutions,Adekunle Ajibode,6,12,Yes,Zhimin Zhao,Agreed
@@ -311,7 +311,7 @@ api,https://github.com/microsoft/promptbench/blob/fcda538bd779ad11612818e0645a38
 api,https://github.com/mir-evaluation/mir_eval/blob/8db0b3812e2032544c1fc00d02d4256cab043f3d/mir_eval/transcription.py#L785,mir-evaluation__mir_eval/evaluate,calculate metrics,Yiping Jia,10,1,Yes,Zhimin Zhao,Agreed
 api,https://github.com/mlcommons/inference/blob/cc7d6d8eabc5cc60f8b2e540f25f1edd2a9f6cd3/graph/R-GAT/dataset.py#L24,mlcommons__inference/get_list,unimplemented function,Yiping Jia,10,1,Yes,Zhimin Zhao,Agreed
 api,https://github.com/mlcommons/inference/blob/cc7d6d8eabc5cc60f8b2e540f25f1edd2a9f6cd3/language/llama2-70b/SUT_API.py#L322,mlcommons__inference/get_qsl,retrieve qsl,Yiping Jia,10,1,Yes,Zhimin Zhao,Agreed
-api,https://github.com/mlcommons/inference/blob/cc7d6d8eabc5cc60f8b2e540f25f1edd2a9f6cd3/language/llama2-70b/SUT.py#L304,mlcommons__inference/get_qsl,retrieve qsl,Yiping Jia,10,1,Yes,Zhimin Zhao,Agreed
+cli,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L735,,duplicate function,Yiping Jia,10,1,Yes,Zhimin Zhao,Agreed
 api,https://github.com/mlcommons/inference/blob/cc7d6d8eabc5cc60f8b2e540f25f1edd2a9f6cd3/main.py#L1,mlcommons__inference/define_env,generate run commands,Yiping Jia,10,1,Yes,Zhimin Zhao,Agreed
 api,https://github.com/mlcommons/inference/blob/cc7d6d8eabc5cc60f8b2e540f25f1edd2a9f6cd3/recommendation/dlrm_v2/pytorch/setup.py#L36,mlcommons__inference/initialize_options,passthrough function,Yiping Jia,10,1,Yes,Zhimin Zhao,Agreed
 api,https://github.com/mlcommons/inference/blob/cc7d6d8eabc5cc60f8b2e540f25f1edd2a9f6cd3/tools/submission/truncate_accuracy_log.py#L87,mlcommons__inference/split_path,normalize and split path,Yiping Jia,10,1,Yes,Zhimin Zhao,Agreed
