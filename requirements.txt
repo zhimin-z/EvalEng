@@ -3,6 +3,7 @@ matplotlib
 nbformat
 pandas
 plotly
+PyGithub
 python-docx
 scikit-learn
 seaborn
