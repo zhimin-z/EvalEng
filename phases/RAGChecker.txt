@@ -1,9 +1,9 @@
-Well-Supported Phases
+High-Coverage Phases
 Step 4 - SCORE RAGChecker excels at output capture and per-unit scoring with its comprehensive metric framework. It provides robust per-unit scoring through claim-level entailment operations, covering overall metrics (precision, recall, F1), retriever metrics (claim recall, context precision), and generator metrics (context utilization, noise sensitivity, hallucination, self-knowledge, faithfulness). The framework includes statistical validation and produces detailed per-unit scores with confidence intervals. The scoring system is production-ready with batch processing capabilities and integrates seamlessly with the analysis phase.
 
 Step 5 - ANALYZE The framework provides strong aggregation and diagnostic capabilities. It computes comprehensive aggregate metrics including means, standard deviations, and confidence intervals across multiple metric categories. The system offers slice analysis capabilities and generates diagnostic insights through its meta-evaluation framework with human-annotated preference datasets. The analysis outputs are well-structured and provide actionable insights for model comparison and selection, with proven correlation to human judgments.
 
-Partially-Supported Phases
+Medium-Coverage Phases
 Step 1 - PLAN RAGChecker provides basic configuration through its CLI and Python API with options for different extractors, checkers, batch sizes, and metric selections. However, the planning phase is limited to RAG-specific evaluation tasks and doesn't offer the comprehensive orchestration capabilities for diverse evaluation domains (ANN, MLPerf, etc.) described in the standard. The configuration is functional but not as extensive as a full evaluation planning framework would require.
 
 Step 2 - PREPARE The framework includes data preparation capabilities through its benchmark dataset processing scripts and supports various input formats. The benchmark covers multiple domains (10 domains with 4k questions) and includes preprocessing for datasets like BioASQ, LoTTE, and NovelQA. However, the preparation phase is specifically tailored for RAG evaluation and lacks the broader data preparation capabilities for other evaluation types like vector indices, MLPerf datasets, or multimodal preprocessing.
@@ -12,5 +12,5 @@ Step 3 - EXECUTE RAGChecker provides solid execution capabilities for RAG evalua
 
 Step 6 - SHIP The framework generates standardized outputs in JSON format and provides CLI and Python API access to results. It includes comprehensive result packages with intermediate results and supports integration with LlamaIndex. However, the shipping capabilities are primarily focused on RAG evaluation outputs and lack the broader artifact management, dashboard generation, and format exports for other evaluation domains.
 
-Minimally-Supported Phases
+Low-Coverage Phases
 Step 7 - GOVERN RAGChecker provides basic reproducibility through its meta-evaluation framework and standardized metrics, but lacks comprehensive governance features. There's minimal support for CI/CD gates, compliance validation, production monitoring, or systematic iteration planning. The framework doesn't include robust regression detection, drift monitoring, or feedback loops that would be expected in a production governance system.

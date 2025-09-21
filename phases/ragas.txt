@@ -1,10 +1,10 @@
-Well-Supported Phases
+High-Coverage Phases
 
 Step 4 - SCORE RAGAS excels at the scoring phase, which is its core strength as an evaluation framework specifically designed for RAG systems. It provides comprehensive metrics for faithfulness, answer relevancy, context precision, context recall, and other RAG-specific evaluations. The framework includes robust implementations of LLM-as-judge evaluators, statistical validation methods, and per-unit scoring capabilities with confidence measures. The scoring functionality is production-ready with proper error handling and supports multiple evaluation backends.
 
 Step 5 - ANALYZE RAGAS provides strong analytical capabilities for aggregating scores, generating diagnostic insights, and comparing model performance. It includes built-in visualization tools, statistical analysis features for computing means, standard deviations, and confidence intervals, and supports slice-wise analysis across different dimensions. The framework can generate comprehensive performance reports and model comparison summaries, making it easy to derive actionable insights from evaluation results.
 
-Partially-Supported Phases
+Medium-Coverage Phases
 
 Step 1 - PLAN RAGAS supports basic evaluation planning through its configuration system and predefined evaluation tasks for RAG systems. However, the planning capabilities are primarily focused on RAG evaluation scenarios and lack the broader orchestration features needed for multi-domain evaluations (MLPerf, ANN, etc.). While it provides clear task definitions and evaluator configurations, it doesn't offer comprehensive environment setup, resource management planning, or cross-domain evaluation orchestration.
 
@@ -12,7 +12,7 @@ Step 3 - EXECUTE The framework provides solid execution capabilities for RAG eva
 
 Step 6 - SHIP RAGAS offers good artifact generation and result packaging for RAG evaluations, including JSON/CSV exports, visualization outputs, and evaluation reports. However, the shipping capabilities are primarily tailored to RAG use cases and don't provide the standardized format exports needed for other evaluation domains (TREC runs, MLPerf submissions, etc.). The framework supports result persistence and basic reporting but lacks comprehensive dashboard generation and multi-format compliance outputs.
 
-Minimally-Supported Phases
+Low-Coverage Phases
 
 Step 2 - PREPARE While RAGAS can work with prepared datasets, it provides minimal support for the comprehensive data preparation workflow. The framework lacks built-in capabilities for dataset preprocessing, index building (FAISS, ColBERT), vector preparation, and cross-domain data validation. Users must handle most data preparation tasks manually before using RAGAS for evaluation.
 

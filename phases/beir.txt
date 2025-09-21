@@ -1,16 +1,16 @@
-Well-Supported Phases
+High-Coverage Phases
 Step 2 - PREPARE BEIR excels at data and index preparation with comprehensive dataset handling capabilities. The framework provides automated download and preprocessing for 17+ benchmark datasets with standardized formats (corpus, queries, qrels). It includes robust data loaders (GenericDataLoader) that handle multiple splits (train/dev/test), validates data integrity with MD5 checksums, and supports various retrieval index types including FAISS, ColBERT, and BM25. The preprocessing pipeline converts data into consistent formats and handles corpus cleaning, making datasets ready for reliable evaluation execution.
 
 Step 3 - EXECUTE The execution phase is comprehensively supported with a robust evaluation loop that handles multiple retrieval architectures (dense, sparse, lexical, reranking). BEIR provides production-ready implementations for various model backends including SentenceBERT, HuggingFace models, vLLM, and API-based services (Cohere). The framework includes proper batching, error handling, timeout management, and supports both exact search and approximate retrieval methods. The execution captures comprehensive metrics including timing data and intermediate results.
 
 Step 4 - SCORE BEIR provides excellent scoring capabilities with comprehensive per-unit evaluation metrics including NDCG@k, MAP@k, Recall@k, Precision@k, and MRR across multiple k values (1,3,5,10,100,1000). The framework includes statistical validation, baseline comparisons, and proper handling of relevance judgments. Results are captured in standardized formats with both aggregate and individual query performance metrics.
 
-Partially-Supported Phases
+Medium-Coverage Phases
 Step 5 - ANALYZE While BEIR provides solid aggregation of metrics and basic analysis capabilities, the diagnostic and visualization features are limited. The framework calculates means, standard deviations, and confidence intervals, and supports some slice analysis across different datasets. However, it lacks advanced diagnostic tools like ROC/PR curves, calibration plots, detailed fairness analysis, or comprehensive performance trade-off visualizations that would be expected in a full analysis phase.
 
 Step 6 - SHIP BEIR supports basic artifact persistence and standardized output formats including JSON results, TREC run files, and evaluation summaries. The framework provides utility functions for saving results and runfiles, and supports some reproducibility through configuration tracking. However, it lacks comprehensive reporting dashboards, automated compliance validation, and advanced artifact management features that would constitute full shipping capabilities.
 
-Minimally-Supported Phases
+Low-Coverage Phases
 Step 1 - PLAN BEIR provides minimal planning and orchestration capabilities. While it supports configuration of different models, datasets, and evaluation metrics, it lacks comprehensive workflow orchestration, automated task definition, systematic evaluation mode selection, and integrated environment configuration. Users must manually plan and configure most aspects of their evaluation pipeline.
 
 Step 7 - GOVERN The governance phase receives minimal support with basic reproducibility features through dataset versioning and some configuration tracking. However, BEIR lacks comprehensive CI/CD integration, automated compliance validation, systematic drift detection, production monitoring capabilities, and formal iteration planning tools that would be expected in a full governance framework.

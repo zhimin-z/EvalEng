@@ -1,16 +1,16 @@
-Well-Supported Phases
+High-Coverage Phases
 Step 4 - SCORE: Output Capture and Per-Unit Scoring ARES excels at this phase with comprehensive scoring capabilities for RAG systems across three key dimensions: context relevance, answer faithfulness, and answer relevance. The framework provides both LLM-judge scoring and trained classifier approaches with statistical validation through Prediction-Powered Inference (PPI). It supports multiple model backends (OpenAI, TogetherAI, vLLM for local execution) and generates per-unit scores with confidence intervals, ground truth comparisons, and accuracy metrics. The scoring system is production-ready with robust error handling and flexible configuration options.
 
 Step 5 - ANALYZE: Aggregate, Slice, and Diagnose The framework provides strong aggregation capabilities with confidence intervals and statistical summaries. The PPI component offers sophisticated analysis comparing model predictions to ground truth, outputting comprehensive metrics including accuracy scores, confidence intervals, and performance comparisons. ARES supports ranking capabilities for model comparison across different RAG configurations and provides detailed diagnostic information about classifier performance and evaluation reliability.
 
-Partially-Supported Phases
+Medium-Coverage Phases
 Step 1 - PLAN: Orchestrate, Scope, and Configure ARES provides basic configuration support through Python dictionary-based configurations for different evaluation modes (UES/IDP, PPI, synthetic generation, classifier training). However, it is limited to RAG-specific evaluation tasks and lacks comprehensive orchestration for diverse evaluation scenarios. The framework supports multiple model backends but requires manual configuration without automated planning capabilities or comprehensive task definition workflows.
 
 Step 2 - PREPARE: Data and Index Preparation with Validation The framework includes synthetic query generation capabilities from documents and provides dataset downloading utilities for KILT datasets and example files. It supports basic data preprocessing for training classifiers and includes validation datasets. However, preparation capabilities are limited to specific data formats (primarily TSV files) and lack comprehensive validation workflows for data quality assurance or extensive preprocessing pipelines.
 
 Step 3 - EXECUTE: Main Evaluation Loop with Robust Control ARES implements evaluation execution for RAG systems with multiple scoring approaches and supports both API-based and local model execution through vLLM integration. The execution includes basic retry mechanisms and model switching capabilities. However, it lacks advanced reliability measures such as comprehensive circuit breakers, sophisticated timeout handling, or extensive instrumentation and monitoring capabilities found in production-grade evaluation harnesses.
 
-Minimally-Supported Phases
+Low-Coverage Phases
 Step 6 - SHIP: Logging, Artifacts, and Outputs The framework provides only basic result outputs as Python dictionaries and checkpoint saving for trained classifiers. It lacks comprehensive artifact management, standardized export formats, or sophisticated reporting capabilities. There are no built-in dashboard generation features, limited result packaging options, and minimal support for creating submission-ready evaluation bundles or interactive visualizations.
 
 Step 7 - GOVERN: Reliability, Compliance, and Iteration ARES shows minimal support for governance capabilities with no apparent CI/CD integration, automated gates, or compliance validation features. The framework lacks comprehensive versioning systems, production monitoring capabilities, or drift detection mechanisms. While basic reproducibility is possible through configuration management, there are no systematic approaches to ensuring evaluation reliability or supporting continuous improvement workflows in production environments.

@@ -1,16 +1,16 @@
-Well-Supported Phases
+High-Coverage Phases
 Step 3 - EXECUTE Inspect AI excels at the execution phase with robust infrastructure for running evaluations. The framework provides comprehensive model integration across multiple providers (OpenAI, Anthropic, Google, HuggingFace, vLLM), sophisticated agent frameworks (ReAct agents, custom agents, agent bridges), sandboxed execution environments with Docker support, and built-in error handling with retries and timeouts. The execution loop supports single and multi-turn interactions, tool usage, and captures detailed traces and metrics.
 
 Step 4 - SCORE The scoring capabilities are well-developed with a comprehensive scorer framework supporting multiple evaluation types including exact match, model-graded evaluation, custom scorers, and statistical validation. Inspect provides built-in scorers for common tasks and allows for sophisticated evaluation methods including LLM-as-judge approaches. The framework captures per-sample scores and supports confidence intervals and statistical analysis.
 
 Step 6 - SHIP Inspect has strong artifact management and output capabilities. It provides comprehensive logging systems, multiple output formats (JSON, CSV, HTML reports), detailed evaluation logs with traces, caching mechanisms for reproducibility, and a sophisticated log viewer for analyzing results. The framework maintains evaluation state and supports resuming interrupted evaluations.
 
-Partially-Supported Phases
+Medium-Coverage Phases
 Step 1 - PLAN Inspect provides good configuration capabilities through task definitions, solver configurations, and evaluation parameters. However, the planning phase lacks comprehensive orchestration tools for complex multi-step evaluation workflows. While you can configure models, datasets, and scorers, there's limited support for automated evaluation planning and scope definition across different domains.
 
 Step 2 - PREPARE The framework has solid dataset handling capabilities with support for various formats and preprocessing options. It includes dataset loading utilities and validation features. However, specialized preparation for retrieval systems (RAG indexing, vector databases) and domain-specific preprocessing (like MLPerf preparation) appears limited and would require custom implementation.
 
 Step 5 - ANALYZE Inspect provides basic aggregation and analysis capabilities through its scoring system and log viewer. It supports slice-wise analysis and generates statistical summaries. However, advanced diagnostic capabilities like ROC curves, calibration plots, and sophisticated performance analysis tools are not comprehensively built-in and would require additional tooling.
 
-Minimally-Supported Phases
+Low-Coverage Phases
 Step 7 - GOVERN While Inspect has some features that support governance (reproducibility through logging, approval modes for tool usage), it lacks comprehensive CI/CD integration, automated compliance validation, production monitoring capabilities, and systematic drift detection. The governance features are more focused on individual evaluation runs rather than enterprise-scale evaluation governance.

@@ -1,4 +1,4 @@
-Well-Supported Phases
+High-Coverage Phases
 Step 3 - EXECUTE
 DeepEval provides a robust, production-ready main evaluation loop. The framework supports both end-to-end and component-level evaluation, with seamless integration into CI/CD workflows (e.g., GitHub Actions). There is strong support for running tests against LLM apps with real datasets, using batching, automated retries, error handling, and configurable resource management. The documentation includes detailed examples for running evals in production and for different LLM application types (RAG, summarization, etc.). Instrumentation and logging features are well-documented, as are hooks for tracing and log replay.
 
@@ -11,13 +11,13 @@ Dataset loading and management are well-supported, with APIs for pulling dataset
 Step 6 - SHIP
 DeepEval includes built-in support for artifact and result persistence. The documentation shows how to export results in standardized formats, persist logs and traces, and generate submission-ready result bundles. Integration with CI/CD and external dashboards (Confident AI) is well documented. There is guidance for artifact caching and reproducibility.
 
-Partially-Supported Phases
+Medium-Coverage Phases
 Step 1 - PLAN
 While there is some guidance on evaluation objectives, test selection, and environment setup, most planning activities (business requirements, domain scoping, evaluator selection, etc.) rely on manual specification or external tools. The documentation helps users define tasks and select metrics, but comprehensive orchestration, multi-backend configuration, and automated environment setup are only partially addressed.
 
 Step 5 - ANALYZE
 Basic aggregation and slice-wise reporting are available via Confident AI dashboards, and some metrics (means, percentiles, baseline comparisons) are reported. However, advanced analysis features—such as detailed fairness slicing, diagnostic plots, and complex statistical summaries—are more limited or require external tools. Performance-vs-accuracy tradeoffs, ROC/PR curves, and deep diagnostic visualizations are not fully automated in DeepEval.
 
-Minimally-Supported Phases
+Low-Coverage Phases
 Step 7 - GOVERN
 Governance, compliance, and continuous iteration are minimally supported. While CI/CD integration allows for basic regression and pass/fail gating, features like compliance validation, reproducibility documentation, iteration planning, and production drift monitoring are not natively implemented. Users must rely on external process controls, manual documentation, or third-party tools for advanced governance and monitoring.

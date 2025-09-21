@@ -1,16 +1,16 @@
-Well-Supported Phases
+High-Coverage Phases
 Step 4 - SCORE VBench excels at output capture and per-unit scoring with comprehensive evaluation metrics across 16+ dimensions (VBench 1.0) and 18 dimensions (VBench 2.0). The framework provides robust per-unit scoring for video generation quality including subject consistency, background consistency, temporal flickering, motion smoothness, aesthetic quality, imaging quality, and semantic understanding. It includes statistical validation, baseline comparisons, and confidence intervals. The scoring system is production-ready with multiple evaluation backends and standardized output formats.
 
 Step 5 - ANALYZE The framework provides excellent aggregation and analysis capabilities with comprehensive leaderboards, radar charts, and slice-wise performance breakdowns. VBench offers sophisticated ranking systems, model comparisons across quality scores and semantic scores, and detailed diagnostic visualizations. The analysis phase seamlessly integrates normalized scoring, weighted averages, and comparative analysis across open-source and closed-source models with clear statistical summaries.
 
 Step 6 - SHIP VBench has strong artifact management and output generation with standardized result packages, interactive leaderboards on HuggingFace, comprehensive datasets on Google Drive, and multiple export formats (JSON, visualization charts). The framework supports evaluation submission bundles, reproducible artifacts, and integration with external platforms for result sharing and consumption.
 
-Partially-Supported Phases
+Medium-Coverage Phases
 Step 2 - PREPARE The framework provides basic data preparation capabilities with support for custom video evaluation and standard prompt suites. VBench includes preprocessing for video inputs and validation of naming conventions, but lacks comprehensive index building for retrieval systems, automated dataset preprocessing pipelines, and advanced data validation beyond basic format checks. Manual intervention is required for proper video organization and prompt alignment.
 
 Step 3 - EXECUTE VBench offers solid execution capabilities with multi-GPU support, custom video evaluation modes, and robust video processing pipelines. However, the execution phase is specifically designed for video generation evaluation and lacks broader applicability to other domains like RAG, ANN, or MLPerf. The framework provides basic retry mechanisms and error handling but lacks advanced features like circuit breakers, comprehensive resource management, or sophisticated batching strategies.
 
 Step 7 - GOVERN The framework includes basic compliance features through standardized evaluation protocols, reproducibility support via seed management, and integration with CI/CD through leaderboard submissions. However, VBench lacks comprehensive governance features like automated compliance validation, advanced drift detection, production monitoring capabilities, and sophisticated iteration planning beyond basic model comparison.
 
-Minimally-Supported Phases
+Low-Coverage Phases
 Step 1 - PLAN VBench provides minimal planning capabilities with predefined evaluation dimensions and standard prompt suites, but lacks flexible configuration management, multi-domain support beyond video generation, and comprehensive task definition capabilities. Users must work within the fixed evaluation framework without extensive customization options for different evaluation objectives or domains.

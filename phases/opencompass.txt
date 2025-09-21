@@ -1,4 +1,4 @@
-Well-Supported Phases
+High-Coverage Phases
 Step 1 - PLAN OpenCompass provides comprehensive planning capabilities through its modular configuration system. The platform supports extensive model and dataset configurations (20+ HuggingFace and API models, 70+ datasets with 400,000+ questions), multiple evaluation paradigms (zero-shot, few-shot, chain-of-thought), and flexible backend selection (HuggingFace, vLLM, LMDeploy, OpenAI APIs). The config file system allows complete specification of evaluation scope, methods, and parameters, with CLI and Python script interfaces for different complexity levels.
 
 Step 3 - EXECUTE The execution phase is exceptionally well-supported with robust distributed evaluation capabilities, efficient task division across multiple GPUs, support for various inference backends with acceleration, comprehensive model support (open-source and API models), and reliable execution with proper error handling. The platform handles single/multi-turn conversations, batching, streaming, and provides one-line command execution for complex evaluations.
@@ -7,10 +7,10 @@ Step 4 - SCORE OpenCompass excels in scoring with support for multiple evaluator
 
 Step 5 - ANALYZE The analysis capabilities are well-developed with comprehensive result aggregation, slice-wise analysis across different dimensions, statistical summaries with confidence intervals, model ranking and comparison features, and specialized analysis tools for domains like CHARM benchmark. The platform generates diagnostic plots, performance comparisons, and supports detailed breakdowns by various metadata dimensions.
 
-Partially-Supported Phases
+Medium-Coverage Phases
 Step 2 - PREPARE While OpenCompass supports multiple data preparation methods (offline preparation, automatic download, ModelScope integration), the documentation shows limited evidence of comprehensive preprocessing pipelines, validation mechanisms, or specialized preparation for complex evaluation scenarios like RAG/ANN. The platform handles basic dataset loading and some preprocessing, but lacks the depth of preparation features described in the workflow specification.
 
 Step 6 - SHIP The platform provides good experiment management with config file recording, result persistence, and reporting mechanisms. However, the shipping capabilities appear more focused on research workflows rather than production deployment, with limited evidence of standardized format exports, regulatory compliance features, or comprehensive artifact packaging for external consumption.
 
-Minimally-Supported Phases
+Low-Coverage Phases
 Step 7 - GOVERN While OpenCompass supports reproducibility through configuration management and has some CI/CD integration capabilities, the governance features appear limited. There's minimal evidence of comprehensive compliance validation, production monitoring capabilities, drift detection, or systematic iteration planning beyond basic result comparison and leaderboard functionality.

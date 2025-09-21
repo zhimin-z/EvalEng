@@ -1,11 +1,11 @@
-Well-Supported Phases
+High-Coverage Phases
 Step 3 - EXECUTE
 AlpacaEval provides production-ready execution capabilities with comprehensive model backend integration (OpenAI, Anthropic, HuggingFace, local models), robust error handling with retry mechanisms and circuit breakers, built-in caching for reproducibility, and extensive logging of inputs, outputs, timing metrics, and traces. The system handles batching, concurrent execution with rate limiting, and provides deterministic seed-based randomization. However, support is limited to LLM instruction-following tasks rather than broader evaluation domains.
 
 Step 4 - SCORE
 The harness excels at converting raw outputs into quantified metrics with comprehensive output persistence, multiple automatic evaluator configurations with different prompting strategies, statistical validation including confidence intervals and standard errors, flexible preference-to-metric conversion functions, and quality controls with schema validation. The scoring system is well-integrated with the execution phase and provides reliable per-unit assessments, though it focuses primarily on win-rate and preference metrics rather than specialized domain metrics.
 
-Partially-Supported Phases
+Medium-Coverage Phases
 Step 1 - PLAN
 AlpacaEval offers extensive configuration capabilities through YAML files for evaluators, models, and annotators, with support for multiple evaluator options and flexible model integration across various backends. However, it lacks a unified planning interface that guides users through scope definition, is primarily focused on instruction-following evaluation rather than broader domains (RAG, ANN, MLPerf), and requires manual understanding of multiple configuration files without guided workflow assistance.
 
@@ -15,7 +15,7 @@ The system provides basic aggregation with win rate calculations, standard error
 Step 6 - SHIP
 AlpacaEval supports artifact persistence with saved annotations, leaderboards, and model outputs in standardized JSON/CSV formats, plus a caching system that enables reproducibility and partial re-runs. The system lacks domain-specific export formats (TREC runs, COMET JSON), interactive dashboard generation, and compliance reporting capabilities for regulatory requirements and submission bundles.
 
-Minimally-Supported Phases
+Low-Coverage Phases
 Step 2 - PREPARE
 While AlpacaEval can load basic JSON/CSV datasets and provides a predefined AlpacaEval dataset, it lacks comprehensive data preparation capabilities including modality-specific preprocessing, retrieval/RAG preparation (corpus cleaning, encoding, index building), vector/ANN support (HDF5 handling, normalization), and validation frameworks for data integrity checks and deterministic splitting.
 

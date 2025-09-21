@@ -1,16 +1,16 @@
-Well-Supported Phases
+High-Coverage Phases
 Step 3 - EXECUTE EvalPlus provides comprehensive execution capabilities with multiple LLM backends (HuggingFace transformers, vLLM, OpenAI, Anthropic, Google Gemini, Amazon Bedrock, Ollama), robust error handling through Docker containerization for safe code execution, and production-ready implementation with configurable parameters. The framework seamlessly handles inference loops with batching options and provides extensive backend flexibility for different deployment scenarios.
 
 Step 4 - SCORE The scoring phase is exceptionally well-implemented with rigorous test suites (HumanEval+ with 80x more tests, MBPP+ with 35x more tests than originals), comprehensive per-unit scoring including correctness evaluation, performance metrics through EvalPerf for code efficiency, and statistical validation. The framework generates detailed evaluation results in standardized formats (JSON/JSONL) with comprehensive test coverage.
 
 Step 6 - SHIP EvalPlus excels at packaging and delivering evaluation results with standardized output formats (JSON/JSONL), comprehensive result packages stored in organized directory structures, Docker images for reproducibility, PyPI package distribution, and integration with evaluation leaderboards. The framework provides complete artifact persistence and makes results easily consumable by the research community.
 
-Partially-Supported Phases
+Medium-Coverage Phases
 Step 1 - PLAN While EvalPlus supports planning for code generation evaluation with configurable datasets (HumanEval, MBPP, EvalPerf), multiple backend options, and flexible model selection, it's specifically focused on code generation tasks rather than providing a general evaluation orchestration framework. The configuration is primarily command-line driven rather than comprehensive config file management, and the scope is limited to LLM code generation evaluation.
 
 Step 5 - ANALYZE The framework provides basic aggregated metrics and performance analysis through its leaderboard and evaluation results, but lacks comprehensive slice-wise analysis capabilities, advanced diagnostic tools like ROC curves or calibration plots, and sophisticated statistical analysis features. The analysis is primarily focused on pass@k metrics rather than broader evaluation analytics.
 
 Step 7 - GOVERN EvalPlus provides some governance features through Docker containerization for reproducibility, version control of datasets and evaluation scripts, and integration with CI/CD workflows via command-line tools. However, it lacks comprehensive compliance validation frameworks, automated drift detection, and advanced production monitoring capabilities beyond basic evaluation execution.
 
-Minimally-Supported Phases
+Low-Coverage Phases
 Step 2 - PREPARE While EvalPlus includes pre-built datasets (HumanEval+, MBPP+, EvalPerf), the data preparation phase is largely handled internally with minimal user configurability. The framework doesn't provide comprehensive data preprocessing pipelines, index building capabilities for retrieval tasks, or extensive dataset validation tools beyond the pre-curated benchmarks. Users cannot easily prepare custom datasets or perform complex data transformations within the framework.

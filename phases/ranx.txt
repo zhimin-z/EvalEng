@@ -1,16 +1,16 @@
-Well-Supported Phases
+High-Coverage Phases
 Step 4 - SCORE The ranx library excels in the scoring phase with a comprehensive suite of ranking evaluation metrics including NDCG, MAP, MRR, Precision, Recall, F1, RBP, DCG, and many others. All metrics have been validated against TREC Eval for correctness. The library provides robust per-unit scoring with statistical validation through confidence intervals and significance tests. It offers seamless integration with standard IR formats and has production-ready implementations optimized with Numba for performance.
 
 Step 5 - ANALYZE The analysis phase is very well supported with sophisticated comparison capabilities including statistical significance testing (Paired Student's t-Test, Fisher's Randomization Test, Tukey's HSD Test). The library generates comprehensive comparison reports with statistical indicators, supports baseline comparisons, and provides model ranking functionality. It includes visualization capabilities and can export results in multiple formats including LaTeX tables for scientific publications.
 
-Partially-Supported Phases
+Medium-Coverage Phases
 Step 2 - PREPARE The preparation phase has good support for specific IR use cases. The library can load qrels from ir-datasets and runs from ranxhub, providing easy access to standard evaluation datasets. It includes normalization strategies (Min-Max, ZMUV, Rank, Borda, etc.) and data validation. However, it's limited to ranking/retrieval scenarios and doesn't support the broader data preparation needs mentioned in the workflow (multimodal preprocessing, vector databases, MLPerf datasets, etc.).
 
 Step 3 - EXECUTE Basic execution capabilities are present through the evaluate() function which can compute metrics for single or multiple runs. The library handles the core evaluation loop for ranking tasks efficiently. However, it lacks the comprehensive execution management features like retry logic, circuit breakers, resource management, and support for diverse task types beyond ranking evaluation.
 
 Step 6 - SHIP The library provides good output capabilities with support for multiple export formats, integration with ranxhub for sharing results, and the ability to generate publication-ready reports and LaTeX tables. However, it lacks comprehensive artifact management, caching systems, and the full range of standardized output formats mentioned in the workflow.
 
-Minimally-Supported Phases
+Low-Coverage Phases
 Step 1 - PLAN The planning phase receives minimal support. While users can configure which metrics to compute and specify evaluation parameters, there's no comprehensive planning framework for orchestrating complex evaluations, defining task hierarchies, or managing multi-domain evaluation scenarios. Configuration is limited to basic metric selection rather than full evaluation workflow planning.
 
 Step 7 - GOVERN Governance features are minimal. While the library supports reproducible evaluation through consistent metric implementations and can be integrated into CI/CD pipelines, it lacks built-in compliance validation, automated regression detection, drift monitoring, and comprehensive reproducibility documentation features. There's no native support for governance workflows or compliance reporting.

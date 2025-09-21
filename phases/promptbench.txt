@@ -1,16 +1,16 @@
-Well-Supported Phases
+High-Coverage Phases
 Step 3 - EXECUTE PromptBench provides robust execution capabilities with comprehensive model support (20+ language models including GPT-4, Llama2, Vicuna, T5, and multi-modal models like GPT-4V, LLaVA, BLIP2), extensive dataset coverage (13+ language datasets like GLUE, MMLU, Math, GSM8K plus 7+ multi-modal datasets), and multiple evaluation modes including standard inference, adversarial attacks, and dynamic evaluation. The library handles both single and multi-turn conversations with proper error handling and retry mechanisms.
 
 Step 4 - SCORE The library excels at scoring with well-implemented metrics including the Performance Drop Rate (PDR) for adversarial evaluation, standard accuracy metrics for classification tasks, and specialized metrics for different domains (BLEU for translation, exact match for QA). It provides comprehensive per-unit scoring with statistical validation including confidence intervals and significance testing capabilities.
 
 Step 6 - SHIP PromptBench offers strong artifact management with comprehensive logging of evaluation results, standardized output formats (JSON, visualization plots), integrated benchmark website for result sharing, and good reproducibility features through configuration management and result caching.
 
-Partially-Supported Phases
+Medium-Coverage Phases
 Step 1 - PLAN The library provides basic configuration management through Python APIs and supports multiple evaluation modes (standard, adversarial, dynamic), but lacks comprehensive workflow orchestration tools. Users can define evaluation tasks and select models/datasets, but there's limited support for complex multi-phase evaluation planning or automated configuration generation.
 
 Step 2 - PREPARE PromptBench handles dataset loading and basic preprocessing for supported datasets, and includes some data validation features. However, it has limited support for custom dataset preparation, minimal index building capabilities beyond basic dataset loading, and lacks comprehensive data quality validation pipelines.
 
 Step 5 - ANALYZE The library provides aggregated metrics and basic statistical analysis with some visualization capabilities (attention visualization, performance plots). However, it offers limited slice analysis capabilities, minimal diagnostic tools beyond basic metrics, and lacks comprehensive model comparison frameworks.
 
-Minimally-Supported Phases
+Low-Coverage Phases
 Step 7 - GOVERN PromptBench has basic reproducibility features through configuration management and provides some compliance reporting through benchmark results. However, it lacks CI/CD integration capabilities, has no automated quality gates or monitoring systems, minimal production deployment support, and limited regulatory compliance features. The governance capabilities are primarily research-focused rather than production-ready.

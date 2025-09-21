@@ -1,16 +1,16 @@
-Well-Supported Phases
+High-Coverage Phases
 Step 3 - EXECUTE HELM provides comprehensive execution capabilities with robust infrastructure for running evaluations across diverse models and providers. The framework supports multiple model backends (OpenAI, Anthropic, Google, Hugging Face, etc.) through a unified interface, handles batching and streaming, includes retry mechanisms and error handling, and provides extensive instrumentation for capturing timing metrics, traces, and intermediate results. The execution engine is production-ready with proper resource management and checkpointing.
 
 Step 4 - SCORE HELM excels at scoring with a rich ecosystem of metrics covering accuracy, efficiency, bias, toxicity, and domain-specific evaluations. The framework captures raw outputs, applies multiple evaluation metrics, handles statistical validation, and provides per-unit scoring with confidence intervals. The scoring system is comprehensive and handles various evaluation modalities from text to vision-language tasks.
 
 Step 6 - SHIP HELM provides excellent output and artifact management through its web UI, standardized result formats, and comprehensive reporting capabilities. Results are packaged in JSON/CSV formats, the web leaderboard enables easy comparison across models and benchmarks, and the framework generates interactive dashboards and detailed reports. The shipping phase includes proper artifact persistence and caching for reproducibility.
 
-Partially-Supported Phases
+Medium-Coverage Phases
 Step 1 - PLAN HELM supports evaluation planning through its run configuration system and benchmark definitions, but this is more structured around predefined scenarios rather than flexible orchestration. The framework provides run entries that specify model-benchmark combinations and supports custom configurations, but lacks comprehensive workflow orchestration tools for complex evaluation planning. Users can define evaluation scopes through the run system, but advanced planning features like automated task decomposition are limited.
 
 Step 2 - PREPARE HELM handles dataset preparation for its built-in benchmarks and scenarios effectively, with standardized dataset formats and preprocessing pipelines. However, preparation support is primarily focused on the curated benchmarks within the HELM ecosystem. While the framework handles data loading and validation for included datasets, custom dataset preparation and index building for retrieval systems would require additional manual work outside the core framework.
 
 Step 5 - ANALYZE HELM provides solid analysis capabilities through its summarization tools and web interface, including aggregate metrics, statistical summaries, and model comparisons via leaderboards. However, advanced diagnostic analysis like slice-wise breakdowns, detailed performance profiling, and sophisticated statistical analysis are more limited. The analysis is strong for standard evaluation metrics but may require additional tooling for deep diagnostic insights.
 
-Minimally-Supported Phases
+Low-Coverage Phases
 Step 7 - GOVERN HELM has basic governance features through its reproducibility mechanisms (configuration tracking, standardized formats) and CI/CD integration capabilities, but lacks comprehensive governance frameworks. While the system supports reproducible evaluations and compliance reporting through standardized outputs, advanced governance features like automated quality gates, drift detection, and production monitoring are not core components of the framework. Compliance validation and iteration planning would require significant additional implementation.

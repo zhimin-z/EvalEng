@@ -1,16 +1,16 @@
-Well-Supported Phases
+High-Coverage Phases
 Step 3 - EXECUTE Lighteval excels in the execution phase with robust support for multiple backends (transformers, TGI, vLLM, nanotron, OpenAI API, Inference Endpoints). The framework provides production-ready inference loops with proper instrumentation, supports both single and distributed evaluation settings, and offers flexible deployment options. The multiple entry points (lighteval accelerate, lighteval vllm, lighteval endpoint) demonstrate comprehensive execution capabilities across different infrastructure requirements.
 
 Step 4 - SCORE The scoring phase is well-supported with an extensive library of pre-built metrics and tasks. Lighteval provides detailed sample-by-sample results capture, supports multiple evaluation domains, and offers both built-in and custom metric implementations. The framework properly persists raw outputs and provides standardized scoring mechanisms across different task types.
 
 Step 6 - SHIP Lighteval provides excellent artifact management and output capabilities. Results can be seamlessly stored on Hugging Face Hub, S3, or locally. The framework generates standardized outputs and supports comprehensive result packaging. The Python API enables easy integration into existing workflows, and the storage flexibility makes it suitable for various deployment scenarios.
 
-Partially-Supported Phases
+Medium-Coverage Phases
 Step 1 - PLAN While lighteval supports configuration through command-line parameters and backend selection, the planning phase lacks comprehensive orchestration tools. The framework allows task and metric selection but doesn't provide complete evaluation workflow planning capabilities. Configuration is more task-focused rather than providing holistic evaluation planning with business requirements mapping.
 
 Step 2 - PREPARE The preparation phase has basic support through the existing task and dataset infrastructure, but lacks comprehensive data validation and preprocessing capabilities. While it can handle various model backends and has built-in tasks, it doesn't provide robust dataset preparation pipelines, index building for retrieval scenarios, or extensive data validation mechanisms.
 
 Step 5 - ANALYZE Lighteval provides basic aggregation and results analysis through its sample-by-sample output capabilities, but lacks comprehensive analytical tools. While detailed results are captured, the framework doesn't include built-in statistical analysis, advanced slicing capabilities, diagnostic plotting, or comprehensive model comparison features beyond basic metric computation.
 
-Minimally-Supported Phases
+Low-Coverage Phases
 Step 7 - GOVERN The governance phase is minimally supported. While lighteval provides reproducibility through its configuration system and has CI/CD integration capabilities, it lacks comprehensive compliance validation, automated gate mechanisms, drift detection, or systematic iteration planning features. The framework focuses more on evaluation execution rather than governance and compliance management.

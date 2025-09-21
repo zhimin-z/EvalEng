@@ -1,11 +1,11 @@
-Well-Supported Phases
+High-Coverage Phases
 Step 3 - EXECUTE
 Based on the available documentation and code, DomainBed is primarily designed as a benchmark for domain generalization, with a strong focus on executing experiments involving various algorithms and datasets. The core harness robustly runs training and evaluation loops, supports batching, and can handle multiple algorithms and environments. The codebase supports logging, output capture, and some error handling, making this phase well-integrated and production-ready for its intended use cases.
 
 Step 4 - SCORE
 DomainBed includes mechanisms to score model predictions using standard metrics (such as accuracy) across domains and environments. The scoring is automatic, tightly coupled to the evaluation loop, and produces per-environment metrics suitable for benchmarking. This phase is well-documented and directly supported by the framework.
 
-Partially-Supported Phases
+Medium-Coverage Phases
 Step 1 - PLAN
 DomainBed provides configuration files and some flexibility in specifying algorithms, datasets, and evaluation settings. However, the planning phase is limited by the scope of supported domains and lacks advanced orchestration features (e.g., complex task definitions or multi-phase configurations). Some manual configuration is required, and integration with broader business or compliance objectives is limited.
 
@@ -15,7 +15,7 @@ Data preparation is handled for the included datasets, with code for downloading
 Step 5 - ANALYZE
 DomainBed outputs aggregate metrics and supports some slicing by environment/domain. However, diagnostic tools (e.g., confusion matrices, ROC curves) and advanced analysis (statistical significance, calibration) are not comprehensively integrated. Users may need to perform in-depth analyses manually.
 
-Minimally-Supported Phases
+Low-Coverage Phases
 Step 6 - SHIP
 While DomainBed saves basic experiment outputs and logs metrics to files, it does not offer comprehensive artifact packaging, standardized exports beyond CSV/logs, or dashboard/report generation. Caching, replay, and submission-ready bundles are minimally addressed.
 
