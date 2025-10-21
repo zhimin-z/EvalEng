@@ -1,0 +1,156 @@
+{"component":"evaluation_mode","harness":"AutoRAG","category":["Static Analysis","Dynamic Execution"]}
+{"component":"evaluation_mode","harness":"inference","category":["Static Analysis","Dynamic Execution"]}
+{"component":"evaluation_mode","harness":"mir_eval","category":["Static Analysis"]}
+{"component":"evaluation_mode","harness":"Quantus","category":["Static Analysis"]}
+{"component":"evaluation_mode","harness":"deepeval","category":["Static Analysis"]}
+{"component":"evaluation_mode","harness":"alpaca_eval","category":["Static Analysis"]}
+{"component":"evaluation_mode","harness":"inspect_ai","category":["Static Analysis","Dynamic Execution"]}
+{"component":"evaluation_mode","harness":"lighteval","category":["Static Analysis"]}
+{"component":"evaluation_mode","harness":"RLBench","category":["Interactive Simulation"]}
+{"component":"evaluation_mode","harness":"ranx","category":["Static Analysis"]}
+{"component":"evaluation_mode","harness":"DomainBed","category":["Static Analysis"]}
+{"component":"evaluation_mode","harness":"ragas","category":["Static Analysis"]}
+{"component":"evaluation_mode","harness":"model-analysis","category":["Static Analysis"]}
+{"component":"evaluation_mode","harness":"lm-evaluation-harness","category":["Static Analysis"]}
+{"component":"evaluation_mode","harness":"ollama-grid-search","category":["Static Analysis"]}
+{"component":"evaluation_mode","harness":"Metaworld","category":["Interactive Simulation"]}
+{"component":"evaluation_mode","harness":"speech-to-text-benchmark","category":["Static Analysis"]}
+{"component":"evaluation_mode","harness":"EvalAI","category":["Custom"]}
+{"component":"evaluation_mode","harness":"RAGChecker","category":["Static Analysis"]}
+{"component":"evaluation_mode","harness":"overcooked_ai","category":["Interactive Simulation"]}
+{"component":"evaluation_mode","harness":"CipherChat","category":["Static Analysis"]}
+{"component":"evaluation_mode","harness":"llmperf","category":["Static Analysis"]}
+{"component":"evaluation_mode","harness":"opencompass","category":["Static Analysis","Dynamic Execution"]}
+{"component":"evaluation_mode","harness":"human-eval","category":["Dynamic Execution"]}
+{"component":"evaluation_mode","harness":"pykeen","category":["Static Analysis"]}
+{"component":"evaluation_mode","harness":"jiwer","category":["Static Analysis"]}
+{"component":"evaluation_mode","harness":"VLMEvalKit","category":["Static Analysis","Dynamic Execution"]}
+{"component":"evaluation_mode","harness":"prometheus-eval","category":["Static Analysis","Dynamic Execution"]}
+{"component":"evaluation_mode","harness":"evalscope","category":["Static Analysis","Dynamic Execution"]}
+{"component":"evaluation_mode","harness":"helm","category":["Static Analysis","Dynamic Execution"]}
+{"component":"evaluation_mode","harness":"ogb","category":["Static Analysis"]}
+{"component":"evaluation_mode","harness":"VBench","category":["Static Analysis","Dynamic Execution"]}
+{"component":"evaluation_mode","harness":"evidently","category":["Static Analysis"]}
+{"component":"evaluation_mode","harness":"reward-bench","category":["Static Analysis"]}
+{"component":"evaluation_mode","harness":"evaluate","category":["Static Analysis"]}
+{"component":"evaluation_mode","harness":"giskard-oss","category":["Static Analysis","Dynamic Execution"]}
+{"component":"evaluation_mode","harness":"promptbench","category":["Static Analysis"]}
+{"component":"evaluation_mode","harness":"ARES","category":["Static Analysis"]}
+{"component":"evaluation_mode","harness":"COMET","category":["Static Analysis"]}
+{"component":"evaluation_mode","harness":"intellagent","category":["Interactive Simulation"]}
+{"component":"evaluation_mode","harness":"lmms-eval","category":["Static Analysis","Dynamic Execution","Interactive Simulation"]}
+{"component":"evaluation_mode","harness":"benchmark","category":["Dynamic Execution","Static Analysis"]}
+{"component":"evaluation_mode","harness":"evals","category":["Static Analysis","Dynamic Execution"]}
+{"component":"evaluation_mode","harness":"bigcode-evaluation-harness","category":["Dynamic Execution","Static Analysis"]}
+{"component":"evaluation_mode","harness":"SimplerEnv","category":["Interactive Simulation"]}
+{"component":"evaluation_mode","harness":"ann-benchmarks","category":["Static Analysis"]}
+{"component":"evaluation_mode","harness":"beir","category":["Static Analysis"]}
+{"component":"evaluation_mode","harness":"evalplus","category":["Dynamic Execution","Interactive Simulation"]}
+{"component":"evaluation_mode","harness":"TrustLLM","category":["Static Analysis","Dynamic Execution"]}
+{"component":"evaluation_mode","harness":"GAOKAO-Bench","category":["Static Analysis"]}
+{"component":"evaluation_mode","harness":"trulens","category":["Static Analysis","Dynamic Execution","Interactive Simulation","Custom"]}
+{"component":"evaluation_mode","harness":"meltingpot","category":["Interactive Simulation"]}
+{"component":"evaluator","harness":"AutoRAG","category":["Algorithmic","ML-based"]}
+{"component":"evaluator","harness":"inference","category":["Algorithmic","ML-based"]}
+{"component":"evaluator","harness":"mir_eval","category":["Algorithmic"]}
+{"component":"evaluator","harness":"Quantus","category":["Algorithmic"]}
+{"component":"evaluator","harness":"deepeval","category":["Algorithmic","ML-based"]}
+{"component":"evaluator","harness":"alpaca_eval","category":["ML-based","Human"]}
+{"component":"evaluator","harness":"inspect_ai","category":["Algorithmic","ML-based"]}
+{"component":"evaluator","harness":"lighteval","category":["Algorithmic","ML-based"]}
+{"component":"evaluator","harness":"RLBench","category":["Environmental","Algorithmic"]}
+{"component":"evaluator","harness":"ranx","category":["Algorithmic"]}
+{"component":"evaluator","harness":"DomainBed","category":["Algorithmic"]}
+{"component":"evaluator","harness":"ragas","category":["Algorithmic","ML-based"]}
+{"component":"evaluator","harness":"model-analysis","category":["Algorithmic"]}
+{"component":"evaluator","harness":"lm-evaluation-harness","category":["Algorithmic","ML-based","Environmental"]}
+{"component":"evaluator","harness":"ollama-grid-search","category":["Human","Algorithmic"]}
+{"component":"evaluator","harness":"Metaworld","category":["Environmental","Algorithmic"]}
+{"component":"evaluator","harness":"speech-to-text-benchmark","category":["Algorithmic"]}
+{"component":"evaluator","harness":"EvalAI","category":["Custom"]}
+{"component":"evaluator","harness":"RAGChecker","category":["Algorithmic","ML-based"]}
+{"component":"evaluator","harness":"overcooked_ai","category":["Algorithmic"]}
+{"component":"evaluator","harness":"CipherChat","category":["Algorithmic","ML-based"]}
+{"component":"evaluator","harness":"llmperf","category":["Algorithmic","Custom"]}
+{"component":"evaluator","harness":"opencompass","category":["Algorithmic","Human","ML-based","Environmental"]}
+{"component":"evaluator","harness":"human-eval","category":["Algorithmic","Environmental"]}
+{"component":"evaluator","harness":"pykeen","category":["Algorithmic"]}
+{"component":"evaluator","harness":"jiwer","category":["Algorithmic"]}
+{"component":"evaluator","harness":"VLMEvalKit","category":["Algorithmic","ML-based","Environmental"]}
+{"component":"evaluator","harness":"prometheus-eval","category":["Algorithmic","ML-based"]}
+{"component":"evaluator","harness":"evalscope","category":["Algorithmic","ML-based","Environmental"]}
+{"component":"evaluator","harness":"helm","category":["Algorithmic","ML-based","Environmental","Human"]}
+{"component":"evaluator","harness":"ogb","category":["Algorithmic"]}
+{"component":"evaluator","harness":"VBench","category":["Algorithmic","ML-based","Custom"]}
+{"component":"evaluator","harness":"evidently","category":["Algorithmic"]}
+{"component":"evaluator","harness":"reward-bench","category":["Algorithmic"]}
+{"component":"evaluator","harness":"evaluate","category":["Algorithmic","ML-based"]}
+{"component":"evaluator","harness":"giskard-oss","category":["Algorithmic","ML-based","Environmental"]}
+{"component":"evaluator","harness":"promptbench","category":["Algorithmic"]}
+{"component":"evaluator","harness":"ARES","category":["ML-based","Algorithmic"]}
+{"component":"evaluator","harness":"COMET","category":["Algorithmic","ML-based"]}
+{"component":"evaluator","harness":"intellagent","category":["Algorithmic","ML-based"]}
+{"component":"evaluator","harness":"lmms-eval","category":["Algorithmic","ML-based","Environmental"]}
+{"component":"evaluator","harness":"benchmark","category":["Algorithmic"]}
+{"component":"evaluator","harness":"evals","category":["Algorithmic","ML-based","Environmental","Human","Custom"]}
+{"component":"evaluator","harness":"bigcode-evaluation-harness","category":["Environmental","Algorithmic"]}
+{"component":"evaluator","harness":"SimplerEnv","category":["Algorithmic","Environmental"]}
+{"component":"evaluator","harness":"ann-benchmarks","category":["Algorithmic"]}
+{"component":"evaluator","harness":"beir","category":["Algorithmic","ML-based"]}
+{"component":"evaluator","harness":"evalplus","category":["Algorithmic","Environmental"]}
+{"component":"evaluator","harness":"TrustLLM","category":["Algorithmic","ML-based"]}
+{"component":"evaluator","harness":"GAOKAO-Bench","category":["Algorithmic","ML-based","Human"]}
+{"component":"evaluator","harness":"trulens","category":["ML-based","Environmental","Algorithmic","Custom"]}
+{"component":"evaluator","harness":"meltingpot","category":["Environmental"]}
+{"component":"comparison_criteria","harness":"AutoRAG","category":["Explicit Labels","None"]}
+{"component":"comparison_criteria","harness":"inference","category":["Explicit Labels","Behavioral Specification","None"]}
+{"component":"comparison_criteria","harness":"mir_eval","category":["Explicit Labels"]}
+{"component":"comparison_criteria","harness":"Quantus","category":["None"]}
+{"component":"comparison_criteria","harness":"deepeval","category":["Explicit Labels","Behavioral Specification","None"]}
+{"component":"comparison_criteria","harness":"alpaca_eval","category":["Comparative Baseline","None"]}
+{"component":"comparison_criteria","harness":"inspect_ai","category":["Explicit Labels","Behavioral Specification"]}
+{"component":"comparison_criteria","harness":"lighteval","category":["Explicit Labels","Behavioral Specification"]}
+{"component":"comparison_criteria","harness":"RLBench","category":["Explicit Labels","Behavioral Specification"]}
+{"component":"comparison_criteria","harness":"ranx","category":["Explicit Labels"]}
+{"component":"comparison_criteria","harness":"DomainBed","category":["Explicit Labels"]}
+{"component":"comparison_criteria","harness":"ragas","category":["Explicit Labels","Behavioral Specification","None","Custom"]}
+{"component":"comparison_criteria","harness":"model-analysis","category":["Explicit Labels"]}
+{"component":"comparison_criteria","harness":"lm-evaluation-harness","category":["Explicit Labels","Behavioral Specification","None"]}
+{"component":"comparison_criteria","harness":"ollama-grid-search","category":["None"]}
+{"component":"comparison_criteria","harness":"Metaworld","category":["Behavioral Specification","None"]}
+{"component":"comparison_criteria","harness":"speech-to-text-benchmark","category":["Explicit Labels","None"]}
+{"component":"comparison_criteria","harness":"EvalAI","category":["Custom"]}
+{"component":"comparison_criteria","harness":"RAGChecker","category":["Explicit Labels","None"]}
+{"component":"comparison_criteria","harness":"overcooked_ai","category":["Explicit Labels","None","Behavioral Specification"]}
+{"component":"comparison_criteria","harness":"CipherChat","category":["None","Behavioral Specification"]}
+{"component":"comparison_criteria","harness":"llmperf","category":["Explicit Labels","None"]}
+{"component":"comparison_criteria","harness":"opencompass","category":["Explicit Labels","Behavioral Specification","Comparative Baseline","None","Custom"]}
+{"component":"comparison_criteria","harness":"human-eval","category":["Behavioral Specification","Explicit Labels"]}
+{"component":"comparison_criteria","harness":"pykeen","category":["Explicit Labels","None"]}
+{"component":"comparison_criteria","harness":"jiwer","category":["Explicit Labels"]}
+{"component":"comparison_criteria","harness":"VLMEvalKit","category":["Explicit Labels","Behavioral Specification","Comparative Baseline","None"]}
+{"component":"comparison_criteria","harness":"prometheus-eval","category":["Explicit Labels","Behavioral Specification","Comparative Baseline"]}
+{"component":"comparison_criteria","harness":"evalscope","category":["Custom"]}
+{"component":"comparison_criteria","harness":"helm","category":["Explicit Labels","Behavioral Specification","Comparative Baseline","None","Custom"]}
+{"component":"comparison_criteria","harness":"ogb","category":["Explicit Labels"]}
+{"component":"comparison_criteria","harness":"VBench","category":["Explicit Labels","None","Custom"]}
+{"component":"comparison_criteria","harness":"evidently","category":["Explicit Labels","None"]}
+{"component":"comparison_criteria","harness":"reward-bench","category":["Explicit Labels"]}
+{"component":"comparison_criteria","harness":"evaluate","category":["Explicit Labels","Behavioral Specification","None"]}
+{"component":"comparison_criteria","harness":"giskard-oss","category":["Explicit Labels","Behavioral Specification","None"]}
+{"component":"comparison_criteria","harness":"promptbench","category":["Explicit Labels","None"]}
+{"component":"comparison_criteria","harness":"ARES","category":["Explicit Labels","None"]}
+{"component":"comparison_criteria","harness":"COMET","category":["Explicit Labels"]}
+{"component":"comparison_criteria","harness":"intellagent","category":["Behavioral Specification","None","Custom"]}
+{"component":"comparison_criteria","harness":"lmms-eval","category":["Explicit Labels","Behavioral Specification","Comparative Baseline","None","Custom"]}
+{"component":"comparison_criteria","harness":"benchmark","category":["None"]}
+{"component":"comparison_criteria","harness":"evals","category":["Explicit Labels","Behavioral Specification","Comparative Baseline","None","Custom"]}
+{"component":"comparison_criteria","harness":"bigcode-evaluation-harness","category":["Behavioral Specification","Explicit Labels"]}
+{"component":"comparison_criteria","harness":"SimplerEnv","category":["Comparative Baseline"]}
+{"component":"comparison_criteria","harness":"ann-benchmarks","category":["Explicit Labels","None"]}
+{"component":"comparison_criteria","harness":"beir","category":["Explicit Labels"]}
+{"component":"comparison_criteria","harness":"evalplus","category":["Custom"]}
+{"component":"comparison_criteria","harness":"TrustLLM","category":["Explicit Labels","Behavioral Specification","Comparative Baseline","None"]}
+{"component":"comparison_criteria","harness":"GAOKAO-Bench","category":["Explicit Labels","Comparative Baseline"]}
+{"component":"comparison_criteria","harness":"trulens","category":["None"]}
+{"component":"comparison_criteria","harness":"meltingpot","category":["None"]}

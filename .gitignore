@@ -2,7 +2,11 @@
 .DS_Store
 *.venv
 repos/
-docs/
+papers/
+readme/
 workflows/
+guidelines/
 configurations/
 .env
+SD.ipynb
+EU.ipynb

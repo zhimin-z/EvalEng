@@ -42,8 +42,8 @@ api,https://github.com/Farama-Foundation/Metaworld/blob/cdafedfaaa896472fb7e76e2
 api,https://github.com/Farama-Foundation/Metaworld/blob/cdafedfaaa896472fb7e76e2fe103e120b67a9b6/metaworld/policies/sawyer_window_close_v3_policy.py#L23,Farama-Foundation__Metaworld/get_action
 api,https://github.com/Farama-Foundation/Metaworld/blob/cdafedfaaa896472fb7e76e2fe103e120b67a9b6/metaworld/sawyer_xyz_env.py#L327,Farama-Foundation__Metaworld/discretize_goal_space
 api,https://github.com/Farama-Foundation/Metaworld/blob/cdafedfaaa896472fb7e76e2fe103e120b67a9b6/metaworld/wrappers.py#L31,Farama-Foundation__Metaworld/observation
-api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/client/python_utils.py#L29,Giskard-AI__giskard-oss/get_python_version
-api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/registry/decorators_utils.py#L65,Giskard-AI__giskard-oss/insert_arg
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/client/python_utils.py#L29,Giskard-AI__giskard-oss/get_python_version
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/registry/decorators_utils.py#L65,Giskard-AI__giskard-oss/insert_arg
 api,https://github.com/google-deepmind/meltingpot/blob/f280a35a4ffe5a7613b5c4a062a66fd18c64876c/meltingpot/human_players/play_coins.py#L36,google-deepmind__meltingpot/no_op
 api,https://github.com/huggingface/evaluate/blob/5aa3982a9a8c86e506860e381d428a64b0cce73b/src/evaluate/hub.py#L14,huggingface__evaluate/push_to_hub
 api,https://github.com/huggingface/evaluate/blob/5aa3982a9a8c86e506860e381d428a64b0cce73b/src/evaluate/saving.py#L13,huggingface__evaluate/save
@@ -172,7 +172,7 @@ api,https://github.com/erikbern/ann-benchmarks/blob/36681911472059cd4cb9fcac1686
 api,https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/c4a31289c56a673aba99d2015a1db1decf5308e7/lmms_eval/api/registry.py#L47,EvolvingLMMs-Lab__lmms-eval/register_task
 api,https://github.com/facebookresearch/DomainBed/blob/b93c22a1cfc3b2428398272c1a116c8de1f4139e/domainbed/algorithms.py#L324,facebookresearch__DomainBed/get_accuracy
 api,https://github.com/Farama-Foundation/Metaworld/blob/cdafedfaaa896472fb7e76e2fe103e120b67a9b6/metaworld/policies/sawyer_assembly_v3_policy.py#L24,Farama-Foundation__Metaworld/get_action
-api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/client/python_utils.py#L17,Giskard-AI__giskard-oss/get_python_requirements
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/client/python_utils.py#L17,Giskard-AI__giskard-oss/get_python_requirements
 api,https://github.com/EleutherAI/lm-evaluation-harness/blob/9f152e0b89e777a17a21e9207da2ae4c1ea8beec/lm_eval/tasks/super_glue/multirc/t5_utils.py#L20,EleutherAI__lm-evaluation-harness/agg_f1
 api,https://github.com/pykeen/pykeen/blob/42bfa99a17ee489d0d54dc6332d5cc71fc0ded08/src/pykeen/cli.py#L637,pykeen__pykeen/readme
 cli,https://github.com/amazon-science/RAGChecker/blob/6091f08c00e676e87a970f2aeb4a23a484746348/rag_baselines/chunking.py#L28,
@@ -352,7 +352,7 @@ api,https://github.com/EleutherAI/lm-evaluation-harness/blob/9f152e0b89e777a17a2
 api,https://github.com/EleutherAI/lm-evaluation-harness/blob/9f152e0b89e777a17a21e9207da2ae4c1ea8beec/lm_eval/tasks/realtoxicityprompts/metric.py#L12,EleutherAI__lm-evaluation-harness/toxicity_perspective_api
 api,https://github.com/EleutherAI/lm-evaluation-harness/blob/9f152e0b89e777a17a21e9207da2ae4c1ea8beec/lm_eval/tasks/spanish_bench/utils.py#L14,EleutherAI__lm-evaluation-harness/process_doc_nli
 api,https://github.com/Farama-Foundation/Metaworld/blob/cdafedfaaa896472fb7e76e2fe103e120b67a9b6/metaworld/policies/sawyer_button_press_topdown_v3_policy.py#L23,Farama-Foundation__Metaworld/get_action
-api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard-oss/core/suite.py#L237,Giskard-AI__giskard-oss/to_junit
+api,https://github.com/Giskard-AI/giskard-oss/blob/6808a562cc1c565e6cf88aeb1fd1f77d28fe76ba/giskard/core/suite.py#L237,Giskard-AI__giskard-oss/to_junit
 api,https://github.com/microsoft/promptbench/blob/fcda538bd779ad11612818e0645a387a462b5c3b/promptbench/dyval/dyval_utils.py#L23,microsoft__promptbench/dyval_evaluate
 api,https://github.com/mir-evaluation/mir_eval/blob/8db0b3812e2032544c1fc00d02d4256cab043f3d/mir_eval/io.py#L123,mir-evaluation__mir_eval/load_events
 api,https://github.com/modelscope/evalscope/blob/2a49bccc14f69b9a3464f16d4672823a0a7bcb98/evalscope/metrics/t2v_metrics/models/itmscore_models/image_reward/ImageReward.py#L76,modelscope__evalscope/score_gard
