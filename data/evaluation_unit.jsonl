@@ -154,3 +154,107 @@
 {"component":"comparison_criteria","harness":"GAOKAO-Bench","category":["Explicit Labels","Comparative Baseline"]}
 {"component":"comparison_criteria","harness":"trulens","category":["None"]}
 {"component":"comparison_criteria","harness":"meltingpot","category":["None"]}
+{"component":"primary_evaluation_target","harness":"AlpacaEval","category":["LLM"]}
+{"component":"primary_evaluation_target","harness":"ANN-Benchmarks","category":["ANN algorithm"]}
+{"component":"primary_evaluation_target","harness":"ARES","category":["RAG system"]}
+{"component":"primary_evaluation_target","harness":"AutoRAG","category":["RAG system"]}
+{"component":"primary_evaluation_target","harness":"BEIR","category":["ML model"]}
+{"component":"primary_evaluation_target","harness":"CipherChat","category":["LLM"]}
+{"component":"primary_evaluation_target","harness":"Code Generation LM Evaluation Harness","category":["code model"]}
+{"component":"primary_evaluation_target","harness":"COMET","category":["MT system"]}
+{"component":"primary_evaluation_target","harness":"DeepEval","category":["LLM,agent,RAG system"]}
+{"component":"primary_evaluation_target","harness":"DomainBed","category":["ML model"]}
+{"component":"primary_evaluation_target","harness":"EvalAI","category":["ML model"]}
+{"component":"primary_evaluation_target","harness":"EvalPlus","category":["code model"]}
+{"component":"primary_evaluation_target","harness":"Evals","category":["LLM"]}
+{"component":"primary_evaluation_target","harness":"EvalScope","category":["DL model"]}
+{"component":"primary_evaluation_target","harness":"Evaluate","category":["DL model,dataset"]}
+{"component":"primary_evaluation_target","harness":"Evidently","category":["ML model"]}
+{"component":"primary_evaluation_target","harness":"GAOKAO-Bench","category":["LLM"]}
+{"component":"primary_evaluation_target","harness":"Giskard","category":["ML model"]}
+{"component":"primary_evaluation_target","harness":"HELM","category":["LLM"]}
+{"component":"primary_evaluation_target","harness":"HumanEval","category":["code model"]}
+{"component":"primary_evaluation_target","harness":"Inspect","category":["LLM"]}
+{"component":"primary_evaluation_target","harness":"IntellAgent","category":["agent"]}
+{"component":"primary_evaluation_target","harness":"JiWER","category":["STT model"]}
+{"component":"primary_evaluation_target","harness":"Language Model Evaluation Harness","category":["LLM"]}
+{"component":"primary_evaluation_target","harness":"LightEval","category":["LLM"]}
+{"component":"primary_evaluation_target","harness":"LLMPerf","category":["LLM"]}
+{"component":"primary_evaluation_target","harness":"lmms-eval","category":["LMM"]}
+{"component":"primary_evaluation_target","harness":"Melting Pot","category":["DRL model"]}
+{"component":"primary_evaluation_target","harness":"Meta-World","category":["DRL model"]}
+{"component":"primary_evaluation_target","harness":"mir_eval","category":["music model"]}
+{"component":"primary_evaluation_target","harness":"MLPerf Inference","category":["ML model"]}
+{"component":"primary_evaluation_target","harness":"OGB","category":["GNN"]}
+{"component":"primary_evaluation_target","harness":"Ollama Grid Search","category":["LLM"]}
+{"component":"primary_evaluation_target","harness":"OpenCompass","category":["LLM"]}
+{"component":"primary_evaluation_target","harness":"Overcooked-AI","category":["DRL model"]}
+{"component":"primary_evaluation_target","harness":"Prometheus-Eval","category":["LLM"]}
+{"component":"primary_evaluation_target","harness":"PromptBench","category":["LLM"]}
+{"component":"primary_evaluation_target","harness":"PyKEEN","category":["KG embedding model"]}
+{"component":"primary_evaluation_target","harness":"Quantus","category":["CV model"]}
+{"component":"primary_evaluation_target","harness":"Ragas","category":["LLM,RAG system"]}
+{"component":"primary_evaluation_target","harness":"RAGChecker","category":["RAG system"]}
+{"component":"primary_evaluation_target","harness":"ranx","category":["recommendation system"]}
+{"component":"primary_evaluation_target","harness":"RewardBench","category":["reward model"]}
+{"component":"primary_evaluation_target","harness":"RLBench","category":["robotics model"]}
+{"component":"primary_evaluation_target","harness":"SimplerEnv","category":["robotics model"]}
+{"component":"primary_evaluation_target","harness":"Speech-to-Text Benchmark","category":["STT model"]}
+{"component":"primary_evaluation_target","harness":"TensorFlow Model Analysis","category":["DL model"]}
+{"component":"primary_evaluation_target","harness":"TorchBench","category":["ML model"]}
+{"component":"primary_evaluation_target","harness":"TruLens","category":["LLM,agent"]}
+{"component":"primary_evaluation_target","harness":"TrustLLM","category":["LLM"]}
+{"component":"primary_evaluation_target","harness":"VBench","category":["video model"]}
+{"component":"primary_evaluation_target","harness":"VLMEvalKit","category":["LMM"]}
+{"component":"primary_evaluation_task","harness":"AlpacaEval","category":["instruction following"]}
+{"component":"primary_evaluation_task","harness":"ANN-Benchmarks","category":["nearest neighbor retrieval"]}
+{"component":"primary_evaluation_task","harness":"ARES","category":["question answering"]}
+{"component":"primary_evaluation_task","harness":"AutoRAG","category":["question answering"]}
+{"component":"primary_evaluation_task","harness":"BEIR","category":["information retrieval"]}
+{"component":"primary_evaluation_task","harness":"CipherChat","category":["jailbreaking"]}
+{"component":"primary_evaluation_task","harness":"Code Generation LM Evaluation Harness","category":["code generation"]}
+{"component":"primary_evaluation_task","harness":"COMET","category":["machine translation"]}
+{"component":"primary_evaluation_task","harness":"DeepEval","category":["system robustness"]}
+{"component":"primary_evaluation_task","harness":"DomainBed","category":["image classification"]}
+{"component":"primary_evaluation_task","harness":"EvalAI","category":["task-agnostic"]}
+{"component":"primary_evaluation_task","harness":"EvalPlus","category":["code generation"]}
+{"component":"primary_evaluation_task","harness":"Evals","category":["language modeling"]}
+{"component":"primary_evaluation_task","harness":"EvalScope","category":["language modeling"]}
+{"component":"primary_evaluation_task","harness":"Evaluate","category":["model prediction"]}
+{"component":"primary_evaluation_task","harness":"Evidently","category":["system robustness"]}
+{"component":"primary_evaluation_task","harness":"GAOKAO-Bench","category":["question answering"]}
+{"component":"primary_evaluation_task","harness":"Giskard","category":["AI safety"]}
+{"component":"primary_evaluation_task","harness":"HELM","category":["language modeling"]}
+{"component":"primary_evaluation_task","harness":"HumanEval","category":["code generation"]}
+{"component":"primary_evaluation_task","harness":"Inspect","category":["AI safety"]}
+{"component":"primary_evaluation_task","harness":"IntellAgent","category":["chatbot"]}
+{"component":"primary_evaluation_task","harness":"JiWER","category":["speech recognition"]}
+{"component":"primary_evaluation_task","harness":"Language Model Evaluation Harness","category":["language modeling"]}
+{"component":"primary_evaluation_task","harness":"LightEval","category":["language modeling"]}
+{"component":"primary_evaluation_task","harness":"LLMPerf","category":["computational performance"]}
+{"component":"primary_evaluation_task","harness":"lmms-eval","category":["multimodal understanding"]}
+{"component":"primary_evaluation_task","harness":"Melting Pot","category":["multiagent social interaction"]}
+{"component":"primary_evaluation_task","harness":"Meta-World","category":["robotic manipulation"]}
+{"component":"primary_evaluation_task","harness":"mir_eval","category":["information retrieval"]}
+{"component":"primary_evaluation_task","harness":"MLPerf Inference","category":["computational performance"]}
+{"component":"primary_evaluation_task","harness":"OGB","category":["graph prediction"]}
+{"component":"primary_evaluation_task","harness":"Ollama Grid Search","category":["configuration optimization"]}
+{"component":"primary_evaluation_task","harness":"OpenCompass","category":["language modeling"]}
+{"component":"primary_evaluation_task","harness":"Overcooked-AI","category":["human-AI coordination"]}
+{"component":"primary_evaluation_task","harness":"Prometheus-Eval","category":["LLM-as-a-Judge"]}
+{"component":"primary_evaluation_task","harness":"PromptBench","category":["prompt robustness"]}
+{"component":"primary_evaluation_task","harness":"PyKEEN","category":["knowledge graph prediction"]}
+{"component":"primary_evaluation_task","harness":"Quantus","category":["AI explainability"]}
+{"component":"primary_evaluation_task","harness":"Ragas","category":["question answering"]}
+{"component":"primary_evaluation_task","harness":"RAGChecker","category":["question answering"]}
+{"component":"primary_evaluation_task","harness":"ranx","category":["information retrieval"]}
+{"component":"primary_evaluation_task","harness":"RewardBench","category":["preference ranking"]}
+{"component":"primary_evaluation_task","harness":"RLBench","category":["robotic manipulation"]}
+{"component":"primary_evaluation_task","harness":"SimplerEnv","category":["robotic manipulation"]}
+{"component":"primary_evaluation_task","harness":"Speech-to-Text Benchmark","category":["speech recognition"]}
+{"component":"primary_evaluation_task","harness":"TensorFlow Model Analysis","category":["model prediction"]}
+{"component":"primary_evaluation_task","harness":"TorchBench","category":["computational performance"]}
+{"component":"primary_evaluation_task","harness":"TruLens","category":["AI trustworthiness"]}
+{"component":"primary_evaluation_task","harness":"TrustLLM","category":["AI trustworthiness"]}
+{"component":"primary_evaluation_task","harness":"VBench","category":["video generation"]}
+{"component":"primary_evaluation_task","harness":"VLMEvalKit","category":["multimodal understanding"]}
