@@ -1,4 +1,4 @@
-# lmms-eval - Stage 6 (SHIP) Evaluation
+# lmms-eval - Stage 6 (RELEASE) Evaluation
 
 ## Summary
 lmms-eval provides basic result logging capabilities with samples and JSON outputs, but lacks comprehensive artifact management, version control integration, automated reporting features, and distribution channel integrations. The framework is primarily focused on evaluation execution rather than result communication and distribution.

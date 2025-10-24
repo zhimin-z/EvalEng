@@ -1,4 +1,4 @@
-# DomainBed - Stage 6 (SHIP) Evaluation
+# DomainBed - Stage 6 (RELEASE) Evaluation
 
 ## Summary
 DomainBed is a research benchmark framework focused on domain generalization algorithms. It has basic artifact management through filesystem outputs and a custom result collection system, but lacks modern communication features like comprehensive versioning, stakeholder-specific reporting, or distribution integrations. The framework is designed for research reproducibility through sweep configurations but is not optimized for production deployment or multi-stakeholder communication.

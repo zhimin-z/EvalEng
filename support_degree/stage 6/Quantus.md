@@ -1,4 +1,4 @@
-# Quantus - Stage 6 (SHIP) Evaluation
+# Quantus - Stage 6 (RELEASE) Evaluation
 
 ## Summary
 Quantus is an XAI evaluation toolkit with minimal communication capabilities. It focuses on programmatic evaluation without dedicated artifact management, versioning, or distribution features. Results are returned as Python objects/lists with no built-in persistence, comparison, or reporting infrastructure.

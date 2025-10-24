@@ -1,4 +1,4 @@
-# BEIR - Stage 6 (SHIP) Evaluation
+# BEIR - Stage 6 (RELEASE) Evaluation
 
 ## Summary
 BEIR is a benchmark repository for evaluating information retrieval models. It provides basic result saving functionality but lacks comprehensive artifact management, versioning, and distribution capabilities. The framework focuses on evaluation execution rather than result communication and dissemination.
@@ -260,4 +260,4 @@ Justification for 0 points: No distribution features present. The framework prov
 6. No reproducibility support - Missing manifests, containerization, dependency tracking
 
 ### Overall Assessment:
-BEIR scores 2 out of 12 points for Stage 6 (SHIP). The framework is designed primarily for local evaluation with minimal support for result communication. It provides basic file saving but lacks modern MLOps features for artifact management, versioning, visualization, and distribution. Users must build their own infrastructure for experiment tracking, result comparison, and sharing findings with stakeholders.
+BEIR scores 2 out of 12 points for Stage 6 (RELEASE). The framework is designed primarily for local evaluation with minimal support for result communication. It provides basic file saving but lacks modern MLOps features for artifact management, versioning, visualization, and distribution. Users must build their own infrastructure for experiment tracking, result comparison, and sharing findings with stakeholders.

@@ -1,4 +1,4 @@
-# Evidently - Stage 6 (SHIP) Evaluation
+# Evidently - Stage 6 (RELEASE) Evaluation
 
 ## Summary
 Evidently provides robust artifact management through a workspace system that stores evaluation results locally or remotely, comprehensive version tracking via git integration and metadata capture, strong visualization capabilities with HTML/JSON export, and excellent distribution options through CI/CD integration and a monitoring UI service. The framework excels at packaging results with automated metadata capture and offers multiple stakeholder-friendly reporting formats.

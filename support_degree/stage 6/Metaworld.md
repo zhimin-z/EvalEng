@@ -1,4 +1,4 @@
-# Metaworld - Stage 6 (SHIP) Evaluation
+# Metaworld - Stage 6 (RELEASE) Evaluation
 
 ## Summary
 Metaworld is a robotics benchmark environment for multi-task and meta-RL, not an evaluation framework. It provides environments with built-in success metrics and policies, but lacks dedicated artifact management, versioning, reporting, and distribution features expected of an evaluation framework. Most Stage 6 capabilities would need to be implemented externally.
@@ -123,7 +123,7 @@ Conclusion: No distribution features. The package itself can be distributed via 
 
 Total Score: 0/12
 
-Metaworld is a high-quality robotics benchmark environment suite with excellent environment implementations, expert policies, and comprehensive documentation of evaluation *methodology*. However, it is fundamentally not an evaluation framework and provides none of the Stage 6 SHIP features:
+Metaworld is a high-quality robotics benchmark environment suite with excellent environment implementations, expert policies, and comprehensive documentation of evaluation *methodology*. However, it is fundamentally not an evaluation framework and provides none of the Stage 6 RELEASE features:
 
 - No artifact management: Users must manually log and store all evaluation data
 - No versioning: Only basic seeding; no reproducibility manifests or git integration  

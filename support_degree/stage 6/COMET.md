@@ -1,4 +1,4 @@
-# Unbabel COMET - Stage 6 (SHIP) Evaluation
+# Unbabel COMET - Stage 6 (RELEASE) Evaluation
 
 ## Summary
 COMET (Crosslingual Optimized Metric for Evaluation of Translation) is a neural framework for MT evaluation. While it excels at its core function of scoring translations, its communication capabilities are minimal. The framework lacks sophisticated artifact management, version control integration, stakeholder-specific reporting, and distribution channel features. Most outputs are basic scores with limited metadata capture and no automated reproducibility tracking.
@@ -272,7 +272,7 @@ COMET is primarily designed as an evaluation metric, not a comprehensive evaluat
 - Easy-to-use Python API and CLI
 - Model sharing via HuggingFace Hub
 
-However, for Stage 6 (SHIP) requirements, it's severely lacking:
+However, for Stage 6 (RELEASE) requirements, it's severely lacking:
 - No artifact management: Just basic JSON output
 - No version control: Zero git integration or reproducibility tracking
 - No reporting: Single format, no templates, no visualizations

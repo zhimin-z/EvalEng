@@ -1,4 +1,4 @@
-# EvalPlus - Stage 6 (SHIP) Evaluation
+# EvalPlus - Stage 6 (RELEASE) Evaluation
 
 ## Summary
 EvalPlus is a code generation evaluation framework primarily focused on correctness and efficiency metrics. It has minimal artifact management (raw outputs saved), basic versioning through git commit tracking, very limited reporting capabilities (console output only), and no built-in distribution integrations. The framework is designed for local execution with manual result management.
@@ -303,7 +303,7 @@ Justification for 0/3:
 
 ## Conclusion
 
-EvalPlus scores 3/12 total for Stage 6 (SHIP), reflecting its minimal communication and distribution capabilities. The framework focuses on execution and correctness testing, with result packaging and distribution left entirely to users. This is a research-oriented tool designed for local evaluation rather than production MLOps workflows.
+EvalPlus scores 3/12 total for Stage 6 (RELEASE), reflecting its minimal communication and distribution capabilities. The framework focuses on execution and correctness testing, with result packaging and distribution left entirely to users. This is a research-oriented tool designed for local evaluation rather than production MLOps workflows.
 
 The framework would benefit significantly from:
 - Artifact management system with querying and comparison

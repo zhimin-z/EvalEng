@@ -1,4 +1,4 @@
-# Overcooked AI - Stage 6 (SHIP) Evaluation
+# Overcooked AI - Stage 6 (RELEASE) Evaluation
 
 ## Summary
 

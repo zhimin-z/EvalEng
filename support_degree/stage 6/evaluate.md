@@ -1,4 +1,4 @@
-# HuggingFace Evaluate - Stage 6 (SHIP) Evaluation
+# HuggingFace Evaluate - Stage 6 (RELEASE) Evaluation
 
 ## Summary
 The HuggingFace Evaluate library provides basic artifact management through saved outputs and metric cards, but lacks comprehensive versioning, reproducibility tracking, and distribution integration capabilities. While metric documentation is extensive via README cards, there are no automated report generation, stakeholder-specific templates, or MLOps platform integrations.
@@ -172,7 +172,7 @@ The library is designed purely for local metric computation with no distribution
 
 ## Recommendations for Improvement
 
-To improve SHIP capabilities, the library would need:
+To improve RELEASE capabilities, the library would need:
 
 1. Artifact Management System:
    - Add metadata capture (timestamps, configs, model IDs)
@@ -200,4 +200,4 @@ To improve SHIP capabilities, the library would need:
 
 ## Total Score: 2/12 (17%)
 
-The HuggingFace Evaluate library excels at metric computation with excellent static documentation but provides virtually no SHIP stage functionality. It's designed as a metric computation library rather than a comprehensive evaluation platform with artifact management, versioning, reporting, and distribution capabilities.
+The HuggingFace Evaluate library excels at metric computation with excellent static documentation but provides virtually no RELEASE stage functionality. It's designed as a metric computation library rather than a comprehensive evaluation platform with artifact management, versioning, reporting, and distribution capabilities.

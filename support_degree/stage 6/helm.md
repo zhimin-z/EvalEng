@@ -1,4 +1,4 @@
-# HELM (stanford-crfm/helm) - Stage 6 (SHIP) Evaluation
+# HELM (stanford-crfm/helm) - Stage 6 (RELEASE) Evaluation
 
 ## Summary
 HELM provides comprehensive communication capabilities with strong artifact management through its output file structure, basic version control through git integration, flexible report generation via web UI and CLI tools, and distribution through MLOps platforms and public leaderboards. The framework emphasizes reproducibility and standardized result sharing across the research community.

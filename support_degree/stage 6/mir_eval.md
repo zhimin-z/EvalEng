@@ -1,4 +1,4 @@
-# mir_eval - Stage 6 (SHIP) Evaluation
+# mir_eval - Stage 6 (RELEASE) Evaluation
 
 ## Summary
 mir_eval is a Python library for computing Music Information Retrieval (MIR) evaluation metrics. It has minimal communication and distribution capabilities. The library focuses on providing evaluation functions that return dictionaries of metrics, with no built-in artifact management, versioning, or distribution features. It expects users to manually handle result storage, comparison, and sharing.

@@ -1,4 +1,4 @@
-# ranx - Stage 6 (SHIP) Evaluation
+# ranx - Stage 6 (RELEASE) Evaluation
 
 ## Summary
 ranx is a Python library for ranking evaluation and comparison in Information Retrieval. It provides strong artifact management through saved run results and scores, but lacks comprehensive versioning/reproducibility features and has minimal distribution capabilities. Reporting is present but basic, with limited stakeholder-specific formats.

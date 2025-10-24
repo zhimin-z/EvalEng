@@ -1,4 +1,4 @@
-# GAOKAO-Bench - Stage 6 (SHIP) Evaluation
+# GAOKAO-Bench - Stage 6 (RELEASE) Evaluation
 
 ## Summary
 GAOKAO-Bench is a specialized evaluation framework for testing LLMs using Chinese National College Entrance Examination (GAOKAO) questions. The framework focuses on running evaluations and computing scores but provides minimal artifact management, versioning, or distribution capabilities. Results are stored as JSON files with basic metadata, but lack comprehensive packaging, reproducibility manifests, or automated distribution features.
@@ -298,7 +298,7 @@ Justification: The framework receives 0 points as it has absolutely no distribut
 
 Total Score: 2/12 points (16.7%)
 
-GAOKAO-Bench is a functional evaluation framework for running GAOKAO-based LLM tests, but it severely lacks Stage 6 (SHIP) capabilities. It's essentially a collection of evaluation scripts that produce local JSON files. The framework would benefit enormously from:
+GAOKAO-Bench is a functional evaluation framework for running GAOKAO-based LLM tests, but it severely lacks Stage 6 (RELEASE) capabilities. It's essentially a collection of evaluation scripts that produce local JSON files. The framework would benefit enormously from:
 
 - Proper artifact management with queryable storage
 - Reproducibility features to enable result verification

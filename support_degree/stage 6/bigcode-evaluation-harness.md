@@ -1,4 +1,4 @@
-# bigcode-evaluation-harness - Stage 6 (SHIP) Evaluation
+# bigcode-evaluation-harness - Stage 6 (RELEASE) Evaluation
 
 ## Summary
 The bigcode-evaluation-harness is a framework for evaluating code generation models that provides basic artifact management through JSON file generation/storage and has minimal built-in versioning or distribution capabilities. It focuses on code generation and execution with manual artifact handling, requiring users to implement most communication and distribution features themselves.
@@ -280,4 +280,4 @@ Why not higher:
 
 ## Conclusion
 
-The bigcode-evaluation-harness scores 3/12 total points on Stage 6 (SHIP). It provides basic artifact storage but lacks most features expected of a mature evaluation framework. Users must manually manage artifacts, track versions, create reports, and distribute results. The framework focuses on execution and evaluation but provides minimal support for communicating results to stakeholders or ensuring reproducibility. Significant development would be needed to bring communication capabilities to production-ready standards.
+The bigcode-evaluation-harness scores 3/12 total points on Stage 6 (RELEASE). It provides basic artifact storage but lacks most features expected of a mature evaluation framework. Users must manually manage artifacts, track versions, create reports, and distribute results. The framework focuses on execution and evaluation but provides minimal support for communicating results to stakeholders or ensuring reproducibility. Significant development would be needed to bring communication capabilities to production-ready standards.

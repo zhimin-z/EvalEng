@@ -1,4 +1,4 @@
-# Giskard-AI__giskard-oss - Stage 6 (SHIP) Evaluation
+# Giskard-AI__giskard-oss - Stage 6 (RELEASE) Evaluation
 
 ## Summary
 Giskard provides comprehensive communication capabilities focused on automated vulnerability detection and test suite reporting. The framework excels at generating HTML/JSON scan reports and publishing results to MLOps platforms (MLflow, W&B), but has minimal built-in artifact management, version control integration, and stakeholder-specific reporting templates. Communication features are primarily oriented toward vulnerability reporting rather than general evaluation artifact management.

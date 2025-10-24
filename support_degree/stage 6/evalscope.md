@@ -1,4 +1,4 @@
-# EvalScope - Stage 6 (SHIP) Evaluation
+# EvalScope - Stage 6 (RELEASE) Evaluation
 
 ## Summary
 EvalScope provides moderate artifact management and result packaging capabilities, with strong local file-based output but limited advanced features for versioning, stakeholder-specific reporting, and distribution channels. The framework saves evaluation results as JSON/JSONL files with structured metadata, but lacks automated version control integration, sophisticated report generation templates, and direct publishing to MLOps platforms.

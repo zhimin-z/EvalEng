@@ -1,4 +1,4 @@
-# Inspect AI - Stage 6 (SHIP) Evaluation
+# Inspect AI - Stage 6 (RELEASE) Evaluation
 
 ## Summary
 Inspect AI demonstrates excellent capabilities for packaging, versioning, and distributing evaluation results. The framework features comprehensive logging with automatic metadata capture, robust version control integration with reproducibility manifests, extensive reporting capabilities for multiple stakeholder types, and native integration with major MLOps platforms. While some distribution features require external services, the core communication infrastructure is well-designed and production-ready.
@@ -482,7 +482,7 @@ The framework provides excellent extensibility through hooks and S3 integration,
 
 Total Score: 10/12
 
-Inspect AI demonstrates strong capabilities in Stage 6 (SHIP):
+Inspect AI demonstrates strong capabilities in Stage 6 (RELEASE):
 
 Strengths:
 1. Excellent artifact management with automatic capture and powerful querying

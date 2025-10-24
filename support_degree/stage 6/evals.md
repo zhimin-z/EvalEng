@@ -1,4 +1,4 @@
-# OpenAI Evals - Stage 6 (SHIP) Evaluation
+# OpenAI Evals - Stage 6 (RELEASE) Evaluation
 
 ## Summary
 OpenAI Evals provides basic artifact management with JSON logging and good integration with external MLOps platforms (W&B), but lacks sophisticated built-in features for versioning, packaging, and multi-format reporting. The framework focuses on simple, functional communication capabilities rather than comprehensive result distribution.
