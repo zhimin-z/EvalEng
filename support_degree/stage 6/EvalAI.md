@@ -1,4 +1,4 @@
-# EvalAI - Stage 6 (COMMUNICATE) Evaluation
+# EvalAI - Stage 6 (SHIP) Evaluation
 
 ## Summary
 EvalAI is a platform for hosting AI challenges with a web-based leaderboard system. It focuses on hosting competitions rather than being a standalone evaluation framework. Communication capabilities are primarily web-based (leaderboards, dashboards) with some artifact management through the database. It lacks sophisticated versioning, reproducibility manifests, and distribution channel integrations typically found in dedicated evaluation frameworks.

@@ -1,4 +1,4 @@
-# AlpacaEval - Stage 6 (COMMUNICATE) Evaluation
+# AlpacaEval - Stage 6 (SHIP) Evaluation
 
 ## Summary
 AlpacaEval is an automatic evaluator for instruction-following models with strong artifact management, basic versioning, and excellent distribution capabilities. The framework excels at making results publicly available through leaderboards and provides comprehensive JSON-based output storage. However, it lacks sophisticated reproducibility manifests and stakeholder-specific reporting features.

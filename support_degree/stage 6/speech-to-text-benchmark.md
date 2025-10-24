@@ -1,4 +1,4 @@
-# speech-to-text-benchmark - Stage 6 (COMMUNICATE) Evaluation
+# speech-to-text-benchmark - Stage 6 (SHIP) Evaluation
 
 ## Summary
 This framework is a minimalist speech-to-text benchmarking tool with basic result storage and visualization capabilities. It provides simple file-based artifact storage and generates static comparison plots, but lacks comprehensive versioning, reproducibility manifests, and distribution channel integrations. The framework is primarily designed for publishing static benchmark results rather than for production evaluation workflows.

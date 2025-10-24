@@ -1,4 +1,4 @@
-# llmperf - Stage 6 (COMMUNICATE) Evaluation
+# llmperf - Stage 6 (SHIP) Evaluation
 
 ## Summary
 LLMPerf is a performance testing tool for LLM APIs with minimal communication and distribution capabilities. It saves results to local JSON files and includes a Jupyter notebook for basic analysis, but lacks advanced artifact management, versioning infrastructure, automated reporting templates, and integration with external platforms.

@@ -1,4 +1,4 @@
-# RAGChecker - Stage 6 (COMMUNICATE) Evaluation
+# RAGChecker - Stage 6 (SHIP) Evaluation
 
 ## Summary
 RAGChecker is a specialized RAG evaluation framework that produces structured JSON outputs with detailed metrics but lacks comprehensive artifact management, versioning, and distribution features. The framework focuses on evaluation results packaging but provides minimal support for reproducibility tracking, stakeholder-specific reporting, or publication workflows.
@@ -286,4 +286,4 @@ Justification for 0 points:
 
 ## Conclusion
 
-RAGChecker scores 2/12 points for Stage 6 (COMMUNICATE). The framework focuses on RAG evaluation mechanics but provides minimal communication and distribution infrastructure. It produces structured JSON outputs but lacks artifact management, versioning, reporting variety, and publication capabilities. Users must build their own systems for tracking experiments, comparing runs, generating reports, and distributing results. The framework would benefit significantly from adding basic artifact management, version control integration, and multi-format reporting capabilities.
+RAGChecker scores 2/12 points for Stage 6 (SHIP). The framework focuses on RAG evaluation mechanics but provides minimal communication and distribution infrastructure. It produces structured JSON outputs but lacks artifact management, versioning, reporting variety, and publication capabilities. Users must build their own systems for tracking experiments, comparing runs, generating reports, and distributing results. The framework would benefit significantly from adding basic artifact management, version control integration, and multi-format reporting capabilities.

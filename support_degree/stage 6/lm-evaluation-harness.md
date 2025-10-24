@@ -1,4 +1,4 @@
-# EleutherAI/lm-evaluation-harness - Stage 6 (COMMUNICATE) Evaluation
+# EleutherAI/lm-evaluation-harness - Stage 6 (SHIP) Evaluation
 
 ## Summary
 The LM Evaluation Harness provides solid artifact management with JSON output and basic versioning support, but lacks sophisticated reproducibility manifests, stakeholder-specific reporting templates, and distribution channel integrations. Results are saved as JSON files with metadata, but querying/comparison tools, automated report generation, and MLOps platform integrations are minimal or absent.

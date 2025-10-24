@@ -1,4 +1,4 @@
-# DeepEval - Stage 6 (COMMUNICATE) Evaluation
+# DeepEval - Stage 6 (SHIP) Evaluation
 
 ## Summary
 DeepEval provides robust artifact management through its cloud platform (Confident AI), comprehensive dataset versioning, and CLI-based report generation. The framework excels at capturing metadata, publishing results to Confident AI, and integrating with CI/CD pipelines, though report generation capabilities are primarily delivered through the web platform rather than standalone SDK features.

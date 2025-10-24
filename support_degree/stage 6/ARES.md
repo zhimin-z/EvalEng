@@ -1,4 +1,4 @@
-# ARES (stanford-futuredata__ARES) - Stage 6 (COMMUNICATE) Evaluation
+# ARES (stanford-futuredata__ARES) - Stage 6 (SHIP) Evaluation
 
 ## Summary
 ARES is a RAG evaluation framework that focuses primarily on generating evaluation scores and training classifiers. The framework provides basic output functionality through printed results and saved model checkpoints, but lacks comprehensive artifact management, versioning systems, and distribution capabilities. Communication features are minimal, with results primarily output to console and TSV files.

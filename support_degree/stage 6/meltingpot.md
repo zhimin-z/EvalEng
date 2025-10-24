@@ -1,4 +1,4 @@
-# Melting Pot - Stage 6 (COMMUNICATE) Evaluation
+# Melting Pot - Stage 6 (SHIP) Evaluation
 
 ## Summary
 Melting Pot is a multi-agent RL test suite focused on creating game environments rather than evaluation infrastructure. It has minimal artifact management, no versioning features, basic result visualization through notebooks, and limited distribution capabilities primarily through its GitHub repository and PyPI package distribution.

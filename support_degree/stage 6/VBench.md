@@ -1,4 +1,4 @@
-# VBench - Stage 6 (COMMUNICATE) Evaluation
+# VBench - Stage 6 (SHIP) Evaluation
 
 ## Summary
 VBench is a comprehensive benchmark suite for evaluating video generative models across multiple dimensions. The framework focuses primarily on evaluation rather than artifact management and distribution. While it provides basic result saving and some model tracking capabilities, it lacks advanced artifact management, versioning, reporting automation, and distribution channel integrations that would constitute a full "communication" system.

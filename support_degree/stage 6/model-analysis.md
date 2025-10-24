@@ -1,4 +1,4 @@
-# TensorFlow Model Analysis - Stage 6 (COMMUNICATE) Evaluation
+# TensorFlow Model Analysis - Stage 6 (SHIP) Evaluation
 
 ## Summary
 TensorFlow Model Analysis (TFMA) provides moderate to strong capabilities for communicating evaluation results. The framework automatically captures and stores evaluation artifacts with metadata, supports multiple output formats (proto-based), and offers integrated visualization components for Jupyter notebooks. However, it lacks sophisticated versioning, reproducibility manifests, and modern MLOps platform integrations. The distribution capabilities are primarily focused on file-based outputs rather than automated publishing to external platforms.

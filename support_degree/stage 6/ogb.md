@@ -1,4 +1,4 @@
-# OGB (Open Graph Benchmark) - Stage 6 (COMMUNICATE) Evaluation
+# OGB (Open Graph Benchmark) - Stage 6 (SHIP) Evaluation
 
 ## Summary
 OGB is a benchmark framework for graph machine learning, not primarily an evaluation framework with comprehensive communication and distribution capabilities. It provides basic artifact management through its evaluator and dataset classes, but lacks sophisticated versioning, reporting, and distribution features typical of modern MLOps frameworks.

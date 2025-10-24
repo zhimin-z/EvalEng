@@ -1,4 +1,4 @@
-# jitsi__jiwer - Stage 6 (COMMUNICATE) Evaluation
+# jitsi__jiwer - Stage 6 (SHIP) Evaluation
 
 ## Summary
 JiWER is a minimalist evaluation library focused exclusively on computing ASR metrics (WER, MER, WIL, WIP, CER). It is a pure calculation library with no evaluation orchestration capabilities. As such, it has virtually no Stage 6 communication features—no artifact management, no versioning integration, no reporting generation, and no distribution channel support. Users must build all communication infrastructure themselves.

@@ -1,4 +1,4 @@
-# TruLens - Stage 6 (COMMUNICATE) Evaluation
+# TruLens - Stage 6 (SHIP) Evaluation
 
 ## Summary
 TruLens demonstrates strong artifact management and versioning capabilities through its database-centric architecture, but has limited built-in support for report generation and distribution channels. The framework excels at capturing execution metadata and maintaining reproducibility through database records, though it lacks native support for stakeholder-specific reporting templates and automated distribution workflows.

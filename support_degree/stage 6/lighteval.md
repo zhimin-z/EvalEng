@@ -1,4 +1,4 @@
-# Lighteval - Stage 6 (COMMUNICATE) Evaluation
+# Lighteval - Stage 6 (SHIP) Evaluation
 
 ## Summary
 Lighteval provides solid artifact management with automatic metadata capture and detailed result storage, basic versioning through environment tracking, extensive reporting via JSON results and Hub integration, but strong distribution capabilities through multiple MLOps integrations. The framework excels at packaging evaluation results for sharing but lacks advanced reproducibility features like containerization.
@@ -256,4 +256,4 @@ Why not 2: Goes beyond basic single-platform integration. Has multiple distribut
 
 ## Overall Assessment
 
-Lighteval scores 8/12 on Stage 6 (COMMUNICATE). It excels at distribution through Hub integration and supports multiple deployment backends, making results easily shareable. However, it lacks advanced features like reproducibility manifests, query interfaces, visualizations, and notification systems. The framework is suitable for sharing evaluation results but requires external tools for advanced analysis and comparison.
+Lighteval scores 8/12 on Stage 6 (SHIP). It excels at distribution through Hub integration and supports multiple deployment backends, making results easily shareable. However, it lacks advanced features like reproducibility manifests, query interfaces, visualizations, and notification systems. The framework is suitable for sharing evaluation results but requires external tools for advanced analysis and comparison.

@@ -1,4 +1,4 @@
-# openai/human-eval - Stage 6 (COMMUNICATE) Evaluation
+# openai/human-eval - Stage 6 (SHIP) Evaluation
 
 ## Summary
 The HumanEval framework is a minimal evaluation harness focused on code generation correctness testing. It has extremely limited communication capabilities, providing only basic result output to JSONL files with pass/fail status. There are no artifact management, versioning, reporting, or distribution features beyond simple file I/O.

@@ -1,4 +1,4 @@
-# ann-benchmarks - Stage 6 (COMMUNICATE) Evaluation
+# ann-benchmarks - Stage 6 (SHIP) Evaluation
 
 ## Summary
 ann-benchmarks is a benchmarking harness for approximate nearest neighbor (ANN) algorithms. It has minimal communication and distribution features, primarily focused on running benchmarks rather than packaging and distributing evaluation artifacts. Results are stored as HDF5 files with basic metadata, but there's no versioning system, comprehensive artifact management, stakeholder-specific reporting, or integration with external platforms.

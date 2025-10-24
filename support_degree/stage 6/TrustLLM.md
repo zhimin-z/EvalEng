@@ -1,4 +1,4 @@
-# TrustLLM - Stage 6 (COMMUNICATE) Evaluation
+# TrustLLM - Stage 6 (SHIP) Evaluation
 
 ## Summary
 TrustLLM is a comprehensive trustworthiness evaluation framework for LLMs that provides minimal communication capabilities. The framework focuses primarily on evaluation execution rather than result communication, offering basic artifact storage through JSON files but lacking sophisticated versioning, reporting, and distribution features. Results are saved locally with no built-in comparison, packaging, or publication mechanisms.

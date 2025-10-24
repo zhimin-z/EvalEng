@@ -1,4 +1,4 @@
-# AutoRAG - Stage 6 (COMMUNICATE) Evaluation
+# AutoRAG - Stage 6 (SHIP) Evaluation
 
 ## Summary
 AutoRAG provides comprehensive artifact management with automatic metadata capture, detailed folder structures, and trial tracking. It includes basic version control through trial.json, supports multiple export formats (CSV, parquet), and offers deployment options (API, web interface) but lacks advanced features like git integration, dependency pinning, stakeholder-specific reporting templates, and comprehensive distribution channel integrations.

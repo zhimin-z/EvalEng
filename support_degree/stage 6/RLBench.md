@@ -1,7 +1,7 @@
-# RLBench - Stage 6 (COMMUNICATE) Evaluation
+# RLBench - Stage 6 (SHIP) Evaluation
 
 ## Summary
-RLBench is a robot learning benchmark and simulation environment, not an evaluation framework. It focuses on providing robotic manipulation tasks for training RL/IL agents, not on evaluating models with result packaging, versioning, or distribution features. As such, it lacks almost all Stage 6 COMMUNICATE capabilities that would be expected in an evaluation framework.
+RLBench is a robot learning benchmark and simulation environment, not an evaluation framework. It focuses on providing robotic manipulation tasks for training RL/IL agents, not on evaluating models with result packaging, versioning, or distribution features. As such, it lacks almost all Stage 6 SHIP capabilities that would be expected in an evaluation framework.
 
 ## Feature Ratings
 
@@ -213,7 +213,7 @@ It does not focus on:
 3. Demo Generation (`rlbench/dataset_generator.py`): Creates training datasets
 4. Gym Integration (`rlbench/gym.py`): Standard RL interface
 
-### Missing COMMUNICATE Features:
+### Missing SHIP Features:
 
 All Stage 6 features are absent because RLBench is designed for task execution and data generation, not evaluation result management and communication.
 

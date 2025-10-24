@@ -1,4 +1,4 @@
-# VLMEvalKit - Stage 6 (COMMUNICATE) Evaluation
+# VLMEvalKit - Stage 6 (SHIP) Evaluation
 
 ## Summary
 VLMEvalKit is a comprehensive evaluation toolkit for large vision-language models with strong artifact management and basic versioning, but minimal built-in reporting/visualization and very limited distribution automation. Results are primarily stored as Excel/TSV files with straightforward directory structures. The framework focuses heavily on evaluation execution rather than result communication.

@@ -1,4 +1,4 @@
-# MLCommons Inference - Stage 6 (COMMUNICATE) Evaluation
+# MLCommons Inference - Stage 6 (SHIP) Evaluation
 
 ## Summary
 The MLCommons Inference repository demonstrates a mature production-level framework with extensive artifact management, comprehensive documentation, and sophisticated result packaging capabilities. It provides strong versioning/reproducibility features through loadgen integration and supports multiple distribution channels. However, stakeholder-specific reporting is somewhat limited, and some documentation is scattered across subdirectories.

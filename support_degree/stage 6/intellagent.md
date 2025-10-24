@@ -1,4 +1,4 @@
-# IntellAgent - Stage 6 (COMMUNICATE) Evaluation
+# IntellAgent - Stage 6 (SHIP) Evaluation
 
 ## Summary
 IntellAgent is a multi-agent framework for evaluating conversational AI systems through simulation. It focuses heavily on generating and running simulations but has minimal built-in capabilities for communication, distribution, and result packaging. The framework saves basic outputs (CSV results, logs, SQLite database) but lacks sophisticated artifact management, versioning, reporting, or distribution features found in mature evaluation frameworks.

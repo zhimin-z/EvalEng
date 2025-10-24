@@ -1,4 +1,4 @@
-# RewardBench (allenai__reward-bench) - Stage 6 (COMMUNICATE) Evaluation
+# RewardBench (allenai__reward-bench) - Stage 6 (SHIP) Evaluation
 
 ## Summary
 RewardBench is a benchmark for evaluating reward models used in RLHF. The framework provides basic artifact management through saving results to JSON files and HuggingFace Hub, but lacks sophisticated versioning, reproducibility manifests, stakeholder-specific reporting, or automated distribution capabilities. Communication features are primarily manual and require custom scripting.

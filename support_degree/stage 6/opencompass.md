@@ -1,4 +1,4 @@
-# OpenCompass - Stage 6 (COMMUNICATE) Evaluation
+# OpenCompass - Stage 6 (SHIP) Evaluation
 
 ## Summary
 OpenCompass provides robust artifact management through its work directory structure and configuration-based tracking system. It captures comprehensive metadata about evaluation runs but lacks advanced features for versioning integration, stakeholder-specific reporting templates, and distribution channel automation. The framework excels at organizing results but has minimal built-in capabilities for reproducibility manifests, automated report generation, or integration with MLOps platforms.
@@ -162,7 +162,7 @@ From README.md:
 
 ## Overall Assessment
 
-OpenCompass scores 5/12 on Stage 6 (COMMUNICATE). While it handles basic artifact storage through its work directory structure and preserves evaluation configurations, it lacks the advanced features needed for enterprise-grade evaluation management. The framework would benefit significantly from:
+OpenCompass scores 5/12 on Stage 6 (SHIP). While it handles basic artifact storage through its work directory structure and preserves evaluation configurations, it lacks the advanced features needed for enterprise-grade evaluation management. The framework would benefit significantly from:
 
 - A structured artifact management system with querying capabilities
 - Automated reproducibility tracking (git, dependencies, environment)

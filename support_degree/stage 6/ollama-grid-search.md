@@ -1,4 +1,4 @@
-# ollama-grid-search - Stage 6 (COMMUNICATE) Evaluation
+# ollama-grid-search - Stage 6 (SHIP) Evaluation
 
 ## Summary
 Ollama-grid-search is a desktop application for evaluating LLM models through grid search and A/B testing. It has strong artifact management with automatic capture and SQLite-based storage, solid version control through JSON experiment logs with reproducibility manifests, basic reporting via JSON exports, but minimal distribution capabilities beyond local file exports. The tool is designed primarily for individual researchers rather than team/production environments.

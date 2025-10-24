@@ -1,4 +1,4 @@
-# Overcooked AI - Stage 6 (COMMUNICATE) Evaluation
+# Overcooked AI - Stage 6 (SHIP) Evaluation
 
 ## Summary
 

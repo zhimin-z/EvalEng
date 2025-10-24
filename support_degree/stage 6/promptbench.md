@@ -1,4 +1,4 @@
-# microsoft__promptbench - Stage 6 (COMMUNICATE) Evaluation
+# microsoft__promptbench - Stage 6 (SHIP) Evaluation
 
 ## Summary
 PromptBench is primarily a research evaluation framework focused on testing LLMs with various prompts and adversarial attacks. While it provides basic result storage and some visualization capabilities, it lacks comprehensive artifact management, versioning, formal reporting, and distribution features expected of a production-grade evaluation framework. The tool appears designed for academic research rather than enterprise deployment scenarios.

@@ -1,4 +1,4 @@
-# PyKEEN - Stage 6 (COMMUNICATE) Evaluation
+# PyKEEN - Stage 6 (SHIP) Evaluation
 
 ## Summary
 PyKEEN is a Python library for knowledge graph embedding models. While it excels at model training and evaluation computation, its communication and distribution capabilities are minimal. The framework has no built-in artifact management system, no versioning/reproducibility manifests, no stakeholder-specific reporting, and extremely limited distribution channels. Results are returned as Python objects with some integration with external trackers like MLflow and W&B, but these require manual setup and don't provide comprehensive artifact management out-of-the-box.

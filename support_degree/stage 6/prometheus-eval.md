@@ -1,4 +1,4 @@
-# Prometheus-Eval - Stage 6 (COMMUNICATE) Evaluation
+# Prometheus-Eval - Stage 6 (SHIP) Evaluation
 
 ## Summary
 Prometheus-Eval is a framework for evaluating LLMs using specialized judge models. The repository includes training pipelines, evaluation tools, and the BiGGen-Bench benchmark. Stage 6 communication capabilities are minimal - the framework focuses on inference and evaluation rather than comprehensive artifact management, versioning, reporting, or distribution. Most features for packaging results and sharing outputs are absent or require external tooling.

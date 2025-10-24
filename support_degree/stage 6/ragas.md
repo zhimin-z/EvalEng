@@ -1,4 +1,4 @@
-# ragas - Stage 6 (COMMUNICATE) Evaluation
+# ragas - Stage 6 (SHIP) Evaluation
 
 ## Summary
 Ragas provides basic artifact management through local CSV/JSONL storage and experiments framework, but lacks sophisticated versioning, reproducibility manifests, automated reporting, and distribution integrations. The framework focuses on evaluation execution rather than result communication. Examples show CSV output capabilities, but no built-in reporting templates, dashboards, or platform integrations are evident.

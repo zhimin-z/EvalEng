@@ -1,4 +1,4 @@
-# SimplerEnv - Stage 6 (COMMUNICATE) Evaluation
+# SimplerEnv - Stage 6 (SHIP) Evaluation
 
 ## Summary
 SimplerEnv is a robotics simulation evaluation framework built on ManiSkill2/SAPIEN. It focuses on sim-to-real policy evaluation but has minimal artifact management and no systematic result communication features. Results are saved as videos and pickles, but there's no querying, comparison, versioning, reporting, or distribution infrastructure.
@@ -240,7 +240,7 @@ SimplerEnv is a research evaluation framework focused on sim-to-real robotics, n
 - Good policy inference examples
 - Detailed environment building documentation
 
-### Critical Gaps for COMMUNICATE Stage:
+### Critical Gaps for SHIP Stage:
 1. No Artifact Management: Results are videos + filenames, no structured metadata
 2. No Versioning: Zero reproducibility infrastructure
 3. No Reporting: Just videos and print statements

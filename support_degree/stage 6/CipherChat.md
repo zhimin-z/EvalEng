@@ -1,4 +1,4 @@
-# CipherChat - Stage 6 (COMMUNICATE) Evaluation
+# CipherChat - Stage 6 (SHIP) Evaluation
 
 ## Summary
 CipherChat is a research framework for testing LLM safety through cipher-based prompts, not a general-purpose evaluation framework. It has minimal artifact management, no versioning infrastructure, basic result storage, and no distribution capabilities. The focus is on capturing query-response pairs for research analysis rather than comprehensive evaluation artifact management.
