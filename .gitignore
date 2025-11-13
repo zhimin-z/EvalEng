@@ -5,7 +5,6 @@ repos/
 papers/
 readme/
 workflows/
-guidelines/
 configurations/
 .env
 SD.ipynb
