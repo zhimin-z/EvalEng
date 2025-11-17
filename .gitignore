@@ -1,11 +1,7 @@
 
 .DS_Store
+.env
 *.venv
 repos/
 papers/
-readme/
 maturities/
-configurations/
-.env
-SD.ipynb
-EU.ipynb
