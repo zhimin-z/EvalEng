@@ -5,10 +5,10 @@
 
 ## Evaluation Format
 
-For each feature, you will complete this structure:
+For each capability, you will complete this structure:
 
 ```
-S1FX: [Feature Name]
+S1FX: [Capability Name]
 Grade: [Absent/Partial/Present] (XX% coverage)
 Supports: [Sub-capability 1] ✓/✗, [Sub-capability 2] ✓/✗, ...
 Documentation: [Quality assessment: Minimal/Moderate/Comprehensive]
@@ -18,13 +18,13 @@ Evidence: [Specific links, code examples, or behavioral observations supporting 
 **Coverage calculation:** `number of ✓ / (number of ✓ + number of ✗)`
 
 **Grade mapping:**
-- **Absent (0-30%)**: Feature missing, non-functional, or <2 sub-capabilities present
-- **Partial (30-80%)**: Feature functional for common cases with significant gaps; 2-4 sub-capabilities present
+- **Absent (0-30%)**: Capability missing, non-functional, or <2 sub-capabilities present
+- **Partial (30-80%)**: Capability functional for common cases with significant gaps; 2-4 sub-capabilities present
 - **Present (80-100%)**: Production-ready with comprehensive support; 5+ sub-capabilities present and well-integrated
 
 ---
 
-## Feature 1: Benchmark Loading & Validation
+## Capability 1: Benchmark Loading & Validation
 
 **Purpose:** Harness must accept construct-valid benchmark specifications as input without establishing validity itself. Benchmark $B = (C, D, P, \mu, R_{ref})$ includes: construct definition $C$, dataset $D$, prompt specification $P$, measurement protocol $\mu$, and validity evidence $R_{ref}$ (sampling rationale, known limitations, confound analyses).
 
@@ -67,7 +67,7 @@ Evidence: [Link to benchmark spec code, example files, validation error examples
 
 ---
 
-## Feature 2: System Under Test Specification
+## Capability 2: System Specification & Configuration
 
 **Purpose:** Configure target system(s) $M = (f_\theta, V, \Lambda, \omega)$ where $f_\theta$ is model function, $V$ is version identifier, $\Lambda$ is inference configuration (temperature, top_p, top_k, max_tokens, stop sequences, sampling strategy), and $\omega$ is resource specification (GPU/CPU allocation, memory, batch sizes, timeouts, authentication). Maintains exact system lineage for reproducibility and enables comparative evaluation across multiple system configurations $\{M_i\}$.
 
@@ -93,7 +93,7 @@ Evidence: [Link to benchmark spec code, example files, validation error examples
 
 **Report template:**
 ```
-S1F2: System Under Test Specification
+S1F2: System Specification & Configuration
 Grade: [Absent/Partial/Present] (XX% coverage)
 Supports:
   - Multiple model provider support ✓/✗
@@ -110,7 +110,7 @@ Evidence: [Link to provider list, example configs, version spec code, multi-mode
 
 ---
 
-## Feature 3: Measurement Protocol Selection
+## Capability 3: Protocol Selection & Configuration
 
 **Purpose:** Select and configure measurement approach $\mu$ from benchmark-provided options. Must support diverse modalities (human judgment, LLM-as-judge, algorithmic metrics, ensembles) with standardized interface $\mu: O \rightarrow (S, U, R, M)$ mapping outputs to scores $S$, uncertainties $U$, rationales $R$, and metadata $M$. Harness operationalizes measurement without establishing construct validity (already established by benchmark).
 
@@ -137,7 +137,7 @@ Evidence: [Link to provider list, example configs, version spec code, multi-mode
 
 **Report template:**
 ```
-S1F3: Measurement Protocol Selection
+S1F3: Protocol Selection & Configuration
 Grade: [Absent/Partial/Present] (XX% coverage)
 Supports:
   - Human judgment support ✓/✗
@@ -154,7 +154,7 @@ Evidence: [Link to modality examples, crowdsourcing integration, judge config ex
 
 ---
 
-## Feature 4: Baseline Specification
+## Capability 4: Baseline Specification & Configuration
 
 **Purpose:** Explicitly designate baseline systems for meaningful comparative context: random baselines, majority baselines, well-tuned classical methods, state-of-the-art models, human performance. Fair comparison criteria ensure same data splits, measurement protocol, and hyperparameter tuning budget across systems. Enables convergent validity evidence (target outperforms simpler alternatives) and discriminant validity assessment (performance relative to human capability).
 
@@ -179,7 +179,7 @@ Evidence: [Link to modality examples, crowdsourcing integration, judge config ex
 
 **Report template:**
 ```
-S1F4: Baseline Specification
+S1F4: Baseline Specification & Configuration
 Grade: [Absent/Partial/Present] (XX% coverage)
 Supports:
   - Random baseline support ✓/✗
@@ -196,93 +196,7 @@ Evidence: [Link to baseline types, fair comparison code, budget tracking example
 
 ---
 
-## Feature 5: Statistical Analysis Protocol
-
-**Purpose:** Pre-specify complete statistical analysis plan $\Sigma$ BEFORE evaluation execution, preventing p-hacking and selective reporting. Includes sample size specification with power analysis (detect effect size $\delta$ with power $1-\beta$ at significance $\alpha$), primary/secondary metrics, significance thresholds, multiple comparison corrections (Bonferroni, Benjamini-Hochberg FDR, Holm-Bonferroni), uncertainty quantification method (bootstrap CIs with resampling specification or parametric CIs with documented assumptions), and stratification variables (demographics, task characteristics, difficulty).
-
-**Essential Capabilities:**
-1. **Plan pre-specification requirement** - Harness requires or strongly supports specifying $\Sigma$ before execution
-2. **Sample size justification** - Power analysis with effect size assumptions and achieved power reporting
-3. **Primary/secondary metric specification** - Clear designation of main objectives vs exploratory analyses
-4. **Significance thresholds** - Configurable $\alpha$ levels with Bonferroni or other per-test adjustment
-5. **Multiple comparison corrections** - 3+ methods available (Bonferroni, Benjamini-Hochberg FDR, Holm-Bonferroni, others)
-6. **Uncertainty quantification method** - Multiple CI approaches (bootstrap percentile, BCa, parametric with assumption checking)
-7. **Stratification variables** - Can specify demographics, task types, difficulty levels for subgroup analysis
-8. **Plan adherence enforcement** - Harness follows pre-specified plan; deviations documented
-
-**Look for:**
-- Documentation showing required/supported pre-specification workflow
-- Power analysis examples with effect size assumptions
-- Code showing plan storage and versioning
-- Examples of correction method specification
-- Bootstrap CI or parametric CI code with parameter documentation
-- Stratification variable configuration examples
-- Evidence that harness enforces plan adherence (or documents deviations)
-- Test cases showing plan specification and enforcement
-
-**Report template:**
-```
-S1F5: Statistical Analysis Protocol
-Grade: [Absent/Partial/Present] (XX% coverage)
-Supports:
-  - Plan pre-specification requirement ✓/✗
-  - Sample size justification ✓/✗
-  - Primary/secondary metric specification ✓/✗
-  - Significance thresholds ✓/✗
-  - Multiple comparison corrections ✓/✗
-  - Uncertainty quantification method ✓/✗
-  - Stratification variables ✓/✗
-  - Plan adherence enforcement ✓/✗
-Documentation: [Minimal/Moderate/Comprehensive]
-Evidence: [Link to plan spec code, power analysis examples, correction methods list, CI methodology]
-```
-
----
-
-## Feature 6: Cross-Validation Strategy
-
-**Purpose:** Define evaluation structure BEFORE model exposure to data. Select CV approach based on characteristics (k-fold for general, stratified k-fold for class imbalance, leave-one-out for small datasets, time-series forward chaining for temporal data, nested CV for simultaneous tuning/evaluation). Specify split preservation mechanism ensuring deterministic partitions across runs (fixed seed or explicit indices). Supports rigorous statistical comparison and prevents data leakage/optimistic bias.
-
-**Essential Capabilities:**
-1. **Multiple CV methods** - Supports 4+ approaches: k-fold, stratified k-fold, leave-one-out, time-series forward chaining, nested CV
-2. **Deterministic split generation** - Can reproduce identical splits across runs via fixed seed or explicit indices
-3. **Stratification control** - Can enforce balanced class distributions or other stratification across folds
-4. **Temporal respect** - Time-series aware splitting that respects temporal ordering
-5. **Leakage prevention** - Enforces test set isolation; prevents data leakage between train/validation/test
-6. **Split specification** - Can explicitly specify fold indices or seeds for reproducibility
-7. **Integration with statistics** - CV structure properly reflected in uncertainty estimates and aggregation
-8. **Split reusability** - Can save/load CV splits for reproducible re-runs
-
-**Look for:**
-- Documentation listing supported CV methods with appropriate use cases
-- Code showing deterministic split generation with seed control
-- Stratification options and examples
-- Time-series forward chaining implementation
-- Explicit leakage prevention checks (documentation or code)
-- Split indices or seed serialization for reproducibility
-- Test cases showing CV reproducibility
-- Integration with statistical aggregation (e.g., per-fold results aggregated correctly)
-
-**Report template:**
-```
-S1F6: Cross-Validation Strategy
-Grade: [Absent/Partial/Present] (XX% coverage)
-Supports:
-  - Multiple CV methods ✓/✗
-  - Deterministic split generation ✓/✗
-  - Stratification control ✓/✗
-  - Temporal respect ✓/✗
-  - Leakage prevention ✓/✗
-  - Split specification ✓/✗
-  - Integration with statistics ✓/✗
-  - Split reusability ✓/✗
-Documentation: [Minimal/Moderate/Comprehensive]
-Evidence: [Link to CV methods documentation, split generation code, leakage prevention examples, reproducibility tests]
-```
-
----
-
-## Feature 7: Resource Budget Planning
+## Capability 5: Resource Budget Planning
 
 **Purpose:** Project evaluation costs and establish operational constraints $\rho$ (compute budget: GPU/CPU hours, memory; cost limits: API token costs, cloud compute; time constraints: wall-clock deadlines, throughput requirements). Cost estimation via token-based modeling (input tokens × output tokens × samples × price per token) and API pricing structures. Enables tradeoff decisions: sample sizes vs statistical power, measurement protocol selection (human expensive vs LLM-judge cheaper), baseline scope, CV fold count. Prevents runs from exceeding resource limits.
 
@@ -308,7 +222,7 @@ Evidence: [Link to CV methods documentation, split generation code, leakage prev
 
 **Report template:**
 ```
-S1F7: Resource Budget Planning
+S1F5: Resource Budget Planning
 Grade: [Absent/Partial/Present] (XX% coverage)
 Supports:
   - Compute budget specification ✓/✗
@@ -325,7 +239,93 @@ Evidence: [Link to budget config examples, cost model code, tradeoff analysis ex
 
 ---
 
-## Feature 8: Provenance Configuration
+## Capability 6: Cross-Validation Configuration
+
+**Purpose:** Define evaluation structure BEFORE model exposure to data. Select CV approach based on characteristics (k-fold for general, stratified k-fold for class imbalance, leave-one-out for small datasets, time-series forward chaining for temporal data, nested CV for simultaneous tuning/evaluation). Specify split preservation mechanism ensuring deterministic partitions across runs (fixed seed or explicit indices). Supports rigorous statistical comparison and prevents data leakage/optimistic bias.
+
+**Essential Capabilities:**
+1. **Multiple CV methods** - Supports 4+ approaches: k-fold, stratified k-fold, leave-one-out, time-series forward chaining, nested CV
+2. **Deterministic split generation** - Can reproduce identical splits across runs via fixed seed or explicit indices
+3. **Stratification control** - Can enforce balanced class distributions or other stratification across folds
+4. **Temporal respect** - Time-series aware splitting that respects temporal ordering
+5. **Leakage prevention** - Enforces test set isolation; prevents data leakage between train/validation/test
+6. **Split specification** - Can explicitly specify fold indices or seeds for reproducibility
+7. **Integration with statistics** - CV structure properly reflected in uncertainty estimates and aggregation
+8. **Split reusability** - Can save/load CV splits for reproducible re-runs
+
+**Look for:**
+- Documentation listing supported CV methods with appropriate use cases
+- Code showing deterministic split generation with seed control
+- Stratification options and examples
+- Time-series forward chaining implementation
+- Explicit leakage prevention checks (documentation or code)
+- Split indices or seed serialization for reproducibility
+- Test cases showing CV reproducibility
+- Integration with statistical aggregation (e.g., per-fold results aggregated correctly)
+
+**Report template:**
+```
+S1F6: Cross-Validation Configuration
+Grade: [Absent/Partial/Present] (XX% coverage)
+Supports:
+  - Multiple CV methods ✓/✗
+  - Deterministic split generation ✓/✗
+  - Stratification control ✓/✗
+  - Temporal respect ✓/✗
+  - Leakage prevention ✓/✗
+  - Split specification ✓/✗
+  - Integration with statistics ✓/✗
+  - Split reusability ✓/✗
+Documentation: [Minimal/Moderate/Comprehensive]
+Evidence: [Link to CV methods documentation, split generation code, leakage prevention examples, reproducibility tests]
+```
+
+---
+
+## Capability 7: Analysis Plan Specification
+
+**Purpose:** Pre-specify complete statistical analysis plan $\Sigma$ BEFORE evaluation execution, preventing p-hacking and selective reporting. Includes sample size specification with power analysis (detect effect size $\delta$ with power $1-\beta$ at significance $\alpha$), primary/secondary metrics, significance thresholds, multiple comparison corrections (Bonferroni, Benjamini-Hochberg FDR, Holm-Bonferroni), uncertainty quantification method (bootstrap CIs with resampling specification or parametric CIs with documented assumptions), and stratification variables (demographics, task characteristics, difficulty).
+
+**Essential Capabilities:**
+1. **Plan pre-specification requirement** - Harness requires or strongly supports specifying $\Sigma$ before execution
+2. **Sample size justification** - Power analysis with effect size assumptions and achieved power reporting
+3. **Primary/secondary metric specification** - Clear designation of main objectives vs exploratory analyses
+4. **Significance thresholds** - Configurable $\alpha$ levels with Bonferroni or other per-test adjustment
+5. **Multiple comparison corrections** - 3+ methods available (Bonferroni, Benjamini-Hochberg FDR, Holm-Bonferroni, others)
+6. **Uncertainty quantification method** - Multiple CI approaches (bootstrap percentile, BCa, parametric with assumption checking)
+7. **Stratification variables** - Can specify demographics, task types, difficulty levels for subgroup analysis
+8. **Plan adherence enforcement** - Harness follows pre-specified plan; deviations documented
+
+**Look for:**
+- Documentation showing required/supported pre-specification workflow
+- Power analysis examples with effect size assumptions
+- Code showing plan storage and versioning
+- Examples of correction method specification
+- Bootstrap CI or parametric CI code with parameter documentation
+- Stratification variable configuration examples
+- Evidence that harness enforces plan adherence (or documents deviations)
+- Test cases showing plan specification and enforcement
+
+**Report template:**
+```
+S1F7: Analysis Plan Specification
+Grade: [Absent/Partial/Present] (XX% coverage)
+Supports:
+  - Plan pre-specification requirement ✓/✗
+  - Sample size justification ✓/✗
+  - Primary/secondary metric specification ✓/✗
+  - Significance thresholds ✓/✗
+  - Multiple comparison corrections ✓/✗
+  - Uncertainty quantification method ✓/✗
+  - Stratification variables ✓/✗
+  - Plan adherence enforcement ✓/✗
+Documentation: [Minimal/Moderate/Comprehensive]
+Evidence: [Link to plan spec code, power analysis examples, correction methods list, CI methodology]
+```
+
+---
+
+## Capability 8: Provenance Tracking & Configuration
 
 **Purpose:** Define comprehensive execution metadata capture strategy for complete reproducibility. Specify metadata tracking scope: timestamps (temporal tracking), model versions (exact system identification), configuration parameters (deterministic execution), random seeds (stochastic process control), data version hashes (input integrity), environment details (platform dependencies). Establishes requirements ensuring complete lineage from inputs $(M, B, \Sigma, \rho)$ to outputs $(O, R, A)$. Enables bit-by-bit reproducibility for external validation and regulatory compliance.
 
@@ -353,7 +353,7 @@ Evidence: [Link to budget config examples, cost model code, tradeoff analysis ex
 
 **Report template:**
 ```
-S1F8: Provenance Configuration
+S1F8: Provenance Tracking & Configuration
 Grade: [Absent/Partial/Present] (XX% coverage)
 Supports:
   - Runtime metadata capture ✓/✗

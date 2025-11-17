@@ -5,10 +5,10 @@
 
 ## Evaluation Format
 
-For each feature, you will complete this structure:
+For each capability, you will complete this structure:
 
 ```
-S2FX: [Feature Name]
+S2FX: [Capability Name]
 Grade: [Absent/Partial/Present] (XX% coverage)
 Supports: [Sub-capability 1] ✓/✗, [Sub-capability 2] ✓/✗, ...
 Documentation: [Quality assessment: Minimal/Moderate/Comprehensive]
@@ -18,13 +18,13 @@ Evidence: [Specific links, code examples, or behavioral observations supporting 
 **Coverage calculation:** `number of ✓ / (number of ✓ + number of ✗)`
 
 **Grade mapping:**
-- **Absent (0-30%)**: Feature missing, non-functional, or <2 sub-capabilities present
-- **Partial (30-80%)**: Feature functional for common cases with significant gaps; 2-4 sub-capabilities present
+- **Absent (0-30%)**: Capability missing, non-functional, or <2 sub-capabilities present
+- **Partial (30-80%)**: Capability functional for common cases with significant gaps; 2-4 sub-capabilities present
 - **Present (80-100%)**: Production-ready with comprehensive support; 5+ sub-capabilities present and well-integrated
 
 ---
 
-## Feature 1: Data Loading & Preprocessing
+## Capability 1: Data Loading & Preprocessing
 
 **Purpose:** Load evaluation dataset $D = \{(x_i, y_i, m_i)\}_{i=1}^N$ from diverse sources with format flexibility (structured: JSON, JSONL, CSV, Parquet; databases: SQL, NoSQL; repositories: HuggingFace Datasets, TensorFlow Datasets; APIs: REST, GraphQL; cloud: S3, GCS, Azure Blob). Multi-modal support: text (plain, markdown, HTML), images (JPEG, PNG, TIFF), audio (WAV, MP3, FLAC), video, structured data, combinations. Apply preprocessing transformations specified by benchmark (tokenization, normalization, augmentation, format conversion). Support streaming for large datasets exceeding memory. Reproduce exact dataset splits across runs for deterministic evaluation.
 
@@ -69,7 +69,7 @@ Evidence: [Link to format list, multi-modal examples, streaming code, preprocess
 
 ---
 
-## Feature 2: Schema Validation & Consistency
+## Capability 2: Schema Validation & Consistency
 
 **Purpose:** Enforce dataset schema ensuring structural correctness BEFORE expensive inference. Type checking (field types match specification), structure validation (required fields present, nested structures correct), statistical property verification (value ranges reasonable, distributions match expectations, null patterns acceptable, cardinality constraints satisfied). Validate training-serving consistency critical for fairness evaluation—same preprocessing pipeline, same feature engineering, same data representation. Track schema evolution, enforce backward compatibility. Flag schema drift that could invalidate measurement comparisons or violate benchmark assumptions.
 
@@ -114,7 +114,53 @@ Evidence: [Link to schema specs, type checking code, training-serving consistenc
 
 ---
 
-## Feature 3: Pipeline Orchestration
+## Capability 3: Contamination Detection
+
+**Purpose:** Monitor for data leakage during execution that would invalidate comparative conclusions. Verify held-out sets remain isolated (test set never used for training/hyperparameter tuning, validation set not leaked). Implement benchmark material detection in model training data using exact match detection via hashing (SHA-256 of samples vs training data manifest), fuzzy matching for near-duplicates (MinHash, Jaccard similarity), n-gram overlap analysis. Track whether model has seen evaluation samples: query model provenance for training data sources, check public dataset inclusion (Common Crawl, C4, Wikipedia, GitHub), analyze model behavior on held-out vs previously-seen samples. Alert on contamination with confidence levels: high (exact match found), medium (high similarity), low (suspicious patterns). Maintain contamination logs. Support ongoing monitoring.
+
+**Essential Capabilities:**
+1. **Held-out set isolation** - Verification that test/validation sets never used for training/tuning
+2. **Exact match detection** - SHA-256 hashing of samples compared against training data manifest
+3. **Fuzzy matching** - Near-duplicate detection via MinHash, Jaccard similarity, locality-sensitive hashing
+4. **N-gram analysis** - Overlap detection at token/phrase level for paraphrase detection
+5. **Model provenance tracking** - Queries model sources for training data information
+6. **Public dataset checking** - Checks if evaluation data included in Common Crawl, C4, Wikipedia, GitHub, other public sources
+7. **Behavior analysis** - Compares model behavior on held-out vs previously-seen samples for leakage indicators
+8. **Confidence-based alerting** - Classifies contamination risk: high/medium/low confidence with evidence
+
+**Look for:**
+- Held-out set tracking and isolation code
+- Exact match detection implementation (hashing, comparison)
+- Fuzzy matching implementation (MinHash, Jaccard, LSH)
+- N-gram overlap analysis code
+- Model provenance querying (API calls to model documentation, training data disclosure)
+- Public dataset checking (Common Crawl, C4, etc.)
+- Behavior comparison analysis (performance on contaminated vs clean samples)
+- Contamination logging with confidence levels
+- Test cases showing contamination detection
+- Documentation of contamination detection methodology
+- Reporting of contamination results and confidence
+
+**Report template:**
+```
+S2F3: Contamination Detection
+Grade: [Absent/Partial/Present] (XX% coverage)
+Supports:
+  - Held-out set isolation ✓/✗
+  - Exact match detection ✓/✗
+  - Fuzzy matching ✓/✗
+  - N-gram analysis ✓/✗
+  - Model provenance tracking ✓/✗
+  - Public dataset checking ✓/✗
+  - Behavior analysis ✓/✗
+  - Confidence-based alerting ✓/✗
+Documentation: [Minimal/Moderate/Comprehensive]
+Evidence: [Link to isolation code, exact match, fuzzy matching, provenance tracking, public dataset checking]
+```
+
+---
+
+## Capability 4: Pipeline Orchestration & Coordination
 
 **Purpose:** Coordinate evaluation workflow through directed acyclic graph (DAG) based dependency management. Define task dependencies (which tasks must complete before others), enable parallel execution where tasks independent. Route task execution by type with specialized handlers: question-answering (extract question/context, format prompt, parse answer), summarization (apply length constraints, format requirements), classification (handle label spaces, multi-class vs multi-label), generation (apply length limits, sampling strategies). Apply multiple evaluation protocols with conditional branching: zero-shot (no examples), few-shot (select/format examples), chain-of-thought (reasoning prompt engineering), variations testing (robustness to perturbations). Manage task batching for efficiency, implement dynamic load balancing. Capture complete execution order for debugging/reproducibility.
 
@@ -143,7 +189,7 @@ Evidence: [Link to schema specs, type checking code, training-serving consistenc
 
 **Report template:**
 ```
-S2F3: Pipeline Orchestration
+S2F4: Pipeline Orchestration & Coordination
 Grade: [Absent/Partial/Present] (XX% coverage)
 Supports:
   - DAG-based dependency management ✓/✗
@@ -160,7 +206,7 @@ Evidence: [Link to DAG examples, task handlers, protocol configs, batching code,
 
 ---
 
-## Feature 4: Inference Execution
+## Capability 5: Inference Execution
 
 **Purpose:** Execute model $f_\theta$ on dataset $D$ with prompts $P$ and configuration $\Lambda$ to generate outputs: $f_\theta(D; P, \Lambda) \rightarrow O = \{o_i\}_{i=1}^N$. Implement efficient batching strategies (dynamic batch sizing based on input length/memory; static batching for uniform inputs). Apply rate limiting for API compliance (requests/second limits, concurrent request limits, exponential backoff on errors). Timeout handling (per-sample, global, graceful degradation). Capture comprehensive generation metadata: latency per sample, token counts for cost tracking, API errors/retries, truncation events. Respect model-specific constraints: context window limits, modality support, API versioning.
 
@@ -190,7 +236,7 @@ Evidence: [Link to DAG examples, task handlers, protocol configs, batching code,
 
 **Report template:**
 ```
-S2F4: Inference Execution
+S2F5: Inference Execution
 Grade: [Absent/Partial/Present] (XX% coverage)
 Supports:
   - Batch processing ✓/✗
@@ -202,12 +248,12 @@ Supports:
   - Model constraint respect ✓/✗
   - Generation configuration ✓/✗
 Documentation: [Minimal/Moderate/Comprehensive]
-Evidence: [Link to batching code, rate limiting impl, timeout handling, metadata capture, error classification]
+Evidence: [Link to batching code, rate limiting, timeout handling, metadata capture, error classification]
 ```
 
 ---
 
-## Feature 5: Error Recovery & Resilience
+## Capability 6: Error Recovery & Resilience
 
 **Purpose:** Handle execution disruptions ensuring evaluation completion despite failures. Automatic retry logic with exponential backoff (wait times: 1s, 2s, 4s, 8s, ...), configurable maximum retry attempts, configurable timeouts, circuit breakers with fallback strategies (pause and alert after N consecutive failures). Implement graceful degradation—continue evaluation on remaining samples when individual samples fail; mark failed samples for investigation. Capture detailed error diagnostics for root cause analysis: error types (API errors, timeouts, parsing, OOM), frequencies/patterns, failure correlation with input characteristics, stack traces/context. Distinguish recoverable errors (transient API failures) from unrecoverable (malformed inputs, incompatibility). Prevent silent failures—all errors logged and aggregated.
 
@@ -236,7 +282,7 @@ Evidence: [Link to batching code, rate limiting impl, timeout handling, metadata
 
 **Report template:**
 ```
-S2F5: Error Recovery & Resilience
+S2F6: Error Recovery & Resilience
 Grade: [Absent/Partial/Present] (XX% coverage)
 Supports:
   - Automatic retry logic ✓/✗
@@ -248,12 +294,12 @@ Supports:
   - Error aggregation ✓/✗
   - Failure correlation analysis ✓/✗
 Documentation: [Minimal/Moderate/Comprehensive]
-Evidence: [Link to retry code, circuit breaker impl, timeout handling, error classification, correlation analysis]
+Evidence: [Link to retry code, circuit breaker, timeout handling, error classification, correlation analysis]
 ```
 
 ---
 
-## Feature 6: Execution Checkpointing
+## Capability 7: Execution Checkpointing
 
 **Purpose:** Enable recovery from interruptions through automatic state persistence at configurable intervals. Checkpoint frequency specification (every N samples, every M minutes, on-demand), complete execution state preservation (results generated so far, RNG state for reproducibility, data cursor position for resumption, partial batch state, execution metadata). Support incremental resumption without recomputation—restart from last checkpoint, skip completed work, continue with remaining samples. Essential for long-running evaluations: large datasets (millions of samples), expensive models (slow inference, high cost), unreliable infrastructure (spot instances, preemption). Maintain reproducibility—resumed runs produce identical results to uninterrupted runs given same seed. Checkpoint storage with compression and integrity verification.
 
@@ -281,7 +327,7 @@ Evidence: [Link to retry code, circuit breaker impl, timeout handling, error cla
 
 **Report template:**
 ```
-S2F6: Execution Checkpointing
+S2F7: Execution Checkpointing
 Grade: [Absent/Partial/Present] (XX% coverage)
 Supports:
   - Checkpoint frequency control ✓/✗
@@ -294,51 +340,5 @@ Supports:
   - Resumption transparency ✓/✗
 Documentation: [Minimal/Moderate/Comprehensive]
 Evidence: [Link to checkpoint config, state serialization code, resumption logic, reproducibility tests]
-```
-
----
-
-## Feature 7: Contamination Detection
-
-**Purpose:** Monitor for data leakage during execution that would invalidate comparative conclusions. Verify held-out sets remain isolated (test set never used for training/hyperparameter tuning, validation set not leaked). Implement benchmark material detection in model training data using exact match detection via hashing (SHA-256 of samples vs training data manifest), fuzzy matching for near-duplicates (MinHash, Jaccard similarity), n-gram overlap analysis. Track whether model has seen evaluation samples: query model provenance for training data sources, check public dataset inclusion (Common Crawl, C4, Wikipedia, GitHub), analyze model behavior on held-out vs previously-seen samples. Alert on contamination with confidence levels: high (exact match found), medium (high similarity), low (suspicious patterns). Maintain contamination logs. Support ongoing monitoring.
-
-**Essential Capabilities:**
-1. **Held-out set isolation** - Verification that test/validation sets never used for training/tuning
-2. **Exact match detection** - SHA-256 hashing of samples compared against training data manifest
-3. **Fuzzy matching** - Near-duplicate detection via MinHash, Jaccard similarity, locality-sensitive hashing
-4. **N-gram analysis** - Overlap detection at token/phrase level for paraphrase detection
-5. **Model provenance tracking** - Queries model sources for training data information
-6. **Public dataset checking** - Checks if evaluation data included in Common Crawl, C4, Wikipedia, GitHub, other public sources
-7. **Behavior analysis** - Compares model behavior on held-out vs previously-seen samples for leakage indicators
-8. **Confidence-based alerting** - Classifies contamination risk: high/medium/low confidence with evidence
-
-**Look for:**
-- Held-out set tracking and isolation code
-- Exact match detection implementation (hashing, comparison)
-- Fuzzy matching implementation (MinHash, Jaccard, LSH)
-- N-gram overlap analysis code
-- Model provenance querying (API calls to model documentation, training data disclosure)
-- Public dataset checking (Common Crawl, C4, etc.)
-- Behavior comparison analysis (performance on contaminated vs clean samples)
-- Contamination logging with confidence levels
-- Test cases showing contamination detection
-- Documentation of contamination detection methodology
-- Reporting of contamination results and confidence
-
-**Report template:**
-```
-S2F7: Contamination Detection
-Grade: [Absent/Partial/Present] (XX% coverage)
-Supports:
-  - Held-out set isolation ✓/✗
-  - Exact match detection ✓/✗
-  - Fuzzy matching ✓/✗
-  - N-gram analysis ✓/✗
-  - Model provenance tracking ✓/✗
-  - Public dataset checking ✓/✗
-  - Behavior analysis ✓/✗
-  - Confidence-based alerting ✓/✗
-Documentation: [Minimal/Moderate/Comprehensive]
-Evidence: [Link to isolation code, exact match impl, fuzzy matching, provenance tracking, public dataset checking]
 ```
 
