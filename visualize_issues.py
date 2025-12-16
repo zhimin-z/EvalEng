@@ -11,14 +11,14 @@ if len(results_df) > 0:
     # Filter related issues
     related_df = results_df[results_df['is_related'] == True].copy()
 
-    # Replace NaN with "unspecific" for better visualization
-    related_df['stage'] = related_df['stage'].fillna('unspecific')
-    related_df['step'] = related_df['step'].fillna('unspecific')
-    related_df['strategy'] = related_df['strategy'].fillna('unspecific')
+    # Replace NaN with "unspecified" for better visualization
+    related_df['stage'] = related_df['stage'].fillna('unspecified')
+    related_df['step'] = related_df['step'].fillna('unspecified')
+    related_df['strategy'] = related_df['strategy'].fillna('unspecified')
 
-    # Convert numeric values to integers (keep "unspecific" as string)
+    # Convert numeric values to integers (keep "unspecified" as string)
     def convert_to_int_if_numeric(val):
-        if val == 'unspecific':
+        if val == 'unspecified':
             return val
         try:
             # Try to convert to float first, then to int
@@ -60,10 +60,10 @@ if len(results_df) > 0:
         strategy = row['strategy']
         hierarchy[stage][step][strategy] += 1
 
-    # Sort stages (handles numeric, roman numerals, and "unspecific")
+    # Sort stages (handles numeric, roman numerals, and "unspecified")
     def stage_sort_key(x):
-        if x == 'unspecific':
-            return (2, 0)  # Put unspecific at the end
+        if x == 'unspecified':
+            return (2, 0)  # Put unspecified at the end
         if isinstance(x, (int, float)):
             return (0, x)  # Numeric stages first, sorted by value
         roman_val = roman_to_int(x)
@@ -75,8 +75,8 @@ if len(results_df) > 0:
 
     # Helper function for sorting steps
     def step_sort_key(x):
-        if x == 'unspecific':
-            return (2, '')  # Put unspecific at the end
+        if x == 'unspecified':
+            return (2, '')  # Put unspecified at the end
         if isinstance(x, (int, float)):
             return (0, x)  # Numeric steps first, sorted by value
         if isinstance(x, str) and len(x) == 1 and x.isalpha():
@@ -91,7 +91,7 @@ if len(results_df) > 0:
     strategies_per_step = []
 
     for stage in stage_order:
-        # Sort steps (handles numeric, alphabetic, and "unspecific")
+        # Sort steps (handles numeric, alphabetic, and "unspecified")
         steps = sorted(hierarchy[stage].keys(), key=step_sort_key)
 
         for step in steps:
@@ -105,9 +105,9 @@ if len(results_df) > 0:
     for strategies_dict in strategies_per_step:
         all_strategies.update(strategies_dict.keys())
 
-    # Sort strategies (handles integers/strings, with "unspecific" at the end)
+    # Sort strategies (handles integers/strings, with "unspecified" at the end)
     strategy_order = sorted(all_strategies, key=lambda x: (
-        x == 'unspecific', x if isinstance(x, (int, float)) else 0
+        x == 'unspecified', x if isinstance(x, (int, float)) else 0
     ))
 
     # Create the plot
@@ -125,8 +125,8 @@ if len(results_df) > 0:
 
     for i, (stage, step) in enumerate(zip(stages, steps_per_stage)):
         x_positions.append(current_x)
-        # Add "Step " prefix for clarity unless it's "unspecific"
-        step_label = f"Step {step}" if step != 'unspecific' else step
+        # Add "Step " prefix for clarity unless it's "unspecified"
+        step_label = f"Step {step}" if step != 'unspecified' else step
         x_labels.append(step_label)
         stage_positions[stage].append(current_x)
         current_x += 1
@@ -175,8 +175,8 @@ if len(results_df) > 0:
         positions = stage_positions[stage]
         if positions:
             center_x = np.mean(positions)
-            # Add "Stage " prefix for clarity unless it's "unspecific"
-            stage_label = f"Stage {stage}" if stage != 'unspecific' else stage
+            # Add "Stage " prefix for clarity unless it's "unspecified"
+            stage_label = f"Stage {stage}" if stage != 'unspecified' else stage
             ax.text(center_x, 0.97, stage_label, transform=ax.get_xaxis_transform(),
                    ha='center', va='top', fontsize=11, fontweight='bold',
                    bbox=dict(boxstyle='round,pad=0.5', facecolor='lightgray', alpha=0.7))
@@ -207,22 +207,22 @@ if len(results_df) > 0:
     print(f"\nIssues by Stage, Step, and Strategy:")
     for stage in stage_order:
         stage_total = sum(sum(strategies.values()) for strategies in hierarchy[stage].values())
-        print(f"\nStage {stage if stage != 'unspecific' else 'unspecific'}: {stage_total} issues")
+        print(f"\nStage {stage if stage != 'unspecified' else 'unspecified'}: {stage_total} issues")
 
         # Sort steps for this stage (using the same step_sort_key function)
         steps = sorted(hierarchy[stage].keys(), key=step_sort_key)
 
         for step in steps:
             step_total = sum(hierarchy[stage][step].values())
-            print(f"  Step {step if step != 'unspecific' else 'unspecific'}: {step_total} issues")
+            print(f"  Step {step if step != 'unspecified' else 'unspecified'}: {step_total} issues")
 
             # Sort strategies for this step
             strategies = sorted(hierarchy[stage][step].keys(), key=lambda x: (
-                x == 'unspecific', x if isinstance(x, (int, float)) else 0
+                x == 'unspecified', x if isinstance(x, (int, float)) else 0
             ))
 
             for strategy in strategies:
                 count = hierarchy[stage][step][strategy]
-                print(f"    Strategy {strategy if strategy != 'unspecific' else 'unspecific'}: {count} issues")
+                print(f"    Strategy {strategy if strategy != 'unspecified' else 'unspecified'}: {count} issues")
 
     plt.close()
