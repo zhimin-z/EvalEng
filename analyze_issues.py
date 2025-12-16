@@ -13,74 +13,75 @@ dotenv.load_dotenv(override=True)
 MODEL = "anthropic/claude-haiku-4-5-20251001"
 
 # Read the issues CSV
-df = pd.read_csv("github_issues.old.csv", encoding="utf-8")
-df = df.tail(300)  # Test with last 300 samples only
+df = pd.read_csv("data/github_issues.csv", encoding="utf-8")
+sample_size = min(400, len(df))
+df = df.sample(n=sample_size, random_state=42)  # Randomly select a sample of issues for analysis
 print(f"Total issues to analyze: {len(df)}")
 
 # Condensed version of the evaluation workflow phases
-STAGES_SUMMARY = """Evaluation Workflow Phases:
+STAGES_SUMMARY = """Unified Evaluation Workflow:
 
-**Phase 0: Provisioning** - Establishing the technical foundation—you cannot evaluate what you cannot run.
+**Phase 0: Provisioning** - Setting up the runtime environment to make evaluation executable.
 - Step A: Harness Installation
-  * Definition: Installing dependencies, compiling binaries, building containers, and configuring execution backends.
+  * Definition: Installing the evaluation framework and its dependencies.
   * Strategy 1: Git Clone - Cloning repositories and building from source code
-  * Strategy 2: PyPI Packages - Installing via pip, requirements files, git-based installations
+  * Strategy 2: PyPI Packages - Installing via pip from PyPI or git URLs
   * Strategy 3: Node Package - Installing via npm, npx, or Homebrew
-  * Strategy 4: Binary Packages - Downloading standalone executables
-  * Strategy 5: Container Images - Pulling Docker/OCI images
+  * Strategy 4: Binary Packages - Downloading standalone executable files
+  * Strategy 5: Container Images - Pulling Docker/OCI container images
 - Step B: Credential Configuration
-  * Definition: Authenticating with model repositories, dataset platforms, evaluation services, and leaderboard APIs.
-  * Strategy 1: Model API Authentication - API keys for remote inference (OpenAI, Anthropic, HuggingFace APIs)
-  * Strategy 2: Artifact Repository Authentication - Accessing gated/private models and datasets (HuggingFace Hub, Zenodo)
-  * Strategy 3: Evaluation Platform Authentication - Account login for platform services and leaderboards
+  * Definition: Setting up authentication credentials to access external services and resources.
+  * Strategy 1: Model API Authentication - Configuring API keys to call remote model inference endpoints (OpenAI, Anthropic, HuggingFace APIs)
+  * Strategy 2: Artifact Repository Authentication - Authenticating to download models and datasets from repositories (HuggingFace Hub, Zenodo)
+  * Strategy 3: Evaluation Platform Authentication - Logging into evaluation platform accounts for accessing services and leaderboards
 
-**Phase I: Specification** - Defining the evaluation experiment—what to test, what to test it with, and how to judge the results.
+**Phase I: Specification** - Configuring what to evaluate and how to evaluate it.
 - Step A: SUT Preparation
-  * Definition: Specifying how to interact with the System Under Test (SUT).
-  * Strategy 1: Model-as-a-Service - Remote inference via APIs (OpenAI, Anthropic, cloud providers)
-  * Strategy 2: Model-in-Process - Local inference with loaded weights (LLMs, VLMs, traditional ML)
-  * Strategy 3: Non-Parametric Algorithms - Deterministic computation (ANN, BM25, signal processing)
-  * Strategy 4: Interactive Agents - Sequential decision-making (RL policies, multi-agent systems, robot controllers)
+  * Definition: Configuring the System Under Test (SUT) - the primary model, algorithm, or system being evaluated.
+  * Strategy 1: Model-as-a-Service - Setting up remote API-based models (OpenAI, Anthropic, cloud providers)
+  * Strategy 2: Model-in-Process - Loading models locally into memory for inference (LLMs, VLMs, traditional ML models)
+  * Strategy 3: Non-Parametric Algorithms - Configuring rule-based algorithms without learned weights (Approximate Nearest Neighbor (ANN) algorithms, BM25, signal processing)
+  * Strategy 4: Interactive Agents - Setting up agents that make sequential decisions over time (RL policies, multi-agent systems, robot controllers)
 - Step B: Benchmark Preparation (Inputs)
-  * Definition: Acquiring and configuring the test inputs that will be used to evaluate the SUT.
-  * Strategy 1: Benchmark Data Preparation - Loading pre-existing datasets or custom inputs
-  * Strategy 2: Synthetic Data Generation - Creating test data via perturbation, augmentation, synthesis
-  * Strategy 3: Simulation Environment Setup - Initializing interactive 3D environments, scenes, tasks
-  * Strategy 4: Production Traffic Sampling - Sampling real-world inference traffic
+  * Definition: Preparing the test inputs (questions, prompts, images, scenarios) that will be fed to the SUT.
+  * Strategy 1: Benchmark Data Preparation - Loading existing test datasets or specifying custom test cases
+  * Strategy 2: Synthetic Data Generation - Automatically generating new test inputs through data augmentation or synthesis
+  * Strategy 3: Simulation Environment Setup - Creating interactive virtual environments for agent testing (3D scenes, task configurations)
+  * Strategy 4: Production Traffic Sampling - Collecting real-world user queries for evaluation
 - Step C: Benchmark Preparation (References)
-  * Definition: Pre-computing judges, references, and ground truth materials that will be used to score SUT outputs.
-  * Strategy 1: Ground Truth Preparation - Human annotations, embeddings, knowledge claims, baselines
-  * Strategy 2: Judge Preparation - Training or loading judge models for evaluation
+  * Definition: Preparing reference materials (correct answers, expected outputs, evaluation criteria) for scoring SUT outputs.
+  * Strategy 1: Ground Truth Preparation - Loading reference answers, correct labels, expected outputs, or human annotations to compare against
+  * Strategy 2: Judge Preparation - Setting up LLM judges or trained evaluator models to assess quality
 
-**Phase II: Execution** - Observing SUT behavior—applying test inputs to elicit outputs and actions.
+**Phase II: Execution** - Running the SUT to generate outputs.
 - Step A: SUT Invocation
-  * Definition: Running the System Under Test to generate outputs or take actions.
-  * Strategy 1: Batch Inference - Multiple inputs through single SUT instance
-  * Strategy 2: Arena Battle - Same input across multiple SUTs for pairwise comparison
-  * Strategy 3: Interactive Loop - Iterative state transitions via tool use, simulation, multi-agent coordination
-  * Strategy 4: Production Streaming - Real-time processing of live traffic
+  * Definition: Actually running the SUT on test inputs to produce outputs or actions.
+  * Strategy 1: Batch Inference - Running many test inputs through the SUT, one evaluation run at a time
+  * Strategy 2: Arena Battle - Running the same input through multiple SUTs simultaneously for head-to-head comparison
+  * Strategy 3: Interactive Loop - Repeatedly executing the SUT's actions in an environment over multiple timesteps
+  * Strategy 4: Production Streaming - Continuously processing live incoming requests in real-time
 
-**Phase III: Assessment** - Converting observations into measurements—judging outputs against quality criteria to produce scores.
+**Phase III: Assessment** - Measuring how well the SUT performed.
 - Step A: Individual Scoring
-  * Definition: Computing metrics for individual test instances based on SUT outputs.
-  * Strategy 1: Deterministic Measurement - Equality checks, edit distance, BLEU, ROUGE
-  * Strategy 2: Embedding Measurement - Semantic similarity via embeddings, cross-modal comparisons
-  * Strategy 3: Subjective Measurement - LLM/classifier judges for pairwise or quality assessment
-  * Strategy 4: Performance Measurement - Latency, throughput, memory, FLOPs, energy
+  * Definition: Computing quality scores for each individual test case.
+  * Strategy 1: Deterministic Measurement - Rule-based scoring using exact matching, string distance, or token overlap metrics (BLEU, ROUGE)
+  * Strategy 2: Embedding Measurement - Measuring semantic similarity by comparing neural embeddings
+  * Strategy 3: Subjective Measurement - Using LLM judges or classifier models to rate quality or compare outputs
+  * Strategy 4: Performance Measurement - Measuring speed, memory usage, or computational cost
 - Step B: Aggregate Scoring
-  * Definition: Aggregating instance-level scores into benchmark-level metrics.
-  * Strategy 1: Distributional Statistics - Averaging, quantiles, weighted aggregation, rank fusion
-  * Strategy 2: Uncertainty Quantification - Bootstrap resampling, Prediction-Powered Inference (PPI)
+  * Definition: Combining individual scores into overall performance metrics.
+  * Strategy 1: Distributional Statistics - Computing averages, percentiles, or other summary statistics across test cases
+  * Strategy 2: Uncertainty Quantification - Calculating confidence intervals or statistical significance using resampling methods
 
-**Phase IV: Reporting** - Making results actionable—translating metrics into stakeholder-facing insights.
+**Phase IV: Reporting** - Presenting and communicating evaluation results.
 - Step A: Insight Presentation
-  * Definition: Visualizing metrics and publishing results to internal/external audiences.
-  * Strategy 1: Execution Tracing - Step-by-step logs, function calls, execution flow, with configurable recording backends (JSON Lines, databases, HTTP endpoints, console-only, cloud storage)
-  * Strategy 2: Subgroup Analysis - Performance by demographics, domains, task categories
-  * Strategy 3: Regression Alerting - Comparing against baselines, detecting degradation
-  * Strategy 4: Chart Generation - Radar charts, drift histograms, performance trends
-  * Strategy 5: Dashboard Creation - Interactive web interfaces, metric comparisons
-  * Strategy 6: Leaderboard Publication - Submitting to public/private leaderboards"""
+  * Definition: Making results understandable and actionable for users.
+  * Strategy 1: Execution Tracing - Recording detailed execution logs or trajectories showing what happened during each test run
+  * Strategy 2: Subgroup Analysis - Breaking down performance by categories (task types, demographic groups, difficulty levels)
+  * Strategy 3: Regression Alerting - Automatically detecting when performance drops below previous baselines
+  * Strategy 4: Chart Generation - Creating visualizations like plots, charts, and graphs
+  * Strategy 5: Dashboard Creation - Building interactive web interfaces to explore results
+  * Strategy 6: Leaderboard Publication - Submitting scores to public comparison leaderboards"""
 
 SYSTEM_PROMPT = f"""You are an expert in machine learning evaluation harnesses.
 
@@ -94,10 +95,10 @@ Analyze GitHub issues from evaluation harness repositories to determine:
 Return a JSON object:
 {{
     "is_related": true/false,
-    "phase": "Phase X" or null,
-    "step": "Step X" or null,
-    "strategy": "Strategy X" or null,
-    "root_cause": "Brief explanation of what causes this issue (max 50 words)" or null,
+    "phase": "X" or null,
+    "step": "Y" or null,
+    "strategy": "Z" or null,
+    "root_cause": "One-liner explaining the root cause" or null,
     "confidence": "high/medium/low"
 }}
 
@@ -184,8 +185,8 @@ results_df = pd.DataFrame(results)
 
 # Save to CSV
 os.makedirs("data", exist_ok=True)
-output_file = "data/github_issues_analyzed.csv"
-results_df.to_csv(output_file, index=False, encoding="utf-8")
+output_file = "data/github_issues_analyzed.json"
+results_df.to_json(output_file, orient="records", lines=True, force_ascii=False)
 
 print("\n" + "=" * 80)
 print(f"✓ Analysis complete! Results saved to {output_file}")
@@ -196,19 +197,3 @@ print(f"Total issues analyzed: {len(results_df)}")
 related_count = results_df['is_related'].sum() if results_df['is_related'].dtype == 'bool' else len(results_df[results_df['is_related'] == True])
 print(f"Related issues: {related_count}")
 print(f"Unrelated issues: {len(results_df) - related_count}")
-
-if related_count > 0:
-    print("\nRelated issues by phase, step, and strategy:")
-    # Combine phase, step, and strategy for better breakdown
-    related_df = results_df[results_df['is_related'] == True].copy()
-    related_df['phase_step_strategy'] = related_df.apply(
-        lambda row: (
-            f"{row['phase']} → {row['step']} → {row['strategy']}" if pd.notna(row['strategy'])
-            else f"{row['phase']} → {row['step']}" if pd.notna(row['step'])
-            else row['phase']
-        ),
-        axis=1
-    )
-    phase_step_strategy_counts = related_df['phase_step_strategy'].value_counts()
-    for phase_step_strategy, count in phase_step_strategy_counts.items():
-        print(f"  {phase_step_strategy}: {count}")
