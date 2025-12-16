@@ -1,10 +1,12 @@
 kaleido
+litellm
 matplotlib
 nbformat
 pandas
 plotly
 PyGithub
 python-docx
+python-dotenv
 scikit-learn
 seaborn
 spacy
