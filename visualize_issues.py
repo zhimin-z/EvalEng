@@ -33,6 +33,24 @@ if len(results_df) > 0:
     related_df['step'] = related_df['step'].apply(convert_to_int_if_numeric)
     related_df['strategy'] = related_df['strategy'].apply(convert_to_int_if_numeric)
 
+    # Helper function to convert roman numerals to integers for sorting
+    def roman_to_int(s):
+        roman_values = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
+        if not isinstance(s, str):
+            return None
+        total = 0
+        prev_value = 0
+        for char in reversed(s.upper()):
+            if char not in roman_values:
+                return None
+            value = roman_values[char]
+            if value < prev_value:
+                total -= value
+            else:
+                total += value
+            prev_value = value
+        return total
+
     # Create hierarchical structure: Phase -> Step -> Strategy -> Count
     hierarchy = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
 
@@ -42,10 +60,18 @@ if len(results_df) > 0:
         strategy = row['strategy']
         hierarchy[phase][step][strategy] += 1
 
-    # Sort phases (handles integers/strings, with "unspecific" at the end)
-    phase_order = sorted(hierarchy.keys(), key=lambda x: (
-        x == 'unspecific', x if isinstance(x, (int, float)) else 0
-    ))
+    # Sort phases (handles numeric, roman numerals, and "unspecific")
+    def phase_sort_key(x):
+        if x == 'unspecific':
+            return (2, 0)  # Put unspecific at the end
+        if isinstance(x, (int, float)):
+            return (0, x)  # Numeric phases first, sorted by value
+        roman_val = roman_to_int(x)
+        if roman_val is not None:
+            return (1, roman_val)  # Roman numerals second, sorted by value
+        return (2, 0)  # Other strings at the end
+
+    phase_order = sorted(hierarchy.keys(), key=phase_sort_key)
 
     # Prepare data for plotting
     phases = []
