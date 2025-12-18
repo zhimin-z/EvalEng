@@ -10,12 +10,11 @@ import time
 dotenv.load_dotenv(override=True)
 
 # Set the model to use - can be changed to any LiteLLM supported model
-MODEL = "anthropic/claude-haiku-4-5-20251001"
+MODEL = "anthropic/claude-sonnet-4-5-20250929"
 
 # Read the issues CSV
 df = pd.read_csv("data/github_issues.csv", encoding="utf-8")
-sample_size = min(400, len(df))
-df = df.sample(n=sample_size, random_state=42)  # Randomly select a sample of issues for analysis
+df = df.sample(n=377, random_state=42)  # Randomly select a sample of issues for analysis
 print(f"Total issues to analyze: {len(df)}")
 
 # Condensed version of the evaluation workflow stages
@@ -85,121 +84,62 @@ STAGES_SUMMARY = """Unified Evaluation Workflow:
 
 SYSTEM_PROMPT = f"""You are an expert classifier for machine learning evaluation workflow issues.
 
-TASK: Classify ONE GitHub issue into the evaluation workflow taxonomy below using explicit matching rules.
+TASK: Classify ONE GitHub issue into the evaluation workflow taxonomy below.
 
 WORKFLOW TAXONOMY:
 {STAGES_SUMMARY}
 
-═══════════════════════════════════════════════════════════════════════════════
-STEP 1: DETERMINE RELEVANCE (is_related: true/false)
-═══════════════════════════════════════════════════════════════════════════════
+## STEP 1: DETERMINE RELEVANCE (is_related: true/false)
 
-DECISION PRINCIPLE:
-Mark is_related=true if the issue directly affects ANY stage of the evaluation workflow above (Provisioning, Specification, Execution, Assessment, Reporting).
+Mark is_related=true if the issue directly affects ANY stage of the evaluation workflow above (Provisioning, Specification, Execution, Assessment, Reporting). This includes bugs, failures, missing features, or documentation gaps that prevent/change workflow actions.
 
-This includes: bugs, failures, missing features, or documentation gaps that prevent/change workflow actions.
-This excludes: project management, governance, pure style changes, unrelated components, off-topic discussions.
+EDGE CASES:
+- Documentation → true only if it describes workflow steps
+- Refactoring → true only if it changes evaluation behavior
+- Feature requests → true only if it extends evaluation capabilities
 
-CRITICAL EDGE CASES:
-- Documentation → true only if it describes workflow steps; general README updates → false
-- Refactoring → true only if it changes evaluation behavior; pure code organization → false
-- Feature requests → true only if it extends evaluation capabilities; unrelated features → false
+## STEP 2: ASSIGN LABELS (stage, step, strategy)
 
-═══════════════════════════════════════════════════════════════════════════════
-STEP 2: ASSIGN LABELS (stage, step, strategy)
-═══════════════════════════════════════════════════════════════════════════════
+CLASSIFICATION APPROACH:
+- Understand the CORE PROBLEM semantically first
+- Match to appropriate Stage/Step/Strategy from taxonomy
+- Keywords are INDICATORS, not strict requirements
+- Always assign Stage if is_related=true
+- Assign Step/Strategy only if clearly identifiable
+- If uncertain at any level, use null (e.g., Stage only without Step)
+- If multiple stages relevant → choose PRIMARY blocker (earliest failure point)
+- Semantic understanding > keyword matching
 
-LABELING BEST PRACTICES:
+EXAMPLES:
+✓ "pip install fails with dependency conflict" → Stage 0, Step A, Strategy 2
+✓ "Installation broken after upgrade" → Stage 0, Step A, strategy=null
+✓ "Can't get evaluations running" → Stage III, step=null, strategy=null
 
-1. SEMANTIC-FIRST CLASSIFICATION
-   - Read the issue to understand its CORE PROBLEM semantically
-   - Identify which workflow stage the problem fundamentally belongs to
-   - Match the problem to the appropriate Stage/Step/Strategy from the taxonomy above
-   - Keywords in the taxonomy definitions are INDICATORS, not strict requirements
+## STEP 3: WRITE ROOT CAUSE (max 15 words)
 
-2. WHEN TO ASSIGN EACH LEVEL
-   - Always assign a Stage if is_related=true (minimum requirement)
-   - Assign a Step if you can clearly determine which specific step is affected
-   - Assign a Strategy only if you can confidently identify the specific approach/method
-   - If uncertain at any level, stop there (e.g., Stage only, or Stage+Step without Strategy)
-
-3. HANDLING AMBIGUITY
-   - If multiple stages seem relevant → choose the PRIMARY blocker (earliest failure point)
-   - If step is unclear within a stage → set step=null, strategy=null
-   - If strategy is unclear within a step → set strategy=null only
-   - Never guess or force a label when semantic meaning is ambiguous
-
-4. PRIORITY RULES
-   - Semantic understanding takes precedence over keyword matching
-   - If semantics clearly map to a strategy but keywords are missing → still assign based on meaning
-   - If keywords present but semantics don't align → prioritize meaning over keywords
-   - Concrete evidence (errors, traces, commands) helps confirm semantic interpretation
-
-5. SPECIFICITY EXAMPLES
-   ✓ Clear: "pip install fails with dependency conflict" → Stage 0, Step A, Strategy 2
-   ✓ Moderate: "Installation broken after upgrade" → Stage 0, Step A, strategy=null (method unclear)
-   ✓ General: "Can't get evaluations running" → Stage 0, step=null (unclear if install vs config)
-   ✗ Ambiguous: "Something is wrong" → is_related=false (insufficient information)
-
-═══════════════════════════════════════════════════════════════════════════════
-STEP 3: WRITE ROOT CAUSE (one sentence, max 15 words)
-═══════════════════════════════════════════════════════════════════════════════
-
-FORMAT: "Technical-cause + causing-verb + symptom" (e.g., "Missing dependency causes import failure")
-
-Requirements:
-- State the underlying technical cause, not just the symptom
-- Do NOT restate the user complaint verbatim
-- Do NOT propose a fix or solution
+FORMAT: "Technical-cause + causing-verb + symptom"
+EXAMPLE: "Missing dependency causes import failure"
+- State underlying technical cause, not just symptom
+- Do NOT restate user complaint or propose solutions
 - If is_related=false → root_cause=null
 
-═══════════════════════════════════════════════════════════════════════════════
-STEP 4: ASSIGN CONFIDENCE LEVEL
-═══════════════════════════════════════════════════════════════════════════════
+## VALIDATION RULES
 
-Confidence reflects SEMANTIC CLARITY of the classification:
+1. is_related=false → all fields null
+2. is_related=true → stage NOT null
+3. strategy set → step MUST be set
+4. step set → stage MUST be set
+5. Stage: "0", "I", "II", "III", "IV"
+6. Step: "A", "B", "C"
+7. Strategy: 1, 2, 3, 4, 5, or 6
 
-high = Semantics clearly map to labels + concrete evidence (errors/traces/commands) present
-medium = Reasonable mapping with some inference needed + sufficient but incomplete context
-low = Vague semantics, missing details, multiple plausible interpretations, or is_related=false
+## OUTPUT FORMAT (return ONLY valid JSON, no markdown)
 
-═══════════════════════════════════════════════════════════════════════════════
-VALIDATION RULES (enforce before returning)
-═══════════════════════════════════════════════════════════════════════════════
-
-1. If is_related=false → stage/step/strategy/root_cause MUST be null
-2. If is_related=true → stage MUST NOT be null (at minimum, identify stage)
-3. If strategy is set → step MUST also be set (cannot skip levels)
-4. If step is set → stage MUST also be set
-5. Stage must be one of: "0", "I", "II", "III", "IV"
-6. Step must be one of: "A", "B", "C"
-7. Strategy must be integer: 1, 2, 3, 4, 5, or 6
-8. root_cause must be <15 words if not null
-9. confidence must be one of: "high", "medium", "low"
-
-═══════════════════════════════════════════════════════════════════════════════
-OUTPUT FORMAT (return ONLY valid JSON, no markdown fences)
-═══════════════════════════════════════════════════════════════════════════════
-
-{{
-  "is_related": true,
-  "stage": "0",
-  "step": "A",
-  "strategy": "2",
-  "root_cause": "Missing numpy dependency breaks pip installation process",
-  "confidence": "high"
-}}
+{{"is_related": true, "stage": "0", "step": "A", "strategy": "2", "root_cause": "Missing numpy dependency breaks pip installation process"}}
 
 or
 
-{{
-  "is_related": false,
-  "stage": null,
-  "step": null,
-  "strategy": null,
-  "root_cause": null,
-  "confidence": "low"
-}}"""
+{{"is_related": false, "stage": null, "step": null, "strategy": null, "root_cause": null}}"""
 
 def analyze_issue(title, body, harness_name):
     """Analyze a single issue using the configured LLM model"""
@@ -208,9 +148,9 @@ def analyze_issue(title, body, harness_name):
     try:
         response = completion(
             model=MODEL,
-            max_tokens=512,
+            max_tokens=200,  # Reduced: JSON output is ~100 tokens
             messages=[
-                {"role": "system", "content": SYSTEM_PROMPT},
+                {"role": "system", "content": SYSTEM_PROMPT, "cache_control": {"type": "ephemeral"}},
                 {"role": "user", "content": issue_text}
             ]
         )
@@ -228,7 +168,10 @@ def analyze_issue(title, body, harness_name):
             response_text = response_text[json_start:json_end].strip()
 
         result = json.loads(response_text)
-        return result
+
+        # Track token usage
+        usage = response.usage
+        return result, usage
 
     except Exception as e:
         print(f"  Error: {str(e)[:100]}")
@@ -237,21 +180,32 @@ def analyze_issue(title, body, harness_name):
             "stage": None,
             "step": None,
             "strategy": None,
-            "root_cause": f"Error: {str(e)[:100]}",
-            "confidence": None
-        }
+            "root_cause": f"Error: {str(e)[:100]}"
+        }, None
 
 # Analyze all issues
 results = []
+total_input_tokens = 0
+total_output_tokens = 0
+total_cache_read_tokens = 0
+total_cache_creation_tokens = 0
+
 print("\nStarting analysis...")
 print("=" * 80)
 
 for idx, row in tqdm(df.iterrows(), total=len(df), desc="Analyzing issues"):
-    analysis = analyze_issue(
+    analysis, usage = analyze_issue(
         title=row['issue_title'],
         body=row['issue_body'],
         harness_name=row['harness_name']
     )
+
+    # Track token usage
+    if usage:
+        total_input_tokens += getattr(usage, 'prompt_tokens', 0)
+        total_output_tokens += getattr(usage, 'completion_tokens', 0)
+        total_cache_read_tokens += getattr(usage, 'prompt_tokens_details', {}).get('cached_tokens', 0) if hasattr(usage, 'prompt_tokens_details') else 0
+        total_cache_creation_tokens += getattr(usage, 'prompt_tokens_details', {}).get('cache_creation_tokens', 0) if hasattr(usage, 'prompt_tokens_details') else 0
 
     result_row = {
         'harness_name': row['harness_name'],
@@ -265,8 +219,7 @@ for idx, row in tqdm(df.iterrows(), total=len(df), desc="Analyzing issues"):
         'stage': analysis.get('stage'),
         'step': analysis.get('step'),
         'strategy': analysis.get('strategy'),
-        'root_cause': analysis.get('root_cause'),
-        'confidence': analysis.get('confidence')
+        'root_cause': analysis.get('root_cause')
     }
     results.append(result_row)
 
@@ -290,3 +243,26 @@ print(f"Total issues analyzed: {len(results_df)}")
 related_count = results_df['is_related'].sum() if results_df['is_related'].dtype == 'bool' else len(results_df[results_df['is_related'] == True])
 print(f"Related issues: {related_count}")
 print(f"Unrelated issues: {len(results_df) - related_count}")
+
+# Cost tracking
+print("\n=== Token Usage & Cost ===")
+print(f"Input tokens: {total_input_tokens:,}")
+print(f"Output tokens: {total_output_tokens:,}")
+print(f"Cache read tokens: {total_cache_read_tokens:,}")
+print(f"Cache creation tokens: {total_cache_creation_tokens:,}")
+
+# Claude Sonnet 4.5 pricing (as of Dec 2024)
+# Input: $3/M, Output: $15/M, Cache writes: $3.75/M, Cache reads: $0.30/M
+input_cost = (total_input_tokens / 1_000_000) * 3.0
+output_cost = (total_output_tokens / 1_000_000) * 15.0
+cache_write_cost = (total_cache_creation_tokens / 1_000_000) * 3.75
+cache_read_cost = (total_cache_read_tokens / 1_000_000) * 0.30
+total_cost = input_cost + output_cost + cache_write_cost + cache_read_cost
+
+print(f"\nEstimated cost breakdown:")
+print(f"  Input tokens: ${input_cost:.4f}")
+print(f"  Output tokens: ${output_cost:.4f}")
+print(f"  Cache creation: ${cache_write_cost:.4f}")
+print(f"  Cache reads: ${cache_read_cost:.4f}")
+print(f"  TOTAL: ${total_cost:.2f}")
+print(f"  Cost per issue: ${total_cost/len(results_df):.4f}")
