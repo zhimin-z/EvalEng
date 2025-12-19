@@ -10,7 +10,7 @@ import time
 dotenv.load_dotenv(override=True)
 
 # Set the model to use - can be changed to any LiteLLM supported model
-MODEL = "anthropic/claude-sonnet-4-5-20250929"
+MODEL = "anthropic/claude-haiku-4-5-20251001"
 
 # Read the issues CSV
 df = pd.read_csv("data/github_issues.csv", encoding="utf-8")
@@ -92,11 +92,6 @@ WORKFLOW TAXONOMY:
 ## STEP 1: DETERMINE RELEVANCE (is_related: true/false)
 
 Mark is_related=true if the issue directly affects ANY stage of the evaluation workflow above (Provisioning, Specification, Execution, Assessment, Reporting). This includes bugs, failures, missing features, or documentation gaps that prevent/change workflow actions.
-
-EDGE CASES:
-- Documentation → true only if it describes workflow steps
-- Refactoring → true only if it changes evaluation behavior
-- Feature requests → true only if it extends evaluation capabilities
 
 ## STEP 2: ASSIGN LABELS (stage, step, strategy)
 
@@ -204,8 +199,8 @@ for idx, row in tqdm(df.iterrows(), total=len(df), desc="Analyzing issues"):
     if usage:
         total_input_tokens += getattr(usage, 'prompt_tokens', 0)
         total_output_tokens += getattr(usage, 'completion_tokens', 0)
-        total_cache_read_tokens += getattr(usage, 'prompt_tokens_details', {}).get('cached_tokens', 0) if hasattr(usage, 'prompt_tokens_details') else 0
-        total_cache_creation_tokens += getattr(usage, 'prompt_tokens_details', {}).get('cache_creation_tokens', 0) if hasattr(usage, 'prompt_tokens_details') else 0
+        total_cache_read_tokens += getattr(usage.prompt_tokens_details, 'cached_tokens', 0) if hasattr(usage, 'prompt_tokens_details') else 0
+        total_cache_creation_tokens += getattr(usage.prompt_tokens_details, 'cache_creation_tokens', 0) if hasattr(usage, 'prompt_tokens_details') else 0
 
     result_row = {
         'harness_name': row['harness_name'],
@@ -231,7 +226,7 @@ results_df = pd.DataFrame(results)
 
 # Save to CSV
 os.makedirs("data", exist_ok=True)
-output_file = "data/github_issues_analyzed.json"
+output_file = "data/github_issues_annotated.jsonl"
 results_df.to_json(output_file, orient="records", lines=True, force_ascii=False)
 
 print("\n" + "=" * 80)
@@ -239,7 +234,7 @@ print(f"✓ Analysis complete! Results saved to {output_file}")
 
 # Summary statistics
 print("\n=== Summary Statistics ===")
-print(f"Total issues analyzed: {len(results_df)}")
+print(f"Total issues annotated: {len(results_df)}")
 related_count = results_df['is_related'].sum() if results_df['is_related'].dtype == 'bool' else len(results_df[results_df['is_related'] == True])
 print(f"Related issues: {related_count}")
 print(f"Unrelated issues: {len(results_df) - related_count}")
