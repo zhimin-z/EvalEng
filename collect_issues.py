@@ -7,7 +7,7 @@ from collections import deque
 
 dotenv.load_dotenv(override=True)
 
-df = pd.read_csv("data/evaluation_harness_metadata.csv", encoding="utf-8")
+df = pd.read_csv("data/rogue.csv", encoding="utf-8")
 
 # Extract owner/repo from GitHub URLs (supports comma-separated URLs)
 def extract_repo_from_url(repo_str):
@@ -234,14 +234,14 @@ if failed_repos:
     print(f"✗ Failed: {len(failed_repos)} repositories")
     print(f"  Failed repos: {', '.join(failed_repos[:5])}{'...' if len(failed_repos) > 5 else ''}")
 
-# Create DataFrame and save to CSV
+# Create DataFrame and save to JSONL
 issues_df = pd.DataFrame(all_issues_data)
 if not issues_df.empty:
     issues_df = issues_df[['harness_name', 'github_repo', 'issue_title', 'issue_body',
                             'issue_labels', 'issue_created_at', 'issue_closed_at',
                             'issue_comments', 'issue_url', 'issue_cross_referenced']]
-    issues_df.to_csv("data/github_issues.csv", index=False, encoding="utf-8")
+    issues_df.to_json("data/github_issues.jsonl", orient="records", lines=True, force_ascii=False)
     print(f"\n✓ Total issues fetched: {len(issues_df)}")
-    print("✓ Issues saved to data/github_issues.csv")
+    print("✓ Issues saved to data/github_issues.jsonl")
 else:
     print("\n✗ No issues fetched")

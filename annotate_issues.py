@@ -12,8 +12,8 @@ dotenv.load_dotenv(override=True)
 # Set the model to use - can be changed to any LiteLLM supported model
 MODEL = "anthropic/claude-haiku-4-5-20251001"
 
-# Read the issues CSV
-df = pd.read_csv("data/github_issues.csv", encoding="utf-8")
+# Read the issues JSONL
+df = pd.read_json("data/github_issues.jsonl", orient="records", lines=True)
 df = df.sample(n=377, random_state=42)  # Randomly select a sample of issues for analysis
 print(f"Total issues to analyze: {len(df)}")
 
@@ -24,10 +24,10 @@ STAGES_SUMMARY = """Unified Evaluation Workflow:
 - Step A: Harness Installation
   * Definition: Installing the evaluation framework and its dependencies.
   * Strategy 1: Git Clone - Cloning repositories and building from source code
-  * Strategy 2: PyPI Packages - Installing via pip from PyPI or git URLs
+  * Strategy 2: Python Package - Installing via pip, uv, conda, or poetry
   * Strategy 3: Node Package - Installing via npm, npx, or Homebrew
-  * Strategy 4: Binary Packages - Downloading standalone executable files
-  * Strategy 5: Container Images - Pulling Docker/OCI container images
+  * Strategy 4: Binary Package - Downloading standalone executable files
+  * Strategy 5: Container Image - Pulling Docker/OCI container images
 - Step B: Credential Configuration
   * Definition: Setting up authentication credentials to access external services and resources.
   * Strategy 1: Model API Authentication - Configuring API keys to call remote model inference endpoints (OpenAI, Anthropic, HuggingFace APIs)
@@ -39,8 +39,8 @@ STAGES_SUMMARY = """Unified Evaluation Workflow:
   * Definition: Configuring the System Under Test (SUT) - the primary model, algorithm, or system being evaluated.
   * Strategy 1: Model-as-a-Service - Setting up remote API-based models (OpenAI, Anthropic, cloud providers)
   * Strategy 2: Model-in-Process - Loading models locally into memory for inference (LLMs, VLMs, traditional ML models)
-  * Strategy 3: Non-Parametric Algorithms - Configuring rule-based algorithms without learned weights (Approximate Nearest Neighbor (ANN) algorithms, BM25, signal processing)
-  * Strategy 4: Interactive Agents - Setting up agents that make sequential decisions over time (RL policies, multi-agent systems, robot controllers)
+  * Strategy 3: Non-Parametric Algorithm - Configuring rule-based algorithms without learned weights (Approximate Nearest Neighbor (ANN) algorithms, BM25, signal processing)
+  * Strategy 4: Interactive Agent - Setting up agents that make sequential decisions over time (RL policies, multi-agent systems, robot controllers)
 - Step B: Benchmark Preparation (Inputs)
   * Definition: Preparing the test inputs (questions, prompts, images, scenarios) that will be fed to the SUT.
   * Strategy 1: Benchmark Data Preparation - Loading existing test datasets or specifying custom test cases
