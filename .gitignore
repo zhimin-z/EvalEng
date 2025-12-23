@@ -1,7 +1,6 @@
 
-.DS_Store
 .env
 *.venv
 repos/
 papers/
-maturities/
+*root_cause*.py

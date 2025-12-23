@@ -1,11 +1,11 @@
 import pandas as pd
 import dotenv
 import os
-from litellm import completion
 import json
-from tqdm import tqdm
 import time
-import re
+
+from tqdm import tqdm
+from litellm import completion
 
 # Load environment variables
 dotenv.load_dotenv(override=True)

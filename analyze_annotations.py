@@ -1,10 +1,10 @@
-#!/usr/bin/env python3
 """
 Analyze GitHub issues labels from CSV file.
 """
 
 import csv
 import ast
+
 from collections import Counter
 from typing import List, Dict
 

@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+
 from collections import defaultdict
 
 output_file = "data/github_issues_analyzed.jsonl"
