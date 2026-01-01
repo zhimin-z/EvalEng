@@ -1,10 +1,26 @@
 import pandas as pd
+import matplotlib
+matplotlib.use('Agg')  # Use non-interactive backend
 import matplotlib.pyplot as plt
 import numpy as np
 
-from collections import defaultdict
+from collections import defaultdict, Counter
 
-output_file = "data/github_issues_analyzed.jsonl"
+# Root cause taxonomy mapping
+ROOT_CAUSE_TAXONOMY = {
+    "1": "Unimplemented Feature Gap",
+    "2": "External Dependency Breakage",
+    "3": "Interface Contract Mismatch",
+    "4": "Incorrect Algorithm Implementation",
+    "5": "Configuration Propagation Failure",
+    "6": "Resource Management Failure",
+    "7": "Inadequate Input Validation",
+    "8": "Documentation Knowledge Gap",
+    "9": "Fragile Environment Assumption",
+    "10": "Rigid Architectural Design"
+}
+
+output_file = "data/github_issues_annotated.jsonl"
 results_df = pd.read_json(output_file, lines=True)
 
 if len(results_df) > 0:
@@ -198,7 +214,7 @@ if len(results_df) > 0:
     plt.tight_layout()
 
     # Save figure
-    output_path = "data/github_issue_distribution.png"
+    output_path = "data/github_issue_workflow_distribution.png"
     plt.savefig(output_path, dpi=300, bbox_inches='tight')
     print(f"\nVisualization saved to {output_path}")
 
@@ -225,5 +241,74 @@ if len(results_df) > 0:
             for strategy in strategies:
                 count = hierarchy[stage][step][strategy]
                 print(f"    Strategy {strategy if strategy != 'unspecified' else 'unspecified'}: {count} issues")
+
+    plt.close()
+
+    # ============== Root Cause Distribution Visualization ==============
+    print("\n=== Creating Root Cause Distribution Visualization ===")
+
+    # Filter issues that have root_cause_label
+    root_cause_df = related_df[related_df['root_cause_label'].notna()].copy()
+
+    # Convert root_cause_label to string for mapping
+    root_cause_df['root_cause_label'] = root_cause_df['root_cause_label'].astype(str)
+
+    # Map numeric labels to full names
+    root_cause_df['root_cause_name'] = root_cause_df['root_cause_label'].map(ROOT_CAUSE_TAXONOMY)
+
+    # Handle any unmapped values
+    root_cause_df['root_cause_name'] = root_cause_df['root_cause_name'].fillna('Unknown')
+
+    # Count occurrences
+    root_cause_counts = Counter(root_cause_df['root_cause_name'])
+
+    # Sort by count (descending) for better visualization
+    sorted_root_causes = sorted(root_cause_counts.items(), key=lambda x: x[1], reverse=True)
+    root_cause_names = [item[0] for item in sorted_root_causes]
+    root_cause_counts_list = [item[1] for item in sorted_root_causes]
+
+    # Calculate percentages
+    total_issues = len(root_cause_df)
+    root_cause_percentages = [(count / total_issues) * 100 for count in root_cause_counts_list]
+
+    # Create the plot
+    fig, ax = plt.subplots(figsize=(14, 8))
+
+    # Create horizontal bar chart for better readability of long labels
+    colors = plt.cm.Set3(np.linspace(0, 1, len(root_cause_names)))
+    bars = ax.barh(root_cause_names, root_cause_percentages, color=colors, edgecolor='black', linewidth=0.8)
+
+    # Add percentage labels on bars
+    for i, (bar, percentage) in enumerate(zip(bars, root_cause_percentages)):
+        width = bar.get_width()
+        ax.text(width, bar.get_y() + bar.get_height()/2,
+                f' {percentage:.1f}%',
+                ha='left', va='center', fontsize=10, fontweight='bold')
+
+    # Set labels and title
+    ax.set_xlabel('Percentage of Issues (%)', fontsize=12, fontweight='bold')
+    ax.set_ylabel('Root Cause Category', fontsize=12, fontweight='bold')
+    ax.set_title('Distribution of GitHub Issues by Root Cause Category',
+                 fontsize=14, fontweight='bold', pad=20)
+
+    # Add grid for easier reading
+    ax.xaxis.grid(True, linestyle='--', alpha=0.3)
+    ax.set_axisbelow(True)
+
+    # Adjust layout
+    plt.tight_layout()
+
+    # Save figure
+    root_cause_output_path = "data/github_issue_root_cause_distribution.png"
+    plt.savefig(root_cause_output_path, dpi=300, bbox_inches='tight')
+    print(f"Root cause distribution visualization saved to {root_cause_output_path}")
+
+    # Print root cause statistics
+    print("\n=== Root Cause Distribution Statistics ===")
+    print(f"Total issues with root cause labels: {len(root_cause_df)}")
+    print(f"\nBreakdown by root cause:")
+    for name, count in sorted_root_causes:
+        percentage = (count / len(root_cause_df)) * 100
+        print(f"  {name}: {count} issues ({percentage:.1f}%)")
 
     plt.close()
