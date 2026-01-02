@@ -247,8 +247,8 @@ if len(results_df) > 0:
     # ============== Root Cause Distribution Visualization ==============
     print("\n=== Creating Root Cause Distribution Visualization ===")
 
-    # Filter issues that have root_cause_label
-    root_cause_df = related_df[related_df['root_cause_label'].notna()].copy()
+    # Filter issues that have root_cause_label from ALL issues (not just related ones)
+    root_cause_df = results_df[results_df['root_cause_label'].notna()].copy()
 
     # Convert root_cause_label to string for mapping
     root_cause_df['root_cause_label'] = root_cause_df['root_cause_label'].astype(str)
@@ -259,41 +259,115 @@ if len(results_df) > 0:
     # Handle any unmapped values
     root_cause_df['root_cause_name'] = root_cause_df['root_cause_name'].fillna('Unknown')
 
-    # Count occurrences
-    root_cause_counts = Counter(root_cause_df['root_cause_name'])
+    # For issues not related to any phase, mark stage as "Not Related"
+    root_cause_df['stage'] = root_cause_df.apply(
+        lambda row: 'Not Related' if pd.isna(row['stage']) or row.get('is_related') == False else row['stage'],
+        axis=1
+    )
 
-    # Sort by count (descending) for better visualization
-    sorted_root_causes = sorted(root_cause_counts.items(), key=lambda x: x[1], reverse=True)
-    root_cause_names = [item[0] for item in sorted_root_causes]
-    root_cause_counts_list = [item[1] for item in sorted_root_causes]
+    # Create hierarchical structure: RootCause -> Stage -> Count
+    root_cause_hierarchy = defaultdict(lambda: defaultdict(int))
 
-    # Calculate percentages
-    total_issues = len(root_cause_df)
-    root_cause_percentages = [(count / total_issues) * 100 for count in root_cause_counts_list]
+    for _, row in root_cause_df.iterrows():
+        root_cause = row['root_cause_name']
+        stage = row['stage']
+        root_cause_hierarchy[root_cause][stage] += 1
+
+    # Sort root causes by total count (descending)
+    root_cause_totals = {rc: sum(stages.values()) for rc, stages in root_cause_hierarchy.items()}
+    sorted_root_cause_names = sorted(root_cause_totals.keys(), key=lambda x: root_cause_totals[x], reverse=True)
+
+    # Get all unique stages across all root causes
+    all_stages_in_root_causes = set()
+    for stages_dict in root_cause_hierarchy.values():
+        all_stages_in_root_causes.update(stages_dict.keys())
+
+    # Sort stages using the same logic as before
+    def stage_sort_key(x):
+        if x == 'Not Related':
+            return (3, 0)  # Put "Not Related" at the very end
+        if x == 'unspecified':
+            return (2, 0)
+        if isinstance(x, (int, float)):
+            return (0, x)
+        roman_val = roman_to_int(x)
+        if roman_val is not None:
+            return (1, roman_val)
+        return (2, 0)
+
+    stage_order_for_root_causes = sorted(all_stages_in_root_causes, key=stage_sort_key)
 
     # Create the plot
-    fig, ax = plt.subplots(figsize=(14, 8))
+    fig, ax = plt.subplots(figsize=(16, 8))
 
-    # Create horizontal bar chart for better readability of long labels
-    colors = plt.cm.Set3(np.linspace(0, 1, len(root_cause_names)))
-    bars = ax.barh(root_cause_names, root_cause_percentages, color=colors, edgecolor='black', linewidth=0.8)
+    # Prepare data for grouped bars
+    num_root_causes = len(sorted_root_cause_names)
+    num_stages = len(stage_order_for_root_causes)
+    bar_width = 0.8 / num_stages  # Divide the space by number of stages
+    x_base = np.arange(num_root_causes)
+    colors = plt.cm.Set3(np.linspace(0, 1, num_stages))
 
-    # Add percentage labels on bars
-    for i, (bar, percentage) in enumerate(zip(bars, root_cause_percentages)):
-        width = bar.get_width()
-        ax.text(width, bar.get_y() + bar.get_height()/2,
-                f' {percentage:.1f}%',
-                ha='left', va='center', fontsize=10, fontweight='bold')
+    # Plot grouped bars
+    for stage_idx, stage in enumerate(stage_order_for_root_causes):
+        heights = []
+        for root_cause in sorted_root_cause_names:
+            heights.append(root_cause_hierarchy[root_cause].get(stage, 0))
+
+        # Calculate x positions for this stage's bars
+        x_offset = (stage_idx - num_stages / 2) * bar_width + bar_width / 2
+        x_positions = x_base + x_offset
+
+        stage_label = f"Stage {stage}" if stage not in ['unspecified', 'Not Related'] else stage
+        bars = ax.bar(x_positions, heights, bar_width,
+                     label=stage_label, color=colors[stage_idx], edgecolor='white', linewidth=0.5)
+
+        # Add count labels on top of each bar
+        for x_pos, height in zip(x_positions, heights):
+            if height > 0:
+                ax.text(x_pos, height, str(int(height)), ha='center', va='bottom',
+                       fontsize=7, fontweight='bold')
 
     # Set labels and title
-    ax.set_xlabel('Percentage of Issues (%)', fontsize=12, fontweight='bold')
-    ax.set_ylabel('Root Cause Category', fontsize=12, fontweight='bold')
-    ax.set_title('Distribution of GitHub Issues by Root Cause Category',
+    ax.set_xlabel('Root Cause Category', fontsize=12, fontweight='bold')
+    ax.set_ylabel('Number of Issues', fontsize=12, fontweight='bold')
+    ax.set_title('Distribution of Issues by Root Cause and Stage',
                  fontsize=14, fontweight='bold', pad=20)
+    ax.set_xticks(x_base)
 
-    # Add grid for easier reading
-    ax.xaxis.grid(True, linestyle='--', alpha=0.3)
+    # Create wrapped labels for better readability
+    wrapped_labels = []
+    for name in sorted_root_cause_names:
+        # Split long labels into multiple lines (approx 20 chars per line)
+        words = name.split()
+        lines = []
+        current_line = []
+        current_length = 0
+        for word in words:
+            if current_length + len(word) + 1 <= 20:
+                current_line.append(word)
+                current_length += len(word) + 1
+            else:
+                if current_line:
+                    lines.append(' '.join(current_line))
+                current_line = [word]
+                current_length = len(word)
+        if current_line:
+            lines.append(' '.join(current_line))
+        wrapped_labels.append('\n'.join(lines))
+
+    ax.set_xticklabels(wrapped_labels, rotation=0, ha='center', fontsize=9)
+
+    # Add legend
+    ax.legend(title='Stages', bbox_to_anchor=(1.05, 1), loc='upper left',
+             fontsize=9, title_fontsize=10)
+
+    # Add grid
+    ax.yaxis.grid(True, linestyle='--', alpha=0.3)
     ax.set_axisbelow(True)
+
+    # Add padding to y-axis limit to make room for labels above bars
+    y_max = ax.get_ylim()[1]
+    ax.set_ylim(0, y_max * 1.1)
 
     # Adjust layout
     plt.tight_layout()
@@ -306,9 +380,14 @@ if len(results_df) > 0:
     # Print root cause statistics
     print("\n=== Root Cause Distribution Statistics ===")
     print(f"Total issues with root cause labels: {len(root_cause_df)}")
-    print(f"\nBreakdown by root cause:")
-    for name, count in sorted_root_causes:
-        percentage = (count / len(root_cause_df)) * 100
-        print(f"  {name}: {count} issues ({percentage:.1f}%)")
+    print(f"\nBreakdown by root cause and stage:")
+    for root_cause in sorted_root_cause_names:
+        total = root_cause_totals[root_cause]
+        print(f"\n{root_cause}: {total} issues")
+        for stage in stage_order_for_root_causes:
+            count = root_cause_hierarchy[root_cause].get(stage, 0)
+            if count > 0:
+                stage_label = f"Stage {stage}" if stage not in ['unspecified', 'Not Related'] else stage
+                print(f"  {stage_label}: {count} issues")
 
     plt.close()
