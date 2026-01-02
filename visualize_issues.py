@@ -265,6 +265,12 @@ if len(results_df) > 0:
         axis=1
     )
 
+    # Convert stage values to proper types (same as related_df) for correct sorting
+    # This ensures numeric stage '0' becomes integer 0, which sorts before roman numerals
+    root_cause_df['stage'] = root_cause_df['stage'].apply(
+        lambda val: convert_to_int_if_numeric(val) if val != 'Not Related' else val
+    )
+
     # Create hierarchical structure: RootCause -> Stage -> Count
     root_cause_hierarchy = defaultdict(lambda: defaultdict(int))
 
@@ -282,20 +288,17 @@ if len(results_df) > 0:
     for stages_dict in root_cause_hierarchy.values():
         all_stages_in_root_causes.update(stages_dict.keys())
 
-    # Sort stages using the same logic as before
-    def stage_sort_key(x):
-        if x == 'Not Related':
-            return (3, 0)  # Put "Not Related" at the very end
-        if x == 'unspecified':
-            return (2, 0)
-        if isinstance(x, (int, float)):
-            return (0, x)
-        roman_val = roman_to_int(x)
-        if roman_val is not None:
-            return (1, roman_val)
-        return (2, 0)
+    # Define explicit stage order: 0, I, II, III, IV, then others
+    # This ensures the legend appears in the correct order
+    explicit_stage_order = [0, 'I', 'II', 'III', 'IV', 'unspecified', 'Not Related']
 
-    stage_order_for_root_causes = sorted(all_stages_in_root_causes, key=stage_sort_key)
+    # Filter to only include stages that actually exist in the data
+    stage_order_for_root_causes = [s for s in explicit_stage_order if s in all_stages_in_root_causes]
+
+    # Add any unexpected stages at the end (shouldn't happen, but be safe)
+    for stage in all_stages_in_root_causes:
+        if stage not in stage_order_for_root_causes:
+            stage_order_for_root_causes.append(stage)
 
     # Create the plot
     fig, ax = plt.subplots(figsize=(16, 8))
