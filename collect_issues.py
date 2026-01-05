@@ -87,22 +87,6 @@ class TokenRotator:
         print(f"\n⟳ Rotating token: {old_name} → {new_name}")
         return self.current_index != old_index  # False if we've cycled through all
 
-    def check_rate_limit(self, gh, token_name):
-        """Check and display current rate limit status"""
-        try:
-            rate_limit = gh.get_rate_limit()
-            core = rate_limit.core
-            remaining = core.remaining
-            total = core.limit
-            reset_time = core.reset
-
-            if remaining < 100:
-                print(f"⚠ [{token_name}] Low rate limit: {remaining}/{total} remaining (resets at {reset_time})")
-                return True
-            return False
-        except Exception as e:
-            print(f"⚠ [{token_name}] Could not check rate limit: {e}")
-            return False
 
 def fetch_issues_pygithub(gh, owner, repo, token_name):
     """Fetch all issues from a repository using PyGithub"""
@@ -224,10 +208,6 @@ while repos_queue:
             print(f"[{token_name}] ○ {repo_name}: 0 issues found")
 
         processed_count += 1
-
-        # Periodically check rate limit
-        if processed_count % 10 == 0:
-            token_rotator.check_rate_limit(gh, token_name)
 
     except ValueError:
         print(f"✗ Invalid repo format: {repo_name}")
