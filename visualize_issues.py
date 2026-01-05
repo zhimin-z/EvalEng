@@ -4,20 +4,20 @@ matplotlib.use('Agg')  # Use non-interactive backend
 import matplotlib.pyplot as plt
 import numpy as np
 
-from collections import defaultdict, Counter
+from collections import defaultdict
 
 # Root cause taxonomy mapping
 ROOT_CAUSE_TAXONOMY = {
-    "1": "Unimplemented Feature Gap",
-    "2": "External Dependency Breakage",
-    "3": "Interface Contract Mismatch",
-    "4": "Incorrect Algorithm Implementation",
-    "5": "Configuration Propagation Failure",
-    "6": "Resource Management Failure",
-    "7": "Inadequate Input Validation",
-    "8": "Documentation Knowledge Gap",
-    "9": "Fragile Environment Assumption",
-    "10": "Rigid Architectural Design"
+    "1": "Missing Feature",
+    "2": "Dependency Issue",
+    "3": "Interface Mismatch",
+    "4": "Logic Bug",
+    "5": "Configuration Error",
+    "6": "Resource Management",
+    "7": "Error Handling",
+    "8": "Documentation Issue",
+    "9": "Environment Setup",
+    "10": "Design Limitation"
 }
 
 output_file = "data/github_issues_annotated.jsonl"
