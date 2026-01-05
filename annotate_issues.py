@@ -24,64 +24,64 @@ STAGES_SUMMARY = """Unified Evaluation Workflow:
 **Stage 0: Provisioning** - Setting up the runtime environment to make evaluation executable.
 - Step A: Harness Installation
   * Definition: Installing the evaluation framework and its dependencies.
-  * Strategy 1: Git Clone - Cloning repositories and building from source code
-  * Strategy 2: Python Package - Installing via pip, uv, conda, or poetry
-  * Strategy 3: Node Package - Installing via npm, npx, or Homebrew
-  * Strategy 4: Binary Package - Downloading standalone executable files
-  * Strategy 5: Container Image - Pulling Docker/OCI container images
+  * Strategy 1: Git Clone - Cloning repositories and building from source code [Keywords: git clone, build, compile]
+  * Strategy 2: Python Package - Installing via pip, uv, conda, or poetry [Keywords: pip install, conda, requirements.txt]
+  * Strategy 3: Node Package - Installing via npm, npx, or Homebrew [Keywords: npm, npx, package.json]
+  * Strategy 4: Binary Package - Downloading standalone executable files [Keywords: binary, executable, download]
+  * Strategy 5: Container Image - Pulling Docker/OCI container images [Keywords: docker, container, image pull]
 - Step B: Credential Configuration
   * Definition: Setting up authentication credentials to access external services and resources.
-  * Strategy 1: Model API Authentication - Configuring API keys to call remote model inference endpoints (OpenAI, Anthropic, HuggingFace APIs)
-  * Strategy 2: Artifact Repository Authentication - Authenticating to download models and datasets from repositories (HuggingFace Hub, Zenodo)
-  * Strategy 3: Evaluation Platform Authentication - Logging into evaluation platform accounts for accessing services and leaderboards
+  * Strategy 1: Model API Authentication - Configuring API keys to CALL/INVOKE remote model endpoints (OpenAI, Anthropic, HuggingFace Inference API) [Keywords: API key, rate limit, endpoint, inference call]
+  * Strategy 2: Artifact Repository Authentication - Authenticating to DOWNLOAD models/datasets from repositories (HuggingFace Hub, Zenodo, ModelScope) [Keywords: login, download, gated model, access token]
+  * Strategy 3: Evaluation Platform Authentication - Logging into evaluation platform to ACCESS features (leaderboards, dashboards, submissions) [Keywords: platform login, account, leaderboard access]
 
 **Stage I: Specification** - Configuring what to evaluate and how to evaluate it.
 - Step A: SUT Preparation
   * Definition: Configuring the System Under Test (SUT) - the primary model, algorithm, or system being evaluated.
-  * Strategy 1: Model-as-a-Service - Setting up remote API-based models (OpenAI, Anthropic, cloud providers)
-  * Strategy 2: Model-in-Process - Loading models locally into memory for inference (LLMs, VLMs, traditional ML models)
-  * Strategy 3: Non-Parametric Algorithm - Configuring rule-based algorithms without learned weights (Approximate Nearest Neighbor (ANN) algorithms, BM25, signal processing)
-  * Strategy 4: Interactive Agent - Setting up agents that make sequential decisions over time (RL policies, multi-agent systems, robot controllers)
+  * Strategy 1: Model-as-a-Service - Setting up REMOTE API-based models running on external infrastructure [Keywords: API endpoint, remote, cloud, OpenAI API, Anthropic API]
+  * Strategy 2: Model-in-Process - LOADING models locally into memory for inference [Keywords: load weights, local inference, VRAM, GPU memory, model.load()]
+  * Strategy 3: Non-Parametric Algorithm - Configuring algorithms WITHOUT learned weights [Keywords: BM25, FAISS, ANN index, rule-based, no training]
+  * Strategy 4: Interactive Agent - Setting up entities that make SEQUENTIAL decisions over MULTIPLE timesteps [Keywords: agent loop, environment, multi-step, RL policy, tool use]
 - Step B: Benchmark Preparation (Inputs)
-  * Definition: Preparing the test inputs (questions, prompts, images, scenarios) that will be fed to the SUT.
-  * Strategy 1: Benchmark Data Preparation - Loading existing test datasets or specifying custom test cases
-  * Strategy 2: Synthetic Data Generation - Automatically generating new test inputs through data augmentation or synthesis
-  * Strategy 3: Simulation Environment Setup - Creating interactive virtual environments for agent testing (3D scenes, task configurations)
-  * Strategy 4: Production Traffic Sampling - Collecting real-world user queries for evaluation
+  * Definition: Preparing test inputs (questions, prompts, images, scenarios) that will be FED TO the SUT during execution.
+  * Strategy 1: Benchmark Data Preparation - Loading existing test datasets or custom test cases [Keywords: dataset download, test split, input prompts, questions]
+  * Strategy 2: Synthetic Data Generation - Automatically generating new test inputs [Keywords: augmentation, perturbation, synthetic generation]
+  * Strategy 3: Simulation Environment Setup - Creating interactive virtual environments [Keywords: 3D scene, environment reset, task config, simulator]
+  * Strategy 4: Production Traffic Sampling - Collecting real-world user queries [Keywords: live traffic, production logs, user requests]
 - Step C: Benchmark Preparation (References)
-  * Definition: Preparing reference materials (correct answers, expected outputs, evaluation criteria) for scoring SUT outputs.
-  * Strategy 1: Ground Truth Preparation - Loading reference answers, correct labels, expected outputs, or human annotations to compare against
-  * Strategy 2: Judge Preparation - Setting up LLM judges or trained evaluator models to assess quality
+  * Definition: Preparing reference materials used to SCORE/JUDGE SUT outputs (NOT fed to SUT).
+  * Strategy 1: Ground Truth Preparation - Loading reference answers/labels used FOR COMPARISON [Keywords: gold labels, reference answers, ground truth, annotations]
+  * Strategy 2: Judge Preparation - Setting up LLM/classifier models to ACT AS evaluators [Keywords: judge model, evaluator, preference model, critic]
 
 **Stage II: Execution** - Running the SUT to generate outputs.
 - Step A: SUT Invocation
-  * Definition: Actually running the SUT on test inputs to produce outputs or actions.
-  * Strategy 1: Batch Inference - Running many test inputs through the SUT, one evaluation run at a time
-  * Strategy 2: Arena Battle - Running the same input through multiple SUTs simultaneously for head-to-head comparison
-  * Strategy 3: Interactive Loop - Repeatedly executing the SUT's actions in an environment over multiple timesteps
-  * Strategy 4: Production Streaming - Continuously processing live incoming requests in real-time
+  * Definition: Actually RUNNING/EXECUTING the SUT on test inputs to produce outputs or actions.
+  * Strategy 1: Batch Inference - Running MULTIPLE inputs through ONE SUT instance [Keywords: inference loop, batch processing, generate output, model.predict()]
+  * Strategy 2: Arena Battle - Running SAME input through MULTIPLE SUTs simultaneously [Keywords: head-to-head, A/B comparison, simultaneous execution, pairwise]
+  * Strategy 3: Interactive Loop - ITERATIVELY executing SUT actions in environment [Keywords: step(), observation-action loop, rollout, trajectory, episode]
+  * Strategy 4: Production Streaming - Continuously processing LIVE real-time requests [Keywords: streaming, real-time, online inference, production traffic]
 
 **Stage III: Assessment** - Measuring how well the SUT performed.
 - Step A: Individual Scoring
-  * Definition: Computing quality scores for each individual test case.
-  * Strategy 1: Deterministic Measurement - Rule-based scoring using exact matching, string distance, or token overlap metrics (BLEU, ROUGE)
-  * Strategy 2: Embedding Measurement - Measuring semantic similarity by comparing neural embeddings
-  * Strategy 3: Subjective Measurement - Using LLM judges or classifier models to rate quality or compare outputs
-  * Strategy 4: Performance Measurement - Measuring speed, memory usage, or computational cost
+  * Definition: COMPUTING metrics/scores for INDIVIDUAL test instances (per-sample scoring).
+  * Strategy 1: Deterministic Measurement - Rule-based/algorithmic scoring WITHOUT ML models [Keywords: exact match, BLEU, ROUGE, edit distance, accuracy, F1]
+  * Strategy 2: Embedding Measurement - Semantic similarity using EMBEDDINGS/latent representations [Keywords: BERTScore, cosine similarity, embedding distance, SBERT]
+  * Strategy 3: Subjective Measurement - Using LLM/classifier AS JUDGE to rate quality [Keywords: GPT-4 judge, preference model, pairwise comparison, LLM-as-judge]
+  * Strategy 4: Performance Measurement - Measuring RESOURCE consumption/efficiency [Keywords: latency, throughput, memory usage, FLOPs, speed, cost]
 - Step B: Aggregate Scoring
-  * Definition: Combining individual scores into overall performance metrics.
-  * Strategy 1: Distributional Statistics - Computing averages, percentiles, or other summary statistics across test cases
-  * Strategy 2: Uncertainty Quantification - Calculating confidence intervals or statistical significance using resampling methods
+  * Definition: AGGREGATING per-instance scores into benchmark-level summary metrics.
+  * Strategy 1: Distributional Statistics - Computing summary stats across all instances [Keywords: mean, average, median, percentile, weighted average]
+  * Strategy 2: Uncertainty Quantification - Calculating confidence intervals/significance [Keywords: bootstrap, confidence interval, standard error, p-value]
 
 **Stage IV: Reporting** - Presenting and communicating evaluation results.
 - Step A: Insight Presentation
-  * Definition: Making results understandable and actionable for users.
-  * Strategy 1: Execution Tracing - Recording detailed execution logs or trajectories showing what happened during each test run
-  * Strategy 2: Subgroup Analysis - Breaking down performance by categories (task types, demographic groups, difficulty levels)
-  * Strategy 3: Regression Alerting - Automatically detecting when performance drops below previous baselines
-  * Strategy 4: Chart Generation - Creating visualizations like plots, charts, and graphs
-  * Strategy 5: Dashboard Creation - Building interactive web interfaces to explore results
-  * Strategy 6: Leaderboard Publication - Submitting scores to public comparison leaderboards"""
+  * Definition: VISUALIZING and PUBLISHING results to make them understandable and actionable.
+  * Strategy 1: Execution Tracing - Recording DETAILED logs/trajectories of execution steps [Keywords: trace, logging, step-by-step, execution path, debug output]
+  * Strategy 2: Subgroup Analysis - STRATIFYING performance by categories/groups [Keywords: breakdown by category, demographic splits, per-task analysis, grouped metrics]
+  * Strategy 3: Regression Alerting - DETECTING performance degradation vs baselines [Keywords: regression detection, alert, threshold, performance drop, baseline comparison]
+  * Strategy 4: Chart Generation - Creating VISUAL plots/graphs [Keywords: plot, chart, visualization, graph, radar chart, histogram]
+  * Strategy 5: Dashboard Creation - Building INTERACTIVE web UI for results [Keywords: dashboard, web interface, UI, interactive display, result viewer]
+  * Strategy 6: Leaderboard Publication - SUBMITTING results to public rankings [Keywords: leaderboard, submission, public benchmark, ranking, competition]"""
 
 SYSTEM_PROMPT = f"""You are an expert classifier for machine learning evaluation workflow issues.
 
@@ -96,6 +96,11 @@ Mark is_related=true if the issue directly affects ANY stage of the evaluation w
 
 ## STEP 2: ASSIGN LABELS (stage, step, strategy)
 
+HIERARCHICAL CLASSIFICATION FRAMEWORK:
+1. **Stage** = WHEN in the workflow does the issue occur? (Provisioning → Specification → Execution → Assessment → Reporting)
+2. **Step** = WHAT component within that stage is affected? (e.g., within Provisioning: installation vs credentials)
+3. **Strategy** = HOW specifically is that component implemented? (e.g., within installation: pip vs Docker vs npm)
+
 CLASSIFICATION APPROACH:
 - Understand the CORE PROBLEM semantically first
 - Match to appropriate Stage/Step/Strategy from taxonomy
@@ -106,10 +111,32 @@ CLASSIFICATION APPROACH:
 - If multiple stages relevant → choose PRIMARY blocker (earliest failure point)
 - Semantic understanding > keyword matching
 
-EXAMPLES:
-✓ "pip install fails with dependency conflict" → Stage 0, Step A, Strategy 2
-✓ "Installation broken after upgrade" → Stage 0, Step A, strategy=null
-✓ "Can't get evaluations running" → Stage III, step=null, strategy=null
+CRITICAL DISAMBIGUATION RULES:
+
+**0-B Credentials (by PURPOSE):**
+  Strategy 1 = CALLING APIs | Strategy 2 = DOWNLOADING artifacts | Strategy 3 = PLATFORM access
+  ✓ "OpenAI API key invalid" → 0-B-1  |  ✓ "HF login to download Llama" → 0-B-2  |  ✓ "EvalAI login fails" → 0-B-3
+
+**I-A SUT Type (by EXECUTION):**
+  Strategy 1 = Remote API | Strategy 2 = Local weights | Strategy 3 = No weights | Strategy 4 = Multi-step
+  ✓ "API timeout" → I-A-1  |  ✓ "OOM loading model" → I-A-2  |  ✓ "BM25 index fails" → I-A-3  |  ✓ "Agent loop stuck" → I-A-4
+
+**I-B vs I-C (by DATA FLOW):**
+  I-B = Fed TO SUT  |  I-C = Used FOR scoring
+  ✓ "Test prompts missing" → I-B  |  ✓ "Ground truth labels missing" → I-C
+
+**I-A vs II-A (by PHASE):**
+  I-A = LOADING/config  |  II-A = RUNNING/inference
+  ✓ "Model load OOM" → I-A-2  |  ✓ "Generation timeout" → II-A-1
+
+**III-A Scoring (by METHOD):**
+  Strategy 1 = Algorithmic | Strategy 2 = Embeddings | Strategy 3 = LLM judge | Strategy 4 = Resources
+  ✓ "BLEU bug" → III-A-1  |  ✓ "BERTScore crash" → III-A-2  |  ✓ "GPT-4 judge fails" → III-A-3  |  ✓ "Latency broken" → III-A-4
+
+STAGE DECISION TREE:
+Setup tools? → 0 | Configure test? → I | Run SUT? → II | Compute scores? → III | Display results? → IV
+
+KEY PRINCIPLE: Choose PRIMARY/EARLIEST blocker (e.g., "Can't run tests due to pip install" → Stage 0)
 
 ## STEP 3: WRITE ROOT CAUSE (max 15 words)
 

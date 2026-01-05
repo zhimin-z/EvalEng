@@ -8,7 +8,7 @@ from collections import deque
 
 dotenv.load_dotenv(override=True)
 
-df = pd.read_csv("data/rogue.csv", encoding="utf-8")
+df = pd.read_csv("data/evaluation_harness_metadata.csv", encoding="utf-8")
 
 # Extract owner/repo from GitHub URLs (supports comma-separated URLs)
 def extract_repo_from_url(repo_str):
@@ -133,15 +133,24 @@ def fetch_issues_pygithub(gh, owner, repo, token_name):
                 # If timeline fails, just continue with empty list
                 print(f"[{token_name}] ⚠ Could not fetch timeline for issue {issue.number}: {e}")
 
+            # Collect all comments for this issue
+            issue_comments_list = []
+            try:
+                for comment in issue.get_comments():
+                    issue_comments_list.append(comment.body)
+            except Exception as e:
+                # If comments fetch fails, continue with empty list
+                print(f"[{token_name}] ⚠ Could not fetch comments for issue {issue.number}: {e}")
+
             issues_data.append({
                 'github_repo': f"{owner}/{repo}",
                 'issue_title': issue.title,
                 'issue_body': issue.body,
+                'issue_comments': issue_comments_list,
                 'issue_created_at': issue.created_at.isoformat() if issue.created_at else None,
                 'issue_closed_at': issue.closed_at.isoformat() if issue.closed_at else None,
                 'issue_url': issue.html_url,
                 'issue_labels': [label.name for label in issue.labels],
-                'issue_comments': issue.comments,
                 'issue_cross_referenced': cross_referenced_urls,
             })
 
