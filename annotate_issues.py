@@ -3,6 +3,7 @@ import dotenv
 import os
 import json
 import time
+import re
 
 from tqdm import tqdm
 from litellm import completion
@@ -164,14 +165,30 @@ or
 
 {{"is_related": false, "stage": null, "step": null, "strategy": null, "root_cause": null}}"""
 
-def analyze_issue(title, body, harness_name):
+def strip_code_blocks(text):
+    """Replace all code blocks with [CODE] placeholder to reduce token usage"""
+    if not text:
+        return text
+    # Replace triple backtick code blocks with [CODE]
+    return re.sub(r'```[\s\S]*?```', '[CODE]', text)
+
+def analyze_issue(title, body, harness_name, comments=None):
     """Analyze a single issue using the configured LLM model"""
-    issue_text = f"Harness: {harness_name}\nTitle: {title}\nBody: {body if pd.notna(body) and body.strip() else 'No description'}"
+    # Strip code blocks from body
+    body_stripped = strip_code_blocks(body) if pd.notna(body) else None
+    issue_text = f"Harness: {harness_name}\nTitle: {title}\nBody: {body_stripped if body_stripped and body_stripped.strip() else 'No description'}"
+
+    # Add comments if available
+    if comments and len(comments) > 0:
+        issue_text += f"\n\nComments ({len(comments)}):\n"
+        for i, comment in enumerate(comments, 1):
+            comment_stripped = strip_code_blocks(comment) if comment else ""
+            issue_text += f"[Comment {i}] {comment_stripped}\n"
 
     try:
         response = completion(
             model=MODEL,
-            max_tokens=200,  # Reduced: JSON output is ~100 tokens
+            max_tokens=120,
             messages=[
                 {"role": "system", "content": SYSTEM_PROMPT, "cache_control": {"type": "ephemeral"}},
                 {"role": "user", "content": issue_text}
@@ -220,7 +237,8 @@ for idx, row in tqdm(df.iterrows(), total=len(df), desc="Analyzing issues"):
     analysis, usage = analyze_issue(
         title=row['issue_title'],
         body=row['issue_body'],
-        harness_name=row['harness_name']
+        harness_name=row['harness_name'],
+        comments=row.get('issue_comments', [])
     )
 
     # Track token usage
