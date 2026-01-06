@@ -16,7 +16,7 @@ MODEL = "anthropic/claude-haiku-4-5-20251001"
 
 # Read the issues JSONL
 df = pd.read_json("data/github_issues.jsonl", orient="records", lines=True)
-df = df.sample(n=377, random_state=42)  # Randomly select a sample of issues for analysis
+df = df.sample(n=377, random_state=42)  # https://www.calculator.net/sample-size-calculator.html?type=1&cl=95&ci=5&pp=50&ps=20000&x=Calculate
 print(f"Total issues to analyze: {len(df)}")
 
 # Condensed version of the evaluation workflow stages
