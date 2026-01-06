@@ -4,27 +4,15 @@ import ast
 from collections import Counter
 
 # Read the GitHub issues CSV
-df = pd.read_csv("data/github_issues.csv", encoding="utf-8")
+df = pd.read_json("data/github_issues.jsonl", lines=True)
 
 print(f"Total issues: {len(df)}")
-print("=" * 80)
-
-# Parse the issue_labels column (stored as string representation of lists)
-def parse_labels(label_str):
-    """Parse label string to list"""
-    try:
-        if pd.isna(label_str) or label_str == '[]' or label_str == '':
-            return []
-        # Use ast.literal_eval to safely parse the string representation of a list
-        return ast.literal_eval(label_str)
-    except:
-        return []
-
-df['parsed_labels'] = df['issue_labels'].apply(parse_labels)
+print(f"Total repos: {len(df['github_repo'].unique())}")
+print(f"Total harnesses: {len(df['harness_name'].unique())}")
 
 # Count issues with labels
-issues_with_labels = df[df['parsed_labels'].apply(len) > 0]
-issues_without_labels = df[df['parsed_labels'].apply(len) == 0]
+issues_with_labels = df[df['issue_labels'].apply(len) > 0]
+issues_without_labels = df[df['issue_labels'].apply(len) == 0]
 
 print(f"\n📊 LABEL COVERAGE:")
 print(f"  Issues with labels:    {len(issues_with_labels):,} ({len(issues_with_labels)/len(df)*100:.1f}%)")
@@ -32,7 +20,7 @@ print(f"  Issues without labels: {len(issues_without_labels):,} ({len(issues_wit
 
 # Collect all labels and count them
 all_labels = []
-for labels_list in df['parsed_labels']:
+for labels_list in df['issue_labels']:
     all_labels.extend(labels_list)
 
 label_counts = Counter(all_labels)
@@ -52,7 +40,7 @@ for i, (label, count) in enumerate(label_counts.most_common(30), 1):
     print(f"{i:2d}. {label:40s} {count:6,} issues ({percentage:5.2f}%)")
 
 # Show distribution by label count
-labels_per_issue = df['parsed_labels'].apply(len)
+labels_per_issue = df['issue_labels'].apply(len)
 label_count_dist = labels_per_issue.value_counts().sort_index()
 
 print(f"\n📊 DISTRIBUTION BY NUMBER OF LABELS PER ISSUE:")
@@ -66,13 +54,12 @@ for num_labels, count in label_count_dist.items():
 print(f"\n🗂️  LABEL USAGE BY REPOSITORY (Top 10):")
 print("-" * 80)
 repo_label_stats = df.groupby('github_repo').agg({
-    'parsed_labels': lambda x: sum(len(labels) for labels in x),
+    'issue_labels': lambda x: sum(len(labels) for labels in x),
     'issue_title': 'count'
-}).rename(columns={'parsed_labels': 'total_labels', 'issue_title': 'total_issues'})
+}).rename(columns={'issue_labels': 'total_labels', 'issue_title': 'total_issues'})
 repo_label_stats['avg_labels'] = repo_label_stats['total_labels'] / repo_label_stats['total_issues']
-repo_label_stats['pct_labeled'] = df.groupby('github_repo')['parsed_labels'].apply(lambda x: (x.apply(len) > 0).sum() / len(x) * 100)
+repo_label_stats['pct_labeled'] = df.groupby('github_repo')['issue_labels'].apply(lambda x: (x.apply(len) > 0).sum() / len(x) * 100)
 repo_label_stats = repo_label_stats.sort_values('total_labels', ascending=False).head(10)
 
 for repo, row in repo_label_stats.iterrows():
-    print(f"{repo:50s} {row['total_issues']:4.0f} issues, {row['total_labels']:5.0f} labels, "
-          f"avg: {row['avg_labels']:.2f}, {row['pct_labeled']:.1f}% labeled")
+    print(f"{repo:50s} {row['total_issues']:4.0f} issues, {row['total_labels']:4.0f} labels, {row['pct_labeled']:.1f}% labeled")

@@ -15,8 +15,8 @@ dotenv.load_dotenv(override=True)
 MODEL = "anthropic/claude-haiku-4-5-20251001"
 
 # Read the issues JSONL
-df = pd.read_json("data/github_issues.jsonl", orient="records", lines=True)
-df = df.sample(n=377, random_state=42)  # https://www.calculator.net/sample-size-calculator.html?type=1&cl=95&ci=5&pp=50&ps=20000&x=Calculate
+df = pd.read_json("data/github_issues_annotated.jsonl", orient="records", lines=True)
+# df = df.sample(n=377, random_state=42)  # https://www.calculator.net/sample-size-calculator.html?type=1&cl=95&ci=5&pp=50&ps=20000&x=Calculate
 print(f"Total issues to analyze: {len(df)}")
 
 # Condensed version of the evaluation workflow stages
@@ -277,64 +277,3 @@ results_df.to_json(output_file, orient="records", lines=True, force_ascii=False)
 
 print("\n" + "=" * 80)
 print(f"✓ Analysis complete! Results saved to {output_file}")
-
-# Summary statistics
-print("\n" + "=" * 80)
-print("SUMMARY STATISTICS".center(80))
-print("=" * 80)
-print(f"Total issues annotated: {len(results_df):>4}")
-related_count = results_df['is_related'].sum() if results_df['is_related'].dtype == 'bool' else len(results_df[results_df['is_related'] == True])
-print(f"Related issues: {related_count:>4}")
-print(f"Unrelated issues: {len(results_df) - related_count:>4}")
-
-# Hierarchical breakdown
-print("\n" + "=" * 80)
-print("HIERARCHICAL BREAKDOWN".center(80))
-print("=" * 80)
-
-related_df = results_df[results_df['is_related'] == True]
-if len(related_df) > 0:
-    # Get all unique stages, sorted
-    stages = sorted([s for s in related_df['stage'].unique() if pd.notna(s)])
-
-    for stage in stages:
-        stage_df = related_df[related_df['stage'] == stage]
-        stage_count = len(stage_df)
-        print(f"\n{'Stage ' + stage + ':':<30} {stage_count:>4}")
-
-        # Count issues with no step specified (general stage level)
-        no_step_count = len(stage_df[stage_df['step'].isna()])
-        if no_step_count > 0:
-            print(f"  {'├─ General (no step):':<28} {no_step_count:>4}")
-
-        # Get all unique steps for this stage
-        steps = sorted([s for s in stage_df['step'].unique() if pd.notna(s)])
-
-        for step_idx, step in enumerate(steps):
-            step_df = stage_df[stage_df['step'] == step]
-            step_count = len(step_df)
-            is_last_step = (step_idx == len(steps) - 1)
-            step_prefix = "└─" if is_last_step else "├─"
-            print(f"  {step_prefix} {'Step ' + stage + '-' + step + ':':<26} {step_count:>4}")
-
-            # Count issues with no strategy specified (general step level)
-            no_strategy_count = len(step_df[step_df['strategy'].isna()])
-
-            # Get all unique strategies for this step
-            strategies = sorted([s for s in step_df['strategy'].unique() if pd.notna(s)])
-
-            step_continuation = "  " if is_last_step else "│ "
-
-            if no_strategy_count > 0:
-                if len(strategies) > 0:
-                    print(f"  {step_continuation}  {'├─ General (no strategy):':<24} {no_strategy_count:>4}")
-                else:
-                    print(f"  {step_continuation}  {'└─ General (no strategy):':<24} {no_strategy_count:>4}")
-
-            for strat_idx, strategy in enumerate(strategies):
-                strategy_count = len(step_df[step_df['strategy'] == strategy])
-                is_last_strategy = (strat_idx == len(strategies) - 1)
-                strat_prefix = "└─" if is_last_strategy else "├─"
-                print(f"  {step_continuation}  {strat_prefix} {'Strategy ' + stage + '-' + step + '-' + str(int(strategy)) + ':':<20} {strategy_count:>4}")
-
-print("\n" + "=" * 80)

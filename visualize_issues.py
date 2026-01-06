@@ -8,23 +8,23 @@ from collections import defaultdict
 
 # Root cause taxonomy mapping
 ROOT_CAUSE_TAXONOMY = {
-    "1": "Missing Feature",
-    "2": "Dependency Issue",
-    "3": "Interface Mismatch",
-    "4": "Logic Bug",
-    "5": "Configuration Error",
-    "6": "Resource Management",
-    "7": "Error Handling",
-    "8": "Documentation Issue",
-    "9": "Environment Setup",
-    "10": "Design Limitation"
+    "1": "Algorithmic Error",
+    "2": "Architectural Constraint",
+    "3": "Configuration Error",
+    "4": "Documentation Deficiency",
+    "5": "Environment Incompatibility",
+    "6": "External Dependency Breakage",
+    "7": "Interface Contract Mismatch",
+    "8": "Resource Mishandling",
+    "9": "Unimplemented Feature Gap",
+    "10": "Validation Gap",
+    "Others": "Others"
 }
 
 output_file = "data/github_issues_annotated.jsonl"
 results_df = pd.read_json(output_file, lines=True)
 
 if len(results_df) > 0:
-    print("\nRelated issues by stage, step, and strategy:")
     # Filter related issues
     related_df = results_df[results_df['is_related'] == True].copy()
 
@@ -214,39 +214,82 @@ if len(results_df) > 0:
     plt.tight_layout()
 
     # Save figure
-    output_path = "data/github_issue_workflow_distribution.png"
-    plt.savefig(output_path, dpi=300, bbox_inches='tight')
-    print(f"\nVisualization saved to {output_path}")
+    output_path = "data/github_issue_workflow_distribution.pdf"
+    plt.savefig(output_path, format='pdf', bbox_inches='tight')
+   
+    # Print hierarchical tree-style breakdown
+    print("=" * 70)
+    print(f"WORKFLOW STAGE/STEP/STRATEGY BREAKDOWN ({output_path})")
+    print("=" * 70)
 
-    # Also print summary statistics
-    print("\n=== Summary Statistics ===")
-    print(f"Total related issues: {len(related_df)}")
-    print(f"\nIssues by Stage, Step, and Strategy:")
-    for stage in stage_order:
-        stage_total = sum(sum(strategies.values()) for strategies in hierarchy[stage].values())
-        print(f"\nStage {stage if stage != 'unspecified' else 'unspecified'}: {stage_total} issues")
+    # Work with original data before fillna to properly identify unspecified values
+    related_original = results_df[results_df['is_related'] == True].copy()
 
-        # Sort steps for this stage (using the same step_sort_key function)
-        steps = sorted(hierarchy[stage].keys(), key=step_sort_key)
+    if len(related_original) > 0:
+        # Get all unique stages, sorted (excluding NaN)
+        stages_list = sorted([s for s in related_original['stage'].unique() if pd.notna(s)])
 
-        for step in steps:
-            step_total = sum(hierarchy[stage][step].values())
-            print(f"  Step {step if step != 'unspecified' else 'unspecified'}: {step_total} issues")
+        # Count issues with no stage specified (general workflow level)
+        no_stage_count = len(related_original[related_original['stage'].isna()])
 
-            # Sort strategies for this step
-            strategies = sorted(hierarchy[stage][step].keys(), key=lambda x: (
-                x == 'unspecified', x if isinstance(x, (int, float)) else 0
-            ))
+        # Iterate through stages
+        for stage in stages_list:
+            stage_df = related_original[related_original['stage'] == stage]
+            stage_count = len(stage_df)
+            print(f"{'Stage ' + str(int(stage) if isinstance(stage, float) else stage) + ':':<24} {stage_count:>3}")
 
-            for strategy in strategies:
-                count = hierarchy[stage][step][strategy]
-                print(f"    Strategy {strategy if strategy != 'unspecified' else 'unspecified'}: {count} issues")
+            # Count issues with no root cause label (general stage level)
+            no_root_cause_count = len(stage_df[stage_df['root_cause_label'].isna()])
+
+            # Count issues with no step specified (general stage level)
+            no_step_count = len(stage_df[stage_df['step'].isna()])
+
+            # Show "General (no root cause)" first if applicable
+            if no_root_cause_count > 0:
+                print(f"  {'├─ General (no root cause):':<22} {no_root_cause_count:>3}")
+
+            # Show "General (no step)" if applicable
+            if no_step_count > 0:
+                print(f"  {'├─ General (no step):':<22} {no_step_count:>3}")
+
+            # Get all unique steps for this stage (excluding NaN)
+            steps = sorted([s for s in stage_df['step'].unique() if pd.notna(s)])
+
+            for step_idx, step in enumerate(steps):
+                step_df = stage_df[stage_df['step'] == step]
+                step_count = len(step_df)
+                is_last_step = (step_idx == len(steps) - 1) and no_step_count == 0
+                step_prefix = "└─" if is_last_step else "├─"
+                step_label = str(int(step) if isinstance(step, float) else step)
+                print(f"  {step_prefix} {'Step ' + str(int(stage) if isinstance(stage, float) else stage) + '-' + step_label + ':':<20} {step_count:>3}")
+
+                # Count issues with no strategy specified (general step level)
+                no_strategy_count = len(step_df[step_df['strategy'].isna()])
+
+                # Get all unique strategies for this step (excluding NaN)
+                strategies = sorted([s for s in step_df['strategy'].unique() if pd.notna(s)])
+
+                step_continuation = "  " if is_last_step else "│ "
+
+                if no_strategy_count > 0:
+                    if len(strategies) > 0:
+                        print(f"  {step_continuation}  {'├─ General (no strategy):':<18} {no_strategy_count:>3}")
+                    else:
+                        print(f"  {step_continuation}  {'└─ General (no strategy):':<18} {no_strategy_count:>3}")
+
+                for strat_idx, strategy in enumerate(strategies):
+                    strategy_count = len(step_df[step_df['strategy'] == strategy])
+                    is_last_strategy = (strat_idx == len(strategies) - 1)
+                    strat_prefix = "└─" if is_last_strategy else "├─"
+                    strat_label = str(int(strategy) if isinstance(strategy, float) else strategy)
+                    print(f"  {step_continuation}  {strat_prefix} {'Strategy ' + str(int(stage) if isinstance(stage, float) else stage) + '-' + step_label + '-' + strat_label + ':':<14} {strategy_count:>3}")
+
+        # Show "General (no stage)" at the same level as other stages
+        if no_stage_count > 0:
+            print(f"{'General (no stage):':<24} {no_stage_count:>3}")
 
     plt.close()
-
-    # ============== Root Cause Distribution Visualization ==============
-    print("\n=== Creating Root Cause Distribution Visualization ===")
-
+    
     # Filter issues that have root_cause_label from ALL issues (not just related ones)
     root_cause_df = results_df[results_df['root_cause_label'].notna()].copy()
 
@@ -259,38 +302,42 @@ if len(results_df) > 0:
     # Handle any unmapped values
     root_cause_df['root_cause_name'] = root_cause_df['root_cause_name'].fillna('Unknown')
 
-    # For issues not related to any phase, mark stage as "Not Related"
-    root_cause_df['stage'] = root_cause_df.apply(
-        lambda row: 'Not Related' if pd.isna(row['stage']) or row.get('is_related') == False else row['stage'],
-        axis=1
-    )
-
-    # Convert stage values to proper types (same as related_df) for correct sorting
-    # This ensures numeric stage '0' becomes integer 0, which sorts before roman numerals
+    # Keep original stage values - don't create artificial "General" values
+    # Convert stage values to proper types for correct sorting
     root_cause_df['stage'] = root_cause_df['stage'].apply(
-        lambda val: convert_to_int_if_numeric(val) if val != 'Not Related' else val
+        lambda val: convert_to_int_if_numeric(val) if pd.notna(val) else val
     )
 
     # Create hierarchical structure: RootCause -> Stage -> Count
-    root_cause_hierarchy = defaultdict(lambda: defaultdict(int))
+    # For visualization, only count stages that are specified (not NaN)
+    root_cause_hierarchy_viz = defaultdict(lambda: defaultdict(int))
+
+    # For tree breakdown, track all including NaN to show "General (no stage)"
+    root_cause_hierarchy_full = defaultdict(lambda: defaultdict(int))
 
     for _, row in root_cause_df.iterrows():
         root_cause = row['root_cause_name']
         stage = row['stage']
-        root_cause_hierarchy[root_cause][stage] += 1
 
-    # Sort root causes by total count (descending)
-    root_cause_totals = {rc: sum(stages.values()) for rc, stages in root_cause_hierarchy.items()}
+        # Full hierarchy includes NaN stages
+        root_cause_hierarchy_full[root_cause][stage] += 1
+
+        # Viz hierarchy only includes specified stages
+        if pd.notna(stage):
+            root_cause_hierarchy_viz[root_cause][stage] += 1
+
+    # Sort root causes by total count (descending) - use full hierarchy for totals
+    root_cause_totals = {rc: sum(stages.values()) for rc, stages in root_cause_hierarchy_full.items()}
     sorted_root_cause_names = sorted(root_cause_totals.keys(), key=lambda x: root_cause_totals[x], reverse=True)
 
-    # Get all unique stages across all root causes
+    # Get all unique stages across root causes (for visualization - only specified stages)
     all_stages_in_root_causes = set()
-    for stages_dict in root_cause_hierarchy.values():
+    for stages_dict in root_cause_hierarchy_viz.values():
         all_stages_in_root_causes.update(stages_dict.keys())
 
-    # Define explicit stage order: 0, I, II, III, IV, then others
+    # Define explicit stage order: 0, I, II, III, IV (only actual workflow stages)
     # This ensures the legend appears in the correct order
-    explicit_stage_order = [0, 'I', 'II', 'III', 'IV', 'unspecified', 'Not Related']
+    explicit_stage_order = [0, 'I', 'II', 'III', 'IV']
 
     # Filter to only include stages that actually exist in the data
     stage_order_for_root_causes = [s for s in explicit_stage_order if s in all_stages_in_root_causes]
@@ -310,17 +357,17 @@ if len(results_df) > 0:
     x_base = np.arange(num_root_causes)
     colors = plt.cm.Set3(np.linspace(0, 1, num_stages))
 
-    # Plot grouped bars
+    # Plot grouped bars (using visualization hierarchy - only specified stages)
     for stage_idx, stage in enumerate(stage_order_for_root_causes):
         heights = []
         for root_cause in sorted_root_cause_names:
-            heights.append(root_cause_hierarchy[root_cause].get(stage, 0))
+            heights.append(root_cause_hierarchy_viz[root_cause].get(stage, 0))
 
         # Calculate x positions for this stage's bars
         x_offset = (stage_idx - num_stages / 2) * bar_width + bar_width / 2
         x_positions = x_base + x_offset
 
-        stage_label = f"Stage {stage}" if stage not in ['unspecified', 'Not Related'] else stage
+        stage_label = f"Stage {stage}"
         bars = ax.bar(x_positions, heights, bar_width,
                      label=stage_label, color=colors[stage_idx], edgecolor='white', linewidth=0.5)
 
@@ -376,21 +423,45 @@ if len(results_df) > 0:
     plt.tight_layout()
 
     # Save figure
-    root_cause_output_path = "data/github_issue_root_cause_distribution.png"
-    plt.savefig(root_cause_output_path, dpi=300, bbox_inches='tight')
-    print(f"Root cause distribution visualization saved to {root_cause_output_path}")
-
-    # Print root cause statistics
-    print("\n=== Root Cause Distribution Statistics ===")
+    root_cause_output_path = "data/github_issue_root_cause_distribution.pdf"
+    plt.savefig(root_cause_output_path, format='pdf', bbox_inches='tight')
+    
+    # Print hierarchical tree-style breakdown for root causes
+    print("=" * 70)
+    print(f"ROOT CAUSE DISTRIBUTION BY STAGE ({root_cause_output_path})")
+    print("=" * 70)
     print(f"Total issues with root cause labels: {len(root_cause_df)}")
-    print(f"\nBreakdown by root cause and stage:")
-    for root_cause in sorted_root_cause_names:
+
+    for rc_idx, root_cause in enumerate(sorted_root_cause_names):
         total = root_cause_totals[root_cause]
-        print(f"\n{root_cause}: {total} issues")
-        for stage in stage_order_for_root_causes:
-            count = root_cause_hierarchy[root_cause].get(stage, 0)
-            if count > 0:
-                stage_label = f"Stage {stage}" if stage not in ['unspecified', 'Not Related'] else stage
-                print(f"  {stage_label}: {count} issues")
+        is_last_root_cause = (rc_idx == len(sorted_root_cause_names) - 1)
+
+        print(f"{root_cause + ':':<22} {total:>3}")
+
+        # Count issues with no stage specified (general root cause level)
+        no_stage_count = root_cause_hierarchy_full[root_cause].get(float('nan'), 0)
+        # Check for NaN more carefully since NaN != NaN
+        for stage_val, count in root_cause_hierarchy_full[root_cause].items():
+            if pd.isna(stage_val):
+                no_stage_count = count
+                break
+
+        # Get specified stages for this root cause (excluding NaN)
+        stages_with_counts = [(stage, root_cause_hierarchy_full[root_cause].get(stage, 0))
+                              for stage in stage_order_for_root_causes]
+        stages_with_counts = [(s, c) for s, c in stages_with_counts if c > 0]
+
+        # Show "General (no stage)" first if there are issues without stage
+        if no_stage_count > 0:
+            if len(stages_with_counts) > 0:
+                print(f"  {'├─ General (no stage):':<20} {no_stage_count:>3}")
+            else:
+                print(f"  {'└─ General (no stage):':<20} {no_stage_count:>3}")
+
+        for stage_idx, (stage, count) in enumerate(stages_with_counts):
+            is_last_stage = (stage_idx == len(stages_with_counts) - 1)
+            stage_prefix = "└─" if is_last_stage else "├─"
+            stage_label = f"Stage {stage}"
+            print(f"  {stage_prefix} {stage_label + ':':<18} {count:>3}")
 
     plt.close()
