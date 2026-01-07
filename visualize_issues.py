@@ -3,8 +3,13 @@ import matplotlib
 matplotlib.use('Agg')  # Use non-interactive backend
 import matplotlib.pyplot as plt
 import numpy as np
+import textwrap
 
 from collections import defaultdict
+
+# Configuration: specify which diagrams to generate
+# Options: ['workflow', 'root_cause'] for both (default), ['workflow'] for workflow only, ['root_cause'] for root cause only
+GENERATE_DIAGRAMS = ['root_cause']
 
 # Root cause taxonomy mapping
 ROOT_CAUSE_TAXONOMY = {
@@ -21,53 +26,78 @@ ROOT_CAUSE_TAXONOMY = {
     "Others": "Others"
 }
 
-# Load data for workflow visualization (full dataset)
-workflow_file = "data/github_issues_annotated.jsonl"
-workflow_df = pd.read_json(workflow_file, lines=True)
+# Helper function to convert numeric values to integers
+def convert_to_int_if_numeric(val):
+    if val == "NA":
+        return val
+    try:
+        # Try to convert to float first, then to int
+        num_val = float(val)
+        if num_val.is_integer():
+            return int(num_val)
+        return num_val
+    except (ValueError, TypeError):
+        return val
 
-if len(workflow_df) > 0:
+# Helper function to convert roman numerals to integers for sorting
+def roman_to_int(s):
+    roman_values = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
+    if not isinstance(s, str):
+        return None
+    total = 0
+    prev_value = 0
+    for char in reversed(s.upper()):
+        if char not in roman_values:
+            return None
+        value = roman_values[char]
+        if value < prev_value:
+            total -= value
+        else:
+            total += value
+        prev_value = value
+    return total
+
+# Helper function for sorting stages
+def stage_sort_key(x):
+    if x == "NA":
+        return (2, 0)  # Put unspecified at the end
+    if isinstance(x, (int, float)):
+        return (0, x)  # Numeric stages first, sorted by value
+    roman_val = roman_to_int(x)
+    if roman_val is not None:
+        return (1, roman_val)  # Roman numerals second, sorted by value
+    return (2, 0)  # Other strings at the end
+
+# Helper function for sorting steps
+def step_sort_key(x):
+    if x == "NA":
+        return (2, '')  # Put unspecified at the end
+    if isinstance(x, (int, float)):
+        return (0, x)  # Numeric steps first, sorted by value
+    if isinstance(x, str) and len(x) == 1 and x.isalpha():
+        return (1, x.upper())  # Single letter steps second, sorted alphabetically
+    if isinstance(x, str):
+        return (1, x.upper())  # Other string steps, sorted alphabetically
+    return (2, '')  # Default to end
+
+# Load data for workflow visualization (full dataset)
+if 'workflow' in GENERATE_DIAGRAMS:
+    workflow_file = "data/github_issues_annotated.jsonl"
+    workflow_df = pd.read_json(workflow_file, lines=True)
+
+if 'workflow' in GENERATE_DIAGRAMS and len(workflow_df) > 0:
     # Filter related issues
     related_df = workflow_df[workflow_df['is_related'] == True].copy()
 
-    # Replace NaN with "unspecified" for better visualization
-    related_df['stage'] = related_df['stage'].fillna('unspecified')
-    related_df['step'] = related_df['step'].fillna('unspecified')
-    related_df['strategy'] = related_df['strategy'].fillna('unspecified')
+    # Replace NaN with "NA" for better visualization
+    related_df['stage'] = related_df['stage'].fillna("NA")
+    related_df['step'] = related_df['step'].fillna("NA")
+    related_df['strategy'] = related_df['strategy'].fillna("NA")
 
-    # Convert numeric values to integers (keep "unspecified" as string)
-    def convert_to_int_if_numeric(val):
-        if val == 'unspecified':
-            return val
-        try:
-            # Try to convert to float first, then to int
-            num_val = float(val)
-            if num_val.is_integer():
-                return int(num_val)
-            return num_val
-        except (ValueError, TypeError):
-            return val
-
+    # Convert numeric values to integers (keep "NA" as string)
     related_df['stage'] = related_df['stage'].apply(convert_to_int_if_numeric)
     related_df['step'] = related_df['step'].apply(convert_to_int_if_numeric)
     related_df['strategy'] = related_df['strategy'].apply(convert_to_int_if_numeric)
-
-    # Helper function to convert roman numerals to integers for sorting
-    def roman_to_int(s):
-        roman_values = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
-        if not isinstance(s, str):
-            return None
-        total = 0
-        prev_value = 0
-        for char in reversed(s.upper()):
-            if char not in roman_values:
-                return None
-            value = roman_values[char]
-            if value < prev_value:
-                total -= value
-            else:
-                total += value
-            prev_value = value
-        return total
 
     # Create hierarchical structure: Stage -> Step -> Strategy -> Count
     hierarchy = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
@@ -78,30 +108,8 @@ if len(workflow_df) > 0:
         strategy = row['strategy']
         hierarchy[stage][step][strategy] += 1
 
-    # Sort stages (handles numeric, roman numerals, and "unspecified")
-    def stage_sort_key(x):
-        if x == 'unspecified':
-            return (2, 0)  # Put unspecified at the end
-        if isinstance(x, (int, float)):
-            return (0, x)  # Numeric stages first, sorted by value
-        roman_val = roman_to_int(x)
-        if roman_val is not None:
-            return (1, roman_val)  # Roman numerals second, sorted by value
-        return (2, 0)  # Other strings at the end
-
+    # Sort stages (handles numeric, roman numerals, and "NA")
     stage_order = sorted(hierarchy.keys(), key=stage_sort_key)
-
-    # Helper function for sorting steps
-    def step_sort_key(x):
-        if x == 'unspecified':
-            return (2, '')  # Put unspecified at the end
-        if isinstance(x, (int, float)):
-            return (0, x)  # Numeric steps first, sorted by value
-        if isinstance(x, str) and len(x) == 1 and x.isalpha():
-            return (1, x.upper())  # Single letter steps second, sorted alphabetically
-        if isinstance(x, str):
-            return (1, x.upper())  # Other string steps, sorted alphabetically
-        return (2, '')  # Default to end
 
     # Prepare data for plotting
     stages = []
@@ -109,7 +117,7 @@ if len(workflow_df) > 0:
     strategies_per_step = []
 
     for stage in stage_order:
-        # Sort steps (handles numeric, alphabetic, and "unspecified")
+        # Sort steps (handles numeric, alphabetic, and "NA")
         steps = sorted(hierarchy[stage].keys(), key=step_sort_key)
 
         for step in steps:
@@ -123,9 +131,9 @@ if len(workflow_df) > 0:
     for strategies_dict in strategies_per_step:
         all_strategies.update(strategies_dict.keys())
 
-    # Sort strategies (handles integers/strings, with "unspecified" at the end)
+    # Sort strategies (handles integers/strings, with "NA" at the end)
     strategy_order = sorted(all_strategies, key=lambda x: (
-        x == 'unspecified', x if isinstance(x, (int, float)) else 0
+        x == "NA", x if isinstance(x, (int, float)) else 0
     ))
 
     # Create the plot
@@ -143,8 +151,8 @@ if len(workflow_df) > 0:
 
     for i, (stage, step) in enumerate(zip(stages, steps_per_stage)):
         x_positions.append(current_x)
-        # Add "Step " prefix for clarity unless it's "unspecified"
-        step_label = f"Step {step}" if step != 'unspecified' else step
+        # Add "Step " prefix for clarity unless it's "NA"
+        step_label = f"Step {step}" if step != "NA" else step
         x_labels.append(step_label)
         stage_positions[stage].append(current_x)
         current_x += 1
@@ -184,22 +192,38 @@ if len(workflow_df) > 0:
     ax.set_xlabel('Steps (grouped by Stage)', fontsize=12, fontweight='bold')
     ax.set_ylabel('Number of Issues', fontsize=12, fontweight='bold')
     ax.set_xticks(x_positions)
-    ax.set_xticklabels(x_labels, rotation=45, ha='right', fontsize=9)
+    ax.set_xticklabels(x_labels, ha='center', fontsize=9)
+
+    # Set tight x-axis limits to eliminate margin space
+    ax.set_xlim(-0.5, current_x - 0.5)
 
     # Add stage labels as text annotations near the top
-    for stage in stage_order:
+    for idx, stage in enumerate(stage_order):
         positions = stage_positions[stage]
         if positions:
-            center_x = np.mean(positions)
-            # Add "Stage " prefix for clarity unless it's "unspecified"
-            stage_label = f"Stage {stage}" if stage != 'unspecified' else stage
+            # Center based on boundaries for margin groups, use actual bar positions
+            if idx == 0:
+                # First group: use min position as left boundary
+                left_boundary = min(positions) - 0.5
+                right_boundary = stage_boundaries[0] if stage_boundaries else max(positions) + 0.5
+            elif idx == len(stage_order) - 1:
+                # Last group: use max position as right boundary
+                left_boundary = stage_boundaries[-1]
+                right_boundary = max(positions) + 0.5
+            else:
+                # Middle groups: use adjacent boundaries
+                left_boundary = stage_boundaries[idx - 1]
+                right_boundary = stage_boundaries[idx]
+            center_x = (left_boundary + right_boundary) / 2
+            # Add "Stage " prefix for clarity unless it's "NA"
+            stage_label = f"Stage {stage}" if stage != "NA" else stage
             ax.text(center_x, 0.97, stage_label, transform=ax.get_xaxis_transform(),
                    ha='center', va='top', fontsize=11, fontweight='bold',
                    bbox=dict(boxstyle='round,pad=0.5', facecolor='lightgray', alpha=0.7))
 
     # Add legend
-    ax.legend(title='Strategies', bbox_to_anchor=(1.05, 1), loc='upper left',
-             fontsize=9, title_fontsize=10)
+    ax.legend(title='Strategies', bbox_to_anchor=(0.92, 0.9), loc='upper left',
+             fontsize=12, title_fontsize=13, markerscale=1.5)
 
     # Add grid
     ax.yaxis.grid(True, linestyle='--', alpha=0.3)
@@ -290,10 +314,11 @@ if len(workflow_df) > 0:
     plt.close()
 
 # Load data for root cause visualization (sample dataset)
-root_cause_file = "data/github_issues_annotated_sample.jsonl"
-root_cause_results_df = pd.read_json(root_cause_file, lines=True)
+if 'root_cause' in GENERATE_DIAGRAMS:
+    root_cause_file = "data/github_issues_annotated_sample.jsonl"
+    root_cause_results_df = pd.read_json(root_cause_file, lines=True)
 
-if len(root_cause_results_df) > 0:
+if 'root_cause' in GENERATE_DIAGRAMS and len(root_cause_results_df) > 0:
     # Filter issues that have root_cause_label from ALL issues (not just related ones)
     root_cause_df = root_cause_results_df[root_cause_results_df['root_cause_label'].notna()].copy()
 
@@ -307,40 +332,52 @@ if len(root_cause_results_df) > 0:
     root_cause_df['root_cause_name'] = root_cause_df['root_cause_name'].fillna('Unknown')
 
     # Keep original stage values - don't create artificial "General" values
-    # Convert stage values to proper types for correct sorting
+    # Convert stage and step values to proper types for correct sorting
     root_cause_df['stage'] = root_cause_df['stage'].apply(
         lambda val: convert_to_int_if_numeric(val) if pd.notna(val) else val
     )
+    root_cause_df['step'] = root_cause_df['step'].apply(
+        lambda val: convert_to_int_if_numeric(val) if pd.notna(val) else val
+    )
 
-    # Create hierarchical structure: RootCause -> Stage -> Count
-    # For visualization, only count stages that are specified (not NaN)
-    root_cause_hierarchy_viz = defaultdict(lambda: defaultdict(int))
+    # Create hierarchical structure: RootCause -> Stage -> Step -> Count
+    # For visualization, only count stages and steps that are specified (not NaN)
+    root_cause_hierarchy_viz = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
 
-    # For tree breakdown, track all including NaN to show "General (no stage)"
-    root_cause_hierarchy_full = defaultdict(lambda: defaultdict(int))
+    # For tree breakdown, track all including NaN to show "General (no stage/step)"
+    root_cause_hierarchy_full = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
 
     for _, row in root_cause_df.iterrows():
         root_cause = row['root_cause_name']
         stage = row['stage']
+        step = row['step']
 
-        # Full hierarchy includes NaN stages
-        root_cause_hierarchy_full[root_cause][stage] += 1
+        # Full hierarchy includes NaN stages and steps
+        root_cause_hierarchy_full[root_cause][stage][step] += 1
 
-        # Viz hierarchy only includes specified stages
+        # Viz hierarchy only includes specified stages and steps
         if pd.notna(stage):
-            root_cause_hierarchy_viz[root_cause][stage] += 1
+            # For step, use "NA" if NaN for visualization
+            step_val = step if pd.notna(step) else "NA"
+            root_cause_hierarchy_viz[root_cause][stage][step_val] += 1
 
     # Sort root causes by total count (descending) - use full hierarchy for totals
-    root_cause_totals = {rc: sum(stages.values()) for rc, stages in root_cause_hierarchy_full.items()}
+    root_cause_totals = {
+        rc: sum(sum(steps.values()) for steps in stages.values())
+        for rc, stages in root_cause_hierarchy_full.items()
+    }
     sorted_root_cause_names = sorted(root_cause_totals.keys(), key=lambda x: root_cause_totals[x], reverse=True)
 
-    # Get all unique stages across root causes (for visualization - only specified stages)
+    # Get all unique stages and steps across root causes (for visualization - only specified)
     all_stages_in_root_causes = set()
+    all_steps_in_root_causes = set()
     for stages_dict in root_cause_hierarchy_viz.values():
         all_stages_in_root_causes.update(stages_dict.keys())
+        for steps_dict in stages_dict.values():
+            all_steps_in_root_causes.update(steps_dict.keys())
 
     # Define explicit stage order: 0, I, II, III, IV (only actual workflow stages)
-    # This ensures the legend appears in the correct order
+    # This ensures consistent ordering
     explicit_stage_order = [0, 'I', 'II', 'III', 'IV']
 
     # Filter to only include stages that actually exist in the data
@@ -351,67 +388,104 @@ if len(root_cause_results_df) > 0:
         if stage not in stage_order_for_root_causes:
             stage_order_for_root_causes.append(stage)
 
+    # Sort steps (handles alphabetic and "NA")
+    step_order = sorted(all_steps_in_root_causes, key=lambda x: (
+        x == "NA",  # Put "NA" at the end
+        x if isinstance(x, str) else str(x)  # Alphabetically sort the rest
+    ))
+
     # Create the plot
     fig, ax = plt.subplots(figsize=(16, 8))
 
-    # Prepare data for grouped bars
+    # Prepare data for grouped and stacked bars
     num_root_causes = len(sorted_root_cause_names)
     num_stages = len(stage_order_for_root_causes)
-    bar_width = 0.8 / num_stages  # Divide the space by number of stages
-    x_base = np.arange(num_root_causes)
-    colors = plt.cm.Set3(np.linspace(0, 1, num_stages))
+    num_steps = len(step_order)
+    bar_width = 0.6
 
-    # Plot grouped bars (using visualization hierarchy - only specified stages)
-    for stage_idx, stage in enumerate(stage_order_for_root_causes):
-        heights = []
-        for root_cause in sorted_root_cause_names:
-            heights.append(root_cause_hierarchy_viz[root_cause].get(stage, 0))
+    # Use different color map for steps (legend will show steps)
+    step_colors = plt.cm.Set3(np.linspace(0, 1, num_steps))
 
-        # Calculate x positions for this stage's bars
-        x_offset = (stage_idx - num_stages / 2) * bar_width + bar_width / 2
-        x_positions = x_base + x_offset
+    # Track positions for each root cause (for top labels)
+    root_cause_positions = defaultdict(list)
+    x_positions = []
+    x_labels = []
+    current_x = 0
+    root_cause_boundaries = []
 
-        stage_label = f"Stage {stage}"
-        bars = ax.bar(x_positions, heights, bar_width,
-                     label=stage_label, color=colors[stage_idx], edgecolor='white', linewidth=0.5)
+    # Plot grouped bars with stacking by steps
+    for rc_idx, root_cause in enumerate(sorted_root_cause_names):
+        for stage_idx, stage in enumerate(stage_order_for_root_causes):
+            x_positions.append(current_x)
+            x_labels.append(str(stage))
+            root_cause_positions[root_cause].append(current_x)
 
-        # Add count labels on top of each bar
-        for x_pos, height in zip(x_positions, heights):
-            if height > 0:
-                ax.text(x_pos, height, str(int(height)), ha='center', va='bottom',
+            # Stack bars by steps
+            bottom = 0
+
+            for step_idx, step in enumerate(step_order):
+                count = root_cause_hierarchy_viz[root_cause].get(stage, {}).get(step, 0)
+
+                # Only add to legend once (for the first root cause and first stage)
+                label = step if step != "NA" else "NA" if rc_idx == 0 and stage_idx == 0 else ""
+
+                bars = ax.bar(current_x, count, bar_width, bottom=bottom,
+                             label=label if rc_idx == 0 and stage_idx == 0 else "",
+                             color=step_colors[step_idx], edgecolor='white', linewidth=0.5)
+
+                bottom += count
+
+            # Add total count labels on top of each stacked bar
+            if bottom > 0:
+                ax.text(current_x, bottom, str(int(bottom)), ha='center', va='bottom',
                        fontsize=7, fontweight='bold')
 
+            current_x += 1
+
+        # Add boundary after each root cause (except the last one)
+        if rc_idx < num_root_causes - 1:
+            root_cause_boundaries.append(current_x - 0.5)
+
+    # Add vertical lines to separate root causes
+    for boundary in root_cause_boundaries:
+        ax.axvline(x=boundary, color='black', linewidth=2, linestyle='--', alpha=0.5)
+
     # Set labels and title
-    ax.set_xlabel('Root Cause Category', fontsize=12, fontweight='bold')
+    ax.set_xlabel('Stages (grouped by Root Cause)', fontsize=12, fontweight='bold')
     ax.set_ylabel('Number of Issues', fontsize=12, fontweight='bold')
-    ax.set_xticks(x_base)
+    ax.set_xticks(x_positions)
+    ax.set_xticklabels(x_labels, ha='center', fontsize=9)
 
-    # Create wrapped labels for better readability
-    wrapped_labels = []
-    for name in sorted_root_cause_names:
-        # Split long labels into multiple lines (approx 20 chars per line)
-        words = name.split()
-        lines = []
-        current_line = []
-        current_length = 0
-        for word in words:
-            if current_length + len(word) + 1 <= 20:
-                current_line.append(word)
-                current_length += len(word) + 1
+    # Set tight x-axis limits to eliminate margin space
+    ax.set_xlim(-0.5, current_x - 0.5)
+
+    # Add root cause labels as text annotations near the top
+    for idx, root_cause in enumerate(sorted_root_cause_names):
+        positions = root_cause_positions[root_cause]
+        if positions:
+            # Center based on boundaries for margin groups, use actual bar positions
+            if idx == 0:
+                # First group: use min position as left boundary
+                left_boundary = min(positions) - 0.5
+                right_boundary = root_cause_boundaries[0] if root_cause_boundaries else max(positions) + 0.5
+            elif idx == len(sorted_root_cause_names) - 1:
+                # Last group: use max position as right boundary
+                left_boundary = root_cause_boundaries[-1]
+                right_boundary = max(positions) + 0.5
             else:
-                if current_line:
-                    lines.append(' '.join(current_line))
-                current_line = [word]
-                current_length = len(word)
-        if current_line:
-            lines.append(' '.join(current_line))
-        wrapped_labels.append('\n'.join(lines))
+                # Middle groups: use adjacent boundaries
+                left_boundary = root_cause_boundaries[idx - 1]
+                right_boundary = root_cause_boundaries[idx]
+            center_x = (left_boundary + right_boundary) / 2
+            # Split label by spaces and add newlines
+            display_label = root_cause.replace(' ', '\n')
+            ax.text(center_x, 0.97, display_label, transform=ax.get_xaxis_transform(),
+                   ha='center', va='top', fontsize=10, fontweight='bold',
+                   bbox=dict(boxstyle='round,pad=0.5', facecolor='lightgray', alpha=0.7))
 
-    ax.set_xticklabels(wrapped_labels, rotation=0, ha='center', fontsize=9)
-
-    # Add legend
-    ax.legend(title='Stages', bbox_to_anchor=(1.05, 1), loc='upper left',
-             fontsize=9, title_fontsize=10)
+    # Add legend (showing steps now instead of stages)
+    ax.legend(title='Steps', bbox_to_anchor=(0.92, 0.9), loc='upper left',
+             fontsize=12, title_fontsize=13, markerscale=1.5)
 
     # Add grid
     ax.yaxis.grid(True, linestyle='--', alpha=0.3)
@@ -441,17 +515,19 @@ if len(root_cause_results_df) > 0:
         print(f"{root_cause + ':':<22} {total:>3}")
 
         # Count issues with no stage specified (general root cause level)
-        no_stage_count = root_cause_hierarchy_full[root_cause].get(float('nan'), 0)
-        # Check for NaN more carefully since NaN != NaN
-        for stage_val, count in root_cause_hierarchy_full[root_cause].items():
+        no_stage_count = 0
+        for stage_val, steps_dict in root_cause_hierarchy_full[root_cause].items():
             if pd.isna(stage_val):
-                no_stage_count = count
+                no_stage_count = sum(steps_dict.values())
                 break
 
         # Get specified stages for this root cause (excluding NaN)
-        stages_with_counts = [(stage, root_cause_hierarchy_full[root_cause].get(stage, 0))
-                              for stage in stage_order_for_root_causes]
-        stages_with_counts = [(s, c) for s, c in stages_with_counts if c > 0]
+        stages_with_counts = []
+        for stage in stage_order_for_root_causes:
+            if stage in root_cause_hierarchy_full[root_cause]:
+                stage_total = sum(root_cause_hierarchy_full[root_cause][stage].values())
+                if stage_total > 0:
+                    stages_with_counts.append((stage, stage_total))
 
         # Show "General (no stage)" first if there are issues without stage
         if no_stage_count > 0:
@@ -460,10 +536,43 @@ if len(root_cause_results_df) > 0:
             else:
                 print(f"  {'└─ General (no stage):':<20} {no_stage_count:>3}")
 
-        for stage_idx, (stage, count) in enumerate(stages_with_counts):
+        for stage_idx, (stage, stage_count) in enumerate(stages_with_counts):
             is_last_stage = (stage_idx == len(stages_with_counts) - 1)
             stage_prefix = "└─" if is_last_stage else "├─"
             stage_label = f"Stage {stage}"
-            print(f"  {stage_prefix} {stage_label + ':':<18} {count:>3}")
+            print(f"  {stage_prefix} {stage_label + ':':<18} {stage_count:>3}")
+
+            # Get steps for this stage
+            steps_dict = root_cause_hierarchy_full[root_cause][stage]
+
+            # Count issues with no step specified (general stage level)
+            no_step_count = 0
+            for step_val, count in steps_dict.items():
+                if pd.isna(step_val):
+                    no_step_count = count
+                    break
+
+            # Get specified steps for this stage (excluding NaN)
+            steps_with_counts = [(step, steps_dict[step]) for step in steps_dict.keys() if pd.notna(step)]
+            # Sort steps
+            steps_with_counts = sorted(steps_with_counts, key=lambda x: (
+                x[0] == "NA" if isinstance(x[0], str) else False,
+                x[0] if isinstance(x[0], str) else str(x[0])
+            ))
+
+            stage_continuation = "  " if is_last_stage else "│ "
+
+            # Show "General (no step)" first if there are issues without step
+            if no_step_count > 0:
+                if len(steps_with_counts) > 0:
+                    print(f"  {stage_continuation}  {'├─ General (no step):':<16} {no_step_count:>3}")
+                else:
+                    print(f"  {stage_continuation}  {'└─ General (no step):':<16} {no_step_count:>3}")
+
+            for step_idx, (step, step_count) in enumerate(steps_with_counts):
+                is_last_step = (step_idx == len(steps_with_counts) - 1)
+                step_prefix = "└─" if is_last_step else "├─"
+                step_label = f"Step {step}" if step != "NA" else "NA"
+                print(f"  {stage_continuation}  {step_prefix} {step_label + ':':<14} {step_count:>3}")
 
     plt.close()
