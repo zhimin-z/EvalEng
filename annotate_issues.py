@@ -231,17 +231,13 @@ def analyze_issue(title, body, harness_name, comments=None):
         return result, usage
 
     except Exception as e:
-        error_msg = str(e)
-        print(f"  Error: {error_msg}")
-        # Print full error for debugging if it's an API error
-        if "invalid_request_error" in error_msg or "BadRequestError" in error_msg:
-            print(f"  Full error details: {error_msg}")
+        print(f"  Error: {str(e)}")
         return {
             "is_related": None,
             "stage": None,
             "step": None,
             "strategy": None,
-            "root_cause": f"Error: {error_msg}"
+            "root_cause": f"Error: {str(e)}"
         }, None
 
 # Analyze all issues
