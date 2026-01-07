@@ -18,6 +18,12 @@ MODEL = "anthropic/claude-haiku-4-5-20251001"
 # Read the issues JSONL
 df = pd.read_json("data/github_issues.jsonl", orient="records", lines=True)
 # df = df.sample(n=377, random_state=42)  # https://www.calculator.net/sample-size-calculator.html?type=1&cl=95&ci=5&pp=50&ps=20000&x=Calculate
+
+# Load already annotated sample and exclude from further analysis
+annotated_df = pd.read_json("data/github_issues_annotated_sample.jsonl", orient="records", lines=True)
+annotated_issue_urls = set(annotated_df['issue_url'].tolist())
+df = df[~df['issue_url'].isin(annotated_issue_urls)]
+print(f"Excluded {len(annotated_issue_urls)} already annotated issues")
 print(f"Total issues to analyze: {len(df)}")
 
 # Condensed version of the evaluation workflow stages
@@ -283,7 +289,13 @@ for idx, row in tqdm(df.iterrows(), total=len(df), desc="Analyzing issues"):
 
         # Check if file exists and concat, otherwise create new file
         if os.path.exists(output_file):
-            existing_df = pd.read_json(output_file, orient="records", lines=True)
+            # Read line by line to avoid overflow issues with large numbers
+            existing_data = []
+            with open(output_file, 'r', encoding='utf-8') as f:
+                for line in f:
+                    if line.strip():
+                        existing_data.append(json.loads(line))
+            existing_df = pd.DataFrame(existing_data)
             combined_df = pd.concat([existing_df, current_df], ignore_index=True)
             combined_df.to_json(output_file, orient="records", lines=True, force_ascii=False)
         else:
@@ -300,7 +312,13 @@ if results:
     current_df = pd.DataFrame(results)
 
     if os.path.exists(output_file):
-        existing_df = pd.read_json(output_file, orient="records", lines=True)
+        # Read line by line to avoid overflow issues with large numbers
+        existing_data = []
+        with open(output_file, 'r', encoding='utf-8') as f:
+            for line in f:
+                if line.strip():
+                    existing_data.append(json.loads(line))
+        existing_df = pd.DataFrame(existing_data)
         combined_df = pd.concat([existing_df, current_df], ignore_index=True)
         combined_df.to_json(output_file, orient="records", lines=True, force_ascii=False)
     else:

@@ -21,12 +21,13 @@ ROOT_CAUSE_TAXONOMY = {
     "Others": "Others"
 }
 
-output_file = "data/github_issues_annotated.jsonl"
-results_df = pd.read_json(output_file, lines=True)
+# Load data for workflow visualization (full dataset)
+workflow_file = "data/github_issues_annotated.jsonl"
+workflow_df = pd.read_json(workflow_file, lines=True)
 
-if len(results_df) > 0:
+if len(workflow_df) > 0:
     # Filter related issues
-    related_df = results_df[results_df['is_related'] == True].copy()
+    related_df = workflow_df[workflow_df['is_related'] == True].copy()
 
     # Replace NaN with "unspecified" for better visualization
     related_df['stage'] = related_df['stage'].fillna('unspecified')
@@ -182,8 +183,6 @@ if len(results_df) > 0:
     # Set labels and title
     ax.set_xlabel('Steps (grouped by Stage)', fontsize=12, fontweight='bold')
     ax.set_ylabel('Number of Issues', fontsize=12, fontweight='bold')
-    ax.set_title('Distribution of Issues across Stages, Steps, and Strategies',
-                 fontsize=14, fontweight='bold', pad=20)
     ax.set_xticks(x_positions)
     ax.set_xticklabels(x_labels, rotation=45, ha='right', fontsize=9)
 
@@ -223,7 +222,7 @@ if len(results_df) > 0:
     print("=" * 70)
 
     # Work with original data before fillna to properly identify unspecified values
-    related_original = results_df[results_df['is_related'] == True].copy()
+    related_original = workflow_df[workflow_df['is_related'] == True].copy()
 
     if len(related_original) > 0:
         # Get all unique stages, sorted (excluding NaN)
@@ -289,9 +288,14 @@ if len(results_df) > 0:
             print(f"{'General (no stage):':<24} {no_stage_count:>3}")
 
     plt.close()
-    
+
+# Load data for root cause visualization (sample dataset)
+root_cause_file = "data/github_issues_annotated_sample.jsonl"
+root_cause_results_df = pd.read_json(root_cause_file, lines=True)
+
+if len(root_cause_results_df) > 0:
     # Filter issues that have root_cause_label from ALL issues (not just related ones)
-    root_cause_df = results_df[results_df['root_cause_label'].notna()].copy()
+    root_cause_df = root_cause_results_df[root_cause_results_df['root_cause_label'].notna()].copy()
 
     # Convert root_cause_label to string for mapping
     root_cause_df['root_cause_label'] = root_cause_df['root_cause_label'].astype(str)
@@ -380,8 +384,6 @@ if len(results_df) > 0:
     # Set labels and title
     ax.set_xlabel('Root Cause Category', fontsize=12, fontweight='bold')
     ax.set_ylabel('Number of Issues', fontsize=12, fontweight='bold')
-    ax.set_title('Distribution of Issues by Root Cause and Stage',
-                 fontsize=14, fontweight='bold', pad=20)
     ax.set_xticks(x_base)
 
     # Create wrapped labels for better readability
