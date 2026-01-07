@@ -80,6 +80,38 @@ def step_sort_key(x):
         return (1, x.upper())  # Other string steps, sorted alphabetically
     return (2, '')  # Default to end
 
+# Helper function for smart label splitting
+def smart_split_label(label, max_combined_length=10):
+    """
+    Split label into lines, keeping short consecutive words together.
+    Two successive words are kept on the same line if their combined length <= max_combined_length.
+    """
+    words = label.split(' ')
+    if len(words) <= 1:
+        return label
+
+    lines = []
+    current_line_words = [words[0]]
+
+    for i in range(1, len(words)):
+        # Check if the last word in current line and the next word should be on same line
+        last_word = current_line_words[-1]
+        next_word = words[i]
+
+        if len(last_word) + len(next_word) <= max_combined_length:
+            # Keep them together
+            current_line_words.append(next_word)
+        else:
+            # Start a new line
+            lines.append(' '.join(current_line_words))
+            current_line_words = [next_word]
+
+    # Add the final line
+    if current_line_words:
+        lines.append(' '.join(current_line_words))
+
+    return '\n'.join(lines)
+
 # Load data for workflow visualization (full dataset)
 if 'workflow' in GENERATE_DIAGRAMS:
     workflow_file = "data/github_issues_annotated.jsonl"
@@ -477,8 +509,8 @@ if 'root_cause' in GENERATE_DIAGRAMS and len(root_cause_results_df) > 0:
                 left_boundary = root_cause_boundaries[idx - 1]
                 right_boundary = root_cause_boundaries[idx]
             center_x = (left_boundary + right_boundary) / 2
-            # Split label by spaces and add newlines
-            display_label = root_cause.replace(' ', '\n')
+            # Split label smartly, keeping short consecutive words together
+            display_label = smart_split_label(root_cause)
             ax.text(center_x, 0.97, display_label, transform=ax.get_xaxis_transform(),
                    ha='center', va='top', fontsize=10, fontweight='bold',
                    bbox=dict(boxstyle='round,pad=0.5', facecolor='lightgray', alpha=0.7))
