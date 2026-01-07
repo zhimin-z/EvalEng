@@ -18,12 +18,6 @@ MODEL = "anthropic/claude-haiku-4-5-20251001"
 # Read the issues JSONL
 df = pd.read_json("data/github_issues.jsonl", orient="records", lines=True)
 # df = df.sample(n=377, random_state=42)  # https://www.calculator.net/sample-size-calculator.html?type=1&cl=95&ci=5&pp=50&ps=20000&x=Calculate
-
-# Load already annotated sample and exclude from further analysis
-# annotated_df = pd.read_json("data/github_issues_annotated_sample.jsonl", orient="records", lines=True)
-# annotated_issue_urls = set(annotated_df['issue_url'].tolist())
-# df = df[~df['issue_url'].isin(annotated_issue_urls)]
-# print(f"Excluded {len(annotated_issue_urls)} already annotated issues")
 print(f"Total issues to analyze: {len(df)}")
 
 # Condensed version of the evaluation workflow stages
