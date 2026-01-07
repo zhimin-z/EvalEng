@@ -196,9 +196,18 @@ def analyze_issue(title, body, harness_name, comments=None):
     try:
         response = completion(
             model=MODEL,
-            max_tokens=120,
+            max_tokens=150,  # Sufficient for JSON output + small buffer
             messages=[
-                {"role": "system", "content": SYSTEM_PROMPT, "cache_control": {"type": "ephemeral"}},
+                {
+                    "role": "system",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": SYSTEM_PROMPT,
+                            "cache_control": {"type": "ephemeral"}
+                        }
+                    ]
+                },
                 {"role": "user", "content": issue_text}
             ]
         )
@@ -222,13 +231,17 @@ def analyze_issue(title, body, harness_name, comments=None):
         return result, usage
 
     except Exception as e:
-        print(f"  Error: {str(e)[:100]}")
+        error_msg = str(e)
+        print(f"  Error: {error_msg}")
+        # Print full error for debugging if it's an API error
+        if "invalid_request_error" in error_msg or "BadRequestError" in error_msg:
+            print(f"  Full error details: {error_msg}")
         return {
             "is_related": None,
             "stage": None,
             "step": None,
             "strategy": None,
-            "root_cause": f"Error: {str(e)[:100]}"
+            "root_cause": f"Error: {error_msg}"
         }, None
 
 # Analyze all issues
@@ -276,47 +289,18 @@ for idx, row in tqdm(df.iterrows(), total=len(df), desc="Analyzing issues"):
     }
     results.append(result_row)
 
-    # Save every 10 issues
-    if len(results) % 10 == 0:
-        # Create DataFrame from current results
-        current_df = pd.DataFrame(results)
-
-        # Check if file exists and concat, otherwise create new file
-        if os.path.exists(output_file):
-            # Read line by line to avoid overflow issues with large numbers
-            existing_data = []
-            with open(output_file, 'r', encoding='utf-8') as f:
-                for line in f:
-                    if line.strip():
-                        existing_data.append(json.loads(line))
-            existing_df = pd.DataFrame(existing_data)
-            combined_df = pd.concat([existing_df, current_df], ignore_index=True)
-            combined_df.to_json(output_file, orient="records", lines=True, force_ascii=False)
-        else:
-            current_df.to_json(output_file, orient="records", lines=True, force_ascii=False)
-
-        print(f"\n✓ Saved progress: {len(results)} issues processed")
-        results = []  # Clear results after saving
+    # Save every 50 issues
+    if len(results) % 50 == 0:
+        pd.DataFrame(results).to_json(output_file, orient="records", lines=True, force_ascii=False, mode='a')
+        print(f"\n✓ Saved progress: {len(results)} new issues appended")
+        results = []
 
     # Small delay for rate limiting
     time.sleep(0.1)
 
 # Save any remaining results
 if results:
-    current_df = pd.DataFrame(results)
-
-    if os.path.exists(output_file):
-        # Read line by line to avoid overflow issues with large numbers
-        existing_data = []
-        with open(output_file, 'r', encoding='utf-8') as f:
-            for line in f:
-                if line.strip():
-                    existing_data.append(json.loads(line))
-        existing_df = pd.DataFrame(existing_data)
-        combined_df = pd.concat([existing_df, current_df], ignore_index=True)
-        combined_df.to_json(output_file, orient="records", lines=True, force_ascii=False)
-    else:
-        current_df.to_json(output_file, orient="records", lines=True, force_ascii=False)
+    pd.DataFrame(results).to_json(output_file, orient="records", lines=True, force_ascii=False, mode='a')
 
 print("\n" + "=" * 80)
 print(f"✓ Analysis complete! Results saved to {output_file}")
