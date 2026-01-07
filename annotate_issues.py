@@ -226,9 +226,7 @@ def analyze_issue(title, body, harness_name, comments=None):
 
         result = json.loads(response_text)
 
-        # Track token usage
-        usage = response.usage
-        return result, usage
+        return result
 
     except Exception as e:
         print(f"  Error: {str(e)}")
@@ -238,14 +236,10 @@ def analyze_issue(title, body, harness_name, comments=None):
             "step": None,
             "strategy": None,
             "root_cause": f"Error: {str(e)}"
-        }, None
+        }
 
 # Analyze all issues
 results = []
-total_input_tokens = 0
-total_output_tokens = 0
-total_cache_read_tokens = 0
-total_cache_creation_tokens = 0
 
 # Set up output file path
 os.makedirs("data", exist_ok=True)
@@ -255,19 +249,12 @@ print("\nStarting analysis...")
 print("=" * 80)
 
 for idx, row in tqdm(df.iterrows(), total=len(df), desc="Analyzing issues"):
-    analysis, usage = analyze_issue(
+    analysis = analyze_issue(
         title=row['issue_title'],
         body=row['issue_body'],
         harness_name=row['harness_name'],
         comments=row.get('issue_comments', [])
     )
-
-    # Track token usage
-    if usage:
-        total_input_tokens += getattr(usage, 'prompt_tokens', 0)
-        total_output_tokens += getattr(usage, 'completion_tokens', 0)
-        total_cache_read_tokens += getattr(usage.prompt_tokens_details, 'cached_tokens', 0) if hasattr(usage, 'prompt_tokens_details') else 0
-        total_cache_creation_tokens += getattr(usage.prompt_tokens_details, 'cache_creation_tokens', 0) if hasattr(usage, 'prompt_tokens_details') else 0
 
     result_row = {
         'harness_name': row['harness_name'],
