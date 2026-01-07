@@ -158,13 +158,23 @@ EXAMPLE: "Missing dependency causes import failure"
 6. Step: "A", "B", "C"
 7. Strategy: 1, 2, 3, 4, 5, or 6
 
-## OUTPUT FORMAT (return ONLY valid JSON, no markdown)
+## OUTPUT FORMAT
+
+CRITICAL: Your ENTIRE response must be ONLY the JSON object below. Do NOT include:
+- Explanatory text before or after the JSON
+- Markdown code blocks or backticks
+- Any conversational responses
+- Questions or clarifications
+
+Return EXACTLY this format (raw JSON only):
 
 {{"is_related": true, "stage": "0", "step": "A", "strategy": "2", "root_cause": "Missing numpy dependency breaks pip installation process"}}
 
 or
 
-{{"is_related": false, "stage": null, "step": null, "strategy": null, "root_cause": null}}"""
+{{"is_related": false, "stage": null, "step": null, "strategy": null, "root_cause": null}}
+
+If information is insufficient, make your best judgment based on available details."""
 
 def strip_code_blocks(text):
     """Replace all code blocks with [CODE] placeholder to reduce token usage"""
@@ -196,7 +206,7 @@ def analyze_issue(title, body, harness_name, comments=None):
     try:
         response = completion(
             model=MODEL,
-            max_tokens=150,  # Sufficient for JSON output + small buffer
+            max_tokens=200,  # Increased buffer for potential wrapping
             messages=[
                 {
                     "role": "system",
@@ -212,17 +222,25 @@ def analyze_issue(title, body, harness_name, comments=None):
             ]
         )
 
-        response_text = response.choices[0].message.content
+        response_text = response.choices[0].message.content.strip()
 
-        # Extract JSON
-        if "```json" in response_text:
+        # Validate response is not empty
+        if not response_text:
+            raise ValueError("Empty response from model")
+
+        # Extract JSON from markdown code blocks if present
+        if response_text.startswith("```json"):
             json_start = response_text.find("```json") + 7
             json_end = response_text.find("```", json_start)
             response_text = response_text[json_start:json_end].strip()
-        elif "```" in response_text:
+        elif response_text.startswith("```"):
             json_start = response_text.find("```") + 3
             json_end = response_text.find("```", json_start)
             response_text = response_text[json_start:json_end].strip()
+
+        # Check if response starts with { (valid JSON)
+        if not response_text.startswith("{"):
+            raise ValueError(f"Response is not JSON: {response_text[:100]}")
 
         result = json.loads(response_text)
 
