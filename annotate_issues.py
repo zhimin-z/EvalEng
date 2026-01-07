@@ -4,9 +4,10 @@ import os
 import json
 import time
 import re
+import backoff
 
 from tqdm import tqdm
-from litellm import completion
+from litellm import completion, RateLimitError
 
 # Load environment variables
 dotenv.load_dotenv(override=True)
@@ -15,7 +16,7 @@ dotenv.load_dotenv(override=True)
 MODEL = "anthropic/claude-haiku-4-5-20251001"
 
 # Read the issues JSONL
-df = pd.read_json("data/github_issues_annotated.jsonl", orient="records", lines=True)
+df = pd.read_json("data/github_issues.jsonl", orient="records", lines=True)
 # df = df.sample(n=377, random_state=42)  # https://www.calculator.net/sample-size-calculator.html?type=1&cl=95&ci=5&pp=50&ps=20000&x=Calculate
 print(f"Total issues to analyze: {len(df)}")
 
@@ -172,6 +173,13 @@ def strip_code_blocks(text):
     # Replace triple backtick code blocks with [CODE]
     return re.sub(r'```[\s\S]*?```', '[CODE]', text)
 
+@backoff.on_exception(
+    backoff.expo,
+    (RateLimitError, Exception),
+    max_tries=5,
+    max_time=300,
+    giveup=lambda e: not isinstance(e, RateLimitError) and "rate" not in str(e).lower()
+)
 def analyze_issue(title, body, harness_name, comments=None):
     """Analyze a single issue using the configured LLM model"""
     # Strip code blocks from body
@@ -265,7 +273,7 @@ for idx, row in tqdm(df.iterrows(), total=len(df), desc="Analyzing issues"):
     results.append(result_row)
 
     # Small delay for rate limiting
-    time.sleep(0.3)
+    time.sleep(0.1)
 
 # Create results DataFrame
 results_df = pd.DataFrame(results)

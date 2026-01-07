@@ -32,10 +32,10 @@ print(f"  Average labels per issue (all): {len(all_labels)/len(df):.2f}")
 if len(issues_with_labels) > 0:
     print(f"  Average labels per labeled issue: {len(all_labels)/len(issues_with_labels):.2f}")
 
-# Show top 30 most common labels
-print(f"\n🏷️  TOP 30 MOST COMMON LABELS:")
+# Show top 10 most common labels
+print(f"\n🏷️  TOP 10 MOST COMMON LABELS:")
 print("-" * 80)
-for i, (label, count) in enumerate(label_counts.most_common(30), 1):
+for i, (label, count) in enumerate(label_counts.most_common(10), 1):
     percentage = count / len(df) * 100
     print(f"{i:2d}. {label:40s} {count:6,} issues ({percentage:5.2f}%)")
 
