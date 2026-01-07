@@ -238,7 +238,7 @@ if len(workflow_df) > 0:
             print(f"{'Stage ' + str(int(stage) if isinstance(stage, float) else stage) + ':':<24} {stage_count:>3}")
 
             # Count issues with no root cause label (general stage level)
-            no_root_cause_count = len(stage_df[stage_df['root_cause_label'].isna()])
+            no_root_cause_count = len(stage_df[stage_df['root_cause'].isna()])
 
             # Count issues with no step specified (general stage level)
             no_step_count = len(stage_df[stage_df['step'].isna()])
