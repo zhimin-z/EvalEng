@@ -238,6 +238,10 @@ total_output_tokens = 0
 total_cache_read_tokens = 0
 total_cache_creation_tokens = 0
 
+# Set up output file path
+os.makedirs("data", exist_ok=True)
+output_file = "data/github_issues_annotated.jsonl"
+
 print("\nStarting analysis...")
 print("=" * 80)
 
@@ -272,16 +276,35 @@ for idx, row in tqdm(df.iterrows(), total=len(df), desc="Analyzing issues"):
     }
     results.append(result_row)
 
+    # Save every 10 issues
+    if len(results) % 10 == 0:
+        # Create DataFrame from current results
+        current_df = pd.DataFrame(results)
+
+        # Check if file exists and concat, otherwise create new file
+        if os.path.exists(output_file):
+            existing_df = pd.read_json(output_file, orient="records", lines=True)
+            combined_df = pd.concat([existing_df, current_df], ignore_index=True)
+            combined_df.to_json(output_file, orient="records", lines=True, force_ascii=False)
+        else:
+            current_df.to_json(output_file, orient="records", lines=True, force_ascii=False)
+
+        print(f"\n✓ Saved progress: {len(results)} issues processed")
+        results = []  # Clear results after saving
+
     # Small delay for rate limiting
     time.sleep(0.1)
 
-# Create results DataFrame
-results_df = pd.DataFrame(results)
+# Save any remaining results
+if results:
+    current_df = pd.DataFrame(results)
 
-# Save to CSV
-os.makedirs("data", exist_ok=True)
-output_file = "data/github_issues_annotated.jsonl"
-results_df.to_json(output_file, orient="records", lines=True, force_ascii=False)
+    if os.path.exists(output_file):
+        existing_df = pd.read_json(output_file, orient="records", lines=True)
+        combined_df = pd.concat([existing_df, current_df], ignore_index=True)
+        combined_df.to_json(output_file, orient="records", lines=True, force_ascii=False)
+    else:
+        current_df.to_json(output_file, orient="records", lines=True, force_ascii=False)
 
 print("\n" + "=" * 80)
 print(f"✓ Analysis complete! Results saved to {output_file}")
