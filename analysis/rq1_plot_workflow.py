@@ -21,130 +21,125 @@ stage_colors = {
 # Stage definitions with data
 stages = [
     {
-        'name': 'Stage 0: Provisioning',
-        'subtitle': '(The Runtime)',
+        'name': 'Stage 0:\nProvisioning (56)',
         'summary': 'Establishing & authenticating\nevaluation infrastructure',
         'x': 2,
         'width': 16,
         'color_key': 'Provisioning',
         'steps': [
             {
-                'name': 'Step A: Harness Installation',
+                'name': 'Step A:\nHarness Installation (56)',
                 'strategies': [
-                    'Strategy 1: Git Clone\n(Source installation)',
-                    'Strategy 2: Python Package\n(Pip/Conda/Poetry)',
-                    'Strategy 3: Node Package\n(NPM/NPX)',
-                    'Strategy 4: Binary Package\n(Standalone executables)',
-                    'Strategy 5: Container Image\n(Docker/OCI)'
+                    'Strategy 1:\nGit Clone (56)\n(Source installation)',
+                    'Strategy 2:\nPython Package (53)\n(Pip/Conda/Poetry)',
+                    'Strategy 3:\nNode Package (1)\n(NPM/NPX)',
+                    'Strategy 4:\nBinary Package (2)\n(Standalone executables)',
+                    'Strategy 5:\nContainer Image (12)\n(Docker/OCI)'
                 ]
             },
             {
-                'name': 'Step B: Credential Configuration',
+                'name': 'Step B:\nCredential Configuration (47)',
                 'strategies': [
-                    'Strategy 1: Model API Authentication\n(Remote keys)',
-                    'Strategy 2: Repository Authentication\n(Hub/Registry access)',
-                    'Strategy 3: Evaluation Platform Authentication\n(Service login)'
+                    'Strategy 1:\nModel API Authentication (38)\n(Remote keys)',
+                    'Strategy 2:\nRepository Authentication (42)\n(Hub/Registry access)',
+                    'Strategy 3:\nEvaluation Platform Authentication (10)\n(Service login)'
                 ]
             }
         ]
     },
     {
-        'name': 'Stage I: Specification',
-        'subtitle': '(The Contract)',
+        'name': 'Stage I:\nSpecification (56)',
         'summary': 'Defining SUT & benchmark configuration',
         'x': 20,
         'width': 16,
         'color_key': 'Specification',
         'steps': [
             {
-                'name': 'Step A: SUT Preparation',
+                'name': 'Step A:\nSUT Preparation (53)',
                 'strategies': [
-                    'Strategy 1: Model-as-a-Service\n(Remote Inference)',
-                    'Strategy 2: Model-in-Process\n(Local Inference)',
-                    'Strategy 3: Non-Parametric Algorithm\n(Deterministic)',
-                    'Strategy 4: Interactive Agent\n(Sequential Decision-Making)'
+                    'Strategy 1:\nModel-as-a-Service (39)\n(Remote Inference)',
+                    'Strategy 2:\nModel-in-Process (43)\n(Local Inference)',
+                    'Strategy 3:\nNon-Parametric Algorithm (8)\n(Deterministic)',
+                    'Strategy 4:\nInteractive Agent (15)\n(Sequential Decision-Making)'
                 ]
             },
             {
-                'name': 'Step B: Benchmark Preparation\n(Inputs)',
+                'name': 'Step B:\nBenchmark Preparation (53)\n(Inputs)',
                 'strategies': [
-                    'Strategy 1: Benchmark Data Preparation\n(Offline/Static)',
-                    'Strategy 2: Synthetic Data Generation\n(Generative)',
-                    'Strategy 3: Simulation Environment Setup\n(Interactive/3D)',
-                    'Strategy 4: Production Traffic Sampling\n(Online/Live)'
+                    'Strategy 1:\nBenchmark Data Preparation (51)\n(Offline/Static)',
+                    'Strategy 2:\nSynthetic Data Generation (23)\n(Generative)',
+                    'Strategy 3:\nSimulation Environment Setup (8)\n(Interactive/3D)',
+                    'Strategy 4:\nProduction Traffic Sampling (4)\n(Online/Live)'
                 ]
             },
             {
-                'name': 'Step C: Benchmark Preparation\n(References)',
+                'name': 'Step C:\nBenchmark Preparation (53)\n(References)',
                 'strategies': [
-                    'Strategy 1: Ground Truth Preparation\n(Annotations/Indexes)',
-                    'Strategy 2: Judge Preparation\n(Model-based evaluators)'
+                    'Strategy 1:\nGround Truth Preparation (51)\n(Annotations/Indexes)',
+                    'Strategy 2:\nJudge Preparation (34)\n(Model-based evaluators)'
                 ]
             }
         ]
     },
     {
-        'name': 'Stage II: Execution',
-        'subtitle': '(The Run)',
+        'name': 'Stage II:\nExecution (53)',
         'summary': 'Running SUT with benchmark inputs',
         'x': 38,
         'width': 16,
         'color_key': 'Execution',
         'steps': [
             {
-                'name': 'Step A: SUT Invocation',
+                'name': 'Step A:\nSUT Invocation (53)',
                 'strategies': [
-                    'Strategy 1: Batch Inference\n(Standard completion)',
-                    'Strategy 2: Arena Battle\n(Side-by-side comparison)',
-                    'Strategy 3: Interactive Loop\n(Stateful/Agentic)',
-                    'Strategy 4: Production Streaming\n(Real-time monitoring)'
+                    'Strategy 1:\nBatch Inference (53)\n(Standard completion)',
+                    'Strategy 2:\nArena Battle (7)\n(Side-by-side comparison)',
+                    'Strategy 3:\nInteractive Loop (17)\n(Stateful/Agentic)',
+                    'Strategy 4:\nProduction Streaming (4)\n(Real-time monitoring)'
                 ]
             }
         ]
     },
     {
-        'name': 'Stage III: Assessment',
-        'subtitle': '(The Score)',
+        'name': 'Stage III:\nAssessment (56)',
         'summary': 'Computing metrics from\nSUT outputs & references',
         'x': 56,
         'width': 16,
         'color_key': 'Assessment',
         'steps': [
             {
-                'name': 'Step A: Individual Scoring',
+                'name': 'Step A:\nIndividual Scoring (56)',
                 'strategies': [
-                    'Strategy 1: Deterministic Measurement\n(Exact match/Distance)',
-                    'Strategy 2: Latent Measurement\n(Embedding similarity)',
-                    'Strategy 3: Subjective Measurement\n(LLM-as-a-Judge)',
-                    'Strategy 4: Performance Measurement\n(Latency/Cost/Efficiency)'
+                    'Strategy 1:\nDeterministic Measurement (50)\n(Exact match/Distance)',
+                    'Strategy 2:\nLatent Measurement (27)\n(Embedding similarity)',
+                    'Strategy 3:\nSubjective Measurement (33)\n(LLM-as-a-Judge)',
+                    'Strategy 4:\nPerformance Measurement (21)\n(Latency/Cost/Efficiency)'
                 ]
             },
             {
-                'name': 'Step B: Aggregate Scoring',
+                'name': 'Step B:\nAggregate Scoring (54)',
                 'strategies': [
-                    'Strategy 1: Distributional Statistics\n(Averages/Ranks)',
-                    'Strategy 2: Uncertainty Quantification\n(Confidence intervals/PPI)'
+                    'Strategy 1:\nDistributional Statistics (54)\n(Averages/Ranks)',
+                    'Strategy 2:\nUncertainty Quantification (13)\n(Confidence intervals/PPI)'
                 ]
             }
         ]
     },
     {
-        'name': 'Stage IV: Reporting',
-        'subtitle': '(The Output)',
+        'name': 'Stage IV:\nReporting (46)',
         'summary': 'Visualizing & communicating\nevaluation results',
         'x': 74,
         'width': 16,
         'color_key': 'Reporting',
         'steps': [
             {
-                'name': 'Step A: Insight Presentation',
+                'name': 'Step A:\nInsight Presentation (46)',
                 'strategies': [
-                    'Strategy 1: Execution Tracing\n(Trace logs/Trajectories)',
-                    'Strategy 2: Subgroup Analysis\n(Slicing/Demographics)',
-                    'Strategy 3: Regression Alerting\n(Historical comparison)',
-                    'Strategy 4: Chart Generation\n(Radar/Trend plots)',
-                    'Strategy 5: Dashboard Creation\n(Interactive UIs)',
-                    'Strategy 6: Leaderboard Publication\n(Public/Private ranking)'
+                    'Strategy 1:\nExecution Tracing (18)\n(Trace logs/Trajectories)',
+                    'Strategy 2:\nSubgroup Analysis (22)\n(Slicing/Demographics)',
+                    'Strategy 3:\nRegression Alerting (5)\n(Historical comparison)',
+                    'Strategy 4:\nChart Generation (25)\n(Radar/Trend plots)',
+                    'Strategy 5:\nDashboard Creation (25)\n(Interactive UIs)',
+                    'Strategy 6:\nLeaderboard Publication (22)\n(Public/Private ranking)'
                 ]
             }
         ]
@@ -154,8 +149,9 @@ stages = [
 # Draw stages containing all their steps
 stage_boxes = []  # Store stage box positions for later arrow drawing
 y_start = 96
-stage_header_height = 9
-strategy_height = 4.0  # Increased for better text visibility
+stage_header_height = 6.5  # Reduced since subtitle was removed
+strategy_height = 2.8  # Height of each strategy box
+strategy_spacing = 0.5  # Vertical gap between strategy boxes
 step_header_height = 3.5
 box_margin = 0.75  # Horizontal margin for step boxes from stage edge
 step_spacing = 1.2  # Vertical gap between steps (larger than horizontal)
@@ -168,7 +164,10 @@ for stage in stages:
     total_steps = len(stage['steps'])
     step_vertical_padding = 0.3  # Must match the padding in step drawing
     bottom_gap = box_margin  # Gap between last step and stage bottom
+    # Count gaps between strategies within each step
+    total_strategy_gaps = sum(max(0, len(step['strategies']) - 1) for step in stage['steps'])
     stage_content_height = (total_strategies * strategy_height +
+                           total_strategy_gaps * strategy_spacing +  # Gaps between strategies
                            total_steps * (step_header_height + step_vertical_padding) +
                            (total_steps - 1) * step_spacing +  # Gaps between steps
                            stage_header_height + bottom_gap)
@@ -191,14 +190,8 @@ for stage in stages:
             ha='center', va='center', fontsize=18, weight='bold',
             zorder=5)
 
-    # Stage subtitle
-    ax.text(stage['x'] + stage['width']/2, y_start - 4,
-            stage['subtitle'],
-            ha='center', va='center', fontsize=14, style='italic',
-            zorder=5)
-
-    # Stage summary (one-liner)
-    ax.text(stage['x'] + stage['width']/2, y_start - 6.5,
+    # Stage summary
+    ax.text(stage['x'] + stage['width']/2, y_start - 5,
             stage['summary'],
             ha='center', va='center', fontsize=11,
             zorder=5, wrap=True)
@@ -223,7 +216,11 @@ for stage_info in stage_boxes:
 
     for step in stage['steps']:
         step_vertical_padding = 0.3  # Padding at bottom of step box
-        step_height = len(step['strategies']) * strategy_height + step_header_height + step_vertical_padding
+        num_strategies = len(step['strategies'])
+        strategy_gaps = max(0, num_strategies - 1)  # Gaps between strategies
+        step_height = (num_strategies * strategy_height +
+                      strategy_gaps * strategy_spacing +
+                      step_header_height + step_vertical_padding)
 
         # Step container - inside stage box
         step_x_margin = box_margin  # Margin from stage edge matches vertical spacing
@@ -248,14 +245,14 @@ for stage_info in stage_boxes:
         y_strat = y_pos - step_header_height
 
         # Draw strategies
-        for strategy in step['strategies']:
+        for i, strategy in enumerate(step['strategies']):
             # Strategy boxes inside step box
-            strategy_x_margin = step_x_margin + 0.3  # Additional margin inside step box
+            strategy_x_margin = step_x_margin + 1  # Additional margin inside step box
             strategy_width = stage['width'] - 2 * strategy_x_margin
             strategy_box = FancyBboxPatch(
-                (stage['x'] + strategy_x_margin, y_strat - strategy_height + 0.2),
-                strategy_width, strategy_height - 0.4,
-                boxstyle="round,pad=0.2",
+                (stage['x'] + strategy_x_margin, y_strat - strategy_height),
+                strategy_width, strategy_height,
+                boxstyle="round,pad=0.05",
                 facecolor=colors['strategy'],
                 edgecolor='gray',
                 linewidth=1,
@@ -268,7 +265,10 @@ for stage_info in stage_boxes:
                     ha='center', va='center', fontsize=10,
                     zorder=5)
 
+            # Move down by strategy height plus spacing (except for the last strategy)
             y_strat -= strategy_height
+            if i < len(step['strategies']) - 1:  # Add spacing only between strategies
+                y_strat -= strategy_spacing
 
         # Move y_pos to ensure consistent gap between step boxes
         # Gap should be from bottom of current step box to top of next step box
