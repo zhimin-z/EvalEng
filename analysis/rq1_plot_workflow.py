@@ -298,9 +298,9 @@ for i in range(len(stage_boxes) - 1):
 # Find the minimum y value (bottom of all stages) to adjust plot limits
 min_y = min(box['y_bottom'] for box in stage_boxes)
 ax.set_ylim(min_y - 2, y_start + 4)  # Add small padding top and bottom
-
 plt.subplots_adjust(left=0, right=1, top=1, bottom=0)
-plt.savefig('figures/rq1_workflow.pdf',
-            bbox_inches='tight', pad_inches=0, facecolor='white')
+
+output_path = "../figures/rq1_workflow.pdf"
+plt.savefig(output_path, bbox_inches='tight', pad_inches=0, facecolor='white')
 print("Diagram generated successfully!")
-print("File saved: figures/rq1_workflow.pdf")
+print(f"File saved: {output_path}")

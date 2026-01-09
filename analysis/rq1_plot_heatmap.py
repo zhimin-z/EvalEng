@@ -5,7 +5,7 @@ import numpy as np
 from pathlib import Path
 
 # Parse Stages.md and extract stages, steps, strategies, and harnesses
-stages_file = Path('data/rq1_workflow.md')
+stages_file = Path('../data/rq1_workflow.md')
 content = stages_file.read_text()
 
 table_data = {}
@@ -121,7 +121,7 @@ fig.update_layout(
     margin=dict(l=0, r=0, t=0, b=50)
 )
 
-html_path = Path('data/rq1_heatmap.pdf')
+html_path = Path('../figures/rq1_heatmap.pdf')
 fig.write_image(html_path)
 
 print(f"✓ Interactive heatmap saved to: {html_path}")

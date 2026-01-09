@@ -8,7 +8,7 @@ from collections import deque
 
 dotenv.load_dotenv(override=True)
 
-df = pd.read_csv("data/rq0_harness_metadata.csv", encoding="utf-8")
+df = pd.read_csv("../data/rq0_harness_metadata.csv", encoding="utf-8")
 
 # Extract owner/repo from GitHub URLs (supports comma-separated URLs)
 def extract_repo_from_url(repo_str):
@@ -230,8 +230,8 @@ if not issues_df.empty:
     issues_df = issues_df[['harness_name', 'github_repo', 'issue_title', 'issue_body',
                             'issue_labels', 'issue_created_at', 'issue_closed_at',
                             'issue_comments', 'issue_url', 'issue_cross_referenced']]
-    issues_df.to_json("data/rq2_issues.jsonl", orient="records", lines=True, force_ascii=False)
+    issues_df.to_json("../data/rq2_issues.jsonl", orient="records", lines=True, force_ascii=False)
     print(f"\n✓ Total issues fetched: {len(issues_df)}")
-    print("✓ Issues saved to data/rq2_issues.jsonl")
+    print("✓ Issues saved to ../data/rq2_issues.jsonl")
 else:
     print("\n✗ No issues fetched")

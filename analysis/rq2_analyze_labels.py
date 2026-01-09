@@ -4,7 +4,7 @@ import ast
 from collections import Counter
 
 # Read the GitHub issues CSV
-df = pd.read_json("data/rq2_issues.jsonl", lines=True)
+df = pd.read_json("../data/rq2_issues.jsonl", lines=True)
 
 print(f"Total issues: {len(df)}")
 print(f"Total repos: {len(df['github_repo'].unique())}")
