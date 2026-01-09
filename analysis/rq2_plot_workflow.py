@@ -88,6 +88,18 @@ if len(workflow_df) > 0:
     # Sort stages (handles numeric, roman numerals, and "NA")
     stage_order = sorted(hierarchy.keys(), key=stage_sort_key)
 
+    # Calculate total issues and stage percentages
+    total_issues = len(related_df)
+    stage_percentages = {}
+    for stage in stage_order:
+        stage_val = stage if stage is not None else None
+        if stage is None:
+            stage_count = len(related_df[related_df['stage'].isna()])
+        else:
+            stage_count = len(related_df[related_df['stage'] == stage])
+        stage_percentage = (stage_count / total_issues * 100) if total_issues > 0 else 0
+        stage_percentages[stage] = stage_percentage
+
     # Prepare data for plotting
     stages = []
     steps_per_stage = []
@@ -199,14 +211,15 @@ if len(workflow_df) > 0:
                 left_boundary = stage_boundaries[idx - 1]
                 right_boundary = stage_boundaries[idx]
             center_x = (left_boundary + right_boundary) / 2
-            # Add "Stage " prefix for clarity unless it's None (convert to "NA" for display)
-            stage_label = f"Stage {stage}" if stage is not None else "NA"
+            # Add "Stage " prefix for clarity with percentage
+            stage_percentage = stage_percentages[stage]
+            stage_label = f"Stage {stage}\n({stage_percentage:.2f}%)"
             ax.text(center_x, 0.97, stage_label, transform=ax.get_xaxis_transform(),
                    ha='center', va='top', fontsize=11, fontweight='bold',
                    bbox=dict(boxstyle='round,pad=0.5', facecolor='lightgray', alpha=0.7))
 
     # Add legend
-    ax.legend(title='Strategy', bbox_to_anchor=(0.92, 0.9), loc='upper left',
+    ax.legend(title='Strategy', bbox_to_anchor=(0.91, 0.9), loc='upper left',
              fontsize=12, title_fontsize=13, markerscale=1.5)
 
     # Add grid

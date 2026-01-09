@@ -104,6 +104,13 @@ if len(root_cause_results_df) > 0:
     }
     sorted_root_cause_names = sorted(root_cause_totals.keys(), key=lambda x: root_cause_totals[x], reverse=True)
 
+    # Calculate root cause percentages
+    total_root_cause_issues = len(root_cause_df)
+    root_cause_percentages = {
+        rc: (root_cause_totals[rc] / total_root_cause_issues * 100) if total_root_cause_issues > 0 else 0
+        for rc in root_cause_totals.keys()
+    }
+
     # Get all unique stages and steps across root causes (excluding None for visualization)
     all_stages_in_root_causes = set()
     all_steps_in_root_causes = set()
@@ -217,14 +224,16 @@ if len(root_cause_results_df) > 0:
                 left_boundary = root_cause_boundaries[idx - 1]
                 right_boundary = root_cause_boundaries[idx]
             center_x = (left_boundary + right_boundary) / 2
-            # Split label smartly, keeping short consecutive words together
-            display_label = smart_split_label(root_cause)
+            # Split label smartly, keeping short consecutive words together, with percentage
+            root_cause_percentage = root_cause_percentages[root_cause]
+            root_cause_with_percentage = f"{root_cause} ({root_cause_percentage:.2f}%)"
+            display_label = smart_split_label(root_cause_with_percentage)
             ax.text(center_x, 0.97, display_label, transform=ax.get_xaxis_transform(),
                    ha='center', va='top', fontsize=10, fontweight='bold',
                    bbox=dict(boxstyle='round,pad=0.5', facecolor='lightgray', alpha=0.7))
 
     # Add legend (showing steps now instead of stages)
-    ax.legend(title='Step', bbox_to_anchor=(0.92, 0.9), loc='upper left',
+    ax.legend(title='Step', bbox_to_anchor=(0.92, 0.85), loc='upper left',
              fontsize=12, title_fontsize=13, markerscale=1.5)
 
     # Add grid
