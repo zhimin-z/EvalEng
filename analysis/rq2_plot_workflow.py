@@ -253,7 +253,7 @@ if len(workflow_df) > 0:
         for stage in stages_list:
             stage_df = related_df[related_df['stage'] == stage]
             stage_count = len(stage_df)
-            print(f"{'Stage ' + str(int(stage) if isinstance(stage, float) else stage) + ':':<24} {stage_count:>3}")
+            print(f"{'Stage ' + str(int(stage) if isinstance(stage, float) else stage) + ':':<24} {stage_count:>3} ({stage_percentages[stage]:.2f}%)")
 
             # Count issues with no step specified (general stage level)
             no_step_count = len(stage_df[stage_df['step'].isna()])
