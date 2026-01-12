@@ -61,10 +61,7 @@ for step in steps:
             if harness in harnesses:
                 table.loc[harness, step] = str(strategy_num) if not table.loc[harness, step] else f"{table.loc[harness, step]}, {strategy_num}"
 
-print(f"✓ Extracted {len(table_data)} steps from {len([p for p in set(re.findall(r'Stage ([0-9IViv]+)', ''.join(table_data.keys())))])} stages")
-print(f"✓ Found {len(harnesses)} unique harnesses")
-print(f"✓ Table dimensions: {len(harnesses)}×{len(steps)} = {len(harnesses)*len(steps)} cells")
-print(f"✓ Filled cells: {(table != '').sum().sum()} ({100*(table != '').sum().sum()/(len(harnesses)*len(steps)):.1f}%)\n")
+print(f"Heatmap Filled Rate: {100*(table != '').sum().sum()/(len(harnesses)*len(steps)):.1f}%\n")
 
 # ========== HIERARCHICAL STATISTICS ==========
 # Build hierarchical data structures: stage -> step -> strategy -> harnesses
@@ -151,6 +148,44 @@ for stage_num in sorted_stages:
             print(f"{strat_prefix} Strategy {strategy_num}: {strategy_count} harnesses")
 
     print()
+
+# Print interesting statistics per stage
+print("=" * 80)
+print("INTERESTING STATISTICS PER STAGE")
+print("=" * 80)
+print()
+
+# 1. For each stage, find the harness with the most strategies
+print("1. Harness with most strategies in each stage:")
+print("-" * 80)
+for stage_num in sorted_stages:
+    stage_strategies_by_harness = defaultdict(set)
+    # Aggregate all strategies for each harness across all steps in this stage
+    for (s, step_letter, strategy_num), harness_set in strategy_harnesses.items():
+        if s == stage_num:
+            for harness in harness_set:
+                stage_strategies_by_harness[harness].add(strategy_num)
+
+    if stage_strategies_by_harness:
+        max_harness = max(stage_strategies_by_harness.items(), key=lambda x: len(x[1]))
+        print(f"  Stage {stage_num}: {max_harness[0]} ({len(max_harness[1])} strategies: {', '.join(map(str, sorted(max_harness[1])))})")
+print()
+
+# 2. For each stage, find the strategy most harnesses adopt
+print("2. Most popular strategy in each stage:")
+print("-" * 80)
+for stage_num in sorted_stages:
+    stage_strategy_adoption = defaultdict(set)
+    # Aggregate all harnesses for each strategy across all steps in this stage
+    for (s, step_letter, strategy_num), harness_set in strategy_harnesses.items():
+        if s == stage_num:
+            for harness in harness_set:
+                stage_strategy_adoption[strategy_num].add(harness)
+
+    if stage_strategy_adoption:
+        max_strategy = max(stage_strategy_adoption.items(), key=lambda x: len(x[1]))
+        print(f"  Stage {stage_num}: Strategy {max_strategy[0]} ({len(max_strategy[1])} harnesses)")
+print()
 
 # Print summary statistics
 print("=" * 80)

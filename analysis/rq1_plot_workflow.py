@@ -34,16 +34,16 @@ stages = [
                 'strategies': [
                     'Strategy 1:\nGit Clone (56)\n(Source installation)',
                     'Strategy 2:\nPython Package (53)\n(Pip/Conda/Poetry)',
-                    'Strategy 3:\nNode Package (1)\n(NPM/NPX)',
+                    'Strategy 3:\nContainer Image (12)\n(Docker/OCI)',
                     'Strategy 4:\nBinary Package (2)\n(Standalone executables)',
-                    'Strategy 5:\nContainer Image (12)\n(Docker/OCI)'
+                    'Strategy 5:\nNode Package (1)\n(NPM/NPX)',
                 ]
             },
             {
                 'name': 'Step B:\nCredential Configuration (47)',
                 'strategies': [
-                    'Strategy 1:\nModel API Authentication (38)\n(Remote keys)',
-                    'Strategy 2:\nRepository Authentication (42)\n(Hub/Registry access)',
+                    'Strategy 1:\nRepository Authentication (42)\n(Hub/Registry access)',
+                    'Strategy 2:\nModel API Authentication (38)\n(Remote keys)',
                     'Strategy 3:\nEvaluation Platform Authentication (10)\n(Service login)'
                 ]
             }
@@ -59,10 +59,10 @@ stages = [
             {
                 'name': 'Step A:\nSUT Preparation (53)',
                 'strategies': [
-                    'Strategy 1:\nModel-as-a-Service (39)\n(Remote Inference)',
-                    'Strategy 2:\nModel-in-Process (43)\n(Local Inference)',
-                    'Strategy 3:\nNon-Parametric Algorithm (8)\n(Deterministic)',
-                    'Strategy 4:\nInteractive Agent (15)\n(Sequential Decision-Making)'
+                    'Strategy 1:\nModel-in-Process (43)\n(Local Inference)',
+                    'Strategy 2:\nModel-as-a-Service (39)\n(Remote Inference)',
+                    'Strategy 3:\nInteractive Agent (15)\n(Sequential Decision-Making)',
+                    'Strategy 4:\nNon-Parametric Algorithm (8)\n(Deterministic)',
                 ]
             },
             {
@@ -94,8 +94,8 @@ stages = [
                 'name': 'Step A:\nSUT Invocation (53)',
                 'strategies': [
                     'Strategy 1:\nBatch Inference (53)\n(Standard completion)',
-                    'Strategy 2:\nArena Battle (7)\n(Side-by-side comparison)',
-                    'Strategy 3:\nInteractive Loop (17)\n(Stateful/Agentic)',
+                    'Strategy 2:\nInteractive Loop (17)\n(Stateful/Agentic)',
+                    'Strategy 3:\nArena Battle (7)\n(Side-by-side comparison)',
                     'Strategy 4:\nProduction Streaming (4)\n(Real-time monitoring)'
                 ]
             }
@@ -112,8 +112,8 @@ stages = [
                 'name': 'Step A:\nIndividual Scoring (56)',
                 'strategies': [
                     'Strategy 1:\nDeterministic Measurement (50)\n(Exact match/Distance)',
-                    'Strategy 2:\nLatent Measurement (27)\n(Embedding similarity)',
-                    'Strategy 3:\nSubjective Measurement (33)\n(LLM-as-a-Judge)',
+                    'Strategy 2:\nSubjective Measurement (33)\n(LLM-as-a-Judge)',
+                    'Strategy 3:\nLatent Measurement (27)\n(Embedding similarity)',
                     'Strategy 4:\nPerformance Measurement (21)\n(Latency/Cost/Efficiency)'
                 ]
             },
@@ -136,12 +136,12 @@ stages = [
             {
                 'name': 'Step A:\nInsight Presentation (46)',
                 'strategies': [
-                    'Strategy 1:\nExecution Tracing (18)\n(Trace logs/Trajectories)',
-                    'Strategy 2:\nSubgroup Analysis (22)\n(Slicing/Demographics)',
-                    'Strategy 3:\nRegression Alerting (5)\n(Historical comparison)',
-                    'Strategy 4:\nChart Generation (25)\n(Radar/Trend plots)',
-                    'Strategy 5:\nDashboard Creation (25)\n(Interactive UIs)',
-                    'Strategy 6:\nLeaderboard Publication (22)\n(Public/Private ranking)'
+                    'Strategy 1:\nChart Generation (25)\n(Radar/Trend plots)',
+                    'Strategy 2:\nDashboard Creation (25)\n(Interactive UIs)',
+                    'Strategy 3:\nLeaderboard Publication (22)\n(Public/Private ranking)',
+                    'Strategy 4:\nSubgroup Analysis (22)\n(Slicing/Demographics)',
+                    'Strategy 5:\nExecution Tracing (18)\n(Trace logs/Trajectories)',
+                    'Strategy 6:\nRegression Alerting (5)\n(Historical comparison)',
                 ]
             }
         ]
@@ -304,5 +304,4 @@ plt.subplots_adjust(left=0, right=1, top=1, bottom=0)
 
 output_path = "../figures/rq1_workflow.pdf"
 plt.savefig(output_path, bbox_inches='tight', pad_inches=0, facecolor='white')
-print("Diagram generated successfully!")
 print(f"File saved: {output_path}")
