@@ -1,5 +1,4 @@
 import pandas as pd
-import ast
 
 from collections import Counter
 
