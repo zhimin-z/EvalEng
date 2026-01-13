@@ -261,7 +261,7 @@ if len(root_cause_results_df) > 0:
         total = root_cause_totals[root_cause]
         is_last_root_cause = (rc_idx == len(sorted_root_cause_names) - 1)
 
-        print(f"{root_cause + ':':<22} {total:>3}")
+        print(f"{root_cause + ':':<22} {total:>3} ({root_cause_percentages[root_cause]:.2f}%)")
 
         # Count issues with no stage specified (general root cause level)
         # Check for None key in hierarchy
