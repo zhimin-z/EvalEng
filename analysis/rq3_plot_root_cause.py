@@ -67,7 +67,7 @@ def smart_split_label(label, max_combined_length=10):
     return '\n'.join(lines)
 
 # Load data for root cause visualization (sample dataset)
-root_cause_file = "../data/rq3_issue_sample_annotated.jsonl"
+root_cause_file = "../data/rq2_issues_sample_annotated.jsonl"
 root_cause_results_df = pd.read_json(root_cause_file, lines=True)
 
 if len(root_cause_results_df) > 0:
