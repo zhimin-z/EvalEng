@@ -1,6 +1,5 @@
 import pandas as pd
 import dotenv
-import os
 import json
 import time
 import re
@@ -140,14 +139,6 @@ Setup tools? → 0 | Configure test? → I | Run SUT? → II | Compute scores? �
 
 KEY PRINCIPLE: Choose PRIMARY/EARLIEST blocker (e.g., "Can't run tests due to pip install" → Stage 0)
 
-## STEP 3: WRITE ROOT CAUSE (max 15 words)
-
-FORMAT: "Technical-cause + causing-verb + symptom"
-EXAMPLE: "Missing dependency causes import failure"
-- State underlying technical cause, not just symptom
-- Do NOT restate user complaint or propose solutions
-- If is_related=false → root_cause=null
-
 ## VALIDATION RULES
 
 1. is_related=false → all fields null
@@ -168,11 +159,11 @@ CRITICAL: Your ENTIRE response must be ONLY the JSON object below. Do NOT includ
 
 Return EXACTLY this format (raw JSON only):
 
-{{"is_related": true, "stage": "0", "step": "A", "strategy": "2", "root_cause": "Missing numpy dependency breaks pip installation process"}}
+{{"is_related": true, "stage": "0", "step": "A", "strategy": "2"}}
 
 or
 
-{{"is_related": false, "stage": null, "step": null, "strategy": null, "root_cause": null}}
+{{"is_related": false, "stage": null, "step": null, "strategy": null}}
 
 If information is insufficient, make your best judgment based on available details."""
 
@@ -252,8 +243,7 @@ def analyze_issue(title, body, harness_name, comments=None):
             "is_related": None,
             "stage": None,
             "step": None,
-            "strategy": None,
-            "root_cause": f"Error: {str(e)}"
+            "strategy": None
         }
 
 # Analyze all issues
@@ -284,8 +274,7 @@ for idx, row in tqdm(df.iterrows(), total=len(df), desc="Analyzing issues"):
         'is_related': analysis.get('is_related'),
         'stage': analysis.get('stage'),
         'step': analysis.get('step'),
-        'strategy': analysis.get('strategy'),
-        'root_cause': analysis.get('root_cause')
+        'strategy': analysis.get('strategy')
     }
     results.append(result_row)
 
