@@ -116,12 +116,12 @@ CLASSIFICATION APPROACH:
 CRITICAL DISAMBIGUATION RULES:
 
 **0-B Credentials (by PURPOSE):**
-  Strategy 1 = CALLING APIs | Strategy 2 = DOWNLOADING artifacts | Strategy 3 = PLATFORM access
-  ✓ "OpenAI API key invalid" → 0-B-1  |  ✓ "HF login to download Llama" → 0-B-2  |  ✓ "EvalAI login fails" → 0-B-3
+  Strategy 1 = DOWNLOADING artifacts | Strategy 2 = CALLING APIs | Strategy 3 = PLATFORM access
+  ✓ "HF login to download Llama fails" → 0-B-1  |  ✓ "OpenAI API key invalid" → 0-B-2  |  ✓ "EvalAI login breaks" → 0-B-3
 
 **I-A SUT Type (by EXECUTION):**
-  Strategy 1 = Remote API | Strategy 2 = Local weights | Strategy 3 = No weights | Strategy 4 = Multi-step
-  ✓ "API timeout" → I-A-1  |  ✓ "OOM loading model" → I-A-2  |  ✓ "BM25 index fails" → I-A-3  |  ✓ "Agent loop stuck" → I-A-4
+  Strategy 1 = Local weights | Strategy 2 = Remote API | Strategy 3 = Multi-step | Strategy 4 = No weights
+  ✓ "OOM loading model" → I-A-1  |  ✓ "API timeout" → I-A-2  |  ✓ "Agent loop stuck" → I-A-3  |  ✓ "BM25 index fails" → I-A-4
 
 **I-B vs I-C (by DATA FLOW):**
   I-B = Fed TO SUT  |  I-C = Used FOR scoring
@@ -132,8 +132,8 @@ CRITICAL DISAMBIGUATION RULES:
   ✓ "Model load OOM" → I-A-2  |  ✓ "Generation timeout" → II-A-1
 
 **III-A Scoring (by METHOD):**
-  Strategy 1 = Algorithmic | Strategy 2 = Embeddings | Strategy 3 = LLM judge | Strategy 4 = Resources
-  ✓ "BLEU bug" → III-A-1  |  ✓ "BERTScore crash" → III-A-2  |  ✓ "GPT-4 judge fails" → III-A-3  |  ✓ "Latency broken" → III-A-4
+  Strategy 1 = Algorithmic | Strategy 2 = LLM judge | Strategy 3 = Embeddings | Strategy 4 = Resources
+  ✓ "BLEU bug" → III-A-1  |  ✓ "GPT-5 judge fails" → III-A-2  |  ✓ "BERTScore crash" → III-A-3  |  ✓ "Latency broken" → III-A-4
 
 STAGE DECISION TREE:
 Setup tools? → 0 | Configure test? → I | Run SUT? → II | Compute scores? → III | Display results? → IV
