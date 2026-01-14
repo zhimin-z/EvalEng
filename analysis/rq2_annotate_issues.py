@@ -260,7 +260,7 @@ for idx, row in tqdm(df.iterrows(), total=len(df), desc="Analyzing issues"):
         title=row['issue_title'],
         body=row['issue_body'],
         harness_name=row['harness_name'],
-        comments=row.get('issue_comments', [])
+        comments=row["issue_comments"]
     )
 
     result_row = {
@@ -269,6 +269,7 @@ for idx, row in tqdm(df.iterrows(), total=len(df), desc="Analyzing issues"):
         'issue_title': row['issue_title'],
         'issue_body': row['issue_body'],
         'issue_url': row['issue_url'],
+        'issue_comments': row['issue_comments'],
         'issue_created_at': row['issue_created_at'],
         'issue_closed_at': row['issue_closed_at'],
         'is_related': analysis.get('is_related'),
@@ -280,7 +281,7 @@ for idx, row in tqdm(df.iterrows(), total=len(df), desc="Analyzing issues"):
 
     # Save every 50 issues
     if len(results) % 50 == 0:
-        pd.DataFrame(results).to_json(output_file, orient="records", lines=True, force_ascii=False, mode='a')
+        pd.DataFrame(results).to_json(output_file, orient="records", lines=True, mode='a')
         print(f"\n✓ Saved progress: {len(results)} new issues appended")
         results = []
 
@@ -289,7 +290,7 @@ for idx, row in tqdm(df.iterrows(), total=len(df), desc="Analyzing issues"):
 
 # Save any remaining results
 if results:
-    pd.DataFrame(results).to_json(output_file, orient="records", lines=True, force_ascii=False, mode='a')
+    pd.DataFrame(results).to_json(output_file, orient="records", lines=True, mode='a')
 
 print("\n" + "=" * 80)
 print(f"✓ Analysis complete! Results saved to {output_file}")
