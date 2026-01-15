@@ -10,11 +10,11 @@ from litellm import completion
 dotenv.load_dotenv(override=True)
 
 # Set the model to use - can be changed to any LiteLLM supported model
-MODEL = "anthropic/claude-sonnet-4-5-20250929"
+MODEL = "anthropic/claude-haiku-4-5-20251001"
 
 # Input and output files
 INPUT_FILE = "../data/rq3_issues_sample_annotated.jsonl"
-OUTPUT_FILE = "../data/rq3_issues_sample_annotated.jsonl"
+OUTPUT_FILE = "../data/rq3_issues_sample_annotated_reference.jsonl"
 
 ROOT_CAUSE_TAXONOMY_TEXT = """Root Cause Taxonomy for Software Issues
 
@@ -72,21 +72,20 @@ TASK: Given a GitHub issue, classify its root cause into ONE of the categories f
 ROOT CAUSE TAXONOMY:
 {ROOT_CAUSE_TAXONOMY_TEXT}
 
-DISAMBIGUATION GUIDELINES:
-- Configuration Error: config EXISTS but doesn't propagate. Architectural Constraint: design prevents config.
-- External Dependency Breakage: third-party code changed. Environment Incompatibility: OS/platform/runtime issue.
-- Algorithmic Error: wrong logic/calculation. Interface Contract Mismatch: type/format/signature disagreement.
-- Validation Gap: missing checks. Don't use for what validation would have prevented.
+ANNOTATION GUIDELINES:
+- User misunderstanding or confusion about how to use the system → Documentation Deficiency (the docs failed to prevent misunderstanding)
+- Config exists but doesn't propagate correctly → Configuration Error
+- Design prevents adding/modifying config → Architectural Constraint
+- Third-party library/API changed or broke → External Dependency Breakage
+- OS/platform/runtime environment issue → Environment Incompatibility
+- Wrong logic or calculation → Algorithmic Error
+- Type/format/signature mismatch between components → Interface Contract Mismatch
+- Missing input/output checks → Validation Gap
 
 OUTPUT FORMAT:
-Return ONLY a valid JSON object with no additional text, explanation, or markdown. Just the raw JSON.
+Return ONLY valid JSON: {{"root_cause_label": "<label>"}}
 
-Required fields:
-- "root_cause_label": One of: "Algorithmic Error", "Architectural Constraint", "Configuration Error", "Documentation Deficiency", "Environment Incompatibility", "External Dependency Breakage", "Interface Contract Mismatch", "Resource Mishandling", "Unimplemented Feature Gap", "Validation Gap", "Others"
-- "reason": A short explanation (1-2 sentences) justifying the classification
-
-Example (output exactly like this, no other text):
-{{"root_cause_label": "Algorithmic Error", "reason": "The issue describes incorrect calculation logic in the scoring function that produces wrong results."}}
+Valid labels: "Algorithmic Error", "Architectural Constraint", "Configuration Error", "Documentation Deficiency", "Environment Incompatibility", "External Dependency Breakage", "Interface Contract Mismatch", "Resource Mishandling", "Unimplemented Feature Gap", "Validation Gap", "Others"
 """
 
 
@@ -102,7 +101,7 @@ Classify the root cause of this issue."""
         try:
             response = completion(
                 model=MODEL,
-                max_tokens=1024,
+                max_tokens=64,
                 temperature=0,
                 messages=[
                     {"role": "system", "content": SYSTEM_PROMPT, "cache_control": {"type": "ephemeral"}},
@@ -126,13 +125,12 @@ Classify the root cause of this issue."""
             # Parse JSON
             result = json.loads(raw_response)
             root_cause_label = result.get("root_cause_label")
-            reason = result.get("reason", "No reason provided")
 
             # Validate label
             if not root_cause_label or root_cause_label not in VALID_LABELS:
                 raise ValueError(f"Invalid label '{root_cause_label}' in JSON response")
 
-            return root_cause_label, reason
+            return root_cause_label
 
         except (json.JSONDecodeError, KeyError, ValueError) as e:
             if attempt < max_retries - 1:
@@ -174,7 +172,7 @@ def main():
         success = False
         for attempt in range(max_retries):
             try:
-                root_cause_label, reason = classify_root_cause(issue_content)
+                root_cause_label = classify_root_cause(issue_content)
 
                 # Keep all original attributes and add root_cause_label
                 result_row = row.to_dict()
