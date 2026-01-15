@@ -95,7 +95,7 @@ def classify_root_cause(issue_content, max_retries=3):
     user_prompt = f"""ISSUE DESCRIPTION:
 {issue_content}
 
-Classify the root cause of this issue."""
+Classify the root cause of this issue. Return ONLY the JSON object, no explanation."""
 
     for attempt in range(max_retries):
         try:
@@ -105,7 +105,8 @@ Classify the root cause of this issue."""
                 temperature=0,
                 messages=[
                     {"role": "system", "content": SYSTEM_PROMPT, "cache_control": {"type": "ephemeral"}},
-                    {"role": "user", "content": user_prompt}
+                    {"role": "user", "content": user_prompt},
+                    {"role": "assistant", "content": "{"}  # Prefill to force JSON start
                 ]
             )
 
@@ -114,13 +115,21 @@ Classify the root cause of this issue."""
             if raw_response is None or not raw_response.strip():
                 raise ValueError("Empty response from API")
 
-            raw_response = raw_response.strip()
+            # Prepend the '{' from prefill since response continues from there
+            raw_response = "{" + raw_response.strip()
 
-            # Try to clean up the response if it has markdown
-            if raw_response.startswith("```"):
-                lines = raw_response.split('\n')
-                raw_response = '\n'.join(lines[1:-1]) if len(lines) > 2 else raw_response
-                raw_response = raw_response.strip()
+            # Try to clean up the response if it has markdown code blocks
+            # Handle cases like: ```json\n{...}\n``` or ```\n{...}\n```
+            if "```" in raw_response:
+                # Remove markdown code block markers
+                import re
+                # Match content between ``` markers (with optional language identifier)
+                match = re.search(r'```(?:json)?\s*([\s\S]*?)\s*```', raw_response)
+                if match:
+                    raw_response = match.group(1).strip()
+                else:
+                    # Fallback: just remove all ``` markers
+                    raw_response = raw_response.replace('```json', '').replace('```', '').strip()
 
             # Parse JSON
             result = json.loads(raw_response)
