@@ -473,7 +473,7 @@ if texts:
         
         if distance >= threshold:
             arrow = FancyArrowPatch(
-                (x_orig, y_orig), (x_pos, y_pos),
+                (x_pos, y_pos), (x_orig, y_orig),
                 arrowstyle='->',
                 color='gray',
                 lw=0.8,
