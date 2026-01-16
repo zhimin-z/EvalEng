@@ -230,8 +230,8 @@ im = ax.imshow(heatmap_data, cmap=cmap, aspect='auto', vmin=0, vmax=6)
 # Set ticks and labels
 ax.set_xticks(np.arange(len(table.columns)))
 ax.set_yticks(np.arange(len(table.index)))
-ax.set_xticklabels(table.columns, ha='center', fontsize=8)
-ax.set_yticklabels(table.index, fontsize=7)
+ax.set_xticklabels(table.columns, ha='center', fontsize=11)
+ax.set_yticklabels(table.index, fontsize=11)
 
 # Add text annotations with adaptive color (white text on dark backgrounds)
 for i in range(len(table.index)):
@@ -240,15 +240,15 @@ for i in range(len(table.index)):
             # Use white text for darker colors (strategy count >= 3), black for lighter colors
             text_color = "white" if heatmap_data[i, j] >= 3 else "black"
             text = ax.text(j, i, text_labels[i][j],
-                         ha="center", va="center", color=text_color, fontsize=6)
+                         ha="center", va="center", color=text_color, fontsize=10)
 
 # Add colorbar with reduced gap
 cbar = plt.colorbar(im, ax=ax, ticks=[0, 1, 2, 3, 4, 5, 6], pad=0.01)
-cbar.set_label('Strategy Count', rotation=270, labelpad=15)
+cbar.set_label('Strategy Count', rotation=270, labelpad=15, fontsize=11)
 
 # Labels and title
 ax.set_xlabel('')
-ax.set_ylabel('Evaluation Harnesses', fontsize=10)
+ax.set_ylabel('')
 
 # Grid
 ax.set_xticks(np.arange(len(table.columns)) - 0.5, minor=True)

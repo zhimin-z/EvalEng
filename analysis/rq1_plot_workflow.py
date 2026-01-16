@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import FancyBboxPatch, FancyArrowPatch
 
 # Set up the figure
-fig, ax = plt.subplots(figsize=(24, 14))
-ax.set_xlim(0, 100)
+fig, ax = plt.subplots(figsize=(20, 10))
+ax.set_xlim(0, 100)  # Stages span x=1 to x=99 with 1-unit margins on each side
 ax.set_ylim(0, 100)
 ax.axis('off')
 
@@ -25,8 +25,8 @@ stages = [
     {
         'name': 'Stage 0:\nProvisioning (56)',
         'summary': 'Establishing & authenticating\nevaluation infrastructure',
-        'x': 2,
-        'width': 16,
+        'x': 1,
+        'width': 18,
         'color_key': 'Provisioning',
         'steps': [
             {
@@ -52,8 +52,8 @@ stages = [
     {
         'name': 'Stage I:\nSpecification (56)',
         'summary': 'Defining SUT & benchmark configuration',
-        'x': 20,
-        'width': 16,
+        'x': 21,
+        'width': 18,
         'color_key': 'Specification',
         'steps': [
             {
@@ -86,8 +86,8 @@ stages = [
     {
         'name': 'Stage II:\nExecution (53)',
         'summary': 'Running SUT with benchmark inputs',
-        'x': 38,
-        'width': 16,
+        'x': 41,
+        'width': 18,
         'color_key': 'Execution',
         'steps': [
             {
@@ -104,8 +104,8 @@ stages = [
     {
         'name': 'Stage III:\nAssessment (56)',
         'summary': 'Computing metrics from\nSUT outputs & references',
-        'x': 56,
-        'width': 16,
+        'x': 61,
+        'width': 18,
         'color_key': 'Assessment',
         'steps': [
             {
@@ -129,8 +129,8 @@ stages = [
     {
         'name': 'Stage IV:\nReporting (46)',
         'summary': 'Visualizing & communicating\nevaluation results',
-        'x': 74,
-        'width': 16,
+        'x': 81,
+        'width': 18,
         'color_key': 'Reporting',
         'steps': [
             {
@@ -151,12 +151,12 @@ stages = [
 # Draw stages containing all their steps
 stage_boxes = []  # Store stage box positions for later arrow drawing
 y_start = 96
-stage_header_height = 6.5  # Reduced since subtitle was removed
-strategy_height = 2.8  # Height of each strategy box
-strategy_spacing = 0.5  # Vertical gap between strategy boxes
-step_header_height = 3.5
-box_margin = 0.75  # Horizontal margin for step boxes from stage edge
-step_spacing = 1.2  # Vertical gap between steps (larger than horizontal)
+stage_header_height = 9.5  # Enlarged for larger stage fonts
+strategy_height = 4.5  # Height of each strategy box (enlarged for 11pt text)
+strategy_spacing = 0.8  # Vertical gap between strategy boxes
+step_header_height = 5.5  # Enlarged for larger step fonts
+box_margin = 0.8  # Horizontal margin for step boxes from stage edge
+step_spacing = 1.8  # Vertical gap between steps (larger than horizontal)
 
 for stage in stages:
     colors = stage_colors[stage['color_key']]
@@ -164,7 +164,7 @@ for stage in stages:
     # Calculate total height needed for this stage (header + all steps)
     total_strategies = sum(len(step['strategies']) for step in stage['steps'])
     total_steps = len(stage['steps'])
-    step_vertical_padding = 0.3  # Must match the padding in step drawing
+    step_vertical_padding = 0.6  # Must match the padding in step drawing
     bottom_gap = box_margin  # Gap between last step and stage bottom
     # Count gaps between strategies within each step
     total_strategy_gaps = sum(max(0, len(step['strategies']) - 1) for step in stage['steps'])
@@ -187,13 +187,13 @@ for stage in stages:
     ax.add_patch(stage_box)
 
     # Stage name
-    ax.text(stage['x'] + stage['width']/2, y_start - 2,
+    ax.text(stage['x'] + stage['width']/2, y_start - 3,
             stage['name'],
-            ha='center', va='center', fontsize=18, weight='bold',
+            ha='center', va='center', fontsize=20, weight='bold',
             zorder=5)
 
     # Stage summary
-    ax.text(stage['x'] + stage['width']/2, y_start - 5,
+    ax.text(stage['x'] + stage['width']/2, y_start - 7,
             stage['summary'],
             ha='center', va='center', fontsize=11,
             zorder=5, wrap=True)
@@ -217,7 +217,7 @@ for stage_info in stage_boxes:
     y_pos = stage_info['y_top'] - stage_header_height
 
     for step in stage['steps']:
-        step_vertical_padding = 0.3  # Padding at bottom of step box
+        step_vertical_padding = 0.6  # Padding at bottom of step box
         num_strategies = len(step['strategies'])
         strategy_gaps = max(0, num_strategies - 1)  # Gaps between strategies
         step_height = (num_strategies * strategy_height +
@@ -239,9 +239,9 @@ for stage_info in stage_boxes:
         ax.add_patch(step_box)
 
         # Step header
-        ax.text(stage['x'] + stage['width']/2, y_pos - 1.8,
+        ax.text(stage['x'] + stage['width']/2, y_pos - 2.7,
                 step['name'],
-                ha='center', va='center', fontsize=13, weight='bold',
+                ha='center', va='center', fontsize=12, weight='bold',
                 zorder=5)
 
         y_strat = y_pos - step_header_height
@@ -249,7 +249,7 @@ for stage_info in stage_boxes:
         # Draw strategies
         for i, strategy in enumerate(step['strategies']):
             # Strategy boxes inside step box
-            strategy_x_margin = step_x_margin + 1  # Additional margin inside step box
+            strategy_x_margin = step_x_margin + box_margin  # Additional margin inside step box (same as stage-to-step gap)
             strategy_width = stage['width'] - 2 * strategy_x_margin
             strategy_box = FancyBboxPatch(
                 (stage['x'] + strategy_x_margin, y_strat - strategy_height),
@@ -278,7 +278,7 @@ for stage_info in stage_boxes:
 
 # Draw horizontal arrows between stages at consistent height
 # Position arrows at the top section of stage boxes
-arrow_y = y_start - 4.5  # Fixed height for all arrows
+arrow_y = y_start - 6.5  # Fixed height for all arrows
 
 for i in range(len(stage_boxes) - 1):
     start_x = stage_boxes[i]['x_right']
@@ -299,7 +299,10 @@ for i in range(len(stage_boxes) - 1):
 
 # Find the minimum y value (bottom of all stages) to adjust plot limits
 min_y = min(box['y_bottom'] for box in stage_boxes)
-ax.set_ylim(min_y - 2, y_start + 4)  # Add small padding top and bottom
+max_x = max(box['x_right'] for box in stage_boxes)
+min_x = min(box['x_left'] for box in stage_boxes)
+ax.set_xlim(min_x - 0.5, max_x + 0.5)  # Tight horizontal margins
+ax.set_ylim(min_y - 0.5, y_start + 0.5)  # Tight vertical margins
 plt.subplots_adjust(left=0, right=1, top=1, bottom=0)
 
 output_path = "../figures/rq1_workflow.pdf"
