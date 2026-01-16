@@ -439,7 +439,7 @@ for i, row in pca_df.iterrows():
     txt = ax.text(
         row['PC1'], row['PC2'],
         row['Harness'],
-        fontsize=11,
+        fontsize=12,
         fontweight='bold',
         alpha=0.9
     )
@@ -463,7 +463,7 @@ if HAS_ADJUST_TEXT and texts:
 ax.set_xlabel(f'PC1 ({pca.explained_variance_ratio_[0]:.1%} variance)', fontsize=14)
 ax.set_ylabel(f'PC2 ({pca.explained_variance_ratio_[1]:.1%} variance)', fontsize=14)
 ax.tick_params(axis='both', labelsize=12)
-ax.legend(loc='upper center', bbox_to_anchor=(0.5, 1.02), ncol=3, fontsize=11)
+ax.legend(loc='upper center', bbox_to_anchor=(0.5, 1.02), ncol=3, fontsize=12)
 plt.tight_layout()
 plt.savefig('../figures/rq1_clustering_pca.pdf', format='pdf', bbox_inches='tight')
 print("Saved ../figures/rq1_clustering_pca.pdf")
