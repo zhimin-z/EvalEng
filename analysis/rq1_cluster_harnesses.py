@@ -501,6 +501,6 @@ interpretations_output = {
     "silhouette_score": round(float(silhouette), 3),
     "clusters": cluster_interpretations,
 }
-with open('../data/rq1_cluster_interpretations.json', 'w') as f:
+with open(interpretations_file, 'w') as f:
     json.dump(interpretations_output, f, indent=2)
-print("Saved ../data/rq1_cluster_interpretations.json")
+print(f"Saved {interpretations_file}")
