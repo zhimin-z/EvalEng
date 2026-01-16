@@ -25,6 +25,7 @@ from scipy.spatial.distance import pdist, squareform
 from sklearn.decomposition import PCA
 from sklearn.metrics import silhouette_score
 from litellm import completion, RateLimitError
+from adjustText import adjust_text
 
 # Set seaborn style (no grid)
 sns.set_theme(style="white")
@@ -446,7 +447,7 @@ for i, row in pca_df.iterrows():
     texts.append(txt)
 
 # Use adjustText to handle overlapping labels with arrows
-if HAS_ADJUST_TEXT and texts:
+if texts:
     adjust_text(
         texts,
         x=pca_df['PC1'].values,
@@ -463,7 +464,7 @@ if HAS_ADJUST_TEXT and texts:
 ax.set_xlabel(f'PC1 ({pca.explained_variance_ratio_[0]:.1%} variance)', fontsize=14)
 ax.set_ylabel(f'PC2 ({pca.explained_variance_ratio_[1]:.1%} variance)', fontsize=14)
 ax.tick_params(axis='both', labelsize=12)
-ax.legend(loc='upper center', bbox_to_anchor=(0.5, 1.02), ncol=3, fontsize=12)
+ax.legend(loc='upper center', bbox_to_anchor=(0.5, 1.05), ncol=3, fontsize=12, framealpha=1.0)
 plt.tight_layout()
 plt.savefig('../figures/rq1_clustering_pca.pdf', format='pdf', bbox_inches='tight')
 print("Saved ../figures/rq1_clustering_pca.pdf")
