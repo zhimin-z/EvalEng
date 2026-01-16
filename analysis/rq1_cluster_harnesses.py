@@ -26,6 +26,7 @@ from sklearn.decomposition import PCA
 from sklearn.metrics import silhouette_score
 from litellm import completion, RateLimitError
 from adjustText import adjust_text
+from matplotlib.patches import FancyArrowPatch
 
 # Set seaborn style (no grid)
 sns.set_theme(style="white")
@@ -434,8 +435,9 @@ sns.scatterplot(
     legend='full'
 )
 
-# Collect text annotations for adjustText
+# Store original positions and create text annotations
 texts = []
+original_positions = []
 for i, row in pca_df.iterrows():
     txt = ax.text(
         row['PC1'], row['PC2'],
@@ -445,20 +447,40 @@ for i, row in pca_df.iterrows():
         alpha=0.9
     )
     texts.append(txt)
+    original_positions.append((row['PC1'], row['PC2']))
 
-# Use adjustText to handle overlapping labels with arrows
-adjust_text(
-    texts,
-    x=pca_df['PC1'].values,
-    y=pca_df['PC2'].values,
-    arrowprops=dict(arrowstyle='->', color='gray', lw=0.8),
-    expand_points=(4.0, 4.0),
-    expand_text=(3.0, 3.0),
-    force_points=(3.0, 3.0),
-    force_text=(2.0, 2.0),
-    lim=300,
-    ax=ax,
-)
+# Use adjustText WITHOUT arrowprops to avoid automatic arrows
+if texts:
+    adjust_text(
+        texts,
+        x=pca_df['PC1'].values,
+        y=pca_df['PC2'].values,
+        expand_points=(2.0, 2.0),
+        expand_text=(1.5, 1.5),
+        force_points=(1.0, 1.0),
+        force_text=(0.8, 0.8),
+        lim=100,
+        ax=ax,
+        only_move={'text': 'xy'},
+    )
+    
+    # Manually add arrows ONLY for texts that moved significantly
+    threshold = 0.2
+    for i, txt in enumerate(texts):
+        x_pos, y_pos = txt.get_position()
+        x_orig, y_orig = original_positions[i]
+        distance = np.sqrt((x_pos - x_orig)**2 + (y_pos - y_orig)**2)
+        
+        if distance >= threshold:
+            arrow = FancyArrowPatch(
+                (x_orig, y_orig), (x_pos, y_pos),
+                arrowstyle='->',
+                color='gray',
+                lw=0.8,
+                zorder=1,
+                mutation_scale=15
+            )
+            ax.add_patch(arrow)
 
 ax.set_xlabel(f'PC1 ({pca.explained_variance_ratio_[0]:.1%} variance)', fontsize=14)
 ax.set_ylabel(f'PC2 ({pca.explained_variance_ratio_[1]:.1%} variance)', fontsize=14)
