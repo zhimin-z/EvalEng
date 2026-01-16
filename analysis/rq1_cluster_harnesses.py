@@ -433,99 +433,32 @@ sns.scatterplot(
     legend='full'
 )
 
-# Fast greedy label placement with arrows to offset target points
-node_radius = 0.12  # min separation between arrow tip and node
-label_offset = 0.25  # initial offset distance for labels
+# Collect text annotations for adjustText
+texts = []
+for i, row in pca_df.iterrows():
+    txt = ax.text(
+        row['PC1'], row['PC2'],
+        row['Harness'],
+        fontsize=11,
+        fontweight='bold',
+        alpha=0.9
+    )
+    texts.append(txt)
 
-orig_x = pca_df['PC1'].values.copy()
-orig_y = pca_df['PC2'].values.copy()
-
-
-def greedy_label_placement(points, labels, ax):
-    """
-    Place labels using greedy algorithm: for each point, try 8 compass directions
-    and pick the one with least overlap with existing labels.
-    """
-    placed = []  # list of (x, y, width, height) for placed labels
-
-    # Estimate character dimensions in data coordinates
-    xlim, ylim = ax.get_xlim(), ax.get_ylim()
-    x_range, y_range = xlim[1] - xlim[0], ylim[1] - ylim[0]
-    char_w = x_range * 0.012
-    char_h = y_range * 0.035
-
-    # 8 compass directions (angle, x_mult, y_mult)
-    directions = [
-        (0.3, 0.1),    # right-up
-        (0.3, -0.05),  # right
-        (0.3, -0.15),  # right-down
-        (-0.1, 0.15),  # up
-        (-0.1, -0.2),  # down
-        (-0.5, 0.1),   # left-up (negative x to account for text width)
-        (-0.5, -0.05), # left
-        (-0.5, -0.15), # left-down
-    ]
-
-    results = []
-    for px, py, label in zip(points[:, 0], points[:, 1], labels):
-        width = len(label) * char_w
-        height = char_h
-        best_pos = None
-        best_score = float('inf')
-
-        for dx, dy in directions:
-            tx = px + dx
-            ty = py + dy
-
-            # Score = sum of overlaps with placed labels + overlap with other points
-            score = 0
-            for ox, oy, ow, oh in placed:
-                # Check overlap
-                if not (tx + width < ox or ox + ow < tx or ty + height < oy or oy + oh < ty):
-                    overlap_x = min(tx + width, ox + ow) - max(tx, ox)
-                    overlap_y = min(ty + height, oy + oh) - max(ty, oy)
-                    score += overlap_x * overlap_y * 100
-
-            # Penalize overlap with other node positions
-            for opx, opy in zip(points[:, 0], points[:, 1]):
-                if tx <= opx <= tx + width and ty <= opy <= ty + height:
-                    score += 50
-
-            if score < best_score:
-                best_score = score
-                best_pos = (tx, ty)
-
-        tx, ty = best_pos
-        placed.append((tx, ty, width, height))
-        results.append((px, py, tx, ty, label))
-
-    return results
-
-
-# Compute label positions
-points = np.column_stack([orig_x, orig_y])
-label_positions = greedy_label_placement(points, pca_df['Harness'].values, ax)
-
-# Add labels and arrows
-for px, py, tx, ty, label in label_positions:
-    # Add text
-    ax.text(tx, ty, label, fontsize=11, fontweight='bold', alpha=0.9)
-
-    # Calculate distance
-    dx, dy = px - tx, py - ty
-    dist = np.sqrt(dx**2 + dy**2)
-
-    # Add arrow if label is far from node
-    if dist > 0.2:
-        # Arrow points to offset target (ring around node)
-        target_x = px - (dx / dist) * node_radius
-        target_y = py - (dy / dist) * node_radius
-        ax.annotate(
-            '',
-            xy=(target_x, target_y),
-            xytext=(tx + len(label) * 0.006, ty + 0.01),  # start from text edge
-            arrowprops=dict(arrowstyle='->', color='gray', lw=0.7),
-        )
+# Use adjustText to handle overlapping labels with arrows
+if HAS_ADJUST_TEXT and texts:
+    adjust_text(
+        texts,
+        x=pca_df['PC1'].values,
+        y=pca_df['PC2'].values,
+        arrowprops=dict(arrowstyle='->', color='gray', lw=0.8),
+        expand_points=(3.0, 3.0),
+        expand_text=(2.0, 2.0),
+        force_points=(2.0, 2.0),
+        force_text=(1.5, 1.5),
+        lim=200,
+        ax=ax,
+    )
 
 ax.set_xlabel(f'PC1 ({pca.explained_variance_ratio_[0]:.1%} variance)', fontsize=14)
 ax.set_ylabel(f'PC2 ({pca.explained_variance_ratio_[1]:.1%} variance)', fontsize=14)
