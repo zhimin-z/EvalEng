@@ -14,49 +14,58 @@ MODEL = "anthropic/claude-haiku-4-5-20251001"
 
 # Input and output files
 INPUT_FILE = "../data/rq3_issues_sample_annotated.jsonl"
-OUTPUT_FILE = "../data/rq3_issues_sample_annotated_reference.jsonl"
 
 ROOT_CAUSE_TAXONOMY_TEXT = """Root Cause Taxonomy for Software Issues
 
 1. Algorithmic Error
-   The core logic contains errors that produce wrong results, unintended behaviors, or performance degradation.
-   Examples: Wrong calculations, incorrect formulas, faulty conditional logic, algorithmic bugs, off-by-one errors, wrong business logic, performance regressions due to algorithmic changes, non-deterministic behavior when determinism is required.
+   The core logic produces wrong results or unintended behaviors. Use when the code runs but computes incorrectly.
+   Examples: Wrong calculations, incorrect formulas, faulty conditional logic, off-by-one errors, non-deterministic behavior due to logic bugs, inefficient algorithms causing performance issues.
+   Distinguish from: Missing checks (→ Validation Gap), type mismatches between components (→ Interface Contract Mismatch).
 
 2. Architectural Constraint
-   Code structure or design decisions prevent necessary adaptations, extensions, or maintenance operations.
-   Examples: Hardcoded values that should be configurable, tight coupling preventing changes, inflexible abstractions, design that doesn't allow required modifications, cache designs lacking update mechanisms, stale whitelists requiring manual updates.
+   Code structure prevents necessary adaptation; fixing requires refactoring or design changes.
+   Examples: Hardcoded values embedded in logic, tight coupling between modules, rigid class hierarchies, no extension points where flexibility is needed.
+   Distinguish from: Config mechanism exists but doesn't propagate (→ Configuration Error).
 
 3. Configuration Error
-   Settings, parameters, or configuration values fail to flow correctly through the system, or are missing when needed for consistent behavior.
-   Examples: Ignored config values, parameters not forwarded to downstream components, wrong default values, configuration not applied where needed, missing randomization seeds causing non-deterministic behavior, temperature settings causing instability.
+   Configuration mechanism exists but values fail to flow correctly, or defaults are inappropriate.
+   Examples: Config parameter ignored in code path, nested component doesn't receive forwarded config, environment variable read but not applied, wrong default values.
+   Distinguish from: No configuration mechanism exists (→ Architectural Constraint).
 
 4. Documentation Deficiency
-   Documentation is missing, incomplete, outdated, or unclear, preventing proper system use.
-   Examples: Undocumented features or APIs, unclear setup instructions, missing usage examples, outdated guides, unclear configuration documentation.
+   Feature EXISTS but users can't find or understand how to use it. Docs failed to guide the user.
+   Examples: Undocumented features, unclear setup instructions, user confusion resolved by pointing to existing docs/code.
+   Distinguish from: Feature doesn't exist (→ Unimplemented Feature Gap).
 
 5. Environment Incompatibility
-   System makes assumptions about the environment that fail in practice, especially during setup or deployment.
-   Examples: Platform-specific bugs, broken installation process, missing system dependencies, OS-specific failures, environment-specific configuration mismatches, runtime version incompatibilities.
+   User's machine/environment is missing something or incompatible. The problem is WHERE the code runs.
+   Examples: Missing system dependencies, OS-specific failures, conda/pip setup issues, Python version incompatibility, user has wrong installed version.
+   Distinguish from: Third-party library code changed (→ External Dependency Breakage).
 
 6. External Dependency Breakage
-   Third-party libraries, APIs, external systems, or network services changed or became unavailable in ways that break existing code.
-   Examples: Library version updates introducing incompatibilities, deprecated APIs, upstream breaking changes, external service modifications, network connectivity failures, API timeouts, third-party service outages.
+   Third-party library/API CODE changed or became unavailable. The external code itself broke the integration.
+   Examples: Library version updates with breaking changes, deprecated APIs, upstream breaking changes, Pydantic v2 migration.
+   Distinguish from: User missing a dependency (→ Environment Incompatibility).
 
 7. Interface Contract Mismatch
-   Components disagree on expected data types, formats, or API signatures at integration points.
-   Examples: Type errors between functions, wrong return value formats, API signature changes, protocol violations between modules, mismatched data structure expectations.
+   Two or more components have incompatible assumptions at their integration boundary.
+   Examples: Async vs sync function mismatch, caller expects dict but callee returns float, API signature changed between library versions, incompatible serialization formats between services.
+   Distinguish from: Single component lacking internal validation (→ Validation Gap).
 
 8. Resource Mishandling
-   Improper handling of system resources like memory, GPU, file handles, or concurrency.
-   Examples: Memory leaks, GPU out-of-memory errors, deadlocks, race conditions, resource exhaustion, improper cleanup, unbalanced resource allocation, concurrent access violations.
+   Improper handling of memory, GPU, file handles, or concurrency primitives.
+   Examples: Memory leaks, GPU OOM due to improper allocation, deadlocks, race conditions, event loop errors.
+   Distinguish from: Slow algorithms (→ Algorithmic Error).
 
 9. Unimplemented Feature Gap
-   The system lacks functionality that users reasonably expect to exist, including adding/removing features or automating manual processes.
-   Examples: Unsupported model types, missing platform compatibility, missing API integrations, feature removal requests, manual tasks users expect to be automated (e.g., leaderboard updates).
+   Feature does NOT EXIST and users are requesting it. Maintainer confirms it needs to be built.
+   Examples: Unsupported model types, missing platform support, feature requests acknowledged by maintainers.
+   Distinguish from: Feature exists but undocumented (→ Documentation Deficiency).
 
 10. Validation Gap
-    Missing or insufficient validation checks for inputs, outputs, or state; or inadequate error handling and messages.
-    Examples: No input validation allowing invalid states, missing output validation (e.g., cached downloads, data quality checks), unclear error messages, silent failures, crashes on edge cases, missing validation preventing early error detection, insufficient state verification."""
+    Missing checks, guards, or compile-time validation within a single component.
+    Examples: No bounds checking, missing null checks, syntax errors, type errors caught at compile time, unhandled exceptions, unclear error messages for invalid input.
+    Distinguish from: Logic produces wrong output (→ Algorithmic Error), two components disagreeing on interface (→ Interface Contract Mismatch)."""
 
 VALID_LABELS = [
     "Algorithmic Error", "Architectural Constraint", "Configuration Error",
@@ -72,15 +81,7 @@ TASK: Given a GitHub issue, classify its root cause into ONE of the categories f
 ROOT CAUSE TAXONOMY:
 {ROOT_CAUSE_TAXONOMY_TEXT}
 
-ANNOTATION GUIDELINES:
-- User misunderstanding or confusion about how to use the system → Documentation Deficiency (the docs failed to prevent misunderstanding)
-- Config exists but doesn't propagate correctly → Configuration Error
-- Design prevents adding/modifying config → Architectural Constraint
-- Third-party library/API changed or broke → External Dependency Breakage
-- OS/platform/runtime environment issue → Environment Incompatibility
-- Wrong logic or calculation → Algorithmic Error
-- Type/format/signature mismatch between components → Interface Contract Mismatch
-- Missing input/output checks → Validation Gap
+KEY PRINCIPLE: Identify what's BROKEN in the code, not the symptom. Ask: "What code change would fix this?"
 
 OUTPUT FORMAT:
 Return ONLY valid JSON: {{"root_cause_label": "<label>"}}
@@ -205,10 +206,10 @@ def main():
 
     # Create results dataframe and save
     results_df = pd.DataFrame(results)
-    results_df.to_json(OUTPUT_FILE, orient='records', lines=True)
+    results_df.to_json(INPUT_FILE, orient='records', lines=True)
 
     print("\n" + "=" * 80)
-    print(f"Classification complete! Results saved to {OUTPUT_FILE}")
+    print(f"Classification complete! Results saved to {INPUT_FILE}")
 
     # Print summary statistics
     print(f"\nSummary:")

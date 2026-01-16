@@ -1,0 +1,288 @@
+{
+  "linkage_method": "ward",
+  "num_clusters": 6,
+  "silhouette_score": 0.241,
+  "clusters": [
+    {
+      "cluster_id": 1,
+      "members": [
+        "BEIR",
+        "BigCode",
+        "CipherChat",
+        "EvalPlus",
+        "GuideLLM",
+        "LLMPerf",
+        "Ollama Grid Search",
+        "Picovoice",
+        "TorchBench"
+      ],
+      "size": 9,
+      "common_strategies": [
+        "S0-A1",
+        "SII-A1"
+      ],
+      "missing_strategies": [
+        "S0-A5",
+        "S0-B3",
+        "SI-A3",
+        "SI-B2",
+        "SI-B4",
+        "SII-A2",
+        "SII-A3",
+        "SII-A4",
+        "SIII-B2"
+      ],
+      "stage_coverage": {
+        "Stage 0": 0.5,
+        "Stage I": 0.389,
+        "Stage II": 0.25,
+        "Stage III": 0.407,
+        "Stage IV": 0.204
+      },
+      "avg_coverage": 0.369,
+      "cluster_name": "Offline Batch Evaluation Harnesses",
+      "cluster_interpretation": "This cluster comprises harnesses optimized for static, batch-oriented evaluation of individual models or algorithms against predefined benchmarks, characterized by universal support for source-based installation and batch inference but lacking capabilities for interactive agents, simulation environments, arena comparisons, and advanced reporting\u2014making them suitable for deterministic performance measurement of language models, code systems, and retrieval methods in controlled, non-interactive settings."
+    },
+    {
+      "cluster_id": 2,
+      "members": [
+        "Melting Pot",
+        "Metaworld",
+        "Overcooked",
+        "RLBench",
+        "SimplerEnv"
+      ],
+      "size": 5,
+      "common_strategies": [
+        "S0-A1",
+        "S0-A2",
+        "SI-A3",
+        "SI-B2",
+        "SII-A1",
+        "SII-A3",
+        "SIII-A1",
+        "SIII-B1"
+      ],
+      "missing_strategies": [
+        "S0-A3",
+        "S0-A4",
+        "S0-A5",
+        "S0-B2",
+        "S0-B3",
+        "SI-A2",
+        "SI-A4",
+        "SI-B4",
+        "SII-A2",
+        "SII-A4",
+        "SIII-A2",
+        "SIII-A3",
+        "SIII-A4",
+        "SIII-B2",
+        "SIV-A3",
+        "SIV-A6"
+      ],
+      "stage_coverage": {
+        "Stage 0": 0.275,
+        "Stage I": 0.48,
+        "Stage II": 0.5,
+        "Stage III": 0.333,
+        "Stage IV": 0.2
+      },
+      "avg_coverage": 0.359,
+      "cluster_name": "Interactive Agent Benchmarks",
+      "cluster_interpretation": "These harnesses specialize in evaluating sequential decision-making systems (RL agents, robotics, multi-agent environments) through interactive simulation environments, prioritizing stateful agent-environment loops and deterministic metrics over LLM judges or remote APIs, with minimal reporting infrastructure."
+    },
+    {
+      "cluster_id": 3,
+      "members": [
+        "DomainBed",
+        "HumanEval",
+        "JiWER",
+        "OGB",
+        "Quantus",
+        "mir_eval",
+        "ranx"
+      ],
+      "size": 7,
+      "common_strategies": [
+        "S0-A1",
+        "S0-A2",
+        "SI-C1",
+        "SIII-A1",
+        "SIII-B1"
+      ],
+      "missing_strategies": [
+        "S0-A3",
+        "S0-A4",
+        "S0-A5",
+        "S0-B2",
+        "S0-B3",
+        "SI-A2",
+        "SI-A3",
+        "SI-B2",
+        "SI-B3",
+        "SI-B4",
+        "SI-C2",
+        "SII-A2",
+        "SII-A3",
+        "SII-A4",
+        "SIII-A2",
+        "SIII-A3",
+        "SIII-A4",
+        "SIII-B2",
+        "SIV-A2",
+        "SIV-A3",
+        "SIV-A5",
+        "SIV-A6"
+      ],
+      "stage_coverage": {
+        "Stage 0": 0.304,
+        "Stage I": 0.229,
+        "Stage II": 0.143,
+        "Stage III": 0.333,
+        "Stage IV": 0.071
+      },
+      "avg_coverage": 0.227,
+      "cluster_name": "Offline Benchmark Evaluation",
+      "cluster_interpretation": "This cluster comprises harnesses specialized in evaluating local models against predefined datasets using deterministic metrics, with minimal infrastructure requirements and no support for remote APIs, interactive agents, or advanced reporting\u2014making them ideal for reproducible, lightweight benchmarking of traditional ML systems and code generation tasks."
+    },
+    {
+      "cluster_id": 4,
+      "members": [
+        "Ann-benchmarks",
+        "EvalAI",
+        "PyKEEN"
+      ],
+      "size": 3,
+      "common_strategies": [
+        "S0-A1",
+        "S0-A2",
+        "SI-A4",
+        "SI-B1",
+        "SI-C1",
+        "SII-A1",
+        "SIII-A1",
+        "SIII-A4",
+        "SIII-B1",
+        "SIV-A2"
+      ],
+      "missing_strategies": [
+        "S0-A4",
+        "S0-A5",
+        "S0-B2",
+        "SI-B2",
+        "SI-B3",
+        "SI-B4",
+        "SI-C2",
+        "SII-A2",
+        "SII-A4",
+        "SIII-B2",
+        "SIV-A5",
+        "SIV-A6"
+      ],
+      "stage_coverage": {
+        "Stage 0": 0.417,
+        "Stage I": 0.433,
+        "Stage II": 0.333,
+        "Stage III": 0.667,
+        "Stage IV": 0.389
+      },
+      "avg_coverage": 0.451,
+      "cluster_name": "Offline Benchmark & Ranking Systems",
+      "cluster_interpretation": "These harnesses specialize in evaluating non-parametric algorithms and local models against pre-computed benchmarks with deterministic metrics, emphasizing comparative ranking and dashboard presentation while avoiding real-time execution, synthetic generation, and LLM-based judgment."
+    },
+    {
+      "cluster_id": 5,
+      "members": [
+        "DeepEval",
+        "EvalScope",
+        "Evidently",
+        "Giskard",
+        "Inspect AI",
+        "IntellAgent",
+        "OpenAI Evals",
+        "Promptfoo",
+        "Ragas",
+        "Rogue",
+        "TruLens"
+      ],
+      "size": 11,
+      "common_strategies": [
+        "S0-A1",
+        "S0-B1",
+        "S0-B2",
+        "SI-A2",
+        "SI-C1",
+        "SI-C2",
+        "SII-A1",
+        "SIII-A2",
+        "SIII-B1",
+        "SIV-A2"
+      ],
+      "missing_strategies": [],
+      "stage_coverage": {
+        "Stage 0": 0.614,
+        "Stage I": 0.745,
+        "Stage II": 0.636,
+        "Stage III": 0.727,
+        "Stage IV": 0.712
+      },
+      "avg_coverage": 0.693,
+      "cluster_name": "LLM-Centric API Evaluators",
+      "cluster_interpretation": "This cluster specializes in evaluating large language models and retrieval systems through remote APIs and subjective judgment, with strong capabilities in specification and reporting but limited support for local inference, interactive agents, and production monitoring workflows."
+    },
+    {
+      "cluster_id": 6,
+      "members": [
+        "ARES",
+        "AlpacaEval",
+        "AutoRAG",
+        "C-Eval",
+        "COMET",
+        "Evalchemy",
+        "Evaluate",
+        "GAOKAO",
+        "HELM",
+        "LM Eval",
+        "LightEval",
+        "MLPerf",
+        "OpenCompass",
+        "Prometheus",
+        "PromptBench",
+        "RewardBench",
+        "TFMA",
+        "TrustLLM",
+        "VBench",
+        "VLMEvalKit",
+        "lmms-eval"
+      ],
+      "size": 21,
+      "common_strategies": [
+        "S0-A1",
+        "SI-B1",
+        "SI-C1",
+        "SII-A1",
+        "SIII-B1"
+      ],
+      "missing_strategies": [
+        "S0-A4",
+        "S0-A5",
+        "SI-A3",
+        "SI-A4",
+        "SI-B2",
+        "SI-B4",
+        "SII-A4"
+      ],
+      "stage_coverage": {
+        "Stage 0": 0.512,
+        "Stage I": 0.505,
+        "Stage II": 0.31,
+        "Stage III": 0.73,
+        "Stage IV": 0.341
+      },
+      "avg_coverage": 0.494,
+      "cluster_name": "Batch LLM Benchmark Evaluators",
+      "cluster_interpretation": "This cluster comprises harnesses specialized in offline batch evaluation of language models against predefined benchmarks, excelling at assessment and scoring (Stage III: 73%) but lacking support for interactive agents, simulation environments, production traffic, and real-time streaming\u2014positioning them as the standard toolkit for comparative LLM leaderboards and research benchmarking rather than deployment monitoring or embodied AI evaluation."
+    }
+  ]
+}
