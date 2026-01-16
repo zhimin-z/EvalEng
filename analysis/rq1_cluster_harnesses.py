@@ -447,19 +447,18 @@ for i, row in pca_df.iterrows():
     texts.append(txt)
 
 # Use adjustText to handle overlapping labels with arrows
-if texts:
-    adjust_text(
-        texts,
-        x=pca_df['PC1'].values,
-        y=pca_df['PC2'].values,
-        arrowprops=dict(arrowstyle='->', color='gray', lw=0.8),
-        expand_points=(3.0, 3.0),
-        expand_text=(2.0, 2.0),
-        force_points=(2.0, 2.0),
-        force_text=(1.5, 1.5),
-        lim=200,
-        ax=ax,
-    )
+adjust_text(
+    texts,
+    x=pca_df['PC1'].values,
+    y=pca_df['PC2'].values,
+    arrowprops=dict(arrowstyle='->', color='gray', lw=0.8),
+    expand_points=(4.0, 4.0),
+    expand_text=(3.0, 3.0),
+    force_points=(3.0, 3.0),
+    force_text=(2.0, 2.0),
+    lim=300,
+    ax=ax,
+)
 
 ax.set_xlabel(f'PC1 ({pca.explained_variance_ratio_[0]:.1%} variance)', fontsize=14)
 ax.set_ylabel(f'PC2 ({pca.explained_variance_ratio_[1]:.1%} variance)', fontsize=14)
