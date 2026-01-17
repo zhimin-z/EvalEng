@@ -250,7 +250,7 @@ def analyze_issue(title, body, harness_name, comments=None):
 results = []
 
 # Set up output file path
-output_file = "../data/rq3_issues_annotated.jsonl"
+output_file = "../data/rq3_issues_annotated_full.jsonl"
 
 print("\nStarting analysis...")
 print("=" * 80)

@@ -6,21 +6,6 @@ import numpy as np
 
 from collections import defaultdict
 
-# Root cause taxonomy mapping
-ROOT_CAUSE_TAXONOMY = {
-    "1": "Algorithmic Error",
-    "2": "Architectural Constraint",
-    "3": "Configuration Error",
-    "4": "Documentation Deficiency",
-    "5": "Environment Incompatibility",
-    "6": "External Dependency Breakage",
-    "7": "Interface Contract Mismatch",
-    "8": "Resource Mishandling",
-    "9": "Unimplemented Feature Gap",
-    "10": "Validation Gap",
-    "Others": "Others"
-}
-
 # Helper function to convert numeric values to integers
 def convert_to_int_if_numeric(val):
     if pd.isna(val):
@@ -67,7 +52,7 @@ def smart_split_label(label, max_combined_length=10):
     return '\n'.join(lines)
 
 # Load data for root cause visualization (sample dataset)
-root_cause_file = "../data/rq3_issues_annotated_sample.jsonl"
+root_cause_file = "../data/rq3_issues_annotated_full.jsonl"
 root_cause_results_df = pd.read_json(root_cause_file, lines=True)
 
 if len(root_cause_results_df) > 0:
@@ -77,11 +62,8 @@ if len(root_cause_results_df) > 0:
     # Convert root_cause_label to string for mapping
     root_cause_df['root_cause_label'] = root_cause_df['root_cause_label'].astype(str)
 
-    # Map numeric labels to full names
-    root_cause_df['root_cause_name'] = root_cause_df['root_cause_label'].map(ROOT_CAUSE_TAXONOMY)
-
     # Handle any unmapped values
-    root_cause_df['root_cause_name'] = root_cause_df['root_cause_name'].fillna('Unknown')
+    root_cause_df['root_cause_label'] = root_cause_df['root_cause_label'].fillna('Unknown')
 
     # Convert stage and step values to proper types (keep NaN as is)
     root_cause_df['stage'] = root_cause_df['stage'].apply(convert_to_int_if_numeric)
@@ -91,7 +73,7 @@ if len(root_cause_results_df) > 0:
     root_cause_hierarchy = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
 
     for _, row in root_cause_df.iterrows():
-        root_cause = row['root_cause_name']
+        root_cause = row['root_cause_label']
         # Normalize NaN to None for dictionary keys (NaN != NaN causes issues)
         stage = None if pd.isna(row['stage']) else row['stage']
         step = None if pd.isna(row['step']) else row['step']
@@ -102,7 +84,7 @@ if len(root_cause_results_df) > 0:
         rc: sum(sum(steps.values()) for steps in stages.values())
         for rc, stages in root_cause_hierarchy.items()
     }
-    sorted_root_cause_names = sorted(root_cause_totals.keys(), key=lambda x: root_cause_totals[x], reverse=True)
+    sorted_root_cause_labels = sorted(root_cause_totals.keys(), key=lambda x: root_cause_totals[x], reverse=True)
 
     # Calculate root cause percentages
     total_root_cause_issues = len(root_cause_df)
@@ -143,7 +125,7 @@ if len(root_cause_results_df) > 0:
     fig, ax = plt.subplots(figsize=(16, 8))
 
     # Prepare data for grouped and stacked bars
-    num_root_causes = len(sorted_root_cause_names)
+    num_root_causes = len(sorted_root_cause_labels)
     num_stages = len(stage_order_for_root_causes)
     num_steps = len(step_order)
     bar_width = 0.6
@@ -159,7 +141,7 @@ if len(root_cause_results_df) > 0:
     root_cause_boundaries = []
 
     # Plot grouped bars with stacking by steps
-    for rc_idx, root_cause in enumerate(sorted_root_cause_names):
+    for rc_idx, root_cause in enumerate(sorted_root_cause_labels):
         for stage_idx, stage in enumerate(stage_order_for_root_causes):
             x_positions.append(current_x)
             x_labels.append(str(stage))
@@ -185,7 +167,7 @@ if len(root_cause_results_df) > 0:
             # Add total count labels on top of each stacked bar
             if bottom > 0:
                 ax.text(current_x, bottom, str(int(bottom)), ha='center', va='bottom',
-                       fontsize=7, fontweight='bold')
+                       fontsize=9, fontweight='bold')
 
             current_x += 1
 
@@ -207,7 +189,7 @@ if len(root_cause_results_df) > 0:
     ax.set_xlim(-0.5, current_x - 0.5)
 
     # Add root cause labels as text annotations near the top
-    for idx, root_cause in enumerate(sorted_root_cause_names):
+    for idx, root_cause in enumerate(sorted_root_cause_labels):
         positions = root_cause_positions[root_cause]
         if positions:
             # Center based on boundaries for margin groups, use actual bar positions
@@ -215,7 +197,7 @@ if len(root_cause_results_df) > 0:
                 # First group: use min position as left boundary
                 left_boundary = min(positions) - 0.5
                 right_boundary = root_cause_boundaries[0] if root_cause_boundaries else max(positions) + 0.5
-            elif idx == len(sorted_root_cause_names) - 1:
+            elif idx == len(sorted_root_cause_labels) - 1:
                 # Last group: use max position as right boundary
                 left_boundary = root_cause_boundaries[-1]
                 right_boundary = max(positions) + 0.5
@@ -229,11 +211,11 @@ if len(root_cause_results_df) > 0:
             root_cause_with_percentage = f"{root_cause} ({root_cause_percentage:.2f}%)"
             display_label = smart_split_label(root_cause_with_percentage)
             ax.text(center_x, 0.97, display_label, transform=ax.get_xaxis_transform(),
-                   ha='center', va='top', fontsize=10, fontweight='bold',
+                   ha='center', va='top', fontsize=9, fontweight='bold',
                    bbox=dict(boxstyle='round,pad=0.5', facecolor='lightgray', alpha=0.7))
 
     # Add legend (showing steps now instead of stages)
-    ax.legend(title='Step', bbox_to_anchor=(0.92, 0.85), loc='upper left',
+    ax.legend(title='Step', bbox_to_anchor=(0.93, 0.85), loc='upper left',
              fontsize=12, title_fontsize=13, markerscale=1.5)
 
     # Add grid
@@ -257,9 +239,9 @@ if len(root_cause_results_df) > 0:
     print("=" * 70)
     print(f"Total issues with root cause labels: {len(root_cause_df)}")
 
-    for rc_idx, root_cause in enumerate(sorted_root_cause_names):
+    for rc_idx, root_cause in enumerate(sorted_root_cause_labels):
         total = root_cause_totals[root_cause]
-        is_last_root_cause = (rc_idx == len(sorted_root_cause_names) - 1)
+        is_last_root_cause = (rc_idx == len(sorted_root_cause_labels) - 1)
 
         print(f"{root_cause + ':':<22} {total:>3} ({root_cause_percentages[root_cause]:.2f}%)")
 

@@ -13,7 +13,7 @@ dotenv.load_dotenv(override=True)
 MODEL = "anthropic/claude-haiku-4-5-20251001"
 
 # Input and output files
-INPUT_FILE = "../data/rq3_issues_annotated.jsonl"
+INPUT_FILE = "../data/rq3_issues_annotated_full.jsonl"
 
 ROOT_CAUSE_TAXONOMY_TEXT = """Root Cause Taxonomy for Software Issues
 
@@ -164,10 +164,10 @@ def main():
     print(f"Loading data from {INPUT_FILE}...")
     df = pd.read_json(INPUT_FILE, lines=True)
 
-    # Filter to only related issues
-    df_related = df[df['is_related'] == True].copy()
+    # Count related issues for progress tracking
+    related_count = (df['is_related'] == True).sum()
     print(f"Total issues: {len(df)}")
-    print(f"Related issues to annotate: {len(df_related)}")
+    print(f"Related issues to annotate: {related_count}")
 
     # Track results
     results = []
@@ -176,7 +176,15 @@ def main():
     print("=" * 80)
 
     max_retries = 5
-    for idx, row in tqdm(df_related.iterrows(), total=len(df_related), desc="Classifying issues"):
+    for idx, row in tqdm(df.iterrows(), total=len(df), desc="Processing issues"):
+        result_row = row.to_dict()
+
+        # Only classify related issues
+        if row['is_related'] != True:
+            # Non-related issues: add directly without classification
+            results.append(result_row)
+            continue
+
         issue_content = f"Title: {row['issue_title']}\n\nBody:\n{row['issue_body']}\n\nComments:\n{row['issue_comments']}"
 
         for attempt in range(max_retries):
@@ -184,7 +192,6 @@ def main():
                 root_cause_label = classify_root_cause(issue_content)
 
                 # Keep all original attributes and add root_cause_label
-                result_row = row.to_dict()
                 result_row['root_cause_label'] = root_cause_label
                 results.append(result_row)
                 break
@@ -195,7 +202,6 @@ def main():
                     time.sleep(2 ** attempt)  # Exponential backoff
                 else:
                     print(f"\nFailed after {max_retries} attempts for {row['issue_url']}: {e}")
-                    result_row = row.to_dict()
                     result_row['root_cause_label'] = 'ERROR'
                     results.append(result_row)
 
