@@ -259,16 +259,18 @@ if len(root_cause_results_df) > 0:
 
         # Show "General (no stage)" first if there are issues without stage
         if no_stage_count > 0:
+            no_stage_pct = (no_stage_count / total * 100) if total > 0 else 0
             if len(stages_with_counts) > 0:
-                print(f"  {'├─ General (no stage):':<20} {no_stage_count:>3}")
+                print(f"  {'├─ General (no stage):':<20} {no_stage_count:>3} ({no_stage_pct:.2f}%)")
             else:
-                print(f"  {'└─ General (no stage):':<20} {no_stage_count:>3}")
+                print(f"  {'└─ General (no stage):':<20} {no_stage_count:>3} ({no_stage_pct:.2f}%)")
 
         for stage_idx, (stage, stage_count) in enumerate(stages_with_counts):
             is_last_stage = (stage_idx == len(stages_with_counts) - 1)
             stage_prefix = "└─" if is_last_stage else "├─"
             stage_label = f"Stage {stage}"
-            print(f"  {stage_prefix} {stage_label + ':':<18} {stage_count:>3}")
+            stage_pct = (stage_count / total * 100) if total > 0 else 0
+            print(f"  {stage_prefix} {stage_label + ':':<18} {stage_count:>3} ({stage_pct:.2f}%)")
 
             # Get steps for this stage
             steps_dict = root_cause_hierarchy[root_cause][stage]
@@ -288,15 +290,17 @@ if len(root_cause_results_df) > 0:
 
             # Show "General (no step)" first if there are issues without step
             if no_step_count > 0:
+                no_step_pct = (no_step_count / stage_count * 100) if stage_count > 0 else 0
                 if len(steps_with_counts) > 0:
-                    print(f"  {stage_continuation}  {'├─ General (no step):':<16} {no_step_count:>3}")
+                    print(f"  {stage_continuation}  {'├─ General (no step):':<16} {no_step_count:>3} ({no_step_pct:.2f}%)")
                 else:
-                    print(f"  {stage_continuation}  {'└─ General (no step):':<16} {no_step_count:>3}")
+                    print(f"  {stage_continuation}  {'└─ General (no step):':<16} {no_step_count:>3} ({no_step_pct:.2f}%)")
 
             for step_idx, (step, step_count) in enumerate(steps_with_counts):
                 is_last_step = (step_idx == len(steps_with_counts) - 1)
                 step_prefix = "└─" if is_last_step else "├─"
                 step_label = f"Step {step}"
-                print(f"  {stage_continuation}  {step_prefix} {step_label + ':':<14} {step_count:>3}")
+                step_pct = (step_count / stage_count * 100) if stage_count > 0 else 0
+                print(f"  {stage_continuation}  {step_prefix} {step_label + ':':<14} {step_count:>3} ({step_pct:.2f}%)")
 
     plt.close()

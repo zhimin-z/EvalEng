@@ -178,7 +178,7 @@ if len(workflow_df) > 0:
     for i, (x_pos, total) in enumerate(zip(x_positions, bottom)):
         if total > 0:  # Only show label if there are issues
             ax.text(x_pos, total, str(int(total)), ha='center', va='bottom',
-                   fontsize=9, fontweight='bold')
+                   fontsize=11, fontweight='bold')
 
     # Add vertical lines to separate stages
     for boundary in stage_boundaries:
@@ -188,7 +188,7 @@ if len(workflow_df) > 0:
     ax.set_xlabel('Steps (grouped by Stage)', fontsize=12, fontweight='bold')
     ax.set_ylabel('Number of Issues', fontsize=12, fontweight='bold')
     ax.set_xticks(x_positions)
-    ax.set_xticklabels(x_labels, ha='center', fontsize=9)
+    ax.set_xticklabels(x_labels, ha='center', fontsize=12)
 
     # Set tight x-axis limits to eliminate margin space
     ax.set_xlim(-0.5, current_x - 0.5)
@@ -215,7 +215,7 @@ if len(workflow_df) > 0:
             stage_percentage = stage_percentages[stage]
             stage_label = f"Stage {stage}\n({stage_percentage:.2f}%)"
             ax.text(center_x, 0.97, stage_label, transform=ax.get_xaxis_transform(),
-                   ha='center', va='top', fontsize=11, fontweight='bold',
+                   ha='center', va='top', fontsize=13, fontweight='bold',
                    bbox=dict(boxstyle='round,pad=0.5', facecolor='lightgray', alpha=0.7))
 
     # Add legend
@@ -260,7 +260,8 @@ if len(workflow_df) > 0:
 
             # Show "General (no step)" if applicable
             if no_step_count > 0:
-                print(f"  {'├─ General (no step):':<22} {no_step_count:>3}")
+                no_step_pct = (no_step_count / stage_count * 100) if stage_count > 0 else 0
+                print(f"  {'├─ General (no step):':<22} {no_step_count:>3} ({no_step_pct:.2f}%)")
 
             # Get all unique steps for this stage (excluding NaN)
             steps = sorted([s for s in stage_df['step'].unique() if not pd.isna(s)], key=step_sort_key)
@@ -271,7 +272,8 @@ if len(workflow_df) > 0:
                 is_last_step = (step_idx == len(steps) - 1) and no_step_count == 0
                 step_prefix = "└─" if is_last_step else "├─"
                 step_label = str(int(step) if isinstance(step, float) else step)
-                print(f"  {step_prefix} {'Step ' + str(int(stage) if isinstance(stage, float) else stage) + '-' + step_label + ':':<20} {step_count:>3}")
+                step_pct = (step_count / stage_count * 100) if stage_count > 0 else 0
+                print(f"  {step_prefix} {'Step ' + str(int(stage) if isinstance(stage, float) else stage) + '-' + step_label + ':':<20} {step_count:>3} ({step_pct:.2f}%)")
 
                 # Count issues with no strategy specified (general step level)
                 no_strategy_count = len(step_df[step_df['strategy'].isna()])
@@ -282,20 +284,23 @@ if len(workflow_df) > 0:
                 step_continuation = "  " if is_last_step else "│ "
 
                 if no_strategy_count > 0:
+                    no_strat_pct = (no_strategy_count / step_count * 100) if step_count > 0 else 0
                     if len(strategies) > 0:
-                        print(f"  {step_continuation}  {'├─ General (no strategy):':<18} {no_strategy_count:>3}")
+                        print(f"  {step_continuation}  {'├─ General (no strategy):':<18} {no_strategy_count:>3} ({no_strat_pct:.2f}%)")
                     else:
-                        print(f"  {step_continuation}  {'└─ General (no strategy):':<18} {no_strategy_count:>3}")
+                        print(f"  {step_continuation}  {'└─ General (no strategy):':<18} {no_strategy_count:>3} ({no_strat_pct:.2f}%)")
 
                 for strat_idx, strategy in enumerate(strategies):
                     strategy_count = len(step_df[step_df['strategy'] == strategy])
                     is_last_strategy = (strat_idx == len(strategies) - 1)
                     strat_prefix = "└─" if is_last_strategy else "├─"
                     strat_label = str(int(strategy) if isinstance(strategy, float) else strategy)
-                    print(f"  {step_continuation}  {strat_prefix} {'Strategy ' + str(int(stage) if isinstance(stage, float) else stage) + '-' + step_label + '-' + strat_label + ':':<14} {strategy_count:>3}")
+                    strat_pct = (strategy_count / step_count * 100) if step_count > 0 else 0
+                    print(f"  {step_continuation}  {strat_prefix} {'Strategy ' + str(int(stage) if isinstance(stage, float) else stage) + '-' + step_label + '-' + strat_label + ':':<14} {strategy_count:>3} ({strat_pct:.2f}%)")
 
         # Show "General (no stage)" at the same level as other stages
         if no_stage_count > 0:
-            print(f"{'General (no stage):':<24} {no_stage_count:>3}")
+            no_stage_pct = (no_stage_count / total_issues * 100) if total_issues > 0 else 0
+            print(f"{'General (no stage):':<24} {no_stage_count:>3} ({no_stage_pct:.2f}%)")
 
     plt.close()
