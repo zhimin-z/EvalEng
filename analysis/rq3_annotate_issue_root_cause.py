@@ -179,7 +179,6 @@ def main():
     for idx, row in tqdm(df_related.iterrows(), total=len(df_related), desc="Classifying issues"):
         issue_content = f"Title: {row['issue_title']}\n\nBody:\n{row['issue_body']}\n\nComments:\n{row['issue_comments']}"
 
-        success = False
         for attempt in range(max_retries):
             try:
                 root_cause_label = classify_root_cause(issue_content)
@@ -188,7 +187,6 @@ def main():
                 result_row = row.to_dict()
                 result_row['root_cause_label'] = root_cause_label
                 results.append(result_row)
-                success = True
                 break
 
             except Exception as e:
@@ -203,6 +201,12 @@ def main():
 
         # Small delay for rate limiting
         time.sleep(0.3)
+
+        # Save every 50 issues
+        if len(results) % 50 == 0:
+            interim_df = pd.DataFrame(results)
+            interim_df.to_json(INPUT_FILE, orient='records', lines=True)
+            print(f"\n[Checkpoint] Saved {len(results)} results to {INPUT_FILE}")
 
     # Create results dataframe and save
     results_df = pd.DataFrame(results)
