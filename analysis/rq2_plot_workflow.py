@@ -63,7 +63,7 @@ def step_sort_key(x):
 
 
 # Load data for workflow visualization (full dataset)
-workflow_file = "../data/rq2_issues_annotated.jsonl"
+workflow_file = "../data/rq3_issues_annotated.jsonl"
 workflow_df = pd.read_json(workflow_file, lines=True)
 
 if len(workflow_df) > 0:

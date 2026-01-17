@@ -13,7 +13,7 @@ dotenv.load_dotenv(override=True)
 MODEL = "anthropic/claude-haiku-4-5-20251001"
 
 # Input and output files
-INPUT_FILE = "../data/rq3_issues_sample_annotated.jsonl"
+INPUT_FILE = "../data/rq3_issues_annotated.jsonl"
 
 ROOT_CAUSE_TAXONOMY_TEXT = """Root Cause Taxonomy for Software Issues
 
