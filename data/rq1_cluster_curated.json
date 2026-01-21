@@ -1,0 +1,202 @@
+{
+  "description": "Curated clusters from 6-cluster Ward hierarchical clustering into 4 semantic groups",
+  "original_linkage_method": "ward",
+  "original_num_clusters": 6,
+  "curated_num_clusters": 4,
+  "cluster_mapping": {
+    "1": "Merged from original clusters 1, 3, 4",
+    "2": "Original cluster 6",
+    "3": "Original cluster 5",
+    "4": "Original cluster 2"
+  },
+  "clusters": [
+    {
+      "cluster_id": 1,
+      "members": [
+        "Ann-benchmarks",
+        "BEIR",
+        "BigCode",
+        "CipherChat",
+        "DomainBed",
+        "EvalAI",
+        "EvalPlus",
+        "GuideLLM",
+        "HumanEval",
+        "JiWER",
+        "LLMPerf",
+        "OGB",
+        "Ollama Grid Search",
+        "Picovoice",
+        "PyKEEN",
+        "Quantus",
+        "TorchBench",
+        "mir_eval",
+        "ranx"
+      ],
+      "size": 19,
+      "common_strategies": [
+        "S0-A1"
+      ],
+      "missing_strategies": [
+        "S0-A5",
+        "SI-B2",
+        "SI-B4",
+        "SII-A2",
+        "SII-A4",
+        "SIII-B2"
+      ],
+      "stage_coverage": {
+        "Stage 0": 0.414,
+        "Stage I": 0.337,
+        "Stage II": 0.224,
+        "Stage III": 0.421,
+        "Stage IV": 0.184
+      },
+      "avg_coverage": 0.316,
+      "cluster_name": "Task-Specific Offline Benchmarks",
+      "cluster_interpretation": "This cluster comprises harnesses optimized for measuring specific capabilities (coding, retrieval, audio, knowledge graphs) on local hardware against predefined datasets. They feature minimal infrastructure requirements with universal source-based installation, batch inference support, and deterministic metrics, but lack capabilities for remote APIs, interactive agents, LLM-as-judge evaluation, and advanced reporting—making them ideal for reproducible, lightweight benchmarking of specialized ML tasks."
+    },
+    {
+      "cluster_id": 2,
+      "members": [
+        "ARES",
+        "AlpacaEval",
+        "AutoRAG",
+        "C-Eval",
+        "COMET",
+        "Evalchemy",
+        "Evaluate",
+        "GAOKAO",
+        "HELM",
+        "LM Eval",
+        "LightEval",
+        "MLPerf",
+        "OpenCompass",
+        "Prometheus",
+        "PromptBench",
+        "RewardBench",
+        "TFMA",
+        "TrustLLM",
+        "VBench",
+        "VLMEvalKit",
+        "lmms-eval"
+      ],
+      "size": 21,
+      "common_strategies": [
+        "S0-A1",
+        "SI-B1",
+        "SI-C1",
+        "SII-A1",
+        "SIII-B1"
+      ],
+      "missing_strategies": [
+        "S0-A4",
+        "S0-A5",
+        "SI-A3",
+        "SI-A4",
+        "SI-B2",
+        "SI-B4",
+        "SII-A4"
+      ],
+      "stage_coverage": {
+        "Stage 0": 0.512,
+        "Stage I": 0.505,
+        "Stage II": 0.31,
+        "Stage III": 0.73,
+        "Stage IV": 0.341
+      },
+      "avg_coverage": 0.48,
+      "cluster_name": "Foundation Model Evaluation Suites",
+      "cluster_interpretation": "This cluster comprises comprehensive harnesses specialized in assessing the general intelligence, capabilities, and safety of base foundation models through offline batch evaluation against standardized benchmarks. They excel at assessment and scoring (Stage III: 73%) with strong benchmark loading and deterministic metrics, but lack support for interactive agents, simulation environments, and real-time streaming—positioning them as the standard toolkit for comparative LLM leaderboards, multilingual evaluation, and research benchmarking."
+    },
+    {
+      "cluster_id": 3,
+      "members": [
+        "DeepEval",
+        "EvalScope",
+        "Evidently",
+        "Giskard",
+        "Inspect AI",
+        "IntellAgent",
+        "OpenAI Evals",
+        "Promptfoo",
+        "Ragas",
+        "Rogue",
+        "TruLens"
+      ],
+      "size": 11,
+      "common_strategies": [
+        "S0-A1",
+        "S0-B1",
+        "S0-B2",
+        "SI-A2",
+        "SI-C1",
+        "SI-C2",
+        "SII-A1",
+        "SIII-A2",
+        "SIII-B1",
+        "SIV-A2"
+      ],
+      "missing_strategies": [],
+      "stage_coverage": {
+        "Stage 0": 0.614,
+        "Stage I": 0.745,
+        "Stage II": 0.636,
+        "Stage III": 0.727,
+        "Stage IV": 0.712
+      },
+      "avg_coverage": 0.687,
+      "cluster_name": "LLM-Centric API Evaluators",
+      "cluster_interpretation": "This cluster specializes in evaluating LLM-powered applications (RAG pipelines, agents, chatbots) through remote APIs and LLM-as-a-judge methodology. With the highest average coverage (68.7%) and no missing strategies, these harnesses provide comprehensive capabilities spanning specification, execution, assessment, and reporting stages—featuring strong support for subjective judgment, CI/CD integration, and dashboard visualization while serving as the primary toolkit for testing production-grade LLM applications."
+    },
+    {
+      "cluster_id": 4,
+      "members": [
+        "Melting Pot",
+        "Metaworld",
+        "Overcooked",
+        "RLBench",
+        "SimplerEnv"
+      ],
+      "size": 5,
+      "common_strategies": [
+        "S0-A1",
+        "S0-A2",
+        "SI-A3",
+        "SI-B2",
+        "SII-A1",
+        "SII-A3",
+        "SIII-A1",
+        "SIII-B1"
+      ],
+      "missing_strategies": [
+        "S0-A3",
+        "S0-A4",
+        "S0-A5",
+        "S0-B2",
+        "S0-B3",
+        "SI-A2",
+        "SI-A4",
+        "SI-B4",
+        "SII-A2",
+        "SII-A4",
+        "SIII-A2",
+        "SIII-A3",
+        "SIII-A4",
+        "SIII-B2",
+        "SIV-A3",
+        "SIV-A6"
+      ],
+      "stage_coverage": {
+        "Stage 0": 0.275,
+        "Stage I": 0.48,
+        "Stage II": 0.5,
+        "Stage III": 0.333,
+        "Stage IV": 0.2
+      },
+      "avg_coverage": 0.358,
+      "cluster_name": "Interactive Agent Environments",
+      "cluster_interpretation": "This cluster comprises harnesses specialized in evaluating sequential decision-making systems (RL agents, robotics, multi-agent systems) through interactive simulation environments. They prioritize stateful agent-environment loops, deterministic reward metrics, and embodied task completion over LLM judges or remote APIs, with universal support for simulation environments (SI-A3, SI-B2) but minimal reporting infrastructure—making them the standard toolkit for testing embodied AI, game-playing agents, and robotic manipulation policies."
+    }
+  ]
+}
