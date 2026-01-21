@@ -120,11 +120,11 @@ if texts:
         texts,
         x=pca_df['PC1'].values,
         y=pca_df['PC2'].values,
-        expand_points=(2.0, 2.0),
-        expand_text=(1.5, 1.5),
+        expand_points=(1.0, 1.0),
+        expand_text=(1.0, 1.0),
         force_points=(1.0, 1.0),
-        force_text=(0.8, 0.8),
-        lim=100,
+        force_text=(0.5, 0.5),
+        lim=50,
         ax=ax,
         only_move={'text': 'xy'},
     )
@@ -134,7 +134,7 @@ if texts:
     fig.canvas.draw()
     renderer = fig.canvas.get_renderer()
 
-    threshold = 0.3
+    threshold = 0.2
     for i, txt in enumerate(texts):
         x_orig, y_orig = original_positions[i]
 
@@ -154,8 +154,8 @@ if texts:
         # Arrow starts from center, offset to edge of bounding box in direction of data point
         if distance > 0:
             # Half-width and half-height of the bounding box (scaled down to reduce gap)
-            half_width = (bbox_data.x1 - bbox_data.x0) / 2 * 0.3
-            half_height = (bbox_data.y1 - bbox_data.y0) / 2 * 0.3
+            half_width = (bbox_data.x1 - bbox_data.x0) / 2 * 0.8
+            half_height = (bbox_data.y1 - bbox_data.y0) / 2 * 0.8
 
             # Normalize direction
             dir_x = dx / distance
