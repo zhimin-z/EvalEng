@@ -5,7 +5,7 @@ This script:
 1. Parses the workflow markdown to extract strategy support for each harness
 2. Builds a binary feature matrix (harnesses x strategies)
 3. Applies hierarchical clustering with appropriate distance metrics
-4. Visualizes clusters via dendrograms and dimensionality reduction
+4. Visualizes clusters via principle component analysis (PCA)
 5. Identifies natural cluster groupings
 6. Uses LLM to automatically interpret and name each cluster
 """
@@ -20,7 +20,7 @@ import dotenv
 import backoff
 from pathlib import Path
 from collections import defaultdict
-from scipy.cluster.hierarchy import dendrogram, linkage, fcluster
+from scipy.cluster.hierarchy import linkage, fcluster
 from scipy.spatial.distance import pdist, squareform
 from sklearn.decomposition import PCA
 from sklearn.metrics import silhouette_score
@@ -317,7 +317,7 @@ for harness, label in zip(harnesses, cluster_labels):
     clusters[label].append(harness)
 
 # Check if interpretations file already exists to skip LLM calls
-interpretations_file = Path('../data/rq1_cluster_interpretations.json')
+interpretations_file = Path('../data/rq1_cluster_ward.json')
 if interpretations_file.exists():
     print("\nLoading existing cluster interpretations (skipping LLM calls)...")
     with open(interpretations_file) as f:
@@ -394,21 +394,7 @@ else:
 # 6. VISUALIZATIONS (after LLM interpretation so we have cluster names)
 # =============================================================================
 
-# --- Figure 1: Ward Dendrogram ---
-fig, ax = plt.subplots(figsize=(10, 14))
-dendrogram(
-    Z_ward,
-    labels=harnesses,
-    orientation='right',
-    leaf_font_size=11,
-    ax=ax
-)
-ax.set_xlabel('Ward Linkage Distance')
-plt.tight_layout()
-plt.savefig('../figures/rq1_clustering_dendrogram.pdf', format='pdf', bbox_inches='tight')
-print("\nSaved ../figures/rq1_clustering_dendrogram.pdf")
-
-# --- Figure 2: PCA Projection with Cluster Colors (using seaborn) ---
+# --- PCA Projection with Cluster Colors (using seaborn) ---
 pca = PCA(n_components=2)
 pca_result = pca.fit_transform(feature_matrix)
 
@@ -504,3 +490,8 @@ interpretations_output = {
 with open(interpretations_file, 'w') as f:
     json.dump(interpretations_output, f, indent=2)
 print(f"Saved {interpretations_file}")
+
+# Save feature matrix to CSV
+feature_csv_path = Path('../data/rq1_harness_feature_matrix.csv')
+df_features.to_csv(feature_csv_path)
+print(f"Saved {feature_csv_path}")
