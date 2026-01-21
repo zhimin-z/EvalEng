@@ -5,31 +5,22 @@ This script:
 1. Parses the workflow markdown to extract strategy support for each harness
 2. Builds a binary feature matrix (harnesses x strategies)
 3. Applies hierarchical clustering with appropriate distance metrics
-4. Visualizes clusters via principle component analysis (PCA)
-5. Identifies natural cluster groupings
-6. Uses LLM to automatically interpret and name each cluster
+4. Identifies natural cluster groupings
+5. Uses LLM to automatically interpret and name each cluster
 """
 
 import re
 import json
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
 import dotenv
 import backoff
 from pathlib import Path
 from collections import defaultdict
 from scipy.cluster.hierarchy import linkage, fcluster
 from scipy.spatial.distance import pdist, squareform
-from sklearn.decomposition import PCA
 from sklearn.metrics import silhouette_score
 from litellm import completion, RateLimitError
-from adjustText import adjust_text
-from matplotlib.patches import FancyArrowPatch
-
-# Set seaborn style (no grid)
-sns.set_theme(style="white")
 
 # Load environment variables
 dotenv.load_dotenv(override=True)
@@ -390,91 +381,6 @@ else:
     # Build mapping from cluster_id to LLM name for visualization
     cluster_id_to_name = {c["cluster_id"]: c["cluster_name"] for c in cluster_interpretations}
 
-# =============================================================================
-# 6. VISUALIZATIONS (after LLM interpretation so we have cluster names)
-# =============================================================================
-
-# --- PCA Projection with Cluster Colors (using seaborn) ---
-pca = PCA(n_components=2)
-pca_result = pca.fit_transform(feature_matrix)
-
-# Create DataFrame for seaborn
-pca_df = pd.DataFrame({
-    'PC1': pca_result[:, 0],
-    'PC2': pca_result[:, 1],
-    'Harness': harnesses,
-    'Cluster': [cluster_id_to_name.get(c, f'Cluster {c}') for c in cluster_labels]
-})
-
-fig, ax = plt.subplots(figsize=(14, 11))
-
-# Use seaborn scatterplot with hue for clusters
-palette = sns.color_palette("tab10", K_CLUSTERS)
-sns.scatterplot(
-    data=pca_df,
-    x='PC1', y='PC2',
-    hue='Cluster',
-    palette=palette,
-    s=120,
-    alpha=0.8,
-    ax=ax,
-    legend='full'
-)
-
-# Store original positions and create text annotations
-texts = []
-original_positions = []
-for i, row in pca_df.iterrows():
-    txt = ax.text(
-        row['PC1'], row['PC2'],
-        row['Harness'],
-        fontsize=12,
-        fontweight='bold',
-        alpha=0.9
-    )
-    texts.append(txt)
-    original_positions.append((row['PC1'], row['PC2']))
-
-# Use adjustText WITHOUT arrowprops to avoid automatic arrows
-if texts:
-    adjust_text(
-        texts,
-        x=pca_df['PC1'].values,
-        y=pca_df['PC2'].values,
-        expand_points=(2.0, 2.0),
-        expand_text=(1.5, 1.5),
-        force_points=(1.0, 1.0),
-        force_text=(0.8, 0.8),
-        lim=100,
-        ax=ax,
-        only_move={'text': 'xy'},
-    )
-    
-    # Manually add arrows ONLY for texts that moved significantly
-    threshold = 0.2
-    for i, txt in enumerate(texts):
-        x_pos, y_pos = txt.get_position()
-        x_orig, y_orig = original_positions[i]
-        distance = np.sqrt((x_pos - x_orig)**2 + (y_pos - y_orig)**2)
-        
-        if distance >= threshold:
-            arrow = FancyArrowPatch(
-                (x_pos, y_pos), (x_orig, y_orig),
-                arrowstyle='->',
-                color='gray',
-                lw=0.8,
-                zorder=1,
-                mutation_scale=15
-            )
-            ax.add_patch(arrow)
-
-ax.set_xlabel(f'PC1 ({pca.explained_variance_ratio_[0]:.1%} variance)', fontsize=14)
-ax.set_ylabel(f'PC2 ({pca.explained_variance_ratio_[1]:.1%} variance)', fontsize=14)
-ax.tick_params(axis='both', labelsize=12)
-ax.legend(loc='upper center', bbox_to_anchor=(0.5, 1.05), ncol=3, fontsize=12, framealpha=1.0)
-plt.tight_layout()
-plt.savefig('../figures/rq1_clustering_pca.pdf', format='pdf', bbox_inches='tight')
-print("Saved ../figures/rq1_clustering_pca.pdf")
 
 # =============================================================================
 # 7. SAVE OUTPUTS
