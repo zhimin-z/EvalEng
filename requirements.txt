@@ -1,11 +1,10 @@
 adjustText
 backoff
-kaleido
 litellm
 matplotlib
 nbformat
 pandas
-plotly
+plotly[kaleido]
 PyGithub
 python-docx
 python-dotenv
