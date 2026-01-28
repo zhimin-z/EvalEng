@@ -298,11 +298,11 @@ if len(workflow_df) > 0:
         # Print LaTeX table
         print("\\begin{table}[htbp]")
         print("\\centering")
-        print("\\caption{Issue Distribution Across Workflow Stages, Steps, and Strategies. Unlisted stage/step/strategy combinations indicate no issues exist.}")
+        print("\\caption{Issue Distribution Across Workflow Stages, Steps, and Strategies. Unlisted workflow components indicate no issues exist.}")
         print("\\label{tab:workflow_breakdown}")
         print("\\begin{tabular}{lrr}")
         print("\\toprule")
-        print("Identifier & Count & Local \\% \\\\")
+        print("Workflow Component & Count & Local \\% \\\\")
         print("\\midrule")
         for row_id, count, proportion in table_rows:
             print(f"{row_id} & {count} & {proportion:.1f}\\% \\\\")

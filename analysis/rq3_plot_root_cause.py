@@ -233,50 +233,44 @@ if len(root_cause_results_df) > 0:
     root_cause_output_path = "../figures/rq3_root_cause.pdf"
     plt.savefig(root_cause_output_path, format='pdf', bbox_inches='tight')
     
-    # Print hierarchical tree-style breakdown for root causes
+    # Print LaTeX table for root cause breakdown
     print("=" * 70)
     print(f"ROOT CAUSE DISTRIBUTION BY STAGE ({root_cause_output_path})")
     print("=" * 70)
     print(f"Total issues with root cause labels: {len(root_cause_df)}")
 
-    for rc_idx, root_cause in enumerate(sorted_root_cause_labels):
-        total = root_cause_totals[root_cause]
-        is_last_root_cause = (rc_idx == len(sorted_root_cause_labels) - 1)
+    # Collect table rows: (RootCause, WorkflowStep, Count, Proportion)
+    table_rows = []
 
-        print(f"{root_cause + ':':<22} {total:>3} ({root_cause_percentages[root_cause]:.2f}%)")
+    for root_cause in sorted_root_cause_labels:
+        total = root_cause_totals[root_cause]
 
         # Count issues with no stage specified (general root cause level)
-        # Check for None key in hierarchy
         no_stage_count = sum(root_cause_hierarchy[root_cause].get(None, {}).values())
 
-        # Get specified stages for this root cause (excluding "NA")
-        stages_with_counts = []
-        for stage in stage_order_for_root_causes:
-            if stage in root_cause_hierarchy[root_cause]:
-                stage_total = sum(root_cause_hierarchy[root_cause][stage].values())
-                if stage_total > 0:
-                    stages_with_counts.append((stage, stage_total))
-
-        # Show "General (no stage)" first if there are issues without stage
+        # Add row if there are issues at root cause level but no stage
         if no_stage_count > 0:
             no_stage_pct = (no_stage_count / total * 100) if total > 0 else 0
-            if len(stages_with_counts) > 0:
-                print(f"  {'├─ General (no stage):':<20} {no_stage_count:>3} ({no_stage_pct:.2f}%)")
-            else:
-                print(f"  {'└─ General (no stage):':<20} {no_stage_count:>3} ({no_stage_pct:.2f}%)")
+            table_rows.append((root_cause, "General", no_stage_count, no_stage_pct))
 
-        for stage_idx, (stage, stage_count) in enumerate(stages_with_counts):
-            is_last_stage = (stage_idx == len(stages_with_counts) - 1)
-            stage_prefix = "└─" if is_last_stage else "├─"
-            stage_label = f"Stage {stage}"
-            stage_pct = (stage_count / total * 100) if total > 0 else 0
-            print(f"  {stage_prefix} {stage_label + ':':<18} {stage_count:>3} ({stage_pct:.2f}%)")
+        # Iterate through stages for this root cause
+        for stage in stage_order_for_root_causes:
+            if stage not in root_cause_hierarchy[root_cause]:
+                continue
+            stage_total = sum(root_cause_hierarchy[root_cause][stage].values())
+            if stage_total == 0:
+                continue
 
             # Get steps for this stage
             steps_dict = root_cause_hierarchy[root_cause][stage]
 
             # Count issues with no step specified (general stage level)
             no_step_count = steps_dict.get(None, 0)
+
+            # Add row if there are issues at stage level but no step
+            if no_step_count > 0:
+                no_step_pct = (no_step_count / stage_total * 100) if stage_total > 0 else 0
+                table_rows.append((root_cause, f"S{stage} (general)", no_step_count, no_step_pct))
 
             # Get specified steps for this stage (excluding None)
             steps_with_counts = [(step, steps_dict[step]) for step in steps_dict.keys() if step is not None]
@@ -286,21 +280,23 @@ if len(root_cause_results_df) > 0:
                 x[0] if isinstance(x[0], str) else str(x[0])
             ))
 
-            stage_continuation = "  " if is_last_stage else "│ "
+            for step, step_count in steps_with_counts:
+                step_pct = (step_count / stage_total * 100) if stage_total > 0 else 0
+                table_rows.append((root_cause, f"S{stage}-{step}", step_count, step_pct))
 
-            # Show "General (no step)" first if there are issues without step
-            if no_step_count > 0:
-                no_step_pct = (no_step_count / stage_count * 100) if stage_count > 0 else 0
-                if len(steps_with_counts) > 0:
-                    print(f"  {stage_continuation}  {'├─ General (no step):':<16} {no_step_count:>3} ({no_step_pct:.2f}%)")
-                else:
-                    print(f"  {stage_continuation}  {'└─ General (no step):':<16} {no_step_count:>3} ({no_step_pct:.2f}%)")
-
-            for step_idx, (step, step_count) in enumerate(steps_with_counts):
-                is_last_step = (step_idx == len(steps_with_counts) - 1)
-                step_prefix = "└─" if is_last_step else "├─"
-                step_label = f"Step S{stage}-{step}"
-                step_pct = (step_count / stage_count * 100) if stage_count > 0 else 0
-                print(f"  {stage_continuation}  {step_prefix} {step_label + ':':<14} {step_count:>3} ({step_pct:.2f}%)")
+    # Print LaTeX table
+    print("\\begin{table}[htbp]")
+    print("\\centering")
+    print("\\caption{Root Cause Distribution Across Workflow Stages and Steps. Unlisted root cause/stage/step combinations indicate no issues exist.}")
+    print("\\label{tab:root_cause_breakdown}")
+    print("\\begin{tabular}{llrr}")
+    print("\\toprule")
+    print("Root Cause & Workflow Step & Count & Local \\% \\\\")
+    print("\\midrule")
+    for root_cause, workflow_step, count, proportion in table_rows:
+        print(f"{root_cause} & {workflow_step} & {count} & {proportion:.1f}\\% \\\\")
+    print("\\bottomrule")
+    print("\\end{tabular}")
+    print("\\end{table}")
 
     plt.close()
