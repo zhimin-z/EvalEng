@@ -40,7 +40,7 @@ def calculate_cluster_metrics(members: list, feature_matrix: pd.DataFrame) -> di
         feature_matrix: DataFrame with harnesses as rows and strategies as columns
 
     Returns:
-        Dictionary with common_strategies, missing_strategies, and stage_coverage
+        Dictionary with common_strategies, missing_strategies, and step_coverage
     """
     # Filter to only cluster members
     cluster_data = feature_matrix[feature_matrix.index.isin(members)]
@@ -49,7 +49,7 @@ def calculate_cluster_metrics(members: list, feature_matrix: pd.DataFrame) -> di
         return {
             "common_strategies": [],
             "missing_strategies": [],
-            "stage_coverage": {}
+            "step_coverage": {}
         }
 
     strategies = [col for col in feature_matrix.columns if col != ""]
@@ -75,7 +75,7 @@ def calculate_cluster_metrics(members: list, feature_matrix: pd.DataFrame) -> di
             stage_strategies[stage].append(strategy)
 
     # Calculate average coverage per stage across all members
-    stage_coverage = {}
+    step_coverage = {}
     for stage, stage_strats in stage_strategies.items():
         if stage_strats:
             # For each member, calculate what fraction of stage strategies they have
@@ -88,12 +88,12 @@ def calculate_cluster_metrics(members: list, feature_matrix: pd.DataFrame) -> di
                     member_coverages.append(coverage)
 
             if member_coverages:
-                stage_coverage[stage] = round(sum(member_coverages) / len(member_coverages), 3)
+                step_coverage[stage] = round(sum(member_coverages) / len(member_coverages), 3)
 
     return {
         "common_strategies": sorted(common_strategies),
         "missing_strategies": sorted(missing_strategies),
-        "stage_coverage": stage_coverage
+        "step_coverage": step_coverage
     }
 
 
@@ -161,8 +161,8 @@ def main():
         metrics = calculate_cluster_metrics(members, feature_matrix)
 
         # Calculate average coverage across all stages
-        stage_coverages = list(metrics["stage_coverage"].values())
-        avg_stage_coverage = round(sum(stage_coverages) / len(stage_coverages), 3) if stage_coverages else 0
+        step_coverages = list(metrics["step_coverage"].values())
+        avg_step_coverage = round(sum(step_coverages) / len(step_coverages), 3) if step_coverages else 0
 
         new_cluster = {
             "cluster_id": definition["new_cluster_id"],
@@ -170,8 +170,8 @@ def main():
             "size": len(members),
             "common_strategies": metrics["common_strategies"],
             "missing_strategies": metrics["missing_strategies"],
-            "stage_coverage": metrics["stage_coverage"],
-            "avg_stage_coverage": avg_stage_coverage,
+            "step_coverage": metrics["step_coverage"],
+            "avg_step_coverage": avg_step_coverage,
             "cluster_name": definition["cluster_name"],
             "cluster_interpretation": definition["cluster_interpretation"]
         }
@@ -210,9 +210,9 @@ def main():
         print(f"  Members: {', '.join(cluster['members'][:5])}{'...' if len(cluster['members']) > 5 else ''}")
         print(f"  Common strategies: {len(cluster['common_strategies'])}")
         print(f"  Missing strategies: {len(cluster['missing_strategies'])}")
-        print(f"  Avg coverage: {cluster['avg_stage_coverage']:.1%}")
+        print(f"  Avg coverage: {cluster['avg_step_coverage']:.1%}")
         print(f"  Stage coverage:")
-        for stage, cov in sorted(cluster['stage_coverage'].items()):
+        for stage, cov in sorted(cluster['step_coverage'].items()):
             print(f"    {stage}: {cov:.1%}")
 
 

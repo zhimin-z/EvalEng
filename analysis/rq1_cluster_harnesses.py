@@ -125,7 +125,7 @@ def interpret_cluster(
     members: list[str],
     supported_strategies: list[str],
     missing_strategies: list[str],
-    stage_coverage: dict[str, float],
+    step_coverage: dict[str, float],
 ) -> dict:
     """Use LLM to interpret and name a cluster based on its characteristics."""
 
@@ -147,7 +147,7 @@ def interpret_cluster(
 {', '.join(missing_strategies) if missing_strategies else 'None'}
 
 **Stage-level coverage (proportion of strategies supported):**
-{json.dumps(stage_coverage, indent=2)}
+{json.dumps(step_coverage, indent=2)}
 
 ---
 
@@ -348,11 +348,11 @@ else:
         print(f"Avg strategy coverage: {coverage:.1f}/{len(feature_names)} ({coverage/len(feature_names):.1%})")
 
         # Calculate stage-level coverage for this cluster
-        stage_coverage = {}
+        step_coverage = {}
         for stage in stage_names:
             stage_cols = stage_features[stage]
             stage_cov = cluster_features[:, stage_cols].mean()
-            stage_coverage[f"Stage {stage}"] = round(stage_cov, 3)
+            step_coverage[f"Stage {stage}"] = round(stage_cov, 3)
 
         # Call LLM to interpret this cluster
         interpretation = interpret_cluster(
@@ -360,7 +360,7 @@ else:
             members=members,
             supported_strategies=common_names,
             missing_strategies=missing_names,
-            stage_coverage=stage_coverage,
+            step_coverage=step_coverage,
         )
 
         print(f"Name: {interpretation['name']}")
@@ -372,8 +372,8 @@ else:
             "size": len(members),
             "common_strategies": common_names,
             "missing_strategies": missing_names,
-            "stage_coverage": stage_coverage,
-            "avg_stage_coverage": round(coverage / len(feature_names), 3),
+            "step_coverage": step_coverage,
+            "avg_step_coverage": round(coverage / len(feature_names), 3),
             "cluster_name": interpretation["name"],
             "cluster_interpretation": interpretation["interpretation"],
         })
