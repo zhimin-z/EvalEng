@@ -12,7 +12,7 @@ from litellm import completion, RateLimitError
 dotenv.load_dotenv(override=True)
 
 # Set the model to use - can be changed to any LiteLLM supported model
-MODEL = "anthropic/claude-haiku-4-5-20251001"
+MODEL = "anthropic/claude-haiku45-20251001"
 
 # Read the issues JSONL
 df = pd.read_json("../data/rq2_issues.jsonl", orient="records", lines=True)
@@ -36,7 +36,7 @@ STAGES_SUMMARY = """Unified Evaluation Workflow:
   * Strategy 2: Artifact Repository Authentication - Authenticating to DOWNLOAD models/datasets from repositories (HuggingFace Hub, Zenodo, ModelScope) [Keywords: login, download, gated model, access token]
   * Strategy 3: Evaluation Platform Authentication - Logging into evaluation platform to ACCESS features (leaderboards, dashboards, submissions) [Keywords: platform login, account, leaderboard access]
 
-**Stage I: Specification** - Configuring what to evaluate and how to evaluate it.
+**Stage 1: Specification** - Configuring what to evaluate and how to evaluate it.
 - Step A: SUT Preparation
   * Definition: Configuring the System Under Test (SUT) - the primary model, algorithm, or system being evaluated.
   * Strategy 1: Model-as-a-Service - Setting up REMOTE API-based models running on external infrastructure [Keywords: API endpoint, remote, cloud, OpenAI API, Anthropic API]
@@ -54,7 +54,7 @@ STAGES_SUMMARY = """Unified Evaluation Workflow:
   * Strategy 1: Ground Truth Preparation - Loading reference answers/labels used FOR COMPARISON [Keywords: gold labels, reference answers, ground truth, annotations]
   * Strategy 2: Judge Preparation - Setting up LLM/classifier models to ACT AS evaluators [Keywords: judge model, evaluator, preference model, critic]
 
-**Stage II: Execution** - Running the SUT to generate outputs.
+**Stage 2: Execution** - Running the SUT to generate outputs.
 - Step A: SUT Invocation
   * Definition: Actually RUNNING/EXECUTING the SUT on test inputs to produce outputs or actions.
   * Strategy 1: Batch Inference - Running MULTIPLE inputs through ONE SUT instance [Keywords: inference loop, batch processing, generate output, model.predict()]
@@ -62,19 +62,19 @@ STAGES_SUMMARY = """Unified Evaluation Workflow:
   * Strategy 3: Interactive Loop - ITERATIVELY executing SUT actions in environment [Keywords: step(), observation-action loop, rollout, trajectory, episode]
   * Strategy 4: Production Streaming - Continuously processing LIVE real-time requests [Keywords: streaming, real-time, online inference, production traffic]
 
-**Stage III: Assessment** - Measuring how well the SUT performed.
+**Stage 3: Assessment** - Measuring how well the SUT performed.
 - Step A: Individual Scoring
   * Definition: COMPUTING metrics/scores for INDIVIDUAL test instances (per-sample scoring).
   * Strategy 1: Deterministic Measurement - Rule-based/algorithmic scoring WITHOUT ML models [Keywords: exact match, BLEU, ROUGE, edit distance, accuracy, F1]
   * Strategy 2: Embedding Measurement - Semantic similarity using EMBEDDINGS/latent representations [Keywords: BERTScore, cosine similarity, embedding distance, SBERT]
-  * Strategy 3: Subjective Measurement - Using LLM/classifier AS JUDGE to rate quality [Keywords: GPT-4 judge, preference model, pairwise comparison, LLM-as-judge]
+  * Strategy 3: Subjective Measurement - Using LLM/classifier AS JUDGE to rate quality [Keywords: GPT4 judge, preference model, pairwise comparison, LLM-as-judge]
   * Strategy 4: Performance Measurement - Measuring RESOURCE consumption/efficiency [Keywords: latency, throughput, memory usage, FLOPs, speed, cost]
 - Step B: Aggregate Scoring
   * Definition: AGGREGATING per-instance scores into benchmark-level summary metrics.
   * Strategy 1: Distributional Statistics - Computing summary stats across all instances [Keywords: mean, average, median, percentile, weighted average]
   * Strategy 2: Uncertainty Quantification - Calculating confidence intervals/significance [Keywords: bootstrap, confidence interval, standard error, p-value]
 
-**Stage IV: Reporting** - Presenting and communicating evaluation results.
+**Stage 4: Reporting** - Presenting and communicating evaluation results.
 - Step A: Insight Presentation
   * Definition: VISUALIZING and PUBLISHING results to make them understandable and actionable.
   * Strategy 1: Execution Tracing - Recording DETAILED logs/trajectories of execution steps [Keywords: trace, logging, step-by-step, execution path, debug output]
@@ -114,28 +114,28 @@ CLASSIFICATION APPROACH:
 
 CRITICAL DISAMBIGUATION RULES:
 
-**0-B Credentials (by PURPOSE):**
+**S0-B Credentials (by PURPOSE):**
   Strategy 1 = DOWNLOADING artifacts | Strategy 2 = CALLING APIs | Strategy 3 = PLATFORM access
-  ✓ "HF login to download Llama fails" → 0-B-1  |  ✓ "OpenAI API key invalid" → 0-B-2  |  ✓ "EvalAI login breaks" → 0-B-3
+  ✓ "HF login to download Llama fails" → S0-B1  |  ✓ "OpenAI API key invalid" → S0-B2  |  ✓ "EvalAI login breaks" → S0-B3
 
-**I-A SUT Type (by EXECUTION):**
+**S1-A SUT Type (by EXECUTION):**
   Strategy 1 = Local weights | Strategy 2 = Remote API | Strategy 3 = Multi-step | Strategy 4 = No weights
-  ✓ "OOM loading model" → I-A-1  |  ✓ "API timeout" → I-A-2  |  ✓ "Agent loop stuck" → I-A-3  |  ✓ "BM25 index fails" → I-A-4
+  ✓ "OOM loading model" → S1-A1  |  ✓ "API timeout" → S1-A2  |  ✓ "Agent loop stuck" → S1-A3  |  ✓ "BM25 index fails" → S1-A4
 
-**I-B vs I-C (by DATA FLOW):**
-  I-B = Fed TO SUT  |  I-C = Used FOR scoring
-  ✓ "Test prompts missing" → I-B  |  ✓ "Ground truth labels missing" → I-C
+**S1-B vs S1-C (by DATA FLOW):**
+  S1-B = Fed TO SUT  |  S1-C = Used FOR scoring
+  ✓ "Test prompts missing" → S1-B  |  ✓ "Ground truth labels missing" → S1-C
 
-**I-A vs II-A (by PHASE):**
-  I-A = LOADING/config  |  II-A = RUNNING/inference
-  ✓ "Model load OOM" → I-A-2  |  ✓ "Generation timeout" → II-A-1
+**S1-A vs S2-A (by PHASE):**
+  S1-A = LOADING/config  |  S2-A = RUNNING/inference
+  ✓ "Model load OOM" → S1-A2  |  ✓ "Generation timeout" → S2-A1
 
-**III-A Scoring (by METHOD):**
+**S3-A Scoring (by METHOD):**
   Strategy 1 = Algorithmic | Strategy 2 = LLM judge | Strategy 3 = Embeddings | Strategy 4 = Resources
-  ✓ "BLEU bug" → III-A-1  |  ✓ "GPT-5 judge fails" → III-A-2  |  ✓ "BERTScore crash" → III-A-3  |  ✓ "Latency broken" → III-A-4
+  ✓ "BLEU bug" → S3-A1  |  ✓ "GPT5 judge fails" → S3-A2  |  ✓ "BERTScore crash" → S3-A3  |  ✓ "Latency broken" → S3-A4
 
 STAGE DECISION TREE:
-Setup tools? → 0 | Configure test? → I | Run SUT? → II | Compute scores? → III | Display results? → IV
+Setup tools? → 0 | Configure test? → 1 | Run SUT? → 2 | Compute scores? → 3 | Display results? → 4
 
 KEY PRINCIPLE: Choose PRIMARY/EARLIEST blocker (e.g., "Can't run tests due to pip install" → Stage 0)
 
@@ -145,7 +145,7 @@ KEY PRINCIPLE: Choose PRIMARY/EARLIEST blocker (e.g., "Can't run tests due to pi
 2. is_related=true → stage NOT null
 3. strategy set → step MUST be set
 4. step set → stage MUST be set
-5. Stage: "0", "I", "II", "III", "IV"
+5. Stage: 0, 1, 2, 3, or 4
 6. Step: "A", "B", "C"
 7. Strategy: 1, 2, 3, 4, 5, or 6
 

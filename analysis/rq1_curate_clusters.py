@@ -21,13 +21,13 @@ def get_stage_from_strategy(strategy: str) -> str:
     if strategy.startswith("S0-"):
         return "Stage 0"
     elif strategy.startswith("SI-"):
-        return "Stage I"
+        return "Stage 1"
     elif strategy.startswith("SII-"):
-        return "Stage II"
+        return "Stage 2"
     elif strategy.startswith("SIII-"):
-        return "Stage III"
+        return "Stage 3"
     elif strategy.startswith("SIV-"):
-        return "Stage IV"
+        return "Stage 4"
     return "Unknown"
 
 

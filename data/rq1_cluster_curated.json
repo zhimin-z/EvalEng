@@ -47,10 +47,10 @@
       ],
       "step_coverage": {
         "Stage 0": 0.414,
-        "Stage I": 0.337,
-        "Stage II": 0.224,
-        "Stage III": 0.421,
-        "Stage IV": 0.184
+        "Stage 1": 0.337,
+        "Stage 2": 0.224,
+        "Stage 3": 0.421,
+        "Stage 4": 0.184
       },
       "avg_step_coverage": 0.316,
       "cluster_name": "Task-Specific Offline Benchmarks",
@@ -100,14 +100,14 @@
       ],
       "step_coverage": {
         "Stage 0": 0.512,
-        "Stage I": 0.505,
-        "Stage II": 0.31,
-        "Stage III": 0.73,
-        "Stage IV": 0.341
+        "Stage 1": 0.505,
+        "Stage 2": 0.31,
+        "Stage 3": 0.73,
+        "Stage 4": 0.341
       },
       "avg_step_coverage": 0.48,
       "cluster_name": "Foundation Model Evaluation Suites",
-      "cluster_interpretation": "This cluster comprises comprehensive harnesses specialized in assessing the general intelligence, capabilities, and safety of base foundation models through offline batch evaluation against standardized benchmarks. They excel at assessment and scoring (Stage III: 73%) with strong benchmark loading and deterministic metrics, but lack support for interactive agents, simulation environments, and real-time streaming—positioning them as the standard toolkit for comparative LLM leaderboards, multilingual evaluation, and research benchmarking."
+      "cluster_interpretation": "This cluster comprises comprehensive harnesses specialized in assessing the general intelligence, capabilities, and safety of base foundation models through offline batch evaluation against standardized benchmarks. They excel at assessment and scoring (Stage 3: 73%) with strong benchmark loading and deterministic metrics, but lack support for interactive agents, simulation environments, and real-time streaming—positioning them as the standard toolkit for comparative LLM leaderboards, multilingual evaluation, and research benchmarking."
     },
     {
       "cluster_id": 3,
@@ -140,10 +140,10 @@
       "missing_strategies": [],
       "step_coverage": {
         "Stage 0": 0.614,
-        "Stage I": 0.745,
-        "Stage II": 0.636,
-        "Stage III": 0.727,
-        "Stage IV": 0.712
+        "Stage 1": 0.745,
+        "Stage 2": 0.636,
+        "Stage 3": 0.727,
+        "Stage 4": 0.712
       },
       "avg_step_coverage": 0.687,
       "cluster_name": "LLM-Centric API Evaluators",
@@ -189,10 +189,10 @@
       ],
       "step_coverage": {
         "Stage 0": 0.275,
-        "Stage I": 0.48,
-        "Stage II": 0.5,
-        "Stage III": 0.333,
-        "Stage IV": 0.2
+        "Stage 1": 0.48,
+        "Stage 2": 0.5,
+        "Stage 3": 0.333,
+        "Stage 4": 0.2
       },
       "avg_step_coverage": 0.358,
       "cluster_name": "Interactive Agent Environments",

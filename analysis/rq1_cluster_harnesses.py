@@ -66,7 +66,7 @@ WORKFLOW_REFERENCE = """
   - S0-B2: Model API Authentication - OpenAI/Anthropic/Gemini API keys
   - S0-B3: Evaluation Platform Authentication - Platform-specific login flows
 
-### Stage I: Specification (The Contract)
+### Stage 1: Specification (The Contract)
 *Defining the evaluation experiment—what to test, what to test it with, how to judge.*
 
 - **Step A: SUT Preparation** - Specifying the System Under Test
@@ -85,7 +85,7 @@ WORKFLOW_REFERENCE = """
   - SI-C1: Ground Truth Preparation - Human annotations, embedding indexes
   - SI-C2: Judge Preparation - Training/loading LLM judges and reward models
 
-### Stage II: Execution (The Run)
+### Stage 2: Execution (The Run)
 *Observing SUT behavior—applying test inputs to elicit outputs and actions.*
 
 - **Step A: SUT Invocation** - Running the system under test
@@ -94,7 +94,7 @@ WORKFLOW_REFERENCE = """
   - SII-A3: Interactive Loop - Stateful stepping through state transitions
   - SII-A4: Production Streaming - Live traffic with real-time metrics
 
-### Stage III: Assessment (The Score)
+### Stage 3: Assessment (The Score)
 *Converting observations into measurements—judging outputs against quality criteria.*
 
 - **Step A: Individual Scoring** - Computing per-instance metrics
@@ -107,7 +107,7 @@ WORKFLOW_REFERENCE = """
   - SIII-B1: Distributional Statistics - Mean, quantiles, weighted aggregation
   - SIII-B2: Uncertainty Quantification - Bootstrap, confidence intervals
 
-### Stage IV: Reporting (The Output)
+### Stage 4: Reporting (The Output)
 *Making results actionable—translating metrics into stakeholder-facing insights.*
 
 - **Step A: Insight Presentation** - Visualizing and publishing results

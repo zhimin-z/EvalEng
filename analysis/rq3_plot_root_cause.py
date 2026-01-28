@@ -299,7 +299,7 @@ if len(root_cause_results_df) > 0:
             for step_idx, (step, step_count) in enumerate(steps_with_counts):
                 is_last_step = (step_idx == len(steps_with_counts) - 1)
                 step_prefix = "└─" if is_last_step else "├─"
-                step_label = f"Step {step}"
+                step_label = f"Step S{stage}-{step}"
                 step_pct = (step_count / stage_count * 100) if stage_count > 0 else 0
                 print(f"  {stage_continuation}  {step_prefix} {step_label + ':':<14} {step_count:>3} ({step_pct:.2f}%)")
 

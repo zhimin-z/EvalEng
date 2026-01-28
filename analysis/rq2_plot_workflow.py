@@ -6,7 +6,6 @@ import numpy as np
 
 from collections import defaultdict
 
-
 # Helper function to convert numeric values to integers
 def convert_to_int_if_numeric(val):
     if pd.isna(val):
@@ -253,7 +252,7 @@ if len(workflow_df) > 0:
         for stage in stages_list:
             stage_df = related_df[related_df['stage'] == stage]
             stage_count = len(stage_df)
-            print(f"{'Stage ' + str(int(stage) if isinstance(stage, float) else stage) + ':':<24} {stage_count:>3} ({stage_percentages[stage]:.2f}%)")
+            print(f"{'Stage' + str(int(stage) if isinstance(stage, float) else stage) + ':':<24} {stage_count:>3} ({stage_percentages[stage]:.2f}%)")
 
             # Count issues with no step specified (general stage level)
             no_step_count = len(stage_df[stage_df['step'].isna()])
@@ -273,7 +272,7 @@ if len(workflow_df) > 0:
                 step_prefix = "└─" if is_last_step else "├─"
                 step_label = str(int(step) if isinstance(step, float) else step)
                 step_pct = (step_count / stage_count * 100) if stage_count > 0 else 0
-                print(f"  {step_prefix} {'Step ' + str(int(stage) if isinstance(stage, float) else stage) + '-' + step_label + ':':<20} {step_count:>3} ({step_pct:.2f}%)")
+                print(f"  {step_prefix} {'Step S' + str(int(stage) if isinstance(stage, float) else stage) + '-' + step_label + ':':<20} {step_count:>3} ({step_pct:.2f}%)")
 
                 # Count issues with no strategy specified (general step level)
                 no_strategy_count = len(step_df[step_df['strategy'].isna()])
@@ -296,7 +295,7 @@ if len(workflow_df) > 0:
                     strat_prefix = "└─" if is_last_strategy else "├─"
                     strat_label = str(int(strategy) if isinstance(strategy, float) else strategy)
                     strat_pct = (strategy_count / step_count * 100) if step_count > 0 else 0
-                    print(f"  {step_continuation}  {strat_prefix} {'Strategy ' + str(int(stage) if isinstance(stage, float) else stage) + '-' + step_label + '-' + strat_label + ':':<14} {strategy_count:>3} ({strat_pct:.2f}%)")
+                    print(f"  {step_continuation}  {strat_prefix} {'Strategy S' + str(int(stage) if isinstance(stage, float) else stage) + '-' + step_label + strat_label + ':':<14} {strategy_count:>3} ({strat_pct:.2f}%)")
 
         # Show "General (no stage)" at the same level as other stages
         if no_stage_count > 0:

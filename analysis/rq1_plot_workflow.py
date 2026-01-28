@@ -50,7 +50,7 @@ stages = [
         ]
     },
     {
-        'name': 'Stage I:\nSpecification (56)',
+        'name': 'Stage 1:\nSpecification (56)',
         'summary': 'Defining SUT & benchmark configuration',
         'x': 21,
         'width': 18,
@@ -84,7 +84,7 @@ stages = [
         ]
     },
     {
-        'name': 'Stage II:\nExecution (53)',
+        'name': 'Stage 2:\nExecution (53)',
         'summary': 'Running SUT with benchmark inputs',
         'x': 41,
         'width': 18,
@@ -102,7 +102,7 @@ stages = [
         ]
     },
     {
-        'name': 'Stage III:\nAssessment (56)',
+        'name': 'Stage 3:\nAssessment (56)',
         'summary': 'Computing metrics from\nSUT outputs & references',
         'x': 61,
         'width': 18,
@@ -127,7 +127,7 @@ stages = [
         ]
     },
     {
-        'name': 'Stage IV:\nReporting (46)',
+        'name': 'Stage 4:\nReporting (46)',
         'summary': 'Visualizing & communicating\nevaluation results',
         'x': 81,
         'width': 18,

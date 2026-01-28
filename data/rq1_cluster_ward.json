@@ -34,10 +34,10 @@
       ],
       "step_coverage": {
         "Stage 0": 0.5,
-        "Stage I": 0.389,
-        "Stage II": 0.25,
-        "Stage III": 0.407,
-        "Stage IV": 0.204
+        "Stage 1": 0.389,
+        "Stage 2": 0.25,
+        "Stage 3": 0.407,
+        "Stage 4": 0.204
       },
       "avg_step_coverage": 0.369,
       "cluster_name": "Offline Batch Evaluation Harnesses",
@@ -83,10 +83,10 @@
       ],
       "step_coverage": {
         "Stage 0": 0.275,
-        "Stage I": 0.48,
-        "Stage II": 0.5,
-        "Stage III": 0.333,
-        "Stage IV": 0.2
+        "Stage 1": 0.48,
+        "Stage 2": 0.5,
+        "Stage 3": 0.333,
+        "Stage 4": 0.2
       },
       "avg_step_coverage": 0.359,
       "cluster_name": "Interactive Agent Benchmarks",
@@ -137,10 +137,10 @@
       ],
       "step_coverage": {
         "Stage 0": 0.304,
-        "Stage I": 0.229,
-        "Stage II": 0.143,
-        "Stage III": 0.333,
-        "Stage IV": 0.071
+        "Stage 1": 0.229,
+        "Stage 2": 0.143,
+        "Stage 3": 0.333,
+        "Stage 4": 0.071
       },
       "avg_step_coverage": 0.227,
       "cluster_name": "Offline Benchmark Evaluation",
@@ -182,10 +182,10 @@
       ],
       "step_coverage": {
         "Stage 0": 0.417,
-        "Stage I": 0.433,
-        "Stage II": 0.333,
-        "Stage III": 0.667,
-        "Stage IV": 0.389
+        "Stage 1": 0.433,
+        "Stage 2": 0.333,
+        "Stage 3": 0.667,
+        "Stage 4": 0.389
       },
       "avg_step_coverage": 0.451,
       "cluster_name": "Offline Benchmark & Ranking Systems",
@@ -222,10 +222,10 @@
       "missing_strategies": [],
       "step_coverage": {
         "Stage 0": 0.614,
-        "Stage I": 0.745,
-        "Stage II": 0.636,
-        "Stage III": 0.727,
-        "Stage IV": 0.712
+        "Stage 1": 0.745,
+        "Stage 2": 0.636,
+        "Stage 3": 0.727,
+        "Stage 4": 0.712
       },
       "avg_step_coverage": 0.693,
       "cluster_name": "LLM-Centric API Evaluators",
@@ -275,14 +275,14 @@
       ],
       "step_coverage": {
         "Stage 0": 0.512,
-        "Stage I": 0.505,
-        "Stage II": 0.31,
-        "Stage III": 0.73,
-        "Stage IV": 0.341
+        "Stage 1": 0.505,
+        "Stage 2": 0.31,
+        "Stage 3": 0.73,
+        "Stage 4": 0.341
       },
       "avg_step_coverage": 0.494,
       "cluster_name": "Batch LLM Benchmark Evaluators",
-      "cluster_interpretation": "This cluster comprises harnesses specialized in offline batch evaluation of language models against predefined benchmarks, excelling at assessment and scoring (Stage III: 73%) but lacking support for interactive agents, simulation environments, production traffic, and real-time streaming\u2014positioning them as the standard toolkit for comparative LLM leaderboards and research benchmarking rather than deployment monitoring or embodied AI evaluation."
+      "cluster_interpretation": "This cluster comprises harnesses specialized in offline batch evaluation of language models against predefined benchmarks, excelling at assessment and scoring (Stage 3: 73%) but lacking support for interactive agents, simulation environments, production traffic, and real-time streaming\u2014positioning them as the standard toolkit for comparative LLM leaderboards and research benchmarking rather than deployment monitoring or embodied AI evaluation."
     }
   ]
 }
