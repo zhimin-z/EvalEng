@@ -236,70 +236,78 @@ if len(workflow_df) > 0:
     output_path = "../figures/rq2_workflow.pdf"
     plt.savefig(output_path, format='pdf', bbox_inches='tight')
    
-    # Print hierarchical tree-style breakdown
+    # Print LaTeX table for workflow breakdown
     print("=" * 70)
     print(f"WORKFLOW STAGE/STEP/STRATEGY BREAKDOWN ({output_path})")
     print("=" * 70)
 
     if len(related_df) > 0:
+        # Collect table rows: (ID, Count, Proportion)
+        table_rows = []
+
         # Get all unique stages, sorted (excluding NaN)
         stages_list = sorted([s for s in related_df['stage'].unique() if not pd.isna(s)], key=stage_sort_key)
 
         # Count issues with no stage specified (general workflow level)
         no_stage_count = len(related_df[related_df['stage'].isna()])
 
+        # Add "General" row (workflow level - no stage)
+        if no_stage_count > 0:
+            general_pct = (no_stage_count / total_issues * 100) if total_issues > 0 else 0
+            table_rows.append(("General", no_stage_count, general_pct))
+
         # Iterate through stages
         for stage in stages_list:
             stage_df = related_df[related_df['stage'] == stage]
             stage_count = len(stage_df)
-            print(f"{'Stage' + str(int(stage) if isinstance(stage, float) else stage) + ':':<24} {stage_count:>3} ({stage_percentages[stage]:.2f}%)")
+            stage_label = str(int(stage) if isinstance(stage, float) else stage)
 
             # Count issues with no step specified (general stage level)
             no_step_count = len(stage_df[stage_df['step'].isna()])
 
-            # Show "General (no step)" if applicable
+            # Add "S{stage} (general)" row if there are issues at stage level but no step
             if no_step_count > 0:
                 no_step_pct = (no_step_count / stage_count * 100) if stage_count > 0 else 0
-                print(f"  {'├─ General (no step):':<22} {no_step_count:>3} ({no_step_pct:.2f}%)")
+                table_rows.append((f"S{stage_label} (general)", no_step_count, no_step_pct))
 
             # Get all unique steps for this stage (excluding NaN)
             steps = sorted([s for s in stage_df['step'].unique() if not pd.isna(s)], key=step_sort_key)
 
-            for step_idx, step in enumerate(steps):
+            for step in steps:
                 step_df = stage_df[stage_df['step'] == step]
                 step_count = len(step_df)
-                is_last_step = (step_idx == len(steps) - 1) and no_step_count == 0
-                step_prefix = "└─" if is_last_step else "├─"
                 step_label = str(int(step) if isinstance(step, float) else step)
-                step_pct = (step_count / stage_count * 100) if stage_count > 0 else 0
-                print(f"  {step_prefix} {'Step S' + str(int(stage) if isinstance(stage, float) else stage) + '-' + step_label + ':':<20} {step_count:>3} ({step_pct:.2f}%)")
 
                 # Count issues with no strategy specified (general step level)
                 no_strategy_count = len(step_df[step_df['strategy'].isna()])
 
+                # Add "S{stage}-{step} (general)" row if there are issues at step level but no strategy
+                if no_strategy_count > 0:
+                    no_strat_pct = (no_strategy_count / step_count * 100) if step_count > 0 else 0
+                    table_rows.append((f"S{stage_label}-{step_label} (general)", no_strategy_count, no_strat_pct))
+
                 # Get all unique strategies for this step (excluding NaN)
                 strategies = sorted([s for s in step_df['strategy'].unique() if not pd.isna(s)], key=str)
 
-                step_continuation = "  " if is_last_step else "│ "
-
-                if no_strategy_count > 0:
-                    no_strat_pct = (no_strategy_count / step_count * 100) if step_count > 0 else 0
-                    if len(strategies) > 0:
-                        print(f"  {step_continuation}  {'├─ General (no strategy):':<18} {no_strategy_count:>3} ({no_strat_pct:.2f}%)")
-                    else:
-                        print(f"  {step_continuation}  {'└─ General (no strategy):':<18} {no_strategy_count:>3} ({no_strat_pct:.2f}%)")
-
-                for strat_idx, strategy in enumerate(strategies):
+                for strategy in strategies:
                     strategy_count = len(step_df[step_df['strategy'] == strategy])
-                    is_last_strategy = (strat_idx == len(strategies) - 1)
-                    strat_prefix = "└─" if is_last_strategy else "├─"
                     strat_label = str(int(strategy) if isinstance(strategy, float) else strategy)
                     strat_pct = (strategy_count / step_count * 100) if step_count > 0 else 0
-                    print(f"  {step_continuation}  {strat_prefix} {'Strategy S' + str(int(stage) if isinstance(stage, float) else stage) + '-' + step_label + strat_label + ':':<14} {strategy_count:>3} ({strat_pct:.2f}%)")
+                    table_rows.append((f"S{stage_label}-{step_label}{strat_label}", strategy_count, strat_pct))
 
-        # Show "General (no stage)" at the same level as other stages
-        if no_stage_count > 0:
-            no_stage_pct = (no_stage_count / total_issues * 100) if total_issues > 0 else 0
-            print(f"{'General (no stage):':<24} {no_stage_count:>3} ({no_stage_pct:.2f}%)")
+        # Print LaTeX table
+        print("\\begin{table}[htbp]")
+        print("\\centering")
+        print("\\caption{Issue Distribution Across Workflow Stages, Steps, and Strategies. Unlisted stage/step/strategy combinations indicate no issues exist.}")
+        print("\\label{tab:workflow_breakdown}")
+        print("\\begin{tabular}{lrr}")
+        print("\\toprule")
+        print("Identifier & Count & Local \\% \\\\")
+        print("\\midrule")
+        for row_id, count, proportion in table_rows:
+            print(f"{row_id} & {count} & {proportion:.1f}\\% \\\\")
+        print("\\bottomrule")
+        print("\\end{tabular}")
+        print("\\end{table}")
 
     plt.close()
