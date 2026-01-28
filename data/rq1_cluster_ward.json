@@ -39,7 +39,7 @@
         "Stage III": 0.407,
         "Stage IV": 0.204
       },
-      "avg_coverage": 0.369,
+      "avg_stage_coverage": 0.369,
       "cluster_name": "Offline Batch Evaluation Harnesses",
       "cluster_interpretation": "This cluster comprises harnesses optimized for static, batch-oriented evaluation of individual models or algorithms against predefined benchmarks, characterized by universal support for source-based installation and batch inference but lacking capabilities for interactive agents, simulation environments, arena comparisons, and advanced reporting\u2014making them suitable for deterministic performance measurement of language models, code systems, and retrieval methods in controlled, non-interactive settings."
     },
@@ -88,7 +88,7 @@
         "Stage III": 0.333,
         "Stage IV": 0.2
       },
-      "avg_coverage": 0.359,
+      "avg_stage_coverage": 0.359,
       "cluster_name": "Interactive Agent Benchmarks",
       "cluster_interpretation": "These harnesses specialize in evaluating sequential decision-making systems (RL agents, robotics, multi-agent environments) through interactive simulation environments, prioritizing stateful agent-environment loops and deterministic metrics over LLM judges or remote APIs, with minimal reporting infrastructure."
     },
@@ -142,7 +142,7 @@
         "Stage III": 0.333,
         "Stage IV": 0.071
       },
-      "avg_coverage": 0.227,
+      "avg_stage_coverage": 0.227,
       "cluster_name": "Offline Benchmark Evaluation",
       "cluster_interpretation": "This cluster comprises harnesses specialized in evaluating local models against predefined datasets using deterministic metrics, with minimal infrastructure requirements and no support for remote APIs, interactive agents, or advanced reporting\u2014making them ideal for reproducible, lightweight benchmarking of traditional ML systems and code generation tasks."
     },
@@ -187,7 +187,7 @@
         "Stage III": 0.667,
         "Stage IV": 0.389
       },
-      "avg_coverage": 0.451,
+      "avg_stage_coverage": 0.451,
       "cluster_name": "Offline Benchmark & Ranking Systems",
       "cluster_interpretation": "These harnesses specialize in evaluating non-parametric algorithms and local models against pre-computed benchmarks with deterministic metrics, emphasizing comparative ranking and dashboard presentation while avoiding real-time execution, synthetic generation, and LLM-based judgment."
     },
@@ -227,7 +227,7 @@
         "Stage III": 0.727,
         "Stage IV": 0.712
       },
-      "avg_coverage": 0.693,
+      "avg_stage_coverage": 0.693,
       "cluster_name": "LLM-Centric API Evaluators",
       "cluster_interpretation": "This cluster specializes in evaluating large language models and retrieval systems through remote APIs and subjective judgment, with strong capabilities in specification and reporting but limited support for local inference, interactive agents, and production monitoring workflows."
     },
@@ -280,7 +280,7 @@
         "Stage III": 0.73,
         "Stage IV": 0.341
       },
-      "avg_coverage": 0.494,
+      "avg_stage_coverage": 0.494,
       "cluster_name": "Batch LLM Benchmark Evaluators",
       "cluster_interpretation": "This cluster comprises harnesses specialized in offline batch evaluation of language models against predefined benchmarks, excelling at assessment and scoring (Stage III: 73%) but lacking support for interactive agents, simulation environments, production traffic, and real-time streaming\u2014positioning them as the standard toolkit for comparative LLM leaderboards and research benchmarking rather than deployment monitoring or embodied AI evaluation."
     }

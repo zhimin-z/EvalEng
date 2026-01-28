@@ -52,7 +52,7 @@
         "Stage III": 0.421,
         "Stage IV": 0.184
       },
-      "avg_coverage": 0.316,
+      "avg_stage_coverage": 0.316,
       "cluster_name": "Task-Specific Offline Benchmarks",
       "cluster_interpretation": "This cluster comprises harnesses optimized for measuring specific capabilities (coding, retrieval, audio, knowledge graphs) on local hardware against predefined datasets. They feature minimal infrastructure requirements with universal source-based installation, batch inference support, and deterministic metrics, but lack capabilities for remote APIs, interactive agents, LLM-as-judge evaluation, and advanced reporting—making them ideal for reproducible, lightweight benchmarking of specialized ML tasks."
     },
@@ -105,7 +105,7 @@
         "Stage III": 0.73,
         "Stage IV": 0.341
       },
-      "avg_coverage": 0.48,
+      "avg_stage_coverage": 0.48,
       "cluster_name": "Foundation Model Evaluation Suites",
       "cluster_interpretation": "This cluster comprises comprehensive harnesses specialized in assessing the general intelligence, capabilities, and safety of base foundation models through offline batch evaluation against standardized benchmarks. They excel at assessment and scoring (Stage III: 73%) with strong benchmark loading and deterministic metrics, but lack support for interactive agents, simulation environments, and real-time streaming—positioning them as the standard toolkit for comparative LLM leaderboards, multilingual evaluation, and research benchmarking."
     },
@@ -145,7 +145,7 @@
         "Stage III": 0.727,
         "Stage IV": 0.712
       },
-      "avg_coverage": 0.687,
+      "avg_stage_coverage": 0.687,
       "cluster_name": "LLM-Centric API Evaluators",
       "cluster_interpretation": "This cluster specializes in evaluating LLM-powered applications (RAG pipelines, agents, chatbots) through remote APIs and LLM-as-a-judge methodology. With the highest average coverage (68.7%) and no missing strategies, these harnesses provide comprehensive capabilities spanning specification, execution, assessment, and reporting stages—featuring strong support for subjective judgment, CI/CD integration, and dashboard visualization while serving as the primary toolkit for testing production-grade LLM applications."
     },
@@ -194,7 +194,7 @@
         "Stage III": 0.333,
         "Stage IV": 0.2
       },
-      "avg_coverage": 0.358,
+      "avg_stage_coverage": 0.358,
       "cluster_name": "Interactive Agent Environments",
       "cluster_interpretation": "This cluster comprises harnesses specialized in evaluating sequential decision-making systems (RL agents, robotics, multi-agent systems) through interactive simulation environments. They prioritize stateful agent-environment loops, deterministic reward metrics, and embodied task completion over LLM judges or remote APIs, with universal support for simulation environments (SI-A3, SI-B2) but minimal reporting infrastructure—making them the standard toolkit for testing embodied AI, game-playing agents, and robotic manipulation policies."
     }

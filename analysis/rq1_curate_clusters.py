@@ -162,7 +162,7 @@ def main():
 
         # Calculate average coverage across all stages
         stage_coverages = list(metrics["stage_coverage"].values())
-        avg_coverage = round(sum(stage_coverages) / len(stage_coverages), 3) if stage_coverages else 0
+        avg_stage_coverage = round(sum(stage_coverages) / len(stage_coverages), 3) if stage_coverages else 0
 
         new_cluster = {
             "cluster_id": definition["new_cluster_id"],
@@ -171,7 +171,7 @@ def main():
             "common_strategies": metrics["common_strategies"],
             "missing_strategies": metrics["missing_strategies"],
             "stage_coverage": metrics["stage_coverage"],
-            "avg_coverage": avg_coverage,
+            "avg_stage_coverage": avg_stage_coverage,
             "cluster_name": definition["cluster_name"],
             "cluster_interpretation": definition["cluster_interpretation"]
         }
@@ -210,7 +210,7 @@ def main():
         print(f"  Members: {', '.join(cluster['members'][:5])}{'...' if len(cluster['members']) > 5 else ''}")
         print(f"  Common strategies: {len(cluster['common_strategies'])}")
         print(f"  Missing strategies: {len(cluster['missing_strategies'])}")
-        print(f"  Avg coverage: {cluster['avg_coverage']:.1%}")
+        print(f"  Avg coverage: {cluster['avg_stage_coverage']:.1%}")
         print(f"  Stage coverage:")
         for stage, cov in sorted(cluster['stage_coverage'].items()):
             print(f"    {stage}: {cov:.1%}")

@@ -373,7 +373,7 @@ else:
             "common_strategies": common_names,
             "missing_strategies": missing_names,
             "stage_coverage": stage_coverage,
-            "avg_coverage": round(coverage / len(feature_names), 3),
+            "avg_stage_coverage": round(coverage / len(feature_names), 3),
             "cluster_name": interpretation["name"],
             "cluster_interpretation": interpretation["interpretation"],
         })
