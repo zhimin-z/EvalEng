@@ -195,29 +195,36 @@ if len(workflow_df) > 0:
             # Place value text centered inside the segment
             mid_y = seg['bottom'] + seg['height'] / 2
             ax.text(seg['x'], mid_y, str(seg['value']),
-                    ha='center', va='center', fontsize=8, fontweight='bold',
+                    ha='center', va='center', fontsize=9, fontweight='bold',
                     color='black')
         else:
             thin_segments_by_bar[seg['bar_idx']].append(seg)
 
-    # Annotate thin segments with arrows
+    # Annotate thin segments with arrows at varying angles to avoid collision
+    import math
+    arrow_len = 18  # arrow length in points
+    base_angle = 20  # starting angle in degrees
+    angle_step = 40  # rotation between successive arrows in the same bar
     for bar_idx, thin_segs in thin_segments_by_bar.items():
         thin_segs.sort(key=lambda s: s['bottom'])
         for i, seg in enumerate(thin_segs):
             mid_y = seg['bottom'] + seg['height'] / 2
-            x_offset_pts = 30 + i * 5
-            y_offset_pts = 15 + i * 14
+            angle = math.radians(base_angle + i * angle_step)
+            length = arrow_len + i * 12  # progressively longer to avoid box collision
+            x_offset_pts = length * math.cos(angle)
+            y_offset_pts = length * math.sin(angle)
             ax.annotate(
                 str(seg['value']),
                 xy=(seg['x'], mid_y),
                 xytext=(x_offset_pts, y_offset_pts),
                 textcoords='offset points',
-                fontsize=8, fontweight='bold',
+                fontsize=9, fontweight='bold',
                 arrowprops=dict(
-                    arrowstyle='->',
+                    arrowstyle='->,head_length=0.3,head_width=0.15',
                     color='gray',
                     lw=0.8,
-                    connectionstyle='arc3,rad=0.2',
+                    shrinkA=0,
+                    shrinkB=0,
                 ),
                 ha='left', va='center',
                 bbox=dict(boxstyle='round,pad=0.15', facecolor='white',
