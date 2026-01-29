@@ -293,7 +293,8 @@ if len(root_cause_results_df) > 0:
     print("\\toprule")
     print("Root Cause & Workflow Step & Count & Local \\% \\\\")
     print("\\midrule")
-    for root_cause, workflow_step, count, proportion in table_rows:
+    table_rows_sorted = sorted(table_rows, key=lambda row: row[0])
+    for root_cause, workflow_step, count, proportion in table_rows_sorted:
         print(f"{root_cause} & {workflow_step} & {count} & {proportion:.1f}\\% \\\\")
     print("\\bottomrule")
     print("\\end{tabular}")

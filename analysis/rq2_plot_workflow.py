@@ -304,7 +304,8 @@ if len(workflow_df) > 0:
         print("\\toprule")
         print("Workflow Component & Count & Local \\% \\\\")
         print("\\midrule")
-        for row_id, count, proportion in table_rows:
+        table_rows_sorted = sorted(table_rows, key=lambda row: row[0])
+        for row_id, count, proportion in table_rows_sorted:
             print(f"{row_id} & {count} & {proportion:.1f}\\% \\\\")
         print("\\bottomrule")
         print("\\end{tabular}")
