@@ -296,9 +296,9 @@ if len(workflow_df) > 0:
                     table_rows.append((f"S{stage_label}-{step_label}{strat_label}", strategy_count, strat_pct))
 
         # Print LaTeX table
-        print("\\begin{table}[htbp]")
+        print("\\begin{table}[!t]")
         print("\\centering")
-        print("\\caption{Issue Distribution Across Workflow Stages, Steps, and Strategies. Unlisted workflow components indicate no issues exist.}")
+        print("\\caption{Issue Distribution Across Workflow Stages, Steps, and Strategies. ``Local \\%'' denotes the percentage relative to the parent workflow component. Unlisted workflow components indicate no issues exist.}")
         print("\\label{tab:workflow_breakdown}")
         print("\\begin{tabular}{lrr}")
         print("\\toprule")

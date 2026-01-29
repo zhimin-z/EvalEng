@@ -285,9 +285,9 @@ if len(root_cause_results_df) > 0:
                 table_rows.append((root_cause, f"S{stage}-{step}", step_count, step_pct))
 
     # Print LaTeX table
-    print("\\begin{table}[htbp]")
+    print("\\begin{table}[!t]")
     print("\\centering")
-    print("\\caption{Root Cause Distribution Across Workflow Stages and Steps. Unlisted root cause/stage/step combinations indicate no issues exist.}")
+    print("\\caption{Root Cause Distribution Across Workflow Stages and Steps. ``Local \\%'' denotes the percentage relative to the parent workflow component. Unlisted workflow steps indicate no issues exist.}")
     print("\\label{tab:root_cause_breakdown}")
     print("\\begin{tabular}{llrr}")
     print("\\toprule")
