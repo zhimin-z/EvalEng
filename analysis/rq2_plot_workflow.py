@@ -156,6 +156,7 @@ if len(workflow_df) > 0:
     # Plot stacked bars
     bottom = np.zeros(len(x_positions))
     colors = plt.cm.Set3(np.linspace(0, 1, len(strategy_order)))
+    all_segments = []  # Collect segment data for value annotations
 
     for strategy_idx, strategy in enumerate(strategy_order):
         heights = []
@@ -171,13 +172,57 @@ if len(workflow_df) > 0:
             legend_label = strategy
         bars = ax.bar(x_positions, heights, bar_width, bottom=bottom,
                      label=legend_label, color=colors[strategy_idx], edgecolor='white', linewidth=0.5)
+        # Collect segment data for annotations
+        for i in range(len(x_positions)):
+            if heights[i] > 0:
+                all_segments.append({
+                    'x': x_positions[i],
+                    'bottom': bottom[i],
+                    'height': heights[i],
+                    'value': int(heights[i]),
+                    'bar_idx': i,
+                })
         bottom += heights
 
-    # Add total count labels on top of each bar
-    for i, (x_pos, total) in enumerate(zip(x_positions, bottom)):
-        if total > 0:  # Only show label if there are issues
-            ax.text(x_pos, total, str(int(total)), ha='center', va='bottom',
-                   fontsize=11, fontweight='bold')
+    # Add value annotations to each stack segment
+    max_bar_height = max(bottom) if len(bottom) > 0 else 1
+    thin_threshold = max(max_bar_height * 0.06, 2)
+
+    # Separate thick and thin segments; group thin ones by bar
+    thin_segments_by_bar = defaultdict(list)
+    for seg in all_segments:
+        if seg['height'] >= thin_threshold:
+            # Place value text centered inside the segment
+            mid_y = seg['bottom'] + seg['height'] / 2
+            ax.text(seg['x'], mid_y, str(seg['value']),
+                    ha='center', va='center', fontsize=8, fontweight='bold',
+                    color='black')
+        else:
+            thin_segments_by_bar[seg['bar_idx']].append(seg)
+
+    # Annotate thin segments with arrows
+    for bar_idx, thin_segs in thin_segments_by_bar.items():
+        thin_segs.sort(key=lambda s: s['bottom'])
+        for i, seg in enumerate(thin_segs):
+            mid_y = seg['bottom'] + seg['height'] / 2
+            x_offset_pts = 30 + i * 5
+            y_offset_pts = 15 + i * 14
+            ax.annotate(
+                str(seg['value']),
+                xy=(seg['x'], mid_y),
+                xytext=(x_offset_pts, y_offset_pts),
+                textcoords='offset points',
+                fontsize=8, fontweight='bold',
+                arrowprops=dict(
+                    arrowstyle='->',
+                    color='gray',
+                    lw=0.8,
+                    connectionstyle='arc3,rad=0.2',
+                ),
+                ha='left', va='center',
+                bbox=dict(boxstyle='round,pad=0.15', facecolor='white',
+                          edgecolor='gray', alpha=0.8),
+            )
 
     # Add vertical lines to separate stages
     for boundary in stage_boundaries:
@@ -227,7 +272,7 @@ if len(workflow_df) > 0:
 
     # Add padding to y-axis limit to make room for labels above bars
     y_max = ax.get_ylim()[1]
-    ax.set_ylim(0, y_max * 1.1)  # Add 10% padding above the highest bar
+    ax.set_ylim(0, y_max * 1.2)  # Add 20% padding for labels and arrows
 
     # Adjust layout
     plt.tight_layout()
