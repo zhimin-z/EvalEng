@@ -4,10 +4,10 @@ Script to aggregate clusters from the original 6-cluster Ward hierarchical clust
 into 4 new clusters based on manual analysis.
 
 New cluster mapping:
-- Cluster 1: Task-Specific Offline Benchmarks (merged from old clusters 1, 3, 4)
-- Cluster 2: Foundation Model Evaluation Suites (old cluster 6)
-- Cluster 3: LLM-Centric API Evaluators (old cluster 5)
-- Cluster 4: Interactive Agent Environments (old cluster 2)
+- Cluster 1: Domain-Specific Offline Evaluators (merged from old clusters 1, 3, 4)
+- Cluster 2: Standardized Model Benchmark Suites (old cluster 6)
+- Cluster 3: LLM Application Evaluation Platforms (old cluster 5)
+- Cluster 4: Interactive Agent Simulators (old cluster 2)
 """
 
 import json
@@ -20,13 +20,13 @@ def get_stage_from_strategy(strategy: str) -> str:
     """Map strategy code to stage name."""
     if strategy.startswith("S0-"):
         return "Stage 0"
-    elif strategy.startswith("SI-"):
+    elif strategy.startswith("S1-"):
         return "Stage 1"
-    elif strategy.startswith("SII-"):
+    elif strategy.startswith("S2-"):
         return "Stage 2"
-    elif strategy.startswith("SIII-"):
+    elif strategy.startswith("S3-"):
         return "Stage 3"
-    elif strategy.startswith("SIV-"):
+    elif strategy.startswith("S4-"):
         return "Stage 4"
     return "Unknown"
 
@@ -114,36 +114,30 @@ def main():
     # Load feature matrix
     feature_matrix = pd.read_csv(feature_matrix_file, index_col=0)
 
-    # Define new cluster mapping
-    # New Cluster 1: Merge old clusters 1, 3, 4 -> Task-Specific Offline Benchmarks
-    # New Cluster 2: Old cluster 6 -> Foundation Model Evaluation Suites
-    # New Cluster 3: Old cluster 5 -> LLM-Centric API Evaluators
-    # New Cluster 4: Old cluster 2 -> Interactive Agent Environments
-
     new_cluster_definitions = [
         {
             "new_cluster_id": 1,
             "old_cluster_ids": [1, 3, 4],
-            "cluster_name": "",  # To be filled manually
-            "cluster_interpretation": ""  # To be filled manually
+            "cluster_name": "Domain-Specific Offline Evaluators",
+            "cluster_interpretation": "Specialized tools for measuring narrow capabilities—code generation, information retrieval, speech recognition, knowledge graphs, XAI, and system performance—on local hardware against predefined datasets using deterministic metrics. They require minimal infrastructure and lack LLM-as-judge, remote API, and interactive agent support, prioritizing reproducible, lightweight benchmarking of specific ML tasks."
         },
         {
             "new_cluster_id": 2,
             "old_cluster_ids": [6],
-            "cluster_name": "",
-            "cluster_interpretation": ""
+            "cluster_name": "Standardized Model Benchmark Suites",
+            "cluster_interpretation": "Comprehensive frameworks for assessing foundation model capabilities, safety, and multimodal understanding through curated benchmark datasets and leaderboard-oriented evaluation. They excel at scoring and metric aggregation across standardized test sets but lack interactive agent support, simulation environments, and production monitoring—serving as the primary toolkit for systematic model comparison and research benchmarking."
         },
         {
             "new_cluster_id": 3,
             "old_cluster_ids": [5],
-            "cluster_name": "",
-            "cluster_interpretation": ""
+            "cluster_name": "LLM Application Evaluation Platforms",
+            "cluster_interpretation": "Full-stack platforms for testing LLM-powered applications—RAG pipelines, chatbots, tool-using agents—through flexible evaluation workflows combining LLM-as-judge scoring, remote API integration, CI/CD hooks, and interactive dashboards. With the highest workflow coverage and no universally missing strategies, they support the broadest range of evaluation patterns from development through production monitoring."
         },
         {
             "new_cluster_id": 4,
             "old_cluster_ids": [2],
-            "cluster_name": "",
-            "cluster_interpretation": ""
+            "cluster_name": "Interactive Agent Simulators",
+            "cluster_interpretation": "Harnesses for evaluating sequential decision-making systems—RL policies, robotic manipulators, multi-agent teams—through stateful simulation environments with deterministic reward metrics. They prioritize agent-environment interaction loops over language model evaluation, lacking remote API support, LLM judges, and rich reporting infrastructure."
         }
     ]
 

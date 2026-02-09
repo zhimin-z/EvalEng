@@ -19,18 +19,18 @@
       "size": 9,
       "common_strategies": [
         "S0-A1",
-        "SII-A1"
+        "S2-A1"
       ],
       "missing_strategies": [
         "S0-A5",
         "S0-B3",
-        "SI-A3",
-        "SI-B2",
-        "SI-B4",
-        "SII-A2",
-        "SII-A3",
-        "SII-A4",
-        "SIII-B2"
+        "S2-A2",
+        "S1-A3",
+        "S2-A3",
+        "S2-A4",
+        "S3-B2",
+        "S1-B3",
+        "S1-B4"
       ],
       "step_coverage": {
         "Stage 0": 0.5,
@@ -40,8 +40,8 @@
         "Stage 4": 0.204
       },
       "avg_step_coverage": 0.369,
-      "cluster_name": "Offline Batch Evaluation Harnesses",
-      "cluster_interpretation": "This cluster comprises harnesses optimized for static, batch-oriented evaluation of individual models or algorithms against predefined benchmarks, characterized by universal support for source-based installation and batch inference but lacking capabilities for interactive agents, simulation environments, arena comparisons, and advanced reporting\u2014making them suitable for deterministic performance measurement of language models, code systems, and retrieval methods in controlled, non-interactive settings."
+      "cluster_name": "Local Batch Inference Evaluators",
+      "cluster_interpretation": "This cluster comprises harnesses optimized for offline evaluation of local models through batch inference, with strong provisioning and assessment capabilities but minimal support for interactive agents, remote APIs, synthetic data generation, or advanced reporting\u2014serving primarily code, retrieval, and performance-focused benchmarking domains where reproducibility and self-contained execution are prioritized over real-time interaction or complex visualization."
     },
     {
       "cluster_id": 2,
@@ -56,12 +56,12 @@
       "common_strategies": [
         "S0-A1",
         "S0-A2",
-        "SI-A3",
-        "SI-B2",
-        "SII-A1",
-        "SII-A3",
-        "SIII-A1",
-        "SIII-B1"
+        "S2-A1",
+        "S3-A1",
+        "S2-A2",
+        "S1-A3",
+        "S3-B1",
+        "S1-B3"
       ],
       "missing_strategies": [
         "S0-A3",
@@ -69,17 +69,17 @@
         "S0-A5",
         "S0-B2",
         "S0-B3",
-        "SI-A2",
-        "SI-A4",
-        "SI-B4",
-        "SII-A2",
-        "SII-A4",
-        "SIII-A2",
-        "SIII-A3",
-        "SIII-A4",
-        "SIII-B2",
-        "SIV-A3",
-        "SIV-A6"
+        "S1-A2",
+        "S3-A2",
+        "S2-A3",
+        "S3-A3",
+        "S4-A3",
+        "S1-A4",
+        "S2-A4",
+        "S3-A4",
+        "S4-A6",
+        "S3-B2",
+        "S1-B4"
       ],
       "step_coverage": {
         "Stage 0": 0.275,
@@ -89,8 +89,8 @@
         "Stage 4": 0.2
       },
       "avg_step_coverage": 0.359,
-      "cluster_name": "Interactive Agent Benchmarks",
-      "cluster_interpretation": "These harnesses specialize in evaluating sequential decision-making systems (RL agents, robotics, multi-agent environments) through interactive simulation environments, prioritizing stateful agent-environment loops and deterministic metrics over LLM judges or remote APIs, with minimal reporting infrastructure."
+      "cluster_name": "Interactive Agent Simulation Harnesses",
+      "cluster_interpretation": "These harnesses specialize in evaluating sequential decision-making agents (RL, multi-agent, robotics) through interactive simulation environments with deterministic scoring, but lack support for API-based models, LLM judges, and production-scale evaluation workflows, positioning them as domain-specific tools for controlled agent benchmarking rather than general-purpose LLM or retrieval evaluation."
     },
     {
       "cluster_id": 3,
@@ -107,9 +107,9 @@
       "common_strategies": [
         "S0-A1",
         "S0-A2",
-        "SI-C1",
-        "SIII-A1",
-        "SIII-B1"
+        "S3-A1",
+        "S3-B1",
+        "S1-C1"
       ],
       "missing_strategies": [
         "S0-A3",
@@ -117,23 +117,23 @@
         "S0-A5",
         "S0-B2",
         "S0-B3",
-        "SI-A2",
-        "SI-A3",
-        "SI-B2",
-        "SI-B3",
-        "SI-B4",
-        "SI-C2",
-        "SII-A2",
-        "SII-A3",
-        "SII-A4",
-        "SIII-A2",
-        "SIII-A3",
-        "SIII-A4",
-        "SIII-B2",
-        "SIV-A2",
-        "SIV-A3",
-        "SIV-A5",
-        "SIV-A6"
+        "S1-A2",
+        "S2-A2",
+        "S3-A2",
+        "S4-A2",
+        "S1-A3",
+        "S2-A3",
+        "S3-A3",
+        "S4-A3",
+        "S2-A4",
+        "S3-A4",
+        "S4-A5",
+        "S4-A6",
+        "S1-B2",
+        "S3-B2",
+        "S1-B3",
+        "S1-B4",
+        "S1-C2"
       ],
       "step_coverage": {
         "Stage 0": 0.304,
@@ -143,8 +143,8 @@
         "Stage 4": 0.071
       },
       "avg_step_coverage": 0.227,
-      "cluster_name": "Offline Benchmark Evaluation",
-      "cluster_interpretation": "This cluster comprises harnesses specialized in evaluating local models against predefined datasets using deterministic metrics, with minimal infrastructure requirements and no support for remote APIs, interactive agents, or advanced reporting\u2014making them ideal for reproducible, lightweight benchmarking of traditional ML systems and code generation tasks."
+      "cluster_name": "Offline Benchmark Scorers",
+      "cluster_interpretation": "This cluster comprises harnesses specialized in evaluating systems against pre-computed ground truth on static datasets, supporting standard installation and deterministic/subjective scoring but lacking support for interactive agents, remote model APIs, and advanced reporting\u2014positioning them as lightweight, self-contained evaluation tools for academic benchmarks and offline metrics computation."
     },
     {
       "cluster_id": 4,
@@ -157,28 +157,28 @@
       "common_strategies": [
         "S0-A1",
         "S0-A2",
-        "SI-A4",
-        "SI-B1",
-        "SI-C1",
-        "SII-A1",
-        "SIII-A1",
-        "SIII-A4",
-        "SIII-B1",
-        "SIV-A2"
+        "S2-A1",
+        "S3-A1",
+        "S4-A2",
+        "S1-A4",
+        "S3-A4",
+        "S1-B1",
+        "S3-B1",
+        "S1-C1"
       ],
       "missing_strategies": [
         "S0-A4",
         "S0-A5",
         "S0-B2",
-        "SI-B2",
-        "SI-B3",
-        "SI-B4",
-        "SI-C2",
-        "SII-A2",
-        "SII-A4",
-        "SIII-B2",
-        "SIV-A5",
-        "SIV-A6"
+        "S2-A3",
+        "S2-A4",
+        "S4-A5",
+        "S4-A6",
+        "S1-B2",
+        "S3-B2",
+        "S1-B3",
+        "S1-B4",
+        "S1-C2"
       ],
       "step_coverage": {
         "Stage 0": 0.417,
@@ -188,8 +188,8 @@
         "Stage 4": 0.389
       },
       "avg_step_coverage": 0.451,
-      "cluster_name": "Offline Benchmark & Ranking Systems",
-      "cluster_interpretation": "These harnesses specialize in evaluating non-parametric algorithms and local models against pre-computed benchmarks with deterministic metrics, emphasizing comparative ranking and dashboard presentation while avoiding real-time execution, synthetic generation, and LLM-based judgment."
+      "cluster_name": "Offline Benchmark & Metric Specialists",
+      "cluster_interpretation": "These harnesses excel at static benchmark evaluation with deterministic and latent metrics (Stage 3: 0.667), but lack interactive/stateful execution (no S2-A3), LLM judges (no S1-C2), and advanced reporting features (no S4-A5/A6), positioning them for offline comparison of algorithms and embeddings on fixed datasets rather than dynamic agent or production evaluation."
     },
     {
       "cluster_id": 5,
@@ -211,13 +211,13 @@
         "S0-A1",
         "S0-B1",
         "S0-B2",
-        "SI-A2",
-        "SI-C1",
-        "SI-C2",
-        "SII-A1",
-        "SIII-A2",
-        "SIII-B1",
-        "SIV-A2"
+        "S2-A1",
+        "S1-A2",
+        "S3-A2",
+        "S4-A2",
+        "S3-B1",
+        "S1-C1",
+        "S1-C2"
       ],
       "missing_strategies": [],
       "step_coverage": {
@@ -228,8 +228,8 @@
         "Stage 4": 0.712
       },
       "avg_step_coverage": 0.693,
-      "cluster_name": "LLM-Centric API Evaluators",
-      "cluster_interpretation": "This cluster specializes in evaluating large language models and retrieval systems through remote APIs and subjective judgment, with strong capabilities in specification and reporting but limited support for local inference, interactive agents, and production monitoring workflows."
+      "cluster_name": "LLM-Centric Subjective Evaluation",
+      "cluster_interpretation": "This cluster specializes in evaluating language models and retrieval systems through subjective LLM-as-judge assessment with dashboard reporting, unified by mandatory support for remote model APIs, judge preparation, and interactive result visualization\u2014but notably lacking support for interactive agents, simulation environments, and deterministic metrics that would serve robotics or traditional ML evaluation."
     },
     {
       "cluster_id": 6,
@@ -259,19 +259,19 @@
       "size": 21,
       "common_strategies": [
         "S0-A1",
-        "SI-B1",
-        "SI-C1",
-        "SII-A1",
-        "SIII-B1"
+        "S2-A1",
+        "S1-B1",
+        "S3-B1",
+        "S1-C1"
       ],
       "missing_strategies": [
         "S0-A4",
         "S0-A5",
-        "SI-A3",
-        "SI-A4",
-        "SI-B2",
-        "SI-B4",
-        "SII-A4"
+        "S1-A3",
+        "S1-A4",
+        "S2-A4",
+        "S1-B3",
+        "S1-B4"
       ],
       "step_coverage": {
         "Stage 0": 0.512,
@@ -281,8 +281,8 @@
         "Stage 4": 0.341
       },
       "avg_step_coverage": 0.494,
-      "cluster_name": "Batch LLM Benchmark Evaluators",
-      "cluster_interpretation": "This cluster comprises harnesses specialized in offline batch evaluation of language models against predefined benchmarks, excelling at assessment and scoring (Stage 3: 73%) but lacking support for interactive agents, simulation environments, production traffic, and real-time streaming\u2014positioning them as the standard toolkit for comparative LLM leaderboards and research benchmarking rather than deployment monitoring or embodied AI evaluation."
+      "cluster_name": "Benchmark-Centric LLM Evaluators",
+      "cluster_interpretation": "This cluster comprises harnesses specialized in offline LLM evaluation using predefined benchmarks and ground truth, excelling at scoring and aggregation (Stage 3) but lacking support for interactive agents, synthetic data generation, production traffic, and advanced reporting\u2014positioning them as standardized evaluation platforms for comparing model capabilities on static test sets rather than dynamic or real-world scenarios."
     }
   ]
 }

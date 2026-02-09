@@ -1,5 +1,6 @@
 .vscode
 .claude
+.omc
 .env
 *.venv
 test_*

@@ -70,53 +70,53 @@ WORKFLOW_REFERENCE = """
 *Defining the evaluation experiment—what to test, what to test it with, how to judge.*
 
 - **Step A: SUT Preparation** - Specifying the System Under Test
-  - SI-A1: Model-in-Process (Local Inference) - Local models with weights loaded in memory
-  - SI-A2: Model-as-a-Service (Remote Inference) - API-based model evaluation
-  - SI-A3: Interactive Agent - Sequential decision-making agents (RL, multi-agent, robots)
-  - SI-A4: Non-Parametric Algorithm - Deterministic algorithms (ANN, BM25, signal processing)
+  - S1-A1: Model-in-Process (Local Inference) - Local models with weights loaded in memory
+  - S1-A2: Model-as-a-Service (Remote Inference) - API-based model evaluation
+  - S1-A3: Interactive Agent - Sequential decision-making agents (RL, multi-agent, robots)
+  - S1-A4: Non-Parametric Algorithm - Deterministic algorithms (ANN, BM25, signal processing)
 
 - **Step B: Benchmark Inputs Preparation** - Acquiring test inputs
-  - SI-B1: Benchmark Data Preparation (Offline) - Loading predefined datasets
-  - SI-B2: Simulation Environment Setup - 3D environments, physics simulation
-  - SI-B3: Synthetic Data Generation - On-the-fly test generation
-  - SI-B4: Production Traffic Sampling - Real-world inference traffic
+  - S1-B1: Benchmark Data Preparation (Offline) - Loading predefined datasets
+  - S1-B2: Simulation Environment Setup - 3D environments, physics simulation
+  - S1-B3: Synthetic Data Generation - On-the-fly test generation
+  - S1-B4: Production Traffic Sampling - Real-world inference traffic
 
 - **Step C: Benchmark References Preparation** - Pre-computing scoring materials
-  - SI-C1: Ground Truth Preparation - Human annotations, embedding indexes
-  - SI-C2: Judge Preparation - Training/loading LLM judges and reward models
+  - S1-C1: Ground Truth Preparation - Human annotations, embedding indexes
+  - S1-C2: Judge Preparation - Training/loading LLM judges and reward models
 
 ### Stage 2: Execution (The Run)
 *Observing SUT behavior—applying test inputs to elicit outputs and actions.*
 
 - **Step A: SUT Invocation** - Running the system under test
-  - SII-A1: Batch Inference - Multiple samples through single SUT
-  - SII-A2: Arena Battle - Same input across multiple SUTs simultaneously
-  - SII-A3: Interactive Loop - Stateful stepping through state transitions
-  - SII-A4: Production Streaming - Live traffic with real-time metrics
+  - S2-A1: Batch Inference - Multiple samples through single SUT
+  - S2-A2: Arena Battle - Same input across multiple SUTs simultaneously
+  - S2-A3: Interactive Loop - Stateful stepping through state transitions
+  - S2-A4: Production Streaming - Live traffic with real-time metrics
 
 ### Stage 3: Assessment (The Score)
 *Converting observations into measurements—judging outputs against quality criteria.*
 
 - **Step A: Individual Scoring** - Computing per-instance metrics
-  - SIII-A1: Deterministic Measurement - Exact match, BLEU, ROUGE, edit distance
-  - SIII-A2: Subjective Measurement - LLM-as-judge, classifier-based evaluation
-  - SIII-A3: Latent Measurement - Embedding similarity, BERTScore
-  - SIII-A4: Performance Measurement - Latency, throughput, memory, energy
+  - S3-A1: Deterministic Measurement - Exact match, BLEU, ROUGE, edit distance
+  - S3-A2: Subjective Measurement - LLM-as-judge, classifier-based evaluation
+  - S3-A3: Latent Measurement - Embedding similarity, BERTScore
+  - S3-A4: Performance Measurement - Latency, throughput, memory, energy
 
 - **Step B: Aggregate Scoring** - Combining instance scores
-  - SIII-B1: Distributional Statistics - Mean, quantiles, weighted aggregation
-  - SIII-B2: Uncertainty Quantification - Bootstrap, confidence intervals
+  - S3-B1: Distributional Statistics - Mean, quantiles, weighted aggregation
+  - S3-B2: Uncertainty Quantification - Bootstrap, confidence intervals
 
 ### Stage 4: Reporting (The Output)
 *Making results actionable—translating metrics into stakeholder-facing insights.*
 
 - **Step A: Insight Presentation** - Visualizing and publishing results
-  - SIV-A1: Chart Generation - Radar charts, histograms, trend plots
-  - SIV-A2: Dashboard Creation - Interactive web interfaces
-  - SIV-A3: Leaderboard Publication - Public/private ranking submissions
-  - SIV-A4: Subgroup Analysis - Performance breakdown by categories
-  - SIV-A5: Execution Tracing - Step-by-step execution logs
-  - SIV-A6: Regression Alerting - Automated performance degradation detection
+  - S4-A1: Chart Generation - Radar charts, histograms, trend plots
+  - S4-A2: Dashboard Creation - Interactive web interfaces
+  - S4-A3: Leaderboard Publication - Public/private ranking submissions
+  - S4-A4: Subgroup Analysis - Performance breakdown by categories
+  - S4-A5: Execution Tracing - Step-by-step execution logs
+  - S4-A6: Regression Alerting - Automated performance degradation detection
 """
 
 
