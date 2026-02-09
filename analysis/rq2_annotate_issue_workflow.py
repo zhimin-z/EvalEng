@@ -43,13 +43,13 @@ STAGES_SUMMARY = """Unified Evaluation Workflow:
   * Strategy 2: Model-in-Process - LOADING models locally into memory for inference [Keywords: load weights, local inference, VRAM, GPU memory, model.load()]
   * Strategy 3: Non-Parametric Algorithm - Configuring algorithms WITHOUT learned weights [Keywords: BM25, FAISS, ANN index, rule-based, no training]
   * Strategy 4: Interactive Agent - Setting up entities that make SEQUENTIAL decisions over MULTIPLE timesteps [Keywords: agent loop, environment, multi-step, RL policy, tool use]
-- Step B: Benchmark Preparation (Inputs)
+- Step B: Benchmark Inputs Preparation
   * Definition: Preparing test inputs (questions, prompts, images, scenarios) that will be FED TO the SUT during execution.
   * Strategy 1: Benchmark Data Preparation - Loading existing test datasets or custom test cases [Keywords: dataset download, test split, input prompts, questions]
   * Strategy 2: Synthetic Data Generation - Automatically generating new test inputs [Keywords: augmentation, perturbation, synthetic generation]
   * Strategy 3: Simulation Environment Setup - Creating interactive virtual environments [Keywords: 3D scene, environment reset, task config, simulator]
   * Strategy 4: Production Traffic Sampling - Collecting real-world user queries [Keywords: live traffic, production logs, user requests]
-- Step C: Benchmark Preparation (References)
+- Step C: Benchmark References Preparation
   * Definition: Preparing reference materials used to SCORE/JUDGE SUT outputs (NOT fed to SUT).
   * Strategy 1: Ground Truth Preparation - Loading reference answers/labels used FOR COMPARISON [Keywords: gold labels, reference answers, ground truth, annotations]
   * Strategy 2: Judge Preparation - Setting up LLM/classifier models to ACT AS evaluators [Keywords: judge model, evaluator, preference model, critic]

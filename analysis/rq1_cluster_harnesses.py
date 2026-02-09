@@ -75,13 +75,13 @@ WORKFLOW_REFERENCE = """
   - SI-A3: Interactive Agent - Sequential decision-making agents (RL, multi-agent, robots)
   - SI-A4: Non-Parametric Algorithm - Deterministic algorithms (ANN, BM25, signal processing)
 
-- **Step B: Benchmark Preparation (Inputs)** - Acquiring test inputs
+- **Step B: Benchmark Inputs Preparation** - Acquiring test inputs
   - SI-B1: Benchmark Data Preparation (Offline) - Loading predefined datasets
   - SI-B2: Simulation Environment Setup - 3D environments, physics simulation
   - SI-B3: Synthetic Data Generation - On-the-fly test generation
   - SI-B4: Production Traffic Sampling - Real-world inference traffic
 
-- **Step C: Benchmark Preparation (References)** - Pre-computing scoring materials
+- **Step C: Benchmark References Preparation** - Pre-computing scoring materials
   - SI-C1: Ground Truth Preparation - Human annotations, embedding indexes
   - SI-C2: Judge Preparation - Training/loading LLM judges and reward models
 
