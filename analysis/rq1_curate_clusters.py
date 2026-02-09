@@ -4,8 +4,8 @@ Script to aggregate clusters from the original 6-cluster Ward hierarchical clust
 into 4 new clusters based on manual analysis.
 
 New cluster mapping:
-- Cluster 1: Domain-Specific Offline Evaluators (merged from old clusters 1, 3, 4)
-- Cluster 2: Standardized Model Benchmark Suites (old cluster 6)
+- Cluster 1: Standardized Model Benchmark Suites (old cluster 6)
+- Cluster 2: Domain-Specific Offline Evaluators (merged from old clusters 1, 3, 4)
 - Cluster 3: LLM Application Evaluation Platforms (old cluster 5)
 - Cluster 4: Interactive Agent Simulators (old cluster 2)
 """
@@ -117,15 +117,15 @@ def main():
     new_cluster_definitions = [
         {
             "new_cluster_id": 1,
-            "old_cluster_ids": [1, 3, 4],
-            "cluster_name": "Domain-Specific Offline Evaluators",
-            "cluster_interpretation": "Specialized tools for measuring narrow capabilities—code generation, information retrieval, speech recognition, knowledge graphs, XAI, and system performance—on local hardware against predefined datasets using deterministic metrics. They require minimal infrastructure and lack LLM-as-judge, remote API, and interactive agent support, prioritizing reproducible, lightweight benchmarking of specific ML tasks."
-        },
-        {
-            "new_cluster_id": 2,
             "old_cluster_ids": [6],
             "cluster_name": "Standardized Model Benchmark Suites",
             "cluster_interpretation": "Comprehensive frameworks for assessing foundation model capabilities, safety, and multimodal understanding through curated benchmark datasets and leaderboard-oriented evaluation. They excel at scoring and metric aggregation across standardized test sets but lack interactive agent support, simulation environments, and production monitoring—serving as the primary toolkit for systematic model comparison and research benchmarking."
+        },
+        {
+            "new_cluster_id": 2,
+            "old_cluster_ids": [1, 3, 4],
+            "cluster_name": "Domain-Specific Offline Evaluators",
+            "cluster_interpretation": "Specialized tools for measuring narrow capabilities—code generation, information retrieval, speech recognition, knowledge graphs, XAI, and system performance—on local hardware against predefined datasets using deterministic metrics. They require minimal infrastructure and lack LLM-as-judge, remote API, and interactive agent support, prioritizing reproducible, lightweight benchmarking of specific ML tasks."
         },
         {
             "new_cluster_id": 3,
