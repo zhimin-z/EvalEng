@@ -258,7 +258,7 @@ if len(root_cause_results_df) > 0:
             else:
                 stage_count = 0
             pct = (stage_count / total * 100) if total > 0 else 0
-            cells.append(f"{stage_count} ({pct:.2f}\\%)")
+            cells.append(f"{pct:.2f}\\%")
 
         stage_table_lines.append(" & ".join(cells) + " \\\\")
 
@@ -324,7 +324,7 @@ if len(root_cause_results_df) > 0:
     step_table_lines.append("\\bottomrule")
     step_table_lines.append("\\end{tabular}")
     step_table_lines.append("\\end{table}")
-    
+
     print()
     print('\n'.join(step_table_lines))
     print()
