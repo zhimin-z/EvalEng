@@ -233,27 +233,56 @@ if len(root_cause_results_df) > 0:
     root_cause_output_path = "../figures/rq3_root_cause.pdf"
     plt.savefig(root_cause_output_path, format='pdf', bbox_inches='tight')
     
-    # Print LaTeX table for root cause breakdown
-    print("=" * 70)
-    print(f"ROOT CAUSE DISTRIBUTION BY STAGE ({root_cause_output_path})")
-    print("=" * 70)
-    print(f"Total issues with root cause labels: {len(root_cause_df)}")
+    # ================================================================
+    # Table 1: Stage-wise percentage for each root cause
+    # ================================================================
+    stage_table_lines = []
+    stage_table_lines.append("\\begin{table}[!t]")
+    stage_table_lines.append("\\centering")
+    stage_table_lines.append("\\caption{Root Cause Distribution Across Workflow Stages. Percentages denote each stage's share of the root cause's total issue count.}")
+    stage_table_lines.append("\\label{tab:root_cause_stages}")
+    stage_table_lines.append("\\begin{tabular}{lrrrrrr}")
+    stage_table_lines.append("\\toprule")
+    stage_table_lines.append("Root Cause & Total & S0 (\\%) & S1 (\\%) & S2 (\\%) & S3 (\\%) & S4 (\\%) \\\\")
+    stage_table_lines.append("\\midrule")
 
-    # Collect table rows: (RootCause, WorkflowStep, Count, Proportion)
-    table_rows = []
+    numeric_stage_keys = [0, 1, 2, 3, 4]
+
+    for root_cause in sorted_root_cause_labels:
+        total = root_cause_totals[root_cause]
+        cells = [root_cause, str(total)]
+
+        for stage_key in numeric_stage_keys:
+            if stage_key in root_cause_hierarchy[root_cause]:
+                stage_count = sum(root_cause_hierarchy[root_cause][stage_key].values())
+            else:
+                stage_count = 0
+            pct = (stage_count / total * 100) if total > 0 else 0
+            cells.append(f"{stage_count} ({pct:.2f}\\%)")
+
+        stage_table_lines.append(" & ".join(cells) + " \\\\")
+
+    stage_table_lines.append("\\bottomrule")
+    stage_table_lines.append("\\end{tabular}")
+    stage_table_lines.append("\\end{table}")
+
+    print()
+    print('\n'.join(stage_table_lines))
+    print()
+
+    # ================================================================
+    # Table 2: Step-wise (strategy-wise) percentage for each root cause
+    # ================================================================
+    step_table_rows = []
 
     for root_cause in sorted_root_cause_labels:
         total = root_cause_totals[root_cause]
 
-        # Count issues with no stage specified (general root cause level)
         no_stage_count = sum(root_cause_hierarchy[root_cause].get(None, {}).values())
-
-        # Add row if there are issues at root cause level but no stage
         if no_stage_count > 0:
             no_stage_pct = (no_stage_count / total * 100) if total > 0 else 0
-            table_rows.append((root_cause, "General", no_stage_count, no_stage_pct))
+            step_table_rows.append((root_cause, "General", no_stage_count, no_stage_pct))
 
-        # Iterate through stages for this root cause
         for stage in stage_order_for_root_causes:
             if stage not in root_cause_hierarchy[root_cause]:
                 continue
@@ -261,20 +290,14 @@ if len(root_cause_results_df) > 0:
             if stage_total == 0:
                 continue
 
-            # Get steps for this stage
             steps_dict = root_cause_hierarchy[root_cause][stage]
 
-            # Count issues with no step specified (general stage level)
             no_step_count = steps_dict.get(None, 0)
-
-            # Add row if there are issues at stage level but no step
             if no_step_count > 0:
                 no_step_pct = (no_step_count / stage_total * 100) if stage_total > 0 else 0
-                table_rows.append((root_cause, f"S{stage} (general)", no_step_count, no_step_pct))
+                step_table_rows.append((root_cause, f"S{stage} (general)", no_step_count, no_step_pct))
 
-            # Get specified steps for this stage (excluding None)
             steps_with_counts = [(step, steps_dict[step]) for step in steps_dict.keys() if step is not None]
-            # Sort steps
             steps_with_counts = sorted(steps_with_counts, key=lambda x: (
                 x[0] is None if not isinstance(x[0], str) else False,
                 x[0] if isinstance(x[0], str) else str(x[0])
@@ -282,22 +305,28 @@ if len(root_cause_results_df) > 0:
 
             for step, step_count in steps_with_counts:
                 step_pct = (step_count / stage_total * 100) if stage_total > 0 else 0
-                table_rows.append((root_cause, f"S{stage}-{step}", step_count, step_pct))
+                step_table_rows.append((root_cause, f"S{stage}-{step}", step_count, step_pct))
 
-    # Print LaTeX table
-    print("\\begin{table}[!t]")
-    print("\\centering")
-    print("\\caption{Root Cause Distribution Across Workflow Stages and Steps. ``Local \\%'' denotes the percentage relative to the parent workflow component. Unlisted workflow steps indicate no issues exist.}")
-    print("\\label{tab:root_cause_breakdown}")
-    print("\\begin{tabular}{llrr}")
-    print("\\toprule")
-    print("Root Cause & Workflow Step & Count & Local \\% \\\\")
-    print("\\midrule")
-    table_rows_sorted = sorted(table_rows, key=lambda row: row[0])
-    for root_cause, workflow_step, count, proportion in table_rows_sorted:
-        print(f"{root_cause} & {workflow_step} & {count} & {proportion:.1f}\\% \\\\")
-    print("\\bottomrule")
-    print("\\end{tabular}")
-    print("\\end{table}")
+    step_table_lines = []
+    step_table_lines.append("\\begin{table}[!t]")
+    step_table_lines.append("\\centering")
+    step_table_lines.append("\\caption{Root Cause Distribution Across Workflow Steps. ``Local \\%'' denotes the percentage relative to the parent stage. Unlisted workflow steps indicate no issues exist.}")
+    step_table_lines.append("\\label{tab:root_cause_breakdown}")
+    step_table_lines.append("\\begin{tabular}{llrr}")
+    step_table_lines.append("\\toprule")
+    step_table_lines.append("Root Cause & Workflow Step & Count & Local \\% \\\\")
+    step_table_lines.append("\\midrule")
+
+    step_table_rows_sorted = sorted(step_table_rows, key=lambda row: row[0])
+    for root_cause, workflow_step, count, proportion in step_table_rows_sorted:
+        step_table_lines.append(f"{root_cause} & {workflow_step} & {count} & {proportion:.1f}\\% \\\\")
+
+    step_table_lines.append("\\bottomrule")
+    step_table_lines.append("\\end{tabular}")
+    step_table_lines.append("\\end{table}")
+    
+    print()
+    print('\n'.join(step_table_lines))
+    print()
 
     plt.close()
