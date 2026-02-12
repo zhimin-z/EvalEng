@@ -93,6 +93,15 @@ if len(root_cause_results_df) > 0:
         for rc in root_cause_totals.keys()
     }
 
+    # Print ratio of total issues for each root cause
+    print(f"Total issues with root cause label: {total_root_cause_issues}")
+    print()
+    for rc in sorted_root_cause_labels:
+        count = root_cause_totals[rc]
+        pct = root_cause_percentages[rc]
+        print(f"  {rc}: {count} ({pct:.1f}%)")
+    print()
+
     # Get all unique stages and steps across root causes (excluding None for visualization)
     all_stages_in_root_causes = set()
     all_steps_in_root_causes = set()
@@ -249,8 +258,8 @@ if len(root_cause_results_df) > 0:
     stage_table_lines = []
     stage_table_lines.append("\\begin{table}[!t]")
     stage_table_lines.append("\\centering")
-    stage_table_lines.append("\\caption{Root Cause Distribution Across Workflow Stages. "
-                             "Percentages denote each stage's share of the root cause's total issue count.}")
+    stage_table_lines.append("\\caption{Root cause distribution across workflow stages (0--4). "
+                             "Each cell shows the percentage of issues in that stage relative to the root cause's total.}")
     stage_table_lines.append("\\label{tab:root_cause_stages}")
 
     stage_headers = [f"Stage {stage_to_label[k]}" for k in numeric_stage_keys]
@@ -363,8 +372,8 @@ if len(root_cause_results_df) > 0:
     latex_lines = []
     latex_lines.append("\\begin{table}[!t]")
     latex_lines.append("\\centering")
-    latex_lines.append("\\caption{Root Cause Distribution Across Workflow Steps. "
-                       "Percentages denote each step's share of the root cause's total issue count.}")
+    latex_lines.append("\\caption{Root cause distribution across workflow stage-step combinations. "
+                       "Each cell shows the percentage of issues in that stage-step relative to the root cause's total.}")
     latex_lines.append("\\label{tab:root_cause_steps}")
 
     col_spec = "l" + "r" * len(sorted_combos)

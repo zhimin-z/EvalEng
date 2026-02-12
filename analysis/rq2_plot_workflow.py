@@ -329,7 +329,7 @@ if len(workflow_df) > 0:
         # Print LaTeX table
         print("\\begin{table}[!t]")
         print("\\centering")
-        print("\\caption{Issue Distribution Across Workflow Stages, Steps, and Strategies. ``Local \\%'' denotes the percentage relative to the parent workflow component. Unlisted workflow components indicate no issues exist.}")
+        print("\\caption{Issue distribution across workflow stages, steps, and strategies. ``Local \\%'' denotes the percentage relative to the parent workflow component. Unlisted workflow components indicate no issues exist.}")
         print("\\label{tab:workflow_breakdown}")
         print("\\begin{tabular}{lrr}")
         print("\\toprule")
