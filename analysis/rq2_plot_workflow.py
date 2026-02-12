@@ -19,34 +19,13 @@ def convert_to_int_if_numeric(val):
     except (ValueError, TypeError):
         return val
 
-# Helper function to convert roman numerals to integers for sorting
-def roman_to_int(s):
-    roman_values = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
-    if not isinstance(s, str):
-        return None
-    total = 0
-    prev_value = 0
-    for char in reversed(s.upper()):
-        if char not in roman_values:
-            return None
-        value = roman_values[char]
-        if value < prev_value:
-            total -= value
-        else:
-            total += value
-        prev_value = value
-    return total
-
-# Helper function for sorting stages
+# Helper function for sorting stages (numeric 0-4)
 def stage_sort_key(x):
     if x is None:
-        return (2, 0)  # Put unspecified at the end
+        return (1, 0)  # Put unspecified at the end
     if isinstance(x, (int, float)):
-        return (0, x)  # Numeric stages first, sorted by value
-    roman_val = roman_to_int(x)
-    if roman_val is not None:
-        return (1, roman_val)  # Roman numerals second, sorted by value
-    return (2, 0)  # Other strings at the end
+        return (0, x)  # Numeric stages, sorted by value
+    return (1, 0)  # Other values at the end
 
 # Helper function for sorting steps
 def step_sort_key(x):
@@ -84,7 +63,7 @@ if len(workflow_df) > 0:
         strategy = None if pd.isna(row['strategy']) else row['strategy']
         hierarchy[stage][step][strategy] += 1
 
-    # Sort stages (handles numeric, roman numerals, and "NA")
+    # Sort stages (numeric 0-4, with None at end)
     stage_order = sorted(hierarchy.keys(), key=stage_sort_key)
 
     # Calculate total issues and stage percentages
