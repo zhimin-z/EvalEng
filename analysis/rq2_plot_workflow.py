@@ -293,6 +293,10 @@ if len(workflow_df) > 0:
             stage_count = len(stage_df)
             stage_label = str(int(stage) if isinstance(stage, float) else stage)
 
+            # Add stage summary row with percentage relative to total issues
+            stage_pct = (stage_count / total_issues * 100) if total_issues > 0 else 0
+            table_rows.append((f"S{stage_label}", stage_count, stage_pct))
+
             # Count issues with no step specified (general stage level)
             no_step_count = len(stage_df[stage_df['step'].isna()])
 
@@ -329,7 +333,7 @@ if len(workflow_df) > 0:
         # Print LaTeX table
         print("\\begin{table}[!t]")
         print("\\centering")
-        print("\\caption{Issue distribution across workflow stages, steps, and strategies. ``Local \\%'' denotes the percentage relative to the parent workflow component. Unlisted workflow components indicate no issues exist.}")
+        print("\\caption{Issue distribution across workflow stages, steps, and strategies. ``Local \\%'' denotes the percentage relative to the parent workflow component. Stage rows show percentage relative to total issues. Unlisted workflow components indicate no issues exist.}")
         print("\\label{tab:workflow_breakdown}")
         print("\\begin{tabular}{lrr}")
         print("\\toprule")

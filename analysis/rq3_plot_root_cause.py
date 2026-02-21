@@ -357,7 +357,6 @@ if len(root_cause_results_df) > 0:
             crosstab.loc[root_cause, col] = count
 
     # Generate LaTeX table with percentages (each cell = step count / root cause total)
-    # Column headers use \newline for line breaks in LaTeX
     def combo_to_latex_header(combo):
         stage, step = combo
         if stage is None:
@@ -365,7 +364,7 @@ if len(root_cause_results_df) > 0:
         slabel = stage_to_label.get(stage, str(stage))
         if step is None:
             return f"Stage {slabel}"
-        return f"Stage {slabel}\\newline Step {step}"
+        return f"Stage {slabel} Step {step}"
 
     latex_col_headers = [combo_to_latex_header(c) for c in sorted_combos]
 
