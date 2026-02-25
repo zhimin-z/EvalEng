@@ -130,110 +130,99 @@ if len(root_cause_results_df) > 0:
         x if isinstance(x, str) and x is not None else str(x) if x is not None else ''  # Alphabetically sort the rest
     ))
 
-    # Create the plot
-    fig, ax = plt.subplots(figsize=(16, 8))
+    # Build per-(stage, step) counts for each root cause (for the plot)
+    plot_stage_step_counts = defaultdict(lambda: defaultdict(int))
+    all_plot_combos = set()
 
-    # Prepare data for grouped and stacked bars
+    for _, row in root_cause_df.iterrows():
+        root_cause = row['root_cause_label']
+        stage = None if pd.isna(row['stage']) else row['stage']
+        step = None if pd.isna(row['step']) else row['step']
+        combo = (stage, step)
+        plot_stage_step_counts[root_cause][combo] += 1
+        all_plot_combos.add(combo)
+
+    # Sort combos: by stage then step, General (None, None) last
+    def plot_combo_sort_key(combo):
+        stage, step = combo
+        if stage is None:
+            return (999, 1, '')
+        stage_rank = stage
+        if step is None:
+            return (stage_rank, 1, '')
+        return (stage_rank, 0, step)
+
+    sorted_plot_combos = sorted(all_plot_combos, key=plot_combo_sort_key)
+
+    # Generate x-axis labels like "Stage 0\nStep A", "General"
+    def combo_to_short_label(combo):
+        stage, step = combo
+        if stage is None:
+            return "General"
+        slabel = str(int(stage)) if isinstance(stage, (int, float)) else str(stage)
+        if step is None:
+            return f"Stage {slabel}"
+        return f"Stage {slabel}\nStep {step}"
+
+    combo_labels = [combo_to_short_label(c) for c in sorted_plot_combos]
+
+    # Create the plot — scale figure width so each group is wide enough for bars + annotations
     num_root_causes = len(sorted_root_cause_labels)
-    num_stages = len(stage_order_for_root_causes)
-    num_steps = len(step_order)
-    bar_width = 0.6
+    num_combos = len(sorted_plot_combos)
 
-    # Use different color map for steps (legend will show steps)
-    step_colors = plt.cm.Set3(np.linspace(0, 1, num_steps))
+    # Each group needs enough width for num_root_causes bars; scale figure accordingly
+    group_width_inches = max(1.8, num_root_causes * 0.45)
+    fig_width = max(14, num_combos * group_width_inches)
+    fig_height = 8
+    fig, ax = plt.subplots(figsize=(fig_width, fig_height))
 
-    # Track positions for each root cause (for top labels)
-    root_cause_positions = defaultdict(list)
-    x_positions = []
-    x_labels = []
-    current_x = 0
-    root_cause_boundaries = []
+    # Bars fill almost all of the unit spacing; minimal inter-group gap
+    group_span = 0.95
+    bar_width = group_span / num_root_causes
 
-    # Plot grouped bars with stacking by steps
+    # Color map for root causes
+    rc_colors = plt.cm.tab10(np.linspace(0, 1, max(num_root_causes, 1)))
+
+    x_base = np.arange(num_combos)
+
     for rc_idx, root_cause in enumerate(sorted_root_cause_labels):
-        for stage_idx, stage in enumerate(stage_order_for_root_causes):
-            x_positions.append(current_x)
-            x_labels.append(str(stage))
-            root_cause_positions[root_cause].append(current_x)
+        counts = [plot_stage_step_counts[root_cause].get(combo, 0) for combo in sorted_plot_combos]
+        offset = (rc_idx - (num_root_causes - 1) / 2) * bar_width
+        bars = ax.bar(x_base + offset, counts, bar_width,
+                      label=root_cause, color=rc_colors[rc_idx],
+                      edgecolor='white', linewidth=0.5)
 
-            # Stack bars by steps
-            bottom = 0
+        # Place annotation directly on top of each bar
+        for bar, count in zip(bars, counts):
+            if count > 0:
+                ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height(),
+                        str(int(count)), ha='center', va='bottom',
+                        fontsize=8, fontweight='bold')
 
-            for step_idx, step in enumerate(step_order):
-                count = root_cause_hierarchy[root_cause].get(stage, {}).get(step, 0)
+    # Set labels (no x-axis title)
+    ax.set_ylabel('Number of Issues', fontsize=14, fontweight='bold')
+    ax.set_xticks(x_base)
+    ax.set_xticklabels(combo_labels, ha='center', fontsize=12, fontweight='bold')
+    ax.tick_params(axis='y', labelsize=12)
 
-                # Only add to legend once (for the first root cause and first stage)
-                # Convert None to "NA" for legend display (steps stay as-is, not converted to int)
-                legend_label = "NA" if step is None else step
-                label = legend_label if rc_idx == 0 and stage_idx == 0 else ""
+    # Set tight x-axis limits
+    ax.set_xlim(-0.6, num_combos - 0.4)
 
-                bars = ax.bar(current_x, count, bar_width, bottom=bottom,
-                             label=label if rc_idx == 0 and stage_idx == 0 else "",
-                             color=step_colors[step_idx], edgecolor='white', linewidth=0.5)
+    # Add vertical dashed lines between groups to separate each stage-step combo
+    for i in range(1, num_combos):
+        ax.axvline(x=i - 0.5, color='black', linewidth=1.2, linestyle='--', alpha=0.7)
 
-                bottom += count
-
-            # Add total count labels on top of each stacked bar
-            if bottom > 0:
-                ax.text(current_x, bottom, str(int(bottom)), ha='center', va='bottom',
-                       fontsize=9, fontweight='bold')
-
-            current_x += 1
-
-        # Add boundary after each root cause (except the last one)
-        if rc_idx < num_root_causes - 1:
-            root_cause_boundaries.append(current_x - 0.5)
-
-    # Add vertical lines to separate root causes
-    for boundary in root_cause_boundaries:
-        ax.axvline(x=boundary, color='black', linewidth=2, linestyle='--', alpha=0.5)
-
-    # Set labels and title
-    ax.set_xlabel('Stages (grouped by Root Cause)', fontsize=12, fontweight='bold')
-    ax.set_ylabel('Number of Issues', fontsize=12, fontweight='bold')
-    ax.set_xticks(x_positions)
-    ax.set_xticklabels(x_labels, ha='center', fontsize=9)
-
-    # Set tight x-axis limits to eliminate margin space
-    ax.set_xlim(-0.5, current_x - 0.5)
-
-    # Add root cause labels as text annotations near the top
-    for idx, root_cause in enumerate(sorted_root_cause_labels):
-        positions = root_cause_positions[root_cause]
-        if positions:
-            # Center based on boundaries for margin groups, use actual bar positions
-            if idx == 0:
-                # First group: use min position as left boundary
-                left_boundary = min(positions) - 0.5
-                right_boundary = root_cause_boundaries[0] if root_cause_boundaries else max(positions) + 0.5
-            elif idx == len(sorted_root_cause_labels) - 1:
-                # Last group: use max position as right boundary
-                left_boundary = root_cause_boundaries[-1]
-                right_boundary = max(positions) + 0.5
-            else:
-                # Middle groups: use adjacent boundaries
-                left_boundary = root_cause_boundaries[idx - 1]
-                right_boundary = root_cause_boundaries[idx]
-            center_x = (left_boundary + right_boundary) / 2
-            # Split label smartly, keeping short consecutive words together, with percentage
-            root_cause_percentage = root_cause_percentages[root_cause]
-            root_cause_with_percentage = f"{root_cause} ({root_cause_percentage:.2f}%)"
-            display_label = smart_split_label(root_cause_with_percentage)
-            ax.text(center_x, 0.97, display_label, transform=ax.get_xaxis_transform(),
-                   ha='center', va='top', fontsize=9, fontweight='bold',
-                   bbox=dict(boxstyle='round,pad=0.5', facecolor='lightgray', alpha=0.7))
-
-    # Add legend (showing steps now instead of stages)
-    ax.legend(title='Step', bbox_to_anchor=(0.93, 0.85), loc='upper left',
-             fontsize=12, title_fontsize=13, markerscale=1.5)
+    # Add legend for root causes — placed inside the chart (upper-right area)
+    ax.legend(title='Root Cause', loc='upper right',
+              fontsize=11, title_fontsize=12)
 
     # Add grid
     ax.yaxis.grid(True, linestyle='--', alpha=0.3)
     ax.set_axisbelow(True)
 
-    # Add padding to y-axis limit to make room for labels above bars
+    # Set y-axis upper limit just above the tallest bar
     y_max = ax.get_ylim()[1]
-    ax.set_ylim(0, y_max * 1.1)
+    ax.set_ylim(0, y_max * 1.08)
 
     # Adjust layout
     plt.tight_layout()
