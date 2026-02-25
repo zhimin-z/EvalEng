@@ -134,7 +134,7 @@ if len(root_cause_results_df) > 0:
         x if isinstance(x, str) and x is not None else str(x) if x is not None else ''  # Alphabetically sort the rest
     ))
 
-    # Build per-(stage, step) counts for each root cause (for the plot)
+    # Build per-(stage, step) counts for each root cause (for the heatmap)
     plot_stage_step_counts = defaultdict(lambda: defaultdict(int))
     all_plot_combos = set()
 
@@ -158,7 +158,7 @@ if len(root_cause_results_df) > 0:
 
     sorted_plot_combos = sorted(all_plot_combos, key=plot_combo_sort_key)
 
-    # Generate x-axis labels like "Stage 0\nStep A", "General"
+    # Generate column labels like "Stage 0\nStep A", "General"
     def combo_to_short_label(combo):
         stage, step = combo
         if stage is None:
@@ -170,63 +170,51 @@ if len(root_cause_results_df) > 0:
 
     combo_labels = [combo_to_short_label(c) for c in sorted_plot_combos]
 
-    # Create the plot — scale figure width so each group is wide enough for bars + annotations
+    # Build the heatmap matrix: rows = root causes, columns = stage-step combos
     num_root_causes = len(sorted_root_cause_labels)
     num_combos = len(sorted_plot_combos)
-
-    # Each group needs enough width for num_root_causes bars; scale figure accordingly
-    group_width_inches = max(1.8, num_root_causes * 0.45)
-    fig_width = max(14, num_combos * group_width_inches)
-    fig_height = 8
-    fig, ax = plt.subplots(figsize=(fig_width, fig_height))
-
-    # Bars fill almost all of the unit spacing; minimal inter-group gap
-    group_span = 0.95
-    bar_width = group_span / num_root_causes
-
-    # Color map for root causes
-    rc_colors = plt.cm.tab10(np.linspace(0, 1, max(num_root_causes, 1)))
-
-    x_base = np.arange(num_combos)
+    heatmap_data = np.zeros((num_root_causes, num_combos), dtype=int)
 
     for rc_idx, root_cause in enumerate(sorted_root_cause_labels):
-        counts = [plot_stage_step_counts[root_cause].get(combo, 0) for combo in sorted_plot_combos]
-        offset = (rc_idx - (num_root_causes - 1) / 2) * bar_width
-        bars = ax.bar(x_base + offset, counts, bar_width,
-                      label=root_cause, color=rc_colors[rc_idx],
-                      edgecolor='white', linewidth=0.5)
+        for combo_idx, combo in enumerate(sorted_plot_combos):
+            heatmap_data[rc_idx, combo_idx] = plot_stage_step_counts[root_cause].get(combo, 0)
 
-        # Place annotation directly on top of each bar
-        for bar, count in zip(bars, counts):
-            if count > 0:
-                ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height(),
-                        str(int(count)), ha='center', va='bottom',
-                        fontsize=8, fontweight='bold')
+    # Create the heatmap
+    fig_width = max(14, num_combos * 1.2)
+    fig_height = max(6, num_root_causes * 0.7)
+    fig, ax = plt.subplots(figsize=(fig_width, fig_height))
 
-    # Set labels (no x-axis title)
-    ax.set_ylabel('Number of Issues', fontsize=14, fontweight='bold')
-    ax.set_xticks(x_base)
-    ax.set_xticklabels(combo_labels, ha='center', fontsize=12, fontweight='bold')
-    ax.tick_params(axis='y', labelsize=12)
+    im = ax.imshow(heatmap_data, cmap='Blues', aspect='auto')
 
-    # Set tight x-axis limits
-    ax.set_xlim(-0.6, num_combos - 0.4)
+    # Add colorbar
+    cbar = fig.colorbar(im, ax=ax, shrink=0.8, pad=0.02)
+    cbar.set_label('Number of Issues', fontsize=12, fontweight='bold')
+    cbar.ax.tick_params(labelsize=11)
 
-    # Add vertical dashed lines between groups to separate each stage-step combo
-    for i in range(1, num_combos):
-        ax.axvline(x=i - 0.5, color='black', linewidth=1.2, linestyle='--', alpha=0.7)
+    # Annotate each cell with its count
+    for i in range(num_root_causes):
+        for j in range(num_combos):
+            val = heatmap_data[i, j]
+            # Use white text on dark cells, black on light cells
+            text_color = 'white' if val > heatmap_data.max() * 0.6 else 'black'
+            ax.text(j, i, str(val), ha='center', va='center',
+                    fontsize=10, fontweight='bold', color=text_color)
 
-    # Add legend for root causes — placed inside the chart (upper-right area)
-    ax.legend(title='Root Cause', loc='upper right',
-              fontsize=11, title_fontsize=12)
+    # Set tick labels
+    ax.set_xticks(np.arange(num_combos))
+    ax.set_xticklabels(combo_labels, ha='center', fontsize=11, fontweight='bold')
+    ax.set_yticks(np.arange(num_root_causes))
+    ax.set_yticklabels(sorted_root_cause_labels, fontsize=11, fontweight='bold')
 
-    # Add grid
-    ax.yaxis.grid(True, linestyle='--', alpha=0.3)
-    ax.set_axisbelow(True)
+    # Move x-axis labels to top
+    ax.xaxis.set_ticks_position('top')
+    ax.xaxis.set_label_position('top')
 
-    # Set y-axis upper limit just above the tallest bar
-    y_max = ax.get_ylim()[1]
-    ax.set_ylim(0, y_max * 1.08)
+    # Add grid lines to separate cells
+    for i in range(num_root_causes + 1):
+        ax.axhline(y=i - 0.5, color='white', linewidth=1.5)
+    for j in range(num_combos + 1):
+        ax.axvline(x=j - 0.5, color='white', linewidth=1.5)
 
     # Adjust layout
     plt.tight_layout()
