@@ -84,7 +84,11 @@ if len(root_cause_results_df) > 0:
         rc: sum(sum(steps.values()) for steps in stages.values())
         for rc, stages in root_cause_hierarchy.items()
     }
-    sorted_root_cause_labels = sorted(root_cause_totals.keys(), key=lambda x: root_cause_totals[x], reverse=True)
+    # Sort alphabetically, but put "Others" at the very end
+    sorted_root_cause_labels = sorted(
+        root_cause_totals.keys(),
+        key=lambda x: (x.lower() == 'others', x.lower())
+    )
 
     # Calculate root cause percentages
     total_root_cause_issues = len(root_cause_df)
