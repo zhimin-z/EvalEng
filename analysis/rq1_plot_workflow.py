@@ -66,7 +66,7 @@ stages = [
                 ]
             },
             {
-                'name': 'Step B:\nBenchmark Inputs Preparation (53)',
+                'name': 'Step B:\nBenchmark Inputs\n Preparation (53)',
                 'strategies': [
                     'Strategy 1:\nBenchmark Data Preparation (51)\n(Offline/Static)',
                     'Strategy 2:\nSynthetic Data Generation (23)\n(Generative)',
@@ -75,7 +75,7 @@ stages = [
                 ]
             },
             {
-                'name': 'Step C:\nBenchmark References Preparation (53)',
+                'name': 'Step C:\nBenchmark References\n Preparation (53)',
                 'strategies': [
                     'Strategy 1:\nGround Truth Preparation (51)\n(Annotations/Indexes)',
                     'Strategy 2:\nJudge Preparation (34)\n(Model-based evaluators)'
