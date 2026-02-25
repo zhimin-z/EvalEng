@@ -191,13 +191,16 @@ if len(root_cause_results_df) > 0:
     cbar.set_label('Number of Issues', fontsize=12, fontweight='bold')
     cbar.ax.tick_params(labelsize=11)
 
-    # Annotate each cell with its count
+    # Annotate each cell with count and ratio (count / root cause total)
     for i in range(num_root_causes):
+        rc_total = root_cause_totals[sorted_root_cause_labels[i]]
         for j in range(num_combos):
             val = heatmap_data[i, j]
+            ratio = val / rc_total * 100 if rc_total > 0 else 0
+            label = f"{val}\n({ratio:.1f}%)"
             # Use white text on dark cells, black on light cells
             text_color = 'white' if val > heatmap_data.max() * 0.6 else 'black'
-            ax.text(j, i, str(val), ha='center', va='center',
+            ax.text(j, i, label, ha='center', va='center',
                     fontsize=10, fontweight='bold', color=text_color)
 
     # Set tick labels
