@@ -1,5 +1,5 @@
 keyword phrase,query link,# retrieved repos,qualified evaluation harnesses
-benchmark environment,https://github.com/search?q=benchmark+environment+stars%3A%3E500&type=repositories&ref=advsearch&s=updated&o=desc,7,"https://github.com/HumanCompatibleAI/overcooked_ai,https://github.com/stepjam/RLBench,https://github.com/Farama-Foundation/Metaworld"
+benchmark environment,https://github.com/search?q=benchmark+environment+stars%3A%3E500&type=repositories&ref=advsearch&s=updated&o=desc,7,"https://github.com/HumanCompatibleAI/overcooked_ai,https://github.com/stepjam/RLBench,https://github.com/Farama-Foundation/Meta-World"
 benchmark framework,https://github.com/search?q=benchmark+framework+stars%3A%3E500&type=repositories&ref=advsearch&s=updated&o=desc,44,"https://github.com/modelscope/evalscope,https://github.com/microsoft/promptbench,https://github.com/Picovoice/speech-to-text-benchmark,https://github.com/openai/evals"
 benchmark library,https://github.com/search?q=benchmark+library+stars%3A%3E500&type=repositories&ref=advsearch&s=updated&o=desc,31,"https://github.com/erikbern/ann-benchmarks,https://github.com/ray-project/llmperf"
 benchmark platform,https://github.com/search?q=benchmark+platform+stars%3A%3E500&type=repositories&ref=advsearch&s=updated&o=desc,11,https://github.com/open-compass/opencompass
