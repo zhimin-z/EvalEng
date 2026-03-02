@@ -108,7 +108,7 @@ cluster_labels = [smart_split_label(name) for name in sorted_cluster_names]
 
 # Set tick labels: x = root causes, y = clusters
 ax.set_xticks(np.arange(num_rc))
-rc_labels = [smart_split_label(rc) for rc in sorted_root_causes]
+rc_labels = [smart_split_label(rc, max_line_width=12) for rc in sorted_root_causes]
 ax.set_xticklabels(rc_labels, ha='center', fontsize=13, fontweight='bold')
 ax.set_yticks(np.arange(num_cl))
 ax.set_yticklabels(cluster_labels, fontsize=13, fontweight='bold')
