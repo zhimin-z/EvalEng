@@ -70,21 +70,25 @@ fig_width = max(12, num_rc * 2.2)
 fig_height = max(4, num_cl * 1.4)
 fig, ax = plt.subplots(figsize=(fig_width, fig_height))
 
-im = ax.imshow(heatmap_data, cmap='Blues', aspect='auto')
+# Row-normalize: percentage of each root cause within its archetype
+row_totals_heat = heatmap_data.sum(axis=1, keepdims=True)  # (num_cl, 1)
+heatmap_pct = np.where(row_totals_heat > 0, heatmap_data / row_totals_heat * 100, 0.0)
+
+im = ax.imshow(heatmap_pct, cmap='Blues', aspect='auto', vmin=0, vmax=100)
 
 # Add colorbar
 cbar = fig.colorbar(im, ax=ax, shrink=0.8, pad=0.02)
-cbar.set_label('Number of Issues', fontsize=14, fontweight='bold')
+cbar.set_label('% within Archetype', fontsize=14, fontweight='bold')
 cbar.ax.tick_params(labelsize=13)
 
-# Annotate each cell with count and percentage (count / column total = per root cause)
-col_totals = heatmap_data.sum(axis=0)  # sum over clusters for each root cause column
+# Annotate each cell with count and row-normalized percentage
+col_totals = heatmap_data.sum(axis=0)  # kept for LaTeX tables below
 for i in range(num_cl):
     for j in range(num_rc):
         val = heatmap_data[i, j]
-        ratio = val / col_totals[j] * 100 if col_totals[j] > 0 else 0
+        ratio = heatmap_pct[i, j]
         label = f"{val}\n({ratio:.1f}%)"
-        text_color = 'white' if val > heatmap_data.max() * 0.6 else 'black'
+        text_color = 'white' if ratio > 60 else 'black'
         ax.text(j, i, label, ha='center', va='center',
                 fontsize=13, fontweight='bold', color=text_color)
 
