@@ -134,8 +134,8 @@ plt.savefig(output_path, format='pdf', bbox_inches='tight')
 latex_lines = []
 latex_lines.append("\\begin{table}[!t]")
 latex_lines.append("\\centering")
-latex_lines.append("\\caption{Root cause distribution across evaluation harness archetypes. "
-                    "Each cell shows the percentage of issues in that archetype relative to the root cause's total.}")
+latex_lines.append("\\caption{Root cause distribution across different harness archetypes. "
+                    "Each cell reports the absolute number of issues, while the percentage indicates the relative proportion of each root cause within the corresponding archetype.}")
 latex_lines.append("\\label{tab:root_cause_archetype}")
 
 col_spec = "l" + "r" * num_rc

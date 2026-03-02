@@ -79,7 +79,7 @@
         "LLMPerf",
         "OGB",
         "Ollama Grid Search",
-        "Speech-to-Text Benchmark",
+        "STT Benchmark",
         "PyKEEN",
         "Quantus",
         "TorchBench",

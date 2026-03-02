@@ -13,7 +13,7 @@
         "GuideLLM",
         "LLMPerf",
         "Ollama Grid Search",
-        "Speech-to-Text Benchmark",
+        "STT Benchmark",
         "TorchBench"
       ],
       "size": 9,

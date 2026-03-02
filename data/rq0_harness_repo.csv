@@ -48,7 +48,7 @@ RewardBench,https://github.com/allenai/reward-bench,2023-12-23 16:20:07+00:00,Py
 RLBench,https://github.com/stepjam/RLBench,2019-09-26 21:05:51+00:00,Python,1658,297,191,16
 Rogue,https://github.com/qualifire-dev/rogue,2025-06-05 21:16:31+00:00,Python,771,114,200,5
 SimplerEnv,https://github.com/simpler-env/SimplerEnv,2024-03-23 18:52:04+00:00,Python,919,164,159,9
-Speech-to-Text Benchmark,https://github.com/Picovoice/speech-to-text-benchmark,2018-08-04 02:52:01+00:00,Python,677,73,23,4
+STT Benchmark,https://github.com/Picovoice/speech-to-text-benchmark,2018-08-04 02:52:01+00:00,Python,677,73,23,4
 TFMA,https://github.com/tensorflow/model-analysis,2018-03-23 19:08:49+00:00,Python,1268,282,1570,55
 TorchBench,https://github.com/pytorch/benchmark,2017-05-26 19:21:12+00:00,Python,1003,330,2433,207
 TruLens,https://github.com/truera/trulens,2020-11-02 21:56:45+00:00,Python,3025,242,1661,61
