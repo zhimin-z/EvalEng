@@ -224,7 +224,7 @@ if len(root_cause_results_df) > 0:
     plt.tight_layout()
 
     # Save figure
-    root_cause_output_path = "../figures/rq2_root_cause.pdf"
+    root_cause_output_path = "../figures/rq3_root_cause.pdf"
     plt.savefig(root_cause_output_path, format='pdf', bbox_inches='tight')
     
     # Map numeric stages to display labels
