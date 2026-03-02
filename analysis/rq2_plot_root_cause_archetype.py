@@ -130,19 +130,21 @@ plt.tight_layout()
 output_path = Path(__file__).parent.parent / "figures" / "rq2_root_cause_archetype.pdf"
 plt.savefig(output_path, format='pdf', bbox_inches='tight')
 
-# ── LaTeX table: Root Cause x Cluster ────────────────────────────────────────
+# ── LaTeX tables: Root Cause x Cluster ──────────────────────────────────────
+
+row_totals = heatmap_data.sum(axis=1)  # total issues per archetype (cluster)
+col_spec = "l" + "r" * num_rc
+header_cells = ["Archetype"] + sorted_root_causes
+
+# Table 1: row-normalized (proportion of each root cause within its archetype)
 latex_lines = []
 latex_lines.append("\\begin{table}[!t]")
 latex_lines.append("\\centering")
 latex_lines.append("\\caption{Root cause distribution across different harness archetypes. "
-                    "Each cell reports the absolute number of issues, while the percentage indicates the relative proportion of each root cause within the corresponding archetype.}")
+                    "The percentage indicates the relative proportion of each root cause within the corresponding archetype.}")
 latex_lines.append("\\label{tab:root_cause_archetype}")
-
-col_spec = "l" + "r" * num_rc
 latex_lines.append(f"\\begin{{tabular}}{{{col_spec}}}")
 latex_lines.append("\\toprule")
-
-header_cells = ["Archetype"] + sorted_root_causes
 latex_lines.append(" & ".join(header_cells) + " \\\\")
 latex_lines.append("\\midrule")
 
@@ -150,9 +152,9 @@ for cl_idx, cid in enumerate(sorted_cluster_ids):
     cells = [sorted_cluster_names[cl_idx]]
     for rc_idx, rc in enumerate(sorted_root_causes):
         count = heatmap_data[cl_idx, rc_idx]
-        col_total = col_totals[rc_idx]
-        if count > 0 and col_total > 0:
-            pct = count / col_total * 100
+        row_total = row_totals[cl_idx]
+        if count > 0 and row_total > 0:
+            pct = count / row_total * 100
             cells.append(f"{pct:.1f}\\%")
         else:
             cells.append("")
@@ -164,6 +166,38 @@ latex_lines.append("\\end{table}")
 
 print()
 print('\n'.join(latex_lines))
+print()
+
+# Table 2: column-normalized (proportion of each archetype within its root cause)
+latex_col_lines = []
+latex_col_lines.append("\\begin{table}[!t]")
+latex_col_lines.append("\\centering")
+latex_col_lines.append("\\caption{Root cause distribution across different harness archetypes. "
+                        "The percentage indicates the relative proportion of each archetype within the corresponding root cause.}")
+latex_col_lines.append("\\label{tab:root_cause_archetype_col}")
+latex_col_lines.append(f"\\begin{{tabular}}{{{col_spec}}}")
+latex_col_lines.append("\\toprule")
+latex_col_lines.append(" & ".join(header_cells) + " \\\\")
+latex_col_lines.append("\\midrule")
+
+for cl_idx, cid in enumerate(sorted_cluster_ids):
+    cells = [sorted_cluster_names[cl_idx]]
+    for rc_idx, rc in enumerate(sorted_root_causes):
+        count = heatmap_data[cl_idx, rc_idx]
+        col_total = col_totals[rc_idx]
+        if count > 0 and col_total > 0:
+            pct = count / col_total * 100
+            cells.append(f"{pct:.1f}\\%")
+        else:
+            cells.append("")
+    latex_col_lines.append(" & ".join(cells) + " \\\\")
+
+latex_col_lines.append("\\bottomrule")
+latex_col_lines.append("\\end{tabular}")
+latex_col_lines.append("\\end{table}")
+
+print()
+print('\n'.join(latex_col_lines))
 print()
 
 plt.close()
