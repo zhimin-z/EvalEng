@@ -90,7 +90,7 @@ for i in range(num_cl):
         label = f"{val}\n({ratio:.1f}%)"
         text_color = 'white' if ratio > 60 else 'black'
         ax.text(j, i, label, ha='center', va='center',
-                fontsize=13, fontweight='bold', color=text_color)
+                fontsize=18, color=text_color)
 
 # Split label into lines based on full accumulated line width
 def smart_split_label(label, max_line_width=20):
@@ -113,9 +113,9 @@ cluster_labels = [smart_split_label(name) for name in sorted_cluster_names]
 # Set tick labels: x = root causes, y = clusters
 ax.set_xticks(np.arange(num_rc))
 rc_labels = [smart_split_label(rc, max_line_width=12) for rc in sorted_root_causes]
-ax.set_xticklabels(rc_labels, ha='center', fontsize=13, fontweight='bold')
+ax.set_xticklabels(rc_labels, ha='center', fontsize=16, fontweight='bold')
 ax.set_yticks(np.arange(num_cl))
-ax.set_yticklabels(cluster_labels, fontsize=13, fontweight='bold')
+ax.set_yticklabels(cluster_labels, fontsize=16, fontweight='bold')
 
 # Move x-axis labels to top
 ax.xaxis.set_ticks_position('top')

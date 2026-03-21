@@ -201,14 +201,14 @@ if len(root_cause_results_df) > 0:
             # Use white text on dark cells, black on light cells
             text_color = 'white' if val > heatmap_data.max() * 0.6 else 'black'
             ax.text(j, i, label, ha='center', va='center',
-                    fontsize=10, fontweight='bold', color=text_color)
+                    fontsize=12, color=text_color)
 
     # Set tick labels
     ax.set_xticks(np.arange(num_combos))
-    ax.set_xticklabels(combo_labels, ha='center', fontsize=11, fontweight='bold')
+    ax.set_xticklabels(combo_labels, ha='center', fontsize=14, fontweight='bold')
     ax.set_yticks(np.arange(num_root_causes))
     rc_labels = [smart_split_label(rc) for rc in sorted_root_cause_labels]
-    ax.set_yticklabels(rc_labels, fontsize=11, fontweight='bold')
+    ax.set_yticklabels(rc_labels, fontsize=14, fontweight='bold')
 
     # Move x-axis labels to top
     ax.xaxis.set_ticks_position('top')
