@@ -150,8 +150,9 @@ header_cells = ["Archetype"] + sorted_root_causes
 latex_lines = []
 latex_lines.append("\\begin{table}[!t]")
 latex_lines.append("\\centering")
-latex_lines.append("\\caption{Root cause distribution across different harness archetypes, "
-                    "normalized by the number of harnesses in each archetype (issues per harness).}")
+latex_lines.append("\\caption{Root cause distribution across different harness archetypes. "
+                    "Each cell shows the normalized issue count (issues per harness) and "
+                    "the percentage indicates the relative proportion of each root cause within the corresponding archetype.}")
 latex_lines.append("\\label{tab:root_cause_archetype}")
 latex_lines.append(f"\\begin{{tabular}}{{{col_spec}}}")
 latex_lines.append("\\toprule")
