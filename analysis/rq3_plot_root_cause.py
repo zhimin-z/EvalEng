@@ -357,7 +357,7 @@ if len(root_cause_results_df) > 0:
     latex_lines.append("\\begin{table}[!t]")
     latex_lines.append("\\centering")
     latex_lines.append("\\caption{Root cause distribution across workflow stage-step combinations. "
-                       "The percentage indicates the relative proportion of each stage-step within the corresponding root cause.}")
+                       "Each cell reports the absolute number of issues, while the percentage indicates the relative proportion of each stage-step within the corresponding root cause.}")
     latex_lines.append("\\label{tab:root_cause_steps}")
 
     col_spec = "l" + "r" * len(sorted_combos)
