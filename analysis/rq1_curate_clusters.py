@@ -5,7 +5,7 @@ into 4 new clusters based on manual analysis.
 
 New cluster mapping:
 - Cluster 1: Standardized Model Benchmark Suites (old cluster 6)
-- Cluster 2: Domain-Specific Offline Evaluators (merged from old clusters 1, 3, 4)
+- Cluster 2: Domain-specific Offline Evaluators (merged from old clusters 1, 3, 4)
 - Cluster 3: LLM Application Evaluation Platforms (old cluster 5)
 - Cluster 4: Interactive Agent Simulators (old cluster 2)
 """
@@ -124,7 +124,7 @@ def main():
         {
             "new_cluster_id": 2,
             "old_cluster_ids": [1, 3, 4],
-            "cluster_name": "Domain-Specific Offline Evaluators",
+            "cluster_name": "Domain-specific Offline Evaluators",
             "cluster_interpretation": "Specialized tools for measuring narrow capabilities—code generation, information retrieval, speech recognition, knowledge graphs, XAI, and system performance—on local hardware against predefined datasets using deterministic metrics. They require minimal infrastructure and lack LLM-as-judge, remote API, and interactive agent support, prioritizing reproducible, lightweight benchmarking of specific ML tasks."
         },
         {

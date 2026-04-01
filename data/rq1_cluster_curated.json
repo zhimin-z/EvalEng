@@ -106,7 +106,7 @@
         "Stage 4": 0.184
       },
       "avg_step_coverage": 0.316,
-      "cluster_name": "Domain-Specific Offline Evaluators",
+      "cluster_name": "Domain-specific Offline Evaluators",
       "cluster_interpretation": "Specialized tools for measuring narrow capabilities\u2014code generation, information retrieval, speech recognition, knowledge graphs, XAI, and system performance\u2014on local hardware against predefined datasets using deterministic metrics. They require minimal infrastructure and lack LLM-as-judge, remote API, and interactive agent support, prioritizing reproducible, lightweight benchmarking of specific ML tasks."
     },
     {
