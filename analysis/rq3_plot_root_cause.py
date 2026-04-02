@@ -243,8 +243,6 @@ if len(root_cause_results_df) > 0:
     stage_table_lines = []
     stage_table_lines.append("\\begin{table}[!t]")
     stage_table_lines.append("\\centering")
-    stage_table_lines.append("\\caption{Root cause distribution across different workflow steps. "
-                             "Each cell reports the absolute number of issues, while the percentage indicates the relative proportion of each root cause within the corresponding workflow step.}")
     stage_table_lines.append("\\label{tab:root_cause_stages}")
 
     stage_headers = [f"Stage {stage_to_label[k]}" for k in numeric_stage_keys]
@@ -356,8 +354,6 @@ if len(root_cause_results_df) > 0:
     latex_lines = []
     latex_lines.append("\\begin{table}[!t]")
     latex_lines.append("\\centering")
-    latex_lines.append("\\caption{Root cause distribution across workflow stage-step combinations. "
-                       "Each cell reports the absolute number of issues, while the percentage indicates the relative proportion of each stage-step within the corresponding root cause.}")
     latex_lines.append("\\label{tab:root_cause_steps}")
 
     col_spec = "l" + "r" * len(sorted_combos)
