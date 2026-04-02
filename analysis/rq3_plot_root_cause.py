@@ -134,6 +134,9 @@ if len(root_cause_results_df) > 0:
         x if isinstance(x, str) and x is not None else str(x) if x is not None else ''  # Alphabetically sort the rest
     ))
 
+    # Map numeric stages to display labels
+    stage_to_label = {0: 'Provisioning', 1: 'Specification', 2: 'Execution', 3: 'Assessment', 4: 'Reporting'}
+
     # Build per-(stage, step) counts for each root cause (for the heatmap)
     plot_stage_step_counts = defaultdict(lambda: defaultdict(int))
     all_plot_combos = set()
@@ -158,15 +161,15 @@ if len(root_cause_results_df) > 0:
 
     sorted_plot_combos = sorted(all_plot_combos, key=plot_combo_sort_key)
 
-    # Generate column labels like "Stage 0\nStep A", "General"
+    # Generate column labels like "Provisioning\nStep A", "General"
     def combo_to_short_label(combo):
         stage, step = combo
         if stage is None:
             return "General"
-        slabel = str(int(stage)) if isinstance(stage, (int, float)) else str(stage)
+        slabel = stage_to_label.get(stage, str(stage))
         if step is None:
-            return f"Stage {slabel}"
-        return f"Stage {slabel}\nStep {step}"
+            return slabel
+        return f"{slabel}\nStep {step}"
 
     combo_labels = [combo_to_short_label(c) for c in sorted_plot_combos]
 
@@ -205,10 +208,10 @@ if len(root_cause_results_df) > 0:
 
     # Set tick labels
     ax.set_xticks(np.arange(num_combos))
-    ax.set_xticklabels(combo_labels, ha='center', fontsize=14, fontweight='bold')
+    ax.set_xticklabels(combo_labels, ha='center', fontsize=10, fontweight='bold')
     ax.set_yticks(np.arange(num_root_causes))
     rc_labels = [smart_split_label(rc) for rc in sorted_root_cause_labels]
-    ax.set_yticklabels(rc_labels, fontsize=14, fontweight='bold')
+    ax.set_yticklabels(rc_labels, fontsize=10, fontweight='bold')
 
     # Move x-axis labels to top
     ax.xaxis.set_ticks_position('top')
@@ -226,9 +229,6 @@ if len(root_cause_results_df) > 0:
     # Save figure
     root_cause_output_path = "../figures/rq3_root_cause.pdf"
     plt.savefig(root_cause_output_path, format='pdf', bbox_inches='tight')
-    
-    # Map numeric stages to display labels
-    stage_to_label = {0: '0', 1: '1', 2: '2', 3: '3', 4: '4'}
 
     # ================================================================
     # Table 1: Root Cause x Stage (stage-level cross-tab)
@@ -245,7 +245,7 @@ if len(root_cause_results_df) > 0:
     stage_table_lines.append("\\centering")
     stage_table_lines.append("\\label{tab:root_cause_stages}")
 
-    stage_headers = [f"Stage {stage_to_label[k]}" for k in numeric_stage_keys]
+    stage_headers = [stage_to_label[k] for k in numeric_stage_keys]
     if has_general_stage:
         stage_headers.append("General")
     col_spec = "l" + "r" * len(stage_headers)
@@ -320,15 +320,15 @@ if len(root_cause_results_df) > 0:
 
     sorted_combos = sorted(all_stage_step_combos, key=combo_sort_key)
 
-    # Generate column names matching rq1 format: "Stage {num}\nStep {letter}"
+    # Generate column names matching rq1 format: "{StageName}\nStep {letter}"
     def combo_to_col_name(combo):
         stage, step = combo
         if stage is None:
             return "General"
         slabel = stage_to_label.get(stage, str(stage))
         if step is None:
-            return f"Stage {slabel}"
-        return f"Stage {slabel}\nStep {step}"
+            return slabel
+        return f"{slabel}\nStep {step}"
 
     col_names = [combo_to_col_name(c) for c in sorted_combos]
 
@@ -346,8 +346,8 @@ if len(root_cause_results_df) > 0:
             return "General"
         slabel = stage_to_label.get(stage, str(stage))
         if step is None:
-            return f"Stage {slabel}"
-        return f"Stage {slabel} Step {step}"
+            return slabel
+        return f"{slabel} Step {step}"
 
     latex_col_headers = [combo_to_latex_header(c) for c in sorted_combos]
 
