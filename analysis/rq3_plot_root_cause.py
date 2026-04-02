@@ -265,7 +265,7 @@ if len(root_cause_results_df) > 0:
                 stage_count = 0
             if stage_count > 0 and total > 0:
                 pct = stage_count / total * 100
-                cells.append(f"{pct:.1f}\\%")
+                cells.append(f"{stage_count} ({pct:.1f}\\%)")
             else:
                 cells.append("")
 
@@ -273,7 +273,7 @@ if len(root_cause_results_df) > 0:
             general_count = sum(root_cause_hierarchy[root_cause].get(None, {}).values())
             if general_count > 0 and total > 0:
                 pct = general_count / total * 100
-                cells.append(f"{pct:.1f}\\%")
+                cells.append(f"{general_count} ({pct:.1f}\\%)")
             else:
                 cells.append("")
 
@@ -371,7 +371,7 @@ if len(root_cause_results_df) > 0:
             count = int(crosstab.loc[root_cause, col])
             if count > 0 and total > 0:
                 pct = count / total * 100
-                cells.append(f"{pct:.1f}\\%")
+                cells.append(f"{count} ({pct:.1f}\\%)")
             else:
                 cells.append("")
         latex_lines.append(" & ".join(cells) + " \\\\")
