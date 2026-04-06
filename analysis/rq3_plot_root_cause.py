@@ -182,27 +182,33 @@ if len(root_cause_results_df) > 0:
         for combo_idx, combo in enumerate(sorted_plot_combos):
             heatmap_data[rc_idx, combo_idx] = plot_stage_step_counts[root_cause].get(combo, 0)
 
+    # Compute column-wise percentages for heatmap color encoding
+    col_totals = heatmap_data.sum(axis=0)  # sum over rows for each column
+    heatmap_pct = np.zeros_like(heatmap_data, dtype=float)
+    for j in range(num_combos):
+        if col_totals[j] > 0:
+            heatmap_pct[:, j] = heatmap_data[:, j] / col_totals[j] * 100
+
     # Create the heatmap
     fig_width = max(14, num_combos * 1.2)
     fig_height = max(6, num_root_causes * 0.7)
     fig, ax = plt.subplots(figsize=(fig_width, fig_height))
 
-    im = ax.imshow(heatmap_data, cmap='Blues', aspect='auto')
+    im = ax.imshow(heatmap_pct, cmap='Blues', aspect='auto')
 
     # Add colorbar
     cbar = fig.colorbar(im, ax=ax, shrink=0.8, pad=0.02)
-    cbar.set_label('Number of Issues', fontsize=12, fontweight='bold')
+    cbar.set_label('Percentage of Issues (%)', fontsize=12, fontweight='bold')
     cbar.ax.tick_params(labelsize=11)
 
-    # Annotate each cell with count and ratio (count / column total)
-    col_totals = heatmap_data.sum(axis=0)  # sum over rows for each column
+    # Annotate each cell with count and percentage
     for i in range(num_root_causes):
         for j in range(num_combos):
             val = heatmap_data[i, j]
-            ratio = val / col_totals[j] * 100 if col_totals[j] > 0 else 0
-            label = f"{val}\n({ratio:.1f}%)"
+            pct = heatmap_pct[i, j]
+            label = f"{val}\n({pct:.1f}%)"
             # Use white text on dark cells, black on light cells
-            text_color = 'white' if val > heatmap_data.max() * 0.6 else 'black'
+            text_color = 'white' if pct > heatmap_pct.max() * 0.6 else 'black'
             ax.text(j, i, label, ha='center', va='center',
                     fontsize=12, color=text_color)
 
