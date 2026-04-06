@@ -201,16 +201,15 @@ if len(root_cause_results_df) > 0:
     cbar.set_label('Percentage of Issues (%)', fontsize=12, fontweight='bold')
     cbar.ax.tick_params(labelsize=11)
 
-    # Annotate each cell with count and percentage
+    # Annotate each cell with percentage only
     for i in range(num_root_causes):
         for j in range(num_combos):
-            val = heatmap_data[i, j]
             pct = heatmap_pct[i, j]
-            label = f"{val}\n({pct:.1f}%)"
+            label = f"{pct:.1f}%"
             # Use white text on dark cells, black on light cells
             text_color = 'white' if pct > heatmap_pct.max() * 0.6 else 'black'
             ax.text(j, i, label, ha='center', va='center',
-                    fontsize=12, color=text_color)
+                    fontsize=14, color=text_color)
 
     # Set tick labels
     ax.set_xticks(np.arange(num_combos))
