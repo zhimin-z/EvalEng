@@ -1,17 +1,150 @@
 {
-  "description": "Curated clusters from 6-cluster Ward hierarchical clustering into 4 semantic groups",
+  "description": "Curated clusters re-derived from harness-level Hamming distance analysis of the 6-cluster Ward hierarchical clustering into 4 semantically coherent groups",
   "original_linkage_method": "ward",
   "original_num_clusters": 6,
   "curated_num_clusters": 4,
   "cluster_mapping": {
-    "1": "Merged from original clusters 1, 3, 4",
-    "2": "Original cluster 6",
-    "3": "Original cluster 5",
-    "4": "Original cluster 2"
+    "1 (Narrow-Domain Metric Libraries)": "Parts of old clusters 2, 3, 4",
+    "2 (Task-Specific Capability Probes)": "Parts of old clusters 1, 3, 4",
+    "3 (Full-Stack LLM Evaluation Platforms)": "Old cluster 5",
+    "4 (Standardized LLM Benchmark Suites)": "Old cluster 6 + parts of old clusters 1, 5"
   },
   "clusters": [
     {
       "cluster_id": 1,
+      "members": [
+        "DomainBed",
+        "HumanEval",
+        "JiWER",
+        "Melting Pot",
+        "Meta-World",
+        "OGB",
+        "Overcooked-AI",
+        "Quantus",
+        "RLBench",
+        "SimplerEnv",
+        "mir_eval",
+        "ranx"
+      ],
+      "size": 12,
+      "common_strategies": [
+        "S0-A1",
+        "S0-A2",
+        "S3-A1",
+        "S3-B1"
+      ],
+      "missing_strategies": [
+        "S0-A3",
+        "S0-A4",
+        "S0-A5",
+        "S0-B2",
+        "S0-B3",
+        "S1-A2",
+        "S1-B4",
+        "S2-A3",
+        "S2-A4",
+        "S3-A2",
+        "S3-A3",
+        "S3-A4",
+        "S3-B2",
+        "S4-A3",
+        "S4-A6"
+      ],
+      "step_coverage": {
+        "Stage 0": 0.292,
+        "Stage 1": 0.333,
+        "Stage 2": 0.292,
+        "Stage 3": 0.333,
+        "Stage 4": 0.125
+      },
+      "avg_step_coverage": 0.275,
+      "cluster_name": "Narrow-Domain Metric Libraries",
+      "cluster_interpretation": "Pure pip-installable libraries that compute one well-defined metric over structured inputs\u2014word error rate, ranking quality, graph link prediction, robotics task success, or attribution fidelity\u2014without invoking any remote model API, LLM judge, or production plumbing. Agent-environment harnesses (RLBench, Meta-World, Overcooked-AI, SimplerEnv, Melting Pot) belong here because they are fundamentally scoring libraries that use simulation environments rather than evaluation platforms: their feature profile is as sparse as JiWER or ranx. The defining characteristic is the combination of a narrow, algorithmic metric and a complete absence of external service dependencies."
+    },
+    {
+      "cluster_id": 2,
+      "members": [
+        "Ann-benchmarks",
+        "BEIR",
+        "BigCode Eval",
+        "CipherChat",
+        "EvalAI",
+        "EvalPlus",
+        "GuideLLM",
+        "LLMPerf",
+        "Ollama Grid Search",
+        "PyKEEN",
+        "STT Benchmark",
+        "TorchBench"
+      ],
+      "size": 12,
+      "common_strategies": [
+        "S0-A1",
+        "S2-A1"
+      ],
+      "missing_strategies": [
+        "S0-A5",
+        "S1-B3",
+        "S1-B4",
+        "S2-A3",
+        "S2-A4",
+        "S3-B2"
+      ],
+      "step_coverage": {
+        "Stage 0": 0.479,
+        "Stage 1": 0.4,
+        "Stage 2": 0.271,
+        "Stage 3": 0.472,
+        "Stage 4": 0.25
+      },
+      "avg_step_coverage": 0.374,
+      "cluster_name": "Task-Specific Capability Probes",
+      "cluster_interpretation": "Purpose-built harnesses that answer 'how well does system X do task Y?' on one narrow axis\u2014retrieval precision (BEIR), code execution correctness (EvalPlus, BigCode Eval), ANN throughput (Ann-benchmarks), speech WER (STT Benchmark), inference latency (LLMPerf, TorchBench, GuideLLM), adversarial safety (CipherChat), graph embedding (PyKEEN), or cross-system leaderboard comparison (EvalAI). They always invoke a remote model endpoint and produce a scalar leaderboard score, but lack judge-based scoring, persistent dashboards, and production monitoring. Distinct from Cluster 1 in that they run a model; distinct from Cluster 4 in that they target a single capability rather than sweeping across many benchmarks."
+    },
+    {
+      "cluster_id": 3,
+      "members": [
+        "DeepEval",
+        "EvalScope",
+        "Evals",
+        "Harbor",
+        "Inspect AI",
+        "IntellAgent",
+        "Promptfoo",
+        "Ragas",
+        "Rogue",
+        "TruLens"
+      ],
+      "size": 10,
+      "common_strategies": [
+        "S0-A1",
+        "S0-B1",
+        "S0-B2",
+        "S1-A2",
+        "S1-A3",
+        "S1-C1",
+        "S1-C2",
+        "S2-A1",
+        "S2-A2",
+        "S3-A2",
+        "S3-B1",
+        "S4-A2",
+        "S4-A5"
+      ],
+      "missing_strategies": [],
+      "step_coverage": {
+        "Stage 0": 0.6,
+        "Stage 1": 0.75,
+        "Stage 2": 0.65,
+        "Stage 3": 0.75,
+        "Stage 4": 0.733
+      },
+      "avg_step_coverage": 0.697,
+      "cluster_name": "Full-Stack LLM Evaluation Platforms",
+      "cluster_interpretation": "End-to-end LLM evaluation operating systems that support all execution modes simultaneously: batch regression, live arena head-to-head (ArenaBattle), production traffic monitoring (ProdStreaming), agentic loop tracing (InteractiveLoop), and automated regression alerting. With 13 features universally ON and no universally missing strategies, these are the most feature-complete harnesses in the corpus. They are deployed as persistent infrastructure rather than run episodically per paper, and they evaluate anything about an LLM in any mode rather than targeting a single benchmark or capability axis."
+    },
+    {
+      "cluster_id": 4,
       "members": [
         "ARES",
         "AlpacaEval",
@@ -20,7 +153,9 @@
         "COMET",
         "Evalchemy",
         "Evaluate",
+        "Evidently",
         "GAOKAO-Bench",
+        "Giskard",
         "HELM",
         "LM Eval",
         "LightEval",
@@ -35,7 +170,7 @@
         "VLMEvalKit",
         "lmms-eval"
       ],
-      "size": 21,
+      "size": 23,
       "common_strategies": [
         "S0-A1",
         "S1-B1",
@@ -48,155 +183,18 @@
         "S0-A5",
         "S1-A3",
         "S1-A4",
-        "S1-B3",
-        "S1-B4",
-        "S2-A4"
+        "S1-B3"
       ],
       "step_coverage": {
-        "Stage 0": 0.512,
-        "Stage 1": 0.505,
-        "Stage 2": 0.31,
-        "Stage 3": 0.73,
-        "Stage 4": 0.341
+        "Stage 0": 0.527,
+        "Stage 1": 0.517,
+        "Stage 2": 0.326,
+        "Stage 3": 0.725,
+        "Stage 4": 0.362
       },
-      "avg_step_coverage": 0.48,
-      "cluster_name": "Standardized Model Benchmark Suites",
-      "cluster_interpretation": "Comprehensive frameworks for assessing foundation model capabilities, safety, and multimodal understanding through curated benchmark datasets and leaderboard-oriented evaluation. They excel at scoring and metric aggregation across standardized test sets but lack interactive agent support, simulation environments, and production monitoring\u2014serving as the primary toolkit for systematic model comparison and research benchmarking."
-    },
-    {
-      "cluster_id": 2,
-      "members": [
-        "Ann-benchmarks",
-        "BEIR",
-        "BigCode Eval",
-        "CipherChat",
-        "DomainBed",
-        "EvalAI",
-        "EvalPlus",
-        "GuideLLM",
-        "HumanEval",
-        "JiWER",
-        "LLMPerf",
-        "OGB",
-        "Ollama Grid Search",
-        "STT Benchmark",
-        "PyKEEN",
-        "Quantus",
-        "TorchBench",
-        "mir_eval",
-        "ranx"
-      ],
-      "size": 19,
-      "common_strategies": [
-        "S0-A1"
-      ],
-      "missing_strategies": [
-        "S0-A5",
-        "S1-B3",
-        "S1-B4",
-        "S2-A3",
-        "S2-A4",
-        "S3-B2"
-      ],
-      "step_coverage": {
-        "Stage 0": 0.414,
-        "Stage 1": 0.337,
-        "Stage 2": 0.224,
-        "Stage 3": 0.421,
-        "Stage 4": 0.184
-      },
-      "avg_step_coverage": 0.316,
-      "cluster_name": "Domain-specific Offline Evaluators",
-      "cluster_interpretation": "Specialized tools for measuring narrow capabilities\u2014code generation, information retrieval, speech recognition, knowledge graphs, XAI, and system performance\u2014on local hardware against predefined datasets using deterministic metrics. They require minimal infrastructure and lack LLM-as-judge, remote API, and interactive agent support, prioritizing reproducible, lightweight benchmarking of specific ML tasks."
-    },
-    {
-      "cluster_id": 3,
-      "members": [
-        "DeepEval",
-        "EvalScope",
-        "Evidently",
-        "Giskard",
-        "Inspect AI",
-        "IntellAgent",
-        "Evals",
-        "Promptfoo",
-        "Ragas",
-        "Rogue",
-        "TruLens"
-      ],
-      "size": 11,
-      "common_strategies": [
-        "S0-A1",
-        "S0-B1",
-        "S0-B2",
-        "S1-A2",
-        "S1-C1",
-        "S1-C2",
-        "S2-A1",
-        "S3-A2",
-        "S3-B1",
-        "S4-A2"
-      ],
-      "missing_strategies": [],
-      "step_coverage": {
-        "Stage 0": 0.614,
-        "Stage 1": 0.745,
-        "Stage 2": 0.636,
-        "Stage 3": 0.727,
-        "Stage 4": 0.712
-      },
-      "avg_step_coverage": 0.687,
-      "cluster_name": "LLM Application Evaluation Platforms",
-      "cluster_interpretation": "Full-stack platforms for testing LLM-powered applications\u2014RAG pipelines, chatbots, tool-using agents\u2014through flexible evaluation workflows combining LLM-as-judge scoring, remote API integration, CI/CD hooks, and interactive dashboards. With the highest workflow coverage and no universally missing strategies, they support the broadest range of evaluation patterns from development through production monitoring."
-    },
-    {
-      "cluster_id": 4,
-      "members": [
-        "Melting Pot",
-        "Meta-World",
-        "Overcooked-AI",
-        "RLBench",
-        "SimplerEnv"
-      ],
-      "size": 5,
-      "common_strategies": [
-        "S0-A1",
-        "S0-A2",
-        "S1-A3",
-        "S1-B3",
-        "S2-A1",
-        "S2-A2",
-        "S3-A1",
-        "S3-B1"
-      ],
-      "missing_strategies": [
-        "S0-A3",
-        "S0-A4",
-        "S0-A5",
-        "S0-B2",
-        "S0-B3",
-        "S1-A2",
-        "S1-A4",
-        "S1-B4",
-        "S2-A3",
-        "S2-A4",
-        "S3-A2",
-        "S3-A3",
-        "S3-A4",
-        "S3-B2",
-        "S4-A3",
-        "S4-A6"
-      ],
-      "step_coverage": {
-        "Stage 0": 0.275,
-        "Stage 1": 0.48,
-        "Stage 2": 0.5,
-        "Stage 3": 0.333,
-        "Stage 4": 0.2
-      },
-      "avg_step_coverage": 0.358,
-      "cluster_name": "Interactive Agent Simulators",
-      "cluster_interpretation": "Harnesses for evaluating sequential decision-making systems\u2014RL policies, robotic manipulators, multi-agent teams\u2014through stateful simulation environments with deterministic reward metrics. They prioritize agent-environment interaction loops over language model evaluation, lacking remote API support, LLM judges, and rich reporting infrastructure."
+      "avg_step_coverage": 0.491,
+      "cluster_name": "Standardized LLM Benchmark Suites",
+      "cluster_interpretation": "Academic and industry benchmark runners that sweep a model across fixed, published task collections\u2014safety probes, multimodal tasks, translation quality, reward modeling, RAG corpora\u2014and produce normalized leaderboard scores via batch inference and latent/subjective metrics. They share remote inference, distributional statistics, and uncertainty quantification, but universally lack binary distribution, deterministic pass/fail metrics, and bespoke chart generation pipelines. Run episodically for model release comparisons rather than as persistent production monitoring infrastructure, distinguishing them from Cluster 3."
     }
   ]
 }

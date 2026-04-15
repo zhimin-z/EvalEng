@@ -10,7 +10,7 @@ from litellm import completion
 dotenv.load_dotenv(override=True)
 
 # Set the model to use - can be changed to any LiteLLM supported model
-MODEL = "anthropic/claude-haiku-4-5-20251001"
+MODEL = "anthropic/claude-haiku-4-5"
 
 # Input and output files
 INPUT_FILE = "../data/rq2_issues_annotated_full.jsonl"
@@ -167,7 +167,12 @@ def main():
     # Count related issues for progress tracking
     related_count = (df['is_related'] == True).sum()
     print(f"Total issues: {len(df)}")
-    print(f"Related issues to annotate: {related_count}")
+    print(f"Related issues: {related_count}")
+
+    # Skip issues already labelled (has a valid root_cause_label, not ERROR)
+    already_labelled = df['root_cause_label'].notna() & (df['root_cause_label'] != 'ERROR') if 'root_cause_label' in df.columns else pd.Series(False, index=df.index)
+    print(f"Already labelled: {already_labelled.sum()} issues (skipped)")
+    print(f"Related issues to annotate: {(~already_labelled & (df['is_related'] == True)).sum()}")
 
     # Track results
     results = []
@@ -179,9 +184,8 @@ def main():
     for idx, row in tqdm(df.iterrows(), total=len(df), desc="Processing issues"):
         result_row = row.to_dict()
 
-        # Only classify related issues
-        if row['is_related'] != True:
-            # Non-related issues: add directly without classification
+        # Pass through issues that are not related or already have a valid label
+        if row['is_related'] != True or already_labelled.iloc[idx]:
             results.append(result_row)
             continue
 
@@ -211,12 +215,12 @@ def main():
         # Save every 50 issues
         if len(results) % 50 == 0:
             interim_df = pd.DataFrame(results)
-            interim_df.to_json(INPUT_FILE, orient='records', lines=True)
+            interim_df.to_json(INPUT_FILE, orient='records', lines=True, date_format='iso')
             print(f"\n[Checkpoint] Saved {len(results)} results to {INPUT_FILE}")
 
     # Create results dataframe and save
     results_df = pd.DataFrame(results)
-    results_df.to_json(INPUT_FILE, orient='records', lines=True)
+    results_df.to_json(INPUT_FILE, orient='records', lines=True, date_format='iso')
 
     print("\n" + "=" * 80)
     print(f"Classification complete! Results saved to {INPUT_FILE}")

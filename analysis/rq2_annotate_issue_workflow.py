@@ -12,12 +12,24 @@ from litellm import completion, RateLimitError
 dotenv.load_dotenv(override=True)
 
 # Set the model to use - can be changed to any LiteLLM supported model
-MODEL = "anthropic/claude-haiku45-20251001"
+MODEL = "anthropic/claude-haiku-4-5"
 
 # Read the issues JSONL
 df = pd.read_json("../data/rq2_issues.jsonl", orient="records", lines=True)
 # df = df.sample(n=377, random_state=42)  # https://www.calculator.net/sample-size-calculator.html?type=1&cl=95&ci=5&pp=50&ps=20000&x=Calculate
-print(f"Total issues to analyze: {len(df)}")
+print(f"Total issues loaded: {len(df)}")
+
+# Skip issues already annotated in the output file
+output_file = "../data/rq2_issues_annotated_full.jsonl"
+try:
+    annotated_df = pd.read_json(output_file, orient="records", lines=True)
+    already_annotated_urls = set(annotated_df["issue_url"].dropna())
+    df = df[~df["issue_url"].isin(already_annotated_urls)].reset_index(drop=True)
+    print(f"Already annotated: {len(already_annotated_urls)} issues (skipped)")
+except (FileNotFoundError, ValueError):
+    pass  # Output file doesn't exist yet, annotate everything
+
+print(f"Issues to annotate: {len(df)}")
 
 # Condensed version of the evaluation workflow stages
 STAGES_SUMMARY = """Unified Evaluation Workflow:
@@ -249,9 +261,6 @@ def analyze_issue(title, body, harness_name, comments=None):
 # Analyze all issues
 results = []
 
-# Set up output file path
-output_file = "../data/rq2_issues_annotated_full.jsonl"
-
 print("\nStarting analysis...")
 print("=" * 80)
 
@@ -281,7 +290,7 @@ for idx, row in tqdm(df.iterrows(), total=len(df), desc="Analyzing issues"):
 
     # Save every 50 issues
     if len(results) % 50 == 0:
-        pd.DataFrame(results).to_json(output_file, orient="records", lines=True, mode='a')
+        pd.DataFrame(results).to_json(output_file, orient="records", lines=True, mode='a', date_format='iso')
         print(f"\n✓ Saved progress: {len(results)} new issues appended")
         results = []
 
@@ -290,7 +299,7 @@ for idx, row in tqdm(df.iterrows(), total=len(df), desc="Analyzing issues"):
 
 # Save any remaining results
 if results:
-    pd.DataFrame(results).to_json(output_file, orient="records", lines=True, mode='a')
+    pd.DataFrame(results).to_json(output_file, orient="records", lines=True, mode='a', date_format='iso')
 
 print("\n" + "=" * 80)
 print(f"✓ Analysis complete! Results saved to {output_file}")

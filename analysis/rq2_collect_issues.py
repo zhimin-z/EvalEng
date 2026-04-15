@@ -230,7 +230,7 @@ if not issues_df.empty:
     issues_df = issues_df[['harness_name', 'github_repo', 'issue_title', 'issue_body',
                             'issue_labels', 'issue_created_at', 'issue_closed_at',
                             'issue_comments', 'issue_url', 'issue_cross_referenced']]
-    issues_df.to_json("../data/rq2_issues.jsonl", orient="records", lines=True)
+    issues_df.to_json("../data/rq2_issues.jsonl", orient="records", lines=True, date_format='iso')
     print(f"\n✓ Total issues fetched: {len(issues_df)}")
     print("✓ Issues saved to ../data/rq2_issues.jsonl")
 else:

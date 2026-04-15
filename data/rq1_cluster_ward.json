@@ -1,7 +1,7 @@
 {
   "linkage_method": "ward",
   "num_clusters": 6,
-  "silhouette_score": 0.241,
+  "silhouette_score": 0.171,
   "clusters": [
     {
       "cluster_id": 1,

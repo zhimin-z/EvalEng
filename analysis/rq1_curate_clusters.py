@@ -1,13 +1,23 @@
 #!/usr/bin/env python3
 """
 Script to aggregate clusters from the original 6-cluster Ward hierarchical clustering
-into 4 new clusters based on manual analysis.
+into 4 new clusters based on manual analysis of feature-matrix Hamming distances.
 
-New cluster mapping:
-- Cluster 1: Standardized Model Benchmark Suites (old cluster 6)
-- Cluster 2: Domain-specific Offline Evaluators (merged from old clusters 1, 3, 4)
-- Cluster 3: LLM Application Evaluation Platforms (old cluster 5)
-- Cluster 4: Interactive Agent Simulators (old cluster 2)
+New cluster mapping (harness-level, not old-cluster-level):
+- Cluster 1: Narrow-Domain Metric Libraries
+    DomainBed, HumanEval, JiWER, Melting Pot, Meta-World, OGB, Overcooked-AI,
+    Quantus, RLBench, SimplerEnv, mir_eval, ranx
+- Cluster 2: Task-Specific Capability Probes
+    Ann-benchmarks, BEIR, BigCode Eval, CipherChat, EvalAI, EvalPlus, GuideLLM,
+    LLMPerf, Ollama Grid Search, PyKEEN, STT Benchmark, TorchBench
+- Cluster 3: Full-Stack LLM Evaluation Platforms
+    DeepEval, EvalScope, Evals, Harbor, Inspect AI, IntellAgent, Promptfoo,
+    Ragas, Rogue, TruLens
+- Cluster 4: Standardized LLM Benchmark Suites
+    ARES, AlpacaEval, AutoRAG, C-Eval, COMET, Evalchemy, Evaluate, Evidently,
+    GAOKAO-Bench, Giskard, HELM, LM Eval, LightEval, MLPerf, OpenCompass,
+    Prometheus-Eval, PromptBench, RewardBench, TFMA, TrustLLM, VBench,
+    VLMEvalKit, lmms-eval
 """
 
 import json
@@ -100,16 +110,8 @@ def calculate_cluster_metrics(members: list, feature_matrix: pd.DataFrame) -> di
 def main():
     # Paths
     data_dir = Path(__file__).parent.parent / "data"
-    old_cluster_file = data_dir / "rq1_cluster_ward.json"
     feature_matrix_file = data_dir / "rq1_harness_feature_matrix.csv"
     output_file = data_dir / "rq1_cluster_curated.json"
-
-    # Load original cluster data to get member lists
-    with open(old_cluster_file, "r") as f:
-        old_data = json.load(f)
-
-    # Build mapping from old cluster_id to members
-    old_clusters = {c["cluster_id"]: c["members"] for c in old_data["clusters"]}
 
     # Load feature matrix
     feature_matrix = pd.read_csv(feature_matrix_file, index_col=0)
@@ -117,39 +119,52 @@ def main():
     new_cluster_definitions = [
         {
             "new_cluster_id": 1,
-            "old_cluster_ids": [6],
-            "cluster_name": "Standardized Model Benchmark Suites",
-            "cluster_interpretation": "Comprehensive frameworks for assessing foundation model capabilities, safety, and multimodal understanding through curated benchmark datasets and leaderboard-oriented evaluation. They excel at scoring and metric aggregation across standardized test sets but lack interactive agent support, simulation environments, and production monitoring—serving as the primary toolkit for systematic model comparison and research benchmarking."
+            "members": [
+                "DomainBed", "HumanEval", "JiWER", "Melting Pot", "Meta-World",
+                "OGB", "Overcooked-AI", "Quantus", "RLBench", "SimplerEnv",
+                "mir_eval", "ranx",
+            ],
+            "cluster_name": "Narrow-Domain Metric Libraries",
+            "cluster_interpretation": "Pure pip-installable libraries that compute one well-defined metric over structured inputs—word error rate, ranking quality, graph link prediction, robotics task success, or attribution fidelity—without invoking any remote model API, LLM judge, or production plumbing. Agent-environment harnesses (RLBench, Meta-World, Overcooked-AI, SimplerEnv, Melting Pot) belong here because they are fundamentally scoring libraries that use simulation environments rather than evaluation platforms: their feature profile is as sparse as JiWER or ranx. The defining characteristic is the combination of a narrow, algorithmic metric and a complete absence of external service dependencies.",
         },
         {
             "new_cluster_id": 2,
-            "old_cluster_ids": [1, 3, 4],
-            "cluster_name": "Domain-specific Offline Evaluators",
-            "cluster_interpretation": "Specialized tools for measuring narrow capabilities—code generation, information retrieval, speech recognition, knowledge graphs, XAI, and system performance—on local hardware against predefined datasets using deterministic metrics. They require minimal infrastructure and lack LLM-as-judge, remote API, and interactive agent support, prioritizing reproducible, lightweight benchmarking of specific ML tasks."
+            "members": [
+                "Ann-benchmarks", "BEIR", "BigCode Eval", "CipherChat", "EvalAI",
+                "EvalPlus", "GuideLLM", "LLMPerf", "Ollama Grid Search", "PyKEEN",
+                "STT Benchmark", "TorchBench",
+            ],
+            "cluster_name": "Task-Specific Capability Probes",
+            "cluster_interpretation": "Purpose-built harnesses that answer 'how well does system X do task Y?' on one narrow axis—retrieval precision (BEIR), code execution correctness (EvalPlus, BigCode Eval), ANN throughput (Ann-benchmarks), speech WER (STT Benchmark), inference latency (LLMPerf, TorchBench, GuideLLM), adversarial safety (CipherChat), graph embedding (PyKEEN), or cross-system leaderboard comparison (EvalAI). They always invoke a remote model endpoint and produce a scalar leaderboard score, but lack judge-based scoring, persistent dashboards, and production monitoring. Distinct from Cluster 1 in that they run a model; distinct from Cluster 4 in that they target a single capability rather than sweeping across many benchmarks.",
         },
         {
             "new_cluster_id": 3,
-            "old_cluster_ids": [5],
-            "cluster_name": "LLM Application Evaluation Platforms",
-            "cluster_interpretation": "Full-stack platforms for testing LLM-powered applications—RAG pipelines, chatbots, tool-using agents—through flexible evaluation workflows combining LLM-as-judge scoring, remote API integration, CI/CD hooks, and interactive dashboards. With the highest workflow coverage and no universally missing strategies, they support the broadest range of evaluation patterns from development through production monitoring."
+            "members": [
+                "DeepEval", "EvalScope", "Evals", "Harbor", "Inspect AI",
+                "IntellAgent", "Promptfoo", "Ragas", "Rogue", "TruLens",
+            ],
+            "cluster_name": "Full-Stack LLM Evaluation Platforms",
+            "cluster_interpretation": "End-to-end LLM evaluation operating systems that support all execution modes simultaneously: batch regression, live arena head-to-head (ArenaBattle), production traffic monitoring (ProdStreaming), agentic loop tracing (InteractiveLoop), and automated regression alerting. With 13 features universally ON and no universally missing strategies, these are the most feature-complete harnesses in the corpus. They are deployed as persistent infrastructure rather than run episodically per paper, and they evaluate anything about an LLM in any mode rather than targeting a single benchmark or capability axis.",
         },
         {
             "new_cluster_id": 4,
-            "old_cluster_ids": [2],
-            "cluster_name": "Interactive Agent Simulators",
-            "cluster_interpretation": "Harnesses for evaluating sequential decision-making systems—RL policies, robotic manipulators, multi-agent teams—through stateful simulation environments with deterministic reward metrics. They prioritize agent-environment interaction loops over language model evaluation, lacking remote API support, LLM judges, and rich reporting infrastructure."
-        }
+            "members": [
+                "ARES", "AlpacaEval", "AutoRAG", "C-Eval", "COMET", "Evalchemy",
+                "Evaluate", "Evidently", "GAOKAO-Bench", "Giskard", "HELM",
+                "LM Eval", "LightEval", "MLPerf", "OpenCompass", "Prometheus-Eval",
+                "PromptBench", "RewardBench", "TFMA", "TrustLLM", "VBench",
+                "VLMEvalKit", "lmms-eval",
+            ],
+            "cluster_name": "Standardized LLM Benchmark Suites",
+            "cluster_interpretation": "Academic and industry benchmark runners that sweep a model across fixed, published task collections—safety probes, multimodal tasks, translation quality, reward modeling, RAG corpora—and produce normalized leaderboard scores via batch inference and latent/subjective metrics. They share remote inference, distributional statistics, and uncertainty quantification, but universally lack binary distribution, deterministic pass/fail metrics, and bespoke chart generation pipelines. Run episodically for model release comparisons rather than as persistent production monitoring infrastructure, distinguishing them from Cluster 3.",
+        },
     ]
 
     # Build new clusters
     new_clusters = []
 
     for definition in new_cluster_definitions:
-        # Aggregate members from old clusters
-        members = []
-        for old_id in definition["old_cluster_ids"]:
-            members.extend(old_clusters[old_id])
-        members = sorted(members)
+        members = sorted(definition["members"])
 
         # Calculate metrics from feature matrix
         metrics = calculate_cluster_metrics(members, feature_matrix)
@@ -172,17 +187,16 @@ def main():
 
         new_clusters.append(new_cluster)
 
-    # Calculate overall silhouette score note
     output_data = {
-        "description": "Curated clusters from 6-cluster Ward hierarchical clustering into 4 semantic groups",
+        "description": "Curated clusters re-derived from harness-level Hamming distance analysis of the 6-cluster Ward hierarchical clustering into 4 semantically coherent groups",
         "original_linkage_method": "ward",
         "original_num_clusters": 6,
         "curated_num_clusters": 4,
         "cluster_mapping": {
-            "1": "Merged from original clusters 1, 3, 4",
-            "2": "Original cluster 6",
-            "3": "Original cluster 5",
-            "4": "Original cluster 2"
+            "1 (Narrow-Domain Metric Libraries)": "Parts of old clusters 2, 3, 4",
+            "2 (Task-Specific Capability Probes)": "Parts of old clusters 1, 3, 4",
+            "3 (Full-Stack LLM Evaluation Platforms)": "Old cluster 5",
+            "4 (Standardized LLM Benchmark Suites)": "Old cluster 6 + parts of old clusters 1, 5"
         },
         "clusters": new_clusters
     }

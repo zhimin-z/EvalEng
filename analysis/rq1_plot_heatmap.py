@@ -61,7 +61,11 @@ for step in steps:
             if harness in harnesses:
                 table.loc[harness, step] = str(strategy_num) if not table.loc[harness, step] else f"{table.loc[harness, step]}, {strategy_num}"
 
-print(f"Heatmap Filled Rate: {100*(table != '').sum().sum()/(len(harnesses)*len(steps)):.1f}%\n")
+total_cells = len(harnesses) * len(steps)
+filled_cells = (table != '').sum().sum()
+empty_cells = total_cells - filled_cells
+print(f"Heatmap Filled Rate: {100*filled_cells/total_cells:.1f}% ({filled_cells}/{total_cells} cells filled)")
+print(f"Heatmap Empty Rate:  {100*empty_cells/total_cells:.1f}% ({empty_cells}/{total_cells} cells empty)\n")
 
 # ========== HIERARCHICAL STATISTICS ==========
 # Build hierarchical data structures: stage -> step -> strategy -> harnesses
@@ -108,6 +112,41 @@ for stage_match in re.finditer(r'### \*\*Stage ([0-9IViv]+):', content):
 stage_order = {'0': 0, 'I': 1, 'i': 1, 'II': 2, 'ii': 2, 'III': 3, 'iii': 3, 'IV': 4, 'iv': 4}
 sorted_stages = sorted(stage_harnesses.keys(), key=lambda x: stage_order.get(x, 999))
 
+# Build name lookup dictionaries from the parsed content
+stage_names = {}
+step_names = {}
+strategy_names = {}
+
+for stage_match in re.finditer(r'### \*\*Stage ([0-9IViv]+):\s*([^*\n]+)', content):
+    stage_num = stage_match.group(1)
+    stage_name = stage_match.group(2).strip().rstrip('*').strip()
+    stage_names[stage_num] = stage_name
+
+    stage_start = stage_match.start()
+    next_stage = re.search(r'### \*\*Stage', content[stage_match.end():])
+    stage_end = stage_match.end() + next_stage.start() if next_stage else len(content)
+    stage_content = content[stage_start:stage_end]
+
+    for step_match in re.finditer(r'^\s{2}\* \*\*Step ([A-Z]):\s*([^*\n]+)', stage_content, re.MULTILINE):
+        step_letter = step_match.group(1)
+        step_name = step_match.group(2).strip().rstrip('*').strip()
+        step_names[(stage_num, step_letter)] = step_name
+
+        step_start = step_match.start()
+        next_step = list(re.finditer(r'^\s{2}\* \*\*Step', stage_content[step_match.end():], re.MULTILINE))
+        step_end = step_match.end() + next_step[0].start() if next_step else len(stage_content)
+        step_content = stage_content[step_start:step_end]
+
+        for strategy_match in re.finditer(r'^\s{6}\* \*\*Strategy (\d+):\s*([^:*\n]+)', step_content, re.MULTILINE):
+            strategy_num = int(strategy_match.group(1))
+            strategy_name = strategy_match.group(2).strip().rstrip('*').strip()
+            strategy_names[(stage_num, step_letter, strategy_num)] = strategy_name
+
+total_harnesses = len(all_harnesses)
+
+# Map stage numbers to display indices (0-based)
+stage_index_map = {s: i for i, s in enumerate(sorted_stages)}
+
 # Print hierarchical tree
 print("=" * 80)
 print("HIERARCHICAL STATISTICS: Stage → Step → Strategy Support")
@@ -116,7 +155,10 @@ print()
 
 for stage_num in sorted_stages:
     stage_count = len(stage_harnesses[stage_num])
-    print(f"Stage {stage_num}: {stage_count} harnesses")
+    stage_index = stage_index_map[stage_num]
+    stage_name = stage_names.get(stage_num, stage_num)
+    stage_pct = round(100 * stage_count / total_harnesses, 1)
+    print(f"Stage {stage_index} ({stage_name}): {stage_count} ({stage_pct}%) harnesses")
 
     # Get all steps for this stage
     stage_steps = sorted([
@@ -127,9 +169,11 @@ for stage_num in sorted_stages:
 
     for step_idx, (step_letter, step_harness_set) in enumerate(stage_steps):
         step_count = len(step_harness_set)
+        step_name = step_names.get((stage_num, step_letter), step_letter)
+        step_pct = round(100 * step_count / total_harnesses, 1)
         is_last_step = (step_idx == len(stage_steps) - 1)
         step_prefix = "  └─" if is_last_step else "  ├─"
-        print(f"{step_prefix} Step {step_letter}: {step_count} harnesses")
+        print(f"{step_prefix} Step {step_idx} ({step_name}): {step_count} ({step_pct}%) harnesses")
 
         # Get all strategies for this step
         step_strategies = sorted([
@@ -140,52 +184,16 @@ for stage_num in sorted_stages:
 
         for strat_idx, (strategy_num, strategy_harness_set) in enumerate(step_strategies):
             strategy_count = len(strategy_harness_set)
+            strategy_name = strategy_names.get((stage_num, step_letter, strategy_num), str(strategy_num))
+            strategy_pct = round(100 * strategy_count / total_harnesses, 1)
             is_last_strategy = (strat_idx == len(step_strategies) - 1)
             if is_last_step:
                 strat_prefix = "     └─" if is_last_strategy else "     ├─"
             else:
                 strat_prefix = "  │  └─" if is_last_strategy else "  │  ├─"
-            print(f"{strat_prefix} Strategy {strategy_num}: {strategy_count} harnesses")
+            print(f"{strat_prefix} Strategy {strat_idx} ({strategy_name}): {strategy_count} ({strategy_pct}%) harnesses")
 
     print()
-
-# Print interesting statistics per stage
-print("=" * 80)
-print("INTERESTING STATISTICS PER STAGE")
-print("=" * 80)
-print()
-
-# 1. For each stage, find the harness with the most strategies
-print("1. Harness with most strategies in each stage:")
-print("-" * 80)
-for stage_num in sorted_stages:
-    stage_strategies_by_harness = defaultdict(set)
-    # Aggregate all strategies for each harness across all steps in this stage
-    for (s, step_letter, strategy_num), harness_set in strategy_harnesses.items():
-        if s == stage_num:
-            for harness in harness_set:
-                stage_strategies_by_harness[harness].add(strategy_num)
-
-    if stage_strategies_by_harness:
-        max_harness = max(stage_strategies_by_harness.items(), key=lambda x: len(x[1]))
-        print(f"  Stage {stage_num}: {max_harness[0]} ({len(max_harness[1])} strategies: {', '.join(map(str, sorted(max_harness[1])))})")
-print()
-
-# 2. For each stage, find the strategy most harnesses adopt
-print("2. Most popular strategy in each stage:")
-print("-" * 80)
-for stage_num in sorted_stages:
-    stage_strategy_adoption = defaultdict(set)
-    # Aggregate all harnesses for each strategy across all steps in this stage
-    for (s, step_letter, strategy_num), harness_set in strategy_harnesses.items():
-        if s == stage_num:
-            for harness in harness_set:
-                stage_strategy_adoption[strategy_num].add(harness)
-
-    if stage_strategy_adoption:
-        max_strategy = max(stage_strategy_adoption.items(), key=lambda x: len(x[1]))
-        print(f"  Stage {stage_num}: Strategy {max_strategy[0]} ({len(max_strategy[1])} harnesses)")
-print()
 
 # Print summary statistics
 print("=" * 80)
