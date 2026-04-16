@@ -3,6 +3,6 @@
 .omc
 .env
 *.venv
-test_*
 papers/
 repos/
+utils/
