@@ -6,6 +6,16 @@ import numpy as np
 
 from collections import defaultdict
 
+
+def gini_coefficient(values):
+    arr = np.array(values, dtype=float)
+    if arr.sum() == 0:
+        return 0.0
+    arr = np.sort(arr)
+    n = len(arr)
+    idx = np.arange(1, n + 1)
+    return (2 * (idx * arr).sum()) / (n * arr.sum()) - (n + 1) / n
+
 # Helper function to convert numeric values to integers
 def convert_to_int_if_numeric(val):
     if pd.isna(val):
@@ -390,3 +400,19 @@ if len(root_cause_results_df) > 0:
     print()
 
     plt.close()
+
+    # ── Gini coefficient per root cause (step distribution) ─────────────────
+    gini_rows = []
+    for root_cause in sorted_root_cause_labels:
+        step_counts = [
+            plot_stage_step_counts[root_cause].get(combo, 0)
+            for combo in sorted_plot_combos
+        ]
+        gini_rows.append((root_cause, gini_coefficient(step_counts)))
+    gini_rows.sort(key=lambda x: x[1], reverse=True)
+
+    print("\n=== Gini Coefficient per Root Cause (step distribution, descending) ===")
+    print(f"{'Root Cause':<45} {'Gini':>6}")
+    print("-" * 53)
+    for rc, g in gini_rows:
+        print(f"{rc:<45} {g:.4f}")

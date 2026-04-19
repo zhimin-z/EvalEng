@@ -4,8 +4,17 @@ import matplotlib
 matplotlib.use('Agg')  # Use non-interactive backend
 import matplotlib.pyplot as plt
 import numpy as np
-
 from pathlib import Path
+
+
+def gini_coefficient(values):
+    arr = np.array(values, dtype=float)
+    if arr.sum() == 0:
+        return 0.0
+    arr = np.sort(arr)
+    n = len(arr)
+    idx = np.arange(1, n + 1)
+    return (2 * (idx * arr).sum()) / (n * arr.sum()) - (n + 1) / n
 
 # ── Load cluster mapping (harness_name -> cluster_name) ──────────────────────
 cluster_file = Path(__file__).parent.parent / "data" / "rq1_cluster_curated.json"
@@ -176,3 +185,17 @@ print('\n'.join(latex_lines))
 print()
 
 plt.close()
+
+# ── Gini coefficient per archetype (root cause ratio distribution) ───────────
+gini_rows = []
+for cl_idx, cid in enumerate(sorted_cluster_ids):
+    ratios = heatmap_pct[cl_idx]
+    g = gini_coefficient(ratios)
+    gini_rows.append((sorted_cluster_names[cl_idx], g))
+gini_rows.sort(key=lambda x: x[1], reverse=True)
+
+print("\n=== Gini Coefficient per Archetype (root cause ratio, descending) ===")
+print(f"{'Archetype':<45} {'Gini':>6}")
+print("-" * 53)
+for name, g in gini_rows:
+    print(f"{name:<45} {g:.4f}")
