@@ -3,6 +3,7 @@
 .omc
 .env
 *.venv
+comments/
 papers/
 repos/
 utils/
