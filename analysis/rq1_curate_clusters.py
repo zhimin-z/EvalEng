@@ -213,7 +213,7 @@ def main():
     print("=" * 60)
 
     for cluster in new_clusters:
-        print(f"\nCluster {cluster['cluster_id']}:")
+        print(f"\n{cluster['cluster_name']}:")
         print(f"  Size: {cluster['size']} harnesses")
         print(f"  Members: {', '.join(cluster['members'][:5])}{'...' if len(cluster['members']) > 5 else ''}")
         print(f"  Common strategies: {len(cluster['common_strategies'])}")

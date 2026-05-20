@@ -26,12 +26,12 @@ sns.set_theme(style="white")
 # =============================================================================
 
 # Load curated cluster metadata
-clusters_file = Path('../data/rq1_cluster_curated.json')
+clusters_file = Path(__file__).parent / '../data/rq1_cluster_curated.json'
 with open(clusters_file) as f:
     cluster_data = json.load(f)
 
 # Load feature matrix
-feature_matrix_file = Path('../data/rq1_harness_feature_matrix.csv')
+feature_matrix_file = Path(__file__).parent / '../data/rq1_harness_feature_matrix.csv'
 df_features = pd.read_csv(feature_matrix_file, index_col=0)
 
 harnesses = list(df_features.index)
@@ -199,6 +199,6 @@ ax.tick_params(axis='both', labelsize=12)
 ax.legend(loc='upper center', bbox_to_anchor=(0.5, 1.05), ncol=2, fontsize=12, framealpha=1.0)
 plt.tight_layout()
 
-output_path = Path('../figures/rq1_pca.pdf')
+output_path = Path(__file__).parent / '../figures/rq1_pca.pdf'
 plt.savefig(output_path, format='pdf', bbox_inches='tight')
 print(f"Saved {output_path}")

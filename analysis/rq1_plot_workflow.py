@@ -1,3 +1,4 @@
+import os
 import matplotlib
 matplotlib.use('Agg')  # Use non-interactive backend
 import matplotlib.pyplot as plt
@@ -23,78 +24,78 @@ stage_colors = {
 # Stage definitions with data
 stages = [
     {
-        'name': 'Stage 0:\nProvisioning (56)',
+        'name': 'Stage 0:\nProvisioning (57)',
         'summary': 'Establishing & authenticating\nevaluation infrastructure',
         'x': 1,
         'width': 18,
         'color_key': 'Provisioning',
         'steps': [
             {
-                'name': 'Step A:\nHarness Installation (56)',
+                'name': 'Step A:\nHarness Installation (57)',
                 'strategies': [
-                    'Strategy 1:\nGit Clone (56)\n(Source installation)',
-                    'Strategy 2:\nPython Package (53)\n(Pip/Conda/Poetry)',
+                    'Strategy 1:\nGit Clone (57)\n(Source installation)',
+                    'Strategy 2:\nPython Package (54)\n(Pip/Conda/Poetry)',
                     'Strategy 3:\nContainer Image (12)\n(Docker/OCI)',
                     'Strategy 4:\nBinary Package (2)\n(Standalone executables)',
                     'Strategy 5:\nNode Package (1)\n(NPM/NPX)',
                 ]
             },
             {
-                'name': 'Step B:\nCredential Configuration (47)',
+                'name': 'Step B:\nCredential Configuration (48)',
                 'strategies': [
-                    'Strategy 1:\nRepository Authentication (42)\n(Hub/Registry access)',
-                    'Strategy 2:\nModel API Authentication (38)\n(Remote keys)',
-                    'Strategy 3:\nEvaluation Platform Authentication (10)\n(Service login)'
+                    'Strategy 1:\nRepository Authentication (43)\n(Hub/Registry access)',
+                    'Strategy 2:\nModel API Authentication (39)\n(Remote keys)',
+                    'Strategy 3:\nEvaluation Platform Authentication (11)\n(Service login)'
                 ]
             }
         ]
     },
     {
-        'name': 'Stage 1:\nSpecification (56)',
+        'name': 'Stage 1:\nSpecification (57)',
         'summary': 'Defining SUT & benchmark configuration',
         'x': 21,
         'width': 18,
         'color_key': 'Specification',
         'steps': [
             {
-                'name': 'Step A:\nSUT Preparation (53)',
+                'name': 'Step A:\nSUT Preparation (54)',
                 'strategies': [
-                    'Strategy 1:\nModel-in-Process (43)\n(Local Inference)',
-                    'Strategy 2:\nModel-as-a-Service (39)\n(Remote Inference)',
-                    'Strategy 3:\nInteractive Agent (15)\n(Sequential Decision-Making)',
+                    'Strategy 1:\nModel-in-Process (44)\n(Local Inference)',
+                    'Strategy 2:\nModel-as-a-Service (40)\n(Remote Inference)',
+                    'Strategy 3:\nInteractive Agent (16)\n(Sequential Decision-Making)',
                     'Strategy 4:\nNon-Parametric Algorithm (8)\n(Deterministic)',
                 ]
             },
             {
-                'name': 'Step B:\nBenchmark Inputs\n Preparation (53)',
+                'name': 'Step B:\nBenchmark Inputs\n Preparation (54)',
                 'strategies': [
-                    'Strategy 1:\nBenchmark Data Preparation (51)\n(Offline/Static)',
+                    'Strategy 1:\nBenchmark Data Preparation (52)\n(Offline/Static)',
                     'Strategy 2:\nSynthetic Data Generation (23)\n(Generative)',
                     'Strategy 3:\nSimulation Environment Setup (8)\n(Interactive/3D)',
                     'Strategy 4:\nProduction Traffic Sampling (4)\n(Online/Live)'
                 ]
             },
             {
-                'name': 'Step C:\nBenchmark References\n Preparation (53)',
+                'name': 'Step C:\nBenchmark References\n Preparation (54)',
                 'strategies': [
-                    'Strategy 1:\nGround Truth Preparation (51)\n(Annotations/Indexes)',
-                    'Strategy 2:\nJudge Preparation (34)\n(Model-based evaluators)'
+                    'Strategy 1:\nGround Truth Preparation (52)\n(Annotations/Indexes)',
+                    'Strategy 2:\nJudge Preparation (35)\n(Model-based evaluators)'
                 ]
             }
         ]
     },
     {
-        'name': 'Stage 2:\nExecution (53)',
+        'name': 'Stage 2:\nExecution (54)',
         'summary': 'Running SUT with benchmark inputs',
         'x': 41,
         'width': 18,
         'color_key': 'Execution',
         'steps': [
             {
-                'name': 'Step A:\nSUT Invocation (53)',
+                'name': 'Step A:\nSUT Invocation (54)',
                 'strategies': [
-                    'Strategy 1:\nBatch Inference (53)\n(Standard completion)',
-                    'Strategy 2:\nInteractive Loop (17)\n(Stateful/Agentic)',
+                    'Strategy 1:\nBatch Inference (54)\n(Standard completion)',
+                    'Strategy 2:\nInteractive Loop (18)\n(Stateful/Agentic)',
                     'Strategy 3:\nArena Battle (7)\n(Side-by-side comparison)',
                     'Strategy 4:\nProduction Streaming (4)\n(Real-time monitoring)'
                 ]
@@ -102,45 +103,45 @@ stages = [
         ]
     },
     {
-        'name': 'Stage 3:\nAssessment (56)',
+        'name': 'Stage 3:\nAssessment (57)',
         'summary': 'Computing metrics from\nSUT outputs & references',
         'x': 61,
         'width': 18,
         'color_key': 'Assessment',
         'steps': [
             {
-                'name': 'Step A:\nIndividual Scoring (56)',
+                'name': 'Step A:\nIndividual Scoring (57)',
                 'strategies': [
-                    'Strategy 1:\nDeterministic Measurement (50)\n(Exact match/Distance)',
-                    'Strategy 2:\nSubjective Measurement (33)\n(LLM-as-a-Judge)',
-                    'Strategy 3:\nLatent Measurement (27)\n(Embedding similarity)',
-                    'Strategy 4:\nPerformance Measurement (21)\n(Latency/Cost/Efficiency)'
+                    'Strategy 1:\nDeterministic Measurement (51)\n(Exact match/Distance)',
+                    'Strategy 2:\nSubjective Measurement (34)\n(LLM-as-a-Judge)',
+                    'Strategy 3:\nLatent Measurement (28)\n(Embedding similarity)',
+                    'Strategy 4:\nPerformance Measurement (22)\n(Latency/Cost/Efficiency)'
                 ]
             },
             {
-                'name': 'Step B:\nAggregate Scoring (54)',
+                'name': 'Step B:\nAggregate Scoring (55)',
                 'strategies': [
-                    'Strategy 1:\nDistributional Statistics (54)\n(Averages/Ranks)',
+                    'Strategy 1:\nDistributional Statistics (55)\n(Averages/Ranks)',
                     'Strategy 2:\nUncertainty Quantification (13)\n(Confidence intervals/PPI)'
                 ]
             }
         ]
     },
     {
-        'name': 'Stage 4:\nReporting (46)',
+        'name': 'Stage 4:\nReporting (47)',
         'summary': 'Visualizing & communicating\nevaluation results',
         'x': 81,
         'width': 18,
         'color_key': 'Reporting',
         'steps': [
             {
-                'name': 'Step A:\nInsight Presentation (46)',
+                'name': 'Step A:\nInsight Presentation (47)',
                 'strategies': [
                     'Strategy 1:\nChart Generation (25)\n(Radar/Trend plots)',
-                    'Strategy 2:\nDashboard Creation (25)\n(Interactive UIs)',
-                    'Strategy 3:\nLeaderboard Publication (22)\n(Public/Private ranking)',
-                    'Strategy 4:\nSubgroup Analysis (22)\n(Slicing/Demographics)',
-                    'Strategy 5:\nExecution Tracing (18)\n(Trace logs/Trajectories)',
+                    'Strategy 2:\nDashboard Creation (26)\n(Interactive UIs)',
+                    'Strategy 3:\nLeaderboard Publication (23)\n(Public/Private ranking)',
+                    'Strategy 4:\nSubgroup Analysis (23)\n(Slicing/Demographics)',
+                    'Strategy 5:\nExecution Tracing (19)\n(Trace logs/Trajectories)',
                     'Strategy 6:\nRegression Alerting (5)\n(Historical comparison)',
                 ]
             }
@@ -305,6 +306,6 @@ ax.set_xlim(min_x - 0.5, max_x + 0.5)  # Tight horizontal margins
 ax.set_ylim(min_y - 0.5, y_start + 0.5)  # Tight vertical margins
 plt.subplots_adjust(left=0, right=1, top=1, bottom=0)
 
-output_path = "../figures/rq1_workflow.pdf"
+output_path = os.path.join(os.path.dirname(__file__), "../figures/rq1_workflow.pdf")
 plt.savefig(output_path, bbox_inches='tight', pad_inches=0, facecolor='white')
 print(f"File saved: {output_path}")

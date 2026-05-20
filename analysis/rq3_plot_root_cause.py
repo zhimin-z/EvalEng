@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import matplotlib
 matplotlib.use('Agg')  # Use non-interactive backend
@@ -62,7 +63,7 @@ def smart_split_label(label, max_combined_length=10):
     return '\n'.join(lines)
 
 # Load data for root cause visualization (sample dataset)
-root_cause_file = "../data/rq2_issues_annotated_full.jsonl"
+root_cause_file = os.path.join(os.path.dirname(__file__), "../data/rq2_issues_annotated_full.jsonl")
 root_cause_results_df = pd.read_json(root_cause_file, lines=True)
 
 if len(root_cause_results_df) > 0:
@@ -242,7 +243,7 @@ if len(root_cause_results_df) > 0:
     plt.tight_layout()
 
     # Save figure
-    root_cause_output_path = "../figures/rq3_root_cause.pdf"
+    root_cause_output_path = os.path.join(os.path.dirname(__file__), "../figures/rq3_root_cause.pdf")
     plt.savefig(root_cause_output_path, format='pdf', bbox_inches='tight')
 
     # ================================================================

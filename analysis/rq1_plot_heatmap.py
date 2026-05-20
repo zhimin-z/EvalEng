@@ -7,7 +7,7 @@ from pathlib import Path
 from collections import defaultdict
 
 # Parse Stages.md and extract stages, steps, strategies, and harnesses
-stages_file = Path('../data/rq1_workflow.md')
+stages_file = Path(__file__).parent / '../data/rq1_workflow.md'
 content = stages_file.read_text()
 
 table_data = {}
@@ -158,7 +158,7 @@ for stage_num in sorted_stages:
     stage_index = stage_index_map[stage_num]
     stage_name = stage_names.get(stage_num, stage_num)
     stage_pct = round(100 * stage_count / total_harnesses, 1)
-    print(f"Stage {stage_index} ({stage_name}): {stage_count} ({stage_pct}%) harnesses")
+    print(f"Stage {stage_index} ({stage_name}): {stage_count} ({stage_pct}%)")
 
     # Get all steps for this stage
     stage_steps = sorted([
@@ -173,7 +173,7 @@ for stage_num in sorted_stages:
         step_pct = round(100 * step_count / total_harnesses, 1)
         is_last_step = (step_idx == len(stage_steps) - 1)
         step_prefix = "  └─" if is_last_step else "  ├─"
-        print(f"{step_prefix} Step {step_idx} ({step_name}): {step_count} ({step_pct}%) harnesses")
+        print(f"{step_prefix} Step {step_idx} ({step_name}): {step_count} ({step_pct}%)")
 
         # Get all strategies for this step
         step_strategies = sorted([
@@ -191,7 +191,7 @@ for stage_num in sorted_stages:
                 strat_prefix = "     └─" if is_last_strategy else "     ├─"
             else:
                 strat_prefix = "  │  └─" if is_last_strategy else "  │  ├─"
-            print(f"{strat_prefix} Strategy {strat_idx} ({strategy_name}): {strategy_count} ({strategy_pct}%) harnesses")
+            print(f"{strat_prefix} Strategy {strat_idx} ({strategy_name}): {strategy_count} ({strategy_pct}%)")
 
     print()
 
@@ -266,6 +266,6 @@ ax.grid(which="minor", color="gray", linestyle='-', linewidth=0.5)
 plt.tight_layout()
 
 # Save as PDF
-pdf_path = Path('../figures/rq1_heatmap.pdf')
+pdf_path = Path(__file__).parent / '../figures/rq1_heatmap.pdf'
 plt.savefig(pdf_path, format='pdf', bbox_inches='tight')
 print(f"\n✓ Heatmap saved to: {pdf_path}")
