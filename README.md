@@ -1,31 +1,29 @@
 <div align="center">
 
-# 📊 Evalware Survey
-
-### Towards Evaluation Engineering: An Empirical Study of ML Evaluation Harnesses in the Wild
+# Towards Evaluation Engineering: An Empirical Study of ML Evaluation Harnesses in the Wild
 
 *An empirical analysis of 57 evaluation harnesses and 19,638 GitHub issues — establishing evaluation engineering as a distinct software engineering concern.*
 
 [![arXiv](https://img.shields.io/badge/arXiv-2605.24213-b31b1b?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.24213)
 [![License](https://img.shields.io/badge/license-MIT-868e96?style=for-the-badge)](LICENSE)
-[![Website](https://img.shields.io/badge/website-live-2e7d32?style=for-the-badge)](https://zhimin-z.github.io/Evalware-Survey)
+[![Website](https://img.shields.io/badge/website-live-2e7d32?style=for-the-badge)](https://zhimin-z.github.io/EvalEng)
 
 </div>
 
 ---
 
-## What is Evalware Survey?
+## What is Survey?
 
 ML evaluation harnesses — software systems that orchestrate model invocation, data loading, metric computation, and result reporting — are central to AI research infrastructure. Yet no prior SE work had studied them as software products.
 
-This study analyzes **57 evaluation harnesses** and **19,638 GitHub issues** to derive a unified workflow model, identify where challenges concentrate, and categorize root causes. We introduce **Evaluation Engineering (EvalEng)** as the SE concerns arising when evaluation is operationalized. Full findings and interactive visualizations are on the [project website](https://zhimin-z.github.io/Evalware-Survey).
+This study analyzes **57 evaluation harnesses** and **19,638 GitHub issues** to derive a unified workflow model, identify where challenges concentrate, and categorize root causes. We introduce **Evaluation Engineering (EvalEng)** as the SE concerns arising when evaluation is operationalized. Full findings and interactive visualizations are on the [project website](https://zhimin-z.github.io/EvalEng).
 
 ---
 
 ## Repository Layout
 
 ```
-Evalware-Survey/
+EvalEng/
 │
 ├── data/
 │   ├── harnesses.csv                ← 57 harnesses with metadata (stars, domain, archetype)
@@ -133,12 +131,13 @@ python scripts/mine_issues.py \
 
 ```bibtex
 @article{zhao2025evaleng,
-  title     = {Towards Evaluation Engineering: An Empirical Study of {ML} Evaluation Harnesses in the Wild},
-  author    = {Zhao, Zhimin and Wang, Zehao and Bangash, Abdul Ali and Adams, Bram and Hassan, Ahmed E.},
-  journal   = {ACM Transactions on Software Engineering and Methodology},
-  year      = {2025},
-  publisher = {ACM},
-  url       = {https://arxiv.org/abs/2605.24213}
+      title={Towards Evaluation Engineering: An Empirical Study of ML Evaluation Harnesses in the Wild}, 
+      author={Zhimin Zhao and Zehao Wang and Abdul Ali Bangash and Bram Adams and Ahmed E. Hassan},
+      year={2026},
+      eprint={2605.24213},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE},
+      url={https://arxiv.org/abs/2605.24213}, 
 }
 ```
 
