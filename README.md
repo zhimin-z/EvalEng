@@ -68,9 +68,19 @@ Evalware-Survey/
 
 ---
 
+## Quickstart
+
+```bash
+git clone https://github.com/zhimin-z/Evalware-Survey.git
+cd Evalware-Survey
+cp .env.example .env          # fill in GITHUB_TOKEN_* and ANTHROPIC_API_KEY
+pip install -r requirements.txt
+python analysis/rq2_collect_issues.py  # or any other script
+```
+
 ## Analysis
 
-All scripts run from the `analysis/` directory with `python <script>.py` — no arguments needed. API keys and GitHub tokens are loaded from `.env`.
+All scripts run from the repo root with `python analysis/<script>.py` — no arguments needed. Credentials are loaded from `.env` (see `.env.example`).
 
 ### RQ1 — Workflow Model & Archetypes
 
@@ -106,12 +116,13 @@ All scripts run from the `analysis/` directory with `python <script>.py` — no 
 
 ```bibtex
 @article{zhao2025evaleng,
-  title        = {Towards Evaluation Engineering: An Empirical Study of {ML} Evaluation Harnesses in the Wild},
-  author       = {Zhao, Zhimin and Wang, Zehao and Bangash, Abdul Ali and Adams, Bram and Hassan, Ahmed E.},
-  journal      = {ACM Transactions on Software Engineering and Methodology},
-  year         = {2025},
-  publisher    = {ACM},
-  url          = {https://arxiv.org/abs/2605.24213}
+      title={Towards Evaluation Engineering: An Empirical Study of ML Evaluation Harnesses in the Wild}, 
+      author={Zhimin Zhao and Zehao Wang and Abdul Ali Bangash and Bram Adams and Ahmed E. Hassan},
+      year={2026},
+      eprint={2605.24213},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE},
+      url={https://arxiv.org/abs/2605.24213}, 
 }
 ```
 
