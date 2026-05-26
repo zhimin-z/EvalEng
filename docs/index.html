@@ -244,39 +244,16 @@
   </section>
 
   <!-- ===== MOTIVATION ===== -->
-  <section id="motivation" class="py-20 bg-slate-50 section-fade">
-    <div class="max-w-5xl mx-auto px-6">
+  <section id="motivation" class="py-16 bg-slate-50 section-fade">
+    <div class="max-w-4xl mx-auto px-6">
       <h2 class="section-title">Motivation</h2>
-      <div class="grid md:grid-cols-2 gap-10 items-start">
-        <div>
-          <h3 class="text-xl font-bold text-navy mb-4">The Problem with Ad-hoc Evaluation</h3>
-          <p class="text-gray-600 leading-relaxed mb-4">
-            As ML models proliferate, so does the need to reliably measure their capabilities.
-            Research teams have historically relied on one-off evaluation scripts — fragile,
-            non-reproducible, and invisible to SE scrutiny.
-          </p>
-          <p class="text-gray-600 leading-relaxed mb-4">
-            These scripts are rarely versioned, rarely documented, and rarely tested.
-            When they break — because of a dependency update, an API change, or a subtle
-            data format mismatch — entire benchmark suites silently produce wrong numbers.
-          </p>
-          <p class="text-gray-600 leading-relaxed">
-            <strong>Evaluation harnesses</strong> emerged as the engineering response:
-            structured, maintained, community-owned software systems that bring reproducibility
-            and reliability to ML evaluation. Yet no prior SE work had studied them as software products.
-          </p>
-        </div>
-        <div class="space-y-4">
-          <div v-for="point in motivationPoints" :key="point.title"
-               class="flex gap-4 p-4 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-            <div class="flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center text-xl"
-                 :style="{ background: point.bg }">
-              {{ point.icon }}
-            </div>
-            <div>
-              <div class="font-semibold text-navy text-sm mb-1">{{ point.title }}</div>
-              <div class="text-gray-600 text-sm leading-relaxed">{{ point.body }}</div>
-            </div>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div v-for="point in motivationPoints" :key="point.title"
+             class="flex gap-3 p-4 bg-white rounded-xl border border-gray-100">
+          <span class="text-xl flex-shrink-0">{{ point.icon }}</span>
+          <div>
+            <div class="font-semibold text-navy text-sm mb-0.5">{{ point.title }}</div>
+            <div class="text-gray-500 text-xs leading-relaxed">{{ point.body }}</div>
           </div>
         </div>
       </div>
@@ -405,7 +382,9 @@
       <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-10">
         <h3 class="font-bold text-navy mb-1">All Root Cause Categories (n = 16,560 issues)</h3>
         <p class="text-gray-500 text-xs mb-6">Percentage of classified issues per root cause</p>
-        <canvas id="rootCauseChart" height="320"></canvas>
+        <div style="position:relative; height:220px;">
+          <canvas id="rootCauseChart"></canvas>
+        </div>
       </div>
 
       <!-- Root cause descriptions -->
@@ -452,7 +431,9 @@
       <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-10">
         <h3 class="font-bold text-navy mb-1">Top Root Causes by Workflow Stage</h3>
         <p class="text-gray-500 text-xs mb-6">Relative distribution of root causes per stage</p>
-        <canvas id="stageChart" height="280"></canvas>
+        <div style="position:relative; height:220px;">
+          <canvas id="stageChart"></canvas>
+        </div>
       </div>
 
       <!-- Stage spotlight cards -->
@@ -472,26 +453,6 @@
               </div>
               <div class="text-xs font-semibold" :style="{ color: sp.color }">{{ item.pct }}%</div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== TAKEAWAYS ===== -->
-  <section id="takeaways" class="py-20 bg-navy section-fade">
-    <div class="max-w-4xl mx-auto px-6">
-      <h2 class="text-3xl font-extrabold text-white mb-2 text-center">Key Takeaways</h2>
-      <p class="text-slate-400 text-center mb-12 text-sm">Actionable insights for practitioners and researchers</p>
-      <div class="space-y-5">
-        <div v-for="(tk, idx) in takeaways" :key="idx"
-             class="flex gap-5 p-5 bg-white/5 rounded-2xl border border-white/10 hover:bg-white/10 transition">
-          <div class="flex-shrink-0 w-9 h-9 rounded-full bg-teal/20 border border-teal/40 flex items-center justify-center">
-            <span class="text-teal-light font-bold text-sm">{{ idx + 1 }}</span>
-          </div>
-          <div>
-            <div class="text-white font-semibold mb-1">{{ tk.title }}</div>
-            <p class="text-slate-400 text-sm leading-relaxed">{{ tk.body }}</p>
           </div>
         </div>
       </div>
@@ -589,7 +550,6 @@ createApp({
       { id: 'rq1',         label: 'RQ1' },
       { id: 'rq2',         label: 'RQ2' },
       { id: 'rq3',         label: 'RQ3' },
-      { id: 'takeaways',   label: 'Takeaways' },
       { id: 'citation',    label: 'Citation' },
     ];
     const activeSection = ref('hero');
@@ -805,39 +765,16 @@ createApp({
       },
     ];
 
-    // ---- TAKEAWAYS ----
-    const takeaways = [
-      {
-        title: 'Invest in specification tooling first',
-        body: 'With 41.4% of issues originating in the Specification stage, harness developers should prioritize validation, auto-completion, and documentation of configuration options above all else.'
-      },
-      {
-        title: 'Treat documentation as a first-class engineering artifact',
-        body: '20.3% of issues trace to documentation deficiency. Auto-generated API docs, example notebooks, and migration guides should be part of every release process.'
-      },
-      {
-        title: 'Adopt containerized deployment more broadly',
-        body: 'Only 21.1% of harnesses use containerized deployment. Given that environment incompatibility is the top provisioning issue, containerization is the highest-leverage provisioning improvement available.'
-      },
-      {
-        title: 'Instrument regression alerting from day one',
-        body: 'Regression alerting is the least-adopted strategy at 8.8%. A harness without regression checks cannot distinguish model improvements from pipeline regressions — a critical gap for long-running research infrastructure.'
-      },
-      {
-        title: 'Expect scoring errors to surface late',
-        body: 'Algorithmic and scoring errors peak in the Assessment stage. Testing metric implementations in isolation (unit tests for scoring functions) is far cheaper than discovering them post-publication.'
-      },
-    ];
 
     // ---- BIBTEX ----
     const bibtex = `@article{zhao2025evaleng,
-  title   = {Towards Evaluation Engineering: An Empirical Study of
-             ML Evaluation Harnesses in the Wild},
-  author  = {Zhao, Zhimin and Wang, Zehao and Bangash, Abdul Ali
-             and Adams, Bram and Hassan, Ahmed E.},
-  journal = {ACM Transactions on Software Engineering and Methodology},
-  year    = {2025},
-  note    = {arXiv:2605.24213}
+      title={Towards Evaluation Engineering: An Empirical Study of ML Evaluation Harnesses in the Wild}, 
+      author={Zhimin Zhao and Zehao Wang and Abdul Ali Bangash and Bram Adams and Ahmed E. Hassan},
+      year={2026},
+      eprint={2605.24213},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE},
+      url={https://arxiv.org/abs/2605.24213}, 
 }`;
 
     const copyLabel = ref('Copy');
@@ -981,6 +918,7 @@ createApp({
           options: {
             indexAxis: 'y',
             responsive: true,
+            maintainAspectRatio: false,
             plugins: {
               legend: { display: false },
               tooltip: {
@@ -1041,6 +979,7 @@ createApp({
           },
           options: {
             responsive: true,
+            maintainAspectRatio: false,
             plugins: {
               legend: {
                 position: 'bottom',
@@ -1082,7 +1021,6 @@ createApp({
       topRootCauses,
       rootCauseDetails,
       stageSpotlights,
-      takeaways,
       bibtex,
       copyLabel,
       copyCitation,
