@@ -1,21 +1,19 @@
 <div align="center">
 
-# 📊 Evalware Survey
-
-### Towards Evaluation Engineering: An Empirical Study of ML Evaluation Harnesses in the Wild
+# Towards Evaluation Engineering: An Empirical Study of ML Evaluation Harnesses in the Wild
 
 *Studying 57 ML evaluation harnesses and 19,638 GitHub issues — establishing evaluation engineering as a distinct SE concern.*
 
 [![arXiv](https://img.shields.io/badge/arXiv-2605.24213-b31b1b?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.24213)
 [![License](https://img.shields.io/badge/license-MIT-868e96?style=for-the-badge)](LICENSE)
-[![Website](https://img.shields.io/badge/website-live-2e7d32?style=for-the-badge)](https://zhimin-z.github.io/Evalware-Survey)
+[![Website](https://img.shields.io/badge/website-live-2e7d32?style=for-the-badge)](https://zhimin-z.github.io/EvalEng)
 
 </div>
 
 ---
 
 ```
-Evalware-Survey/
+EvalEng/
 │
 ├── data/
 │   ├── rq0_harness_search.csv           ← Raw GitHub search results for harness candidates
@@ -70,8 +68,8 @@ Evalware-Survey/
 ## Quickstart
 
 ```bash
-git clone https://github.com/zhimin-z/Evalware-Survey.git
-cd Evalware-Survey
+git clone https://github.com/zhimin-z/EvalEng.git
+cd EvalEng
 cp .env.example .env          # fill in GITHUB_TOKEN_* and ANTHROPIC_API_KEY
 pip install -r requirements.txt
 python analysis/rq2_collect_issues.py  # or any other script
