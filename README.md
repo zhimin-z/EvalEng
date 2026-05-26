@@ -8,7 +8,7 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2605.24213-b31b1b?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.24213)
 [![License](https://img.shields.io/badge/license-MIT-868e96?style=for-the-badge)](LICENSE)
-[![Website](https://img.shields.io/badge/website-live-2e7d32?style=for-the-badge)](https://sailresearch.github.io/Evalware-Survey)
+[![Website](https://img.shields.io/badge/website-live-2e7d32?style=for-the-badge)](https://zhimin-z.github.io/Evalware-Survey)
 
 </div>
 
@@ -18,7 +18,7 @@
 
 ML evaluation harnesses — software systems that orchestrate model invocation, data loading, metric computation, and result reporting — are central to AI research infrastructure. Yet no prior SE work had studied them as software products.
 
-This study analyzes **57 evaluation harnesses** and **19,638 GitHub issues** to derive a unified workflow model, identify where challenges concentrate, and categorize root causes. We introduce **Evaluation Engineering (EvalEng)** as the SE concerns arising when evaluation is operationalized. Full findings and interactive visualizations are on the [project website](https://sailresearch.github.io/Evalware-Survey).
+This study analyzes **57 evaluation harnesses** and **19,638 GitHub issues** to derive a unified workflow model, identify where challenges concentrate, and categorize root causes. We introduce **Evaluation Engineering (EvalEng)** as the SE concerns arising when evaluation is operationalized. Full findings and interactive visualizations are on the [project website](https://zhimin-z.github.io/Evalware-Survey).
 
 ---
 
@@ -126,19 +126,6 @@ python scripts/mine_issues.py \
 | `rq1_heatmap.py` | Strategy support heatmap |
 | `rq2_archetype.py` | Root cause × archetype heatmap |
 | `rq3_stage.py` | Root cause × stage heatmap |
-
----
-
-## Harness Archetypes
-
-The 57 harnesses cluster into four archetypes by workflow strategy coverage:
-
-| Archetype | Count | Avg. Coverage |
-|-----------|------:|:-------------:|
-| Standardized LLM Benchmark Suites | 23 (40.4%) | ~45% |
-| Narrow-Domain Metric Libraries | 12 (21.1%) | ~28% |
-| Task-Specific Capability Probes | 12 (21.1%) | ~37% |
-| Full-Stack LLM Evaluation Platforms | 10 (17.5%) | ~70% |
 
 ---
 
