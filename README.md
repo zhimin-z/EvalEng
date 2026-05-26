@@ -7,7 +7,6 @@
 *Studying 57 ML evaluation harnesses and 19,638 GitHub issues — establishing evaluation engineering as a distinct SE concern.*
 
 [![arXiv](https://img.shields.io/badge/arXiv-2605.24213-b31b1b?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.24213)
-[![TOSEM](https://img.shields.io/badge/ACM%20TOSEM-2025-0277bd?style=for-the-badge)](https://dl.acm.org/journal/tosem)
 [![License](https://img.shields.io/badge/license-MIT-868e96?style=for-the-badge)](LICENSE)
 [![Website](https://img.shields.io/badge/website-live-2e7d32?style=for-the-badge)](https://zhimin-z.github.io/Evalware-Survey)
 
