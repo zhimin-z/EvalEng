@@ -1,6 +1,6 @@
 <div align="center">
 
-# Towards Evaluation Engineering: An Empirical Study of Machine Learning Evaluation Harnesses in the Wild
+# Towards Evaluation Engineering: An Empirical Study of ML Evaluation Harnesses in the Wild
 
 *Studying 57 machine learning evaluation harnesses and 19,638 GitHub issues — establishing evaluation engineering as a distinct SE concern.*
 
@@ -114,7 +114,7 @@ All scripts run from the repo root with `python analysis/<script>.py` — no arg
 
 ```bibtex
 @article{zhao2025evaleng,
-      title={Towards Evaluation Engineering: An Empirical Study of Machine Learning Evaluation Harnesses in the Wild}, 
+      title={Towards Evaluation Engineering: An Empirical Study of ML Evaluation Harnesses in the Wild}, 
       author={Zhimin Zhao and Zehao Wang and Abdul Ali Bangash and Bram Adams and Ahmed E. Hassan},
       year={2026},
       eprint={2605.24213},
