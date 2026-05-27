@@ -1,12 +1,13 @@
 <div align="center">
 
-# Towards Evaluation Engineering: An Empirical Study of ML Evaluation Harnesses in the Wild
+# Towards Evaluation Engineering: An Empirical Study of Machine Learning Evaluation Harnesses in the Wild
 
-*Studying 57 ML evaluation harnesses and 19,638 GitHub issues — establishing evaluation engineering as a distinct SE concern.*
+*Studying 57 machine learning evaluation harnesses and 19,638 GitHub issues — establishing evaluation engineering as a distinct SE concern.*
 
 [![arXiv](https://img.shields.io/badge/arXiv-2605.24213-b31b1b?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.24213)
 [![License](https://img.shields.io/badge/license-MIT-868e96?style=for-the-badge)](LICENSE)
 [![Website](https://img.shields.io/badge/website-live-2e7d32?style=for-the-badge)](https://zhimin-z.github.io/EvalEng)
+[![Dataset](https://img.shields.io/badge/🤗%20Dataset-zhiminy%2FEvalEng-ffd21e?style=for-the-badge)](https://huggingface.co/datasets/zhiminy/EvalEng)
 
 </div>
 
@@ -113,7 +114,7 @@ All scripts run from the repo root with `python analysis/<script>.py` — no arg
 
 ```bibtex
 @article{zhao2025evaleng,
-      title={Towards Evaluation Engineering: An Empirical Study of ML Evaluation Harnesses in the Wild}, 
+      title={Towards Evaluation Engineering: An Empirical Study of Machine Learning Evaluation Harnesses in the Wild}, 
       author={Zhimin Zhao and Zehao Wang and Abdul Ali Bangash and Bram Adams and Ahmed E. Hassan},
       year={2026},
       eprint={2605.24213},
